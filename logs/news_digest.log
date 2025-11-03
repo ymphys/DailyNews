@@ -1,0 +1,234 @@
+2025-11-03 21:50:51,246 | INFO | Requesting news with params={'language': 'en', 'pageSize': 40}
+2025-11-03 21:50:51,859 | INFO | NewsAPI returned 34 articles (status=ok, remaining=None)
+2025-11-03 21:50:51,859 | INFO | Retained 34 articles for language=en after filtering.
+2025-11-03 21:50:51,859 | INFO | Requesting news with params={'language': 'zh', 'pageSize': 40}
+2025-11-03 21:50:52,061 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-03 21:50:52,061 | INFO | Retained 0 articles for language=zh after filtering.
+2025-11-03 21:56:41,393 | INFO | Requesting news with params={'language': 'en', 'pageSize': 40}
+2025-11-03 21:56:42,164 | INFO | NewsAPI returned 34 articles (status=ok, remaining=None)
+2025-11-03 21:56:42,164 | INFO | Retained 34 articles for language=en after filtering.
+2025-11-03 21:56:42,165 | INFO | Requesting news with params={'language': 'zh', 'pageSize': 40}
+2025-11-03 21:56:42,369 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-03 21:56:42,369 | INFO | Retained 0 articles for language=zh after filtering.
+2025-11-03 21:57:06,864 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "Poll shows growing American distrust in government and fading belief in the American Dream",
+      "key_takeaways": [
+        "59% of U.S. adults perceive political polarization as strong.",
+        "A majority feel the best days of the country are in the past.",
+        "Many Americans believe the American Dream is no longer attainable."
+      ],
+      "term_clarifications": [
+        {
+          "term": "American Dream",
+          "explanation": "A national ethos of the United States, representing the ideals of freedom, prosperity, and upward social mobility achievable through hard work."
+        },
+        {
+          "term": "Political Polarization",
+          "explanation": "The divergence of political attitudes to ideological extremes, leading to a divided society and challenges in governance."
+        }
+      ],
+      "english_brief": "A recent POLITICO poll highlights a rising sense of pessimism among Americans, with a majority believing the nation's best times lie behind it. This outlook is linked to the perception of increasing political polarization, as 59% report a divided political environment. The findings suggest a widespread erosion of trust in government and doubts about the attainability of the traditional American Dream, signaling potential challenges ahead for national unity and policy making.",
+      "chinese_brief": "最近的POLITICO民调显示，美国民众的悲观情绪上升，大多数人认为国家的黄金时代已经过去。这种观点与59%受访者感受到的政治极化加剧有关。调查显示，对政府的信任普遍下降，且对传统美国梦的实现产生怀疑，这预示着国家团结和政策制定可能面临挑战。"
+    },
+    {
+      "id": 1,
+      "headline": "Hurricane Melissa death toll climbs to 28 in Jamaica with more possible fatalities",
+      "key_takeaways": [
+        "28 confirmed deaths due to Hurricane Melissa in Jamaica.",
+        "Prime Minister Andrew Holness warns of unverified reports suggesting higher death toll.",
+        "The hurricane caused widespread destruction across the Caribbean island."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Hurricane Melissa",
+          "explanation": "A powerful tropical cyclone that impacted the Caribbean region in late October 2025, causing severe damage and loss of lives."
+        },
+        {
+          "term": "Prime Minister Andrew Holness",
+          "explanation": "The head of government of Jamaica, responsible for national leadership amid the hurricane crisis."
+        }
+      ],
+      "english_brief": "Jamaica is grappling with the aftermath of Hurricane Melissa, with the official death toll now at 28. Prime Minister Andrew Holness has cautioned that reports of further casualties are still being verified, suggesting the final count may rise. The hurricane has left widespread devastation, intensifying relief and recovery efforts on the Caribbean island. This tragedy underscores the ongoing vulnerability of the region to climate-related disasters.",
+      "chinese_brief": "牙买加正努力应对飓风梅丽莎的后果，官方死亡人数现已达到28人。总理安德鲁·霍勒尼斯警告称，仍在核实的更多死亡报告可能会使数字上升。此次飓风造成了广泛破坏，加剧了加勒比海岛屿的救援和恢复工作。此悲剧凸显了该地区对气候相关灾害的持续脆弱性。"
+    },
+    {
+      "id": 2,
+      "headline": "UK police dismiss terrorism link in England train stabbing, two arrested",
+      "key_takeaways": [
+        "Authorities ruled out terrorism as a motive in the train stabbing attack.",
+        "Two British-born men have been arrested in connection to the incident.",
+        "Two victims remain hospitalized in critical condition."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Mass stabbing attack",
+          "explanation": "An incident involving multiple victims being attacked with a sharp weapon in a public place."
+        },
+        {
+          "term": "Life-threatening condition",
+          "explanation": "A medical state where a person's life is at risk without immediate and intensive care."
+        }
+      ],
+      "english_brief": "The recent stabbing attack on a train in central England, which left multiple injured, has been officially ruled out as having any terrorism connection by UK police. Two British-born men have been apprehended and are under investigation. Despite reassurances, two victims remain in life-threatening conditions, highlighting the severity of the attack. This determination refocuses the investigation on other motives and community safety measures.",
+      "chinese_brief": "英国警方正式排除了近期发生在英格兰中部列车上的刺伤事件与恐怖主义有关的可能性。两名英国籍男子已被逮捕并接受调查。尽管警方给予了保证，仍有两名受害者处于危及生命的状况，显示出袭击的严重性。这一结论使调查转向其他动机及社区安全措施。"
+    },
+    {
+      "id": 3,
+      "headline": "Trump orders US military to prepare for possible action in Nigeria over Christian killings",
+      "key_takeaways": [
+        "President Donald Trump has directed military readiness for intervention in Nigeria.",
+        "The move is in response to allegations of killings targeting Christians.",
+        "Experts assert there is no definitive evidence that Christians face disproportionate attacks."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Islamist militant groups",
+          "explanation": "Armed groups motivated by extremist interpretations of Islam, often involved in violent conflicts."
+        },
+        {
+          "term": "Nigeria",
+          "explanation": "A populous West African country experiencing complex security challenges, including militant violence."
+        }
+      ],
+      "english_brief": "President Donald Trump has commanded the US military to prepare plans for potential action in Nigeria, citing concerns over Christian community killings portrayed as government neglect. However, experts contest claims that Christians are being disproportionately targeted, highlighting the complexity of Nigeria's security issues involving multiple groups. This escalation signals a shift towards a more interventionist US posture in African conflicts, with geopolitical and humanitarian implications.",
+      "chinese_brief": "特朗普总统已指示美国军方准备对尼日利亚可能采取行动，理由是基督教群体遭遇杀害且政府保护不足的担忧。然而，专家质疑基督徒遭到不成比例攻击的说法，强调尼日利亚安全问题复杂，涉及多方势力。这一升级表明美国在非洲冲突中采取更干预主义的立场，具备地缘政治和人道主义意义。"
+    },
+    {
+      "id": 4,
+      "headline": "Michigan mother spends thousands on unproven autism treatments for her three children",
+      "key_takeaways": [
+        "Dana Paduchowski cares for three autistic children, facing daily challenges.",
+        "She has invested significant money in alternative treatments promising improvement.",
+        "Many such treatments lack scientific validation and may carry risks."
+2025-11-03 22:03:18,720 | INFO | Requesting news with params={'language': 'en', 'pageSize': 40}
+2025-11-03 22:03:19,458 | INFO | NewsAPI returned 34 articles (status=ok, remaining=None)
+2025-11-03 22:03:19,459 | INFO | Retained 34 articles for language=en after filtering.
+2025-11-03 22:03:19,459 | INFO | Requesting news with params={'language': 'zh', 'pageSize': 40}
+2025-11-03 22:03:19,674 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-03 22:03:19,674 | INFO | Retained 0 articles for language=zh after filtering.
+2025-11-03 22:03:19,812 | INFO | Summarizing 34 articles across 5 batches.
+2025-11-03 22:03:49,398 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "Poll Reveals Rising American Pessimism and Distrust in Government",
+      "key_takeaways": [
+        "59% of U.S. adults perceive political polarization as severe or growing.",
+        "Majority believe the best years of America are behind rather than ahead.",
+        "Many Americans express distrust in government honesty.",
+        "The 'American Dream' is seen by many as no longer attainable."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Political Polarization",
+          "explanation": "The growing ideological gap and division between political parties or groups, often leading to less cooperation."
+        },
+        {
+          "term": "American Dream",
+          "explanation": "A traditional belief that anyone in the U.S. can achieve success and upward social mobility through hard work."
+        }
+      ],
+      "english_brief": "A recent Politico poll uncovers widespread American pessimism about the nation's future, with a majority doubting the American Dream and expressing distrust toward the government. This sentiment is heightened amid growing political polarization, indicating a public divided and uncertain about the country's direction. Such attitudes could affect social cohesion and policy-making in the coming years.",
+      "chinese_brief": "最近的一项Politico民意调查显示，美国公众对国家未来普遍持悲观态度，大多数人怀疑美国梦并对政府表示不信任。这种情绪在政治极化日益加剧的背景下更加明显，表明公众对国家方向存在分歧和不确定。这种态度可能影响未来的社会凝聚力和政策制定。"
+    },
+    {
+      "id": 1,
+      "headline": "Hurricane Melissa Death Toll in Jamaica Rises to 28",
+      "key_takeaways": [
+        "28 confirmed fatalities from Hurricane Melissa in Jamaica.",
+        "Prime Minister Andrew Holness warns more deaths may be reported.",
+        "The hurricane caused widespread damage and disruption.",
+        "Emergency response and recovery efforts are ongoing in Jamaica."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Hurricane Melissa",
+          "explanation": "A powerful tropical cyclone that struck the Caribbean, causing severe weather conditions including heavy rain, flooding, and wind damage."
+        },
+        {
+          "term": "Andrew Holness",
+          "explanation": "The Prime Minister of Jamaica, serving as the head of the Caribbean nation's government."
+        }
+      ],
+      "english_brief": "Hurricane Melissa has claimed 28 lives in Jamaica, with Prime Minister Andrew Holness cautioning that this number may increase as reports of additional fatalities are verified. The hurricane caused significant damage, leaving emergency services working to assist affected communities. The tragedy highlights the region's vulnerability to extreme weather events intensified by climate change.",
+      "chinese_brief": "飓风梅丽莎已在牙买加造成28人死亡，牙买加总理安德鲁·霍尔尼斯警告称，随着更多死亡报告得到确认，这一数字可能还会上升。飓风带来了严重的破坏，紧急服务部门正在努力协助受灾社区。这一悲剧凸显了该地区对极端天气事件的脆弱性，这些事件因气候变化而加剧。"
+    },
+    {
+      "id": 2,
+      "headline": "UK Police Rule Out Terrorism in Central England Train Stabbing Attack",
+      "key_takeaways": [
+        "Two British suspects arrested in connection with train stabbing.",
+        "Police have excluded terrorism as a motive for the attack.",
+        "Two victims remain in life-threatening condition in hospital.",
+        "Investigation continues into the circumstances of the stabbing."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Terrorism",
+          "explanation": "The unlawful use of violence or threat of violence, especially against civilians, to achieve political aims."
+        }
+      ],
+      "english_brief": "Following a mass stabbing incident on a train in central England, UK police have arrested two British men but have determined that terrorism is not the motive behind the attack. Two victims remain critically injured. Authorities continue to investigate the motives and circumstances, aiming to provide clarity and prevent similar incidents.",
+      "chinese_brief": "在英格兰中部火车上的群体刺伤事件后，英国警方逮捕了两名英国男子，但已确定此次袭击不是恐怖主义动机。两名受害者仍处于生命危险中。相关部门继续调查事件动机和情况，力求澄清真相并防止类似事件发生。"
+    },
+    {
+      "id": 3,
+      "headline": "President Trump Orders Military Preparations for Possible Nigeria Action",
+      "key_takeaways": [
+        "Trump directs U.S. military to prepare plans for intervention in Nigeria.",
+        "Justification cited is alleged failure of Nigerian government to protect Christians.",
+        "Experts note no clear evidence of Christians being disproportionately targeted.",
+        "The move increases tensions regarding U.S. involvement in African conflicts."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Islamist militant groups",
+          "explanation": "Armed groups that use Islamic ideology to justify violent actions, often against governments or civilians."
+        },
+        {
+          "term": "Intervention",
+          "explanation": "The act of a country deploying military or other resources into another country to influence events, often controversially."
+        }
+      ],
+      "english_brief": "U.S. President Donald Trump has ordered military officials to prepare plans for possible action in Nigeria, citing the Nigerian government's alleged failure to protect Christian communities amid Islamist militant threats. However, experts dispute claims that Christians are disproportionately targeted. This announcement could complicate U.S.-Nigeria relations and raises broader questions about foreign military intervention policies in Africa.",
+      "chinese_brief": "美国总统唐纳德·特朗普已下令军方准备可能对尼日利亚采取行动的计划，理由是尼日利亚政府未能保护基督教社区，面临伊斯兰激进分子的威胁。然而，专家质疑基督徒受特别针对的说法。此举可能使美尼关系复杂化，也引发了关于美国在非洲军事干预政策的更广泛讨论。"
+    },
+    {
+      "id": 4,
+      "headline": "Mother of Three Autistic Children Shares Struggles with Unproven Treatments",
+      "key_takeaways": [
+        "Michigan mother has invested thousands in alternative autism treatments.",
+        "Many such treatments lack scientific support and can be risky.",
+        "Parents seek relief for children's symptoms amid limited effective options.",
+        "Highlights challenges families face navigating autism therapies."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Autism",
+          "explanation": "A developmental disorder characterized by difficulties with social interaction, communication, and repetitive behaviors."
+        },
+        {
+          "term": "Alternative treatments",
+          "explanation": "Therapies used instead of or alongside conventional medicine
+2025-11-03 22:13:30,163 | INFO | Requesting news with params={'language': 'en', 'pageSize': 40}
+2025-11-03 22:13:30,862 | INFO | NewsAPI returned 34 articles (status=ok, remaining=None)
+2025-11-03 22:13:30,863 | INFO | Retained 34 articles for language=en after filtering.
+2025-11-03 22:13:30,863 | INFO | Requesting news with params={'language': 'zh', 'pageSize': 40}
+2025-11-03 22:13:31,072 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-03 22:13:31,073 | INFO | Retained 0 articles for language=zh after filtering.
+2025-11-03 22:13:31,230 | INFO | Summarizing 34 articles across 9 batches.
+2025-11-03 22:13:53,341 | INFO | Completed batch 1/9 (briefings=4).
+2025-11-03 22:14:21,795 | INFO | Completed batch 2/9 (briefings=8).
+2025-11-03 22:14:48,523 | INFO | Completed batch 3/9 (briefings=11).
+2025-11-03 22:15:24,042 | INFO | Completed batch 4/9 (briefings=15).
+2025-11-03 22:15:57,025 | INFO | Completed batch 5/9 (briefings=19).
+2025-11-03 22:16:32,660 | INFO | Completed batch 6/9 (briefings=23).
+2025-11-03 22:16:57,863 | INFO | Completed batch 7/9 (briefings=27).
+2025-11-03 22:17:27,317 | INFO | Completed batch 8/9 (briefings=31).
+2025-11-03 22:17:40,659 | INFO | Completed batch 9/9 (briefings=33).
+2025-11-03 22:17:40,660 | INFO | OpenAI summarization completed across 9 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=22809)
+2025-11-03 22:17:40,661 | INFO | Saved digest to digests/world-briefing-2025-11-03_2217.md
+2025-11-03 22:17:40,662 | INFO | Run summary: {"started_at": "2025-11-03T14:13:30.163670+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": null, "requests": [{"request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en"}, {"request_params": {"language": "zh", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh"}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 8685, "output_tokens": 14124, "total_tokens": 22809}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-03_2217.md", "articles_summarized": 33}}
