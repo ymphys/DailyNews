@@ -232,3 +232,25 @@
 2025-11-03 22:17:40,660 | INFO | OpenAI summarization completed across 9 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=22809)
 2025-11-03 22:17:40,661 | INFO | Saved digest to digests/world-briefing-2025-11-03_2217.md
 2025-11-03 22:17:40,662 | INFO | Run summary: {"started_at": "2025-11-03T14:13:30.163670+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": null, "requests": [{"request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en"}, {"request_params": {"language": "zh", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh"}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 8685, "output_tokens": 14124, "total_tokens": 22809}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-03_2217.md", "articles_summarized": 33}}
+2025-11-03 23:00:35,145 | INFO | Requesting news with params={'language': 'en', 'pageSize': 40}
+2025-11-03 23:00:35,757 | INFO | NewsAPI returned 34 articles (status=ok, remaining=None)
+2025-11-03 23:00:35,757 | INFO | Retained 0 articles for language=en after filtering.
+2025-11-03 23:00:35,757 | INFO | Requesting news with params={'language': 'cn', 'pageSize': 40}
+2025-11-03 23:00:35,954 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-03 23:00:35,955 | INFO | Retained 0 articles for language=cn after filtering.
+2025-11-03 23:00:35,955 | INFO | Saved digest to digests/world-briefing-2025-11-03_2300.md
+2025-11-03 23:00:35,956 | INFO | Run summary: {"started_at": "2025-11-03T15:00:35.145047+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-03T14:13:30.163670+00:00", "requests": [{"request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en"}, {"request_params": {"language": "cn", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "cn"}]}, "openai": {"key": "sk-p..._AUA", "usage": {}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-03_2300.md", "articles_summarized": 0}}
+2025-11-03 23:03:21,449 | INFO | Requesting news with params={'language': 'en', 'pageSize': 40}
+2025-11-03 23:03:22,135 | INFO | NewsAPI returned 34 articles (status=ok, remaining=None)
+2025-11-03 23:03:22,136 | INFO | Retained 0 articles for language=en after filtering.
+2025-11-03 23:03:22,136 | INFO | Requesting news with params={'language': 'zh', 'pageSize': 40}
+2025-11-03 23:03:22,349 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-03 23:03:22,349 | INFO | Retained 0 articles for language=zh after filtering.
+2025-11-03 23:03:22,349 | INFO | Requesting news with params={'language': 'de', 'pageSize': 40}
+2025-11-03 23:03:22,557 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-03 23:03:22,557 | INFO | Retained 0 articles for language=de after filtering.
+2025-11-03 23:03:22,557 | INFO | Requesting news with params={'language': 'fr', 'pageSize': 40}
+2025-11-03 23:03:22,766 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-03 23:03:22,766 | INFO | Retained 0 articles for language=fr after filtering.
+2025-11-03 23:03:22,767 | INFO | Saved digest to digests/world-briefing-2025-11-03_2303.md
+2025-11-03 23:03:22,768 | INFO | Run summary: {"started_at": "2025-11-03T15:03:21.449614+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-03T15:00:35.145047+00:00", "requests": [{"request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en"}, {"request_params": {"language": "zh", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh"}, {"request_params": {"language": "de", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "de"}, {"request_params": {"language": "fr", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "fr"}]}, "openai": {"key": "sk-p..._AUA", "usage": {}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-03_2303.md", "articles_summarized": 0}}
