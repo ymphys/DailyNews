@@ -11,8 +11,11 @@ import datetime as dt
 import json
 import logging
 import os
+from collections import defaultdict
 from pathlib import Path
+from time import sleep
 from typing import Any, Dict, List, Optional, Tuple
+from urllib.parse import quote_plus
 
 import httpx
 
@@ -43,8 +46,8 @@ if not LOGGER.handlers:
 
 DEFAULT_STATE = {
     "news_queries": [
-        {"language": "en", "pageSize": 40},
-        {"language": "zh", "pageSize": 40},
+        {"endpoint": "top-headlines", "language": "en", "pageSize": 40},
+        {"endpoint": "top-headlines", "language": "zh", "pageSize": 40},
     ],
     "last_run": None,
 }
@@ -68,6 +71,9 @@ LANGUAGE_LABELS = {
 
 SUMMARY_BATCH_SIZE = 4
 MAX_SUMMARY_ATTEMPTS = 3
+EVERYTHING_MAX_AGE_DAYS = 7
+NEWSAPI_MAX_RETRIES = 3
+NEWSAPI_RETRY_BASE_SECONDS = 8
 
 
 def mask_token(token: str, prefix: int = 4, suffix: int = 4) -> str:
@@ -95,8 +101,14 @@ def load_state() -> Dict[str, Any]:
             data = {}
     else:
         data = {}
-    state = DEFAULT_STATE.copy()
+    state = json.loads(json.dumps(DEFAULT_STATE))
     state.update({k: v for k, v in data.items() if k in DEFAULT_STATE})
+    normalized_queries = []
+    for query in state.get("news_queries", []):
+        updated = dict(query)
+        updated.setdefault("endpoint", "top-headlines")
+        normalized_queries.append(updated)
+    state["news_queries"] = normalized_queries
     return state
 
 
@@ -141,18 +153,171 @@ def parse_structured_output(raw_output: str) -> Dict[str, Any]:
         raise RuntimeError("OpenAI response was not valid JSON") from exc
 
 
-def fetch_news(params: Dict[str, Any]) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+def _compute_reset_delay(reset_header: str) -> int:
+    """Best-effort parse of NewsAPI X-RateLimit-Reset header to seconds."""
+    now = dt.datetime.now(dt.timezone.utc)
+    try:
+        numeric_value = float(reset_header)
+        if numeric_value > now.timestamp():
+            return max(0, int(numeric_value - now.timestamp()))
+        return max(0, int(numeric_value))
+    except ValueError:
+        pass
+
+    try:
+        parsed = reset_header
+        if parsed.endswith("Z"):
+            parsed = parsed[:-1] + "+00:00"
+        when = dt.datetime.fromisoformat(parsed)
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=dt.timezone.utc)
+        return max(0, int((when - now).total_seconds()))
+    except ValueError:
+        LOGGER.debug("Unable to parse X-RateLimit-Reset header: %s", reset_header)
+        return NEWSAPI_RETRY_BASE_SECONDS
+
+
+def make_query_slug(value: Optional[str], fallback: str) -> str:
+    """Convert a query value into a filesystem-friendly slug."""
+    if value:
+        slug = quote_plus(value.strip(), safe="")
+        slug = slug.replace("+", "-").strip("-_")
+        if slug:
+            return slug
+    return fallback
+
+
+def build_story_lines(briefing: Dict[str, Any], article: Dict[str, Any]) -> List[str]:
+    """Return formatted markdown lines for a single story."""
+    source = (article.get("source") or {}).get("name", "Unknown source")
+    published = article.get("publishedAt") or "N/A"
+    url = article.get("url")
+    language_code = article.get("query_language")
+    language_label = LANGUAGE_LABELS.get(language_code, language_code or "Unknown")
+    endpoint = article.get("query_endpoint", "top-headlines")
+
+    lines = [
+        f"### {briefing.get('headline', 'Untitled')} — {source}",
+        f"- Published: {published}",
+        f"- Language: {language_label}",
+        f"- Endpoint: {endpoint}",
+    ]
+    if url:
+        lines.append(f"- Original: {url}")
+    lines.append("")
+
+    takeaways = briefing.get("key_takeaways") or []
+    if takeaways:
+        lines.append("**Key Takeaways**")
+        for bullet in takeaways:
+            lines.append(f"- {bullet}")
+        lines.append("")
+
+    clarifications = briefing.get("term_clarifications") or []
+    if clarifications:
+        lines.append("**Term Explanations**")
+        for item in clarifications:
+            lines.append(f"- `{item['term']}` — {item['explanation']}")
+        lines.append("")
+
+    english_brief = (briefing.get("english_brief") or "").strip()
+    if english_brief:
+        lines.append("**English Brief**")
+        lines.append("")
+        lines.append(english_brief)
+        lines.append("")
+
+    chinese_brief = (briefing.get("chinese_brief") or "").strip()
+    if chinese_brief:
+        lines.append("**简体中文摘要**")
+        lines.append("")
+        lines.append(chinese_brief)
+        lines.append("")
+
+    return lines
+
+
+def render_digest(title: str, story_entries: List[Tuple[Dict[str, Any], Dict[str, Any]]]) -> str:
+    """Create a Markdown digest string for the provided stories."""
+    lines = [
+        f"# {title}",
+        "",
+        "## Stories",
+        "",
+    ]
+    for briefing, article in story_entries:
+        lines.extend(build_story_lines(briefing, article))
+    return "\n".join(lines).strip() + "\n"
+
+
+def fetch_news(
+    params: Dict[str, Any], endpoint: str = "top-headlines"
+) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
     """Fetch news articles and return them with response metadata for logging."""
-    LOGGER.info("Requesting news with params=%s", params)
-    resp = SESSION.get(
-        "https://newsapi.org/v2/top-headlines",
-        headers={"X-Api-Key": NEWS_API_KEY},
-        params=params,
-    )
-    resp.raise_for_status()
+    url = f"https://newsapi.org/v2/{endpoint}"
+    LOGGER.info("Requesting %s with params=%s", endpoint, params)
+
+    last_error: Optional[Exception] = None
+    for attempt in range(1, NEWSAPI_MAX_RETRIES + 1):
+        try:
+            resp = SESSION.get(url, headers={"X-Api-Key": NEWS_API_KEY}, params=params)
+            resp.raise_for_status()
+            break
+        except httpx.HTTPStatusError as exc:
+            status = exc.response.status_code
+            headers = exc.response.headers
+            if status == 429 and attempt < NEWSAPI_MAX_RETRIES:
+                retry_after_header = headers.get("Retry-After")
+                wait_seconds = NEWSAPI_RETRY_BASE_SECONDS * attempt
+
+                if retry_after_header:
+                    try:
+                        wait_seconds = max(wait_seconds, int(float(retry_after_header)))
+                    except ValueError:
+                        LOGGER.debug("Unable to parse Retry-After header: %s", retry_after_header)
+
+                reset_header = headers.get("X-RateLimit-Reset")
+                if reset_header:
+                    wait_seconds = max(wait_seconds, _compute_reset_delay(reset_header))
+
+                LOGGER.warning(
+                    "Rate limit hit for %s (attempt %s/%s). Sleeping %s seconds before retry.",
+                    endpoint,
+                    attempt,
+                    NEWSAPI_MAX_RETRIES,
+                    wait_seconds,
+                )
+                sleep(wait_seconds)
+                last_error = exc
+                continue
+
+            last_error = exc
+            break
+        except httpx.HTTPError as exc:
+            last_error = exc
+            if attempt < NEWSAPI_MAX_RETRIES:
+                wait_seconds = NEWSAPI_RETRY_BASE_SECONDS * attempt
+                LOGGER.warning(
+                    "HTTP error fetching %s (attempt %s/%s): %s. Retrying in %s seconds.",
+                    endpoint,
+                    attempt,
+                    NEWSAPI_MAX_RETRIES,
+                    exc,
+                    wait_seconds,
+                )
+                sleep(wait_seconds)
+                continue
+            break
+    else:
+        raise RuntimeError("Failed to contact NewsAPI after retries.") from last_error
+
+    if last_error and "resp" not in locals():
+        raise last_error
+
     data = resp.json()
     articles = data.get("articles", [])
     meta = {
+        "endpoint": endpoint,
         "request_params": params,
         "status": data.get("status"),
         "total_results": data.get("totalResults"),
@@ -180,11 +345,44 @@ def collect_articles(
     metas: List[Dict[str, Any]] = []
     seen_urls: set[str] = set()
 
-    for query in queries:
+    for idx, query in enumerate(queries):
         params = dict(query)
-        language = params.get("language")
-        articles, meta = fetch_news(params)
+        raw_query = dict(query)
+        endpoint = params.pop("endpoint", "top-headlines")
+        language = params.get("language") or raw_query.get("language")
+        country = raw_query.get("country")
+
+        if endpoint == "everything":
+            has_search_filter = any(
+                key in params for key in ("q", "sources", "domains", "excludeDomains")
+            )
+            if not has_search_filter:
+                LOGGER.warning(
+                    "Skipping 'everything' query without search filters: %s", query
+                )
+                continue
+            if published_after and "from" not in params:
+                cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=EVERYTHING_MAX_AGE_DAYS)
+                from_value = published_after
+                if from_value.tzinfo is None:
+                    from_value = from_value.replace(tzinfo=dt.timezone.utc)
+                if from_value < cutoff:
+                    original_from = from_value
+                    LOGGER.info(
+                        "Clamping 'from' for query %s to %s-day window (was %s).",
+                        idx,
+                        EVERYTHING_MAX_AGE_DAYS,
+                        original_from.isoformat(),
+                    )
+                    from_value = cutoff
+                params["from"] = from_value.isoformat()
+
+        articles, meta = fetch_news(params, endpoint=endpoint)
         meta["language"] = language
+        if not language and country:
+            meta["country"] = country
+        meta["query_index"] = idx
+        meta["query_params"] = raw_query
         metas.append(meta)
 
         filtered: List[Dict[str, Any]] = []
@@ -199,12 +397,17 @@ def collect_articles(
             if url:
                 seen_urls.add(url)
 
-            article["query_language"] = language
+            article["query_language"] = language or country
+            article["query_endpoint"] = endpoint
+            article["query_index"] = idx
+            article["query_params"] = raw_query
+            article["query_q"] = raw_query.get("q")
             filtered.append(article)
 
         LOGGER.info(
-            "Retained %s articles for language=%s after filtering.",
+            "Retained %s articles for endpoint=%s, language=%s after filtering.",
             len(filtered),
+            endpoint,
             language or "unknown",
         )
         all_articles.extend(filtered)
@@ -237,6 +440,7 @@ def summarize_articles(
             "content": article.get("content"),
             "url": article.get("url"),
             "query_language": article.get("query_language"),
+            "query_endpoint": article.get("query_endpoint"),
         }
         for idx, article in enumerate(articles)
     ]
@@ -277,7 +481,9 @@ def summarize_articles(
     batches = chunked(prepared_articles, SUMMARY_BATCH_SIZE)
     LOGGER.info("Summarizing %s articles across %s batches.", len(prepared_articles), len(batches))
 
-    for idx, batch in enumerate(batches, start=1):
+    def process_batch(batch: List[Dict[str, Any]], label: str) -> Tuple[List[Dict[str, Any]], List[str]]:
+        nonlocal total_input_tokens, total_output_tokens, model_used
+
         payload = json.dumps(
             {
                 "instructions": instructions,
@@ -297,8 +503,6 @@ def summarize_articles(
             },
         ]
 
-        structured: Optional[Dict[str, Any]] = None
-
         for attempt in range(1, MAX_SUMMARY_ATTEMPTS + 1):
             completion = client.responses.create(
                 model="gpt-4.1-mini",
@@ -315,16 +519,27 @@ def summarize_articles(
             raw_output = completion.output_text
             try:
                 structured = parse_structured_output(raw_output)
-                break
             except RuntimeError:
                 snippet = raw_output[:500].replace("\n", " ")
                 LOGGER.warning(
                     "Batch %s attempt %s produced invalid JSON (snippet=%s...)",
-                    idx,
+                    label,
                     attempt,
                     snippet,
                 )
                 if attempt == MAX_SUMMARY_ATTEMPTS:
+                    if len(batch) > 1:
+                        LOGGER.warning(
+                            "Splitting batch %s (size=%s) after repeated JSON failures.",
+                            label,
+                            len(batch),
+                        )
+                        split_index = max(1, len(batch) // 2)
+                        left = batch[:split_index]
+                        right = batch[split_index:]
+                        left_briefings, left_notes = process_batch(left, f"{label}.L")
+                        right_briefings, right_notes = process_batch(right, f"{label}.R")
+                        return left_briefings + right_briefings, left_notes + right_notes
                     raise
                 messages.append(
                     {
@@ -336,15 +551,19 @@ def summarize_articles(
                         ),
                     }
                 )
+                continue
 
-        if structured is None:
-            raise RuntimeError("Failed to obtain structured summary after retries.")
+            briefings = structured.get("briefings", [])
+            summary_note = structured.get("summary_notes", "")
+            note_list = [summary_note.strip()] if summary_note else []
+            return briefings, note_list
 
-        all_briefings.extend(structured.get("briefings", []))
-        summary_note = structured.get("summary_notes", "")
-        if summary_note:
-            notes.append(summary_note.strip())
+        raise RuntimeError("Failed to obtain structured summary after retries.")
 
+    for idx, batch in enumerate(batches, start=1):
+        batch_briefings, batch_notes = process_batch(batch, str(idx))
+        all_briefings.extend(batch_briefings)
+        notes.extend(batch_notes)
         LOGGER.info("Completed batch %s/%s (briefings=%s).", idx, len(batches), len(all_briefings))
 
     summary_notes = "\n\n".join(filter(None, notes))
@@ -370,80 +589,57 @@ def save_markdown(
     briefings: List[Dict[str, Any]],
     summary_notes: str,
     output_dir: str = "digests",
-) -> str:
+) -> Tuple[str, List[str]]:
     """
     Persist a Markdown digest that includes original URLs and bilingual analysis.
     """
-    os.makedirs(output_dir, exist_ok=True)
-    ts = dt.datetime.now().strftime("%Y-%m-%d_%H%M")
-    path = f"{output_dir}/world-briefing-{ts}.md"
+    output_path = Path(output_dir)
+    output_path.mkdir(exist_ok=True)
+    now = dt.datetime.now()
+    ts = now.strftime("%Y-%m-%d_%H%M")
 
     article_lookup = {idx: article for idx, article in enumerate(articles)}
-
-    lines = [
-        f"# World News Briefing — {dt.datetime.now():%Y-%m-%d %H:%M}",
-        "",
-    ]
-
-    if summary_notes:
-        lines.extend(
-            [
-                "## Analyst Notes",
-                summary_notes,
-                "",
-            ]
-        )
-
-    lines.append("## Stories")
-    lines.append("")
+    story_entries: List[Tuple[Dict[str, Any], Dict[str, Any]]] = []
 
     for briefing in briefings:
-        article = article_lookup.get(briefing["id"], {})
-        source_name = (article.get("source") or {}).get("name", "Unknown source")
-        published = article.get("publishedAt")
-        url = article.get("url")
-        language_code = article.get("query_language")
-        language_label = LANGUAGE_LABELS.get(language_code, language_code or "Unknown")
+        article = article_lookup.get(briefing.get("id"))
+        if article is None:
+            LOGGER.warning("Missing article for briefing id=%s; skipping.", briefing.get("id"))
+            continue
+        story_entries.append((briefing, article))
 
-        lines.extend(
-            [
-                f"### {briefing['headline']} — {source_name}",
-                f"- Published: {published or 'N/A'}",
-                f"- Language: {language_label}",
-            ]
-        )
-        if url:
-            lines.append(f"- Original: {url}")
-        lines.append("")
+    main_title = f"World News Briefing — {now:%Y-%m-%d %H:%M}"
+    main_content = render_digest(main_title, story_entries)
+    main_file = output_path / f"world-briefing-{ts}.md"
+    with open(main_file, "w", encoding="utf-8") as fh:
+        fh.write(main_content)
+    LOGGER.info("Saved digest to %s", main_file)
 
-        lines.append("**Key Takeaways**")
-        for bullet in briefing.get("key_takeaways", []):
-            lines.append(f"- {bullet}")
-        lines.append("")
+    everything_groups: Dict[int, Dict[str, Any]] = defaultdict(lambda: {"q": None, "entries": []})
+    for briefing, article in story_entries:
+        if article.get("query_endpoint") != "everything":
+            continue
+        query_index = article.get("query_index")
+        group = everything_groups[query_index]
+        group["q"] = group.get("q") or article.get("query_q")
+        group.setdefault("entries", []).append((briefing, article))
 
-        clarifications = briefing.get("term_clarifications") or []
-        if clarifications:
-            lines.append("**Term Explanations**")
-            for item in clarifications:
-                lines.append(f"- `{item['term']}` — {item['explanation']}")
-            lines.append("")
+    extra_paths: List[str] = []
+    for idx, data in everything_groups.items():
+        entries = data.get("entries") or []
+        if not entries:
+            continue
+        query_value = data.get("q") or f"everything-{idx}"
+        slug = make_query_slug(query_value, f"everything-{idx}")
+        group_title = f"{query_value} Briefing — {now:%Y-%m-%d %H:%M}"
+        group_content = render_digest(group_title, entries)
+        group_file = output_path / f"{slug}-briefing-{ts}.md"
+        with open(group_file, "w", encoding="utf-8") as fh:
+            fh.write(group_content)
+        LOGGER.info("Saved 'everything' digest to %s", group_file)
+        extra_paths.append(str(group_file))
 
-        lines.append("**English Brief**")
-        lines.append("")
-        lines.append(briefing.get("english_brief", "").strip())
-        lines.append("")
-
-        lines.append("**简体中文摘要**")
-        lines.append("")
-        lines.append(briefing.get("chinese_brief", "").strip())
-        lines.append("")
-
-    markdown_content = "\n".join(lines).strip() + "\n"
-    with open(path, "w", encoding="utf-8") as fh:
-        fh.write(markdown_content)
-
-    LOGGER.info("Saved digest to %s", path)
-    return path
+    return str(main_file), extra_paths
 
 
 if __name__ == "__main__":
@@ -455,7 +651,7 @@ if __name__ == "__main__":
 
     articles, news_meta = collect_articles(news_queries, last_run_dt)
     briefings, summary_notes, openai_usage = summarize_articles(articles)
-    out_path = save_markdown(articles, briefings, summary_notes)
+    main_path, extra_paths = save_markdown(articles, briefings, summary_notes)
 
     state["last_run"] = run_started.isoformat()
     save_state(state)
@@ -472,10 +668,16 @@ if __name__ == "__main__":
             "usage": openai_usage,
         },
         "outputs": {
-            "digest_path": out_path,
+            "digest_path": main_path,
+            "extra_digests": extra_paths,
             "articles_summarized": len(briefings),
         },
     }
 
     LOGGER.info("Run summary: %s", json.dumps(run_info, ensure_ascii=False))
-    print(f"Wrote digest to {out_path}")
+    if extra_paths:
+        LOGGER.info("Additional digests: %s", extra_paths)
+    if extra_paths:
+        print(f"Wrote digest to {main_path} (plus {len(extra_paths)} extra files).")
+    else:
+        print(f"Wrote digest to {main_path}")

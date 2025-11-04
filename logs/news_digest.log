@@ -254,3 +254,2032 @@
 2025-11-03 23:03:22,766 | INFO | Retained 0 articles for language=fr after filtering.
 2025-11-03 23:03:22,767 | INFO | Saved digest to digests/world-briefing-2025-11-03_2303.md
 2025-11-03 23:03:22,768 | INFO | Run summary: {"started_at": "2025-11-03T15:03:21.449614+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-03T15:00:35.145047+00:00", "requests": [{"request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en"}, {"request_params": {"language": "zh", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh"}, {"request_params": {"language": "de", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "de"}, {"request_params": {"language": "fr", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "fr"}]}, "openai": {"key": "sk-p..._AUA", "usage": {}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-03_2303.md", "articles_summarized": 0}}
+2025-11-04 08:00:54,927 | INFO | Requesting news with params={'language': 'en', 'pageSize': 40}
+2025-11-04 08:00:55,772 | INFO | NewsAPI returned 30 articles (status=ok, remaining=None)
+2025-11-04 08:00:55,772 | INFO | Retained 0 articles for language=en after filtering.
+2025-11-04 08:00:55,772 | INFO | Requesting news with params={'language': 'zh', 'pageSize': 40}
+2025-11-04 08:00:55,984 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 08:00:55,985 | INFO | Retained 0 articles for language=zh after filtering.
+2025-11-04 08:00:55,985 | INFO | Requesting news with params={'language': 'de', 'pageSize': 40}
+2025-11-04 08:00:56,227 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 08:00:56,228 | INFO | Retained 0 articles for language=de after filtering.
+2025-11-04 08:00:56,228 | INFO | Requesting news with params={'language': 'fr', 'pageSize': 40}
+2025-11-04 08:00:56,488 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 08:00:56,488 | INFO | Retained 0 articles for language=fr after filtering.
+2025-11-04 08:00:56,489 | INFO | Saved digest to digests/world-briefing-2025-11-04_0800.md
+2025-11-04 08:00:56,491 | INFO | Run summary: {"started_at": "2025-11-04T00:00:54.927353+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-03T15:03:21.449614+00:00", "requests": [{"request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en"}, {"request_params": {"language": "zh", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh"}, {"request_params": {"language": "de", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "de"}, {"request_params": {"language": "fr", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "fr"}]}, "openai": {"key": "sk-p..._AUA", "usage": {}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-04_0800.md", "articles_summarized": 0}}
+2025-11-04 08:01:46,683 | INFO | Requesting news with params={'language': 'en', 'pageSize': 40}
+2025-11-04 08:13:03,257 | INFO | Requesting top-headlines with params={'language': 'en', 'pageSize': 40}
+2025-11-04 08:13:03,847 | INFO | NewsAPI returned 30 articles (status=ok, remaining=None)
+2025-11-04 08:13:03,847 | INFO | Retained 30 articles for endpoint=top-headlines, language=en after filtering.
+2025-11-04 08:13:03,848 | INFO | Requesting top-headlines with params={'language': 'fr', 'pageSize': 40}
+2025-11-04 08:13:04,058 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 08:13:04,058 | INFO | Retained 0 articles for endpoint=top-headlines, language=fr after filtering.
+2025-11-04 08:13:04,058 | INFO | Requesting top-headlines with params={'language': 'de', 'pageSize': 40}
+2025-11-04 08:13:04,268 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 08:13:04,268 | INFO | Retained 0 articles for endpoint=top-headlines, language=de after filtering.
+2025-11-04 08:13:04,268 | INFO | Requesting everything with params={'q': '"中国" OR "中国经济"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-04 08:13:04,589 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 08:13:04,589 | INFO | Retained 40 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 08:13:04,792 | INFO | Summarizing 70 articles across 18 batches.
+2025-11-04 08:13:31,457 | INFO | Completed batch 1/18 (briefings=4).
+2025-11-04 08:13:56,071 | INFO | Completed batch 2/18 (briefings=8).
+2025-11-04 08:14:25,103 | INFO | Completed batch 3/18 (briefings=12).
+2025-11-04 08:14:46,556 | INFO | Completed batch 4/18 (briefings=16).
+2025-11-04 08:15:08,058 | INFO | Completed batch 5/18 (briefings=20).
+2025-11-04 08:15:36,113 | INFO | Completed batch 6/18 (briefings=24).
+2025-11-04 08:16:02,397 | INFO | Completed batch 7/18 (briefings=28).
+2025-11-04 08:16:29,369 | INFO | Completed batch 8/18 (briefings=32).
+2025-11-04 08:16:58,037 | INFO | Completed batch 9/18 (briefings=36).
+2025-11-04 08:17:22,823 | INFO | Completed batch 10/18 (briefings=40).
+2025-11-04 08:17:53,232 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 40,
+      "headline": "Three Children in Hebei Await Mother's Return After Police Detention Over 'Truthfulness, Compassion, Forbearance' Advocacy",
+      "key_takeaways": [
+        "A mother in a small village in Cangxian County, Hebei Province, was detained by Chinese Communist Party police for practicing 'Truthfulness, Compassion, Forbearance' ('Zhen, Shan, Ren').",
+        "She was respected by her community but was forcibly taken from her home in early May 2025.",
+        "Her three children, including the youngest who is under seven years old, have been anxiously waiting for her return.",
+        "This story exemplifies the wider issue of family separations in China related to political and ideological persecution."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Truthfulness, Compassion, Forbearance (真、善、忍 - Zhen, Shan, Ren)",
+          "explanation": "A core principle and slogan of Falun Gong, a spiritual practice suppressed by the Chinese Communist Party since 1999."
+        },
+        {
+          "term": "Chinese Communist Party (CCP)",
+          "explanation": "The ruling political party of the People’s Republic of China, which enforces strict ideological controls."
+        },
+        {
+          "term": "Cangxian County, Hebei Province",
+          "explanation": "A county in the northern province of Hebei, China."
+        }
+      ],
+      "english_brief": "In a small village in Hebei's Cangxian County, a mother who lived by the principles of 'Truthfulness, Compassion, Forbearance'—values promoted by the Falun Gong spiritual movement—was forcibly detained by Chinese Communist Party police in May 2025. Her respectful standing in the community did not protect her from arrest, and her three young children have since been left without their mother, highlighting the ongoing challenges faced by families affected by political repression in China.",
+      "chinese_brief": "在河北沧县的一个小村庄里，一位秉持“真、善、忍”原则的母亲——这一价值观源自法轮功修炼群体——于2025年5月被中共公安强行抓捕。她在社区内备受尊敬，但仍未能避免被拘留。她的三个年幼孩子从此失去了母亲，这凸显了中国政治打压下受到影响家庭面临的持续困境。"
+    },
+    {
+      "id": 41,
+      "headline": "Mark Gurman Discusses Apple AI 'Apple Intelligence' Launch Delays in China, Targeting iOS 26.4",
+      "key_takeaways": [
+        "Apple’s AI feature 'Apple Intelligence' aimed for mid-2025 launch in China has faced delays and remains unreleased.",
+        "Development challenges include engineering problems and suboptimal AI model performance.",
+        "Deployment in China is more complex, partly due to regulatory and partnership issues.",
+        "Apple had initially planned collaborations with local partners such as Alibaba."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Apple Intelligence",
+          "explanation": "Apple's proprietary AI technology designed to enhance its ecosystem, including features integrated with Siri and iOS."
+        },
+        {
+          "term": "Mark Gurman",
+          "explanation": "A prominent technology journalist at Bloomberg known for reporting on Apple and related tech products."
+        },
+        {
+          "term": "iOS 26.4",
+          "explanation": "An upcoming or planned version of Apple's mobile operating system iOS, which may include new AI features."
+        },
+        {
+          "term": "Alibaba",
+          "explanation": "One of China's largest technology companies, often partnering with foreign firms for local market strategies."
+        }
+      ],
+      "english_brief": "Apple’s anticipated AI feature called 'Apple Intelligence', planned for launch in China by mid-2025, has encountered development and deployment delays. Mark Gurman of Bloomberg reported that technological challenges, including engineering difficulties and poor model performance, have slowed progress. Additionally, entering the Chinese market involves regulatory hurdles and the need for local partnerships; Apple had considered working with companies like Alibaba. The feature is now tentatively targeted for integration in iOS version 26.4, though exact timelines remain unclear.",
+      "chinese_brief": "苹果原计划于2025年中在中国推出其人工智能功能“Apple Intelligence”，但因开发和部署中的技术挑战和市场复杂性而推迟。彭博社记者马克·古尔曼报道指出，工程难题和模型性能不佳影响了进展。此外，进入中国市场还面临监管障碍和本地合作需求，苹果曾考虑与阿里巴巴等公司合作。目前该功能目标集成于iOS 26.4版本，但具体时间尚未明确。"
+    },
+    {
+      "id": 42,
+      "headline": "US Defense Secretary Highlights Contrasting Stances Toward China Amid Military Communication Plans",
+      "key_takeaways": [
+        "US Defense Secretary Hegseth announced plans to establish direct military communication channels between Washington and Beijing.",
+        "He stated that US-China relations are at an unprecedented positive level, contrasting with previous tougher rhetoric.",
+        "The dual messaging reflects the complex and often contradictory nature of US policy toward China.",
+        "Direct military communication aims to reduce risk of miscalculation or conflict escalation."
+      ],
+      "term_clarifications": [
+        {
+          "term": "US Defense Secretary",
+          "explanation": "The head of the United States Department of Defense, responsible for national defense policies."
+        },
+        {
+          "term": "Hegseth",
+          "explanation": "Craig Hegseth, who is serving as US Defense Secretary, known for prior critical comments on China."
+        },
+        {
+          "term": "Military communication channels",
+          "explanation": "Direct lines of communication between military authorities to manage tensions and prevent misunderstandings."
+        }
+      ],
+      "english_brief": "US Defense Secretary Craig Hegseth recently revealed that Washington and Beijing have agreed to create direct military communication channels to enhance dialogue and reduce the risks of accidental conflict. Despite previously critical remarks about China, Hegseth now characterized US-China relations as being at an unprecedentedly positive phase. This change underscores the complex, sometimes contradictory nature of US China policy, balancing strategic competition with pragmatic engagement to maintain stability.",
+      "chinese_brief": "美国国防部长克雷格·赫格塞思近日表示，华盛顿与北京已同意建立直接军事通信渠道，以加强对话并降低意外冲突风险。尽管此前对中国持批评态度，赫格塞思现称美中关系处于前所未有的良好阶段。这反映了美国对华政策的复杂和有时矛盾的特点，在战略竞争和务实接触之间寻求平衡以维护稳定。"
+    },
+    {
+      "id": 43,
+      "headline": "Mark Gurman Outlines Apple’s Ambitious 2026 Roadmap Including AI, Foldable iPhones, and New Chips",
+      "key_takeaways": [
+        "Apple plans a critical year in 2026 coinciding with its 50th anniversary on April 1.",
+        "The company will emphasize an upgraded AI strategy, venture into smart home devices, and launch foldable iPhones.",
+        "New MacBooks powered by the M6 chip are expected, reflecting ongoing in-house silicon development.",
+        "Apple anticipates 10-12% revenue growth in the 2025 holiday quarter (FY2026 Q1), signaling strong financial outlook amid challenges like executive turnover and regulatory pressures."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Mark Gurman",
+          "explanation": "Bloomberg journalist specializing in Apple-related news and industry insights."
+        },
+        {
+          "term": "M6 chip",
+          "explanation": "The next generation Apple-designed processor expected to power upcoming MacBook laptops."
+        },
+        {
+          "term": "Foldable iPhone",
+          "explanation": "A rumored new category of iPhone featuring a flexible screen that can fold, representing a major product innovation."
+        },
+        {
+          "term": "Smart home devices",
+          "explanation": "Consumer electronic products integrated with AI to enable home automation and connectivity."
+        }
+      ],
+      "english_brief": "In his latest report, Bloomberg’s Mark Gurman highlighted Apple’s pivotal plans for 2026, the year marking its 50th anniversary. Apple intends to strengthen its AI capabilities, entering new markets such as smart home devices and foldable iPhones. The rollout of MacBooks with the advanced M6 chip will continue Apple’s silicon evolution. Despite industry challenges including executive changes and regulatory scrutiny, Apple projects a strong 10-12% revenue growth for its 2025 holiday quarter, reflecting confidence in its upcoming innovations and market demand.",
+      "chinese_brief": "彭博社记者马克·古尔曼在最新报告中强调，2026年是苹果公司成立50周年的重要一年。苹果计划强化人工智能战略，进军智能家居设备和折叠屏iPhone等新领域。搭载先进M6芯片的MacBook也将继续推动苹果芯片技术发展。尽管面临高管变动和监管压力，苹果
+2025-11-04 08:17:53,233 | WARNING | Batch 11 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 40,       "headline": "Three Children in Hebei Await Mother's Return After Police Detention Over 'Truthfulness, Compassion, Forbearance' Advocacy",       "key_takeaways": [         "A mother in a small village in Cangxian County, Hebei Province, was detained by Chinese Communist Party police for practicing 'Truthfulness, Compassion, Forbearance' ('Zhen, Shan, Ren').",         "She was respected by her community but was forcibly taken from her home in early Ma...)
+2025-11-04 08:18:22,619 | INFO | Completed batch 11/18 (briefings=44).
+2025-11-04 08:18:47,915 | INFO | Completed batch 12/18 (briefings=48).
+2025-11-04 08:19:15,347 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 48,
+      "headline": "China Unveils Indigenous CJ2000 Engine for C929 Intercontinental Airliner",
+      "key_takeaways": [
+        "The CJ2000 is a domestically developed high-bypass turbofan engine by China Aviation Engine Group.",
+        "It will be used to power the C929 wide-body, long-range commercial aircraft co-developed by China and Russia.",
+        "The engine matches international advanced technical standards, symbolizing China's leap in aeronautical engineering.",
+        "China is pushing aviation technology towards higher-end, intelligent, and environmentally friendly development."
+      ],
+      "term_clarifications": [
+        {
+          "term": "CJ2000",
+          "explanation": "A high-bypass turbofan engine independently developed by China Aviation Engine Group for large aircraft applications."
+        },
+        {
+          "term": "C929",
+          "explanation": "A next-generation wide-body, long-range commercial airliner jointly developed by China and Russia."
+        },
+        {
+          "term": "High-bypass turbofan engine",
+          "explanation": "A jet engine design that uses a large volume of air bypassing the core engine, improving fuel efficiency and reducing noise."
+        },
+        {
+          "term": "China Aviation Engine Group",
+          "explanation": "A state-owned Chinese aerospace company responsible for the research, development, and manufacture of aircraft engines."
+        }
+      ],
+      "english_brief": "China Aviation Engine Group has introduced the CJ2000, a high-bypass turbofan jet engine designed to power the upcoming C929 intercontinental wide-body airliner co-developed with Russia. This marks a significant milestone in China's aerospace industry as the engine meets international standards and showcases local innovation overcoming past reliance on foreign technologies. With a focus on high-end, intelligent, and green propulsion technologies, China's aviation sector is advancing strongly towards enhanced autonomy and competitiveness in the global market.",
+      "chinese_brief": "中国航发集团推出了自主研发的高涵道比涡扇发动机CJ2000，该发动机将用于中俄联合研制的C929洲际宽体客机。这标志着中国航空工业的重要里程碑，表明国产发动机技术已达到国际先进水平，突破了过去对外技术依赖。中国正聚焦高端化、智能化和绿色航空动力技术，推动航空领域向更自主、更具竞争力的方向稳步发展。"
+    },
+    {
+      "id": 49,
+      "headline": "LCK Dominates as T1 Sweeps TES to Reach S15 LoL Finals in China",
+      "key_takeaways": [
+        "T1 from South Korea's LCK defeated China's TES 3-0 in the semifinals of the League of Legends 2025 World Championship.",
+        "The final will be an all-LCK matchup with T1 facing KT, marking the first time since 2017 that LCK finalists meet in China.",
+        "Star player Faker maintains a perfect record against LPL teams in World Championship best-of-five matches.",
+        "The event highlights LCK's resurgence and deep talent pool, reinforcing its status as the world's premier League of Legends region."
+      ],
+      "term_clarifications": [
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, the top professional LoL esports league in South Korea."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a professional League of Legends team from the Chinese LPL league."
+        },
+        {
+          "term": "T1",
+          "explanation": "A highly successful South Korean esports organization famous for its League of Legends team and star player Faker."
+        },
+        {
+          "term": "Faker",
+          "explanation": "Lee Sang-hyeok, considered one of the greatest League of Legends players of all time."
+        },
+        {
+          "term": "S15",
+          "explanation": "Season 15 of the League of Legends World Championship, a major annual global esports tournament."
+        },
+        {
+          "term": "BO5",
+          "explanation": "Best of five, a match format where the first team to win three games advances."
+        }
+      ],
+      "english_brief": "In the 2025 League of Legends World Championship semifinals, South Korea's T1 decisively defeated China's Top Esports (TES) with a clean 3-0 sweep, securing their spot in the grand final against LCK’s KT team. This all-Korean final, the first hosted in China since 2017, underscores the continued dominance of the LCK region in global competitive play. T1’s legendary mid-laner Faker extends his flawless record against Chinese teams in best-of-five formats, propelling his team toward a potential sixth championship title and renewing the LCK's stronghold in the esport’s highest echelon.",
+      "chinese_brief": "在2025年《英雄联盟》全球总决赛半决赛中，韩国LCK赛区的T1战队以3比0完胜中国LPL赛区的Top Esports（TES），晋级总决赛将对阵同属LCK赛区的KT战队。这次于中国举办的全韩决赛，距2017年已有八年，彰显了LCK赛区在国际赛场上的持续统治力。T1中单传奇选手Faker在BO5赛制下保持对LPL战队的不败战绩，助力球队剑指第六冠，巩固LCK在电竞顶级舞台的领先地位。"
+    },
+    {
+      "id": 50,
+      "headline": "Nexperia China Accuses Dutch Parent of RMB 1 Billion Payment Default Amid Supply Halt",
+      "key_takeaways": [
+        "Nexperia’s China subsidiary alleges that its Dutch parent company owes 1 billion RMB and unjustifiably suspended wafer supply.",
+        "The China side denies any contractual breach on its part.",
+        "Following a new China-US agreement, China’s Commerce Ministry may exempt eligible Nexperia exports from certain restrictions.",
+        "The German government remains cautiously optimistic about easing tensions surrounding this semiconductor dispute."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Nexperia",
+          "explanation": "A global semiconductor company specializing in discrete, logic, and MOSFET components, headquartered in the Netherlands."
+        },
+        {
+          "term": "Wafer",
+          "explanation": "Thin slices of semiconductor material used as substrates for manufacturing integrated circuits."
+        },
+        {
+          "term": "Commerce Ministry",
+          "explanation": "Refers to the Ministry of Commerce of China, responsible for trade policies and export controls."
+        }
+      ],
+      "english_brief": "Nexperia’s Chinese subsidiary has publicly accused its Dutch parent company of owing over one billion RMB and irresponsibly halting the supply of semiconductor wafers, while affirming its own compliance with contractual obligations. This dispute arises amid complex geopolitical and trade tensions between China and the United States. Recently, a new China-US agreement indicates possible exemptions for certain Nexperia exports, which China’s Commerce Ministry is considering. Meanwhile, the German government views progress in this dispute with cautious optimism, highlighting the intricate interplay of global semiconductor supply chains and international diplomacy.",
+      "chinese_brief": "荷兰安世半导体中国子公司公开指责其总部拖欠超过10亿元人民币货款，并不负责任地暂停半导体晶圆供应，同时坚称自身没有违约。这场争议发生在中美复杂的地缘政治和贸易紧张局势中。近期中美达成新协议，预计中国商务部将考虑对部分安世产品出口予以豁免。德国政府对此事件的缓和前景持谨慎乐观态度，反映出全球半导体供应链与国际外交的复杂交织。"
+    },
+    {
+      "id": 51,
+      "headline": "Super Flower Launches LEADEX VIII Platinum BD 1000W Power Supply with ATX 3.1 Standard",
+      "key_takeaways": [
+        "The LEADEX VIII Platinum BD 1000W is the first of its generation available in mainland China.",
+        "It features a compact 125mm short chassis design compliant with Intel's ATX 3.1 power supply standard.",
+        "The unit offers fully modular cabling and supports 200% peak load capacity with native 12V 2x6-pin PCIe connectors.",
+        "Achieves a Cybenetics platinum efficiency certification around 93%, highlighting energy efficiency and reliability."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Super Flower",
+          "explanation": "A well-known Chinese manufacturer specializing in high-performance computer power supplies."
+        },
+        {
+          "term": "LEADEX VIII Platinum BD 1000W",
+          "explanation": "A high-end, 1000-watt power supply unit with platinum-rated energy efficiency and advanced features."
+        },
+        {
+          "term": "ATX 3.1",
+          "explanation": "The latest power supply form factor and standard defined by Intel, improving power delivery and compatibility."
+        },
+        {
+          "term": "Cybenetics",
+          "explanation": "An independent organization that tests and certifies power supply efficiency and noise levels."
+        }
+      ],
+      "english_brief
+2025-11-04 08:19:15,349 | WARNING | Batch 13 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 48,       "headline": "China Unveils Indigenous CJ2000 Engine for C929 Intercontinental Airliner",       "key_takeaways": [         "The CJ2000 is a domestically developed high-bypass turbofan engine by China Aviation Engine Group.",         "It will be used to power the C929 wide-body, long-range commercial aircraft co-developed by China and Russia.",         "The engine matches international advanced technical standards, symbolizing China's leap in aeronaut...)
+2025-11-04 08:19:43,314 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 48,
+      "headline": "China Unveils CJ2000 Engine for C929 Long-Haul Aircraft",
+      "key_takeaways": [
+        "China's CJ2000 is a large-bypass turbofan engine designed for the C929 wide-body aircraft.",
+        "The engine represents China's leap in aviation technology, previously a key industrial challenge.",
+        "China Aviation Engine Group showcased CJ2000 along with other advanced propulsion systems at the 2025 Nanchang Flight Expo.",
+        "CJ2000 aims to compete with international aviation engines on performance and efficiency."
+      ],
+      "term_clarifications": [
+        {
+          "term": "CJ2000",
+          "explanation": "A large-bypass turbofan jet engine developed autonomously by China, intended for civil and military aircraft."
+        },
+        {
+          "term": "C929",
+          "explanation": "A long-range, wide-body commercial aircraft jointly developed by China and Russia to compete globally with Boeing and Airbus."
+        },
+        {
+          "term": "Large-Bypass Turbofan",
+          "explanation": "A type of jet engine with a high bypass ratio, meaning most air bypasses the core engine, improving fuel efficiency and reducing noise."
+        },
+        {
+          "term": "China Aviation Engine Group",
+          "explanation": "A state-owned enterprise focused on aviation engine research, development, and manufacturing in China."
+        }
+      ],
+      "english_brief": "The unveiling of the CJ2000 large-bypass turbofan engine marks a significant milestone in China's aviation industry, overcoming past challenges that limited domestic aircraft engine production. Designed for the upcoming C929 wide-body long-haul aircraft, the CJ2000 was showcased at the 2025 Nanchang Flight Expo, signaling China's ambitions to enter and compete in the global civil aviation market with advanced, efficient propulsion technology. This development not only underlines China's technological independence but also contributes to its strategic goals of exporting domestically-produced aircraft and reducing reliance on foreign suppliers.",
+      "chinese_brief": "CJ2000大涵道比涡扇发动机的亮相标志着中国航空产业的重大里程碑，克服了过去限制国产飞机发动机生产的难题。该发动机专为即将面世的C929远程宽体客机设计，于2025年南昌飞行大会上亮相，显示出中国进军全球民用航空市场、以先进高效动力技术参与竞争的雄心。这一进展不仅彰显了中国的技术自主性，也助力其出口国产飞机、减少对外国供应商依赖的战略目标。"
+    },
+    {
+      "id": 49,
+      "headline": "LCK Dominates As T1 Defeats TES, Sets Up All-Korean LoL Finals in China",
+      "key_takeaways": [
+        "T1 from the LCK region defeated China's TES 3-0 in the 2025 League of Legends World Championship semifinals.",
+        "The final will feature two LCK teams, T1 and KT, marking the first time since 2017 that LCK secured both finalist spots on Chinese soil.",
+        "Faker, T1's legendary mid-laner, remains undefeated against LPL teams in best-of-five matches at Worlds, pursuing a sixth championship.",
+        "The grand finals will take place in Chengdu on November 9, 2025."
+      ],
+      "term_clarifications": [
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, South Korea's professional League of Legends esports league."
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, the professional League of Legends esports league based in China."
+        },
+        {
+          "term": "T1",
+          "explanation": "A leading esports organization from South Korea, home to Faker and known for multiple World Championship titles."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a prominent Chinese professional League of Legends team."
+        },
+        {
+          "term": "Faker",
+          "explanation": "Lee Sang-hyeok, a legendary South Korean professional League of Legends player widely regarded as one of the greatest."
+        },
+        {
+          "term": "BO5",
+          "explanation": "Best of Five; a match format where the first team to win three games wins the series."
+        }
+      ],
+      "english_brief": "After an intense semifinal, South Korea's T1 swept China's TES 3-0 in the 2025 League of Legends World Championship, securing a spot in the finals. The championship match, held in Chengdu, will be an all-Korean affair as T1 faces KT, marking the first time since 2017 that the LCK region claimed both finalist positions on Chinese soil. Faker, T1's iconic player, maintains a perfect BO5 record against LPL teams at Worlds, and is aiming for his sixth World Championship title. This underscores the ongoing rivalry between Korea and China in esports and highlights the strength of the LCK.",
+      "chinese_brief": "经过激烈的半决赛，韩国LCK赛区的T1战队以3比0横扫中国LPL赛区的TES，晋级2025年《英雄联盟》全球总决赛决赛。决赛将在成都举办，呈现首次自2017年以来LCK赛区包揽冠亚军的局面，T1将对阵同区的KT战队。T1的标志性选手Faker在世界赛BO5对阵LPL战队保持全胜，正冲击个人第六冠。这体现了韩中两国电竞对抗的持续激烈，也彰显了LCK的整体实力。"
+    },
+    {
+      "id": 50,
+      "headline": "Nexperia China Accuses Dutch Parent of Owing 1 Billion RMB Amid Wafer Supply Halt",
+      "key_takeaways": [
+        "Nexperia's Chinese subsidiary claims the Dutch headquarters owes it 1 billion RMB and accuses it of irresponsible suspension of wafer supply.",
+        "The Chinese subsidiary denies any breach of contract in the dispute.",
+        "A new US-China agreement may exempt certain Nexperia products from export restrictions, per China's Ministry of Commerce.",
+        "The German government expresses cautious optimism about a resolution to the dispute."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Nexperia",
+          "explanation": "A global semiconductor company headquartered in the Netherlands, specializing in logic, MOSFETs, and diodes."
+        },
+        {
+          "term": "Wafer supply",
+          "explanation": "Semiconductor wafers are thin slices of semiconductor material used to fabricate integrated circuits."
+        },
+        {
+          "term": "RMB",
+          "explanation": "Renminbi, the official currency of China."
+        },
+        {
+          "term": "US-China agreement",
+          "explanation": "Recent negotiations between the US and China on trade and technology export controls that impact semiconductor companies."
+        }
+      ],
+      "english_brief": "Nexperia's Chinese subsidiary has publicly accused its Dutch parent company of owing 1 billion RMB and irresponsibly halting the supply of semiconductor wafers, a critical component for chip manufacturing. The Chinese side denies any contractual violations amid the dispute. This comes in the context of a new US-China agreement that may allow certain Nexperia products to be exempted from export restrictions, potentially easing operational tensions. Meanwhile, the German government remains cautiously optimistic about a potential resolution, highlighting broader geopolitical complexities impacting the global semiconductor industry.",
+      "chinese_brief": "荷兰安世半导体的中国子公司公开指责总部拖欠10亿元人民币货款，并且不负责任地暂停晶圆供应，这一关键芯片制造组件。中方否认有任何违约行为。此事发生在中美达成新协议的背景下，该协议可能允许部分安世产品出口豁免，或有助于缓解运营紧张局势。德国政府对此事的解决持谨慎乐观态度，反映出全球半导体产业所面临的地缘政治复杂性。"
+    },
+    {
+      "id": 51,
+      "headline": "SUPER FLOWER Launches LEADEX VIII Platinum BD 1000W Power Supply with ATX 3.1 Certification",
+      "key_takeaways": [
+        "SUPER FLOWER released the LEADEX VIII Platinum BD 1000W PSU with a short 125mm form factor meeting ATX 3.1 specifications.",
+        "The power supply supports 200% instantaneous peak load and features full modular cables for easier installation.",
+        "It includes native dual 12V 2×6-pin connectors aimed at high-performance computing components.",
+        "Certified by Cybenetics with approximately 93% efficiency, the PSU targets premium PC builders."
+      ],
+      "term_clarifications": [
+        {
+          "term": "SUPER FLOWER",
+          "explanation": "A well-known Chinese manufacturer of computer power supplies and components."
+        },
+        {
+          "term": "LEADEX VIII Platinum BD 1000W",
+          "explanation": "A high-performance 1000W power supply unit designed with platinum-level efficiency and modern connectivity."
+        },
+        {
+          "term": "ATX
+2025-11-04 08:19:43,315 | WARNING | Batch 13 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 48,       "headline": "China Unveils CJ2000 Engine for C929 Long-Haul Aircraft",       "key_takeaways": [         "China's CJ2000 is a large-bypass turbofan engine designed for the C929 wide-body aircraft.",         "The engine represents China's leap in aviation technology, previously a key industrial challenge.",         "China Aviation Engine Group showcased CJ2000 along with other advanced propulsion systems at the 2025 Nanchang Flight Expo.",         "CJ...)
+2025-11-04 08:20:20,178 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 48,
+      "headline": "China Unveils CJ2000 Engine to Power C929 Intercontinental Airliner",
+      "key_takeaways": [
+        "China has developed the CJ2000, a large bypass ratio turbofan engine designed domestically.",
+        "The CJ2000 will be used on the C929, a long-range wide-body passenger aircraft jointly developed by China and Russia.",
+        "China Aviation Engine Group emphasizes innovation towards high-end, intelligent, and green aviation engines.",
+        "The CJ2000's performance is benchmarked against international advanced engines, signifying China's progress in aerospace technology."
+      ],
+      "term_clarifications": [
+        {
+          "term": "CJ2000",
+          "explanation": "A large bypass ratio turbofan aircraft engine independently developed by China for wide-body aircraft."
+        },
+        {
+          "term": "C929",
+          "explanation": "A large wide-body long-range passenger jet developed jointly by China and Russia, aiming to compete globally."
+        },
+        {
+          "term": "Bypass ratio",
+          "explanation": "The ratio of the mass flow rate of air that bypasses the engine core to the mass flow rate passing through the core; higher ratios generally improve fuel efficiency in turbofan engines."
+        },
+        {
+          "term": "China Aviation Engine Group",
+          "explanation": "China's leading state-owned enterprise dedicated to aircraft engine development and manufacturing."
+        }
+      ],
+      "english_brief": "China has showcased its domestically developed CJ2000 turbofan engine at the 2025 Nanchang Flight Conference. This engine, designed to power the C929 intercontinental wide-body airliner, signifies a major milestone for China's aviation industry which historically struggled with engine technology. The CJ2000's advanced specifications and focus on intelligence and green technology highlight China's ambitions to become self-reliant and globally competitive in aerospace propulsion systems.",
+      "chinese_brief": "中国在2025年南昌飞行大会上展示了自主研发的CJ2000涡扇发动机。该发动机将装备中俄联合研制的C929远程宽体客机，标志着中国航空工业在发动机技术上取得重大突破。CJ2000具备先进性能，着重于智能化和绿色技术，体现了中国在航空动力领域实现自主创新和全球竞争力的雄心。"
+    },
+    {
+      "id": 49,
+      "headline": "LCK Teams Dominate LoL Worlds S15 Finals in China After Eight Years",
+      "key_takeaways": [
+        "LCK team T1 defeated LPL's TES in the 2025 League of Legends World Championship semifinals with a clean 3-0 sweep.",
+        "The finals on November 9 in Chengdu will feature an all-LCK match between T1 and KT, marking the first time since 2017 that LCK claims both finalists on Chinese soil.",
+        "Faker, T1's star player, maintains an undefeated record against LPL teams in best-of-five global tournament matches, targeting his sixth world title.",
+        "The outcome highlights LCK's continued dominance and sparks significant excitement in the competitive esports community."
+      ],
+      "term_clarifications": [
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, the top professional League of Legends league in South Korea."
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, the premier professional League of Legends league in China."
+        },
+        {
+          "term": "T1",
+          "explanation": "A top-tier South Korean esports team known for multiple world championships in League of Legends."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a leading Chinese professional League of Legends team."
+        },
+        {
+          "term": "Faker",
+          "explanation": "Lee Sang-hyeok, the star midlaner player of T1, widely regarded as one of the greatest esports players of all time."
+        },
+        {
+          "term": "Best-of-five (BO5)",
+          "explanation": "A tournament format where teams play a series of up to five games, with the first to win three games advancing."
+        }
+      ],
+      "english_brief": "The 2025 League of Legends World Championship semifinals ended with South Korea's LCK team T1 decisively beating China's Top Esports (TES) in a 3-0 sweep. The finals planned for November 9 in Chengdu will be a historic all-LCK showdown as T1 faces KT. This marks the first time since 2017 that the LCK secured both finals spots on Chinese soil. Faker, T1's star player, remains undefeated in global best-of-five matches against Chinese teams, aiming for his sixth world championship, underscoring LCK's sustained competitive strength in international esports.",
+      "chinese_brief": "2025年《英雄联盟》全球总决赛半决赛，韩国LCK赛区的T1战队以3-0横扫中国LPL赛区的顶级电竞队TES。11月9日于成都举行的决赛将成为历史上首次自2017年以来在中国举办的全LCK赛区对决，由T1对阵KT。T1核心选手Faker在全球BO5赛制中对阵LPL战队保持不败，力争第六座冠军奖杯，展示了LCK在国际电竞舞台上的持续统治力。"
+    },
+    {
+      "id": 50,
+      "headline": "Nexperia China Alleges Dutch Parent Owes RMB 1 Billion Amid Wafer Supply Suspension",
+      "key_takeaways": [
+        "Nexperia's China subsidiary accuses its Dutch parent company of irresponsibility for suspending wafer supplies.",
+        "The Chinese subsidiary claims it has not breached contracts and that the parent company owes 1 billion RMB.",
+        "Following new US-China agreements, China's Ministry of Commerce may exempt certain Nexperia products from export controls.",
+        "The German government remains cautiously optimistic about resolving tensions related to this dispute."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Nexperia",
+          "explanation": "A semiconductor manufacturing company headquartered in the Netherlands with significant operations in China."
+        },
+        {
+          "term": "Wafer",
+          "explanation": "A thin slice of semiconductor material, such as silicon, used in the fabrication of integrated circuits."
+        },
+        {
+          "term": "RMB",
+          "explanation": "Renminbi, the official currency of the People's Republic of China."
+        },
+        {
+          "term": "Ministry of Commerce (China)",
+          "explanation": "The Chinese government body responsible for regulating foreign trade and economic cooperation."
+        }
+      ],
+      "english_brief": "Nexperia's Chinese subsidiary accuses the Dutch parent company of irresponsibly stopping wafer supplies, claiming it is contractually compliant while the parent owes 1 billion RMB. This dispute arises as new U.S.-China agreements could allow exemptions for some Nexperia products from export controls. The German government expresses cautious optimism about easing tensions. The case highlights the complex interplay of global geopolitics, supply chain security, and industrial relations amid growing trade frictions.",
+      "chinese_brief": "荷兰安世半导体中国子公司指责总部不负责任地暂停晶圆供应，强调自身未违反合同且总部欠款10亿元人民币。此争议背景下，新的中美协议可能允许部分安世产品出口免于管制。德国政府对此表示谨慎乐观。该事件凸显了全球地缘政治、供应链安全与产业关系在贸易摩擦加剧中的复杂互动。"
+    },
+    {
+      "id": 51,
+      "headline": "Super Flower Launches LEADEX VIII Platinum BD 1000W Power Supply with Platinum Efficiency",
+      "key_takeaways": [
+        "Super Flower introduces the LEADEX VIII Platinum BD 1000W power supply, the first of its generation in mainland China.",
+        "The PSU features a compact 125mm length, full modular cables, and complies with Intel's ATX 3.1 specification.",
+        "It supports 200% peak instantaneous load and includes native 12V-2×6 pin connectors.",
+        "The product is certified with high efficiency (Cybenetics Platinum, ~93%) and is designed to meet modern high-performance PC power demands."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Super Flower",
+          "explanation": "A well-known Chinese brand specializing in computer power supplies and cooling products."
+        },
+        {
+          "term": "LEADEX VIII Platinum BD 1000W",
+          "explanation": "A high-efficiency 1000 watt power supply unit (PSU) model from Super Flower conforming to modern standards."
+        },
+        {
+          "term": "ATX 3.1",
+          "explanation": "The latest Intel standard for PC power supply specifications, focusing on performance, efficiency, and stability."
+        },
+        {
+          "term": "Cybenetics Platinum",
+          "explanation": "A certification from Cybenetics measuring PSU efficiency with Platinum representing very high efficiency (~93%)."
+        },
+        {
+          "term": "Full modular",
+          "explanation
+2025-11-04 08:20:20,179 | WARNING | Batch 13 attempt 3 produced invalid JSON (snippet={   "briefings": [     {       "id": 48,       "headline": "China Unveils CJ2000 Engine to Power C929 Intercontinental Airliner",       "key_takeaways": [         "China has developed the CJ2000, a large bypass ratio turbofan engine designed domestically.",         "The CJ2000 will be used on the C929, a long-range wide-body passenger aircraft jointly developed by China and Russia.",         "China Aviation Engine Group emphasizes innovation towards high-end, intelligent, and green aviation engi...)
+2025-11-04 13:09:49,217 | INFO | Requesting top-headlines with params={'language': 'en', 'pageSize': 40}
+2025-11-04 13:09:49,860 | INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+2025-11-04 13:09:49,861 | INFO | Retained 28 articles for endpoint=top-headlines, language=en after filtering.
+2025-11-04 13:09:49,861 | INFO | Requesting top-headlines with params={'language': 'fr', 'pageSize': 40}
+2025-11-04 13:09:50,061 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:09:50,061 | INFO | Retained 0 articles for endpoint=top-headlines, language=fr after filtering.
+2025-11-04 13:09:50,061 | INFO | Requesting top-headlines with params={'language': 'de', 'pageSize': 40}
+2025-11-04 13:09:50,265 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:09:50,265 | INFO | Retained 0 articles for endpoint=top-headlines, language=de after filtering.
+2025-11-04 13:09:50,265 | INFO | Requesting everything with params={'q': '"中国" OR "中国经济"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-04 13:09:50,576 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 13:09:50,576 | INFO | Retained 40 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:09:50,760 | INFO | Summarizing 68 articles across 17 batches.
+2025-11-04 13:10:20,476 | INFO | Completed batch 1/17 (briefings=4).
+2025-11-04 13:10:58,843 | INFO | Completed batch 2/17 (briefings=8).
+2025-11-04 13:11:23,897 | INFO | Completed batch 3/17 (briefings=12).
+2025-11-04 13:11:53,524 | INFO | Completed batch 4/17 (briefings=16).
+2025-11-04 13:12:21,273 | INFO | Completed batch 5/17 (briefings=20).
+2025-11-04 13:12:53,556 | INFO | Completed batch 6/17 (briefings=24).
+2025-11-04 13:13:17,598 | INFO | Completed batch 7/17 (briefings=28).
+2025-11-04 13:13:45,326 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 28,
+      "headline": "Apple's Revenue in Greater China Declines Amid Local Competition and Supply Issues",
+      "key_takeaways": [
+        "Apple’s revenue in Greater China fell by 3.6% year-over-year in Q4 2025, marking the only global market with a decline.",
+        "CEO Tim Cook attributed the drop primarily to supply constraints impacting iPhone sales quarter-over-quarter.",
+        "Experts point to both internal factors, such as limited upgrades in iPhone models and delayed launch of iPhone Air, and external pressures from rising domestic brands like Huawei.",
+        "Huawei’s resurgence has directly challenged Apple’s market share in China’s high-end smartphone segment."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Greater China",
+          "explanation": "A market term including mainland China, Hong Kong, Macau, and Taiwan."
+        },
+        {
+          "term": "iPhone Air",
+          "explanation": "A rumored or upcoming iPhone model expected to be a more affordable or differently positioned member of the iPhone lineup."
+        },
+        {
+          "term": "Huawei",
+          "explanation": "A dominant Chinese technology company, particularly strong in smartphones and telecommunications."
+        }
+      ],
+      "english_brief": "In the fourth quarter of fiscal year 2025, Apple's revenue in Greater China declined by 3.6% year-over-year, making it the only global market where the company faced a revenue drop. CEO Tim Cook cited supply limitations, which caused a sequential drop in iPhone sales. However, analysts believe that a combination of internal challenges—such as modest upgrades in flagship iPhones and delayed iPhone Air release—and fierce competition from strong domestic rivals like Huawei have eroded Apple's foothold in the Chinese market. Huawei's comeback in the high-end segment particularly threatens Apple's market share, reflecting a shift in consumer preferences and intensifying market competition.",
+      "chinese_brief": "2025财年第四季度，苹果在大中华区的营收同比下降了3.6%，成为全球唯一营收下滑的市场。苹果CEO库克表示，供应限制导致iPhone销量环比下降是主要原因。然而，分析师认为，iPhone主力机型升级幅度有限及iPhone Air发售延迟等内部因素，加上华为等本土品牌的强势崛起，共同削弱了苹果在中国市场的竞争地位。华为在高端市场的回归尤其对苹果份额构成挑战，反映了消费偏好变化和市场竞争加剧。"
+    },
+    {
+      "id": 29,
+      "headline": "Documentary 'Nine Commentaries on the Communist Party' Sparks Global Discussion",
+      "key_takeaways": [
+        "'Nine Commentaries on the Communist Party' has attracted worldwide attention since its release in 2004.",
+        "The documentary provides detailed historical analysis and ideological reflection on the trajectory of the Chinese Communist Party (CCP).",
+        "It examines the CCP's impact across political, economic, cultural, and social domains.",
+        "The documentary continues to be a significant catalyst for debate on China's modern political history."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Nine Commentaries on the Communist Party",
+          "explanation": "A series of editorials originally published by The Epoch Times in 2004, offering critical views and analysis of the Chinese Communist Party."
+        },
+        {
+          "term": "Chinese Communist Party (CCP)",
+          "explanation": "The ruling political party of the People's Republic of China since 1949."
+        }
+      ],
+      "english_brief": "The documentary series 'Nine Commentaries on the Communist Party,' based on the influential 2004 publication, continues to resonate globally nearly 21 years after its debut. It offers a critical historical and ideological perspective on the Chinese Communist Party's founding, development, and governance. The film delves into the extensive political, economic, cultural, and social consequences attributed to the CCP’s rule, making it a provocative work that fuels ongoing discussions about China's history and future. Viewers and researchers reference it as an important source for understanding the CCP's complex legacy.",
+      "chinese_brief": "基于2004年影响深远的著作，《九评共产党》系列纪录片至今近21年仍在全球引发共鸣。该片对中国共产党从建党、发展到执政过程进行了批判性的历史及思想反思，探讨了其在政治、经济、文化和社会层面所造成的深远影响。这部纪录片作为一个发人深省的作品，持续推动关于中国历史和未来的讨论，被观众和研究者视为理解中共复杂历史遗产的重要资料。"
+    },
+    {
+      "id": 30,
+      "headline": "NVIDIA CEO Jensen Huang Directly Oversees 36 Key Executives",
+      "key_takeaways": [
+        "NVIDIA CEO Jensen Huang has 36 direct reports across seven main business functions.",
+        "These functions include strategy, hardware, software, artificial intelligence (AI), public relations, networking, and an executive assistant.",
+        "Hardware remains a core focus, with 9 executives responsible for GPU, telecommunications, and DGX systems reporting directly to Huang.",
+        "The leadership structure reveals Huang’s strategic priorities, especially his emphasis on AI and hardware."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Jensen Huang",
+          "explanation": "The co-founder and CEO of NVIDIA, a leading technology company specializing in graphics processing units (GPUs) and AI."
+        },
+        {
+          "term": "GPU",
+          "explanation": "Graphics Processing Unit, a specialized processor designed for rendering images and increasingly used in AI and computing tasks."
+        },
+        {
+          "term": "DGX",
+          "explanation": "NVIDIA's line of AI supercomputers optimized for machine learning and deep learning workloads."
+        },
+        {
+          "term": "AI",
+          "explanation": "Artificial Intelligence, the simulation of human intelligence in machines to perform tasks such as learning and problem-solving."
+        }
+      ],
+      "english_brief": "NVIDIA CEO Jensen Huang directly manages a team of 36 top executives organized into seven key business areas: strategy, hardware, software, AI, public relations, networking, and an executive assistant. Notably, hardware leadership constitutes one-third of this group, underscoring the company’s continued reliance on GPUs, telecom, and DGX system development. This organizational setup highlights Huang’s focused approach to advancing NVIDIA’s leadership in AI and hardware innovation, revealing strategic intent amidst evolving market demands and technological opportunities.",
+      "chinese_brief": "英伟达CEO黄仁勋直接管理着36名高管，涵盖战略、硬件、软件、人工智能、公关、网络及执行助理七大职能板块。其中硬件团队占三分之一，包括负责GPU、电信和DGX系统的高管，体现硬件仍是公司的核心重点。此组织架构展现了黄仁勋推动英伟达在AI和硬件创新领域保持领先的战略布局，应对市场需求和技术机遇的变化。"
+    },
+    {
+      "id": 31,
+      "headline": "NVIDIA to Increase Semiconductor Shipments to South Korea Fivefold",
+      "key_takeaways": [
+        "NVIDIA plans to boost shipments of its advanced AI semiconductor 'Blackwell' to South Korea.",
+        "Services will expand to major Korean companies including Samsung Electronics and SK Group as well as the government.",
+        "Previously, NVIDIA supplied China with AI semiconductors that have limited performance versions.",
+        "South Korea is intensifying its semiconductor development amidst global competitive pressures."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Blackwell",
+          "explanation": "NVIDIA's most advanced generation AI semiconductor chip designed for high-performance computing."
+        },
+        {
+          "term": "Samsung Electronics",
+          "explanation": "A leading South Korean multinational electronics company, globally influential in semiconductors, smartphones, and displays."
+        },
+        {
+          "term": "SK Group",
+          "explanation": "A major South Korean conglomerate with significant interests in energy, chemicals, and semiconductors."
+        },
+        {
+          "term": "AI semiconductor",
+          "explanation": "A type of chip optimized specifically for artificial intelligence applications and machine learning processing."
+        }
+      ],
+      "english_brief": "NVIDIA is set to increase its supply of 'Blackwell,' its newest and most advanced AI semiconductor, to South Korea by five times. This expansion targets major clients such as Samsung Electronics, SK Group, and governmental entities, underlining South Korea’s strategic importance in NVIDIA’s semiconductor ecosystem. Previously, NVIDIA offered China only lower-performance versions of these AI chips. The move aligns with South Korea’s broader efforts to strengthen its semiconductor industry amid intensifying global technology competition, signaling NVIDIA's commitment to deeper engagement in this key market.",
+      "chinese_brief": "英伟达将向南韩大幅增加其最新最先进的AI半导体“Blackwell”的供应量，提升至现有的五倍。此次扩张主要面向三星电子、SK集团及政府机构，凸显南韩在英伟达半导体生态系统中的战略地位。此前，英伟达只向中国供应性能较低版本的AI芯片。此
+2025-11-04 13:13:45,327 | WARNING | Batch 8 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 28,       "headline": "Apple's Revenue in Greater China Declines Amid Local Competition and Supply Issues",       "key_takeaways": [         "Apple’s revenue in Greater China fell by 3.6% year-over-year in Q4 2025, marking the only global market with a decline.",         "CEO Tim Cook attributed the drop primarily to supply constraints impacting iPhone sales quarter-over-quarter.",         "Experts point to both internal factors, such as limited upgrades in i...)
+2025-11-04 13:14:15,493 | INFO | Completed batch 8/17 (briefings=32).
+2025-11-04 13:14:44,287 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 32,
+      "headline": "AIoT Evolution Unfolds at 2025 World Internet of Things Expo in Wuxi",
+      "key_takeaways": [
+        "The 2025 World Internet of Things Expo (物联网博览会) highlights a shift from basic connectivity ('万物互联') to intelligent connectivity ('万物智联') and anticipates the next stage: intelligent operation ('万物智行').",
+        "The event emphasizes building a comprehensive 'capability ledger' beyond simple metrics like connection numbers, reflecting strategic industrial transformation driven from Wuxi.",
+        "This evolution signals a broader AIoT (Artificial Intelligence + Internet of Things) landscape that extends influence from China to global markets.",
+        "Technologies such as 6G, AI-enabled cloud robotics, and advanced IoT architectures are key components of this forward-looking agenda."
+      ],
+      "term_clarifications": [
+        {
+          "term": "AIoT",
+          "explanation": "Artificial Intelligence of Things—a fusion of AI technologies with the Internet of Things to enable smarter, autonomous connected devices."
+        },
+        {
+          "term": "万物互联",
+          "explanation": "Literal translation: 'Connectivity of everything'; refers to basic networking of devices in IoT."
+        },
+        {
+          "term": "万物智联",
+          "explanation": "'Intelligent connectivity of everything'; implies IoT devices integrated with AI for smarter interactions."
+        },
+        {
+          "term": "万物智行",
+          "explanation": "'Intelligent operation of everything'; a projected next stage where devices autonomously act and make decisions."
+        },
+        {
+          "term": "物联网博览会",
+          "explanation": "World Internet of Things Expo, an influential international event focused on IoT technologies and industry trends."
+        }
+      ],
+      "english_brief": "At the 2025 World Internet of Things Expo in Wuxi, the focus transcended basic device connections toward intelligent, autonomous IoT capabilities—described as the transition from 'connectivity' to 'intelligent operation.' The expo revealed a strategic capability framework originating in Wuxi, poised to impact the AIoT landscape across China and globally. This signals deep industry transformation fueled by emerging technologies such as 6G and AI-driven robotics, highlighting a future where devices don't just connect but act smartly and independently.",
+      "chinese_brief": "在2025年无锡世界物联网博览会上，焦点已超越了基础设备连接，转向智能自主的物联网能力，即从“万物互联”到“万物智行”的转变。博览会展示了从无锡出发的战略能力框架，预计将对中国乃至全球的AIoT格局产生深远影响。这标志着由6G和人工智能驱动的机器人等新兴技术推动的深度产业变革，预示着未来设备不仅仅是连接，而是智能自主地行动。"
+    },
+    {
+      "id": 33,
+      "headline": "Apple's AI Feature 'Apple Intelligence' Launch in China Remains Uncertain",
+      "key_takeaways": [
+        "Mark Gurman of Bloomberg reports that Apple's AI feature, 'Apple Intelligence,' slated for Chinese market rollout in mid-2025, has yet to be released.",
+        "The launch delay adds uncertainty to Apple's AI ambitions in China, a key market for the tech giant.",
+        "'Apple Intelligence' is expected to integrate with upcoming iOS versions and enhance Siri capabilities.",
+        "Exact timing and regulatory approval remain unclear, impacting consumer and developer expectations."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Apple Intelligence",
+          "explanation": "Apple's advanced AI functionality designed to enhance device interaction and Siri with smarter, more adaptive features."
+        },
+        {
+          "term": "Mark Gurman",
+          "explanation": "A well-known journalist specializing in Apple and technology news, associated with Bloomberg."
+        },
+        {
+          "term": "iOS 26.1/26.2/26.4",
+          "explanation": "Upcoming versions of Apple's mobile operating system, where AI features like Apple Intelligence are expected to debut."
+        }
+      ],
+      "english_brief": "According to Bloomberg’s Mark Gurman, although Apple initially planned to introduce its AI feature 'Apple Intelligence' in China by mid-2025, the rollout has yet to occur. This delay creates ambiguity around Apple's AI deployment in China, an influential market. The feature, expected to be integrated into upcoming iOS updates, aims to elevate Siri and other smart functionalities. However, regulatory hurdles and other factors leave the launch timeline uncertain, influencing both users and developers.",
+      "chinese_brief": "据彭博社记者马克·古尔曼报道，苹果原计划于2025年中在中国市场推出AI功能“Apple Intelligence”，但迄今尚未发布。这一延期为苹果在中国这一重要市场的AI部署带来不确定性。该功能预计将集成在即将发布的iOS版本中，提升Siri及其他智能功能。然而，监管障碍和其他因素使得推出时间尚不明朗，影响了用户和开发者的期待。"
+    },
+    {
+      "id": 34,
+      "headline": "Chinese eVTOL Maker Vixin Aerospace Secures Nearly 100 Million Yuan for Cargo Drone Trial Flights",
+      "key_takeaways": [
+        "Vixin Aerospace, based in Xi’an and specializing in large capacity eVTOL (electric vertical takeoff and landing) aircraft, completed seed and angel funding rounds totaling nearly 100 million yuan.",
+        "Funds will support development and trial flights of their first full-size prototype Vector 5, certification processes, and a new production facility in the Yangtze River Delta region.",
+        "The company also plans to validate hybrid propulsion technology and develop a second-generation model Vector 11.",
+        "eVTOLs represent the emerging category of electric aircraft designed for urban air mobility and cargo, promising quieter, more efficient transport."
+      ],
+      "term_clarifications": [
+        {
+          "term": "eVTOL",
+          "explanation": "Electric Vertical Takeoff and Landing aircraft, a type of electric-powered aircraft capable of hovering, vertical lift-off, and landing."
+        },
+        {
+          "term": "Seed round and angel round",
+          "explanation": "Early stages of startup financing where investors provide capital to support initial product development and market entry."
+        },
+        {
+          "term": "Vector 5 and Vector 11",
+          "explanation": "Models of eVTOL aircraft developed by Vixin Aerospace, with Vector 5 as the first full-scale prototype and Vector 11 as the planned second-generation model."
+        },
+        {
+          "term": "Yangtze River Delta",
+          "explanation": "An economically dynamic region in China, encompassing Shanghai and nearby provinces, targeted for advanced manufacturing facilities."
+        }
+      ],
+      "english_brief": "Vixin Aerospace, a pioneering Chinese company in large-capacity electric vertical takeoff and landing (eVTOL) aircraft, announced the completion of seed and angel funding rounds raising nearly 100 million yuan. These funds will accelerate the trial flights of their Vector 5 prototype, certification work, and establish a new factory in the Yangtze River Delta. Additionally, Vixin plans to verify hybrid propulsion systems and develop the Vector 11 second-generation model. Their work highlights the growing push towards innovative urban air mobility and advanced cargo transport solutions using eVTOL technology.",
+      "chinese_brief": "维新宇航是一家专注于大载客量电动垂直起降(eVTOL)飞机的中国先行企业，近日完成了近亿元人民币的种子轮和天使轮融资。筹集资金将推动其Vector 5原型机的试飞、适航认证工作以及在长三角新生产线的建设。此外，公司还计划验证混合动力系统并开发二代机型Vector 11。维新的努力彰显出利用eVTOL技术推动创新城市空中出行和先进货运解决方案的趋势。"
+    },
+    {
+      "id": 35,
+      "headline": "36Kr Report Forecasts China’s Large AI Model Market to Surpass 70 Billion Yuan by 2026",
+      "key_takeaways": [
+        "China’s large AI model industry is undergoing a critical transformation driven by technical iteration and ecosystem restructuring.",
+        "The market size reached 29.4 billion yuan in 2024 and is projected to exceed 70 billion yuan by 2026.",
+        "Multimodal AI models, digital humans, and gaming applications are key growth drivers, reflecting robust demand across diverse scenarios.",
+        "Industry competition is shifting from isolated technology or product battles to multi-dimensional ecosystems involving consumer, enterprise, device, and government dimensions (CBDG ecosystem)."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Large AI models",
+          "explanation": "Advanced AI systems with vast parameter scales trained on diverse data for tasks including language, vision, and decision-making."
+        },
+        {
+          "term": "Multimodal AI",
+          "explanation": "AI models capable of processing and integrating multiple types of data, such as text, images, audio, and video."
+        },
+        {
+          "term": "Digital humans",
+          "explanation": "AI-driven
+2025-11-04 13:14:44,288 | WARNING | Batch 9 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 32,       "headline": "AIoT Evolution Unfolds at 2025 World Internet of Things Expo in Wuxi",       "key_takeaways": [         "The 2025 World Internet of Things Expo (物联网博览会) highlights a shift from basic connectivity ('万物互联') to intelligent connectivity ('万物智联') and anticipates the next stage: intelligent operation ('万物智行').",         "The event emphasizes building a comprehensive 'capability ledger' beyond simple metrics like connection numbers, reflecting...)
+2025-11-04 13:15:12,697 | INFO | Completed batch 9/17 (briefings=36).
+2025-11-04 13:15:40,153 | INFO | Completed batch 10/17 (briefings=40).
+2025-11-04 13:16:11,619 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 40,
+      "headline": "T1 Dominates TES to Reach S15 LoL Finals, NVIDIA Partners with Pharma for Supercomputing",
+      "key_takeaways": [
+        "T1 defeated TES 3-0 in the LoL 2025 S15 semifinals, eliminating the last LPL hope.",
+        "The S15 finals on November 9 in Chengdu will be an all-LCK affair between T1 and KT.",
+        "This marks LCK's first all-finals presence on Chinese soil since 2017.",
+        "NVIDIA announced a collaboration with a major pharmaceutical company to develop a powerful AI-enabled supercomputer."
+      ],
+      "term_clarifications": [
+        {
+          "term": "T1",
+          "explanation": "A top professional League of Legends (LoL) esports team from South Korea, known for multiple world championships."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a leading professional LoL team from China competing in the LPL league."
+        },
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, South Korea’s premier professional LoL league."
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, the top professional LoL league in China."
+        },
+        {
+          "term": "S15",
+          "explanation": "The 15th season of the annual League of Legends World Championship."
+        },
+        {
+          "term": "NVIDIA",
+          "explanation": "A global leader in graphics processing units (GPUs) and AI computing technologies."
+        },
+        {
+          "term": "Supercomputer",
+          "explanation": "Extremely fast computers capable of handling complex calculations, often used in scientific research and large-scale AI tasks."
+        }
+      ],
+      "english_brief": "On November 2, South Korea's T1 esports team decisively defeated China's TES 3-0 in the League of Legends 2025 World Championship (S15) semifinals, ending China's hopes for the title. T1 will face fellow Korean team KT in the final on November 9 in Chengdu, marking the first time since 2017 that the LCK region has secured both finalist spots on Chinese soil. Separately, NVIDIA announced a strategic partnership with a pharmaceutical giant to create a next-generation supercomputer designed for AI-driven drug discovery, signaling further convergence of AI and biotech industries.",
+      "chinese_brief": "11月2日，韩国战队T1在英雄联盟2025全球总决赛（S15）半决赛中以3比0的比分战胜中国战队TES，终结了中国队争冠的希望。T1将在11月9日于成都举行的总决赛中对阵同为韩国赛区的KT队，这也是自2017年以来LCK赛区首次在中国举办的赛事中包揽冠亚军席位。另一方面，英伟达宣布与一家制药巨头达成战略合作，打造面向AI驱动药物研发的新一代超级计算机，显示了人工智能与生物科技行业的深度融合趋势。"
+    },
+    {
+      "id": 41,
+      "headline": "Douban User Praises Chinese Drama '暗河传' for Revival of Classic Wuxia Spirit",
+      "key_takeaways": [
+        "'暗河传' evokes memories of Gu Long's classic wuxia novels with a modern realist approach.",
+        "Key episodes give satisfying narrative answers about protagonist Su Muyu's swordsmanship and philosophy.",
+        "Actor Gong Jun receives praise for his portrayal, appreciated by fans of the original book.",
+        "The user reflects on how hard it is to find time for long dramas after starting work."
+      ],
+      "term_clarifications": [
+        {
+          "term": "暗河传",
+          "explanation": "A Chinese television drama blending traditional wuxia (martial heroes) elements with realism."
+        },
+        {
+          "term": "Wuxia",
+          "explanation": "A genre of Chinese fiction featuring martial artists in ancient China, often involving chivalry and fantasy."
+        },
+        {
+          "term": "Gu Long",
+          "explanation": "A highly influential Taiwanese writer known for his wuxia novels."
+        },
+        {
+          "term": "Douban",
+          "explanation": "A popular Chinese social networking service providing user reviews and ratings for movies, books, and TV shows."
+        }
+      ],
+      "english_brief": "A longtime Douban user shared that after years of not using the platform due to studying abroad, they recently found renewed joy in watching the Chinese TV drama '暗河传'. The series reminded them of the classic wuxia novels by Gu Long while incorporating a realistic storytelling style. Notably, the episode depicting Su Muyu’s sword journey was particularly satisfying, providing clear narrative resolutions. The actor Gong Jun drew praise for bringing the character vividly to life, satisfying fans of the original literary work. The reviewer also notes how busy adult life makes it difficult to follow long series, praising this show as a rewarding exception.",
+      "chinese_brief": "一位长期未使用豆瓣的用户分享了他们因留学多年重新观看中国电视剧《暗河传》的体验。该剧让他们想起了古龙的经典武侠小说，但采用了更加现实主义的叙事风格。特别是展现苏暮雨剑道历程的剧集，让人非常满意，剧情得到了清晰的解答。演员龚俊的表现也获得了高度评价，满足了书粉的期待。评论者还提到成年来工作后很难静心追长剧，这部剧是难得的好作品。"
+    },
+    {
+      "id": 42,
+      "headline": "Guangdong Government Plans Regional Sports Events to Boost Local Economy",
+      "key_takeaways": [
+        "Guangdong Provincial Government released a plan for the 'Warm Winter Leisure Guangdong' consumption season.",
+        "Focus includes integrating national sports events with local fitness and cultural tourism activities.",
+        "Planned events include Guangdong Super League (粤超) football, the Guangdong-Hong Kong Cup, and regional cycling and pickleball tournaments.",
+        "High-level professional competitions like the China Cup Sailing and Guangzhou Women’s Tennis Open will also be hosted."
+      ],
+      "term_clarifications": [
+        {
+          "term": "粤超",
+          "explanation": "Guangdong Super League, an elite regional football (soccer) competition in Guangdong province."
+        },
+        {
+          "term": "省港杯",
+          "explanation": "Guangdong-Hong Kong Cup, an annual football competition between teams from Guangdong province and Hong Kong."
+        },
+        {
+          "term": "Pickleball",
+          "explanation": "A paddle sport combining elements of tennis, badminton, and table tennis, growing popular globally."
+        },
+        {
+          "term": "消费季",
+          "explanation": "Consumption season or festival designed to stimulate regional economic consumption through various events and promotions."
+        }
+      ],
+      "english_brief": "The Guangdong provincial government has unveiled its 'Warm Winter Leisure Guangdong' plan, aiming to boost regional consumption through a series of sports and cultural events. The strategy emphasizes integrating national games hosted by the region with mass fitness and tourism activities. Featured events include the 'Guangdong Super League' football tournament, the Guangdong-Hong Kong Cup, the Greater Bay Area cycling city challenge, and pickleball open tournaments. Additionally, Guangdong will host high-profile professional events such as the China Cup Sailing Series and the Guangzhou International Women’s Tennis Open. This multi-faceted approach seeks to drive economic vitality and community engagement through sports.",
+      "chinese_brief": "广东省人民政府发布了“粤享暖冬 乐游广东”计划，旨在通过一系列体育与文化活动促进区域消费。该计划强调将承办的全国性赛事与全民健身及文旅活动结合，重点活动包括“粤超”足球赛、省港杯足球赛、环粤港澳大湾区自行车城市挑战赛及匹克球公开赛。此外，广东还将举办中国杯帆船赛和广州国际女子网球公开赛等高水平职业赛事。此举旨在通过体育推动经济活力和社区参与。"
+    },
+    {
+      "id": 43,
+      "headline": "HERE Technologies and AutoNavi Collaborate on Next-Gen AI Navigation for Chinese EVs",
+      "key_takeaways": [
+        "HERE Technologies partners with China's AutoNavi (Gaode) to develop AI-based navigation and driving assistance.",
+        "The joint solution targets Chinese electric vehicle makers expanding globally.",
+        "Combines HERE’s global AI mapping technology with AutoNavi’s established in-China automotive solutions.",
+        "Focus areas include next-generation digital cockpits, advanced driver-assistance systems (ADAS), and precise positioning."
+      ],
+      "term_clarifications": [
+        {
+          "term": "HERE Technologies",
+          "explanation": "A global company specializing in mapping, location data, and related technology solutions."
+        },
+        {
+          "term": "AutoNavi (Gaode)",
+          "explanation": "A leading Chinese digital mapping and navigation service provider, widely used in China's automotive industry."
+        },
+        {
+          "term": "EV",
+          "explanation": "Electric
+2025-11-04 13:16:11,621 | WARNING | Batch 11 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 40,       "headline": "T1 Dominates TES to Reach S15 LoL Finals, NVIDIA Partners with Pharma for Supercomputing",       "key_takeaways": [         "T1 defeated TES 3-0 in the LoL 2025 S15 semifinals, eliminating the last LPL hope.",         "The S15 finals on November 9 in Chengdu will be an all-LCK affair between T1 and KT.",         "This marks LCK's first all-finals presence on Chinese soil since 2017.",         "NVIDIA announced a collaboration with a maj...)
+2025-11-04 13:16:45,367 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 40,
+      "headline": "T1 Defeats TES 3-0, Securing Place in S15 Finals; NVIDIA Collaborates with Pharma Giant to Build Supercomputer; Li Auto's MEGA Fire Incident Explained",
+      "key_takeaways": [
+        "In the 2025 LoL World Championship semifinals, LCK's T1 swept LPL's TES 3-0, eliminating the last Chinese team from S15 finals.",
+        "T1 will face KT, another LCK seed, in the finals held on November 9 in Chengdu, marking an LCK 1-2 finish and the first China-hosted Worlds final in 8 years.",
+        "NVIDIA partners with a leading pharmaceutical company to build a DGX SuperPOD supercomputer with 1,000 GPUs for AI-driven drug research.",
+        "Li Auto's executive detailed the MEGA vehicle fire incident, addressing safety concerns for the electric vehicle manufacturer."
+      ],
+      "term_clarifications": [
+        {
+          "term": "T1",
+          "explanation": "A professional South Korean esports team renowned for competing in League of Legends, often dominant in international championships."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a leading Chinese League of Legends team from the LPL region."
+        },
+        {
+          "term": "S15",
+          "explanation": "Season 15 of the League of Legends World Championship, an annual global esports tournament."
+        },
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, the premier professional League of Legends league in South Korea."
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, the top professional League of Legends league in China."
+        },
+        {
+          "term": "DGX SuperPOD",
+          "explanation": "NVIDIA's scalable supercomputing infrastructure consisting of multiple DGX systems linked together, optimized for AI and deep learning tasks."
+        },
+        {
+          "term": "MEGA",
+          "explanation": "A model line or technology associated with Li Auto, a Chinese electric vehicle manufacturer."
+        }
+      ],
+      "english_brief": "On November 2, LCK's T1 decisively swept China's TES 3-0 in the League of Legends 2025 World Championship semifinals, knocking out the final Chinese contender. T1 will meet fellow LCK team KT in the November 9 finals in Chengdu, marking a clean LCK top-two finish and the first World Championship hosted in China since 2017. Meanwhile, NVIDIA announced a partnership with a major pharmaceutical firm to deploy a DGX SuperPOD supercomputer with 1,000 GPUs to accelerate AI-driven drug discovery. Li Auto's executive clarified details regarding a recent fire incident involving their MEGA vehicle, addressing safety issues amid growing EV market scrutiny.",
+      "chinese_brief": "11月2日，LCK赛区的T1战队在2025年《英雄联盟》全球总决赛半决赛中以3:0横扫中国LPL赛区的TES战队，淘汰了最后一支中国队伍。T1将于11月9日在成都与同属LCK的KT战队争夺冠军，这标志着LCK赛区包揽冠亚军席位，也是自2017年以来首次中国主办的全球总决赛。与此同时，英伟达宣布与一家大型制药公司合作，部署拥有1000个GPU的DGX SuperPOD超级计算机，加速人工智能驱动的药物研发。理想汽车高管也就近期MEGA车型火灾事件做出说明，回应电动车市场关注的安全问题。"
+    },
+    {
+      "id": 41,
+      "headline": "Viewer Praises TV Series 'Dark River Legend' for Reviving Classic Chinese Wuxia Spirit",
+      "key_takeaways": [
+        "'Dark River Legend' is praised for its mixture of classic martial arts themes inspired by writer Gu Long and a modern realistic narrative.",
+        "The character Su Muyu’s swordsmanship and ideals are highlighted as central to the story’s appeal.",
+        "Lead actor Gong Jun is commended for his performance, satisfying fans of the original novel.",
+        "The review reflects challenges of engaging with long-format Chinese dramas after years abroad."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Wuxia",
+          "explanation": "A genre of Chinese fiction involving martial arts adventure, often set in ancient China with themes of honor and heroism."
+        },
+        {
+          "term": "Gu Long",
+          "explanation": "A renowned Chinese author famous for his wuxia novels, influencing numerous adaptations."
+        },
+        {
+          "term": "Su Muyu",
+          "explanation": "The main character in 'Dark River Legend,' known for his exceptional swordsmanship and moral code."
+        },
+        {
+          "term": "Gong Jun",
+          "explanation": "A Chinese actor who portrays Su Muyu in the TV series."
+        }
+      ],
+      "english_brief": "A viewer recently expressed strong appreciation for the TV series 'Dark River Legend,' noting it evokes nostalgia for classic wuxia stories, especially those by the famed author Gu Long, while integrating a realistic narrative. The portrayal of protagonist Su Muyu’s sword skills and philosophy deeply resonated. Gong Jun’s acting was highlighted as a key factor satisfying both TV audiences and fans of the original novels. The review also touches on the difficulty of following long TV dramas after years studying abroad.",
+      "chinese_brief": "一位观众近日表达了对电视剧《暗河传》的高度赞赏，称其唤起了对古龙等著名武侠作家的经典作品的怀念，同时融合了现实主义叙事。主角苏暮雨的剑术和剑心令人印象深刻。龚俊的表演被认为是满足电视剧观众和原著粉丝的重要因素。评论还提及多年留学后观看长篇剧集的难度。"
+    },
+    {
+      "id": 42,
+      "headline": "Guangdong Province to Organize Elite Regional Sports Events Including 'Yue Super' Football and 'Province-Hong Kong Cup'",
+      "key_takeaways": [
+        "Guangdong government issued a comprehensive plan 'Yue Enjoy Warm Winter, Happy Travel Guangdong' focusing on four major activities.",
+        "A key initiative is 'National Games + Boutique Sports Events,' linking elite competitions with mass fitness and local cultural activities.",
+        "Notable tournaments include 'Yue Super' football league, 'Province-Hong Kong Cup,' Greater Bay Area cycling challenge, and pickleball open.",
+        "High-level professional events like the China Cup sailing race and Guangzhou International Women's Tennis Open are also featured."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Yue Super",
+          "explanation": "A high-level regional football league in Guangdong province, 'Yue' referring to Guangdong."
+        },
+        {
+          "term": "Province-Hong Kong Cup",
+          "explanation": "An annual football competition held between teams from Guangdong province and Hong Kong."
+        },
+        {
+          "term": "Greater Bay Area",
+          "explanation": "A Chinese government initiative to integrate the cities of Guangdong, Hong Kong, and Macau into an economic and innovation hub."
+        },
+        {
+          "term": "Pickleball",
+          "explanation": "A paddle sport combining elements of tennis, badminton, and table tennis."
+        }
+      ],
+      "english_brief": "The Guangdong provincial government released the 'Yue Enjoy Warm Winter, Happy Travel Guangdong' plan, aiming to boost sports and tourism through four major activities. A highlighted focus is on integrating elite events such as the 'Yue Super' football league and 'Province-Hong Kong Cup' with mass public fitness and cultural activities. The plan includes regional competitions like the Greater Bay Area cycling challenge and pickleball open, alongside prestigious professional events like the China Cup sailing race and Guangzhou International Women's Tennis Open to enrich community sports engagement.",
+      "chinese_brief": "广东省政府发布了“粤享暖冬 乐游广东”方案，计划通过四大活动推动体育与旅游发展。重点在于将“粤超”足球联赛、“省港杯”等精品赛事与大众健身及地方文化活动有机结合。计划涵盖环粤港澳大湾区自行车挑战赛、匹克球公开赛等区域赛事，以及中国杯帆船赛、广州国际女子网球公开赛等高水平职业赛事，丰富群众体育生活。"
+    },
+    {
+      "id": 43,
+      "headline": "HERE Technologies Partners with Gaode to Deliver Next-Gen AI Navigation Solutions for Chinese EV Makers Globally",
+      "key_takeaways": [
+        "HERE Technologies and Gaode (Amap) form a strategic partnership targeting global Chinese electric vehicle companies.",
+        "The collaboration combines HERE’s global AI-based mapping and navigation technology with Gaode’s expertise in China’s automotive market.",
+        "Solutions include advanced AI navigation, digital cockpits, and driver-assistance systems tailored for Chinese EVs expanding overseas.",
+        "This partnership strengthens China’s EV industry competitiveness in the international market via innovative smart mobility tech."
+      ],
+      "term_clarifications": [
+        {
+          "term": "HERE Technologies
+2025-11-04 13:16:45,368 | WARNING | Batch 11 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 40,       "headline": "T1 Defeats TES 3-0, Securing Place in S15 Finals; NVIDIA Collaborates with Pharma Giant to Build Supercomputer; Li Auto's MEGA Fire Incident Explained",       "key_takeaways": [         "In the 2025 LoL World Championship semifinals, LCK's T1 swept LPL's TES 3-0, eliminating the last Chinese team from S15 finals.",         "T1 will face KT, another LCK seed, in the finals held on November 9 in Chengdu, marking an LCK 1-2 finish and the ...)
+2025-11-04 13:17:12,810 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 40,
+      "headline": "T1 Dominates TES to Reach S15 Finals; NVIDIA Partners with Pharma for Supercomputer; Li Auto Discusses MEGA Fire Incident",
+      "key_takeaways": [
+        "South Korea's T1 esports team defeated China's TES 3-0 in the League of Legends 2025 World Championship semifinals.",
+        "T1 will face KT in the S15 final, marking an all-Korean final hosted in China for the first time since 2017.",
+        "NVIDIA has collaborated with pharmaceutical giant to build a cutting-edge supercomputer for AI research.",
+        "Li Auto's executive, Tang Jing, provided insights on the MEGA battery fire incident involving their vehicles."
+      ],
+      "term_clarifications": [
+        {
+          "term": "T1",
+          "explanation": "A top professional esports team based in South Korea, famous for its League of Legends success."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a professional esports team from China competing in the League of Legends Pro League (LPL)."
+        },
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, the premier professional esports league for League of Legends in South Korea."
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, the top professional League of Legends esports league in China."
+        },
+        {
+          "term": "S15",
+          "explanation": "Season 15 of the League of Legends World Championship, held in 2025."
+        },
+        {
+          "term": "NVIDIA",
+          "explanation": "A leading American technology company specializing in graphics processing units (GPUs) and AI computing."
+        },
+        {
+          "term": "MEGA battery",
+          "explanation": "A type of high-energy battery used by Li Auto in their electric vehicles, involved in recent fire incidents."
+        }
+      ],
+      "english_brief": "The 2025 League of Legends World Championship semifinals saw South Korea's T1 dominate China's TES with a 3-0 victory, eliminating China's last hope and securing an all-Korean final against KT set for November 9 in Chengdu. This is the first time since 2017 that an all-Korean final is held on Chinese soil. Meanwhile, NVIDIA has teamed up with a pharmaceutical leader to develop a powerful AI-focused supercomputer, signaling cross-industry tech advances. Additionally, Li Auto's Tang Jing addressed questions regarding the MEGA battery fire incidents, offering transparency on the issue.",
+      "chinese_brief": "2025年《英雄联盟》全球总决赛半决赛中，韩国战队T1以3比0战胜中国TES战队，淘汰了中国最后的希望，成功锁定将于11月9日在成都举行的全韩决赛对阵KT。这是自2017年以来首次在中国举办的全韩决赛。与此同时，英伟达与一家制药巨头合作开发了强大的人工智能超级计算机，显示出跨行业的技术进步。此外，理想汽车的汤靖就MEGA电池起火事件作出回应，增加了问题的透明度。"
+    },
+    {
+      "id": 41,
+      "headline": "Douban User Recommends Drama ‘Dark River Tale’ Inspired by Classic Chinese Wuxia",
+      "key_takeaways": [
+        "User '杀猪刀（已生锈）' praises ‘Dark River Tale’ for its realistic take on classical Chinese wuxia themes.",
+        "The drama evokes memories of famed author Gu Long's works, particularly appreciating the sword mastery of character Su Muyu.",
+        "The series blends traditional martial arts storytelling with modern realism, resonating with fans and book readers.",
+        "Viewer finds it challenging to follow long series since starting work, but ‘Dark River Tale’ captured their interest."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Wuxia",
+          "explanation": "A genre of Chinese fiction involving martial artists in ancient China, emphasizing chivalry and swordplay."
+        },
+        {
+          "term": "Gu Long",
+          "explanation": "A renowned Chinese writer famous for his contributions to the wuxia genre."
+        },
+        {
+          "term": "Su Muyu",
+          "explanation": "A main character in the drama ‘Dark River Tale,’ noted for his swordsmanship and philosophical depth."
+        },
+        {
+          "term": "Douban",
+          "explanation": "A popular Chinese social networking platform for movie, book, music reviews and ratings."
+        }
+      ],
+      "english_brief": "A Douban user shared their appreciation for the drama ‘Dark River Tale,’ highlighting its realistic yet nostalgic portrayal of classic Chinese wuxia narratives reminiscent of Gu Long's novels. The story’s focus on the protagonist Su Muyu’s swordsmanship and philosophy struck a chord with fans and book readers alike. Despite the difficulty of following lengthy series since beginning work, this drama was compelling enough to reengage this viewer.",
+      "chinese_brief": "一位豆瓣用户表达了对电视剧《暗河传》的喜爱，称其现实主义风格与经典中国武侠题材相结合，令人怀念古龙小说。剧中主角苏暮雨的剑术和剑心深入人心，受到了粉丝和书迷的认可。用户表示自工作后很难跟完整部长剧，但《暗河传》成功吸引了他们的注意。"
+    },
+    {
+      "id": 42,
+      "headline": "Guangdong Government Promotes Regional Sports Events Including ‘Yue Super’ and ‘Guangdong-Hong Kong Cup’",
+      "key_takeaways": [
+        "Guangdong provincial government issued a plan titled 'Warm Winter in Guangdong, Enjoy Traveling' consumer season.",
+        "Plan highlights support for integrating high-level sports events such as the ‘Yue Super’ football league and ‘Guangdong-Hong Kong Cup’ with local culture and fitness activities.",
+        "Also includes organization of large-scale cycling, pickleball, sailing, and tennis competitions to enrich both amateur and professional sports scenes.",
+        "Aims to boost regional sports tourism and community participation through these diverse sporting events."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Yue Super",
+          "explanation": "A regional football league in Guangdong province, China."
+        },
+        {
+          "term": "Guangdong-Hong Kong Cup",
+          "explanation": "An annual football competition held between Guangdong province and Hong Kong teams."
+        },
+        {
+          "term": "Pickleball",
+          "explanation": "A paddleball sport combining elements of badminton, tennis, and table tennis, gaining popularity worldwide."
+        },
+        {
+          "term": "Consumer Season",
+          "explanation": "A planned period focused on promoting consumer spending and regional activities."
+        }
+      ],
+      "english_brief": "The Guangdong provincial government unveiled its 'Warm Winter in Guangdong, Enjoy Traveling' consumer season plan, emphasizing high-quality sports events such as the ‘Yue Super’ football league and the ‘Guangdong-Hong Kong Cup.’ The initiative seeks to meld major sporting competitions with local fitness and cultural activities, enhancing engagement and tourism. The plan also features cycling, pickleball, sailing, and tennis contests, aiming to vibrantly develop amateur and professional sports across the region.",
+      "chinese_brief": "广东省政府发布了“粤享暖冬 乐游广东”消费季活动方案，重点支持“粤超”足球联赛和“省港杯”等精品赛事。该计划旨在融合重大体育赛事与地方健身和文化活动，提升体育参与度和旅游业发展。方案还包括自行车、匹克球、帆船和网球等赛事，推动全省业余及职业体育的多元发展。"
+    },
+    {
+      "id": 43,
+      "headline": "HERE Technologies and Amap Partner to Deliver Next-Gen AI Navigation for Global Chinese Automakers",
+      "key_takeaways": [
+        "HERE Technologies forms strategic partnership with Amap (Gaode) to provide AI-based navigation and advanced driver-assistance solutions.",
+        "Focuses on customized digital cockpit, navigation, and ADAS tailored for Chinese electric vehicle makers expanding internationally.",
+        "Combines HERE’s global AI mapping tech with Amap’s extensive experience in China’s automotive market.",
+        "The collaboration aims to enhance driving safety, comfort, and efficiency using state-of-the-art AI technologies."
+      ],
+      "term_clarifications": [
+        {
+          "term": "HERE Technologies",
+          "explanation": "A global leader in mapping and location data technology, providing services for automotive and other industries."
+        },
+        {
+          "term": "Amap (Gaode)",
+          "explanation": "China’s leading digital mapping and navigation service provider, widely used in automotive and consumer applications."
+        },
+        {
+          "term": "ADAS",
+          "explanation": "Advanced Driver-Assistance Systems, technologies designed to improve vehicle safety and driving experience."
+        },
+        {
+          "term": "Digital Cockpit",
+          "explanation": "An integrated vehicle interface combining navigation, media, and control features within a digital dashboard."
+        }
+      ],
+      "english_brief": "HERE Technologies and China’s Amap have entered a
+2025-11-04 13:17:12,811 | WARNING | Batch 11 attempt 3 produced invalid JSON (snippet={   "briefings": [     {       "id": 40,       "headline": "T1 Dominates TES to Reach S15 Finals; NVIDIA Partners with Pharma for Supercomputer; Li Auto Discusses MEGA Fire Incident",       "key_takeaways": [         "South Korea's T1 esports team defeated China's TES 3-0 in the League of Legends 2025 World Championship semifinals.",         "T1 will face KT in the S15 final, marking an all-Korean final hosted in China for the first time since 2017.",         "NVIDIA has collaborated with pharma...)
+2025-11-04 13:17:12,811 | WARNING | Splitting batch 11 (size=4) after repeated JSON failures.
+2025-11-04 13:17:48,238 | INFO | Completed batch 11/17 (briefings=44).
+2025-11-04 13:18:23,569 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 44,
+      "headline": "New Negotiation Opportunity for Million-Yuan Drugs Previously Rejected by China's Medical Insurance",
+      "key_takeaways": [
+        "China's annual national medical insurance negotiation ('Guo Tan') started on October 30, lasting 4-5 days in Beijing.",
+        "This year introduces a separate 'Commercial Insurance Innovative Drug Directory' alongside traditional negotiations.",
+        "The first day focused on generic drugs, while innovative oncology drugs are discussed on subsequent days.",
+        "The addition of the commercial insurance negotiation aims to better integrate high-cost drugs not covered by public insurance."
+      ],
+      "term_clarifications": [
+        {
+          "term": "National Medical Insurance Negotiation ('Guo Tan')",
+          "explanation": "An annual event in China where the government negotiates drug prices with pharmaceutical companies to include medicines in public health insurance."
+        },
+        {
+          "term": "Commercial Insurance Innovative Drug Directory",
+          "explanation": "A newly created list for negotiating prices of innovative high-cost drugs that are primarily covered by commercial insurance rather than public health insurance."
+        },
+        {
+          "term": "Oncology drugs",
+          "explanation": "Medications used to treat cancer."
+        }
+      ],
+      "english_brief": "China’s annual national medical insurance negotiations, traditionally focused on generic drugs, have introduced a new segment specifically for negotiating prices of innovative drugs covered by commercial insurance. This change recognizes that many expensive, cutting-edge medicines are often excluded from public medical coverage, limiting patient access. By creating a separate negotiation channel, authorities aim to broaden insurance coverage and reduce financial burdens for patients needing high-cost medications, particularly in oncology. This shift reflects a nuanced approach to balancing innovation costs with healthcare affordability in China.",
+      "chinese_brief": "中国一年一度的国家医保谈判传统上侧重于普药，今年新增了专门针对由商业保险覆盖的创新药品的议价环节。此举承认许多高价创新药常被排除在公共医保之外，限制了患者的用药可及性。通过设立单独的谈判机制，官方希望扩大保险覆盖范围，减轻需要高价药物，尤其是肿瘤用药患者的经济负担。这一变化体现了中国在创新药成本与医疗负担之间寻求平衡的更细致策略。"
+    },
+    {
+      "id": 45,
+      "headline": "Q3 2025 China Smart Speaker Sales Drop 11.9%, Xiaomi Remains Market Leader",
+      "key_takeaways": [
+        "China’s smart speaker retail market sold 3.057 million units in Q3 2025, an 11.9% year-on-year decline.",
+        "Market revenue fell 4.0% to 860 million yuan, while average selling price rose 8.9% to 280 yuan.",
+        "Offline market faced more severe declines compared to stable or improving online sales.",
+        "Xiaomi dominates with a 48.8% market share, showing 6% growth compared to last year."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Smart speakers",
+          "explanation": "Internet-connected voice-activated devices like Amazon Echo or Xiaomi Xiao Ai, which can play music, control smart home devices, and provide information."
+        },
+        {
+          "term": "Year-on-year (YoY)",
+          "explanation": "Comparison of data for a specific period with the same period in the previous year."
+        },
+        {
+          "term": "Market share",
+          "explanation": "The portion of total sales in the market that a company controls."
+        },
+        {
+          "term": "Xiaomi",
+          "explanation": "A leading Chinese electronics company known for smartphones, smart home devices, and consumer electronics."
+        }
+      ],
+      "english_brief": "In the third quarter of 2025, China’s smart speaker market contracted with sales volume dropping nearly 12% compared to last year, primarily impacted by weaker offline retail and less government subsidy support. Despite the downturn, Xiaomi reinforced its commanding position, capturing nearly half the market with sales growth driven by online channels. The increase in average selling price indicates a market trend toward higher-end products. This market adjustment suggests consumers are becoming more selective, and companies must innovate and diversify to maintain growth in a challenging environment.",
+      "chinese_brief": "2025年第三季度，中国智能音箱市场销量同比下滑近12%，主要是受线下零售疲软和政府补贴减少的影响。尽管市场整体下滑，小米凭借线上渠道的增长稳居行业第一，市场份额接近一半。均价上涨显示消费者更倾向于高端产品。此轮调整表明消费者选择更为谨慎，企业需要通过创新和多元化策略来维持增长。"
+    },
+    {
+      "id": 46,
+      "headline": "China Moves to Standardize Public Fund Performance Benchmarks, Enhancing Investor Confidence",
+      "key_takeaways": [
+        "On October 31, China Securities Regulatory Commission (CSRC) released draft guidelines on performance benchmarks for publicly offered securities investment funds seeking public opinion.",
+        "The Fund Industry Association followed with operational rules drafts for implementing the benchmark system.",
+        "The reforms aim to improve regulation, transparency, and discipline around active fund management performance evaluations.",
+        "The guidelines emphasize fiduciary responsibility and encourage sustainable, long-term returns for investors."
+      ],
+      "term_clarifications": [
+        {
+          "term": "China Securities Regulatory Commission (CSRC)",
+          "explanation": "The government agency responsible for regulating China's securities and futures markets."
+        },
+        {
+          "term": "Performance benchmark",
+          "explanation": "A standard or reference point used to measure a fund's investment performance."
+        },
+        {
+          "term": "Publicly offered securities investment funds (Public funds)",
+          "explanation": "Mutual funds or similar investment products available to retail investors."
+        },
+        {
+          "term": "Fiduciary responsibility",
+          "explanation": "The legal and ethical obligation of fund managers to act in the best interest of their clients."
+        }
+      ],
+      "english_brief": "China is advancing toward a more regulated and transparent public mutual fund industry by introducing standardized performance benchmarks and operational rules. The CSRC’s draft guidelines and the Fund Industry Association’s accompanying measures seek to create uniform criteria for evaluating fund managers’ performance, encouraging discipline and adherence to fiduciary duties. This approach enhances long-term investor confidence by promoting sustainable returns and reducing arbitrary or misleading performance claims. The reforms mark a significant step in boosting China's capital markets' maturity and safeguarding retail investors' interests.",
+      "chinese_brief": "中国正通过引入统一的业绩比较基准和操作细则，推进公募基金行业的规范化与透明化。证监会发布的征求意见稿以及基金业协会同步推出的措施，旨在建立统一的业绩评价标准，强化基金管理人的纪律约束和受托责任。此举有助于提升长期投资者信心，促进可持续回报，减少业绩虚假宣传，标志着中国资本市场成熟度和零售投资者保护水平的提升。"
+    },
+    {
+      "id": 47,
+      "headline": "Elon Musk Predicts End of Phones and Apps in Five Years; Maldives Enforces Nationwide Smoking Ban",
+      "key_takeaways": [
+        "In a podcast interview, Elon Musk forecasted that in five years, traditional smartphones and apps will disappear, replaced by AI-generated content consumption.",
+        "Xiaomi announced a shorter delivery cycle for its electric vehicles, enhancing customer experience.",
+        "Ideal Motor executives responded to a recent fire incident involving its MEGA vehicle.",
+        "Maldives officially implemented a generational smoking ban ('世代禁烟令'), becoming one of the first countries to do so.",
+        "Other news includes robot production growth in China and new pet transport services on China’s national railway (12306 platform)."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Elon Musk",
+          "explanation": "CEO of Tesla, SpaceX, and prominent technology entrepreneur known for his futuristic predictions."
+        },
+        {
+          "term": "MEGA",
+          "explanation": "A model of electric vehicle by Ideal Motor, recently involved in a fire incident."
+        },
+        {
+          "term": "世代禁烟令 (Generational Smoking Ban)",
+          "explanation": "A policy aimed at preventing the sale of tobacco to all future generations, effectively phasing out smoking over time."
+        },
+        {
+          "term": "12306",
+          "explanation": "China's official online railway ticketing platform, recently adding new services like pet transport."
+        }
+      ],
+      "english_brief": "In a recent podcast interview, Elon Musk predicted that within five years, traditional smartphones and apps will vanish as AI-generated content dominates digital consumption. This vision points to a transformative shift in how humans will interact with technology. Meanwhile, the Maldives has enforced a groundbreaking generational smoking ban to curb tobacco use, highlighting global health trends. In industry updates, Xiaomi shortened delivery times for its electric cars, and Ideal Motor addressed a fire incident with its MEGA vehicle. New services for pet transportation on China's railways and growth in industrial robot production round out a dynamic technology and policy landscape.",
+      "chinese_brief": "在
+2025-11-04 13:18:23,571 | WARNING | Batch 12 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 44,       "headline": "New Negotiation Opportunity for Million-Yuan Drugs Previously Rejected by China's Medical Insurance",       "key_takeaways": [         "China's annual national medical insurance negotiation ('Guo Tan') started on October 30, lasting 4-5 days in Beijing.",         "This year introduces a separate 'Commercial Insurance Innovative Drug Directory' alongside traditional negotiations.",         "The first day focused on generic drugs, while i...)
+2025-11-04 13:18:52,131 | INFO | Completed batch 12/17 (briefings=48).
+2025-11-04 13:19:19,585 | INFO | Completed batch 13/17 (briefings=52).
+2025-11-04 13:19:47,334 | INFO | Completed batch 14/17 (briefings=56).
+2025-11-04 13:20:14,982 | INFO | Completed batch 15/17 (briefings=60).
+2025-11-04 13:20:41,401 | INFO | Completed batch 16/17 (briefings=64).
+2025-11-04 13:21:09,293 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 64,
+      "headline": "LCK Dominates LoL Worlds S15 Final with T1's Sweep of TES in China",
+      "key_takeaways": [
+        "T1 defeated TES 3-0 in the 2025 League of Legends World Championship (S15) semifinals.",
+        "The final will feature two LCK teams, T1 and KT, meeting in China for the first time since 2017.",
+        "Faker, T1's star player, maintains an undefeated record against LPL teams in BO5 matches at Worlds.",
+        "The event signifies LCK's return to prominence on Chinese soil with a guaranteed 1-2 finish."
+      ],
+      "term_clarifications": [
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, South Korea's premier professional League of Legends league."
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, the top professional League of Legends league in China."
+        },
+        {
+          "term": "T1",
+          "explanation": "A leading South Korean esports team known for their dominance in League of Legends."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a prominent Chinese League of Legends team."
+        },
+        {
+          "term": "Faker",
+          "explanation": "Lee Sang-hyeok, widely regarded as the best League of Legends player in history, and T1's mid-laner."
+        },
+        {
+          "term": "BO5",
+          "explanation": "Best-of-five; a match format where the first team to win three games wins the series."
+        },
+        {
+          "term": "S15",
+          "explanation": "Season 15 of the annual League of Legends World Championship held in 2025."
+        }
+      ],
+      "english_brief": "The 2025 League of Legends Worlds semifinal saw South Korea's T1 decisively defeat China's TES 3-0, guaranteeing an all-Korean final against KT in Chengdu, China—the first time since 2017 that both finalists will be from LCK on Chinese soil. T1's iconic player Faker continues his undefeated streak against LPL teams in best-of-five matches at Worlds. This dominance not only highlights the strength of LCK teams in the global esports scene but also intensifies the rivalry between Korean and Chinese esports, with high fan engagement expected during the November 9 final.",
+      "chinese_brief": "2025年《英雄联盟》全球总决赛半决赛中，韩国战队T1以3比0横扫中国TES，确保总决赛在中国成都上演全LCK对决，KT将战T1，这是自2017年以来首次有两支LCK战队在中国舞台会师。T1核心选手Faker保持了其在全球总决赛五局三胜制中对LPL战队不败的纪录。这一胜利不仅彰显了LCK战队在全球电竞中的强势地位，也加剧了韩中电竞间的竞争，11月9日的总决赛备受期待。"
+    },
+    {
+      "id": 65,
+      "headline": "Nexperia China Accuses Dutch Parent of RMB 1 Billion Debt amid Semiconductor Supply Dispute",
+      "key_takeaways": [
+        "Nexperia's Chinese subsidiary claims the Dutch parent company owes it 1 billion RMB.",
+        "The parent company has halted wafer supplies, leading to tensions within the semiconductor supply chain.",
+        "China's Ministry of Commerce considers export exemptions for qualifying Nexperia products after a new US-China agreement.",
+        "The German government expresses cautious optimism about easing the dispute."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Nexperia",
+          "explanation": "A global semiconductor manufacturer headquartered in the Netherlands, with production facilities in China."
+        },
+        {
+          "term": "Wafers",
+          "explanation": "Thin slices of semiconductor material used as the substrate for microchips."
+        },
+        {
+          "term": "RMB",
+          "explanation": "Renminbi, the official currency of China."
+        },
+        {
+          "term": "Ministry of Commerce",
+          "explanation": "China's government agency responsible for trade policy and foreign commerce."
+        }
+      ],
+      "english_brief": "Nexperia's Chinese subsidiary has publicly accused its Dutch headquarters of owing RMB 1 billion and causing a supply halt by suspending wafer shipments. This dispute unfolding amid tightening semiconductor export controls has attracted the attention of Chinese and German authorities. Following a recent US-China trade agreement, China's Ministry of Commerce is contemplating export exemptions for certain Nexperia products, signaling a possible thaw. The German government remains cautiously hopeful that the tensions will ease, reflecting broader geopolitical complexities affecting the global semiconductor industry.",
+      "chinese_brief": "安世半导体中国子公司公开指责荷兰总部欠款10亿元人民币，并因暂停晶圆供应导致供应链紧张。在半导体出口管制日益严格的背景下，这场纠纷引起中德两国官方关注。随着中美新贸易协议达成，中国商务部考虑对部分安世产品实施出口豁免，显示出问题缓和的可能。德国政府对此持谨慎乐观态度，反映出全球半导体行业面临的复杂地缘政治局势。"
+    },
+    {
+      "id": 66,
+      "headline": "Super Flower Launches LEADEX VIII Platinum BD 1000W PSU with ATX 3.1 Compliance",
+      "key_takeaways": [
+        "Super Flower released the LEADEX VIII Platinum BD 1000W power supply unit (PSU), designed for China's market.",
+        "The PSU features a compact 125mm chassis and fully modular cables, complying with Intel's ATX 3.1 standard.",
+        "It supports 200% transient peak load and native dual 6+2 pin 12V connectors.",
+        "Achieves Cybenetics platinum efficiency rating with up to 93%."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Super Flower",
+          "explanation": "A well-known Chinese brand producing computer power supplies and components."
+        },
+        {
+          "term": "LEADEX VIII Platinum BD 1000W",
+          "explanation": "A high-performance 1000W power supply model offering platinum-level efficiency and advanced features."
+        },
+        {
+          "term": "ATX 3.1",
+          "explanation": "The latest specification for desktop PC power supplies, released by Intel to improve energy efficiency and compatibility."
+        },
+        {
+          "term": "Cybenetics",
+          "explanation": "An independent organization that tests and certifies power supply efficiency and noise levels."
+        },
+        {
+          "term": "Modular cables",
+          "explanation": "Power supply cables that can be attached or detached to reduce clutter and improve airflow."
+        }
+      ],
+      "english_brief": "Super Flower has launched its LEADEX VIII Platinum BD 1000W power supply, marking the first LEADEX VIII series model introduced in mainland China. The PSU boasts a compact 125mm chassis meeting Intel's ATX 3.1 standard, fully modular cabling, and impressive electrical capabilities including 200% transient peak support and dual 6+2 pin 12V connectors. It also has earned a Cybenetics platinum efficiency rating with up to 93%, making it suitable for high-end gaming and professional PCs seeking both power and efficiency in a compact form factor.",
+      "chinese_brief": "振华发布了LEADEX VIII Platinum BD 1000W电源，这是LEADEX VIII系列在中国大陆市场的首款机型。该电源采用符合英特尔ATX 3.1标准的125mm短机身设计，配备全模组线材，支持200%瞬时峰值负载及双6+2针12V接口。其通过了Cybenetics白金效率认证，效率高达93%，非常适合追求高性能和高效能的电竞及专业电脑用户。"
+    },
+    {
+      "id": 67,
+      "headline": "COMAC's C909, C919 Form Aerial Formation with C929 Model Debut at Nanchang Airshow",
+      "key_takeaways": [
+        "China's COMAC showcased a precision aerial formation featuring C909 and C919 commuter and single-aisle jets.",
+        "The formation flight highlighted coordination, stability, and advanced training of COMAC's test pilots.",
+        "The C929 widebody aircraft model was also unveiled, signaling progress in China's large passenger aircraft programs.",
+        "The performance demonstrated the growing capabilities and ambition of China's domestic aviation industry."
+      ],
+      "term_clarifications": [
+        {
+          "term": "COMAC",
+          "explanation": "Commercial Aircraft Corporation of China, a state-owned aerospace manufacturer focused on civil aircraft development."
+        },
+        {
+          "term": "C909",
+          "explanation": "A regional turboprop commuter aircraft developed by COMAC."
+        },
+        {
+          "term": "C919",
+          "explanation": "A narrow-body twinjet passenger airliner developed by COMAC, designed to compete
+2025-11-04 13:21:09,294 | WARNING | Batch 17 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 64,       "headline": "LCK Dominates LoL Worlds S15 Final with T1's Sweep of TES in China",       "key_takeaways": [         "T1 defeated TES 3-0 in the 2025 League of Legends World Championship (S15) semifinals.",         "The final will feature two LCK teams, T1 and KT, meeting in China for the first time since 2017.",         "Faker, T1's star player, maintains an undefeated record against LPL teams in BO5 matches at Worlds.",         "The event signifies ...)
+2025-11-04 13:21:38,077 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 64,
+      "headline": "T1 Secures LCK's 2025 LoL World Championship Title, Facing KT in All-Korean Final in China",
+      "key_takeaways": [
+        "T1 from South Korea's LCK region defeated China's TES 3-0 in the LoL 2025 World Championship semifinals.",
+        "LCK teams T1 and KT will compete in the all-Korean final held in Chengdu, China, marking the first time since 2017 LCK secured both finalists in a China-hosted Worlds.",
+        "Faker, T1's star player, maintains a 100% BO5 (best of five) win record against LPL teams in World Championship knockout stages.",
+        "The finals are scheduled for November 9, 2025."
+      ],
+      "term_clarifications": [
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, South Korea's professional League of Legends esports league."
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, China's top professional League of Legends esports league."
+        },
+        {
+          "term": "T1",
+          "explanation": "A premier South Korean esports organization known for their League of Legends team, one of the most successful in the world."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a leading Chinese League of Legends esports team."
+        },
+        {
+          "term": "BO5",
+          "explanation": "Best of Five, a format where the winner is the first team to win three out of five games."
+        },
+        {
+          "term": "Faker",
+          "explanation": "Lee Sang-hyeok, the legendary mid-laner player for T1, widely regarded as one of the greatest League of Legends players of all time."
+        },
+        {
+          "term": "S15",
+          "explanation": "Season 15 of the League of Legends World Championship."
+        }
+      ],
+      "english_brief": "In the 2025 League of Legends World Championship semifinals, T1 from South Korea's LCK region convincingly defeated Chinese team TES 3-0 to advance to the finals. The championship match on November 9 in Chengdu will feature an all-Korean final between T1 and KT, marking the first time since 2017 that LCK teams occupy both finalist positions during a China-hosted Worlds event. Faker continues his dominant record against Chinese teams in knockout stages, aiming for a historic sixth world title for T1.",
+      "chinese_brief": "在2025年英雄联盟全球总决赛半决赛中，韩国LCK赛区的T1战队以3比0击败中国LPL赛区的TES战队，强势晋级决赛。总决赛将于11月9日在成都举行，决赛双方均来自韩国LCK，实现了自2017年以来在中国举办的S赛首次由LCK包揽冠亚军。Faker保持着对LPL战队淘汰赛阶段BO5的100%胜率，剑指T1队史第六个世界冠军。"
+    },
+    {
+      "id": 65,
+      "headline": "Nexperia China Accuses Dutch Headquarters of Owing 1 Billion RMB Amid Supply Dispute",
+      "key_takeaways": [
+        "Nexperia's Chinese subsidiary accuses its Dutch parent company of irresponsibly halting wafer supply and owing 1 billion RMB.",
+        "The Chinese subsidiary denies any contract breach on its part.",
+        "A new US-China agreement may exempt qualified Nexperia products from export controls, potentially easing tensions.",
+        "The German government expresses cautious optimism about resolving the supply conflict."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Nexperia",
+          "explanation": "A semiconductor manufacturer headquartered in the Netherlands with global operations, including China."
+        },
+        {
+          "term": "wafer supply",
+          "explanation": "Semiconductor wafers are thin slices of semiconductor material used in electronics fabrication."
+        },
+        {
+          "term": "RMB",
+          "explanation": "Renminbi, the official currency of China."
+        },
+        {
+          "term": "US-China agreement",
+          "explanation": "Recent bilateral discussion aimed at managing semiconductor export controls."
+        }
+      ],
+      "english_brief": "Nexperia's Chinese subsidiary has publicly accused its Dutch parent company of being highly irresponsible by suspending the supply of semiconductor wafers and owing the Chinese division 1 billion RMB. The subsidiary insists it has not breached any contracts. This dispute comes amid a new US-China agreement that might exempt certain Nexperia products from export controls. Meanwhile, the German government remains cautiously optimistic about a potential resolution, recognizing the sensitive geopolitical and economic nature of semiconductor supply chains.",
+      "chinese_brief": "荷兰安世半导体的中国子公司指责荷兰总部因暂停半导体晶圆供应且拖欠10亿元人民币货款，行为极其不负责任。中国子公司强调自身未违约。此次纠纷发生在中美达成新协议，可能对符合条件的安世产品出口免除管制的背景下。德国政府对事件的缓和保持谨慎乐观态度，反映出半导体供应链中复杂的地缘政治和经济敏感性。"
+    },
+    {
+      "id": 66,
+      "headline": "Super Flower Launches LEADEX VIII Platinum BD 1000W PSU with ATX 3.1 and High Efficiency",
+      "key_takeaways": [
+        "Super Flower has introduced the LEADEX VIII Platinum BD 1000W power supply unit (PSU), the first of its kind in mainland China.",
+        "The PSU features a 125mm compact body and complies with Intel's ATX 3.1 standard.",
+        "It supports 200% peak load and includes native 12V dual 6-pin (2×6) connectors suitable for high-end GPUs.",
+        "The unit achieves Cybenetics Platinum efficiency rating, indicating approximately 93% or higher power efficiency."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Super Flower",
+          "explanation": "A well-known Chinese manufacturer of computer power supplies."
+        },
+        {
+          "term": "LEADEX VIII Platinum BD 1000W",
+          "explanation": "A model of power supply unit providing up to 1000 watts with Platinum-level efficiency."
+        },
+        {
+          "term": "ATX 3.1",
+          "explanation": "The latest Intel standard for computer PSUs that defines size, connectors, and power requirements."
+        },
+        {
+          "term": "Cybenetics",
+          "explanation": "An organization that tests and certifies power supply efficiency and noise levels."
+        }
+      ],
+      "english_brief": "Super Flower released its LEADEX VIII Platinum BD 1000W PSU, marking its first ATX 3.1 compliant model in mainland China. With a compact 125mm chassis, the PSU delivers up to 200% peak power load and features native 12V dual 6-pin connectors ideal for demanding GPUs. Certified with Cybenetics Platinum efficiency, it offers high energy efficiency around 93%, suitable for premium PC builds requiring reliable power delivery and modern standards.",
+      "chinese_brief": "振华正式推出其首款符合英特尔ATX 3.1标准的LEADEX VIII Platinum BD 1000W电源，机身尺寸紧凑为125毫米。该电源支持200%的瞬时峰值负载，配备原生12V双6针接口，适合高端显卡使用。获得Cybenetics白金效率认证，能效约93%，适合高性能台式机需求，提供稳定且高效的电力供应。"
+    },
+    {
+      "id": 67,
+      "headline": "COMAC’s C909, C919 Perform Formation Flight as C929 Model Unveiled at 2025 Nanchang Airshow",
+      "key_takeaways": [
+        "China's COMAC showcased a formation flight featuring three aircraft: one C909 and two C919 planes at the 2025 Nanchang Airshow.",
+        "The three planes demonstrated precise coordination during takeoff, maneuvering, and low-altitude pass over spectators.",
+        "The performance highlighted COMAC's pilot skill and the aircrafts’ flight stability and reliability.",
+        "The C929 wide-body aircraft model was also unveiled, signaling progress in China's large aircraft development."
+      ],
+      "term_clarifications": [
+        {
+          "term": "COMAC",
+          "explanation": "Commercial Aircraft Corporation of China, the state-owned manufacturer developing Chinese civil aircraft."
+        },
+        {
+          "term": "C909",
+          "explanation": "A regional jet model developed by COMAC."
+        },
+        {
+          "term": "C919",
+          "explanation": "COMAC’s single-aisle commercial passenger jet aimed to compete with Airbus A320 and Boeing 737 families."
+        },
+        {
+          "term": "C929",
+          "explanation": "A planned wide-body long-range aircraft jointly developed by China and Russia."
+        },
+        {
+          "
+2025-11-04 13:21:38,078 | WARNING | Batch 17 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 64,       "headline": "T1 Secures LCK's 2025 LoL World Championship Title, Facing KT in All-Korean Final in China",       "key_takeaways": [         "T1 from South Korea's LCK region defeated China's TES 3-0 in the LoL 2025 World Championship semifinals.",         "LCK teams T1 and KT will compete in the all-Korean final held in Chengdu, China, marking the first time since 2017 LCK secured both finalists in a China-hosted Worlds.",         "Faker, T1's star p...)
+2025-11-04 13:22:10,799 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 64,
+      "headline": "T1 Secures LCK's Dominance with 3-0 Victory Over TES at 2025 LoL World Championship",
+      "key_takeaways": [
+        "T1 defeated TES 3-0 in the semifinals of the 2025 League of Legends World Championship (S15).",
+        "Both finalists, T1 and KT, are from South Korea's LCK region, marking the first all-LCK final in China since 2017.",
+        "Faker remains undefeated against LPL teams in World Championship best-of-five series, aiming for his sixth world title.",
+        "The grand final will take place on November 9 in Chengdu, China, between T1 and KT."
+      ],
+      "term_clarifications": [
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea — the top professional League of Legends league in South Korea."
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League — the top professional League of Legends league in China."
+        },
+        {
+          "term": "T1",
+          "explanation": "A renowned South Korean esports team known for their dominance in League of Legends."
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports — a leading professional Chinese League of Legends team."
+        },
+        {
+          "term": "Faker",
+          "explanation": "Faker (Lee Sang-hyeok) is a legendary South Korean professional League of Legends player, considered one of the best in the history of the game."
+        },
+        {
+          "term": "BO5",
+          "explanation": "Best of five — a series format where a team must win three out of five matches."
+        },
+        {
+          "term": "S15",
+          "explanation": "Season 15 — refers to the 2025 iteration of the League of Legends World Championship."
+        }
+      ],
+      "english_brief": "In the 2025 League of Legends World Championship semifinals, South Korea's T1 dominated China's TES with a clean 3-0 sweep, securing their place in the final against fellow LCK team KT. This final, slated for November 9 in Chengdu, marks the first all-LCK final held in China since 2017. Faker's continued undefeated streak against Chinese LPL teams in best-of-five matches adds to the anticipation, as he eyes his sixth world title. The event underscores South Korea’s enduring strength in esports and highlights the ongoing rivalry between the top teams from LCK and LPL regions.",
+      "chinese_brief": "在2025年《英雄联盟》全球总决赛半决赛中，韩国队T1以3-0的比分干净利落地击败中国队TES，成功晋级决赛，将与同属LCK赛区的KT队争夺冠军。此次决赛将于11月9日在成都举行，这也是自2017年以来首次在中国举办的全LCK决赛。Faker在对阵LPL队伍的五局三胜制比赛中保持不败，正瞄准他的第六个冠军头衔。赛事彰显了韩国电竞的持续强大，并突显了LCK与LPL顶级队伍间的激烈竞争。"
+    },
+    {
+      "id": 65,
+      "headline": "Nexperia China Accuses Dutch Parent Company of Owing 1 Billion RMB Amid Chip Supply Dispute",
+      "key_takeaways": [
+        "Nexperia's China subsidiary accuses its Dutch headquarters of owing 1 billion RMB and halting wafer supply.",
+        "The Chinese subsidiary claims it has not breached any contracts despite the supply stoppage.",
+        "Following a new US-China agreement, China's Ministry of Commerce is considering exemptions for qualifying Nexperia exports.",
+        "The German government takes a cautiously optimistic view on the easing of the dispute."
+      ],
+      "term_clarifications": [
+        {
+          "term": "Nexperia",
+          "explanation": "A global semiconductor manufacturer headquartered in the Netherlands, specializing in discrete, logic, and MOSFET components."
+        },
+        {
+          "term": "wafer supply",
+          "explanation": "Refers to the provision of semiconductor wafers, which are thin slices of semiconductor material used to fabricate integrated circuits."
+        },
+        {
+          "term": "RMB",
+          "explanation": "Renminbi, the official currency of China."
+        },
+        {
+          "term": "US-China agreement",
+          "explanation": "Recent diplomatic or trade agreements between the USA and China impacting semiconductor trade policies."
+        }
+      ],
+      "english_brief": "Nexperia’s Chinese subsidiary has publicly accused its Dutch parent company of owing it approximately 1 billion RMB and halting wafer supplies, actions the subsidiary calls 'extremely irresponsible.' Despite these claims, the Chinese side asserts no contractual violations on its part. The dispute emerges amid recent US-China trade agreements, with Chinese authorities considering export exemptions for qualifying Nexperia products. Germany, where Nexperia is based, maintains a cautiously optimistic stance on the potential resolution of this semiconductor supply conflict. This situation highlights the fragile state of global semiconductor supply chains amidst geopolitical tensions.",
+      "chinese_brief": "荷兰安世半导体中国子公司公开指责其荷兰总部欠款约10亿元人民币并暂停晶圆供应，称总部行为“极其不负责任”。尽管如此，中国子公司坚称自身未违约。此次争端发生在最新中美贸易协议之际，中国商务部正考虑对符合条件的安世产品出口给予豁免。作为安世总部所在地的德国政府对解决半导体供应冲突持谨慎乐观态度。该事件凸显了地缘政治紧张局势下全球半导体供应链的脆弱性。"
+    },
+    {
+      "id": 66,
+      "headline": "SUPER FLOWER Launches LEADEX VIII Platinum BD 1000W Power Supply with ATX 3.1 Compliance",
+      "key_takeaways": [
+        "SUPER FLOWER introduced the LEADEX VIII Platinum BD 1000W PSU featuring a compact 125mm length design.",
+        "It complies with Intel's ATX 3.1 specification and supports up to 200% transient load.",
+        "The PSU includes native 12V 2×6 pin connectors and earned a Cybenetics Platinum efficiency rating.",
+        "This model is the first LEADEX VIII generation SKU available in the Chinese mainland market."
+      ],
+      "term_clarifications": [
+        {
+          "term": "SUPER FLOWER",
+          "explanation": "A Taiwanese company specializing in computer power supply units and cooling solutions."
+        },
+        {
+          "term": "LEADEX VIII Platinum BD",
+          "explanation": "A high-end series of power supply units from SUPER FLOWER featuring high efficiency and advanced features."
+        },
+        {
+          "term": "ATX 3.1",
+          "explanation": "A specification for power supplies developed by Intel to provide improved power delivery and transient load handling."
+        },
+        {
+          "term": "Cybenetics",
+          "explanation": "An independent organization that tests and rates the efficiency and noise levels of power supplies."
+        },
+        {
+          "term": "200% transient load",
+          "explanation": "The ability of the power supply to handle short bursts of power demand up to double its rated continuous output."
+        }
+      ],
+      "english_brief": "SUPER FLOWER has launched its LEADEX VIII Platinum BD 1000W power supply unit, featuring a compact 125mm short body design that conforms to Intel's ATX 3.1 standard. The fully modular PSU can handle transient loads up to 200%, supports native 12V dual 6-pin connectors, and boasts a Cybenetics Platinum rating for efficiency and noise. As the first LEADEX VIII generation SKU introduced to the Chinese mainland market, this PSU caters to high-performance PC builders seeking reliable power delivery in a compact form factor.",
+      "chinese_brief": "振华发布了LEADEX VIII Platinum BD 1000W电源，采用125毫米短机身设计，符合英特尔ATX 3.1规范。该全模组电源可承受高达200%的瞬时负载，支持原生12V双6针接口，获得Cybenetics白金级效率及低噪音认证。作为首款进入中国大陆市场的LEADEX VIII系列产品，满足高性能电脑用户对紧凑高效电源的需求。"
+    },
+    {
+      "id": 67,
+      "headline": "COMAC Showcases C909, C919 Formation Flight and Debuts C929 Model at Nanchang Airshow",
+      "key_takeaways": [
+        "China's COMAC presented an impressive formation flight using three aircraft: one C909 and two C919s.",
+        "The formation maintained precise triangular structure with perfect coordination and timing.",
+        "The C929 model, a new wide-body aircraft, was also unveiled at the event.",
+        "This display highlights China's growing capabilities in large commercial aircraft development."
+      ],
+      "term_clarifications": [
+        {
+          "term": "COMAC",
+          "explanation": "Commercial Aircraft Corporation
+2025-11-04 13:22:10,801 | WARNING | Batch 17 attempt 3 produced invalid JSON (snippet={   "briefings": [     {       "id": 64,       "headline": "T1 Secures LCK's Dominance with 3-0 Victory Over TES at 2025 LoL World Championship",       "key_takeaways": [         "T1 defeated TES 3-0 in the semifinals of the 2025 League of Legends World Championship (S15).",         "Both finalists, T1 and KT, are from South Korea's LCK region, marking the first all-LCK final in China since 2017.",         "Faker remains undefeated against LPL teams in World Championship best-of-five series, aim...)
+2025-11-04 13:22:10,801 | WARNING | Splitting batch 17 (size=4) after repeated JSON failures.
+2025-11-04 13:22:49,945 | INFO | Completed batch 17/17 (briefings=68).
+2025-11-04 13:22:49,946 | INFO | OpenAI summarization completed across 17 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=89657)
+2025-11-04 13:22:49,948 | INFO | Saved digest to digests/world-briefing-2025-11-04_1322.md
+2025-11-04 13:22:49,950 | INFO | Run summary: {"started_at": "2025-11-04T05:09:49.216699+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": null, "requests": [{"endpoint": "top-headlines", "request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en"}, {"endpoint": "top-headlines", "request_params": {"language": "fr", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "fr"}, {"endpoint": "top-headlines", "request_params": {"language": "de", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "de"}, {"endpoint": "everything", "request_params": {"q": "\"中国\" OR \"中国经济\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}, "status": "ok", "total_results": 1767, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh"}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 40191, "output_tokens": 49466, "total_tokens": 89657}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-04_1322.md", "articles_summarized": 68}}
+2025-11-04 13:41:38,596 | INFO | Requesting top-headlines with params={'language': 'en', 'pageSize': 40}
+2025-11-04 13:41:39,263 | INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+2025-11-04 13:41:39,264 | INFO | Retained 0 articles for endpoint=top-headlines, language=en after filtering.
+2025-11-04 13:41:39,264 | INFO | Requesting top-headlines with params={'language': 'fr', 'pageSize': 40}
+2025-11-04 13:41:39,477 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:41:39,477 | INFO | Retained 0 articles for endpoint=top-headlines, language=fr after filtering.
+2025-11-04 13:41:39,477 | INFO | Requesting top-headlines with params={'language': 'de', 'pageSize': 40}
+2025-11-04 13:41:39,685 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:41:39,685 | INFO | Retained 0 articles for endpoint=top-headlines, language=de after filtering.
+2025-11-04 13:41:39,685 | INFO | Requesting everything with params={'q': '"中国" AND "经济"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:09:49.216699+00:00'}
+2025-11-04 13:41:39,903 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:41:39,903 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:41:39,903 | INFO | Requesting everything with params={'q': '"China" AND "economy"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:09:49.216699+00:00'}
+2025-11-04 13:41:40,121 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:41:40,121 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:41:40,121 | INFO | Requesting everything with params={'q': '"China" AND "AI"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:09:49.216699+00:00'}
+2025-11-04 13:41:40,409 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:41:40,409 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:41:40,410 | INFO | Requesting everything with params={'q': '"中国" AND "人工智能"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:09:49.216699+00:00'}
+2025-11-04 13:41:40,629 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:41:40,629 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:41:40,629 | INFO | Requesting everything with params={'q': '"黄金" OR "美元"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:09:49.216699+00:00'}
+2025-11-04 13:41:40,934 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:41:40,935 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:41:40,935 | INFO | Requesting everything with params={'q': '"gold" OR "USD"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:09:49.216699+00:00'}
+2025-11-04 13:41:41,152 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:41:41,152 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:41:41,153 | INFO | Saved digest to digests/world-briefing-2025-11-04_1341.md
+2025-11-04 13:41:41,154 | INFO | Run summary: {"started_at": "2025-11-04T05:41:38.596351+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-04T05:09:49.216699+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "top-headlines", "language": "en", "pageSize": 40}}, {"endpoint": "top-headlines", "request_params": {"language": "fr", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "fr", "query_index": 1, "query_params": {"endpoint": "top-headlines", "language": "fr", "pageSize": 40}}, {"endpoint": "top-headlines", "request_params": {"language": "de", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "de", "query_index": 2, "query_params": {"endpoint": "top-headlines", "language": "de", "pageSize": 40}}, {"endpoint": "everything", "request_params": {"q": "\"中国\" AND \"经济\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:09:49.216699+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 3, "query_params": {"endpoint": "everything", "q": "\"中国\" AND \"经济\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"China\" AND \"economy\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:09:49.216699+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 4, "query_params": {"endpoint": "everything", "q": "\"China\" AND \"economy\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"China\" AND \"AI\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:09:49.216699+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "\"China\" AND \"AI\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"中国\" AND \"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:09:49.216699+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 6, "query_params": {"endpoint": "everything", "q": "\"中国\" AND \"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"黄金\" OR \"美元\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:09:49.216699+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 7, "query_params": {"endpoint": "everything", "q": "\"黄金\" OR \"美元\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"gold\" OR \"USD\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:09:49.216699+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 8, "query_params": {"endpoint": "everything", "q": "\"gold\" OR \"USD\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "usage": {}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-04_1341.md", "extra_digests": [], "articles_summarized": 0}}
+2025-11-04 13:43:04,844 | INFO | Requesting top-headlines with params={'language': 'en', 'pageSize': 40}
+2025-11-04 13:43:05,387 | INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+2025-11-04 13:43:05,388 | INFO | Retained 0 articles for endpoint=top-headlines, language=en after filtering.
+2025-11-04 13:43:05,388 | INFO | Requesting top-headlines with params={'language': 'fr', 'pageSize': 40}
+2025-11-04 13:43:05,596 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:05,596 | INFO | Retained 0 articles for endpoint=top-headlines, language=fr after filtering.
+2025-11-04 13:43:05,596 | INFO | Requesting top-headlines with params={'language': 'de', 'pageSize': 40}
+2025-11-04 13:43:05,858 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:05,858 | INFO | Retained 0 articles for endpoint=top-headlines, language=de after filtering.
+2025-11-04 13:43:05,858 | INFO | Requesting everything with params={'q': '"中国" AND "经济"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:41:38.596351+00:00'}
+2025-11-04 13:43:06,076 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:06,076 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:43:06,076 | INFO | Requesting everything with params={'q': '"China" AND "economy"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:41:38.596351+00:00'}
+2025-11-04 13:43:06,294 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:06,295 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:43:06,295 | INFO | Requesting everything with params={'q': '"China" AND "AI"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:41:38.596351+00:00'}
+2025-11-04 13:43:06,599 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:06,599 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:43:06,599 | INFO | Requesting everything with params={'q': '"人工智能"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:41:38.596351+00:00'}
+2025-11-04 13:43:07,010 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:07,010 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:43:07,010 | INFO | Requesting everything with params={'q': '"中国" AND "人工智能"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:41:38.596351+00:00'}
+2025-11-04 13:43:07,226 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:07,226 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:43:07,226 | INFO | Requesting everything with params={'q': '"黄金" OR "美元"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:41:38.596351+00:00'}
+2025-11-04 13:43:07,441 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:07,441 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:43:07,441 | INFO | Requesting everything with params={'q': '"gold" OR "USD"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:41:38.596351+00:00'}
+2025-11-04 13:43:07,658 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:07,658 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:43:07,660 | INFO | Saved digest to digests/world-briefing-2025-11-04_1343.md
+2025-11-04 13:43:07,661 | INFO | Run summary: {"started_at": "2025-11-04T05:43:04.844352+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-04T05:41:38.596351+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "top-headlines", "language": "en", "pageSize": 40}}, {"endpoint": "top-headlines", "request_params": {"language": "fr", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "fr", "query_index": 1, "query_params": {"endpoint": "top-headlines", "language": "fr", "pageSize": 40}}, {"endpoint": "top-headlines", "request_params": {"language": "de", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "de", "query_index": 2, "query_params": {"endpoint": "top-headlines", "language": "de", "pageSize": 40}}, {"endpoint": "everything", "request_params": {"q": "\"中国\" AND \"经济\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:41:38.596351+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 3, "query_params": {"endpoint": "everything", "q": "\"中国\" AND \"经济\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"China\" AND \"economy\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:41:38.596351+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 4, "query_params": {"endpoint": "everything", "q": "\"China\" AND \"economy\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"China\" AND \"AI\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:41:38.596351+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "\"China\" AND \"AI\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:41:38.596351+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 6, "query_params": {"endpoint": "everything", "q": "\"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"中国\" AND \"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:41:38.596351+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 7, "query_params": {"endpoint": "everything", "q": "\"中国\" AND \"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"黄金\" OR \"美元\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:41:38.596351+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 8, "query_params": {"endpoint": "everything", "q": "\"黄金\" OR \"美元\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"gold\" OR \"USD\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:41:38.596351+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 9, "query_params": {"endpoint": "everything", "q": "\"gold\" OR \"USD\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "usage": {}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-04_1343.md", "extra_digests": [], "articles_summarized": 0}}
+2025-11-04 13:43:50,942 | INFO | Requesting top-headlines with params={'language': 'en', 'pageSize': 40}
+2025-11-04 13:43:51,481 | INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+2025-11-04 13:43:51,481 | INFO | Retained 0 articles for endpoint=top-headlines, language=en after filtering.
+2025-11-04 13:43:51,481 | INFO | Requesting top-headlines with params={'language': 'fr', 'pageSize': 40}
+2025-11-04 13:43:51,686 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:51,687 | INFO | Retained 0 articles for endpoint=top-headlines, language=fr after filtering.
+2025-11-04 13:43:51,687 | INFO | Requesting top-headlines with params={'language': 'de', 'pageSize': 40}
+2025-11-04 13:43:51,992 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:51,992 | INFO | Retained 0 articles for endpoint=top-headlines, language=de after filtering.
+2025-11-04 13:43:51,993 | INFO | Requesting everything with params={'q': '"中国" AND "经济"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:04.844352+00:00'}
+2025-11-04 13:43:52,270 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:52,270 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:43:52,271 | INFO | Requesting everything with params={'q': '"China" AND "economy"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:04.844352+00:00'}
+2025-11-04 13:43:52,523 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:52,523 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:43:52,523 | INFO | Requesting everything with params={'q': '"China" AND "AI"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:04.844352+00:00'}
+2025-11-04 13:43:52,743 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:52,744 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:43:52,744 | INFO | Requesting everything with params={'q': '"人工智能"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:04.844352+00:00'}
+2025-11-04 13:43:52,954 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:52,955 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:43:52,955 | INFO | Requesting everything with params={'q': '"AI"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:04.844352+00:00'}
+2025-11-04 13:43:53,162 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:53,163 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:43:53,163 | INFO | Requesting everything with params={'q': '"中国" AND "人工智能"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:04.844352+00:00'}
+2025-11-04 13:43:53,377 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:53,377 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:43:53,377 | INFO | Requesting everything with params={'q': '"黄金" OR "美元"', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:04.844352+00:00'}
+2025-11-04 13:43:53,590 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:53,591 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:43:53,591 | INFO | Requesting everything with params={'q': '"gold" OR "USD"', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:04.844352+00:00'}
+2025-11-04 13:43:53,805 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:43:53,805 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:43:53,807 | INFO | Saved digest to digests/world-briefing-2025-11-04_1343.md
+2025-11-04 13:43:53,808 | INFO | Run summary: {"started_at": "2025-11-04T05:43:50.942415+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-04T05:43:04.844352+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"language": "en", "pageSize": 40}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "top-headlines", "language": "en", "pageSize": 40}}, {"endpoint": "top-headlines", "request_params": {"language": "fr", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "fr", "query_index": 1, "query_params": {"endpoint": "top-headlines", "language": "fr", "pageSize": 40}}, {"endpoint": "top-headlines", "request_params": {"language": "de", "pageSize": 40}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "de", "query_index": 2, "query_params": {"endpoint": "top-headlines", "language": "de", "pageSize": 40}}, {"endpoint": "everything", "request_params": {"q": "\"中国\" AND \"经济\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:04.844352+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 3, "query_params": {"endpoint": "everything", "q": "\"中国\" AND \"经济\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"China\" AND \"economy\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:04.844352+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 4, "query_params": {"endpoint": "everything", "q": "\"China\" AND \"economy\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"China\" AND \"AI\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:04.844352+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "\"China\" AND \"AI\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:04.844352+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 6, "query_params": {"endpoint": "everything", "q": "\"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"AI\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:04.844352+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 7, "query_params": {"endpoint": "everything", "q": "\"AI\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"中国\" AND \"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:04.844352+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 8, "query_params": {"endpoint": "everything", "q": "\"中国\" AND \"人工智能\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"黄金\" OR \"美元\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:04.844352+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 9, "query_params": {"endpoint": "everything", "q": "\"黄金\" OR \"美元\"", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "\"gold\" OR \"USD\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:04.844352+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 10, "query_params": {"endpoint": "everything", "q": "\"gold\" OR \"USD\"", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "usage": {}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-04_1343.md", "extra_digests": [], "articles_summarized": 0}}
+2025-11-04 13:50:39,132 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 13:50:39,898 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 13:50:39,899 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:50:39,899 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 13:50:40,160 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:50:40,161 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:50:40,161 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 13:50:40,422 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:50:40,422 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:50:40,423 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:50.942415+00:00'}
+2025-11-04 13:50:40,689 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:50:40,689 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:50:40,689 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:50.942415+00:00'}
+2025-11-04 13:50:40,956 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:50:40,956 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:50:40,956 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:50.942415+00:00'}
+2025-11-04 13:50:41,221 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:50:41,222 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:50:41,222 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:50.942415+00:00'}
+2025-11-04 13:50:41,491 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:50:41,491 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:50:41,491 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:50.942415+00:00'}
+2025-11-04 13:50:41,755 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:50:41,756 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 13:50:41,756 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T05:43:50.942415+00:00'}
+2025-11-04 13:50:42,022 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:50:42,022 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-04 13:50:42,023 | INFO | Saved digest to digests/world-briefing-2025-11-04_1350.md
+2025-11-04 13:50:42,024 | INFO | Run summary: {"started_at": "2025-11-04T05:50:39.132546+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-04T05:43:50.942415+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "pageSize": 30}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "everything", "request_params": {"q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:50.942415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:50.942415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:50.942415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:50.942415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 6, "query_params": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:50.942415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 7, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T05:43:50.942415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 8, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "usage": {}}, "outputs": {"digest_path": "digests/world-briefing-2025-11-04_1350.md", "extra_digests": [], "articles_summarized": 0}}
+2025-11-04 13:51:56,535 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 13:51:57,258 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 13:51:57,259 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:51:57,259 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 13:51:57,520 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:51:57,520 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:51:57,520 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 13:51:57,777 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:51:57,777 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:51:57,777 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2024-11-03T08:00:00+00:00'}
+2025-11-04 13:52:16,260 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 13:52:17,022 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 13:52:17,023 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:52:17,023 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 13:52:17,279 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:52:17,280 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:52:17,280 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 13:52:17,535 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:52:17,536 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:52:17,536 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2024-11-03T08:00:00+00:00'}
+2025-11-04 13:52:23,038 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 13:52:23,751 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 13:52:23,752 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:52:23,752 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 13:52:24,066 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:52:24,066 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:52:24,066 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 13:52:24,324 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 13:52:24,324 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 13:52:24,324 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2024-11-02T08:00:00+00:00'}
+2025-11-04 14:00:39,477 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 14:00:40,307 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 14:00:40,307 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:00:40,307 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 14:00:40,767 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:00:40,767 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:00:40,767 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 14:00:41,071 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:00:41,071 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:00:41,071 | INFO | Clamping 'from' for query 3 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:00:41,071 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:00:41.071838+00:00'}
+2025-11-04 14:00:41,470 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:00:41,471 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:00:41,471 | INFO | Clamping 'from' for query 4 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:00:41,471 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:00:41.471364+00:00'}
+2025-11-04 14:00:41,883 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:00:41,883 | INFO | Retained 40 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:00:41,883 | INFO | Clamping 'from' for query 5 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:00:41,883 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:00:41.883675+00:00'}
+2025-11-04 14:00:42,384 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:00:42,384 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:00:42,384 | INFO | Clamping 'from' for query 6 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:00:42,384 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:00:42.384710+00:00'}
+2025-11-04 14:00:42,814 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:00:42,815 | INFO | Retained 35 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:00:42,815 | INFO | Clamping 'from' for query 7 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:00:42,815 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:00:42.815203+00:00'}
+2025-11-04 14:00:43,306 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:00:43,307 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:00:43,307 | INFO | Clamping 'from' for query 8 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:00:43,307 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:00:43.307268+00:00'}
+2025-11-04 14:00:43,714 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:00:43,715 | INFO | Retained 38 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:00:43,917 | INFO | Summarizing 234 articles across 59 batches.
+2025-11-04 14:01:19,135 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 14:01:19,886 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 14:01:19,887 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:19,887 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 14:01:20,158 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:01:20,158 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:20,158 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 14:01:20,550 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:01:20,550 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:20,550 | INFO | Clamping 'from' for query 3 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:20,550 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:20.550779+00:00'}
+2025-11-04 14:01:20,957 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:20,957 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:20,958 | INFO | Clamping 'from' for query 4 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:20,958 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:20.958021+00:00'}
+2025-11-04 14:01:21,317 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:21,317 | INFO | Retained 40 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:21,318 | INFO | Clamping 'from' for query 5 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:21,318 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:21.317995+00:00'}
+2025-11-04 14:01:21,752 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:21,753 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:21,753 | INFO | Clamping 'from' for query 6 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:21,753 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:21.753155+00:00'}
+2025-11-04 14:01:22,135 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:22,136 | INFO | Retained 35 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:22,136 | INFO | Clamping 'from' for query 7 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:22,136 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:22.136360+00:00'}
+2025-11-04 14:01:22,648 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:22,649 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:22,649 | INFO | Clamping 'from' for query 8 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:22,649 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:22.649179+00:00'}
+2025-11-04 14:01:23,057 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:23,058 | INFO | Retained 38 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:23,219 | INFO | Summarizing 234 articles across 59 batches.
+2025-11-04 14:01:34,497 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 14:01:35,213 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 14:01:35,213 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:35,213 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 14:01:35,548 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:01:35,549 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:35,549 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 14:01:35,812 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:01:35,812 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:35,812 | INFO | Clamping 'from' for query 3 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:35,812 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:35.812777+00:00'}
+2025-11-04 14:01:36,260 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:36,260 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:36,260 | INFO | Clamping 'from' for query 4 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:36,260 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:36.260667+00:00'}
+2025-11-04 14:01:36,601 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:36,602 | INFO | Retained 40 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:36,602 | INFO | Clamping 'from' for query 5 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:36,602 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:36.602373+00:00'}
+2025-11-04 14:01:37,009 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:37,010 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:37,010 | INFO | Clamping 'from' for query 6 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:37,010 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:37.010469+00:00'}
+2025-11-04 14:01:37,362 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:37,363 | INFO | Retained 35 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:37,363 | INFO | Clamping 'from' for query 7 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:37,363 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:37.363158+00:00'}
+2025-11-04 14:01:37,734 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:37,735 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:37,735 | INFO | Clamping 'from' for query 8 to 30-day window (was 2024-11-02T08:00:00+00:00).
+2025-11-04 14:01:37,735 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:37.735163+00:00'}
+2025-11-04 14:01:38,088 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:38,088 | INFO | Retained 38 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:38,228 | INFO | Summarizing 234 articles across 59 batches.
+2025-11-04 14:01:48,191 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 14:01:48,985 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 14:01:48,985 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:48,985 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 14:01:49,244 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:01:49,244 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:49,244 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 14:01:49,500 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:01:49,500 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:01:49,500 | INFO | Clamping 'from' for query 3 to 30-day window (was 2024-11-04T08:00:00+00:00).
+2025-11-04 14:01:49,500 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:49.500727+00:00'}
+2025-11-04 14:01:49,911 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:49,911 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:49,911 | INFO | Clamping 'from' for query 4 to 30-day window (was 2024-11-04T08:00:00+00:00).
+2025-11-04 14:01:49,912 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:49.911950+00:00'}
+2025-11-04 14:01:50,253 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:50,253 | INFO | Retained 40 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:50,253 | INFO | Clamping 'from' for query 5 to 30-day window (was 2024-11-04T08:00:00+00:00).
+2025-11-04 14:01:50,253 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:50.253587+00:00'}
+2025-11-04 14:01:50,649 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:50,650 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:50,650 | INFO | Clamping 'from' for query 6 to 30-day window (was 2024-11-04T08:00:00+00:00).
+2025-11-04 14:01:50,650 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:50.650348+00:00'}
+2025-11-04 14:01:50,994 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:50,994 | INFO | Retained 35 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:50,994 | INFO | Clamping 'from' for query 7 to 30-day window (was 2024-11-04T08:00:00+00:00).
+2025-11-04 14:01:50,994 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:50.994847+00:00'}
+2025-11-04 14:01:51,525 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:51,525 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:01:51,525 | INFO | Clamping 'from' for query 8 to 30-day window (was 2024-11-04T08:00:00+00:00).
+2025-11-04 14:01:51,525 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:01:51.525710+00:00'}
+2025-11-04 14:01:52,036 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:01:52,037 | INFO | Retained 38 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:01:52,192 | INFO | Summarizing 234 articles across 59 batches.
+2025-11-04 14:02:46,902 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 14:02:47,785 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 14:02:47,786 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:02:47,786 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 14:02:48,084 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:02:48,084 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:02:48,085 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 14:02:48,348 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:02:48,349 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:02:48,349 | INFO | Clamping 'from' for query 3 to 30-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:02:48,349 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:02:48.349435+00:00'}
+2025-11-04 14:02:48,758 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:02:48,759 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:02:48,759 | INFO | Clamping 'from' for query 4 to 30-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:02:48,759 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:02:48.759455+00:00'}
+2025-11-04 14:02:49,135 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:02:49,135 | INFO | Retained 40 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:02:49,135 | INFO | Clamping 'from' for query 5 to 30-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:02:49,135 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:02:49.135846+00:00'}
+2025-11-04 14:02:49,689 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:02:49,689 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:02:49,689 | INFO | Clamping 'from' for query 6 to 30-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:02:49,689 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:02:49.689706+00:00'}
+2025-11-04 14:02:50,043 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:02:50,043 | INFO | Retained 35 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:02:50,043 | INFO | Clamping 'from' for query 7 to 30-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:02:50,043 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:02:50.043546+00:00'}
+2025-11-04 14:02:50,421 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:02:50,421 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:02:50,422 | INFO | Clamping 'from' for query 8 to 30-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:02:50,422 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-05T06:02:50.422048+00:00'}
+2025-11-04 14:02:50,778 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:02:50,778 | INFO | Retained 38 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:02:50,931 | INFO | Summarizing 234 articles across 59 batches.
+2025-11-04 14:04:47,845 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 14:04:48,673 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-11-04 14:04:48,674 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:04:48,674 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 14:04:48,932 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:04:48,932 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:04:48,932 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-04 14:04:49,195 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-04 14:04:49,195 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:04:49,195 | INFO | Clamping 'from' for query 3 to 7-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:04:49,195 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-28T06:04:49.195490+00:00'}
+2025-11-04 14:04:49,631 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:04:49,631 | INFO | Retained 39 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:04:49,631 | INFO | Clamping 'from' for query 4 to 7-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:04:49,632 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-28T06:04:49.631915+00:00'}
+2025-11-04 14:04:50,111 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:04:50,111 | INFO | Retained 40 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:04:50,111 | INFO | Clamping 'from' for query 5 to 7-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:04:50,111 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-28T06:04:50.111576+00:00'}
+2025-11-04 14:04:50,520 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:04:50,520 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-04 14:04:50,520 | INFO | Clamping 'from' for query 6 to 7-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:04:50,520 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-28T06:04:50.520657+00:00'}
+2025-11-04 14:04:50,867 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-04 14:04:50,868 | INFO | Retained 35 articles for endpoint=everything, language=en after filtering.
+2025-11-04 14:04:50,868 | INFO | Clamping 'from' for query 7 to 7-day window (was 2024-11-04T05:00:00+00:00).
+2025-11-04 14:04:50,868 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-10-28T06:04:50.868461+00:00'}
+2025-11-04 14:07:56,057 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-04 14:07:56,883 | WARNING | Rate limit hit for top-headlines (attempt 1/3). Sleeping 8 seconds before retry.
+2025-11-04 14:08:05,648 | WARNING | Rate limit hit for top-headlines (attempt 2/3). Sleeping 16 seconds before retry.
+2025-11-04 14:08:22,362 | INFO | NewsAPI returned 0 articles (status=error, remaining=None)
+2025-11-04 14:08:22,363 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-04 14:08:22,363 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-04 14:08:22,615 | WARNING | Rate limit hit for top-headlines (attempt 1/3). Sleeping 8 seconds before retry.
+2025-11-04 14:08:31,393 | WARNING | Rate limit hit for top-headlines (attempt 2/3). Sleeping 16 seconds before retry.

@@ -1,21 +1,68 @@
 {
   "news_queries": [
     {
-      "language": "en",
-      "pageSize": 40
+      "endpoint": "top-headlines",
+      "country": "us",
+      "pageSize": 30
     },
     {
+      "endpoint": "top-headlines",
+      "country": "fr",
+      "pageSize": 30
+    },
+    {
+      "endpoint": "top-headlines",
+      "country": "de",
+      "pageSize": 30
+    },
+    {
+      "endpoint": "everything",
+      "q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)",
+      "searchIn": "title,description",
       "language": "zh",
-      "pageSize": 40
+      "pageSize": 40,
+      "sortBy": "publishedAt"
     },
     {
-      "language": "de",
-      "pageSize": 40
+      "endpoint": "everything",
+      "q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)",
+      "searchIn": "title,description",
+      "language": "en",
+      "pageSize": 40,
+      "sortBy": "publishedAt"
     },
     {
-      "language": "fr",
-      "pageSize": 40
+      "endpoint": "everything",
+      "q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")",
+      "searchIn": "title,description,content",
+      "language": "zh",
+      "pageSize": 40,
+      "sortBy": "publishedAt"
+    },
+    {
+      "endpoint": "everything",
+      "q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")",
+      "searchIn": "title,description",
+      "language": "en",
+      "pageSize": 40,
+      "sortBy": "publishedAt"
+    },
+    {
+      "endpoint": "everything",
+      "q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")",
+      "searchIn": "title,description",
+      "language": "zh",
+      "pageSize": 40,
+      "sortBy": "publishedAt"
+    },
+    {
+      "endpoint": "everything",
+      "q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")",
+      "searchIn": "title,description",
+      "language": "en",
+      "pageSize": 40,
+      "sortBy": "publishedAt"
     }
   ],
-  "last_run": "2025-11-03T15:03:21.449614+00:00"
+  "last_run": "2024-11-04T05:00:00Z"
 }
