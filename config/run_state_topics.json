@@ -1,21 +1,6 @@
 {
   "news_queries": [
     {
-      "endpoint": "top-headlines",
-      "country": "us",
-      "pageSize": 30
-    },
-    {
-      "endpoint": "top-headlines",
-      "country": "fr",
-      "pageSize": 30
-    },
-    {
-      "endpoint": "top-headlines",
-      "country": "de",
-      "pageSize": 30
-    },
-    {
       "endpoint": "everything",
       "q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)",
       "searchIn": "title,description",
@@ -64,5 +49,5 @@
       "sortBy": "publishedAt"
     }
   ],
-  "last_run": "2024-11-04T05:00:00Z"
+  "last_run": "2025-11-04T23:44:04.053376+00:00"
 }

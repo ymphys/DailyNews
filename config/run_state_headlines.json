@@ -1,0 +1,25 @@
+{
+  "news_queries": [
+    {
+      "endpoint": "top-headlines",
+      "country": "us",
+      "pageSize": 30
+    },
+    {
+      "endpoint": "top-headlines",
+      "country": "cn",
+      "pageSize": 30
+    },
+    {
+      "endpoint": "top-headlines",
+      "country": "fr",
+      "pageSize": 30
+    },
+    {
+      "endpoint": "top-headlines",
+      "country": "de",
+      "pageSize": 30
+    }
+  ],
+  "last_run": "2025-11-04T23:44:02.374230+00:00"
+}
