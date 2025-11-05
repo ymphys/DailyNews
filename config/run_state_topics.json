@@ -2,52 +2,68 @@
   "news_queries": [
     {
       "endpoint": "everything",
-      "q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)",
+      "q": "(\"科学\" OR \"技术\")",
       "searchIn": "title,description",
       "language": "zh",
-      "pageSize": 40,
+      "pageSize": 20,
       "sortBy": "publishedAt"
     },
     {
       "endpoint": "everything",
-      "q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)",
+      "q": "(\"Science\" OR \"Technology\")",
       "searchIn": "title,description",
       "language": "en",
-      "pageSize": 40,
+      "pageSize": 20,
       "sortBy": "publishedAt"
     },
     {
       "endpoint": "everything",
-      "q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")",
+      "q": "(\"中国经济\") OR (\"中国政治\")",
+      "searchIn": "title,description",
+      "language": "zh",
+      "pageSize": 20,
+      "sortBy": "publishedAt"
+    },
+    {
+      "endpoint": "everything",
+      "q": "(\"China Economy\") OR (\"China Politics\")",
+      "searchIn": "title,description",
+      "language": "en",
+      "pageSize": 20,
+      "sortBy": "publishedAt"
+    },
+    {
+      "endpoint": "everything",
+      "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")",
       "searchIn": "title,description,content",
       "language": "zh",
-      "pageSize": 40,
+      "pageSize": 20,
       "sortBy": "publishedAt"
     },
     {
       "endpoint": "everything",
-      "q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")",
+      "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")",
       "searchIn": "title,description",
       "language": "en",
-      "pageSize": 40,
+      "pageSize": 20,
       "sortBy": "publishedAt"
     },
     {
       "endpoint": "everything",
-      "q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")",
+      "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")",
       "searchIn": "title,description",
       "language": "zh",
-      "pageSize": 40,
+      "pageSize": 20,
       "sortBy": "publishedAt"
     },
     {
       "endpoint": "everything",
-      "q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")",
+      "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")",
       "searchIn": "title,description",
       "language": "en",
-      "pageSize": 40,
+      "pageSize": 20,
       "sortBy": "publishedAt"
     }
   ],
-  "last_run": "2025-11-05T05:24:10.617092+00:00"
+  "last_run": "2025-11-05T14:09:23.546778+00:00"
 }
