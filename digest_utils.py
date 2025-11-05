@@ -14,7 +14,7 @@ from collections import defaultdict
 from pathlib import Path
 from time import sleep
 from typing import Any, Dict, List, Optional, Sequence, Tuple
-from urllib.parse import quote_plus
+import re
 
 import httpx
 
@@ -73,7 +73,7 @@ LANGUAGE_LABELS = {
 
 SUMMARY_BATCH_SIZE = 4
 MAX_SUMMARY_ATTEMPTS = 3
-EVERYTHING_MAX_AGE_DAYS = 2
+EVERYTHING_MAX_AGE_DAYS = 7
 NEWSAPI_MAX_RETRIES = 3
 NEWSAPI_RETRY_BASE_SECONDS = 8
 
@@ -179,12 +179,18 @@ def _compute_reset_delay(reset_header: str) -> int:
 
 def make_query_slug(value: Optional[str], fallback: str) -> str:
     """Convert a query value into a filesystem-friendly slug."""
-    if value:
-        slug = quote_plus(value.strip(), safe="")
-        slug = slug.replace("+", "-").strip("-_")
-        if slug:
-            return slug
-    return fallback
+    if not value:
+        return fallback
+
+    slug = value.strip().lower()
+    slug = slug.replace('"', "").replace("'", "")
+    slug = slug.replace("(", "").replace(")", "")
+    slug = slug.replace("：", "-").replace("，", "-")
+    slug = re.sub(r"\s+", "-", slug)
+    slug = re.sub(r"[^0-9a-zA-Z\u4e00-\u9fff\-]+", "-", slug)
+    slug = re.sub(r"-{2,}", "-", slug).strip("-_")
+
+    return slug or fallback
 
 
 def build_story_lines(briefing: Dict[str, Any], article: Dict[str, Any]) -> List[str]:
@@ -488,10 +494,9 @@ def summarize_articles(
     instructions = (
         "You are producing a world news digest. For each article, craft:\n"
         "- A headline suitable for a briefing.\n"
-        "- 2-4 key takeaways in English.\n"
-        "- Explanations for any specialized terms, acronyms, or named entities that may be unclear.\n"
-        "- A compact narrative paragraph in English capturing context and implications.\n"
-        "- A natural Simplified Chinese translation of that paragraph.\n"
+        "- A compact narrative paragraph in Chinese capturing context and implications.\n"
+        "- A natural English translation of that paragraph.\n"
+        "- Explanations for any specialized terms, acronyms, or named entities that may be unclear, in both English and simplified Chinese.\n"
         "Include any details necessary for readers who do not speak the article's original language.\n"
         "Return a JSON object with this shape:\n"
         "{\n"
@@ -499,12 +504,11 @@ def summarize_articles(
         "    {\n"
         '      "id": <int article id>,\n'
         '      "headline": "<string>",\n'
-        '      "key_takeaways": ["<string>", ...],\n'
+        '      "chinese_brief": "<string>"\n'
+        '      "english_brief": "<string>",\n'
         '      "term_clarifications": [\n'
         "        {\"term\": \"<string>\", \"explanation\": \"<string>\"}, ...\n"
         "      ],\n"
-        '      "english_brief": "<string>",\n'
-        '      "chinese_brief": "<string>"\n'
         "    }, ...\n"
         "  ],\n"
         '  "summary_notes": "<string, optional>"\n'

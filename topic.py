@@ -14,7 +14,6 @@ from typing import Any, Dict, List, Optional
 
 from digest_utils import (
     DIGEST_DIR,
-    EVERYTHING_MAX_AGE_DAYS,
     LOGGER,
     build_story_entries,
     collect_articles,
@@ -83,6 +82,7 @@ DEFAULT_STATE: Dict[str, Any] = {
     "last_run": None,
 }
 
+TOPIC_MAX_AGE_DAYS = 1
 
 def main() -> None:
     run_started = dt.datetime.now(dt.timezone.utc)
@@ -95,7 +95,7 @@ def main() -> None:
     articles, news_meta = collect_articles(
         news_queries,
         last_run_dt,
-        everything_max_age_days=EVERYTHING_MAX_AGE_DAYS,
+        everything_max_age_days=TOPIC_MAX_AGE_DAYS,
     )
 
     grouped_articles: Dict[int, List[Dict[str, Any]]] = defaultdict(list)

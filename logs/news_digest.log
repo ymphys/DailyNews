@@ -7888,3 +7888,630 @@
 2025-11-05 07:44:05,635 | INFO | No new articles for topic query 4: {'endpoint': 'everything', 'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
 2025-11-05 07:44:05,635 | INFO | No new articles for topic query 5: {'endpoint': 'everything', 'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt'}
 2025-11-05 07:44:05,636 | INFO | Topic run summary: {"started_at": "2025-11-04T23:44:04.053376+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-04T15:39:10.811709+00:00", "requests": [{"endpoint": "everything", "request_params": {"q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T15:39:10.811709+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T15:39:10.811709+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T15:39:10.811709+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 2, "query_params": {"endpoint": "everything", "q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T15:39:10.811709+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T15:39:10.811709+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T15:39:10.811709+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": null, "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": []}
+2025-11-05 13:21:30,430 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T23:44:04.053376+00:00'}
+2025-11-05 13:21:31,010 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-05 13:21:31,010 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-05 13:21:31,010 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T23:44:04.053376+00:00'}
+2025-11-05 13:21:31,224 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-05 13:21:31,224 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-05 13:21:31,224 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T23:44:04.053376+00:00'}
+2025-11-05 13:21:31,506 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-05 13:21:31,507 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-05 13:21:31,507 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T23:44:04.053376+00:00'}
+2025-11-05 13:21:31,720 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-05 13:21:31,720 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-05 13:21:31,720 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T23:44:04.053376+00:00'}
+2025-11-05 13:21:31,932 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-05 13:21:31,933 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-05 13:21:31,933 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt', 'from': '2025-11-04T23:44:04.053376+00:00'}
+2025-11-05 13:21:32,146 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-05 13:21:32,146 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-05 13:21:32,146 | INFO | No new articles for topic query 0: {'endpoint': 'everything', 'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:21:32,146 | INFO | No new articles for topic query 1: {'endpoint': 'everything', 'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:21:32,146 | INFO | No new articles for topic query 2: {'endpoint': 'everything', 'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:21:32,146 | INFO | No new articles for topic query 3: {'endpoint': 'everything', 'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:21:32,146 | INFO | No new articles for topic query 4: {'endpoint': 'everything', 'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:21:32,146 | INFO | No new articles for topic query 5: {'endpoint': 'everything', 'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:21:32,147 | INFO | Topic run summary: {"started_at": "2025-11-05T05:21:30.430245+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-04T23:44:04.053376+00:00", "requests": [{"endpoint": "everything", "request_params": {"q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T23:44:04.053376+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T23:44:04.053376+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T23:44:04.053376+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 2, "query_params": {"endpoint": "everything", "q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T23:44:04.053376+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T23:44:04.053376+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt", "from": "2025-11-04T23:44:04.053376+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": null, "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": []}
+2025-11-05 13:24:10,617 | INFO | Requesting everything with params={'q': '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:24:11,289 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-05 13:24:11,290 | INFO | Retained 40 articles for endpoint=everything, language=zh after filtering.
+2025-11-05 13:24:11,290 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND (economy OR trade OR growth)', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:24:11,586 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-05 13:24:11,586 | INFO | Retained 40 articles for endpoint=everything, language=en after filtering.
+2025-11-05 13:24:11,586 | INFO | Requesting everything with params={'q': '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:24:11,991 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-05 13:24:11,991 | INFO | Retained 23 articles for endpoint=everything, language=zh after filtering.
+2025-11-05 13:24:11,991 | INFO | Requesting everything with params={'q': '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:24:12,294 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-05 13:24:12,295 | INFO | Retained 35 articles for endpoint=everything, language=en after filtering.
+2025-11-05 13:24:12,295 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:24:12,612 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-05 13:24:12,612 | INFO | Retained 36 articles for endpoint=everything, language=zh after filtering.
+2025-11-05 13:24:12,612 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal") AND ("USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 40, 'sortBy': 'publishedAt'}
+2025-11-05 13:24:12,991 | INFO | NewsAPI returned 40 articles (status=ok, remaining=None)
+2025-11-05 13:24:12,991 | INFO | Retained 39 articles for endpoint=everything, language=en after filtering.
+2025-11-05 13:24:13,212 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-05 13:24:38,192 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-05 13:25:01,554 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-05 13:25:34,250 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-05 13:25:58,387 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-05 13:26:23,732 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-05 13:26:49,234 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-05 13:27:17,574 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-05 13:27:44,370 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-05 13:28:18,411 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 32,
+      "headline": "维新宇航完成种子和天使轮融资，年底试飞3吨级7座eVTOL货运机",
+      "chinese_brief": "维新宇航科技于2023年成立，专注开发大载重和载客量的智慧空中交通产品。公司近期完成近亿元人民币的种子轮和天使轮融资，资金将用于其首款3吨级7座复合翼纯电/混动eVTOL主力机型Vector 5的全尺寸样机试飞及适航认证。此外，维新宇航计划在长三角地区建设新生产线，并启动混动技术验证和下一代机型Vector 11的研发。此举标志着中国在智能垂直起降电动飞机领域的技术突破及商业化迈进，对未来城市空中出行和物流具有重要战略意义。",
+      "english_brief": "Founded in 2023, Weixin Aerospace focuses on developing high-capacity intelligent airborne transportation products. The company recently secured nearly 100 million yuan in seed and angel rounds, funding full-scale prototype test flights and airworthiness certification for its first 3-ton, 7-seat composite wing pure electric/hybrid eVTOL model Vector 5. In addition, Weixin Aerospace plans to build a new production line in the Yangtze River Delta and begin hybrid technology validation and development of the next-generation Vector 11. This represents a significant technological and commercial milestone in China's urban air mobility and logistics sectors.",
+      "term_clarifications": [
+        {
+          "term": "eVTOL",
+          "explanation": "Electric Vertical Take-Off and Landing aircraft, referring to electrically powered vertical takeoff and landing vehicles designed for urban air mobility and short-range flights. 电动垂直起降飞行器，指利用电力驱动，能垂直起飞和降落，主要用于城市空中交通和短途运输。"
+        },
+        {
+          "term": "维新宇航",
+          "explanation": "Weixin Aerospace Technology (Xi'an) Co., Ltd., a Chinese company specializing in large-capacity intelligent urban air mobility products. 维新宇航科技（西安）有限公司，一家专注于大载客量智慧空中交通产品研发的中国企业。"
+        },
+        {
+          "term": "种子轮、天使轮融资",
+          "explanation": "Early-stage funding rounds for startup companies: Seed round usually comes first to develop the product; Angel round often involves individual investors aiding early growth. 种子轮是创业公司初期用于产品开发的融资，天使轮是个体投资者参与的早期扩展资金。"
+        },
+        {
+          "term": "适航认证",
+          "explanation": "Airworthiness certification, a regulatory approval process ensuring aircraft meet safety and design standards. 飞机必须通过的安全与设计合规认证。"
+        },
+        {
+          "term": "长三角",
+          "explanation": "Yangtze River Delta region in China, an economic hub including Shanghai, Jiangsu, Zhejiang, and Anhui provinces. 中国经济发达的长江三角洲地区，涵盖上海、江苏、浙江和安徽。"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "headline": "36氪发布2025年中国大模型行业发展报告，市场规模预计突破700亿元",
+      "chinese_brief": "36氪研究院发布的2025年中国大模型行业报告指出，随着技术迭代和生态重构，中国大模型市场规模在2024年达到294.16亿元，预计2026年突破700亿元。多模态大模型及数字人、游戏等应用领域增长显著，行业竞争从单一技术产品转向生态建设和行业赋能。报告强调前沿方向包括多模态认知和具身智能，提出依托CBDG四维生态体系推动技术和市场协同发展，对国内AI产业布局和政策制定提供了重要参考。",
+      "english_brief": "The 2025 China Large Model Industry Development Report by 36Kr Research Institute highlights that China's large AI model market reached 29.416 billion yuan in 2024 and is expected to exceed 70 billion yuan by 2026. Significant growth is observed in multimodal large models and application scenarios such as digital humans and gaming. Competition is shifting from single product focus to ecological construction and industry enablement. Key frontier areas include multimodal cognition and embodied intelligence. The report advocates leveraging the CBDG four-dimensional ecosystem (Consumers, Businesses, Devices, Government) to drive coordinated technological and market growth, providing crucial insights for China’s AI strategy and policy.",
+      "term_clarifications": [
+        {
+          "term": "大模型",
+          "explanation": "Large AI models typically refer to extensive neural networks with massive parameters used in natural language processing, computer vision, etc. 大型人工智能模型，指拥有大量参数、用于自然语言处理和计算机视觉等领域的深度神经网络。"
+        },
+        {
+          "term": "多模态",
+          "explanation": "Multimodal refers to AI models capable of processing and integrating multiple types of data (e.g., text, images, audio). 多模态指能够处理并融合多种数据类型（如文本、图像、音频）的人工智能模型。"
+        },
+        {
+          "term": "具身智能",
+          "explanation": "Embodied intelligence involves AI agents interacting with the physical world through sensors and actuators, emphasizing context-aware cognition. 具身智能指拥有通过传感器和执行器与物理世界交互能力的人工智能，注重环境感知和情境理解。"
+        },
+        {
+          "term": "CBDG四维生态",
+          "explanation": "A framework involving four ecosystem dimensions: Consumers, Businesses, Devices, Government, important for AI industry development. 包含消费者、企业、设备、政府四个生态维度的框架，对人工智能产业发展具有指导意义。"
+        },
+        {
+          "term": "数字人",
+          "explanation": "Digital humans, AI-generated virtual avatars used in entertainment, customer service, and interactive applications. 数字人，指人工智能生成的虚拟人物形象，应用于娱乐、客服和互动场景。"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "headline": "茅台集团董事长更替，陈华接任法定代表人职务",
+      "chinese_brief": "中国贵州茅台酒厂（集团）有限责任公司近期完成工商变更，董事长及法定代表人由张德芹卸任，陈华接任。茅台集团成立于1998年，是中国领先的白酒生产企业，注册资本达100亿元人民币，业务涵盖酒类生产、技术咨询、进出口贸易以及互联网产业。该集团由贵州省国资委和贵州金融控股集团共同持股。此次管理层变动或为公司战略调整和新阶段发展奠定基础。",
+      "english_brief": "China Kweichow Moutai Distillery (Group) Co., Ltd. recently completed an official change in its business registration, with Zhang Deqin stepping down as chairman and legal representative, and Chen Hua taking over the roles. Founded in 1998 with registered capital of 10 billion yuan, Moutai Group leads China's liquor industry with diversified businesses including production, technology consulting, import-export, and internet sectors. The company is jointly owned by Guizhou Provincial State-owned Assets Supervision and Administration Commission and Guizhou Financial Holdings Group. This leadership change may signal strategic shifts and preparations for a new development phase.",
+      "term_clarifications": [
+        {
+          "term": "中国贵州茅台酒厂（集团）有限责任公司",
+          "explanation": "China Kweichow Moutai Distillery (Group) Co., Ltd., producer of Moutai, a famous premium Chinese liquor brand. 中国贵州茅台酒厂（集团）有限责任公司，生产中国著名高端白酒品牌茅台。"
+        },
+        {
+          "term": "法定代表人",
+          "explanation": "Legal representative, the person authorized to legally represent a company in China. 法定代表人，代表公司行使法律权利和义务的负责人。"
+        },
+        {
+          "term": "贵州省人民政府国有资产监督管理委员会",
+          "explanation": "The State-owned Assets Supervision and Administration Commission (SASAC) of Guizhou Province, overseeing provincial state-owned enterprises. 贵州省人民政府国有资产监督管理委员会，负责监管贵州省国有企业资产的政府机构。"
+        },
+        {
+          "term": "工商变更",
+          "explanation": "Official changes registered in a company's business license or registration, such as leadership or capital updates. 公司工商注册信息变更，如负责人变动或资本调整。"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "headline": "前大疆云鲸团队成员用AI创新传统硬件，众筹突破千万",
+      "chinese_brief": "曾任
+2025-11-05 13:28:18,412 | WARNING | Batch 9 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 32,       "headline": "维新宇航完成种子和天使轮融资，年底试飞3吨级7座eVTOL货运机",       "chinese_brief": "维新宇航科技于2023年成立，专注开发大载重和载客量的智慧空中交通产品。公司近期完成近亿元人民币的种子轮和天使轮融资，资金将用于其首款3吨级7座复合翼纯电/混动eVTOL主力机型Vector 5的全尺寸样机试飞及适航认证。此外，维新宇航计划在长三角地区建设新生产线，并启动混动技术验证和下一代机型Vector 11的研发。此举标志着中国在智能垂直起降电动飞机领域的技术突破及商业化迈进，对未来城市空中出行和物流具有重要战略意义。",       "english_brief": "Founded in 2023, Weixin Aerospace focuses on developing high-capacity intelligent airborne transportation products. The company recently sec...)
+2025-11-05 13:28:47,073 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-05 13:29:18,379 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 36,
+      "headline": "T1队零封TES，LCK赛区包揽S15总决赛冠亚；英伟达携手制药巨头打造超级计算平台",
+      "chinese_brief": "在2025年英雄联盟全球总决赛半决赛中，来自韩国LCK赛区的T1战队以3:0完胜中国LPL赛区的TES战队，TES成为本届赛事最后被淘汰的中国队。T1将在11月9日于成都举办的决赛中对阵同赛区的KT战队，这标志着LCK赛区时隔八年再次主导中国举办的S赛冠亚军席位。此外，英伟达宣布与大型制药企业合作，利用其最新的超级计算机DGX SuperPOD（配备约1000个GPU）推动制药研发创新，显示AI和高性能计算在生命科学中的重要应用。",
+      "english_brief": "At the 2025 League of Legends World Championship semifinals, South Korea's LCK seed T1 swept China's LPL seed TES 3-0, eliminating the last Chinese team in the tournament. T1 will compete against fellow LCK seed KT in the final on November 9 in Chengdu, marking LCK's first clean sweep of the top two spots at a China-hosted Worlds in eight years. Additionally, Nvidia announced a collaboration with major pharmaceutical companies to deploy its DGX SuperPOD supercomputer—equipped with around 1,000 GPUs—to accelerate drug research and innovation, highlighting the growing role of AI and high-performance computing in life sciences.",
+      "term_clarifications": [
+        {
+          "term": "T1",
+          "explanation": "A premier South Korean esports organization, highly successful in League of Legends competitions. Known globally and home to famous player Faker.",
+          "explanation_zh": "韩国顶尖电竞战队，英雄联盟领域的强队，拥有著名选手Faker。"
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a leading Chinese professional League of Legends team competing in the LPL.",
+          "explanation_zh": "顶级中国职业英雄联盟战队，隶属于LPL赛区。"
+        },
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, the top professional League of Legends esports league in South Korea.",
+          "explanation_zh": "韩国英雄联盟顶级职业联赛。"
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, the premier professional League of Legends esports league in China.",
+          "explanation_zh": "中国英雄联盟顶级职业联赛。"
+        },
+        {
+          "term": "S15",
+          "explanation": "The 15th season of the annual League of Legends World Championship, a major international esports tournament.",
+          "explanation_zh": "英雄联盟世界赛第15赛季的重要国际电竞赛事。"
+        },
+        {
+          "term": "DGX SuperPOD",
+          "explanation": "Nvidia's large-scale AI supercomputing system composed of multiple DGX units, designed to provide massively parallel GPU computing power.",
+          "explanation_zh": "英伟达大型AI超级计算机系统，由多台DGX单元组成，提供大规模GPU并行计算能力。"
+        },
+        {
+          "term": "GPU",
+          "explanation": "Graphics Processing Unit, specialized hardware widely used for AI computations and high-performance computing.",
+          "explanation_zh": "图形处理器，广泛应用于人工智能计算和高性能运算的专用硬件。"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "headline": "百万高价药遭医保拒绝后获商保谈判新机遇，创新药目录首次设立",
+      "chinese_brief": "2025年国家医保谈判于10月30日在北京正式开启，历时4-5天，涉及抗感染、肿瘤等多类药品。今年医保谈判的亮点是首次单独设立“商保创新药目录”，为此前被医保拒绝覆盖的高价创新药提供通过商业保险谈判挽回市场机会。药企代表对外态度谨慎，但部分微笑透露谈判或进展顺利。此举可能缓解高价药物患者负担，并推动更多创新药在中国进入商业保险范畴。",
+      "english_brief": "The 2025 national medical insurance negotiations began on October 30 in Beijing, lasting 4-5 days with a focus on infections, cancer drugs, and other medicines. A major innovation this year is the separate establishment of a 'Commercial Insurance Innovation Drug List,' allowing previously rejected high-cost innovative drugs a chance to negotiate inclusion via commercial insurance. Representatives from pharmaceutical companies remain reserved publicly, but occasional smiles suggest positive outcomes. This move may ease patient burdens and expand access to innovative treatments through commercial insurance in China.",
+      "term_clarifications": [
+        {
+          "term": "医保谈判",
+          "explanation": "The annual negotiations between the Chinese government and pharmaceutical companies to determine drug inclusion and pricing in the national health insurance system.",
+          "explanation_zh": "中国政府与药企就医保覆盖药品及价格进行的年度谈判。"
+        },
+        {
+          "term": "商保创新药目录",
+          "explanation": "A newly introduced drug listing system for innovative medicines negotiated under commercial health insurance schemes, separate from national medical insurance.",
+          "explanation_zh": "为商业健康保险设立的新创新药目录，区别于国家医保药品目录。"
+        },
+        {
+          "term": "抗感染药",
+          "explanation": "Medications used to treat infections caused by bacteria, viruses, or other pathogens.",
+          "explanation_zh": "用于治疗细菌、病毒等感染的药物。"
+        },
+        {
+          "term": "创新药",
+          "explanation": "Newly developed drugs that introduce novel mechanisms or therapies, often at higher prices and with significant clinical benefits.",
+          "explanation_zh": "新研发的具有创新机制或疗效的药物，通常价格较高且拥有显著的临床价值。"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "headline": "2025年三季度中国智能音箱销量下降11.9%，小米稳居市场第一",
+      "chinese_brief": "洛图科技发布报告显示，2025年第三季度中国大陆智能音箱销量为305.7万台，同比下降11.9%。同期市场销售额降至8.6亿元，下降4.0%。平均售价上涨8.9%至280元。销量下滑主要受线下市场带动，线上销量表现稳健甚至良好。小米以48.8%的份额继续领跑市场，同比增幅6%，显示其品牌和渠道策略优势。整体下降与需求低迷及国家补贴政策减弱相关，市场正经历调整期。",
+      "english_brief": "According to Loto Technology’s report, China’s mainland smart speaker sales totaled 3.057 million units in Q3 2025, a year-on-year decline of 11.9%. Market revenue fell 4.0% to 860 million RMB, while average prices rose by 8.9% to 280 RMB. The sales decrease was mainly driven by offline market contraction, whereas online channels performed steadily or improved. Xiaomi maintained market leadership with a 48.8% share, growing 6% year-on-year, highlighting its strong brand and distribution strategy. Overall decline reflects weak demand and reduction in government subsidies, marking a period of market adjustment.",
+      "term_clarifications": [
+        {
+          "term": "智能音箱",
+          "explanation": "Smart speakers are voice-activated devices with AI assistants for playing music, controlling smart homes, and accessing internet services.",
+          "explanation_zh": "带有语音助手功能的智能设备，可用于播放音乐、控制智能家居及获取网络服务。"
+        },
+        {
+          "term": "洛图科技",
+          "explanation": "A Chinese market research firm specializing in consumer electronics and technology product analysis.",
+          "explanation_zh": "专注于消费电子和科技产品市场研究的中国公司。"
+        },
+        {
+          "term": "线下市场",
+          "explanation": "Physical retail stores or channels where products are sold directly to consumers, as opposed to online sales.",
+          "explanation_zh": "通过实体店等渠道向消费者销售产品的市场，区别于线上销售。"
+        },
+        {
+          "term": "线上市场",
+          "explanation": "Digital and e-commerce platforms where products are sold via the internet.",
+          "explanation_zh": "通过网络电子商务平台销售产品的市场。"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "headline": "马斯克预言未来五年手机和App消失；片仔癀股价跌破指导价；马尔代夫实施世代
+2025-11-05 13:29:18,380 | WARNING | Batch 10 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 36,       "headline": "T1队零封TES，LCK赛区包揽S15总决赛冠亚；英伟达携手制药巨头打造超级计算平台",       "chinese_brief": "在2025年英雄联盟全球总决赛半决赛中，来自韩国LCK赛区的T1战队以3:0完胜中国LPL赛区的TES战队，TES成为本届赛事最后被淘汰的中国队。T1将在11月9日于成都举办的决赛中对阵同赛区的KT战队，这标志着LCK赛区时隔八年再次主导中国举办的S赛冠亚军席位。此外，英伟达宣布与大型制药企业合作，利用其最新的超级计算机DGX SuperPOD（配备约1000个GPU）推动制药研发创新，显示AI和高性能计算在生命科学中的重要应用。",       "english_brief": "At the 2025 League of Legends World Championship semifinals, South Korea's LCK seed T1 swept China's LPL seed TES 3-0, eliminat...)
+2025-11-05 13:29:48,583 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 36,
+      "headline": "T1战队零封TES，LCK赛区提前包揽S15全球总决赛冠亚军",
+      "chinese_brief": "2025年11月2日，《英雄联盟》全球总决赛半决赛中，LCK赛区的T1战队以3:0完胜LPL赛区代表TES战队，TES无缘S15总决赛。T1将于11月9日在成都对阵LCK的KT战队，意味着LCK自2017年后首次在中国举办的赛事中实现冠亚军席位包揽。此外，英伟达联合制药巨头推出超级计算机助推AI药物研发，理想汽车就MEGA起火事件做出回应，显示科技与汽车领域动态紧密。",
+      "english_brief": "On November 2, 2025, in the League of Legends World Championship semifinals, LCK's T1 team decisively defeated LPL's TES team 3-0, eliminating TES from the S15 finals. T1 will face fellow LCK team KT on November 9 in Chengdu, marking LCK’s first time since 2017 to secure both first and second place in a China-hosted tournament. Additionally, Nvidia partnered with pharmaceutical leaders to develop a supercomputer for AI-driven drug discovery, and Li Auto addressed the recent MEGA vehicle fire incident, highlighting notable developments in technology and automotive sectors.",
+      "term_clarifications": [
+        {
+          "term": "T1",
+          "explanation": "韩国英雄联盟职业战队，LCK赛区顶尖队伍之一，以多次夺冠闻名。"
+        },
+        {
+          "term": "TES",
+          "explanation": "中国英雄联盟职业战队，代表LPL赛区参赛。"
+        },
+        {
+          "term": "LCK",
+          "explanation": "韩国英雄联盟职业联赛（League of Legends Champions Korea）。"
+        },
+        {
+          "term": "LPL",
+          "explanation": "中国英雄联盟职业联赛（League of Legends Pro League）。"
+        },
+        {
+          "term": "S15",
+          "explanation": "《英雄联盟》2025年度全球总决赛（Season 15）。"
+        },
+        {
+          "term": "英伟达（Nvidia）",
+          "explanation": "一家全球领先的GPU和AI计算公司，积极推动人工智能技术发展。"
+        },
+        {
+          "term": "MEGA起火事件",
+          "explanation": "理想汽车旗下MEGA车型发生火灾的安全事件。"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "headline": "百万高价药被医保搁置，商业保险创新目录引期待",
+      "chinese_brief": "2025年10月30日，北京全国人大会议中心召开年度国家医保谈判，会议周期较往年延长至4-5天。首日主要讨论常规用药，抗感染及麻醉药类优先。重点抗癌创新药安排在后续议程中。今年最大新意是设立“商保创新药目录”，为那些未被医保覆盖的高价药提供新的谈判与议价渠道，可能推动商业保险对创新药的支持力度，缓解患者医疗负担。",
+      "english_brief": "Starting October 30, 2025, the annual national medical insurance negotiation took place at Beijing’s National People’s Congress Center, lasting longer than in previous years. The first day focused on conventional drugs like anti-infectives and anesthetics, while key innovative cancer drugs were scheduled for later discussions. The major new development this year is the creation of a “Commercial Insurance Innovative Drug List,” providing a negotiation framework for expensive drugs not currently covered by public insurance, potentially increasing commercial insurance support and easing patients’ financial burdens.",
+      "term_clarifications": [
+        {
+          "term": "国家医保谈判",
+          "explanation": "中国政府组织的年度医药价格谈判，旨在通过集中采购降低药品价格，扩大医保覆盖。"
+        },
+        {
+          "term": "商保创新药目录",
+          "explanation": "专门针对商业保险覆盖的创新药品清单，促进商业保险参与创新药的保障。"
+        },
+        {
+          "term": "抗感染药",
+          "explanation": "用于对抗细菌、病毒等感染的药物。"
+        },
+        {
+          "term": "麻醉阵痛类药物",
+          "explanation": "用于麻醉和缓解疼痛的药物。"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "headline": "2025年三季度中国智能音箱销量下滑，小米持续领跑",
+      "chinese_brief": "洛图科技发布报告显示，2025年第三季度中国大陆智能音箱销量约305.7万台，同比下降11.9%，销售额约8.6亿元，同比下降4.0%。平均售价上升8.9%至280元。市场低迷主要受国补政策减弱及线下市场疲软影响，线上表现相对稳定。小米以48.8%的市场份额继续领跑，同比增长6%。行业前三品牌合计占据超97%的市场份额，市场集中度高。",
+      "english_brief": "According to Loto Technology’s report, China's smart speaker sales in Q3 2025 totaled approximately 3.057 million units, down 11.9% year-on-year, with revenue of about 860 million yuan, down 4.0%. The average price rose 8.9% to 280 yuan. Market decline is attributed mainly to reduced government subsidies and weak offline demand, while online sales remained stable. Xiaomi maintained its leadership with a 48.8% market share and 6% growth. The top three brands collectively accounted for over 97% of the market, indicating high concentration.",
+      "term_clarifications": [
+        {
+          "term": "智能音箱",
+          "explanation": "带有语音助手功能的智能家居设备，用于播放音乐和控制智能家电等。"
+        },
+        {
+          "term": "国补政策",
+          "explanation": "政府为支持特定产业或产品提供的财政补贴政策。"
+        },
+        {
+          "term": "销售额",
+          "explanation": "一定时期内产品销售所得的总收入。"
+        },
+        {
+          "term": "市场份额",
+          "explanation": "某企业某产品在市场中占有的销售比例。"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "headline": "马斯克预言手机和App五年后消失，科技与健康领域新动态",
+      "chinese_brief": "2025年11月2日，特斯拉CEO埃隆·马斯克在乔·罗根播客中表示，未来五年内手机和App将被淘汰，大量内容将由人工智能生成，显示出AI技术快速改变数字生活的趋势。同日，理想汽车高管回应旗下MEGA车型火灾事件，表示重视安全改进。此外，“药中茅台”片仔癀股价跌破官方指导价，马尔代夫正式实施“世代禁烟令”，反映健康和环保政策的深化执行。",
+      "english_brief": "On November 2, 2025, Tesla CEO Elon Musk stated in Joe Rogan’s podcast that phones and apps will disappear within five years, with most content generated by AI, underscoring the rapid impact of AI on digital life. On the same day, Li Auto executives responded to the MEGA vehicle fire incident, emphasizing safety improvements. Additionally, 'Pien Tze Huang,' known as the 'Moutai of medicine,' fell below its official price guidance, and the Maldives officially implemented a 'generation smoking ban,' reflecting intensified health and environmental policies.",
+      "term_clarifications": [
+        {
+          "term": "马斯克（Elon Musk）",
+          "explanation": "美国企业家，特斯拉和SpaceX等公司的创始人及CEO，以推动科技创新著称。"
+        },
+        {
+          "term": "乔·罗根播客",
+          "explanation": "由美国知名播客主持人乔·罗根主持的热门访谈节目。"
+        },
+        {
+          "term": "MEGA起火事件",
+          "explanation": "理想汽车旗下MEGA车型发生火灾的安全事故。"
+        },
+        {
+          "term": "片仔癀",
+          "explanation": "中国知名中药品牌，因价格高昂被称为“药中茅台”。"
+        },
+        {
+          "term": "世代禁烟令",
+          "explanation": "马尔代夫政府实施的禁止新生代吸烟的法规政策。"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本次新闻简报涵盖电子竞技、医疗政策、智能硬件销售及科技健康领域的最新动态
+2025-11-05 13:29:48,584 | WARNING | Batch 10 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 36,       "headline": "T1战队零封TES，LCK赛区提前包揽S15全球总决赛冠亚军",       "chinese_brief": "2025年11月2日，《英雄联盟》全球总决赛半决赛中，LCK赛区的T1战队以3:0完胜LPL赛区代表TES战队，TES无缘S15总决赛。T1将于11月9日在成都对阵LCK的KT战队，意味着LCK自2017年后首次在中国举办的赛事中实现冠亚军席位包揽。此外，英伟达联合制药巨头推出超级计算机助推AI药物研发，理想汽车就MEGA起火事件做出回应，显示科技与汽车领域动态紧密。",       "english_brief": "On November 2, 2025, in the League of Legends World Championship semifinals, LCK's T1 team decisively defeated LPL's TES team 3-0, eliminating TES from the S15 finals. T1 ...)
+2025-11-05 13:30:17,902 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 36,
+      "headline": "T1 Dominates TES, Blocks Chinese Team from S15 Finals; Nvidia Partners with Pharma for Supercomputer; Li Auto Comments on MEGA Fire Incident",
+      "chinese_brief": "2025年《英雄联盟》全球总决赛半决赛，韩国LCK赛区的T1战队以3:0零封中国LPL赛区的TES战队，TES无缘S15总决赛。T1将于11月9日在成都与KT战队争夺冠军，标志着LCK赛区自2017年以来首次在中国举办的S赛提前锁定冠亚军席位。此外，英伟达宣布与制药巨头合作打造超级计算机，以推动AI在制药领域应用。理想汽车高管也对MEGA车型起火事件作出回应，强调安全措施和后续改进。",
+      "english_brief": "In the 2025 League of Legends World Championship semifinals, South Korea's LCK team T1 swept China's TES team 3:0, knocking TES out of the S15 finals. T1 will face KT on November 9 in Chengdu to compete for the championship, marking the first time since 2017 that the LCK region has secured both finalists on Chinese soil. Additionally, Nvidia announced a partnership with a pharmaceutical giant to build a supercomputer to advance AI applications in drug development. Li Auto executives responded to the MEGA vehicle fire incident, emphasizing safety measures and plans for improvements.",
+      "term_clarifications": [
+        {
+          "term": "T1",
+          "explanation": "A premier South Korean esports team competing in the League of Legends Champions Korea (LCK) league, known for multiple world championships since 2013. / 韩国顶级电竞战队，活跃于LCK联赛，拥有多次全球总冠军经验。"
+        },
+        {
+          "term": "TES",
+          "explanation": "Top Esports, a Chinese professional esports team competing in the League of Legends Pro League (LPL). / 中国职业电竞战队，参加英雄联盟职业联赛LPL。"
+        },
+        {
+          "term": "S15",
+          "explanation": "The 15th season of the League of Legends World Championship, held annually as the premier global tournament in the game. / 英雄联盟全球总决赛第十五赛季，是该游戏的年度全球最高规格赛事。"
+        },
+        {
+          "term": "LCK",
+          "explanation": "League of Legends Champions Korea, South Korea's top professional League of Legends league. / 英雄联盟韩国冠军联赛，韩国顶级职业联赛。"
+        },
+        {
+          "term": "LPL",
+          "explanation": "League of Legends Pro League, China's premier professional League of Legends league. / 英雄联盟职业联赛中国顶级联赛。"
+        },
+        {
+          "term": "Nvidia",
+          "explanation": "A global technology company known for its GPUs and AI computing solutions. / 全球知名的图形处理器及人工智能计算解决方案公司。"
+        },
+        {
+          "term": "MEGA",
+          "explanation": "A vehicle model by Li Auto involved in a fire incident, leading to public and company attention on safety improvements. / 理想汽车旗下车型，因起火事件引发关注。"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "headline": "High-Priced Drugs Excluded from National Insurance Gain Commercial Insurance Negotiation Pathway",
+      "chinese_brief": "2025年国家医保谈判于北京举行，持续4-5天。此次谈判创新设立“商保创新药目录”，为此前被医保拒绝的高价创新药提供了进入商业保险议价的机会。初日主要商讨基本药物，后续关注肿瘤及创新药。这一变化或推动高价药品通过商业保险渠道降低患者负担，同时促进行业创新和医保体系完善。",
+      "english_brief": "The 2025 national medical insurance negotiations in Beijing, lasting 4-5 days, introduced a newly established 'Commercial Insurance Innovation Drug List' to provide high-priced innovative drugs, previously excluded from national insurance, a chance to be negotiated under commercial insurance. The first day focused on essential drugs, with subsequent days addressing oncology and innovative medicines. This development aims to reduce patient costs via commercial insurance and promote pharmaceutical innovation and improvements in the insurance system.",
+      "term_clarifications": [
+        {
+          "term": "国家医保谈判",
+          "explanation": "Annual national medical insurance drug price negotiations in China to decide coverage and pricing for medicines under state insurance. / 中国每年举行的国家医疗保险药品价格谈判，决定药品医保覆盖及价格。"
+        },
+        {
+          "term": "商保创新药目录",
+          "explanation": "A newly established list of innovative drugs eligible for price negotiations under commercial insurance schemes in China. / 新设立的商业保险创新药品目录，允许高价创新药参与商业保险议价。"
+        },
+        {
+          "term": "肿瘤药",
+          "explanation": "Medications used to treat cancers, often costly and subject to focused negotiation due to their innovation and expense. / 用于癌症治疗的药品，创新性强且价格昂贵，谈判重点。"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "headline": "Q3 2025 Mainland China Smart Speaker Sales Decline 11.9%, Xiaomi Leads Market",
+      "chinese_brief": "2025年第三季度，中国大陆智能音箱销量为305.7万台，同比下降11.9%，销售额为8.6亿元人民币，同比下降4%。市场价格均有所提升，平均售价280元，同比增长8.9%。销量下滑主因是国家补贴政策减弱和线下市场疲软，但线上渠道表现稳健。小米以48.8%的市场占有率继续领跑，且同比增长6%。",
+      "english_brief": "In Q3 2025, smart speaker sales in mainland China reached 3.057 million units, down 11.9% year-on-year, with sales revenue at 860 million RMB, down 4%. The average unit price rose to 280 RMB, up 8.9%. The decline mainly stems from reduced government subsidies and weaker offline channels, while online sales remained stable. Xiaomi remains the market leader with a 48.8% share, increasing sales by 6% year-on-year.",
+      "term_clarifications": [
+        {
+          "term": "智能音箱",
+          "explanation": "Smart speakers are voice-activated devices integrating AI assistants for tasks like music playback, home control, and information queries. / 具备语音助手功能的智能设备，可播放音乐、控制智能家居及查询信息。"
+        },
+        {
+          "term": "小米",
+          "explanation": "A leading Chinese technology company known for smartphones, smart devices, and IoT products. / 中国领先科技公司，产品涵盖手机、智能设备及物联网。"
+        },
+        {
+          "term": "国补政策",
+          "explanation": "Government subsidy policies in China aimed at supporting certain technology sectors, such as smart hardware, which were reduced leading to market impact. / 中国政府针对某些科技行业的补贴政策，减弱后对市场产生影响。"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "headline": "Elon Musk Predicts End of Smartphones and Apps in Five Years; Pharmaceutical 'Moutai' Shares Fall Below Guidance; Maldives Enacts Generational Smoking Ban",
+      "chinese_brief": "11月2日，马斯克在乔·罗根播客中预测，五年内智能手机和App将消失，AI将主导内容消费。与此同时，中国药企片仔癀股价跌破官方指导价，被誉为“药中茅台”。马尔代夫正式实施“世代禁烟令”，全面禁止2005年后出生人群吸烟，成为全球首个执行此政策的国家。此外，小米汽车交付周期缩短，理想汽车回应MEGA起火事件，12306升级宠物托运服务，中国9月工业机器人产量创新高。",
+      "english_brief": "On November 2, Elon Musk predicted on Joe Rogan's podcast that smartphones and apps will disappear within five years, with AI dominating content consumption. Chinese pharmaceutical company Pien Tze Huang's stock fell below official guidance; it is nicknamed the 'Moutai of medicine.' The Maldives implemented a generational smoking ban, prohibiting those born after 2005 from smoking, the first country worldwide to enforce this. Additionally, Xiaomi shortened its car delivery times, Li Auto responded to the MEGA fire incident, 12306 upgraded pet shipping services, and China's industrial robot production hit a record high in September.",
+      "term_clarifications": [
+        {
+          "term": "马斯克",
+          "explanation": "Elon Musk, CEO of Tesla and SpaceX, known for his outspoken views on technology and AI. / 特斯拉及SpaceX首席执行官，以大胆科技
+2025-11-05 13:30:17,903 | WARNING | Batch 10 attempt 3 produced invalid JSON (snippet={   "briefings": [     {       "id": 36,       "headline": "T1 Dominates TES, Blocks Chinese Team from S15 Finals; Nvidia Partners with Pharma for Supercomputer; Li Auto Comments on MEGA Fire Incident",       "chinese_brief": "2025年《英雄联盟》全球总决赛半决赛，韩国LCK赛区的T1战队以3:0零封中国LPL赛区的TES战队，TES无缘S15总决赛。T1将于11月9日在成都与KT战队争夺冠军，标志着LCK赛区自2017年以来首次在中国举办的S赛提前锁定冠亚军席位。此外，英伟达宣布与制药巨头合作打造超级计算机，以推动AI在制药领域应用。理想汽车高管也对MEGA车型起火事件作出回应，强调安全措施和后续改进。",       "english_brief": "In the 2025 League of Legends World Championship semi...)
+2025-11-05 13:30:17,903 | WARNING | Splitting batch 10 (size=4) after repeated JSON failures.
+2025-11-05 13:31:00,962 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-05 13:31:00,962 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=50889)
+2025-11-05 13:31:00,965 | INFO | Saved digest to digests/中国-or-中国经济-and-经济-or-贸易-or-增长-briefing-2025-11-05_1324.md
+2025-11-05 13:31:01,022 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-05 13:31:20,950 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-05 13:31:50,305 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-05 13:32:14,890 | INFO | Completed batch 3/10 (briefings=11).
+2025-11-05 13:32:47,906 | INFO | Completed batch 4/10 (briefings=15).
+2025-11-05 13:33:10,060 | INFO | Completed batch 5/10 (briefings=19).
+2025-11-05 13:33:25,182 | INFO | Completed batch 6/10 (briefings=22).
+2025-11-05 13:33:52,708 | INFO | Completed batch 7/10 (briefings=26).
+2025-11-05 13:34:12,060 | INFO | Completed batch 8/10 (briefings=30).
+2025-11-05 13:34:32,028 | INFO | Completed batch 9/10 (briefings=34).
+2025-11-05 13:35:03,160 | INFO | Completed batch 10/10 (briefings=38).
+2025-11-05 13:35:03,160 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=25772)
+2025-11-05 13:35:03,162 | INFO | Saved digest to digests/china-or-chinese-and-economy-or-trade-or-growth-briefing-2025-11-05_1324.md
+2025-11-05 13:35:03,219 | INFO | Summarizing 23 articles across 6 batches.
+2025-11-05 13:35:25,482 | INFO | Completed batch 1/6 (briefings=4).
+2025-11-05 13:35:48,840 | INFO | Completed batch 2/6 (briefings=8).
+2025-11-05 13:36:13,431 | INFO | Completed batch 3/6 (briefings=12).
+2025-11-05 13:36:38,067 | INFO | Completed batch 4/6 (briefings=16).
+2025-11-05 13:37:01,852 | INFO | Completed batch 5/6 (briefings=20).
+2025-11-05 13:37:22,630 | INFO | Completed batch 6/6 (briefings=23).
+2025-11-05 13:37:22,630 | INFO | OpenAI summarization completed across 6 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=19367)
+2025-11-05 13:37:22,632 | INFO | Saved digest to digests/中国-or-中国科技-and-人工智能-or-ai-or-生成式-briefing-2025-11-05_1324.md
+2025-11-05 13:37:22,687 | INFO | Summarizing 35 articles across 9 batches.
+2025-11-05 13:37:44,952 | INFO | Completed batch 1/9 (briefings=4).
+2025-11-05 13:38:05,380 | INFO | Completed batch 2/9 (briefings=8).
+2025-11-05 13:38:15,527 | INFO | Completed batch 3/9 (briefings=12).
+2025-11-05 13:38:34,409 | INFO | Completed batch 4/9 (briefings=16).
+2025-11-05 13:38:54,711 | INFO | Completed batch 5/9 (briefings=20).
+2025-11-05 13:39:18,854 | INFO | Completed batch 6/9 (briefings=24).
+2025-11-05 13:39:40,359 | INFO | Completed batch 7/9 (briefings=28).
+2025-11-05 13:40:03,238 | INFO | Completed batch 8/9 (briefings=32).
+2025-11-05 13:40:23,267 | INFO | Completed batch 9/9 (briefings=35).
+2025-11-05 13:40:23,268 | INFO | OpenAI summarization completed across 9 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=21941)
+2025-11-05 13:40:23,270 | INFO | Saved digest to digests/china-or-chinese-and-artificial-intelligence-or-ai-briefing-2025-11-05_1324.md
+2025-11-05 13:40:23,326 | INFO | Summarizing 36 articles across 9 batches.
+2025-11-05 13:40:41,663 | INFO | Completed batch 1/9 (briefings=4).
+2025-11-05 13:41:08,843 | INFO | Completed batch 2/9 (briefings=8).
+2025-11-05 13:41:22,368 | INFO | Completed batch 3/9 (briefings=12).
+2025-11-05 13:41:47,867 | INFO | Completed batch 4/9 (briefings=16).
+2025-11-05 13:42:17,751 | INFO | Completed batch 5/9 (briefings=20).
+2025-11-05 13:42:41,687 | INFO | Completed batch 6/9 (briefings=24).
+2025-11-05 13:43:10,810 | INFO | Completed batch 7/9 (briefings=28).
+2025-11-05 13:43:36,497 | INFO | Completed batch 8/9 (briefings=32).
+2025-11-05 13:44:05,259 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 32,
+      "headline": "苹果市值接近4万亿美元创新高，科技股集体走强",
+      "chinese_brief": "10月20日美股收盘时，苹果公司股价上涨近4%，总市值达到3.89万亿美元，刷新历史纪录，成为美国第二大市值公司，紧随领头羊英伟达之后。与此同时，纳斯达克、道琼斯工业平均指数和标普500指数均呈现上涨，反映出大型科技股整体回暖的趋势。此次股市表现显示了市场对科技企业未来发展的积极预期。此外，12306新增积分兑换功能、25省份生育津贴直接发放等政策进展也体现内需和社会保障的持续优化。",
+      "english_brief": "On October 20, Apple’s stock rose nearly 4% at the U.S. market close, lifting its total market capitalization to $3.89 trillion, a historic high that positions Apple as the second most valuable U.S. company, following Nvidia. Concurrently, major stock indexes including the Nasdaq, Dow Jones Industrial Average, and S&P 500 all rose, signaling a broader rebound in large technology stocks. This market performance reflects investor confidence in tech companies' future prospects. Additionally, domestic policy updates like the new seat upgrade feature on 12306 and direct personal disbursement of maternity benefits in 25 provinces highlight ongoing improvements in domestic demand and social welfare.",
+      "term_clarifications": [
+        {
+          "term": "市值",
+          "explanation": "市值是指一家公司的股票总价值，即股票价格乘以总股数，是衡量公司规模的重要指标。"
+        },
+        {
+          "term": "纳斯达克（Nasdaq）",
+          "explanation": "纳斯达克是美国主要的股票交易市场之一，特别以科技股为主。"
+        },
+        {
+          "term": "道琼斯工业平均指数（Dow Jones Industrial Average）",
+          "explanation": "道琼斯指数是反映美国股市整体表现的主要股票指数之一，由30家大型工业公司组成。"
+        },
+        {
+          "term": "标普500指数（S&P 500）",
+          "explanation": "标准普尔500指数是包含美国500家大公司的股票市场指数，反映整体股市表现。"
+        },
+        {
+          "term": "英伟达（Nvidia）",
+          "explanation": "英伟达是一家知名的美国科技公司，主要生产图形处理器，现为市值最高的美国公司之一。"
+        },
+        {
+          "term": "12306",
+          "explanation": "12306是中国铁路客户服务中心的官方网站及APP，主要提供火车票预订服务。"
+        },
+        {
+          "term": "生育津贴",
+          "explanation": "生育津贴是政府对符合条件女性劳动者在生育期间的经济补助。"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "headline": "现货黄金突破4300美元/盎司，涨幅显著",
+      "chinese_brief": "10月20日，现货黄金价格突破了4300美元/盎司大关，日内上涨约1.2%。此涨势反映出投资者对全球经济不确定性的持续关注，以及在通胀前景和地缘政治紧张局势影响下黄金作为避险资产的吸引力持续增强。黄金价格的上涨可能会对黄金相关产业及金融市场产生连锁影响。",
+      "english_brief": "On October 20, spot gold prices surpassed the $4,300 per ounce mark, rising approximately 1.2% during the day. This surge reflects ongoing investor concerns over global economic uncertainties, with gold's appeal as a safe-haven asset strengthening amid inflation outlooks and geopolitical tensions. The increase in gold prices could trigger ripple effects across gold-related industries and financial markets.",
+      "term_clarifications": [
+        {
+          "term": "现货黄金",
+          "explanation": "现货黄金是指实时交易交付的黄金，与黄金期货不同，通常代表即时买卖的黄金价格。"
+        },
+        {
+          "term": "盎司",
+          "explanation": "盎司是一种重量单位，1盎司等于约31.1克，是黄金等贵金属的标准计量单位。"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "headline": "美多家公司网络服务宕机，加密货币市场反弹",
+      "chinese_brief": "10月20日，美国多家知名公司的网络服务出现宕机，受影响的平台包括亚马逊、Robinhood、Snapchat、Paypal旗下的Venmo以及加密货币平台Coinbase等，显示出大型互联网服务的持续运营风险。同日，主要加密货币市场出现反弹，分析师认为这是由于机构资金流入及全球经济状况改善所推动。同时，周大福计划于10月底再次调价，黄金制品价格预计上涨12%至18%，反映金价持续攀升对终端产品成本的影响。",
+      "english_brief": "On October 20, multiple major U.S. companies experienced service outages affecting platforms such as Amazon, Robinhood, Snapchat, PayPal’s Venmo, and cryptocurrency exchange Coinbase, highlighting ongoing operational risks in large-scale internet services. Concurrently, major cryptocurrencies rebounded, driven by analyst views attributing gains to institutional inflows and improving global economic conditions. Additionally, Chow Tai Fook announced plans to raise retail prices of its gold products by approximately 12% to 18% at the end of the month, reflecting sustained increases in gold prices impacting production costs.",
+      "term_clarifications": [
+        {
+          "term": "宕机",
+          "explanation": "宕机指计算机系统或网络服务因故障停止运行，导致用户无法访问服务。"
+        },
+        {
+          "term": "Robinhood",
+          "explanation": "Robinhood是一款美国知名的零佣金股票交易平台。"
+        },
+        {
+          "term": "Venmo",
+          "explanation": "Venmo是美国Paypal旗下的移动支付及转账服务平台。"
+        },
+        {
+          "term": "Coinbase",
+          "explanation": "Coinbase是全球主要的加密货币交易平台之一。"
+        },
+        {
+          "term": "周大福",
+          "explanation": "周大福是知名的香港珠宝零售品牌，以黄金饰品闻名。"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "headline": "国航锂电池自燃致行李架起火，乘客获赔偿",
+      "chinese_brief": "10月18日，中国国际航空CA139航班由杭州飞往仁川途中，因旅客行李中锂电池自燃引发行李架起火，航班紧急备降上海浦东机场。国航通报乘客经济舱和公务舱将分别获得200元和300元人民币的补偿。该事件再次提醒公众航空出行中锂电池安全的重要性。同时，卢浮宫继续闭馆，iPhone 17 Pro出现机身褪色问题等话题也受到关注。",
+      "english_brief": "On October 18, China International Airlines flight CA139 from Hangzhou to Incheon experienced a luggage rack fire caused by a lithium battery self-ignition inside a passenger’s bag, prompting an emergency landing at Shanghai Pudong Airport. The airline announced compensation of 200 RMB for economy class passengers and 300 RMB for business class passengers. The incident underscores the critical importance of lithium battery safety during air travel. Other notable updates include the continued closure of the Louvre Museum and reported discoloration issues with the iPhone 17 Pro.",
+      "term_clarifications": [
+        {
+          "term": "锂电池自燃",
+          "explanation": "锂电池自燃指锂电池发生短路或受损后，因内部化学反应产生高温导致自发燃烧。"
+        },
+        {
+          "term": "国航",
+          "explanation": "国航是中国国际航空公司，是中国的主导航空公司之一。"
+        },
+        {
+          "term": "备降",
+          "explanation": "备降是指航班因突发情况临时改变目的地机场降落。"
+        },
+        {
+          "term": "卢浮宫",
+          "explanation": "卢浮宫是法国巴黎著名的艺术博物馆，世界最大的艺术博物馆之一。"
+        },
+        {
+          "term": "iPhone 17 Pro",
+          "explanation": "iPhone 17 Pro是苹果公司即将推出的智能手机型号。"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本轮新闻涵盖了全球科技股市场动态、黄金价格波动、重要互联网平台宕机事件以及航空
+2025-11-05 13:44:05,260 | WARNING | Batch 9 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 32,       "headline": "苹果市值接近4万亿美元创新高，科技股集体走强",       "chinese_brief": "10月20日美股收盘时，苹果公司股价上涨近4%，总市值达到3.89万亿美元，刷新历史纪录，成为美国第二大市值公司，紧随领头羊英伟达之后。与此同时，纳斯达克、道琼斯工业平均指数和标普500指数均呈现上涨，反映出大型科技股整体回暖的趋势。此次股市表现显示了市场对科技企业未来发展的积极预期。此外，12306新增积分兑换功能、25省份生育津贴直接发放等政策进展也体现内需和社会保障的持续优化。",       "english_brief": "On October 20, Apple’s stock rose nearly 4% at the U.S. market close, lifting its total market capitalization to $3.89 trillion, a historic high that positions Apple as th...)
+2025-11-05 13:44:32,715 | INFO | Completed batch 9/9 (briefings=36).
+2025-11-05 13:44:32,715 | INFO | OpenAI summarization completed across 9 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=34294)
+2025-11-05 13:44:32,717 | INFO | Saved digest to digests/黄金-or-贵金属-and-美元-or-美元汇率-briefing-2025-11-05_1324.md
+2025-11-05 13:44:32,772 | INFO | Summarizing 39 articles across 10 batches.
+2025-11-05 13:44:52,479 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-05 13:45:18,491 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-05 13:45:43,883 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-05 13:46:01,670 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-05 13:46:25,593 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-05 13:46:49,112 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-05 13:47:18,224 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-05 13:47:42,887 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-05 13:48:10,216 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-05 13:48:35,096 | INFO | Completed batch 10/10 (briefings=39).
+2025-11-05 13:48:35,096 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=28154)
+2025-11-05 13:48:35,098 | INFO | Saved digest to digests/gold-or-precious-metal-and-usd-or-dollar-briefing-2025-11-05_1324.md
+2025-11-05 13:48:35,100 | INFO | Topic run summary: {"started_at": "2025-11-05T05:24:10.617092+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": null, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}, "status": "ok", "total_results": 685, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}, "status": "ok", "total_results": 3910, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}, "status": "ok", "total_results": 371, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 2, "query_params": {"endpoint": "everything", "q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}, "status": "ok", "total_results": 814, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}, "status": "ok", "total_results": 68, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}, "status": "ok", "total_results": 304, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 81694, "output_tokens": 98723, "total_tokens": 180417}}, "outputs": [{"query_index": 0, "query": {"endpoint": "everything", "q": "(\"中国\" OR \"中国经济\") AND (经济 OR 贸易 OR 增长)", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}, "digest_path": "digests/中国-or-中国经济-and-经济-or-贸易-or-增长-briefing-2025-11-05_1324.md", "articles_summarized": 40, "summary_notes": "本期新闻涵盖了科技创新、全球半导体市场动态以及美国地方政治的重要发展，体现了科技与政治领域的深刻影响及相互交织。\n\n本期新闻涵盖中国政治经济危机、消费热点、国际技术与人权争议，以及全球半导体市场最新动态，反映全球政经和科技领域复杂多变的局势。\n\n本期新闻涵盖了科技公司在欧洲市场的销售挑战、航天领域的合作与分歧、传统文化的现代传承以及中美贸易安全领域的重要进展，体现全球政治经济与文化的多维动态。\n\n本期简报涵盖科技、汽车、新能源及政策领域的最新国际动态，体现全球技术竞赛及经济合作的多维面貌。\n\n本期新闻涵盖汽车产业的国际竞争、互联网服务监管问题、国内医疗行业困境以及重点企业动态与科技进展，展示了全球及中国市场多个领域的重要发展趋势与挑战。\n\n本期新闻涵盖了中国年度购物节“双11”的促销趋势，苹果最新财季业绩展现强劲增长，日本自行车巨头禧玛诺因中国市场降温利润下降，以及全球电视市场因消费周期变化出现季度销量下降但第四季度有望回暖。这些动态反映了消费电子与传统制造业在全球经济环境中的微妙变化。\n\n本期新闻涵盖了儿童玩具安全、科技巨头苹果的战略调整、人工智能在信息真实性方面存在的风险，以及台海地区日益紧张的地缘政治局势，反映了全球安全、技术与政治多领域的动态变化。\n\n本次新闻简报涵盖了科技巨头苹果及英伟达在市场和管理方面的动态，中国大陆的历史纪录片反思，以及无锡物联网产业的前沿发展，折射出全球及中国在技术创新与市场竞争中的复杂形势。\n\n本期新闻涵盖中国前沿科技产品融资进展、人工智能大模型行业发展趋势、传统国企领导人变更及AI硬件创新创业动态，反映了中国科技产业从基础技术创新到企业治理调整的多层面变革。\n\n本期聚焦电竞赛事重大战果与人工智能超级计算机进展，同时关注中国医保体系对高价创新药的进一步支持，为读者呈现科技与医疗领域最新动态。\n\n本期新闻涵盖中国智能音箱市场动态及科技领域重大趋势预测，反映出智能硬件市场面对政策环境调整的挑战和人工智能在内容生成领域的未来影响，同时关注环境公共健康政策及交通服务创新。"}, {"query_index": 1, "query": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (economy OR trade OR growth)", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}, "digest_path": "digests/china-or-chinese-and-economy-or-trade-or-growth-briefing-2025-11-05_1324.md", "articles_summarized": 38, "summary_notes": "本次简报涵盖中美贸易关系稳定背景下的技术挑战、中德外交微妙动态、中国绿色建筑创新以及海南国际科技合作论坛的最新进展，反映了全球贸易、外交与科技领域的多重趋势。 This digest covers stabilizing China-US trade relations amid technological challenges, nuanced China-Germany diplomatic exchanges, Chinese green building advances, and the latest developments in international science and technology cooperation in Hainan, reflecting multiple global trends in trade, diplomacy, and technology.\n\n本期简报涵盖中国军事扩张引发的区域安全担忧，蚂蚁集团推动香港金融科技发展的新动态，特朗普贸易政策的挑战，以及中美贸易谈判后的外交警告，反映出当前国际关系的复杂与多变。\n\nThe recent US-China trade truce has shifted global economic and geopolitical dynamics, highlighting persistent sensitivities around political issues and economic indicators. China’s cautious stance on sovereignty-related 'red lines' and domestic economic challenges underscore the complex balance in bilateral relations. Meanwhile, commodity markets like gold react to intersecting influences of monetary policy, currency strength, and shifting trade relations.\n\n本期新闻简报涵盖了包括星巴克中国市场股权变动、加密货币市场动态、台湾制造业政策调整及香港在稳定币支付领域的新定位等多项国际财经热点，反映全球经济多元变化趋势。\n\n本次国际贸易与加密市场的新闻反映出全球经济格局正在经历重大调整，尤其是美中贸易关系的演变对全球市场产生深远影响，同时加密货币市场则处于技术创新和风险警示的交织之中。\n\n本次新闻摘要涵盖了全球关键资源贸易格局、中美关系中的战略资源控制、美国国内政治事实核查，以及生物基化工市场的发展趋势，体现了全球经济、政治和技术多领域的动态，便于读者全面了解当下热点议题。\n\n此次新闻摘要涵盖全球环境、国际政治及能源市场等多个重点话题，反映当前世界格局中大国竞争与合作的复杂动态。读者可通过中英文对照了解事件背景及可能的全球影响。\n\n本期新闻涵盖美中贸易紧张局势的新动态，包括特朗普政府对全球关税法庭挑战和高端芯片出口限制，以及人民币在国际贸易中地位的提升和中国在非洲关键矿产资源的布局，体现全球经济和地缘战略的深刻变化。\n\n本期摘要涵盖了中美贸易关系与其对大宗商品、货币及加密市场的广泛影响，反映出全球经济多层面的联动性及调整动态。\n\n本期新闻涵盖中美经济与贸易关系的最新动态，包括中国增强经济自主的政策演变，美国对白宫暂停关税措施的回应，以及地缘政治角度的南中国海军事动态。同时，聚焦全球石化产业可见新兴市场国家对未来发展趋势的关键作用。"}, {"query_index": 2, "query": {"endpoint": "everything", "q": "(\"中国\" OR \"中国科技\") AND (\"人工智能\" OR \"AI\" OR \"生成式\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}, "digest_path": "digests/中国-or-中国科技-and-人工智能-or-ai-or-生成式-briefing-2025-11-05_1324.md", "articles_summarized": 23, "summary_notes": "本期摘要涵盖了人工智能在金融交易、电商应用及技术出口等多领域的最新动态，反映出AI技术的快速发展及其在全球市场和产业中的深远影响。\n\n本期简报涵盖了人工智能时代智能家居进化、中国科技企业在AI领域的挑战、国际芯片产业的地缘政治影响，以及中国自动驾驶企业的资本动作，反映科技与市场动向紧密结合。\n\n本期新闻涵盖了美国对NVIDIA顶级AI芯片出口政策趋严、微软因电力不足面临AI硬件部署瓶颈、英伟达大幅增加对韩国半导体供应，以及苹果智能AI功能在中国市场的不确定发布。整体反映了全球AI技术竞争加剧与基础设施挑战并存的复杂局面。\n\n本期新闻涵盖人工智能与汽车产业深度融合、中国电动车安全问题暴露、A股市场行情分析以及苹果智能语音助手的创新进展，体现科技与经济领域的多重热点交织。\n\n本期新闻涵盖全球科技巨头苹果在AI发展及产品创新方面的最新动态，中国与日本间因台湾访问引发的外交争端，以及中国半导体企业的法律纠纷，反映出科技发展与地缘政治的复杂交织。\n\n本期摘要涵盖中国资本市场科技板块的增长态势、新能源汽车行业交付创新高以及人工智能芯片企业的劳动争议和业界动态，反映出科技与汽车行业的持续快速发展与复杂竞争格局。"}, {"query_index": 3, "query": {"endpoint": "everything", "q": "(\"China\" OR \"Chinese\") AND (\"artificial intelligence\" OR \"AI\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}, "digest_path": "digests/china-or-chinese-and-artificial-intelligence-or-ai-briefing-2025-11-05_1324.md", "articles_summarized": 35, "summary_notes": "本期简报聚焦于亚洲科技领域的重大动态，包括中国通过电力补贴推动AI芯片国产化，韩国大幅增加AI投入，以及中国AI初创企业在海外市场的快速扩展，反映出亚洲国家在全球人工智能竞争中的积极布局和发展态势。\n\n本期摘要涵盖了全球工业机器人产业格局变化、中国PCB制造技术发展、国内推动AI芯片替代进口的政策激励，以及中美高端AI芯片贸易限制的最新动态，为读者全面呈现科技产业前沿趋势。\n\n本期报道涵盖了全球科技领域的最新动态，特别聚焦中美之间在人工智能芯片及科技主权上的竞争与合作，同时也反映出各国政府在促进创新与维护国家安全之间的平衡挑战。 This edition covers recent developments in global technology, focusing especially on US-China competition and cooperation in AI chips and tech sovereignty, highlighting governments' challenges in balancing innovation promotion and national security.\n\n本期新闻涵盖了科技产业中印度制造业的本地化趋势、美中技术贸易紧张，以及自动驾驶出租车市场的竞争格局，体现了全球科技与地缘政治的交织影响。\n\n本次简报涵盖了苹果的最新iOS系统更新与美国前总统特朗普在人工智能芯片出口及白宫建设项目中的相关动态，反映出技术创新、国家安全与政治资金的复杂交织。\n\nThe news cycle highlights mounting tensions in US-China relations through technology trade restrictions, particularly concerning advanced AI chips from Nvidia, alongside financial market caution over AI stock valuations. Additionally, ongoing digital education trends persist with tech companies like Busuu enhancing language learning accessibility.\n\nRecent developments highlight intensifying US controls over advanced AI chip exports, notably impacting Nvidia’s dealings with China. While the US under Trump seeks to limit Chinese access to cutting-edge semiconductor technology, countries like Malaysia aim for balanced engagement. China responds by innovating its AI development strategies to circumvent external restrictions, signaling evolving dynamics in global AI competition.\n\n本期简报涵盖了人工智能技术在医疗数据分析中的最新应用探索、全球股市在AI推动下的持续上涨态势，以及美国高科技出口政策的新动态，反映了AI技术对全球经济和地缘政治的深远影响。\n\nThis digest covers recent developments in US financial markets influenced by advances in artificial intelligence technology and easing trade tensions between the US and China. The updates highlight key stock indexes performance, major tech company activities, and government policy impacts shaping the global economic landscape."}, {"query_index": 4, "query": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\") AND (\"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 40, "sortBy": "publishedAt"}, "digest_path": "digests/黄金-or-贵金属-and-美元-or-美元汇率-briefing-2025-11-05_1324.md", "articles_summarized": 36, "summary_notes": "本期新闻涵盖了科技巨头英伟达的市场扩张、中国黄金市场政策变化、加密货币市场波动，以及中国社会热点事件，反映了全球及中国经济、科技与社会的多重动态。\n\n本次摘要涵盖了从历史技术基础设施投资的周期性回顾，到中国3D打印行业的知识产权争端，再到风险投资公司财务披露，以及贵金属市场的最新行情，体现了全球经济、科技和投资领域的多重动态。\n\n本期新闻聚焦黄金市场价格波动及全球央行态度分歧，反映出经济不确定性背景下，贵金属市场敏感度提升。同时，财富排行榜与科技巨头动态揭示了资本市场的多元化发展趋势。\n\n本次新闻摘要涵盖航空业招聘创新、教育文化热点、贵金属价格动态及科技汽车行业发展，体现出中国经济社会多领域的活跃变革与未来趋势。\n\n本期关注了美国政府对量子计算企业的投资动作，显示科技前沿的国家战略布局；黄金市场因美元信用和地缘政治变化波动加剧，投机资金影响显著；以及一则独特的人文故事，展现定制义眼行业的高端创新。\n\n本期简报涵盖了法国卢浮宫失窃案的社会与安全影响，全球黄金与储备资产市场的最新动态，以及涉及国际犯罪和科技创新领域的热点新闻，帮助读者了解2025年10月全球重要经济与社会事件。\n\n本期简报涵盖国际贵金属价格波动、人工智能领域领导者黄仁勋的创新影响，以及全球企业与国家能源策略的最新动态，反映目前全球经济和科技环境的复杂变化。\n\n本期报道涵盖全球金融科技创新、奢侈品定制及贵金属市场动态。特别关注数字现实资产代币化的行业趋势和贵金属价格的波动，反映出经济政策和国际关系变化对市场的综合影响。\n\n本次简报涵盖了科技股市值创新高、黄金价格突破、美国网络服务宕机及加密货币反弹，以及航空锂电池火灾事故等多项国际重要新闻，反映了科技发展、金融市场波动及安全问题的多重动态。"}, {"query_index": 5, "query": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\") AND (\"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 40, "sortBy": "publishedAt"}, "digest_path": "digests/gold-or-precious-metal-and-usd-or-dollar-briefing-2025-11-05_1324.md", "articles_summarized": 39, "summary_notes": "本期新闻主要聚焦全球贵金属市场的价格动态及背后的宏观经济因素，涉及美国货币政策、中印市场表现及企业并购活动，为读者提供全面的全球财经动向。\n\n近期国际黄金市场受美元走势、美联储利率预期及中美贸易关系的共同影响，价格波动显著。技术指标如希顿堡预兆的出现表明投资者应关注潜在风险。印度黄金市场同样反映全球趋势。关注后续经济数据和政策声明，有助把握市场脉络。\n\n近期黄金市场波动受美元走势、美联储利率政策以及地缘政治因素影响显著。同时，权威人士对包括数字货币在内的多类资产表达了市场风险警告。全球金融权力的竞争和货币体系的变化正通过黄金市场呈现出深远影响。建议投资者密切关注宏观经济动态与政策调整。\n\nRecent Federal Reserve communications have driven a stronger US dollar and dampened gold prices due to hawkish sentiments. Despite short-term price declines, gold's outlook remains cautiously optimistic given ongoing macroeconomic uncertainties around US interest rates.\n\n近期贵金属市场表现活跃，黄金不仅稳居高位，还成为外汇储备重要资产，反映全球经济及地缘政治环境的不确定性。投资者密切关注各国政策和国际关系发展，以调整避险策略。\n\n近期黄金和白银价格的上涨反映了美元走弱和全球经济不确定性的影响。投资者对避险资产需求增加，推动金价重回高位。与此同时，技术分析显示加密货币XRP可能面临类似黄金此前的爆发行情。美联储的降息及中美领导人会晤也成为市场关注焦点，预计贵金属市场短期内仍将保持活跃。\n\n本期简报涵盖国际贸易重要事件、贵金属市场动态、区块链技术创新以及环境技术市场前景，反映全球经济多领域的最新发展趋势。\n\n本期新闻涵盖全球经济金融领域的关键动态，包括美元货币政策与贬值争论，腐败对民主的威胁，全球央行储备资产结构的重大转变，以及贵金属价格的短期波动。读者通过对专业名词的解释，可加深对国际财经新闻的理解，便于把握市场趋势和政策风险。\n\n本期简报涵盖贵金属和加密货币市场的最新动态，重点分析美元走势及其对黄金和比特币价格的影响，帮助投资者把握全球金融环境中的风险与机遇。\n\n本期简报涵盖了黄金市场的多面向动态，包括数字黄金资产的创新应用、近期黄金价格的剧烈调整及季节性需求变化，帮助投资者全面理解2025年黄金市场的潜在机遇与风险。"}]}
