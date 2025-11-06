@@ -11,6 +11,7 @@ import os
 from collections import defaultdict
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+from mailer import send_digest_via_email
 
 from digest_utils import (
     DIGEST_DIR,
@@ -82,7 +83,7 @@ DEFAULT_STATE: Dict[str, Any] = {
     "last_run": None,
 }
 
-TOPIC_MAX_AGE_DAYS = 1
+TOPIC_MAX_AGE_DAYS = 2
 
 def main() -> None:
     run_started = dt.datetime.now(dt.timezone.utc)
@@ -128,6 +129,8 @@ def main() -> None:
 
         story_entries = build_story_entries(query_articles, briefings)
         digest_path = write_digest(title, story_entries, DIGEST_DIR, filename)
+        subject = title
+        send_digest_via_email(Path(digest_path), subject)
         output_paths.append(digest_path)
 
         outputs_summary.append(

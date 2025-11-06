@@ -10,6 +10,7 @@ import json
 import os
 from pathlib import Path
 from typing import Any, Dict, List
+from mailer import send_digest_via_email
 
 from digest_utils import (
     DIGEST_DIR,
@@ -66,6 +67,9 @@ def main() -> None:
     filename = f"headline-briefing-{ts}.md"
     story_entries = build_story_entries(articles, briefings)
     digest_path = write_digest(title, story_entries, DIGEST_DIR, filename)
+    
+    subject = title  # or customize
+    send_digest_via_email(Path(digest_path), subject)
 
     state["last_run"] = run_started.isoformat()
     save_state(STATE_PATH, state)
