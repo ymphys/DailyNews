@@ -10266,3 +10266,1458 @@ smtplib.SMTPResponseException: (-1, b'\x00\x00\x00')
 2025-11-07 00:06:35,037 | INFO | Saved digest to digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-06_2348.md
 2025-11-07 00:06:36,693 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
 2025-11-07 00:06:36,698 | INFO | Topic run summary: {"started_at": "2025-11-06T15:48:12.299678+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-04T15:48:04.288754+00:00", "requests": [{"endpoint": "everything", "request_params": {"q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-04T15:48:12.299914+00:00"}, "status": "ok", "total_results": 75, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-04T15:48:12.966175+00:00"}, "status": "ok", "total_results": 470, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-04T15:48:13.215159+00:00"}, "status": "ok", "total_results": 4, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 2, "query_params": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-04T15:48:13.439875+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-04T15:48:13.655396+00:00"}, "status": "ok", "total_results": 502, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-04T15:48:13.959517+00:00"}, "status": "ok", "total_results": 1510, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-04T15:48:14.210736+00:00"}, "status": "ok", "total_results": 202, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 6, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-04T15:48:14.484212+00:00"}, "status": "ok", "total_results": 290, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 7, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 58872, "output_tokens": 65630, "total_tokens": 124502}}, "outputs": [{"query_index": 0, "query": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/科学-or-技术-briefing-2025-11-06_2348.md", "articles_summarized": 20, "summary_notes": "本轮报道涵盖了科技新品发布、高端半导体供应链动态、先进航空器制造进展及AI辅助编程工具四大领域，反映出全球科技创新正朝着高性能、多元化和智能化方向加速发展。\n\n本批新闻涵盖数字基础设施建设、人工智能企业财务动态、金融AI工具发展，以及AI技术在广告创意中的实际应用与挑战，反映出科技前沿与产业深度融合的多样面貌。\n\n本期资讯涵盖了汽车行业与金融科技领域的重要新动态。奔驰纯电CLA上市强调了智能驾驶与电动车技术的融合，而aishare-txt的发布显示出中国在金融智能工具研发方面的进展。\n\n本期摘要涵盖了AI影像设备的新兴发展、美国对先进GPU出口限制、阿里云多智能体开发框架升级，以及蓝牙6.2核心规范发布，体现了全球科技领域在人工智能、芯片安全、开源创新与无线通信技术上的最新动态。\n\n本期新闻涵盖新能源汽车换电站布局、数据存储安全技术、半导体先进制造设备协作及高性能汽车市场销售表现四大领域，反映了科技与汽车产业的最新发展趋势。"}, {"query_index": 1, "query": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/science-or-technology-briefing-2025-11-06_2348.md", "articles_summarized": 19, "summary_notes": "本期速报涵盖了电影拍摄设备进展、艺术技术融合创新、热门游戏重制发布及药物开发中的技术转移培训，体现科技与文化多领域的交汇与发展趋势。\n\n本期新闻摘要涵盖了金融行业技术交流、人工智能推动的软件工程创新、机器人在城市生活中的融入趋势以及前沿神经形态技术的研究进展，为读者提供了科技与金融领域的多维度视角。\n\n本期简报涵盖了自动驾驶技术的区域差异、企业推动人工智能应用的策略、艺术领域的服装设计展览，以及应对冬季情绪低落的科学建议，旨在为读者提供跨领域的全球视角。\n\n本期新闻涵盖科技和医疗领域的最新人事任命与创新动态，反映出机构对数字化转型和技术升级的持续投入，以及新兴企业在人工智能市场的竞争态势。\n\n本期新闻涵盖了大学新生体重变化的科学解释、LegalShield公司高管团队的最新调整，以及尼泊尔政府推广公共免费Wi-Fi的政策动态。涉及的术语均附有中英文解读，便于不同语言背景的读者理解。"}, {"query_index": 2, "query": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/中国经济-or-中国政治-briefing-2025-11-06_2348.md", "articles_summarized": 4, "summary_notes": "本文涵盖了中国2025年末经济衰退、汽车行业资本整合、创新产品推出及就业市场变化四大热点，体现经济内忧外患交织及产业转型升级的趋势。"}, {"query_index": 4, "query": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/人工智能-or-ai-or-大模型-briefing-2025-11-06_2348.md", "articles_summarized": 18, "summary_notes": "本次新聞匯整涵蓋金融市場動態、青少年運動發展、女子高爾夫賽事及人工智能領域競爭，呈現多元且具時效性的全球與本地重要議題。\n\n本期世界快訊涵蓋科技融合傳統文化、國際法律政策影響金融市場、天氣災害預警，以及半導體產業供應鏈挑戰，反映全球多元領域的最新動態與趨勢。\n\n本期报道涵盖了台湾半导体关键厂商力智、全新与稳懋的最新业绩表现，反映出AI及高性能计算需求带动下，电源管理与光通信组件市场的稳健成长。关税政策和市场季节性变化对短期销售产生影响，但总体行业向更高技术和产能扩展方向发展。\n\n本期新聞涵蓋台灣半導體與技術工人市場的最新動態，反映產業轉型與基礎建設需求對就業及營收的影響。\n\n本期世界新聞涵蓋跨境科技合作及教育創新兩大主題，呈現AI工具的產業整合趨勢與高校軟體項目管理的學術探討。\n\n本期要聞涵蓋台灣科技巨頭鴻海及華邦電子的最新營運與技術發展動態，展示了全球電子製造與AI領域的增長趨勢及競爭焦點。\n\n本期焦點涵蓋人工智能市場的產業展望及美國經濟數據對股市影響兩大主題，反映科技創新與經濟基本面的互動，值得投資者與業界持續關注。"}, {"query_index": 5, "query": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/artificial-intelligence-or-ai-or-large-language-model-or-llm-briefing-2025-11-06_2348.md", "articles_summarized": 15, "summary_notes": "本期新闻涵盖了人工智能在软件应用、营销和浏览器功能中的新趋势，体现了技术对用户体验和行业实践的持续深刻影响。\n\n本期快讯涵盖了人工智能评估工具与SDK的新版本发布、AI代理身份验证新方案，以及谷歌最新旗舰手机Pixel 10的技术亮点，反映了AI及移动技术领域的最新进展与创新趋势。\n\nThis digest highlights recent developments in the global financial markets influenced by artificial intelligence technologies and economic factors. From market rebounds following tech selloffs to debates over AI firms' spending versus revenue, investors show a mix of concern and optimism amid volatility.\n\n本期新闻涵盖AI股市波动、谷歌揭露利用AI自我改写代码的恶意软件，以及AMD即将推出的高性能CPU，这些均体现出人工智能技术与高科技产业的迅猛发展及其带来的机遇与挑战。"}, {"query_index": 6, "query": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/黄金-or-贵金属-or-美元-or-美元汇率-briefing-2025-11-06_2348.md", "articles_summarized": 17, "summary_notes": "本期新聞涵蓋科技巨頭蘋果積極調整產品戰略，進軍平價筆電市場，及臺灣普發現金福利啟動後的民眾反應。此外，生技製藥領域因專利藥品即將屆期而帶來的市場機會，也成為焦點。旨在向讀者提供多領域最新動態與深入解析。\n\n本次簡報涵蓋了美元走勢、美國政府停擺對經濟的影響，以及台灣經濟展望與外匯存底變化，提供了金融市場及政策層面的重要資訊，方便非中文讀者理解。\n\n本期简报涵盖科技巨头领导权变动、新手机性能突破、知名投资者市场操作，以及加密货币市场资金流动态势，反映全球科技与金融领域的关键动态。\n\n本次收购体现了科技巨头在云安全领域加大投资的趋势，反映出企业对云端安全保障需求的激增。"}, {"query_index": 7, "query": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-06_2348.md", "articles_summarized": 20, "summary_notes": "本期简报涵盖了金融市场风险预警、国际农产品贸易动态、全球气候融资最新计划，以及职业棒球防守大奖四大领域，帮助读者全面把握世界最新重要资讯。\n\n本期新闻涵盖了纪录片新作揭示的社会议题、天文领域的最新发现、文化艺术活动预告及科技平台针对印度市场的本地化创新，反映出全球文化、科学与数字经济的多元动态。\n\n本期新闻摘要涵盖多个行业市场增长预测及全球股市动荡对贵金属价格的影响，帮助读者把握未来投资和技术发展趋势。\n\n本期简报涵盖投资理财、电脑硬件优惠、国际环保资金及零售业动态，帮助读者把握全球经济和市场的重要趋势。\n\n本期新闻摘要涵盖了医疗影像市场预测、加密货币区域性交易动态、贵金属避险反应及美国创新区域分布等多个领域，提供多样化的全球经济科技发展趋势观察。"}]}
+2025-11-07 20:46:13,500 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-07 20:46:14,102 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-07 20:46:14,103 | INFO | Retained 19 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-07 20:46:14,103 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-07 20:46:14,344 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-07 20:46:14,344 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-07 20:46:14,344 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-07 20:46:14,654 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-07 20:46:14,655 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-07 20:46:14,655 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-07 20:46:14,919 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-07 20:46:14,920 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-07 20:46:15,125 | INFO | Summarizing 19 articles across 5 batches.
+2025-11-07 20:46:32,587 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-07 20:46:55,011 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-07 20:47:22,460 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-07 20:47:49,800 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-07 20:48:07,612 | INFO | Completed batch 5/5 (briefings=19).
+2025-11-07 20:48:07,612 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=12390)
+2025-11-07 20:48:07,614 | INFO | Saved digest to digests/headline-briefing-2025-11-07_2048.md
+2025-11-07 20:48:10,403 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-07 20:48:10,406 | INFO | Headline run summary: {"started_at": "2025-11-07T12:46:13.499909+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-06T00:00:59.211652+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "pageSize": 30}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 4912, "output_tokens": 7478, "total_tokens": 12390}}, "outputs": {"digest_path": "digests/headline-briefing-2025-11-07_2048.md", "articles_summarized": 19, "summary_notes": "本期简报涵盖了全球军事冲突中的战略选择、人工智能浪潮对劳动市场的冲击、科技巨头高管薪酬争议，以及旅游安全事故，反映出当前国际政治、经济与社会领域的多重挑战。\n\n本期新闻涵盖英国经济政策稳定、美国禽流感疫情扩散、政府潜在停摆对假日旅行的影响，以及中东安全局势中的关键地道问题，反映了全球政治经济与公共卫生的多重复杂挑战。\n\n本次简报涵盖了美国最高法院涉及特朗普关税案的最新动态、每日星座运势提醒、NBA重要比赛记录及密西西比州政治格局变化，帮助不同兴趣领域的读者快速了解全球时政、文化和体育资讯。\n\n本期简报涵盖体育、健康、执法安全及重大事故多个领域，既有历史性体育成就，也有突发公共安全事件和实用生活建议，体现了全球新闻的多样性和实时性。\n\n本期简报涵盖从文化天文现象到美国政治动态，再到前沿宇宙学研究的多元主题，旨在为读者提供跨领域的最新国际信息与背景解读。"}}
+2025-11-07 20:48:10,408 | INFO | Requesting everything with params={'q': '("科学" OR "技术")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-06T00:00:12.299678+00:00'}
+2025-11-07 20:48:11,209 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-07 20:48:11,209 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-07 20:48:11,209 | INFO | Requesting everything with params={'q': '("Science" OR "Technology")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-06T00:00:12.299678+00:00'}
+2025-11-07 20:48:11,468 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-07 20:48:11,468 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-07 20:48:11,468 | INFO | Requesting everything with params={'q': '("中国经济") OR ("中国政治")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-06T00:00:12.299678+00:00'}
+2025-11-07 20:48:11,711 | INFO | NewsAPI returned 1 articles (status=ok, remaining=None)
+2025-11-07 20:48:11,711 | INFO | Retained 1 articles for endpoint=everything, language=zh after filtering.
+2025-11-07 20:48:11,711 | INFO | Requesting everything with params={'q': '("China Economy") OR ("China Politics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-06T00:00:12.299678+00:00'}
+2025-11-07 20:48:11,983 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-07 20:48:11,984 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-07 20:48:11,984 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-06T00:00:12.299678+00:00'}
+2025-11-07 20:48:12,295 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-07 20:48:12,295 | INFO | Retained 17 articles for endpoint=everything, language=zh after filtering.
+2025-11-07 20:48:12,296 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-06T00:00:12.299678+00:00'}
+2025-11-07 20:48:12,599 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-07 20:48:12,599 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-07 20:48:12,599 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属" OR "美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-06T00:00:12.299678+00:00'}
+2025-11-07 20:48:12,889 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-07 20:48:12,889 | INFO | Retained 14 articles for endpoint=everything, language=zh after filtering.
+2025-11-07 20:48:12,889 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal" OR "USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-06T00:00:12.299678+00:00'}
+2025-11-07 20:48:13,148 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-07 20:48:13,148 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-07 20:48:13,193 | INFO | Summarizing 20 articles across 5 batches.
+2025-11-07 20:48:46,635 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "人工智能表现不及预期，多家企业重新雇佣裁员员工",
+      "chinese_brief": "根据职场分析公司Visier的最新报告，由于人工智能尚未达到预期的替代人工效果，一些企业开始重新聘用此前裁员的员工。报告分析了全球142家公司约240万名员工的数据，发现约5.3%的被裁员工后续又被原雇主重新雇用，反映出自动化技术尚未完全实现高管们的成本缩减预期。这一趋势可能促使企业在人力资源管理上调整战略，以平衡技术投入与实际运营需求。",
+      "english_brief": "According to a recent report by workplace analytics firm Visier, some companies are rehiring previously laid-off staff as AI has yet to fully meet expectations in replacing human labor. The report analyzed employment data from about 2.4 million employees across 142 companies globally and found that approximately 5.3% of laid-off employees have been rehired by their original employers. This indicates that automation technologies have not fully delivered the cost-cutting benefits anticipated by management. The trend may prompt companies to adjust their human resource strategies, balancing technology investments with operational needs.",
+      "term_clarifications": [
+        {
+          "term": "Visier",
+          "explanation": "Visier是一家专注于人力资源数据分析的公司，提供企业员工管理和劳动力分析解决方案。"
+        },
+        {
+          "term": "人工智能 (AI)",
+          "explanation": "Artificial Intelligence，指通过计算机程序模拟人类智能行为的技术，常用于自动化任务。"
+        },
+        {
+          "term": "自动化技术",
+          "explanation": "指使用机器、软件等技术自动执行原本由人工完成的任务。"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "联想发布moto g100s智能手机，999元起售",
+      "chinese_brief": "联想正式发布moto g100s智能手机，起售价为999元。该机配备6.72英寸LCD护眼屏，支持120Hz高刷新率与全局DC调光，有效降低蓝光和屏闪对眼睛的伤害。内置7000mAh大容量电池，采用10%硅负极技术提升能量密度，续航能力显著，同时支持30W有线快充。手机搭载第四代骁龙6s处理器，配备8GB物理内存和16GB虚拟内存，支持多账号多开，适合日常社交和轻度娱乐使用。",
+      "english_brief": "Lenovo officially launched the moto g100s smartphone, starting at 999 yuan. It features a 6.72-inch LCD eye-care display with 120Hz refresh rate and global DC dimming, effectively reducing blue light and screen flicker to protect users’ eyes. The phone is powered by a large 7000mAh battery utilizing 10% silicon anode technology for enhanced energy density and endurance, supporting 30W wired fast charging. It runs on the 4th generation Snapdragon 6s processor, equipped with 8GB physical RAM plus 16GB virtual RAM, and supports multiple accounts running simultaneously, making it ideal for social networking and light gaming.",
+      "term_clarifications": [
+        {
+          "term": "LCD护眼屏",
+          "explanation": "采用液晶显示技术并实现防蓝光和无频闪设计的屏幕，保护用户视力。"
+        },
+        {
+          "term": "120Hz高刷新率",
+          "explanation": "屏幕每秒刷新120次画面，带来更流畅的显示效果。"
+        },
+        {
+          "term": "骁龙6s处理器",
+          "explanation": "高通骁龙6系列的最新一代移动处理器，适合中端智能手机。"
+        },
+        {
+          "term": "多账号多开",
+          "explanation": "支持在同一设备上同时登录和使用多个应用账号，例如微信多开。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "高盛：对冲基金对小米股票持看空态度，空头仓位或持续至财报公布",
+      "chinese_brief": "高盛报告指出，近期对冲基金对小米股票转为看空，空头仓位显著上升，并可能维持至即将发布的财报季。过去两周，养老金和对冲基金加大了抛售力度。小米股价自今年6月达到历史高点后已下跌近30%。尽管如此，中信证券对小米2025年第三季度业绩持乐观看法，预计收入和非国际财务报告准则（Non-IFRS）净利润将实现显著增长，认同其作为中国领先科技企业的地位。",
+      "english_brief": "Goldman Sachs reported that hedge funds have turned bearish on Xiaomi stocks, with short positions rising significantly and expected to be maintained through the upcoming earnings season. In the past two weeks, pension funds and hedge funds have intensified selling pressure. Xiaomi’s share price has dropped nearly 30% since reaching a record high in June this year. Nonetheless, CITIC Securities maintains a positive outlook for Xiaomi’s Q3 2025 performance, forecasting strong revenue and Non-IFRS net profit growth, affirming its status as a leading tech company in China.",
+      "term_clarifications": [
+        {
+          "term": "高盛",
+          "explanation": "Goldman Sachs，美国著名投资银行和金融服务公司。"
+        },
+        {
+          "term": "对冲基金",
+          "explanation": "Hedge fund，一种使用多种策略以获取高回报的投资基金，常参与股票买卖。"
+        },
+        {
+          "term": "空头仓位",
+          "explanation": "投资者通过卖出未持有的股票，期待股价下跌后买入以获利的策略。"
+        },
+        {
+          "term": "Non-IFRS",
+          "explanation": "非国际财务报告准则的财务指标，通常剔除某些非经常性项目，更能反映公司核心盈利能力。"
+        },
+        {
+          "term": "中信证券",
+          "explanation": "中国领先的证券公司之一，提供研究和投资服务。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "小鹏X9超级增程版MPV启动预售，全球续航最长达1602公里",
+      "chinese_brief": "小鹏汽车发布了搭载鲲鹏超级增程技术的X9 MPV车型，开启预售，起价为35万元。新车长5316毫米，配备磷酸铁锂电池组和1.5T发动机，综合续航能力通过CLTC标准达到1602公里，号称全球续航最长的七座MPV。其250kW的驱动电机峰值功率及先进能量管理系统保障性能稳定，且适合多用途家庭及长途出行需求。这标志着国产新能源MPV市场的技术推进与竞争加剧。",
+      "english_brief": "XPeng Motors launched the X9 MPV equipped with Kunpeng Super Extended Range technology, now available for pre-order starting at 350,000 yuan. The vehicle measures 5316mm in length, features lithium iron phosphate battery packs, and a 1.5T engine. Its comprehensive range reaches 1602 km under the CLTC standard, making it the longest-range seven-seat MPV worldwide. Powered by a 250kW peak output motor and advanced energy management systems, the X9 is designed for versatile family and long-distance travel. This launch marks a technological advancement in China’s new energy MPV market and intensifies competition.",
+      "term_clarifications": [
+        {
+          "term": "小鹏汽车",
+          "explanation": "中国知名电动车制造商，专注智能电动汽车研发。"
+        },
+        {
+          "term": "超级增程技术",
+          "explanation": "一种通过内燃机发电辅助电池续航的混合动力技术，延长纯电动车的续航里程。"
+        },
+        {
+          "term": "MPV",
+          "explanation": "Multi-Purpose Vehicle，多用途车，通常指多座位的家庭/商务车辆。"
+        },
+        {
+          "term": "磷酸铁锂电池",
+          "explanation": "一种安全性高、寿命长的锂离子电池类型，常用于电动汽车。"
+        },
+        {
+          "term": "CLTC标准",
+          "explanation": "中国轻型汽车试验循环，一种评估新能源车续航的测量标准。"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期新闻涵盖了人工智能应用
+2025-11-07 20:48:46,636 | WARNING | Batch 1 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "人工智能表现不及预期，多家企业重新雇佣裁员员工",       "chinese_brief": "根据职场分析公司Visier的最新报告，由于人工智能尚未达到预期的替代人工效果，一些企业开始重新聘用此前裁员的员工。报告分析了全球142家公司约240万名员工的数据，发现约5.3%的被裁员工后续又被原雇主重新雇用，反映出自动化技术尚未完全实现高管们的成本缩减预期。这一趋势可能促使企业在人力资源管理上调整战略，以平衡技术投入与实际运营需求。",       "english_brief": "According to a recent report by workplace analytics firm Visier, some companies are rehiring previously laid-off staff as AI has yet to fully meet expectations in replacing human labor. The repo...)
+2025-11-07 20:49:16,047 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "AI未达预期效果 企业开始重新聘请被裁员工",
+      "chinese_brief": "最新数据显示，由于人工智能未能完全取代人力，一些企业正重新雇佣此前裁员的员工。Visier分析全球142家公司约240万名员工数据，发现被裁员工中有5.3%被原雇主重新聘用。这反映自动化技术在实际替代人工规模上仍有限，企业正在调整人力资源策略以应对经济不确定性。",
+      "english_brief": "Recent data shows that due to AI not fully replacing human labor, some companies are rehiring employees they previously laid off. Visier analyzed data from 142 companies covering around 2.4 million employees and found that 5.3% of laid-off workers were rehired by their original employers. This reflects limitations in automation's scale of replacing human labor, with companies adjusting HR strategies amid economic uncertainties.",
+      "term_clarifications": [
+        {
+          "term": "Visier",
+          "explanation": "Visier是一家提供人力资源数据分析和洞察的公司，专注于帮助企业理解员工数据和劳动力趋势。Visier is a company providing workforce analytics and data insights to help businesses understand employee data and labor trends."
+        },
+        {
+          "term": "人工智能（AI）",
+          "explanation": "人工智能是指使计算机或机器模拟人类智能行为的技术和系统。Artificial Intelligence (AI) refers to technologies and systems that simulate human intelligence behaviors in computers or machines."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "联想发布moto g100s，配备6.72英寸LCD护眼屏，售价999元起",
+      "chinese_brief": "联想正式推出moto g100s手机，配备6.72英寸LCD防蓝光无频闪护眼屏，支持120Hz刷新率和全局DC调光，提升视觉舒适度。手机内置7000mAh大电池，支持30W快充，搭载第四代骁龙6s处理器，8GB物理内存加16GB虚拟内存，满足多应用运行需求，售价999元起，主打高性价比与护眼体验。",
+      "english_brief": "Lenovo officially launched the moto g100s smartphone with a 6.72-inch LCD eye-care screen featuring blue light filtering and flicker-free technology. It supports a 120Hz refresh rate and global DC dimming to enhance visual comfort. The phone includes a large 7000mAh battery with 30W fast charging, is powered by the fourth-generation Snapdragon 6s processor, and offers 8GB physical RAM plus 16GB virtual RAM, catering to multi-app use. Starting price is 999 yuan, emphasizing cost performance and eye protection.",
+      "term_clarifications": [
+        {
+          "term": "LCD护眼屏",
+          "explanation": "LCD护眼屏指液晶显示屏，通过防蓝光和无频闪技术减少对眼睛的伤害。LCD eye-care screen refers to LCD displays using blue light filtering and flicker-free technologies to reduce eye strain."
+        },
+        {
+          "term": "DC调光",
+          "explanation": "DC调光是一种通过调整电流来控制屏幕亮度的技术，能有效减少屏幕闪烁，保护眼睛。DC dimming is a technology that adjusts screen brightness by controlling current, effectively reducing flicker to protect eyes."
+        },
+        {
+          "term": "骁龙6s处理器",
+          "explanation": "骁龙6s是高通公司的一款中端移动处理器芯片，支持良好的性能和能效。Snapdragon 6s is a mid-range mobile processor chip by Qualcomm, offering balanced performance and power efficiency."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "高盛称对冲基金转为看空小米股票，空头仓位或持续至财报发布",
+      "chinese_brief": "高盛报告显示，近期对冲基金已开始对小米股票持看空态度，空头仓位增加逾53%，并可能维持至下一财报季度。小米股价自今年6月高点已下跌近30%，主要因市场缺乏催化剂推动短期股价上涨。与此同时，中信证券对小米第三季度收入和利润预期乐观，认为其依然是中国领先的科技生态型企业。",
+      "english_brief": "Goldman Sachs reports that hedge funds have recently turned bearish on Xiaomi shares, increasing short positions by over 53%, potentially maintained until the next earnings season. Xiaomi's stock has fallen nearly 30% since its peak in June, mainly due to a lack of catalysts for short-term price gains. Meanwhile, CITIC Securities holds optimistic forecasts for Xiaomi's Q3 revenue and profits, considering it a leading technology ecosystem company in China.",
+      "term_clarifications": [
+        {
+          "term": "高盛",
+          "explanation": "高盛（Goldman Sachs）是一家全球知名的投资银行和金融服务公司。Goldman Sachs is a globally renowned investment bank and financial services company."
+        },
+        {
+          "term": "对冲基金",
+          "explanation": "对冲基金是一种投资基金，采用多种策略以降低风险并追求超额收益。Hedge funds are investment funds using various strategies to mitigate risk and seek excess returns."
+        },
+        {
+          "term": "空头仓位",
+          "explanation": "空头仓位是投资者卖出证券以期未来买入时价格下降，从中获利的投资策略。Short positions refer to selling securities expecting to buy them back later at a lower price for profit."
+        },
+        {
+          "term": "Non-IFRS净利润",
+          "explanation": "Non-IFRS净利润是指调整过某些一次性或非经常性项目后的利润，更能反映公司经营真实表现。Non-IFRS net profit refers to earnings adjusted for one-time or non-recurring items, reflecting the company’s true operating performance."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "小鹏X9超级增程MPV开启预售，CLTC续航达1602公里",
+      "chinese_brief": "小鹏汽车发布X9超级增程版MPV，开启预售，售价35万元起。车型长5316毫米，轴距3160毫米，搭载磷酸铁锂电池和强劲电机，采用CLTC工况续航1602公里，号称全球续航最长大七座MPV。该车主打高续航和空间优势，预计月内上市，助力新能源MPV市场竞争。",
+      "english_brief": "XPeng Motors launched the X9 Super Extended-Range MPV with a starting price of 350,000 yuan. The vehicle measures 5316 mm in length with a 3160 mm wheelbase, equipped with lithium iron phosphate batteries and powerful motors. It offers a CLTC range of 1602 km, touted as the world's longest-range large seven-seat MPV. The model emphasizes long range and spaciousness and is expected to be listed within the month, boosting competitiveness in the new energy MPV market.",
+      "term_clarifications": [
+        {
+          "term": "小鹏汽车",
+          "explanation": "小鹏汽车是中国知名的新能源汽车制造商，专注智能电动车研发。XPeng Motors is a well-known Chinese new energy vehicle manufacturer focusing on smart electric cars."
+        },
+        {
+          "term": "MPV",
+          "explanation": "MPV指多用途乘用车，通常具有大空间和多座位配置。MPV stands for Multi-Purpose Vehicle, typically featuring large space and multiple seating."
+        },
+        {
+          "term": "超级增程",
+          "explanation": "超级增程是一种混合动力技术，通过内燃机辅助驱动电池续航，延长行驶里程。Super extended range is a hybrid technology using an internal combustion engine to assist battery range extension."
+        },
+        {
+          "term": "CLTC续航",
+          "explanation": "CLTC（中国轻型车测试周期）是一种中国制定的新能源汽车续航测试标准。CLTC range refers to China Light-Duty Vehicle Test Cycle, a Chinese standard for testing electric vehicle range."
+        },
+        {
+          "term": "磷酸铁锂电池",
+          "explanation": "磷酸铁锂电池是一种安全性高、寿命长、成本较低的锂离子电池类型。Lithium iron phosphate battery is a lithium-ion battery type known for safety, long cycle life, and lower cost."
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期简报涵盖人工智能劳动力替代趋势、智能手机新品发布、股票市场动态及新能源车技术进展，帮助读者了解当前科技和经济领域的
+2025-11-07 20:49:16,048 | WARNING | Batch 1 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "AI未达预期效果 企业开始重新聘请被裁员工",       "chinese_brief": "最新数据显示，由于人工智能未能完全取代人力，一些企业正重新雇佣此前裁员的员工。Visier分析全球142家公司约240万名员工数据，发现被裁员工中有5.3%被原雇主重新聘用。这反映自动化技术在实际替代人工规模上仍有限，企业正在调整人力资源策略以应对经济不确定性。",       "english_brief": "Recent data shows that due to AI not fully replacing human labor, some companies are rehiring employees they previously laid off. Visier analyzed data from 142 companies covering around 2.4 million employees and found that 5.3% of laid...)
+2025-11-07 20:49:41,318 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-07 20:50:01,286 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "AMD警告英特尔与英伟达合作或加剧市场竞争并带来定价压力",
+      "chinese_brief": "英特尔与英伟达宣布合作，共同开发基于x86架构的定制芯片，覆盖数据中心和PC市场。此举增强了两大芯片巨头的竞争力，也可能迫使市场定价更为激烈。AMD对此表示担忧，认为合作将增加自身市场竞争压力。英特尔则强调其GPU路线图独立，合作不会影响其长期战略。",
+      "english_brief": "Intel and Nvidia have announced a partnership to co-develop customized x86-based chips targeting data centers and PCs. This move strengthens the competitive position of both chip giants and could intensify pricing pressure in the market. AMD has expressed concern, viewing the collaboration as a boost to market competition that may pressure its own market share. Intel clarified that its GPU roadmap remains independent and unaffected by this partnership.",
+      "term_clarifications": [
+        {
+          "term": "x86",
+          "explanation": "A widely-used family of instruction set architectures for computer processors, predominantly by Intel and AMD. It defines the architecture and functionality of CPUs.",
+          "explanation_zh": "一种广泛使用的计算机处理器指令集架构，主要由英特尔和AMD使用，定义了CPU的架构和功能。"
+        },
+        {
+          "term": "IP (Intellectual Property)",
+          "explanation": "In technology, IP refers to proprietary technology or designs owned by a company, such as chip architectures or GPU designs.",
+          "explanation_zh": "在技术领域，知识产权指公司拥有的专有技术或设计，如芯片架构或GPU设计。"
+        },
+        {
+          "term": "GPU (Graphics Processing Unit)",
+          "explanation": "A processor specialized in rendering graphics and performing parallel computations, widely used in gaming, AI, and data centers.",
+          "explanation_zh": "一种专门用于图形渲染和并行计算的处理器，广泛应用于游戏、人工智能和数据中心。"
+        },
+        {
+          "term": "SoC (System on a Chip)",
+          "explanation": "An integrated circuit that combines all components of a computer or other electronic system into a single chip.",
+          "explanation_zh": "将计算机或其他电子系统的所有组件集成到单一芯片上的集成电路。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "华为发布首款获得星闪音频认证的FreeBuds Pro 5悦彰耳机",
+      "chinese_brief": "华为在技术沟通会上正式推出FreeBuds Pro 5悦彰耳机，这是全球首款获得星闪音频认证的TWS（真无线立体声）耳机。产品搭载了麒麟A3芯片和星闪音频技术，实现更稳定的连接和更快数据传输，支持母带级无损音质，为用户带来高品质聆听体验。华为强调该技术的创新意义，目标持续提升音频产品竞争力。",
+      "english_brief": "Huawei has officially launched the FreeBuds Pro 5, the world’s first TWS (True Wireless Stereo) earbuds certified by StarFlash Audio technology, during a technical communication event. Equipped with the Kirin A3 chip and StarFlash Audio technology, the earbuds provide more stable connectivity and faster data transmission, supporting master-level lossless audio quality for a premium listening experience. Huawei highlights the innovation of this technology to strengthen its audio product competitiveness.",
+      "term_clarifications": [
+        {
+          "term": "TWS (True Wireless Stereo)",
+          "explanation": "Wireless earbuds that operate independently without wires connecting the left and right earpieces, providing stereo sound.",
+          "explanation_zh": "独立运作、左右耳机之间无连接线的无线耳机，提供立体声效果。"
+        },
+        {
+          "term": "星闪音频 (StarFlash Audio)",
+          "explanation": "A proprietary audio technology aimed at improving wireless connectivity stability and data transmission speeds in audio devices.",
+          "explanation_zh": "一种提升音频设备无线连接稳定性和数据传输速度的专有音频技术。"
+        },
+        {
+          "term": "麒麟A3芯片 (Kirin A3 chip)",
+          "explanation": "Huawei’s in-house developed chip designed to enhance audio processing and wireless performance in earbuds.",
+          "explanation_zh": "华为自主研发的芯片，旨在提升耳机的音频处理和无线性能。"
+        },
+        {
+          "term": "母带级无损音质 (master-level lossless audio)",
+          "explanation": "Audio quality that preserves the original recording without compression losses, offering the highest fidelity sound.",
+          "explanation_zh": "保持原始录音无压缩损失的音质，提供最高保真度的声音。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "网易海外工作室Bad Brain宣布关闭，因资金撤回难寻新发行商",
+      "chinese_brief": "由前育碧及《看门狗：军团》团队成员创立的网易海外工作室Bad Brain Game Studios宣布关闭，主要因无法获得新发行商支持以继续运营。工作室于2023年成立，最近公布了在研项目《Midnight Riders》短视频，并呼吁投资者和发行商合作挽救项目。此次关闭反映了海外游戏开发环境和资本压力的严峻挑战。",
+      "english_brief": "Bad Brain Game Studios, a NetEase overseas studio founded by former Ubisoft and Watch Dogs: Legion team members, has announced its imminent closure due to withdrawal of funding and failure to secure a new publisher. Established in 2023, the studio recently released a teaser for their in-development title 'Midnight Riders' and called for investors and publishers to help save the project. This closure highlights the challenging environment and financial pressures for overseas game developers.",
+      "term_clarifications": [
+        {
+          "term": "网易 (NetEase)",
+          "explanation": "A major Chinese technology company known for its online services and game development.",
+          "explanation_zh": "一家中国大型科技公司，知名于其在线服务和游戏开发。"
+        },
+        {
+          "term": "育碧 (Ubisoft)",
+          "explanation": "A leading international video game publisher and developer, known for franchises like Assassin’s Creed and Watch Dogs.",
+          "explanation_zh": "一家国际知名的电子游戏发行和开发公司，代表作包括《刺客信条》和《看门狗》。"
+        },
+        {
+          "term": "看门狗：军团 (Watch Dogs: Legion)",
+          "explanation": "An open-world action-adventure video game developed by Ubisoft, notable for its innovative gameplay allowing player control of multiple characters.",
+          "explanation_zh": "育碧开发的开放世界动作冒险游戏，以玩家可控制多角色的创新玩法著称。"
+        },
+        {
+          "term": "发行商 (Publisher)",
+          "explanation": "A company that finances, markets, and distributes video games to the public.",
+          "explanation_zh": "为游戏提供资金、营销和发行的公司。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "GE医疗与阿里巴巴达摩院签署合作协议，推动AI医疗技术落地",
+      "chinese_brief": "在第八届中国国际进口博览会上，GE医疗与阿里巴巴达摩院签署合作意向书，计划将达摩院创新的“一扫多查”医疗AI技术融入GE的先进影像设备，实现软硬件一体化的智能精准诊疗方案。该合作不仅促进AI技术在医学领域的应用，也有助于加速医疗服务智能化升级，改善患者诊疗效率和效果。",
+      "english_brief": "At the 8th China International Import Expo, GE Healthcare and Alibaba’s Damo Academy signed a cooperation framework agreement to integrate Damo’s innovative 'one-scan multi-check' AI medical technology into GE’s advanced imaging devices. This will create an integrated hardware-software smart precision diagnosis and treatment solution. The collaboration promotes AI application in healthcare and accelerates the intelligent upgrading of medical services to improve patient care efficiency and outcomes.",
+      "term_clarifications": [
+        {
+          "term": "GE医疗 (GE Healthcare)",
+          "explanation": "A global medical technology and life sciences company providing diagnostic imaging and healthcare IT solutions.",
+          "explanation_zh": "一家全球医疗技术和生命科学公司，提供诊断影像和医疗信息技术解决方案。"
+        },
+        {
+          "term": "阿里巴巴达摩院 (Alibaba Damo Academy)",
+          "explanation": "Alibaba Group’s research institute focused on cutting-edge technologies including AI, machine learning, and quantum computing.",
+          "explanation_zh": "阿里巴巴集团旗下
+2025-11-07 20:50:01,287 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "AMD警告英特尔与英伟达合作或加剧市场竞争并带来定价压力",       "chinese_brief": "英特尔与英伟达宣布合作，共同开发基于x86架构的定制芯片，覆盖数据中心和PC市场。此举增强了两大芯片巨头的竞争力，也可能迫使市场定价更为激烈。AMD对此表示担忧，认为合作将增加自身市场竞争压力。英特尔则强调其GPU路线图独立，合作不会影响其长期战略。",       "english_brief": "Intel and Nvidia have announced a partnership to co-develop customized x86-based chips targeting data centers and PCs. This move strengthens the competitive position of both chip giants and could intensify pricing pressure in the mark...)
+2025-11-07 20:50:31,243 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-07 20:51:01,907 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "牛津大学研究揭示AI基准测试普遍夸大性能",
+      "chinese_brief": "牛津大学互联网研究所联合30多位学者对445项主流AI基准测试进行了系统评估，发现这些测试普遍存在夸大AI模型实际能力的问题，并缺乏科学严谨性。这意味着当前许多AI性能报告可能过于乐观，提醒开发者和行业需建立更准确、科学的评估标准，以保证AI技术进步的可靠性与透明度。",
+      "english_brief": "The Oxford Internet Institute, together with over 30 researchers, conducted a comprehensive review of 445 mainstream AI benchmarks and found that these tests tend to overstate the actual capabilities of AI models and lack scientific rigor. This suggests that many current AI performance claims might be overly optimistic, highlighting the need for developers and the industry to establish more accurate and scientifically sound evaluation standards to ensure the reliability and transparency of AI advancements.",
+      "term_clarifications": [
+        {
+          "term": "Oxford Internet Institute",
+          "explanation": "牛津大学互联网研究所，专注于数字时代社会科学研究的学术机构。Oxford Internet Institute is an interdisciplinary center at the University of Oxford focused on research about the societal implications of the internet and digital technologies."
+        },
+        {
+          "term": "AI benchmarks",
+          "explanation": "用于测量和评估人工智能模型在不同任务上的表现的标准测试。Benchmarks are standardized tests used to evaluate the performance of AI models on various tasks."
+        },
+        {
+          "term": "construct validity",
+          "explanation": "构念效度，指测量工具是否真正衡量了其所声称测量的理论概念。本研究指出部分测试缺乏构念效度。Construct validity refers to how well a test measures the concept it intends to measure."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "Datavault AI与Scilex达成1,000万美元基因组数据代币化许可协议",
+      "chinese_brief": "Datavault AI Inc.宣布与生物技术公司Scilex Holding Company达成全球独家许可协议，授权后者使用其专有的AI驱动区块链技术，对基因组、DNA数据以及相关诊断、治疗和药物信息领域的现实世界资产（RWA）进行代币化和变现。此合作有望推动生物医药数据的安全共享与市场流通，促进行业数字化创新。",
+      "english_brief": "Datavault AI Inc. announced it has reached a global exclusive licensing agreement with biotechnology firm Scilex Holding Company, granting Scilex rights to use its proprietary AI-powered blockchain technology to tokenize and monetize real-world assets (RWA) related to genomics, DNA data, diagnostics, treatment, and drug information. This partnership is expected to advance the secure sharing and market circulation of biomedical data, fostering digital innovation in the biotech sector.",
+      "term_clarifications": [
+        {
+          "term": "Datavault AI Inc.",
+          "explanation": "一家专注于AI驱动区块链解决方案的数据变现与资产代币化企业。Datavault AI Inc. is a company specializing in AI-driven blockchain solutions for data monetization and asset tokenization."
+        },
+        {
+          "term": "Scilex Holding Company",
+          "explanation": "一家专注于生物技术和生物制药领域的企业，在纳斯达克交易所上市。Scilex Holding Company is a publicly traded biotechnology and biopharmaceutical company listed on Nasdaq."
+        },
+        {
+          "term": "Real-World Assets (RWA)",
+          "explanation": "现实世界资产，指通过区块链技术代表和交易的实际存在的资产，如基因组数据等。Real-World Assets are tangible assets that are tokenized and traded on blockchain platforms."
+        },
+        {
+          "term": "Tokenization",
+          "explanation": "将现实资产转换成区块链上的数字代币的过程。Tokenization is the process of converting real assets into digital tokens on a blockchain."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "优派发布27寸QHD Fast IPS显示器，刷新率最高达340Hz",
+      "chinese_brief": "优派（ViewSonic）发布VX2766-2K-PRO-8新款显示器，采用27英寸Fast IPS面板，分辨率为2560×1440（QHD），原生刷新率320Hz，超频后可达340Hz，响应时间1ms，支持HDR10，兼容AMD FreeSync和NVIDIA G-SYNC技术，色域覆盖100% sRGB和98% DCI-P3。该显示器适合电竞和专业视觉需求，提升用户的流畅体验与色彩表现。",
+      "english_brief": "ViewSonic launched the VX2766-2K-PRO-8, a new 27-inch Fast IPS monitor featuring a 2560×1440 (QHD) resolution, a native refresh rate of 320Hz that can be overclocked up to 340Hz, and a 1ms response time. It supports HDR10 and is compatible with AMD FreeSync and NVIDIA G-SYNC technologies. The monitor covers 100% sRGB and 98% DCI-P3 color gamuts, making it well-suited for esports and professional visual applications, delivering smooth performance and vibrant colors.",
+      "term_clarifications": [
+        {
+          "term": "Fast IPS",
+          "explanation": "一种高速响应的IPS液晶面板技术，兼具广视角和快速响应。Fast IPS is a type of IPS LCD panel technology that offers wide viewing angles and fast response times."
+        },
+        {
+          "term": "QHD",
+          "explanation": "1440p高清分辨率，具体为2560×1440像素。QHD stands for Quad High Definition, with a resolution of 2560×1440 pixels."
+        },
+        {
+          "term": "HDR10",
+          "explanation": "一种高动态范围视频标准，提升图像亮度和色彩表现。HDR10 is a high dynamic range video standard that enhances brightness and color."
+        },
+        {
+          "term": "AMD FreeSync",
+          "explanation": "AMD的自适应同步技术，减少画面撕裂和卡顿。AMD FreeSync is AMD's adaptive synchronization technology to reduce screen tearing and stuttering."
+        },
+        {
+          "term": "NVIDIA G-SYNC",
+          "explanation": "NVIDIA的自适应显示技术，与FreeSync类似，改善游戏画面流畅度。NVIDIA G-SYNC is NVIDIA's adaptive sync technology similar to FreeSync for smoother gaming visuals."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "三星Exynos 2600芯片采用HPB冷却技术，散热提升30%",
+      "chinese_brief": "三星电子高级副总裁Kim Dae-Woo在ISMP 2025大会上透露，最新Exynos 2600芯片引入HPB（Heat Path Block）冷却技术，实现了约30%的散热性能提升。该芯片采用先进2纳米工艺，集成多核CPU和基于AMD RDNA 4架构的Xclipse-960 GPU，整体体现了三星在系统与技术协同优化（STCO）上的突破，推动手机等终端设备性能与效率的提升。",
+      "english_brief": "Samsung Electronics Senior Vice President Kim Dae-Woo revealed at ISMP 2025 that the latest Exynos 2600 chip incorporates HPB (Heat Path Block) cooling technology, achieving approximately a 30% improvement in thermal performance. Built on an advanced 2nm process, the chip integrates a multi-core CPU and an Xclipse-960 GPU based on AMD RDNA 4 architecture. This reflects Samsung’s breakthroughs in System and Technology Co-Optimization (STCO), enhancing performance and efficiency in smartphones and other devices.",
+      "term_clarifications": [
+        {
+          "term": "Exynos 2600",
+          "explanation": "三星旗下的高端移动处理器芯片，采用先进制程工艺。Exynos 2600 is a high-end mobile processor chip developed by Samsung using advanced manufacturing processes."
+        },
+        {
+          "term": "HPB (Heat Path Block)",
+          "explanation": "一种用于芯片的散热技术，通过优化热路径提高散热效率。HPB (Heat Path Block) is a chip cooling technology that enhances thermal efficiency by optimizing heat paths."
+        },
+        {
+          "term": "STCO (System and Technology Co-Optimization)",
+          "explanation": "三星提出的系统与技术协同优化理念，旨在全面提升芯片和设备性能。STCO is Samsung’s concept of optimizing system and technology simultaneously to improve chip and device performance."
+        },
+        {
+          "term": "AMD RDNA 4",
+          "explanation": "AMD最新一代图形架构，用于GPU提升图形和计算
+2025-11-07 20:51:01,908 | WARNING | Batch 3 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "牛津大学研究揭示AI基准测试普遍夸大性能",       "chinese_brief": "牛津大学互联网研究所联合30多位学者对445项主流AI基准测试进行了系统评估，发现这些测试普遍存在夸大AI模型实际能力的问题，并缺乏科学严谨性。这意味着当前许多AI性能报告可能过于乐观，提醒开发者和行业需建立更准确、科学的评估标准，以保证AI技术进步的可靠性与透明度。",       "english_brief": "The Oxford Internet Institute, together with over 30 researchers, conducted a comprehensive review of 445 mainstream AI benchmarks and found that these tests tend to overstate the actual capabilities of AI models and lack scientific ...)
+2025-11-07 20:51:32,113 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "牛津大学研究：主流AI基准测试普遍夸大模型性能",
+      "chinese_brief": "牛津大学互联网研究所领导的一项研究发现，当前用于评估人工智能系统的445项主流基准测试存在普遍夸大AI模型性能的问题，且缺乏科学严谨性。这意味着AI技术进步的某些声明可能基于不全面或误导性的测试，呼吁业界采用更严谨的方法以确保评估结果的真实可靠。",
+      "english_brief": "A study led by the Oxford Internet Institute found that 445 mainstream AI benchmarks currently used to evaluate AI systems generally overstate model performance and lack scientific rigor. This suggests that some claims of AI advancements may be based on incomplete or misleading tests, urging the industry to adopt more rigorous methods to ensure evaluation results are authentic and reliable.",
+      "term_clarifications": [
+        {
+          "term": "基准测试 (Benchmark)",
+          "explanation": "用于评估AI模型在特定任务或领域表现的标准化测试和数据集。",
+          "explanation_en": "Standardized tests and datasets used to evaluate AI models' performance on specific tasks or domains."
+        },
+        {
+          "term": "牛津大学互联网研究所 (Oxford Internet Institute)",
+          "explanation": "牛津大学的一个跨学科研究机构，专注互联网与社会的关系研究。",
+          "explanation_en": "An interdisciplinary research center at the University of Oxford focusing on the societal impact of the internet."
+        },
+        {
+          "term": "模型性能",
+          "explanation": "指AI模型在完成任务时的准确率、效率等表现指标。",
+          "explanation_en": "Measures such as accuracy and efficiency that indicate an AI model's effectiveness at completing tasks."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "Datavault AI 与 Scilex达成1,000万美元全球独家许可协议，聚焦基因组及生物信息资产代币化",
+      "chinese_brief": "Datavault AI宣布与Scilex Holding Company达成一项价值1,000万美元的全球独家许可协议，授权其专有的AI驱动区块链技术用于基因组、DNA数据、诊断、治疗及药物信息领域的资产代币化和变现。此合作将推动生物科技资产数字化，促进数据安全交易和创新医疗应用的实现。",
+      "english_brief": "Datavault AI announced a $10 million global exclusive licensing agreement with Scilex Holding Company, granting rights to its proprietary AI-driven blockchain technology for tokenizing and monetizing assets in genomics, DNA data, diagnostics, treatment, and pharmaceutical information. This collaboration aims to advance the digitalization of biotech assets, enabling secure data transactions and innovative medical applications.",
+      "term_clarifications": [
+        {
+          "term": "资产代币化 (Asset Tokenization)",
+          "explanation": "利用区块链技术将现实世界资产转换为数字代币以便交易和管理。",
+          "explanation_en": "Using blockchain technology to convert real-world assets into digital tokens for trade and management."
+        },
+        {
+          "term": "现实世界资产 (Real World Assets, RWA)",
+          "explanation": "指非数字化的传统资产，如生物数据、房地产等，通过技术实现数字化表达。",
+          "explanation_en": "Traditional, non-digital assets such as biological data or real estate, represented digitally via technology."
+        },
+        {
+          "term": "Datavault AI Inc.",
+          "explanation": "专注于AI驱动的区块链解决方案、数据变现与安全数字市场的公司，纳斯达克股票代码DVLT。",
+          "explanation_en": "A company specializing in AI-driven blockchain solutions, data monetization, and secure digital markets, listed on Nasdaq as DVLT."
+        },
+        {
+          "term": "Scilex Holding Company",
+          "explanation": "美国生物医药公司，专注药物开发与医疗技术，纳斯达克股票代码SCLX。",
+          "explanation_en": "A U.S.-based biopharmaceutical company focusing on drug development and medical technologies, listed on Nasdaq as SCLX."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "优派发布VX2766-2K-PRO-8 27寸QHD 340Hz高速IPS显示器",
+      "chinese_brief": "ViewSonic优派推出了27英寸Fast IPS显示器VX2766-2K-PRO-8，该机型具备2560×1440 QHD分辨率、320Hz刷新率可超频至340Hz，响应时间为1ms，支持HDR10及AMD FreeSync和NVIDIA G-SYNC技术，色域覆盖100% sRGB与98% DCI-P3，适合高阶电竞和专业应用。",
+      "english_brief": "ViewSonic has launched the VX2766-2K-PRO-8, a 27-inch Fast IPS monitor featuring a 2560×1440 QHD resolution with a 320Hz native refresh rate, overclockable to 340Hz. It offers a 1ms response time, supports HDR10, AMD FreeSync, and NVIDIA G-SYNC, with 100% sRGB and 98% DCI-P3 color coverage, tailored for high-end esports and professional use.",
+      "term_clarifications": [
+        {
+          "term": "Fast IPS",
+          "explanation": "一种提高响应速度和刷新率的IPS面板技术，适合电竞显示器。",
+          "explanation_en": "A type of IPS panel technology that enhances response time and refresh rates, ideal for gaming monitors."
+        },
+        {
+          "term": "QHD",
+          "explanation": "指2560×1440分辨率，显示细节优于1080p高清。",
+          "explanation_en": "Refers to 2560×1440 resolution, which provides more detail than 1080p HD."
+        },
+        {
+          "term": "HDR10",
+          "explanation": "一种高动态范围视频标准，提升画面亮度和色彩表现。",
+          "explanation_en": "A high dynamic range video standard that enhances brightness and color performance."
+        },
+        {
+          "term": "AMD FreeSync 和 NVIDIA G-SYNC",
+          "explanation": "消除画面撕裂和卡顿的同步技术，分别由AMD和NVIDIA开发。",
+          "explanation_en": "Synchronization technologies developed by AMD and NVIDIA to eliminate screen tearing and stuttering."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "三星Exynos 2600芯片采用HPB散热技术，提升30%散热性能",
+      "chinese_brief": "三星高级副总裁Kim Dae-Woo在ISMP 2025会议透露，最新Exynos 2600芯片引入HPB（Heat Path Block）冷却技术，通过系统与技术协同优化（STCO）显著提升散热效率达30%。该芯片采用先进2nm工艺和GAA架构，集成AMD RDNA 4 GPU，标志着三星在芯片性能与热管理上的重大进步，为高性能移动设备带来更优体验。",
+      "english_brief": "Samsung's senior VP Kim Dae-Woo revealed at ISMP 2025 that the new Exynos 2600 chip features HPB (Heat Path Block) cooling technology, improving thermal efficiency by 30% through System and Technology Co-Optimization (STCO). Built on advanced 2nm process and GAA architecture with integrated AMD RDNA 4 GPU, this represents a significant step in Samsung's chip performance and thermal management, enhancing high-performance mobile device experiences.",
+      "term_clarifications": [
+        {
+          "term": "HPB (Heat Path Block)",
+          "explanation": "一种芯片散热技术，优化热量传导路径以提升散热效率。",
+          "explanation_en": "A chip cooling technology that optimizes heat conduction paths to improve thermal efficiency."
+        },
+        {
+          "term": "STCO (系统与技术协同优化)",
+          "explanation": "指通过系统设计与技术手段一起优化芯片性能和能耗管理。",
+          "explanation_en": "Refers to optimizing chip performance and power consumption jointly through system design and technical methods."
+        },
+        {
+          "term": "Exynos 2600",
+          "explanation": "三星最新旗舰级移动处理器，采用先进工艺和架构设计。",
+          "explanation_en": "Samsung's latest flagship mobile processor featuring advanced process and architectural design."
+        },
+        {
+          "term": "2nm GAA",
+          "explanation": "先进的芯片制造工艺，GAA即“环绕栅极”架构，提高晶体管性能与能效。",
+          "explanation_en": "Advanced chip fabrication technology with Gate-All-Around (GAA) architecture, enhancing transistor performance and energy efficiency."
+        },
+        {
+2025-11-07 20:51:32,114 | WARNING | Batch 3 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "牛津大学研究：主流AI基准测试普遍夸大模型性能",       "chinese_brief": "牛津大学互联网研究所领导的一项研究发现，当前用于评估人工智能系统的445项主流基准测试存在普遍夸大AI模型性能的问题，且缺乏科学严谨性。这意味着AI技术进步的某些声明可能基于不全面或误导性的测试，呼吁业界采用更严谨的方法以确保评估结果的真实可靠。",       "english_brief": "A study led by the Oxford Internet Institute found that 445 mainstream AI benchmarks currently used to evaluate AI systems generally overstate model performance and lack scientific rigor. This suggests that some claims of AI advancements may...)
+2025-11-07 20:52:04,777 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "牛津大学研究揭示AI基准测试普遍夸大模型性能",
+      "chinese_brief": "牛津大学互联网研究所领导的一项联合研究分析了445项主流人工智能基准测试，发现当前普遍存在夸大AI模型性能的问题，且这些基准测试缺乏科学严谨性。这一发现提醒AI开发者和研究机构需要更加审慎地设计和解读测试结果，以避免对AI技术能力的过度乐观判断，影响技术进步的真实评估。",
+      "english_brief": "A joint study led by the Oxford Internet Institute analyzed 445 mainstream AI benchmarks and found that current tests generally overstate AI model performance and lack scientific rigor. This finding warns AI developers and researchers to design and interpret benchmarks more cautiously to avoid over-optimistic assessments of AI capabilities, ensuring a more accurate evaluation of technological progress.",
+      "term_clarifications": [
+        {
+          "term": "基准测试 (benchmarks)",
+          "explanation": "用于评估AI模型在特定任务或领域表现的一系列标准化测试，用于衡量技术进步和性能差异。Benchmarks are standardized tests used to evaluate AI models' performance on specific tasks or domains, serving to gauge technological progress and performance differences."
+        },
+        {
+          "term": "牛津大学互联网研究所 (Oxford Internet Institute)",
+          "explanation": "牛津大学下属专注于互联网和数字技术社会影响研究的跨学科研究所。The Oxford Internet Institute is an interdisciplinary research center at Oxford University focused on the societal impact of the internet and digital technologies."
+        },
+        {
+          "term": "构建效度 (construct validity)",
+          "explanation": "衡量测试是否真正测量其旨在测量的概念或能力的科学标准。Construct validity refers to the scientific standard assessing whether a test truly measures the concept or ability it intends to measure."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "Datavault AI与Scilex达成1,000万美元全球独家许可协议推动基因组数据变现",
+      "chinese_brief": "人工智能区块链公司Datavault AI近日宣布与生物科技企业Scilex Holding Company签署价值1,000万美元的全球独家许可协议，涵盖基因组、DNA数据、诊断、治疗、遗传及药物信息领域的现实世界资产（RWA）代币化和变现技术。此举将推动生物医药领域的数据资产数字化与商业化创新，为相关行业提供更加安全、高效的数据管理解决方案。",
+      "english_brief": "AI-blockchain company Datavault AI recently announced a $10 million global exclusive licensing agreement with biotech firm Scilex Holding Company. The agreement covers tokenization and monetization technologies for real-world assets (RWA) related to genomics, DNA data, diagnostics, treatment, genetics, and drug information. This move will advance digitalization and commercialization of data assets in the biopharmaceutical sector, providing more secure and efficient data management solutions.",
+      "term_clarifications": [
+        {
+          "term": "现实世界资产 (RWA, Real-World Assets)",
+          "explanation": "指现实存在、可被数字方式代表和交易的资产，如房地产、知识产权、数据等。Real-World Assets are tangible assets that exist in reality and can be digitally represented and traded, such as real estate, intellectual property, and data."
+        },
+        {
+          "term": "代币化 (Tokenization)",
+          "explanation": "将资产的所有权或使用权转换为区块链上的数字代币，便于交易和管理。Tokenization is the process of converting ownership or usage rights of an asset into digital tokens on a blockchain, facilitating trading and management."
+        },
+        {
+          "term": "Datavault AI",
+          "explanation": "一家专注于AI驱动区块链技术的数据变现和资产管理的公司，股票代码为NASDAQ: DVLT。Datavault AI is a company specializing in AI-driven blockchain technology for data monetization and asset management, listed on NASDAQ under ticker DVLT."
+        },
+        {
+          "term": "Scilex Holding Company",
+          "explanation": "一家生物技术和制药公司，专注于诊断和治疗领域，股票代码为NASDAQ: SCLX。Scilex Holding Company is a biotech and pharmaceutical company focused on diagnostics and treatments, listed on NASDAQ under ticker SCLX."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "优派发布VX2766-2K-PRO-8 27寸QHD高刷Fast IPS显示器",
+      "chinese_brief": "优派（ViewSonic）最新推出27英寸Fast IPS显示器VX2766-2K-PRO-8，拥有2560×1440分辨率和320Hz原生刷新率，支持超频至340Hz。显示器具备1300:1对比度、1ms响应时间、HDR10支持，兼容AMD FreeSync和NVIDIA G-SYNC技术，同时覆盖100% sRGB和98% DCI-P3色域，适合高端游戏和专业图形应用。",
+      "english_brief": "ViewSonic has launched the VX2766-2K-PRO-8, a 27-inch Fast IPS monitor with 2560×1440 resolution and a native refresh rate of 320Hz, overclockable to 340Hz. The monitor features a 1300:1 contrast ratio, 1ms response time, HDR10 support, compatibility with AMD FreeSync and NVIDIA G-SYNC, and covers 100% sRGB and 98% DCI-P3 color gamuts, making it well-suited for high-end gaming and professional graphics work.",
+      "term_clarifications": [
+        {
+          "term": "Fast IPS",
+          "explanation": "一种快速响应的IPS面板技术，结合了优质色彩和低响应时间。Fast IPS is a panel technology offering fast response times while maintaining the color quality of IPS panels."
+        },
+        {
+          "term": "刷新率 (Refresh Rate)",
+          "explanation": "显示器每秒更新图像的次数，单位为赫兹(Hz)，数值越高画面越流畅。Refresh rate is the number of times a monitor updates the image per second, measured in Hertz (Hz); higher rates mean smoother visuals."
+        },
+        {
+          "term": "HDR10",
+          "explanation": "一种高动态范围视频标准，提升画面亮度和色彩表现。HDR10 is a high dynamic range video standard enhancing brightness and color performance."
+        },
+        {
+          "term": "AMD FreeSync和NVIDIA G-SYNC",
+          "explanation": "两种主流显示技术，用于消除画面撕裂并改善游戏体验。AMD FreeSync and NVIDIA G-SYNC are mainstream display technologies that eliminate screen tearing and improve gaming experience."
+        },
+        {
+          "term": "色域 (Color Gamut)",
+          "explanation": "显示器能表现的颜色范围，数值越大色彩越丰富。Color gamut refers to the range of colors a monitor can display; the larger the gamut, the richer the colors."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "三星Exynos 2600芯片采用HPB冷却技术，散热性能提升30%",
+      "chinese_brief": "三星电子高级副总裁Kim Dae-Woo在ISMP 2025大会上透露，三星最新Exynos 2600芯片搭载HPB（Heat Path Block）冷却技术，提升散热效率约30%。该技术通过优化芯片封装和热路径管理，实现更低功耗和更佳热控制，从而增强整体系统性能。此举表明三星在系统与技术协同优化（STCO）上持续发力，推动手机及终端设备性能提升。",
+      "english_brief": "Samsung Electronics Senior Vice President Kim Dae-Woo revealed at ISMP 2025 that the new Exynos 2600 chip employs HPB (Heat Path Block) cooling technology, boosting thermal efficiency by about 30%. This technology optimizes chip packaging and thermal path management to reduce power consumption and improve heat control, enhancing overall system performance. It indicates Samsung's continued focus on System and Technology Co-Optimization (STCO) to advance performance in mobile and terminal devices.",
+      "term_clarifications": [
+        {
+          "term": "HPB (Heat Path Block)",
+          "explanation": "一种芯片冷却技术，通过优化热传导路径提升散热效率。HPB (Heat Path Block) is a chip cooling technology that enhances heat dissipation efficiency by optimizing thermal conduction paths."
+        },
+        {
+          "term": "Exynos 2600",
+          "explanation": "三星最新发布的移动芯片，采用先进制程和封装技术，集成多核CPU和GPU。Exynos 2600 is Samsung’s newest mobile chip featuring advanced fabrication and packaging technologies, integrating multi-core CPU and GPU."
+2025-11-07 20:52:04,778 | WARNING | Batch 3 attempt 3 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "牛津大学研究揭示AI基准测试普遍夸大模型性能",       "chinese_brief": "牛津大学互联网研究所领导的一项联合研究分析了445项主流人工智能基准测试，发现当前普遍存在夸大AI模型性能的问题，且这些基准测试缺乏科学严谨性。这一发现提醒AI开发者和研究机构需要更加审慎地设计和解读测试结果，以避免对AI技术能力的过度乐观判断，影响技术进步的真实评估。",       "english_brief": "A joint study led by the Oxford Internet Institute analyzed 445 mainstream AI benchmarks and found that current tests generally overstate AI model performance and lack scientific rigor. This finding warns AI developers and researc...)
+2025-11-07 20:52:04,778 | WARNING | Splitting batch 3 (size=4) after repeated JSON failures.
+2025-11-07 20:52:38,696 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-07 20:53:08,374 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-07 20:53:38,589 | INFO | Completed batch 5/5 (briefings=20).
+2025-11-07 20:53:38,590 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=42606)
+2025-11-07 20:53:38,592 | INFO | Saved digest to digests/科学-or-技术-briefing-2025-11-07_2048.md
+2025-11-07 20:53:40,553 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-07 20:53:40,613 | INFO | Summarizing 20 articles across 5 batches.
+2025-11-07 20:54:00,700 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-07 20:54:21,796 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-07 20:54:44,777 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-07 20:55:11,972 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-07 20:55:37,084 | INFO | Completed batch 5/5 (briefings=20).
+2025-11-07 20:55:37,085 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=13411)
+2025-11-07 20:55:37,086 | INFO | Saved digest to digests/science-or-technology-briefing-2025-11-07_2048.md
+2025-11-07 20:55:38,734 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-07 20:55:38,797 | INFO | Summarizing 1 articles across 1 batches.
+2025-11-07 20:55:49,964 | INFO | Completed batch 1/1 (briefings=1).
+2025-11-07 20:55:49,964 | INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=1109)
+2025-11-07 20:55:49,966 | INFO | Saved digest to digests/中国经济-or-中国政治-briefing-2025-11-07_2048.md
+2025-11-07 20:55:51,496 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-07 20:55:51,498 | INFO | No new articles for topic query 3: {'endpoint': 'everything', 'q': '("China Economy") OR ("China Politics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt'}
+2025-11-07 20:55:51,554 | INFO | Summarizing 17 articles across 5 batches.
+2025-11-07 20:56:25,329 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "台股受美股反彈及AI股熱潮激勵，外資小幅賣超51億但三大法人合計買超推升大盤",
+      "chinese_brief": "受美國最高法院川普關稅案辯論激勵，美股主要指數反彈，尤其由AMD帶領的AI相關族群大幅上漲，促使資金回流台股。儘管外資仍有小幅賣超約51.6億元新台幣，但三大法人合計轉為買超15.8億元，推升台股加權指數終場上漲182點至27,899點，成交量達4,991億元，顯示市場動能有所回溫。記憶體類股中有兩檔股票甚至買盤強勁直攻漲停，顯示AI熱潮繼續帶動半導體產業買氣。",
+      "english_brief": "Following debates over Trump's tariff case at the U.S. Supreme Court, the U.S. stock market, led by strong gains in AI-related stocks such as AMD, rebounded significantly. This spurred capital inflows into Taiwan's stock market. Although foreign investors slightly sold off shares worth approximately NT$5.16 billion, institutional investors collectively bought NT$1.58 billion, pushing Taiwan's weighted index up 182 points to 27,899, with a trading volume of NT$499.1 billion. Notably, two memory sector stocks hit the daily limit-up, reflecting robust buying interest fueled by the ongoing AI boom in the semiconductor industry.",
+      "term_clarifications": [
+        {
+          "term": "外資",
+          "explanation": "指來自國外的投資機構或投資者，在台股市場中進行買賣行為。Foreign investors refer to overseas institutional or individual investors active in Taiwan's stock market."
+        },
+        {
+          "term": "三大法人",
+          "explanation": "指台灣股市的三大主要法人投資機構，包括外資、投信（投資信託）、以及自營商。The three major institutional investors in Taiwan's stock market: foreign investors, investment trusts, and dealers."
+        },
+        {
+          "term": "記憶體",
+          "explanation": "在半導體行業中指用於儲存數據的電子元件，如DRAM和NAND Flash。Memory refers to semiconductor components used for data storage, such as DRAM and NAND Flash."
+        },
+        {
+          "term": "漲停",
+          "explanation": "股票在一天交易中價格達到交易所規定的最高漲幅限制。Limit-up means a stock's price reaches the maximum allowed increase on a given trading day."
+        },
+        {
+          "term": "加權指數",
+          "explanation": "台灣股市主要指數，反映主要股票價格綜合變動。The weighted index is the main stock market index in Taiwan, reflecting aggregate price movements of key stocks."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "RugOne Xever 7系列於香港亮相，軍規防護加持熱插拔電池與熱成像鏡頭",
+      "chinese_brief": "Ulefone旗下品牌RugOne今日在香港推出新款戶外手機Xever 7 Pro及Xever 7。這兩款手機強調軍規等級防護（MIL-STD-810H）、高容量電池（5,550mAh）及熱插拔電池設計，方便戶外長時間使用。機身防水防塵達IP68/IP69K標準，並配備具熱成像功能的鏡頭，適合工地作業和極端環境用戶。Xever 7 Pro定價約HK$4,999，Xever 7約HK$3,999，為三防手機市場提供新選擇。",
+      "english_brief": "Ulefone’s RugOne brand officially launched its new outdoor smartphones, the Xever 7 Pro and Xever 7, in Hong Kong today. Emphasizing military-grade protection (MIL-STD-810H), large-capacity 5,550mAh batteries with hot-swappable design, these phones cater to extended outdoor use. They meet IP68/IP69K standards for water and dust resistance and feature thermal imaging cameras, suitable for construction and harsh environment users. Priced at approximately HK$4,999 for the Pro and HK$3,999 for the standard model, they offer new options in the rugged smartphone market.",
+      "term_clarifications": [
+        {
+          "term": "軍規防護 MIL-STD-810H",
+          "explanation": "一套由美國軍方制定的環境耐受測試標準，用於測試電子設備在極端條件下的耐用性。Military standard MIL-STD-810H is a set of U.S. military tests measuring device durability under extreme environmental conditions."
+        },
+        {
+          "term": "IP68/IP69K",
+          "explanation": "國際防護標準，表示設備能防塵且可承受長時間浸水（IP68）及高壓熱水噴射（IP69K）。International Protection (IP) ratings indicating dust tightness and water resistance: IP68 allows prolonged immersion; IP69K resists high-pressure hot water jets."
+        },
+        {
+          "term": "熱插拔電池",
+          "explanation": "使用者可在不關機的情況下更換手機電池的設計。Hot-swappable battery design allows users to replace the phone battery without turning off the device."
+        },
+        {
+          "term": "熱成像鏡頭",
+          "explanation": "可以感測並顯示物體熱度分布的攝影鏡頭。Thermal imaging camera detects and displays heat signatures of objects."
+        },
+        {
+          "term": "三防手機",
+          "explanation": "具備防水、防塵及防震功能的堅固手機。Rugged smartphones designed to be water-resistant, dust-proof, and shock-resistant."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "小米POCO Pad X1現身Geekbench，搭載高通Snapdragon 7+ Gen 3及Android 15",
+      "chinese_brief": "小米旗下POCO新平板型號25099RP08G近日在性能測試平台Geekbench現身，透露了部分硬體資訊。該機搭載最新高通Snapdragon 7+ Gen 3處理器，配置8GB記憶體，運行最新Android 15系統。市場定位上該產品被視為價格較親民且性能優於Redmi平板的選擇，將吸引對性價比需求高的消費者。",
+      "english_brief": "A new Xiaomi POCO tablet with model number 25099RP08G recently appeared on the Geekbench performance testing platform, revealing key hardware details. It features the latest Qualcomm Snapdragon 7+ Gen 3 processor, 8GB of RAM, and runs on the newest Android 15 operating system. Positioned as a more affordable yet more capable alternative to the Redmi tablet lineup, it aims to attract budget-conscious consumers seeking high performance.",
+      "term_clarifications": [
+        {
+          "term": "Geekbench",
+          "explanation": "一款廣泛使用的跨平台性能測試軟體，用於評估手機或電腦的處理能力。Geekbench is a widely used cross-platform benchmarking tool that evaluates the processing power of smartphones and computers."
+        },
+        {
+          "term": "Snapdragon 7+ Gen 3",
+          "explanation": "高通最新一代中階旗艦級移動處理器，強調性能與能效平衡。Qualcomm's latest high-performance mid-range mobile processor, balancing power and efficiency."
+        },
+        {
+          "term": "Android 15",
+          "explanation": "谷歌最新版本的Android行動操作系統，包含多項新功能與改進。The latest version of Google's Android mobile operating system, featuring various new functions and improvements."
+        },
+        {
+          "term": "POCO",
+          "explanation": "小米旗下的子品牌，主打高性價比智能手機及平板。POCO is a sub-brand of Xiaomi focusing on high cost-performance smartphones and tablets."
+        },
+        {
+          "term": "Redmi",
+          "explanation": "小米另一子品牌，以平價手機和平板著稱。Redmi is another Xiaomi subsidiary brand known for its affordable smartphones and tablets."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "Google拟在澳大利亚圣诞岛建立AI数据中心，强化印太地区战略部署",
+      "chinese_brief": "
+2025-11-07 20:56:25,330 | WARNING | Batch 1 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "台股受美股反彈及AI股熱潮激勵，外資小幅賣超51億但三大法人合計買超推升大盤",       "chinese_brief": "受美國最高法院川普關稅案辯論激勵，美股主要指數反彈，尤其由AMD帶領的AI相關族群大幅上漲，促使資金回流台股。儘管外資仍有小幅賣超約51.6億元新台幣，但三大法人合計轉為買超15.8億元，推升台股加權指數終場上漲182點至27,899點，成交量達4,991億元，顯示市場動能有所回溫。記憶體類股中有兩檔股票甚至買盤強勁直攻漲停，顯示AI熱潮繼續帶動半導體產業買氣。",       "english_brief": "Following debates over Trump's tariff case at the U.S. Supreme Court, the U.S. stock market, led by strong gains in AI-related stocks such as AMD, rebounded significan...)
+2025-11-07 20:57:00,008 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "台股強勢反彈，外資微調節但AI概念股逆勢漲停",
+      "chinese_brief": "美股於日前在川普關稅案辯論推升下全面反彈，AMD領漲AI相關族群。受此影響，台股大幅上揚182點，收於27,899點。雖外資仍微幅賣超51.6億元，但三大法人淨買超15.8億元，助推大盤止穩反彈。記憶體類股中兩檔意外登上漲停，反映市場對AI及半導體的熱絡資金流入。",
+      "english_brief": "US stocks rebounded broadly following Supreme Court debates on Trump's tariff case, led by AMD's surge in AI-related sectors. This momentum lifted Taiwan's stock market by 182 points to close at 27,899. Although foreign investors slightly sold off by NT$5.16 billion, combined institutional investors bought NT$1.58 billion, stabilizing the market. Notably, two memory-related stocks hit the daily price limit, reflecting strong capital inflows into AI and semiconductor sectors.",
+      "term_clarifications": [
+        {
+          "term": "川普關稅案",
+          "explanation": "美國前總統唐納德·川普引發的關稅政策相關的司法案件，影響市場情緒和貿易政策。",
+          "explanation_en": "Legal cases related to tariff policies initiated under former U.S. President Donald Trump, affecting market sentiment and trade policies."
+        },
+        {
+          "term": "AMD",
+          "explanation": "美國一家主要半導體公司，生產中央處理器和圖形卡，近期因AI技術發展股價表現強勁。",
+          "explanation_en": "An American major semiconductor company manufacturing CPUs and graphics cards, recently strong due to AI technology growth."
+        },
+        {
+          "term": "三大法人",
+          "explanation": "指外資、投信及自營商三大主要法人投資機構，對股市具有重要影響力。",
+          "explanation_en": "Refers to the three major institutional investors: foreign investors, investment trusts, and dealers, who significantly influence the stock market."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "RugOne Xever 7系列軍規戶外手機正式在港推出",
+      "chinese_brief": "Ulefone旗下品牌RugOne推出的Xever 7系列於香港亮相，主打軍規防護、長效電池及AI智能，適合戶外探險、工地及極端環境使用。Xever 7 Pro定價4999港元，Xever 7則為3999港元，兩款皆具備IP68/IP69K防水等級與MIL-STD-810H軍規認證，強調耐用與續航，並配備熱插拔電池及熱成像鏡頭，成為三防手機市場的新選擇。",
+      "english_brief": "Ulefone's RugOne brand launched the Xever 7 series in Hong Kong, featuring military-grade protection, long-lasting batteries, and AI intelligence. Targeted at outdoor adventurers, construction workers, and extreme environments, the Xever 7 Pro is priced at HK$4,999 and the Xever 7 at HK$3,999. Both models have IP68/IP69K water resistance and MIL-STD-810H military certification, emphasizing durability and endurance, with features like hot-swappable batteries and thermal imaging cameras, marking a new option in rugged smartphones.",
+      "term_clarifications": [
+        {
+          "term": "Ulefone",
+          "explanation": "中國知名智能手機製造商，專注於生產堅固耐用的戶外手機。",
+          "explanation_en": "A well-known Chinese smartphone manufacturer specializing in rugged outdoor phones."
+        },
+        {
+          "term": "IP68 / IP69K",
+          "explanation": "防護等級標準，IP68代表防塵且能在一定深度水中浸泡，IP69K為高壓高溫水噴射防護更嚴格。",
+          "explanation_en": "Protection rating standards: IP68 means dust-tight and water submersion resistance; IP69K indicates resistance to high-pressure, high-temperature water jets."
+        },
+        {
+          "term": "MIL-STD-810H",
+          "explanation": "美國軍用標準，測試裝備在極端環境下的耐用性，包括溫度、濕度、震動等。",
+          "explanation_en": "A US military standard testing equipment durability in extreme environments such as temperature, humidity, and vibration."
+        },
+        {
+          "term": "熱插拔電池",
+          "explanation": "允許在不關閉手機的情況下更換電池的技術，提升續航便利性。",
+          "explanation_en": "Technology that allows battery replacement without shutting down the phone, enhancing operational convenience."
+        },
+        {
+          "term": "熱成像鏡頭",
+          "explanation": "能夠捕捉熱能影像的相機，用於夜間或不良視線條件的探測。",
+          "explanation_en": "A camera capable of capturing thermal images, used for detection in low light or obscured conditions."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "小米 POCO Pad X1 曝光 配備高通Snapdragon 7+ Gen 3處理器",
+      "chinese_brief": "一款型號為25099RP08G的小米新品在Geekbench數據庫現身，預計命名為POCO Pad X1。該平板搭載高通Snapdragon 7+ Gen 3處理器，配備8GB RAM，運行最新Android 15系統。該機被視為比Redmi更具性價比的入門級平板，定位「窮人板」，適合預算有限但需求穩定的用戶。",
+      "english_brief": "A new Xiaomi device with model number 25099RP08G appeared in the Geekbench database, likely named POCO Pad X1. The tablet features a Qualcomm Snapdragon 7+ Gen 3 processor, 8GB of RAM, and runs the latest Android 15 system. Positioned as a more affordable alternative than Redmi models, it is regarded as an entry-level tablet aimed at budget-conscious users with steady performance needs.",
+      "term_clarifications": [
+        {
+          "term": "Geekbench",
+          "explanation": "一款廣泛使用的跨平台性能測試軟體，用於評估處理器和記憶體效能。",
+          "explanation_en": "A widely used cross-platform benchmark software that assesses processor and memory performance."
+        },
+        {
+          "term": "Snapdragon 7+ Gen 3",
+          "explanation": "高通公司推出的中高階行動處理器，具備良好的效率與AI性能，適合中端裝置。",
+          "explanation_en": "A mid-to-high-end mobile processor from Qualcomm featuring balanced efficiency and AI capabilities suitable for mid-range devices."
+        },
+        {
+          "term": "Android 15",
+          "explanation": "Google推出的最新安卓操作系統版本，帶來性能與安全性提升。",
+          "explanation_en": "The latest version of Google's Android operating system, offering improved performance and security."
+        },
+        {
+          "term": "紅米 (Redmi)",
+          "explanation": "小米旗下的中低價智慧型手機品牌，市場定位偏向大眾消費族群。",
+          "explanation_en": "A Xiaomi sub-brand focusing on affordable smartphones targeted at mass-market consumers."
+        },
+        {
+          "term": "窮人板",
+          "explanation": "俗稱指價格親民、功能實用的入門級平板電腦。",
+          "explanation_en": "A colloquial term for budget-friendly, functional entry-level tablets."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "谷歌計劃於澳大利亞印度洋聖誕島建AI數據中心",
+      "chinese_brief": "路透社報導，谷歌計劃在澳大利亞印度洋的外島聖誕島建設大型人工智能數據中心，此舉是在與澳洲國防部簽署雲端計算協議後提出。該島離印度尼西亞約350公里，數據中心的規模和用途尚未公開，但專家認為將成為監視中國潛艇及海軍活動的戰略前哨。谷歌與當地礦業公司討論土地
+2025-11-07 20:57:00,010 | WARNING | Batch 1 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "台股強勢反彈，外資微調節但AI概念股逆勢漲停",       "chinese_brief": "美股於日前在川普關稅案辯論推升下全面反彈，AMD領漲AI相關族群。受此影響，台股大幅上揚182點，收於27,899點。雖外資仍微幅賣超51.6億元，但三大法人淨買超15.8億元，助推大盤止穩反彈。記憶體類股中兩檔意外登上漲停，反映市場對AI及半導體的熱絡資金流入。",       "english_brief": "US stocks rebounded broadly following Supreme Court debates on Trump's tariff case, led by AMD's surge in AI-related sectors. This momentum lifted Taiwan's stock market by 182 points to close at 27,899. Although foreign investors sli...)
+2025-11-07 20:57:27,359 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "台股反彈 外資微調節但AI相關記憶體股逆勢漲停",
+      "chinese_brief": "美國最高法院辯論川普關稅案影響下，美股大幅反彈，帶動AI相關股表現強勢。台股受惠此波資金流入與美股漲勢，當日大漲182點，收於27,899點。儘管外資小幅賣超約51億元，整體法人合計買超15.8億元，推升大盤止跌反彈，尤其AI記憶體相關股票表現亮眼，部分股票成功攻上漲停板，反映市場對AI產業持續看好。",
+      "english_brief": "Amid the U.S. Supreme Court debating the Trump tariff case, the U.S. stock market rallied strongly, boosting AI-related stocks. Taiwan's stock market benefited from this capital inflow and U.S. stocks' momentum, rising 182 points to close at 27,899. Although foreign investors slightly sold off about NT$5.16 billion, overall institutional investors net bought NT$1.58 billion, stabilizing and pushing the market up. In particular, memory stocks linked to AI performed strongly, with some hitting the daily trading limit, reflecting ongoing market optimism toward the AI sector.",
+      "term_clarifications": [
+        {
+          "term": "外資",
+          "explanation": "外資指的是外國資本或國外機構投資者，對當地股市的資金流入或流出起重要作用。Foreign investors refer to foreign capital or overseas institutional investors who play a vital role in the local stock market by influencing capital inflows and outflows."
+        },
+        {
+          "term": "漲停",
+          "explanation": "漲停是指股票價格在交易日內達到交易所規定的最高漲幅限制，導致該股票無法繼續上漲。Price limit up refers to the maximum daily price increase allowed by the stock exchange, after which the stock cannot continue rising within that trading day."
+        },
+        {
+          "term": "記憶體",
+          "explanation": "記憶體是電腦或電子設備中用於存儲數據的元件，如RAM等，廣泛應用於AI運算相關硬體。Memory refers to components in computers or electronic devices used to store data, such as RAM, widely used in AI computing hardware."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "RugOne 推出軍規級戶外手機 Xever 7 系列 香港上市",
+      "chinese_brief": "Ulefone旗下品牌RugOne於香港正式發佈Xever 7系列新手機，包括Xever 7 Pro和Xever 7兩款型號。這兩款手機強調軍用規格防護（MIL-STD-810H）、IP68/IP69K防水防塵能力、長效大容量電池設計，以及可更換電池和熱成像鏡頭，專為戶外探險、工地工作及極端環境使用者打造。新機結合AI智能系統，提供穩定耐用的性能，為三防手機市場注入新動力。",
+      "english_brief": "Ulefone's RugOne brand officially launched the Xever 7 series smartphones in Hong Kong, featuring the Xever 7 Pro and Xever 7 models. These phones boast military-grade protection (MIL-STD-810H), IP68/IP69K waterproof and dustproof ratings, long-lasting large-capacity batteries, hot-swappable battery capability, and thermal imaging cameras. Designed for outdoor adventures, construction work, and extreme environments, the devices integrate AI smart systems providing durable and reliable performance, injecting fresh energy into the rugged smartphone market.",
+      "term_clarifications": [
+        {
+          "term": "軍規級",
+          "explanation": "指產品符合軍用標準測試規範，如MIL-STD-810H，保障其耐用性和抗惡劣環境能力。Military-grade means the product meets military standard testing, such as MIL-STD-810H, ensuring durability and resistance to harsh environments."
+        },
+        {
+          "term": "IP68 / IP69K",
+          "explanation": "國際防護標準，IP68指防塵且可長時間浸水，IP69K則代表能抵抗高壓高溫水柱清洗。International Protection (IP) rating where IP68 means dust-tight and water immersion protection, IP69K means resistance to high-pressure, high-temperature water jets."
+        },
+        {
+          "term": "熱插拔電池",
+          "explanation": "允許用戶在不關機的情況下更換手機電池的功能。Hot-swappable battery allows users to replace the phone battery without turning off the device."
+        },
+        {
+          "term": "熱成像鏡頭",
+          "explanation": "利用紅外線檢測物體熱能的攝像頭，可用於夜視或檢測溫度。Thermal imaging camera uses infrared to detect heat emitted by objects and can be used for night vision or temperature detection."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "小米POCO Pad X1跑分現身，搭載高通Snapdragon 7+ Gen 3和Android 15",
+      "chinese_brief": "小米旗下品牌POCO即將推出新平板POCO Pad X1，該設備於Geekbench跑分平台曝光。根據數據，該平板搭載高通Snapdragon 7+ Gen 3處理器，配備8GB記憶體，運行最新Android 15系統。該產品在性能和價格上預計比Redmi系列更具競爭力，有望吸引預算有限但對效能有需求的消費者。",
+      "english_brief": "Xiaomi's POCO brand is preparing to launch a new tablet, the POCO Pad X1, which appeared on the Geekbench benchmarking platform. According to the data, the tablet is equipped with a Qualcomm Snapdragon 7+ Gen 3 processor, 8GB of RAM, and runs the latest Android 15 system. This product is expected to be more competitively priced and performant than the Redmi series, appealing to budget-conscious consumers seeking good performance.",
+      "term_clarifications": [
+        {
+          "term": "Geekbench",
+          "explanation": "一款跨平台的性能測試軟體，用於評估設備CPU和GPU的能力。Geekbench is a cross-platform benchmarking tool used to evaluate the CPU and GPU performance of devices."
+        },
+        {
+          "term": "Snapdragon 7+ Gen 3",
+          "explanation": "高通最新的中高階行動處理器系列，提供良好效能與能耗平衡。Snapdragon 7+ Gen 3 is Qualcomm's latest mid-to-high-end mobile processor series, offering good performance and power efficiency balance."
+        },
+        {
+          "term": "Android 15",
+          "explanation": "谷歌最新發布的Android作業系統版本，包含多項優化與新功能。Android 15 is Google's latest version of the Android operating system, featuring multiple optimizations and new functionalities."
+        },
+        {
+          "term": "Redmi",
+          "explanation": "小米旗下子品牌，主打性價比高的手機和平板。Redmi is a sub-brand of Xiaomi, focusing on high cost-performance smartphones and tablets."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "Google計劃於澳洲印度洋聖誕島建設AI數據中心，具軍事戰略意義",
+      "chinese_brief": "路透社報導指出，Google於2025年計劃在澳大利亞印度洋外島聖誕島建造大型人工智能數據中心。此舉緊接著與澳大利亞國防部簽署的雲端協議，聖誕島位於印尼南方約350公里，該數據中心可能成為監控中國潛艇及海軍活動的重要前哨基地。Google正與島上當地機場礦業企業就土地與能源供應協商，顯示該計劃已進入實質階段，但官方尚未公開具體規模及成本。",
+      "english_brief": "Reuters reports that Google plans to build a large artificial intelligence data center in Christmas Island, a remote Australian island in the Indian Ocean, in 2025. This initiative follows a cloud computing agreement signed with the Australian Department of Defence. Located about 350 km south of Indonesia, the data center could serve as a strategic forward monitoring post for Chinese submarines and naval activities. Google is negotiating
+2025-11-07 20:57:27,360 | WARNING | Batch 1 attempt 3 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "台股反彈 外資微調節但AI相關記憶體股逆勢漲停",       "chinese_brief": "美國最高法院辯論川普關稅案影響下，美股大幅反彈，帶動AI相關股表現強勢。台股受惠此波資金流入與美股漲勢，當日大漲182點，收於27,899點。儘管外資小幅賣超約51億元，整體法人合計買超15.8億元，推升大盤止跌反彈，尤其AI記憶體相關股票表現亮眼，部分股票成功攻上漲停板，反映市場對AI產業持續看好。",       "english_brief": "Amid the U.S. Supreme Court debating the Trump tariff case, the U.S. stock market rallied strongly, boosting AI-related stocks. Taiwan's stock market benefited from this capital inflow and U.S. stocks' momentum, r...)
+2025-11-07 20:57:27,360 | WARNING | Splitting batch 1 (size=4) after repeated JSON failures.
+2025-11-07 20:58:04,619 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-07 20:58:34,297 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-07 20:59:10,667 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-07 20:59:35,397 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-07 20:59:52,754 | INFO | Completed batch 5/5 (briefings=17).
+2025-11-07 20:59:52,755 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=28375)
+2025-11-07 20:59:52,757 | INFO | Saved digest to digests/人工智能-or-ai-or-大模型-briefing-2025-11-07_2048.md
+2025-11-07 20:59:54,634 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-07 20:59:54,687 | INFO | Summarizing 20 articles across 5 batches.
+2025-11-07 21:00:15,693 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-07 21:00:43,953 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-07 21:01:15,909 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-07 21:01:38,739 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-07 21:02:07,716 | INFO | Completed batch 5/5 (briefings=20).
+2025-11-07 21:02:07,717 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=13020)
+2025-11-07 21:02:07,720 | INFO | Saved digest to digests/artificial-intelligence-or-ai-or-large-language-model-or-llm-briefing-2025-11-07_2048.md
+2025-11-07 21:02:09,575 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-07 21:02:09,626 | INFO | Summarizing 14 articles across 4 batches.
+2025-11-07 21:02:48,573 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "碧桂园境外债重组方案获批准，拟削减66%债务",
+      "chinese_brief": "中国大型房地产开发商碧桂园公布其境外债务重组方案已获得两组债权人（银行团联贷组及美元债及其他债权组）超过门槛的赞成票。该方案目前等待香港最高法院一个月后的裁决通过，预计碧桂园将于2025年底前完成重组，显著削减约66%的债务负担，缓解其财务压力，并稳定国际投资者信心。",
+      "english_brief": "Chinese major property developer Country Garden announced that its overseas debt restructuring plan has received approval votes exceeding the threshold from two creditor groups (the bank syndicate group and the USD bonds and other creditors group). The plan is currently awaiting Hong Kong's highest court ruling in one month, and is expected to complete restructuring by the end of 2025, cutting about 66% of its debt. This move will ease financial strains and restore confidence among international investors.",
+      "term_clarifications": [
+        {
+          "term": "碧桂园 (Country Garden)",
+          "explanation": "中国领先的房地产开发公司，拥有大量境内外项目。Country Garden is a leading Chinese real estate developer with numerous projects domestically and internationally."
+        },
+        {
+          "term": "境外债 (overseas debt)",
+          "explanation": "指企业在海外发行的债券或借款。These are bonds or loans issued by a company outside its home country."
+        },
+        {
+          "term": "债务重组 (debt restructuring)",
+          "explanation": "指调整债务条款以减轻借款人偿还压力的过程，可能包括债务减免、延期付款等。A process of modifying the terms of debt to ease repayment burdens, possibly involving debt forgiveness or payment deferrals."
+        },
+        {
+          "term": "香港最高法院",
+          "explanation": "香港特别行政区最高级别的司法机构，拥有重要的法律裁决权。The highest judicial authority in Hong Kong Special Administrative Region with major legal adjudication powers."
+        },
+        {
+          "term": "银行团联贷组",
+          "explanation": "由多家银行组成的联合贷款债权人组。A group of creditors constituted by multiple banks offering syndicated loans."
+        },
+        {
+          "term": "美元债",
+          "explanation": "以美元计价发行的债券。Bonds issued denominated in US dollars."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "联合微电子10月营收创一年新高，成熟制程市场表现成焦点",
+      "chinese_brief": "晶圆代工大厂联合微电子（UMC）公布2025年10月份合并营收达到212.95亿元新台币，创近一年新高。尽管较去年同期略降0.36%，整体仍保持持平。1-10月累计营收相比去年增长1.94%。公司预计第四季晶圆出货量持平第三季，成熟制程的市场需求表现依然是投资者关注重点，反映半导体行业细分领域中的稳定需求和竞争态势。",
+      "english_brief": "Leading semiconductor foundry UMC reported consolidated revenue of NT$21.295 billion for October 2025, hitting a one-year high. Though slightly down 0.36% from the same period last year, overall revenue remained stable. The cumulative revenue for the first 10 months rose 1.94% year-over-year. The company expects wafer shipments in Q4 to be flat compared to Q3. Market performance in mature process technologies remains a key focus, indicating steady demand and competitive dynamics within the semiconductor sector.",
+      "term_clarifications": [
+        {
+          "term": "联合微电子 (UMC)",
+          "explanation": "台湾领先的晶圆代工厂商，专注于半导体制造。A leading Taiwanese semiconductor foundry specializing in wafer fabrication."
+        },
+        {
+          "term": "晶圆代工",
+          "explanation": "为客户制造半导体芯片的服务商，不设计芯片只负责生产。A service provider that manufactures semiconductor chips for clients without designing them."
+        },
+        {
+          "term": "成熟制程",
+          "explanation": "半导体制造中的已经稳定和广泛应用的工艺节点，通常具有较低制造成本。A stable and widely used semiconductor fabrication node that typically has lower manufacturing costs."
+        },
+        {
+          "term": "营收",
+          "explanation": "公司在一定期间内获得的总收入。Total revenue earned by a company over a certain period."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "Snap季度营收超预期，与Perplexity AI达成4亿美元合作协议",
+      "chinese_brief": "社交媒体公司Snap公布2025年第三季度营收超出市场预期，并宣布与人工智能初创企业Perplexity AI达成4亿美元的合作计划。Perplexity AI将把其AI驱动的搜索引擎整合进Snapchat应用。合作形式包含现金与股权支付，预期从2026年开始贡献营收。这一整合将使Snapchat用户能在应用内直接获取经过验证的答案，提升用户体验并拓展AI应用场景。",
+      "english_brief": "Social media company Snap announced third-quarter revenue exceeding market expectations and revealed a $400 million cooperation deal with AI startup Perplexity AI. Perplexity AI will integrate its AI-driven search engine into the Snapchat app. The deal involves cash and equity payments, with revenue contributions expected from 2026. This integration enables Snapchat users to obtain verified answers directly within the app, enhancing user experience and broadening AI application scenarios.",
+      "term_clarifications": [
+        {
+          "term": "Snap",
+          "explanation": "美国社交媒体公司，Snapchat的开发者。An American social media company, developer of Snapchat."
+        },
+        {
+          "term": "Perplexity AI",
+          "explanation": "一家人工智能初创公司，专注于基于AI的搜索引擎技术。An AI startup focusing on AI-based search engine technology."
+        },
+        {
+          "term": "营收",
+          "explanation": "收入总额。Total revenue."
+        },
+        {
+          "term": "股权",
+          "explanation": "公司股份的所有权部分。Ownership shares in a company."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "OmniOne迷你电脑Kickstarter众筹启动，配英特尔N150处理器和5.7英寸触摸屏",
+      "chinese_brief": "名为OmniOne的迷你电脑产品现已在Kickstarter平台开启众筹，价格起售359美元（约2559元人民币）。该设备采用直板设计，内置键盘和触控板，搭载英特尔N150处理器，配备5.7英寸高清触摸屏，支持DisplayPort 1.2及HDMI 2.1接口，可外接两台显示器。该轻便设备尺寸为158×135毫米，重量326克，面向需要便携高效办公及日常使用的用户群体。",
+      "english_brief": "The mini PC named OmniOne has launched a crowdfunding campaign on Kickstarter, starting at $359 (approx. RMB 2559). The device features a bar-style design with a built-in keyboard and touchpad, powered by an Intel N150 processor and equipped with a 5.7-inch HD touchscreen. It supports DisplayPort 1.2 and HDMI 2.1 interfaces, allowing connection of two external monitors. Compact and lightweight at 158×135 mm and 326 grams, the product targets users seeking portable, efficient office and daily use devices.",
+      "term_clarifications": [
+        {
+          "term": "OmniOne",
+          "explanation": "一款集成键盘和触控板的便携迷你电脑。A portable mini PC integrating keyboard and touchpad."
+        },
+        {
+          "term": "Kickstarter",
+          "explanation": "国际知名的众筹平台，用于支持新产品开发。An internationally known crowdfunding platform supporting new product development."
+        },
+        {
+          "term": "英特尔 N150处理器",
+          "explanation": "英特尔推出的低功耗入门级处理器，适合轻薄设备。Intel's low-power entry-level processor designed for lightweight devices."
+        },
+        {
+          "term": "DisplayPort 1.2/HDMI 2.1",
+          "explanation": "用于连接显示器的数字视频接口标准。Digital video interface standards used to connect monitors."
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期简报涵盖了中国房地产企业债务重组动态、台湾半导体制造业财务表现、美国科技公司Snap的人工智能
+2025-11-07 21:02:48,574 | WARNING | Batch 1 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "碧桂园境外债重组方案获批准，拟削减66%债务",       "chinese_brief": "中国大型房地产开发商碧桂园公布其境外债务重组方案已获得两组债权人（银行团联贷组及美元债及其他债权组）超过门槛的赞成票。该方案目前等待香港最高法院一个月后的裁决通过，预计碧桂园将于2025年底前完成重组，显著削减约66%的债务负担，缓解其财务压力，并稳定国际投资者信心。",       "english_brief": "Chinese major property developer Country Garden announced that its overseas debt restructuring plan has received approval votes exceeding the threshold from two creditor groups (the bank syndicate group and the USD bonds and other ...)
+2025-11-07 21:03:08,644 | INFO | Completed batch 1/4 (briefings=4).
+2025-11-07 21:03:32,194 | INFO | Completed batch 2/4 (briefings=8).
+2025-11-07 21:04:06,341 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "鍾睒睒連續五年成為福布斯中國首富，資產增至6014億港元",
+      "chinese_brief": "福布斯公布2025年中國富豪榜，農夫山泉創辦人鍾睒睒第五年蟬聯中國首富，身家達771億美元（約6013.8億港元），較去年增長263億美元，主要受惠於農夫山泉2025年上半年利潤增長22%，營收提升15.6%。字節跳動創辦人張一鳴與騰訊主席馬化騰分別排名第二和第三，資產分別達693億美元和628億美元。這反映中國消費品與科技巨頭持續穩健發展，資本市場看好相關企業前景。",
+      "english_brief": "Forbes released its 2025 China rich list, with Nongfu Spring founder Zhong Shanshan topping the ranking for the fifth consecutive year. His net worth reached $77.1 billion USD (approximately HK$601.4 billion), up by $26.3 billion from last year, driven mainly by a 22% profit increase and 15.6% revenue growth for Nongfu Spring in the first half of 2025. ByteDance founder Zhang Yiming and Tencent chairman Ma Huateng secured second and third places, with net worths of $69.3 billion and $62.8 billion respectively. This indicates sustained robust growth in Chinese consumer goods and tech giants, with capital markets optimistic about their prospects.",
+      "term_clarifications": [
+        {
+          "term": "鍾睒睒",
+          "explanation": "中國企業家，農夫山泉的創辦人，知名飲用水及飲料品牌的領軍人物。Zhong Shanshan is a Chinese entrepreneur and founder of Nongfu Spring, a leading beverage company in China."
+        },
+        {
+          "term": "農夫山泉 (09633)",
+          "explanation": "中國知名瓶裝飲用水及飲料品牌，股票代碼09633在香港聯交所上市。Nongfu Spring is a well-known Chinese bottled water and beverage brand, listed on the Hong Kong Stock Exchange under ticker 09633."
+        },
+        {
+          "term": "字節跳動 (ByteDance)",
+          "explanation": "中國科技公司，擁有熱門短視頻平台抖音（TikTok國際版）。ByteDance is a Chinese tech firm owning popular short video platforms such as Douyin (TikTok internationally)."
+        },
+        {
+          "term": "騰訊 (00700)",
+          "explanation": "中國最大的互聯網公司之一，業務涵蓋社交、遊戲及金融服務，股票代碼00700在香港上市。Tencent is one of China’s largest internet companies, involved in social networking, gaming, and financial services, listed on Hong Kong Stock Exchange under ticker 00700."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "謝清海憑17年黃金投資累積15億港元收益，堅持價值投資策略",
+      "chinese_brief": "惠理集團創辦人謝清海長期投資黃金17年，累積個人黃金相關資產實現利潤約15.2億港元，回報率達144.7%。其投資組合包括實體黃金、黃金與白銀ETF及金礦股，反映其利用黃金作為避險資產的策略成功。這一投資與惠理集團業務無關，主要受益於全球經濟不確定因素推升的黃金需求，及其堅持的價值投資理念與“貶值交易”策略。",
+      "english_brief": "David Shih, founder of Value Partners Group, has invested in gold-related assets over 17 years, achieving realized and unrealized gains of about HK$1.52 billion, with a total return of 144.7%. His portfolio includes physical gold, gold and silver ETFs, and gold mining stocks. This reflects his successful strategy of using gold as a hedge amid global economic uncertainties. This investment is personal and unrelated to his company’s operations. The gains benefited from rising demand for gold driven by inflation fears, geopolitical tensions, and his adherence to value investing and a 'debasement trade' approach.",
+      "term_clarifications": [
+        {
+          "term": "謝清海",
+          "explanation": "惠理集團創辦人及資深基金經理，專長於價值投資。David Shih is the founder of Value Partners Group and a veteran fund manager specializing in value investing."
+        },
+        {
+          "term": "惠理集團 (00806)",
+          "explanation": "香港上市資產管理公司，主要從事基金管理業務，股票代碼00806。Value Partners Group is a Hong Kong-based asset management company, publicly listed under ticker 00806."
+        },
+        {
+          "term": "ETF",
+          "explanation": "交易型開放式指數基金，允許投資者買賣一籃子資產，常用於黃金及貴金屬投資。An Exchange-Traded Fund (ETF) allows investors to trade a basket of assets and is commonly used for gold and precious metal investments."
+        },
+        {
+          "term": "貶值交易（Debasement trade）",
+          "explanation": "指在貨幣貶值環境下，通過購買黃金等實物資產來對抗貨幣購買力下降的投資策略。Debasement trade refers to an investment strategy aimed at protecting against currency depreciation by purchasing physical assets like gold."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "中國財政部香港發行40億美元國債，3年期定價首次齊美債風險定價",
+      "chinese_brief": "中國財政部首次四年後再次在香港發行美元主權債券，規模達40億美元，申購超額達28.55倍。3年期國債定價基於美國國債加零息利差，史無前例與美債風險定價看齊，表明國債的吸引力增強。5年期利率略高於美債0.02個百分點。分析預測此舉可為國有企業和央企未來的債券發行定下低成本基準，彰顯國際投資者信心提升。",
+      "english_brief": "China’s Ministry of Finance has issued $4 billion USD sovereign bonds in Hong Kong for the first time in four years, with subscriptions overshooting by 28.55 times. The 3-year bonds were priced with a spread of zero over equivalent U.S. Treasury bonds — a historical first aligning Chinese sovereign risk pricing with U.S. treasuries. The 5-year bonds carried a slightly higher yield by 0.02%. Analysts say this development could set a benchmark for low-cost borrowing for state-owned and central enterprises and reflects rising confidence from international investors.",
+      "term_clarifications": [
+        {
+          "term": "主權債券",
+          "explanation": "由國家政府發行的債券，用於籌集資金並承諾還本付息。Sovereign bonds are government-issued bonds used to raise funds with a promise to pay back principal and interest."
+        },
+        {
+          "term": "美國國債",
+          "explanation": "由美國政府發行的債券，通常被視為全球最安全的固定收益投資。U.S. Treasuries are bonds issued by the U.S. government, generally considered the safest fixed-income assets globally."
+        },
+        {
+          "term": "利差（Spread）",
+          "explanation": "兩種不同債券收益率之間的差額，反映風險差異。Spread is the difference between yields on two bonds, reflecting risk differences."
+        },
+        {
+          "term": "超購（Oversubscription）",
+          "explanation": "申購債券需求超過發行規模，顯示投資者熱情。Oversubscription occurs when demand for bonds exceeds the amount available, showing strong investor interest."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "HighPoint發佈性價比高的PCIe 5.0交換適配器Rocket 1624A，支持雙MCIO 8x端口",
+      "chinese_brief": "IT 公司HighPoint於10月底推出新款PCIe 5.0交換適配器Rocket 1624A，主打高性價比。該卡配備博通48通道PCIe 5.
+2025-11-07 21:04:06,343 | WARNING | Batch 3 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "鍾睒睒連續五年成為福布斯中國首富，資產增至6014億港元",       "chinese_brief": "福布斯公布2025年中國富豪榜，農夫山泉創辦人鍾睒睒第五年蟬聯中國首富，身家達771億美元（約6013.8億港元），較去年增長263億美元，主要受惠於農夫山泉2025年上半年利潤增長22%，營收提升15.6%。字節跳動創辦人張一鳴與騰訊主席馬化騰分別排名第二和第三，資產分別達693億美元和628億美元。這反映中國消費品與科技巨頭持續穩健發展，資本市場看好相關企業前景。",       "english_brief": "Forbes released its 2025 China rich list, with Nongfu Spring founder Zhong Shanshan topping the ranking for the fifth consecutive year. His net worth reached $77.1 billion US...)
+2025-11-07 21:04:38,439 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "鍾睒睒連續五年成為福布斯中國首富，身家達6014億港元",
+      "chinese_brief": "《福布斯》2025年中國富豪榜顯示，農夫山泉創辦人鍾睒睒以身家771億元人民幣（約6014億港元）連續五年蟬聯中國首富。其財富主要來自農夫山泉2025年上半年盈利增長22%、總收益提升15.6%。其次是字節跳動創辦人張一鳴和騰訊主席馬化騰，分別以693億元和628億元人民幣排名第二和第三。此排名反映中國科技與消費品巨頭的財富競爭格局。",
+      "english_brief": "Forbes' 2025 China Rich List reveals Zhong Shanshan, founder of Nongfu Spring, retains the title of China's richest for five consecutive years with a net worth of 77.1 billion RMB (approximately HKD 601.4 billion). His wealth growth is driven by Nongfu Spring's 22% profit increase and 15.6% revenue growth in the first half of 2025. ByteDance founder Zhang Yiming and Tencent chairman Ma Huateng rank second and third with 69.3 billion RMB and 62.8 billion RMB respectively. The rankings highlight the competitive wealth landscape among China's tech and consumer giants.",
+      "term_clarifications": [
+        {
+          "term": "鍾睒睒",
+          "explanation": "中國富豪，農夫山泉公司創辦人，以飲用水和飲料業務聞名，是中國最富有的人之一。",
+          "explanation_en": "Zhong Shanshan is a Chinese billionaire, founder of Nongfu Spring, known for its bottled water and beverage business, and one of the richest people in China."
+        },
+        {
+          "term": "農夫山泉 (09633)",
+          "explanation": "中國知名飲用水及飲料公司，股票代號09633，在香港上市。",
+          "explanation_en": "Nongfu Spring is a well-known Chinese bottled water and beverage company, listed in Hong Kong under stock code 09633."
+        },
+        {
+          "term": "福布斯中國富豪榜",
+          "explanation": "由福布斯雜誌發布的中國富豪排名，反映中國富豪財富狀況。",
+          "explanation_en": "Forbes China Rich List is a ranking published by Forbes magazine reflecting the wealth status of the richest individuals in China."
+        },
+        {
+          "term": "字節跳動 (ByteDance)",
+          "explanation": "中國科技公司，擁有抖音和TikTok等知名產品。",
+          "explanation_en": "ByteDance is a Chinese tech company known for products such as Douyin and TikTok."
+        },
+        {
+          "term": "騰訊 (00700)",
+          "explanation": "中國大型科技及互聯網公司，股票代號00700，在香港上市。",
+          "explanation_en": "Tencent is a major Chinese technology and internet company, listed in Hong Kong with stock code 00700."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "謝清海17年長線持有黃金 賺取15億港元回報率達144.7%",
+      "chinese_brief": "香港基金界資深人士謝清海自2008年起長期投資黃金及相關資產，包括實體黃金、黃金ETF及金礦股。經歷多次全球金融危機與地緣政治波動，他的個人回報率高達144.7%，累計獲利約15.2億港元。這一投資策略被稱為「貶值交易」，反映他在貨幣貶值和通脹環境下的成功避險布局，彰顯價值投資在長期資產保值上的效用。",
+      "english_brief": "Veteran Hong Kong fund manager Xie Qinghai has been investing in gold and related assets since 2008, including physical gold, gold ETFs, and mining stocks. Despite multiple global financial crises and geopolitical tensions, his personal investment yielded a 144.7% return, with profits totaling about HKD 1.52 billion. This strategy, called a 'debasement trade,' demonstrates successful hedging amid currency depreciation and inflation, underscoring the effectiveness of value investing for long-term asset preservation.",
+      "term_clarifications": [
+        {
+          "term": "謝清海",
+          "explanation": "香港資深基金經理，惠理集團創辦人，長期投資貴金屬資產。",
+          "explanation_en": "Xie Qinghai is an experienced fund manager in Hong Kong and founder of Value Partners Group, known for long-term investments in precious metals."
+        },
+        {
+          "term": "黃金ETF",
+          "explanation": "交易所交易基金，跟蹤黃金價格的金融產品，方便投資者參與黃金市場。",
+          "explanation_en": "Gold ETFs are exchange-traded funds that track gold prices, allowing investors to easily participate in the gold market."
+        },
+        {
+          "term": "貶值交易 (Debasement trade)",
+          "explanation": "一種投資策略，利用貨幣貶值和通脹環境下資產價格上漲的機會尋求保值或增值。",
+          "explanation_en": "A trading strategy that seeks to preserve or increase value by capitalizing on asset price rises amid currency depreciation and inflation."
+        },
+        {
+          "term": "價值投資",
+          "explanation": "基於對資產內在價值分析，長期持有以實現穩健回報的投資方式。",
+          "explanation_en": "An investment approach based on analyzing intrinsic asset value and holding long-term for steady returns."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "中國財政部在香港發行40億美元主權債，3年期國債首次定價參考美債",
+      "chinese_brief": "中國財政部經過四年後再次在香港發行40億美元主權債券，申購超過28倍。此次3年期20億美元國債的定價首次與美國國債採用同等計價方式（美債加零息），5年期部分定價為美債加0.02%。此舉顯示中國國債利率持續走低與市場需求增加，有助為國有企業發債定價降低成本，且反映中國主權債券國際認受性的進一步提升。",
+      "english_brief": "After four years, China's Ministry of Finance issued USD 4 billion in sovereign bonds in Hong Kong, with subscription overshooting 28 times. For the first time, the 3-year bond pricing was pegged to US treasury zero-coupon yields, while the 5-year bond was priced at US treasuries plus 0.02%. This indicates declining Chinese bond yields and strong market demand, potentially lowering borrowing costs for state-owned enterprises and enhancing the international acceptance of Chinese sovereign bonds.",
+      "term_clarifications": [
+        {
+          "term": "主權債券",
+          "explanation": "由國家政府發行的債務證券，用於籌集公共資金。",
+          "explanation_en": "Debt securities issued by a national government to raise public funds."
+        },
+        {
+          "term": "美國國債",
+          "explanation": "由美國政府發行的債券，是全球金融市場的基準利率參考。",
+          "explanation_en": "Bonds issued by the US government, serving as benchmark interest rate references globally."
+        },
+        {
+          "term": "零息債券",
+          "explanation": "不支付定期利息，按折價發行，到期時支付面值的債券。",
+          "explanation_en": "A bond that pays no periodic interest and is issued at a discount, paying face value at maturity."
+        },
+        {
+          "term": "超購",
+          "explanation": "申購量超過發行量的倍數，表示市場需求旺盛。",
+          "explanation_en": "Subscription amounts exceeding the issue size multiple times, indicating strong market demand."
+        },
+        {
+          "term": "國有企業",
+          "explanation": "由國家控股或經營的企業。",
+          "explanation_en": "Companies owned or controlled by the state."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "HighPoint推出高性價比PCIe 5.0交換適配器Rocket 1624A",
+      "chinese_brief
+2025-11-07 21:04:38,441 | WARNING | Batch 3 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "鍾睒睒連續五年成為福布斯中國首富，身家達6014億港元",       "chinese_brief": "《福布斯》2025年中國富豪榜顯示，農夫山泉創辦人鍾睒睒以身家771億元人民幣（約6014億港元）連續五年蟬聯中國首富。其財富主要來自農夫山泉2025年上半年盈利增長22%、總收益提升15.6%。其次是字節跳動創辦人張一鳴和騰訊主席馬化騰，分別以693億元和628億元人民幣排名第二和第三。此排名反映中國科技與消費品巨頭的財富競爭格局。",       "english_brief": "Forbes' 2025 China Rich List reveals Zhong Shanshan, founder of Nongfu Spring, retains the title of China's richest for five consecutive years with a net worth of 77.1 billion RMB (approximate...)
+2025-11-07 21:05:10,500 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "鍾睒睒連續五年成為福布斯中國首富，身家達6014億港元",
+      "chinese_brief": "2025年福布斯中國富豪榜公布，農夫山泉創辦人鍾睒睒憑藉農夫山泉業績增長，身家增至771億美元（約6013.8億港元），連續五年位列中國首富。字節跳動創辦人張一鳴及騰訊主席馬化騰分別位列第二和第三。此榜顯示中國新興科技及飲料行業富豪持續壯大，影響力日益提升。",
+      "english_brief": "The 2025 Forbes China Rich List reveals Zhong Shanshan, founder of Nongfu Spring, as China's richest person for the fifth consecutive year, with a net worth of $77.1 billion USD (approximately HK$601.4 billion), driven by the company's strong performance. ByteDance founder Zhang Yiming and Tencent chairman Ma Huateng rank second and third respectively. The list highlights the growing influence of China's emerging tech and beverage industries.",
+      "term_clarifications": [
+        {
+          "term": "鍾睒睒 (Zhong Shanshan)",
+          "explanation": "中國知名企業家，主要從事飲用水及生物製藥業務，是農夫山泉的創辦人及董事長。"
+        },
+        {
+          "term": "農夫山泉 (Nongfu Spring)",
+          "explanation": "中國領先的瓶裝水及飲料生產企業，以其天然礦泉水聞名。"
+        },
+        {
+          "term": "字節跳動 (ByteDance)",
+          "explanation": "中國互聯網科技公司，知名產品包括抖音（TikTok海外版）等短視頻平台。"
+        },
+        {
+          "term": "騰訊 (Tencent)",
+          "explanation": "中國大型科技綜合企業，業務涵蓋社交、遊戲、金融科技等多個領域。"
+        },
+        {
+          "term": "福布斯中國富豪榜 (Forbes China Rich List)",
+          "explanation": "福布斯雜誌每年發布的中國富豪財富排名名單，反映中國富豪的財富變動和行業趨勢。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "謝清海17年持有黃金投資獲利15億元，堅持價值投資策略",
+      "chinese_brief": "惠理集團創辦人謝清海個人持有黃金及相關貴金屬投資逾17年，累計實現利潤15.2億元港元，整體回報率達144.7%。他堅持價值投資，於多次全球金融危機及地緣衝突期間逢低買入，持倉包括實體黃金、黃金ETF及金礦股。此策略反映貴金屬作為避險資產的重要地位。",
+      "english_brief": "Cheah Cheng Hye, founder of Value Partners Group, has held gold and related precious metal investments personally for over 17 years, earning HK$1.52 billion in profits with a total return of 144.7%. By adhering to a value investing approach, he bought during multiple global financial crises and geopolitical tensions. His holdings include physical gold, gold ETFs, and mining stocks, underscoring precious metals' role as a safe haven asset.",
+      "term_clarifications": [
+        {
+          "term": "謝清海 (Cheah Cheng Hye)",
+          "explanation": "香港資深基金經理人及惠理集團創辦人，以價值投資著稱。"
+        },
+        {
+          "term": "惠理集團 (Value Partners Group)",
+          "explanation": "香港的資產管理公司，專注於亞洲市場的價值型投資。"
+        },
+        {
+          "term": "黃金ETF (Gold ETF)",
+          "explanation": "以黃金為基礎資產的交易所買賣基金，方便投資者間接持有黃金。"
+        },
+        {
+          "term": "價值投資 (Value Investing)",
+          "explanation": "一種投資策略，通過尋找被低估資產來獲取長期收益。"
+        },
+        {
+          "term": "避險資產 (Safe Haven Asset)",
+          "explanation": "在市場波動或不確定時期，價值相對穩定的資產，如黃金。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "中國財政部在香港發行40億美元主權債券，三年期定價首度緊貼美債",
+      "chinese_brief": "中國財政部時隔4年再度於香港發行美元主權債券，規模40億美元，市場反應熱烈，申購超額達28.55倍。此次3年期國債定價首次與美國國債風險溢價對齊，顯示中國債券吸引力提升。分析認為，該發行將成為國有資本企業及央企低成本融資的重要參考指標。",
+      "english_brief": "After a four-year hiatus, China's Ministry of Finance reissued $4 billion USD sovereign bonds in Hong Kong with strong demand—subscription exceeded 28.55 times. The 3-year bonds were priced on par with U.S. treasury risk premiums for the first time, signaling increased attractiveness of Chinese debt. Experts suggest this issuance may set a low borrowing cost benchmark for state-owned and central enterprises in the future.",
+      "term_clarifications": [
+        {
+          "term": "中國財政部 (Ministry of Finance of China)",
+          "explanation": "中國中央政府主管財政和國債發行的部門。"
+        },
+        {
+          "term": "主權債券 (Sovereign Bonds)",
+          "explanation": "政府發行的債券，用於籌集公共資金，具有國家信用擔保。"
+        },
+        {
+          "term": "美國國債 (U.S. Treasury Bonds)",
+          "explanation": "由美國政府發行的債券，被視為全球最安全的債務工具之一。"
+        },
+        {
+          "term": "風險溢價 (Risk Premium)",
+          "explanation": "投資者為承擔額外風險而要求的超過無風險利率的收益率。"
+        },
+        {
+          "term": "央企 (Central Enterprises)",
+          "explanation": "中國中央政府直接管理的大型國有企業。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "HighPoint發布新款PCIe 5.0交換適配器Rocket 1624A，主打性價比",
+      "chinese_brief": "IT企業HighPoint於10月末推出新款PCIe 5.0交換適配器Rocket 1624A，配備48通道PCIe 5.0交換芯片PEX89048，卡身尺寸為155mm x 68.9mm。該產品提供兩組MCIO 8x下行端口，主打業界最高性價比，適合需要高速NVMe交換的應用場景。",
+      "english_brief": "IT company HighPoint launched its new PCIe 5.0 switch adapter Rocket 1624A at the end of October. Featuring a 48-lane PCIe 5.0 switch chip PEX89048 and measuring 155mm by 68.9mm, it offers two MCIO 8x downstream ports. The product targets the highest cost-performance ratio in its industry segment, suitable for high-speed NVMe switching applications.",
+      "term_clarifications": [
+        {
+          "term": "PCIe 5.0",
+          "explanation": "第五代高速外部連接標準，提供更高的數據傳輸速率。"
+        },
+        {
+          "term": "交換適配器 (Switch Adapter)",
+          "explanation": "用於管理和切換多條數據通道的硬件設備，提升傳輸效率。"
+        },
+        {
+          "term": "MCIO (Mini CTO Connector Interface)",
+          "explanation": "一種高速數據連接介面，通常用於伺服器及存儲設備。"
+        },
+        {
+          "term": "NVMe (Non-Volatile Memory Express)",
+          "explanation": "針對固態硬盤優化的
+2025-11-07 21:05:10,502 | WARNING | Batch 3 attempt 3 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "鍾睒睒連續五年成為福布斯中國首富，身家達6014億港元",       "chinese_brief": "2025年福布斯中國富豪榜公布，農夫山泉創辦人鍾睒睒憑藉農夫山泉業績增長，身家增至771億美元（約6013.8億港元），連續五年位列中國首富。字節跳動創辦人張一鳴及騰訊主席馬化騰分別位列第二和第三。此榜顯示中國新興科技及飲料行業富豪持續壯大，影響力日益提升。",       "english_brief": "The 2025 Forbes China Rich List reveals Zhong Shanshan, founder of Nongfu Spring, as China's richest person for the fifth consecutive year, with a net worth of $77.1 billion USD (approximately HK$601.4 billion), driven by the compa...)
+2025-11-07 21:05:10,502 | WARNING | Splitting batch 3 (size=4) after repeated JSON failures.
+2025-11-07 21:05:41,865 | INFO | Completed batch 3/4 (briefings=12).
+2025-11-07 21:05:58,762 | INFO | Completed batch 4/4 (briefings=14).
+2025-11-07 21:05:58,762 | INFO | OpenAI summarization completed across 4 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=29358)
+2025-11-07 21:05:58,766 | INFO | Saved digest to digests/黄金-or-贵金属-or-美元-or-美元汇率-briefing-2025-11-07_2048.md
+2025-11-07 21:06:00,681 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-07 21:06:00,730 | INFO | Summarizing 20 articles across 5 batches.
+2025-11-07 21:06:29,049 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-07 21:06:56,181 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-07 21:07:28,575 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "英国央行以5比4票数决定维持利率不变，称通胀已见顶",
+      "chinese_brief": "英国央行（BOE）最近以5票对4票决定，将基准利率维持在4%不变。尽管四位政策制定者倾向于降息，但整体判断认为通胀已达到峰值。此次决定导致英镑兑欧元下跌，兑美元涨幅被回吐，反映市场对未来货币政策路径存在分歧。此举显示BOE在平衡经济增长与通胀压力方面保持谨慎态度，投资者需关注后续通胀数据和政策动向以评估英国经济前景。",
+      "english_brief": "The Bank of England (BOE) recently voted 5-4 to keep the benchmark interest rate steady at 4%. Although four policymakers preferred a rate cut, the overall assessment is that inflation has peaked. This decision caused the pound to decline against the euro and trimmed its gains versus the dollar, reflecting market divisions on future monetary policy direction. The BOE's move indicates a cautious approach balancing economic growth and inflation pressures, with investors advised to monitor upcoming inflation data and policy signals to gauge the outlook for the UK economy.",
+      "term_clarifications": [
+        {
+          "term": "Bank of England (BOE)",
+          "explanation": "The central bank of the United Kingdom responsible for setting monetary policy, including interest rates, to achieve economic stability and control inflation. 英国的中央银行，负责制定货币政策，包括利率，以维护经济稳定和控制通胀。"
+        },
+        {
+          "term": "interest rates",
+          "explanation": "The cost of borrowing money expressed as a percentage set by central banks, which affects inflation, consumer spending, and economic growth. 利率是借贷资金的成本百分比，由央行设定，影响通胀、消费支出和经济增长。"
+        },
+        {
+          "term": "inflation",
+          "explanation": "The rate at which the general level of prices for goods and services is rising, leading to a decrease in purchasing power. 通胀是指商品和服务整体价格水平上升的速度，导致购买力下降。"
+        },
+        {
+          "term": "Sterling",
+          "explanation": "Another name for the British pound, the official currency of the United Kingdom. 英镑，英国的官方货币。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "加纳央行1盎司金币价格降至44,866.48塞地，因塞地走强",
+      "chinese_brief": "加纳央行发行的1盎司金币投资价格近期持续下降，现价约为44,866.48加纳塞地。这主要归因于加纳货币塞地兑美元的升值。央行推出金币作为储备和投资产品，价格波动反映了外汇汇率变化对贵金属投资价值的影响。对于投资者而言，货币升值可能短期内降低黄金本币价格，但也表明外汇市场信心增强。",
+      "english_brief": "The investment price of the Bank of Ghana's (BoG) 1-ounce gold coins has been steadily decreasing, currently valued at around GH¢44,866.48. This decline is primarily due to the appreciation of the Ghanaian cedi against the US dollar. The central bank launched these gold coins as a reserve and investment product, with price fluctuations reflecting how foreign exchange rate shifts impact the value of precious metals investments. For investors, currency appreciation may lower the local currency price of gold short-term but also indicates increased confidence in the forex market.",
+      "term_clarifications": [
+        {
+          "term": "Bank of Ghana (BoG)",
+          "explanation": "The central bank of Ghana responsible for monetary policy, issuing currency, and regulating the banking sector. 加纳的中央银行，负责货币政策、发行货币及监管银行业。"
+        },
+        {
+          "term": "Ghanaian cedi",
+          "explanation": "The official currency of Ghana, abbreviated as GH¢. 加纳的官方货币，缩写为GH¢。"
+        },
+        {
+          "term": "gold coins investment price",
+          "explanation": "The cost or market value of purchasing gold coins as an investment, which can fluctuate due to gold prices and currency exchange rates. 购买金币作为投资的成本或市场价值，受黄金价格和汇率波动影响。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "专家警告特朗普“厚颜无耻”大赦改革恐引怒火恶性循环",
+      "chinese_brief": "前总统特朗普近年来在赦免权行使上屡创新高，尤其第二任期内更加激进，赦免对象包括争议较大的加密货币创始人赵长鹏等。这种“厚颜无耻”的赦免做法打破传统，激发公众及政界愤怒，可能导致政治对立加剧，形成“愤怒恶性循环”。专家担忧，这种趋势损害司法公正与民主信任，未来赦免制度可能面临深刻调整或限制。",
+      "english_brief": "Former President Donald Trump has increasingly pushed the boundaries in exercising his pardon powers, particularly during his second term, including controversial figures like cryptocurrency founder Changpeng Zhao. This 'brazen' approach to pardons breaks with traditional norms and fuels public and political anger, potentially escalating polarization and creating an 'anger doom loop.' Experts warn this trend undermines judicial fairness and democratic trust, and the pardon system may face significant reforms or restrictions in the future.",
+      "term_clarifications": [
+        {
+          "term": "pardon",
+          "explanation": "An official forgiveness for a crime, usually granted by a president or governor, which can exempt a person from punishment. 赦免，通常由总统或州长授予，免除某人的刑罚。"
+        },
+        {
+          "term": "Changpeng Zhao",
+          "explanation": "Founder of Binance, a major cryptocurrency exchange, who has faced legal and regulatory controversies. 币安（Binance）创始人，著名加密货币交易所领导者，曾面临法律和监管争议。"
+        },
+        {
+          "term": "60 Minutes",
+          "explanation": "A popular American TV news magazine known for investigative journalism and interviews. 美国知名电视新闻杂志节目，以调查性报道和深度访谈著称。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "黄金价格突破4000美元，因美国政府关门担忧加剧",
+      "chinese_brief": "受美国长期政府关门影响，市场对经济前景担忧加剧，推动黄金价格突破每盎司4000美元关口。即期黄金价格上涨0.6%，12月交割的黄金期货同样上涨。这显示投资者对避险资产需求增强，反映对美国政治僵局和经济增长潜在放缓的担忧，提醒投资者关注后续政治进展及其对市场的影响。",
+      "english_brief": "Amid prolonged US government shutdown concerns, market worries over economic prospects have intensified, pushing gold prices above the $4,000 per ounce mark. Spot gold rose 0.6%, with December gold futures also gaining similarly. This trend highlights increased investor demand for safe-haven assets, reflecting fears over US political gridlock and potential slowing economic growth, signaling investors to monitor ongoing political developments and their market impact.",
+      "term_clarifications": [
+        {
+          "term": "spot gold",
+          "explanation": "The current market price at which gold can be bought or sold for immediate delivery. 黄金现货，即可以立即买卖的黄金市场价格。"
+        },
+        {
+          "term": "gold futures",
+          "explanation": "Contracts to buy or sell gold at a specified price on a future date, used for hedging or speculation. 黄金期货，是买卖双方约定在未来某一日期以特定价格交割黄金的合约，用于对冲或投机。"
+        },
+        {
+          "term": "US government shutdown",
+          "explanation": "A situation where non-essential government services stop due to failure to pass funding legislation, causing economic and political uncertainty. 美国政府关门，指因财政拨款立法未通过导致非必要政府服务停止，带来经济和政治不确定性。"
+        },
+        {
+          "term": "safe-haven assets",
+          "explanation": "Investments perceived to retain value or appreciate during times of market turbulence or uncertainty. 避险资产，指在市场动荡或不确定时期被认为能保持或增值的投资。"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期新闻涵盖英国央行维持利率不变的谨慎货币政策，加纳央行因本
+2025-11-07 21:07:28,576 | WARNING | Batch 3 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "英国央行以5比4票数决定维持利率不变，称通胀已见顶",       "chinese_brief": "英国央行（BOE）最近以5票对4票决定，将基准利率维持在4%不变。尽管四位政策制定者倾向于降息，但整体判断认为通胀已达到峰值。此次决定导致英镑兑欧元下跌，兑美元涨幅被回吐，反映市场对未来货币政策路径存在分歧。此举显示BOE在平衡经济增长与通胀压力方面保持谨慎态度，投资者需关注后续通胀数据和政策动向以评估英国经济前景。",       "english_brief": "The Bank of England (BOE) recently voted 5-4 to keep the benchmark interest rate steady at 4%. Although four policymakers preferred a rate cut, the overall assessment is that inflation has peaked. This d...)
+2025-11-07 21:07:37,974 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-07 21:08:08,062 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-07 21:08:32,109 | INFO | Completed batch 5/5 (briefings=20).
+2025-11-07 21:08:32,110 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=17105)
+2025-11-07 21:08:32,113 | INFO | Saved digest to digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-07_2048.md
+2025-11-07 21:08:44,925 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-07 21:08:44,930 | INFO | Topic run summary: {"started_at": "2025-11-07T12:48:10.407242+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-06T00:00:12.299678+00:00", "requests": [{"endpoint": "everything", "request_params": {"q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 63, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 185, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 1, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 2, "query_params": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 297, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 635, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 99, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 6, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 130, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 7, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 67096, "output_tokens": 77888, "total_tokens": 144984}}, "outputs": [{"query_index": 0, "query": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/科学-or-技术-briefing-2025-11-07_2048.md", "articles_summarized": 20, "summary_notes": "本期新闻涵盖了人工智能在职场的影响、智能手机新品发布、资本市场对科技巨头的动态预期以及电动汽车续航技术的最新进展，反映了科技与经济领域多维度的发展趋势。\n\n本期新闻涵盖芯片产业竞争格局变化、智能音频设备进展、游戏行业挑战及医疗AI合作，反映了科技行业的多元发展趋势与创新机遇。\n\n本期世界新闻摘要重点关注人工智能领域的研究进展及其应用创新。牛津大学最新研究提醒业界慎用现有AI基准测试评估结果，同时生物医药领域的AI与区块链结合展现出数据管理和资产数字化的新方向。\n\n本期简报覆盖了两个重点科技新品：优派的电竞级高刷新率显示器，以及三星采用先进冷却技术和先进工艺的移动芯片，反映出显示和芯片领域的性能和能效持续提升趋势。\n\n本期快讯涵盖了华为最新音频与无线技术突破、面向金融AI的工具包、以及索尼推动AI公平性的视觉数据集发布，反映了科技行业在音频体验、智能互联和AI伦理三个领域的重要进展。\n\n本期科技与企业动态聚焦软银计划重大半导体收购，微软推行员工匿名技术反馈机制以及半导体巨头AMD财报表现。微软匿名机制主要应对中东地区涉及云服务的争议，显示公司对员工关切的响应力度。软银与AMD的发展则反映了AI硬件市场日益激烈的竞争态势。"}, {"query_index": 1, "query": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/science-or-technology-briefing-2025-11-07_2048.md", "articles_summarized": 20, "summary_notes": "本次简报涵盖了现代科技在消费电子和军事领域的最新进展，包括华为新的无线耳机技术、动物行为研究突破，及乌克兰无人机战术训练的发展，反映技术在全球多领域的深刻影响。\n\n本期世界新闻涵盖绿色能源创新、前沿量子计算合作、就业市场挑战及半导体技术进展，体现全球科技与社会经济变革趋势。\n\n本次简报涵盖了科技创新、商业航天、家居安全及健康医学领域的重要新闻，为读者呈现全球前沿发展动态。\n\n本期摘要涵盖健康营养、人工智能企业并购、数字互动娱乐以及农业科技领域的最新发展，体现科技融合和创新驱动的全球趋势。\n\n本期简报涵盖了人工智能、经济政策、工业物联网安全及生物医药领域的最新动态，旨在为读者提供跨领域的全球视角与深入解析。"}, {"query_index": 2, "query": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/中国经济-or-中国政治-briefing-2025-11-07_2048.md", "articles_summarized": 1, "summary_notes": "本报告反映出跨国企业对中国经济的积极预期，表明中国市场依然是全球经济不确定性中的重要增长引擎。"}, {"query_index": 4, "query": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/人工智能-or-ai-or-大模型-briefing-2025-11-07_2048.md", "articles_summarized": 17, "summary_notes": "本期匯總涵蓋亞洲市場重要經濟與科技動態，一方面關注台股在外資調節背景下的反彈走勢，另一方面介紹了具備軍規防護與創新功能的新興戶外手機，反映資本市場與消費電子產品雙重發展趨勢。\n\n本期简报涵盖了科技领域的两大热点：小米即将发布的高性价比平板产品POCO Pad X1，以及谷歌在澳大利亚战略要点圣诞岛建设人工智能数据中心的计划，体现了科技巨头在消费电子和国家安全方面的双重布局。\n\n本期简报涵盖了人工智能与高性能计算、游戏笔记本新品发布、汽车智能升级以及科技企业重磅合作四大主题，展示了2025年科技创新与产业融合的趋势。\n\n本期摘要涵蓋了2025年11月6日亞洲及科技市場的主要動態，強調AI技術推動下的半導體產業成長、國防無人機智能化進展、全球AI晶片競爭及台股財報行情。適合關注新興科技與投資趨勢的讀者。\n\n本期简报涵盖台湾制造业传统与新兴领域的动态，包括工具机产业的转型困境，资本市场市值型ETF的优异表现，散热厂商健策技术升级带来的股价走强，以及勤诚受益AI数据中心需求增长的财务表现，体现了台湾经济在产业升级与资本市场活跃下的多重机遇与挑战。"}, {"query_index": 5, "query": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/artificial-intelligence-or-ai-or-large-language-model-or-llm-briefing-2025-11-07_2048.md", "articles_summarized": 20, "summary_notes": "本期新闻涵盖了最新的软件开发工具包更新、人工智能成本优化解决方案、行业多样性的重要性以及超高净值家族办公室在AI领域的投资动态，体现了技术进步与资本市场的紧密联系。\n\n本期简报涵盖了人工智能领域的最新动态，重点关注谷歌利用Gemini AI提升地图导航体验，以及英伟达CEO黄仁勋对中国在AI竞赛中潜力的评价。此外，报告还介绍了由英伟达支持的Vast Data与CoreWeave达成的巨额合作，体现出AI基础设施建设加速发展的行业趋势。\n\n本期简报涵盖人工智能领域最新进展，重点包括行业领先人物获奖、企业业绩提升、AI技术的安全风险以及政策层面支持AI训练的呼声，展现AI技术在推动社会变革及带来挑战方面的双重影响。\n\n本期简报涵盖了代理型人工智能技术的发展及其在印度市场的快速扩展，亚马逊因其AI和云计算业务表现强劲的市值增长，以及欧盟拟集中AI监管的治理动态，体现了人工智能技术及其监管在全球范围内的重要性不断提升。\n\n本轮简报涵盖人工智能领域的最新融资动态、企业合作及教育创新，反映了AI技术及产业生态的持续快速发展，以及相关政策与人才培养的积极响应。"}, {"query_index": 6, "query": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/黄金-or-贵金属-or-美元-or-美元汇率-briefing-2025-11-07_2048.md", "articles_summarized": 14, "summary_notes": "本次简报涵盖了房地产、半导体、科技与硬件新品领域的最新发展，反映了企业应对财务压力、技术升级及市场扩张的多方面动态。\n\n本期简报涵盖了科技新品、法律审判与国际商业交易，帮助读者了解全球最新动态及其潜在影响。\n\n本期要聞關注中國頂尖富豪的財富變化及價值投資者於貴金屬市場的長期成果，反映當前全球經濟環境中資本與避險資產的動態。\n\n此期新闻涵盖中国主权债券市场的重大突破及高性能PCIe硬件的最新发布，反映全球金融和科技领域的双重发展趋势。\n\n本期简报涵盖了电动车和生物科技领域的最新重要进展，分别体现了传统制造业与高科技产业在数字化和智能化转型中的快速步伐。"}, {"query_index": 7, "query": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-07_2048.md", "articles_summarized": 20, "summary_notes": "本次简报涵盖了快餐行业针对年轻一代的市场竞赛、加密货币在巴西的应用突破、圣经预言的现代宗教解读，以及当前股市估值风险提示，展现了经济、科技、文化和宗教领域的重要动态。\n\n本期新闻涵盖体育、经济、科技等多个领域，反映了全球动态中印度体育实力提升、美国经济波动加剧、加密货币市场观点分化以及科技巨头公司英伟达的发展趋势。\n\n本期摘要涵盖了全球多个重要事件，从英国央行的利率决议，到加纳金币价格变动，再到美国政治赦免争议及黄金市场波动，反映出当前国际经济与政治格局的复杂变化。\n\n本日报告汇集了涉及全球货币市场、矿业资源勘探以及央行黄金储备动态的多条重要新闻，为投资者与关注经济动态的读者提供了最新核心信息。\n\n本期世界新闻简报涵盖美国政治形象变动、天文新发现、加密货币政策影响及非洲货币市场走势，反映全球不同领域的动态与趋势。"}]}
