@@ -11721,3 +11721,778 @@ smtplib.SMTPResponseException: (-1, b'\x00\x00\x00')
 2025-11-07 21:08:32,113 | INFO | Saved digest to digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-07_2048.md
 2025-11-07 21:08:44,925 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
 2025-11-07 21:08:44,930 | INFO | Topic run summary: {"started_at": "2025-11-07T12:48:10.407242+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-06T00:00:12.299678+00:00", "requests": [{"endpoint": "everything", "request_params": {"q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 63, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 185, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 1, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 2, "query_params": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 297, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 635, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 99, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 6, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-06T00:00:12.299678+00:00"}, "status": "ok", "total_results": 130, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 7, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 67096, "output_tokens": 77888, "total_tokens": 144984}}, "outputs": [{"query_index": 0, "query": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/科学-or-技术-briefing-2025-11-07_2048.md", "articles_summarized": 20, "summary_notes": "本期新闻涵盖了人工智能在职场的影响、智能手机新品发布、资本市场对科技巨头的动态预期以及电动汽车续航技术的最新进展，反映了科技与经济领域多维度的发展趋势。\n\n本期新闻涵盖芯片产业竞争格局变化、智能音频设备进展、游戏行业挑战及医疗AI合作，反映了科技行业的多元发展趋势与创新机遇。\n\n本期世界新闻摘要重点关注人工智能领域的研究进展及其应用创新。牛津大学最新研究提醒业界慎用现有AI基准测试评估结果，同时生物医药领域的AI与区块链结合展现出数据管理和资产数字化的新方向。\n\n本期简报覆盖了两个重点科技新品：优派的电竞级高刷新率显示器，以及三星采用先进冷却技术和先进工艺的移动芯片，反映出显示和芯片领域的性能和能效持续提升趋势。\n\n本期快讯涵盖了华为最新音频与无线技术突破、面向金融AI的工具包、以及索尼推动AI公平性的视觉数据集发布，反映了科技行业在音频体验、智能互联和AI伦理三个领域的重要进展。\n\n本期科技与企业动态聚焦软银计划重大半导体收购，微软推行员工匿名技术反馈机制以及半导体巨头AMD财报表现。微软匿名机制主要应对中东地区涉及云服务的争议，显示公司对员工关切的响应力度。软银与AMD的发展则反映了AI硬件市场日益激烈的竞争态势。"}, {"query_index": 1, "query": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/science-or-technology-briefing-2025-11-07_2048.md", "articles_summarized": 20, "summary_notes": "本次简报涵盖了现代科技在消费电子和军事领域的最新进展，包括华为新的无线耳机技术、动物行为研究突破，及乌克兰无人机战术训练的发展，反映技术在全球多领域的深刻影响。\n\n本期世界新闻涵盖绿色能源创新、前沿量子计算合作、就业市场挑战及半导体技术进展，体现全球科技与社会经济变革趋势。\n\n本次简报涵盖了科技创新、商业航天、家居安全及健康医学领域的重要新闻，为读者呈现全球前沿发展动态。\n\n本期摘要涵盖健康营养、人工智能企业并购、数字互动娱乐以及农业科技领域的最新发展，体现科技融合和创新驱动的全球趋势。\n\n本期简报涵盖了人工智能、经济政策、工业物联网安全及生物医药领域的最新动态，旨在为读者提供跨领域的全球视角与深入解析。"}, {"query_index": 2, "query": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/中国经济-or-中国政治-briefing-2025-11-07_2048.md", "articles_summarized": 1, "summary_notes": "本报告反映出跨国企业对中国经济的积极预期，表明中国市场依然是全球经济不确定性中的重要增长引擎。"}, {"query_index": 4, "query": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/人工智能-or-ai-or-大模型-briefing-2025-11-07_2048.md", "articles_summarized": 17, "summary_notes": "本期匯總涵蓋亞洲市場重要經濟與科技動態，一方面關注台股在外資調節背景下的反彈走勢，另一方面介紹了具備軍規防護與創新功能的新興戶外手機，反映資本市場與消費電子產品雙重發展趨勢。\n\n本期简报涵盖了科技领域的两大热点：小米即将发布的高性价比平板产品POCO Pad X1，以及谷歌在澳大利亚战略要点圣诞岛建设人工智能数据中心的计划，体现了科技巨头在消费电子和国家安全方面的双重布局。\n\n本期简报涵盖了人工智能与高性能计算、游戏笔记本新品发布、汽车智能升级以及科技企业重磅合作四大主题，展示了2025年科技创新与产业融合的趋势。\n\n本期摘要涵蓋了2025年11月6日亞洲及科技市場的主要動態，強調AI技術推動下的半導體產業成長、國防無人機智能化進展、全球AI晶片競爭及台股財報行情。適合關注新興科技與投資趨勢的讀者。\n\n本期简报涵盖台湾制造业传统与新兴领域的动态，包括工具机产业的转型困境，资本市场市值型ETF的优异表现，散热厂商健策技术升级带来的股价走强，以及勤诚受益AI数据中心需求增长的财务表现，体现了台湾经济在产业升级与资本市场活跃下的多重机遇与挑战。"}, {"query_index": 5, "query": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/artificial-intelligence-or-ai-or-large-language-model-or-llm-briefing-2025-11-07_2048.md", "articles_summarized": 20, "summary_notes": "本期新闻涵盖了最新的软件开发工具包更新、人工智能成本优化解决方案、行业多样性的重要性以及超高净值家族办公室在AI领域的投资动态，体现了技术进步与资本市场的紧密联系。\n\n本期简报涵盖了人工智能领域的最新动态，重点关注谷歌利用Gemini AI提升地图导航体验，以及英伟达CEO黄仁勋对中国在AI竞赛中潜力的评价。此外，报告还介绍了由英伟达支持的Vast Data与CoreWeave达成的巨额合作，体现出AI基础设施建设加速发展的行业趋势。\n\n本期简报涵盖人工智能领域最新进展，重点包括行业领先人物获奖、企业业绩提升、AI技术的安全风险以及政策层面支持AI训练的呼声，展现AI技术在推动社会变革及带来挑战方面的双重影响。\n\n本期简报涵盖了代理型人工智能技术的发展及其在印度市场的快速扩展，亚马逊因其AI和云计算业务表现强劲的市值增长，以及欧盟拟集中AI监管的治理动态，体现了人工智能技术及其监管在全球范围内的重要性不断提升。\n\n本轮简报涵盖人工智能领域的最新融资动态、企业合作及教育创新，反映了AI技术及产业生态的持续快速发展，以及相关政策与人才培养的积极响应。"}, {"query_index": 6, "query": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/黄金-or-贵金属-or-美元-or-美元汇率-briefing-2025-11-07_2048.md", "articles_summarized": 14, "summary_notes": "本次简报涵盖了房地产、半导体、科技与硬件新品领域的最新发展，反映了企业应对财务压力、技术升级及市场扩张的多方面动态。\n\n本期简报涵盖了科技新品、法律审判与国际商业交易，帮助读者了解全球最新动态及其潜在影响。\n\n本期要聞關注中國頂尖富豪的財富變化及價值投資者於貴金屬市場的長期成果，反映當前全球經濟環境中資本與避險資產的動態。\n\n此期新闻涵盖中国主权债券市场的重大突破及高性能PCIe硬件的最新发布，反映全球金融和科技领域的双重发展趋势。\n\n本期简报涵盖了电动车和生物科技领域的最新重要进展，分别体现了传统制造业与高科技产业在数字化和智能化转型中的快速步伐。"}, {"query_index": 7, "query": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-07_2048.md", "articles_summarized": 20, "summary_notes": "本次简报涵盖了快餐行业针对年轻一代的市场竞赛、加密货币在巴西的应用突破、圣经预言的现代宗教解读，以及当前股市估值风险提示，展现了经济、科技、文化和宗教领域的重要动态。\n\n本期新闻涵盖体育、经济、科技等多个领域，反映了全球动态中印度体育实力提升、美国经济波动加剧、加密货币市场观点分化以及科技巨头公司英伟达的发展趋势。\n\n本期摘要涵盖了全球多个重要事件，从英国央行的利率决议，到加纳金币价格变动，再到美国政治赦免争议及黄金市场波动，反映出当前国际经济与政治格局的复杂变化。\n\n本日报告汇集了涉及全球货币市场、矿业资源勘探以及央行黄金储备动态的多条重要新闻，为投资者与关注经济动态的读者提供了最新核心信息。\n\n本期世界新闻简报涵盖美国政治形象变动、天文新发现、加密货币政策影响及非洲货币市场走势，反映全球不同领域的动态与趋势。"}]}
+2025-11-09 08:06:38,314 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-09 08:06:39,138 | INFO | NewsAPI returned 29 articles (status=ok, remaining=None)
+2025-11-09 08:06:39,138 | INFO | Retained 28 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-09 08:06:39,138 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-09 08:06:39,370 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-09 08:06:39,370 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-09 08:06:39,370 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-09 08:06:39,591 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-09 08:06:39,591 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-09 08:06:39,591 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-09 08:06:39,820 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-09 08:06:39,820 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-09 08:06:40,032 | INFO | Summarizing 28 articles across 7 batches.
+2025-11-09 08:06:57,550 | INFO | Completed batch 1/7 (briefings=4).
+2025-11-09 08:07:27,739 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "2026格莱美提名引发争议，The Weeknd等知名艺人意外落选",
+      "chinese_brief": "2026年格莱美奖提名公布，引发了广泛关注和争议。著名歌手The Weeknd在与格莱美录音学院的公开争执后回归，但这次依然遭遇提名缺席。与此同时，硬核乐队Turnstile获得五项提名，新兴流行音乐作品《Golden》和音乐剧《邪恶》（Wicked）的作品也获得提名，显示音乐风格和类型的多元化。这一局势反映了音乐界对主流奖项评选标准的质疑及创新力量的崛起。",
+      "english_brief": "The 2026 Grammy nominations sparked widespread attention and controversy. Notable artist The Weeknd, despite returning after a public feud with the Recording Academy, was again snubbed. Meanwhile, hardcore band Turnstile received five nominations, and emerging pop song \"Golden\" as well as the musical \"Wicked\" secured nods, highlighting diversity in musical styles and genres. This situation reflects ongoing questioning of mainstream awards criteria and the rise of innovative music forces.",
+      "term_clarifications": [
+        {
+          "term": "The Weeknd",
+          "explanation": "A Canadian singer, songwriter, and record producer known for his distinctive voice and hits like 'Blinding Lights'. He had a public dispute with the Recording Academy over Grammy nominations.",
+          "explanation_zh": "加拿大歌手、词曲作者及制作人，以其独特嗓音和《Blinding Lights》等热门歌曲著称。曾与格莱美录音学院发生公开争执。"
+        },
+        {
+          "term": "Recording Academy",
+          "explanation": "An American organization of musicians, producers, and other music professionals that organizes the Grammy Awards.",
+          "explanation_zh": "美国音乐人、制作人等音乐专业人士组成的机构，负责举办格莱美奖。"
+        },
+        {
+          "term": "Turnstile",
+          "explanation": "An emerging American hardcore punk band receiving critical acclaim and Grammy nominations in 2026.",
+          "explanation_zh": "一支崭露头角的美国硬核朋克乐队，于2026年获得广泛认可及格莱美提名。"
+        },
+        {
+          "term": "\"Golden\" and \"Defying Gravity\"",
+          "explanation": "'Golden' is a song from 'KPop Demon Hunters', recognized for Song of the Year and pop duo nominations; 'Defying Gravity' is a song from the musical 'Wicked', also nominated in the pop category.",
+          "explanation_zh": "《Golden》出自《KPop Demon Hunters》，获年度歌曲及流行二重唱提名；《Defying Gravity》出自音乐剧《邪恶》（Wicked），同样获得流行类提名。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "埃隆·马斯克财富蒸发100亿美元 特斯拉股价下跌背后原因",
+      "chinese_brief": "埃隆·马斯克身价减少约100亿美元，原因是特斯拉股价下跌3.6%，股价连续两天下跌。在特斯拉股东对一项可能价值高达1万亿美元的薪酬计划投票前夕，超过75%的股东批准了该计划。股价波动反映了市场对巨额股权激励计划的复杂反应，以及投资者对公司未来发展的关切。",
+      "english_brief": "Elon Musk’s net worth dropped by approximately $10 billion due to Tesla’s 3.6% stock decline, continuing a two-day downward streak. Over 75% of Tesla shareholders approved a compensation plan potentially worth up to $1 trillion ahead of the vote. The stock movement reflects the market’s complex reaction to massive equity incentive schemes and investor concerns about the company’s future.",
+      "term_clarifications": [
+        {
+          "term": "Elon Musk",
+          "explanation": "Entrepreneur and CEO of Tesla and SpaceX, known as one of the wealthiest individuals globally.",
+          "explanation_zh": "企业家，特斯拉和SpaceX的首席执行官，被认为是全球最富有的人之一。"
+        },
+        {
+          "term": "Tesla",
+          "explanation": "An American electric vehicle and clean energy company led by Elon Musk.",
+          "explanation_zh": "由埃隆·马斯克领导的美国电动汽车及清洁能源公司。"
+        },
+        {
+          "term": "equity incentive plan",
+          "explanation": "A compensation scheme where employees or executives receive shares or options in the company to motivate performance and align interests with shareholders.",
+          "explanation_zh": "一种通过向员工或高管授予公司股票或期权以激励绩效并使其利益与股东一致的薪酬计划。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "美国最高法院审议推翻全国同性婚姻合法判决的上诉案",
+      "chinese_brief": "美国最高法院正在讨论是否推翻此前确立同性婚姻在全国范围内合法地位的里程碑判决。一项上诉请求已被列入法官秘密会议议程，此举可能对LGBTQ+权利产生重大影响。该案件反映出美国社会和司法界关于性取向平权的激烈争论和未来的不确定性。",
+      "english_brief": "The U.S. Supreme Court is deliberating whether to overturn the landmark ruling that legalized same-sex marriage nationwide. An appeal has been placed on the justices’ closed-door conference agenda, which could significantly impact LGBTQ+ rights. This case highlights intense debates within American society and judiciary over sexual orientation equality and an uncertain future.",
+      "term_clarifications": [
+        {
+          "term": "Supreme Court",
+          "explanation": "The highest judicial authority in the United States responsible for interpreting the Constitution and federal law.",
+          "explanation_zh": "美国最高司法机构，负责解释宪法及联邦法律。"
+        },
+        {
+          "term": "same-sex marriage",
+          "explanation": "The legal recognition of marriage between two individuals of the same sex.",
+          "explanation_zh": "法律承认同性之间的婚姻关系。"
+        },
+        {
+          "term": "LGBTQ+",
+          "explanation": "An acronym representing Lesbian, Gay, Bisexual, Transgender, Queer or Questioning, and others; a community advocating for sexual and gender minority rights.",
+          "explanation_zh": "代表女同性恋、男同性恋、双性恋、跨性别、酷儿或质疑者等群体，倡导性少数群体权利。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "《Pluribus》揭秘：文斯·吉利根与瑞亚·西霍恩谈人工智能及剧集解析",
+      "chinese_brief": "苹果电视新剧《Pluribus》首两集引发讨论，创作者文斯·吉利根和演员瑞亚·西霍恩详细解析剧情，并表达对人工智能影响的担忧。吉利根直言硅谷对世界造成的负面影响，这体现了科技进步与社会伦理的冲突。剧集通过紧张剧情折射时代焦虑，引发观众和业界对AI发展的深刻反思。",
+      "english_brief": "The first two episodes of Apple TV’s new series \"Pluribus\" sparked discussion as creator Vince Gilligan and actress Rhea Seehorn unpack the plot and voice concerns over artificial intelligence. Gilligan bluntly criticized Silicon Valley’s negative impact on the world, reflecting conflicts between technological advancement and social ethics. The show’s intense storyline mirrors contemporary anxieties, provoking deep reflection on AI development among audiences and industry alike.",
+      "term_clarifications": [
+        {
+          "term": "Pluribus",
+          "explanation": "A new TV series on Apple TV that explores themes involving artificial intelligence and societal issues.",
+          "explanation_zh": "苹果电视新剧，探讨人工智能及社会问题主题。"
+        },
+        {
+          "term": "Vince Gilligan",
+          "explanation": "A renowned television writer and producer, best known for creating 'Breaking Bad' and 'Better Call Saul'.",
+          "explanation_zh": "著名电视编剧和制作人，代表作为《绝命毒师》和《风骚律师》。"
+        },
+        {
+          "term": "Rhea Seehorn",
+          "explanation": "An actress famous for her role in 'Better Call Saul', also featured in 'Pluribus'.",
+          "explanation_zh": "因《风骚律师》而闻名的女演员，在《Pluribus》中有重要表演。"
+        },
+        {
+          "term": "Silicon Valley
+2025-11-09 08:07:27,740 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "2026格莱美提名引发争议，The Weeknd等知名艺人意外落选",       "chinese_brief": "2026年格莱美奖提名公布，引发了广泛关注和争议。著名歌手The Weeknd在与格莱美录音学院的公开争执后回归，但这次依然遭遇提名缺席。与此同时，硬核乐队Turnstile获得五项提名，新兴流行音乐作品《Golden》和音乐剧《邪恶》（Wicked）的作品也获得提名，显示音乐风格和类型的多元化。这一局势反映了音乐界对主流奖项评选标准的质疑及创新力量的崛起。",       "english_brief": "The 2026 Grammy nominations sparked widespread attention and controversy. Notable artist The Weeknd, despite returning after a public feud with the Recording Academy, was aga...)
+2025-11-09 08:07:51,414 | INFO | Completed batch 2/7 (briefings=8).
+2025-11-09 08:08:24,694 | INFO | Completed batch 3/7 (briefings=12).
+2025-11-09 08:08:45,900 | INFO | Completed batch 4/7 (briefings=16).
+2025-11-09 08:09:11,270 | INFO | Completed batch 5/7 (briefings=20).
+2025-11-09 08:09:33,018 | INFO | Completed batch 6/7 (briefings=24).
+2025-11-09 08:09:50,387 | INFO | Completed batch 7/7 (briefings=28).
+2025-11-09 08:09:50,388 | INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=21926)
+2025-11-09 08:09:50,390 | INFO | Saved digest to digests/headline-briefing-2025-11-09_0809.md
+2025-11-09 08:09:52,185 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-09 08:09:52,189 | INFO | Headline run summary: {"started_at": "2025-11-09T00:06:38.314629+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-07T12:46:13.499909+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "pageSize": 30}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 8629, "output_tokens": 13297, "total_tokens": 21926}}, "outputs": {"digest_path": "digests/headline-briefing-2025-11-09_0809.md", "articles_summarized": 28, "summary_notes": "当前美国政府部分停摆导致多项社会福利项目受影响，特别是SNAP食品援助计划的发放滞后，加剧了低收入群体的生活压力。同时，政治僵局和司法介入也对政府职能和政策实施构成重大挑战。\n\n本期新闻涵盖娱乐业的奖项争议、科技巨头财务动向、美国最高法院的重要法律审议，以及新兴电视剧对人工智能的社会反思，展示了全球多个领域的热点动态。\n\n本期简报涵盖体育、消费品牌争议、天文新发现及半导体技术四大领域，呈现多元化的国际动态。\n\n本期新闻涵盖了娱乐、动物保护、体育及安全等多个领域，反映出社会多样化的关注点和挑战，帮助读者了解国际最新动态及其潜在影响。\n\n本次简报涵盖反犹太主义监控项目启动、美国职棒自由球员市场动态、因政府停摆引发的航班取消安全问题，以及美国年轻成年人口过早死亡率上升的健康社会议题，反映出不同领域的社会和政策挑战。\n\n本期新闻涵盖美国经济就业走势、华尔街股市波动、NFL幻想足球动态以及公共卫生领域流感疫苗研发挑战，反映了不同领域的关键发展与潜在风险。\n\n本期新闻涵盖了影视文化领域的重磅作品发布、美国民主党内部关键人物的政治影响、新兴航天国家的火箭发展动向，以及非洲苏丹复杂且受到外部势力干预的冲突局势，为读者提供多维度的全球时事视角。"}}
+2025-11-09 08:09:52,190 | INFO | Requesting everything with params={'q': '("科学" OR "技术")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-07T12:48:10.407242+00:00'}
+2025-11-09 08:09:52,843 | INFO | NewsAPI returned 15 articles (status=ok, remaining=None)
+2025-11-09 08:09:52,843 | INFO | Retained 15 articles for endpoint=everything, language=zh after filtering.
+2025-11-09 08:09:52,843 | INFO | Requesting everything with params={'q': '("Science" OR "Technology")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-07T12:48:10.407242+00:00'}
+2025-11-09 08:09:53,284 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-09 08:09:53,284 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-09 08:09:53,285 | INFO | Requesting everything with params={'q': '("中国经济") OR ("中国政治")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-07T12:48:10.407242+00:00'}
+2025-11-09 08:09:53,513 | INFO | NewsAPI returned 2 articles (status=ok, remaining=None)
+2025-11-09 08:09:53,513 | INFO | Retained 2 articles for endpoint=everything, language=zh after filtering.
+2025-11-09 08:09:53,513 | INFO | Requesting everything with params={'q': '("China Economy") OR ("China Politics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-07T12:48:10.407242+00:00'}
+2025-11-09 08:09:53,727 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-09 08:09:53,728 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-09 08:09:53,728 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-07T12:48:10.407242+00:00'}
+2025-11-09 08:09:54,063 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-09 08:09:54,063 | INFO | Retained 19 articles for endpoint=everything, language=zh after filtering.
+2025-11-09 08:09:54,063 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-07T12:48:10.407242+00:00'}
+2025-11-09 08:09:54,379 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-09 08:09:54,379 | INFO | Retained 19 articles for endpoint=everything, language=en after filtering.
+2025-11-09 08:09:54,379 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属" OR "美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-07T12:48:10.407242+00:00'}
+2025-11-09 08:09:54,640 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-09 08:09:54,641 | INFO | Retained 16 articles for endpoint=everything, language=zh after filtering.
+2025-11-09 08:09:54,641 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal" OR "USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-07T12:48:10.407242+00:00'}
+2025-11-09 08:09:55,044 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-09 08:09:55,045 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-09 08:09:55,105 | INFO | Summarizing 15 articles across 4 batches.
+2025-11-09 08:10:21,824 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "史上最亮黑洞耀斑惊艳宇宙，亮度超太阳10万亿倍",
+      "chinese_brief": "来自美国加州理工学院的天文学家观测到迄今为止最强烈且最遥远的黑洞耀斑，这次事件源自一颗 30 倍太阳质量的大恒星，被超大质量黑洞撕裂吞噬，释放的光芒比太阳亮约10万亿倍。这一“宇宙烟花秀”不仅为研究黑洞与恒星相互作用提供了珍贵数据，还展示了极端天体物理现象的震撼能量。由于光速限制，观测到的是多年前发生的宇宙事件。",
+      "english_brief": "Astronomers from Caltech have observed the most intense and distant black hole flare ever recorded, caused by a massive star 30 times the Sun’s mass torn apart by a supermassive black hole. The flare’s brightness exceeded the Sun’s by about 10 trillion times, representing a spectacular cosmic “fireworks show.” This event offers valuable insights into black hole-star interactions and extreme astrophysical phenomena. Due to light speed limits, what we see happened many years ago.",
+      "term_clarifications": [
+        {
+          "term": "黑洞耀斑 (black hole flare)",
+          "explanation": "黑洞吸积物质过程中产生的剧烈能量爆发，通常伴随高能光辐射。",
+          "explanation_en": "A sudden, intense burst of energy from a black hole as it accretes matter, typically emitting high-energy radiation."
+        },
+        {
+          "term": "超大质量黑洞 (supermassive black hole)",
+          "explanation": "存在于大多数星系中心，质量为太阳数百万至数十亿倍的黑洞。",
+          "explanation_en": "A black hole with a mass millions to billions times that of the Sun, typically found at galaxy centers."
+        },
+        {
+          "term": "光速限制 (speed of light limitation)",
+          "explanation": "信息和光传播速度的极限，使我们看到的宇宙事件是过去发生的。",
+          "explanation_en": "The maximum speed at which information and light travel, meaning observed cosmic events occurred in the past."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "中国首艘电磁弹射航母“福建舰”入列，科技新品抢眼",
+      "chinese_brief": "2025年11月8日，中国首艘采用电磁弹射技术的航母“福建舰”正式加入海军服役，标志着中国航母技术迈入新阶段。同期，零跑汽车推出全新纯电动车Lafa 5，续航提升至605公里，预售价约10.58万至13.18万元。此外，苹果发布了iOS/iPadOS 26.2公测版，带来多项新功能，显示科技领域持续快速创新。",
+      "english_brief": "On November 8, 2025, China officially commissioned its first aircraft carrier featuring electromagnetic catapult technology, the Fujian, marking a technological leap in Chinese naval capabilities. Concurrently, Leapmotor launched its new electric car Lafa 5, with an extended range of up to 605 km priced between about 105,800 to 131,800 yuan. Meanwhile, Apple released the iOS/iPadOS 26.2 public beta with several new features, reflecting continuing fast innovation in technology.",
+      "term_clarifications": [
+        {
+          "term": "电磁弹射 (electromagnetic catapult)",
+          "explanation": "利用电磁力发射舰载飞机，替代传统蒸汽弹射，提高效率和性能。",
+          "explanation_en": "A system using electromagnetic forces to launch carrier-based aircraft, replacing steam catapults for better efficiency and performance."
+        },
+        {
+          "term": "福建舰 (Fujian)",
+          "explanation": "中国首艘装备电磁弹射系统的航母，体现中国航母现代化水平。",
+          "explanation_en": "China’s first aircraft carrier equipped with electromagnetic catapult systems, showcasing modernization of naval forces."
+        },
+        {
+          "term": "零跑 Lafa 5 (Leapmotor Lafa 5)",
+          "explanation": "中国零跑汽车推出的中高端纯电运动轿车，续航里程较长。",
+          "explanation_en": "A new mid-to-high-end pure electric sports sedan launched by Chinese automaker Leapmotor, offering long driving ranges."
+        },
+        {
+          "term": "iOS / iPadOS 26.2",
+          "explanation": "苹果公司为iPhone和iPad发布的新操作系统版本，包含多项功能更新。",
+          "explanation_en": "A new version of Apple’s operating systems for iPhone and iPad featuring multiple feature improvements."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "苹果原创内容大爆发，《F1：狂飙飞车》等获格莱美提名",
+      "chinese_brief": "美国国家录音艺术与科学学院公布第68届格莱美提名，苹果旗下流媒体服务Apple TV借助原创影视作品中的音乐表现斩获四项提名，彰显其在内容创作领域的跨界实力。《F1：狂飙飞车》连续获“最佳舞曲流行录音”等三个提名，体现苹果对优质原创内容的深度投入与影响力提升。",
+      "english_brief": "The Recording Academy announced the 68th Grammy nominations, with Apple’s streaming service Apple TV securing four nods thanks to its original audiovisual content’s musical achievements. The film “F1: Drive to Survive” earned three nominations, including Best Dance/Electronic Recording, highlighting Apple’s growing influence and commitment in original content creation.",
+      "term_clarifications": [
+        {
+          "term": "格莱美奖 (Grammy Awards)",
+          "explanation": "美国最权威的音乐颁奖典礼，表彰年度音乐杰出作品。",
+          "explanation_en": "The most prestigious music awards in the USA, recognizing outstanding musical achievements annually."
+        },
+        {
+          "term": "Apple TV",
+          "explanation": "苹果公司的流媒体视频服务平台，提供原创影视内容。",
+          "explanation_en": "Apple’s streaming video service offering original films and series."
+        },
+        {
+          "term": "《F1：狂飙飞车》 (F1: Drive to Survive)",
+          "explanation": "一部关于一级方程式赛车的纪录片/电影，因其激烈剧情和音乐获得认可。",
+          "explanation_en": "A documentary/film about Formula 1 racing, recognized for its intense storytelling and music."
+        },
+        {
+          "term": "最佳舞曲流行录音 (Best Dance/Electronic Recording)",
+          "explanation": "格莱美奖中的一个类别，评选最佳舞曲或电子音乐作品。",
+          "explanation_en": "A Grammy category honoring the best dance or electronic music recordings."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "FBI调查网页快照服务Archive.today背后匿名所有者",
+      "chinese_brief": "作为网络档案备份工具，Archive.today因可以绕过付费墙保存网页快照而备受关注。近期，FBI对该网站匿名所有者展开刑事调查，要求其加拿大域名注册商Tucows提供详细客户信息，包括身份、账单和网络活动记录。这一行动反映出美国执法机构在互联网监管和数据隐私间寻求平衡的复杂态势。",
+      "english_brief": "Archive.today, a web snapshot service often used to bypass paywalls, is under criminal investigation by the FBI concerning its anonymous ownership. The FBI has subpoenaed Tucows, the Canadian domain registrar, demanding extensive client data including identity, billing, and online activity. This case highlights the complex balance between law enforcement oversight and internet privacy issues.",
+      "term_clarifications": [
+        {
+          "term": "Archive.today",
+          "explanation": "提供永久网页快照保存的网络服务，内容可绕过付费墙访问。",
+          "explanation_en": "An online service that saves permanent snapshots of web pages, often used to circumvent paywalls."
+        },
+        {
+          "term": "FBI",
+          "explanation": "美国联邦调查局，负责国内刑事调查与安全事务的执法机构。",
+          "explanation_en": "The Federal Bureau of Investigation, a U.S. agency handling domestic criminal investigations and security."
+        },
+        {
+          "term": "Tucows",
+          "explanation": "一家加拿大互联网服务商和域名注册机构，负责管理域名注册。",
+          "explanation_en": "A Canadian internet services and domain registrar company responsible for domain management."
+        },
+        {
+          "term": "付费墙 (
+2025-11-09 08:10:21,825 | WARNING | Batch 1 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "史上最亮黑洞耀斑惊艳宇宙，亮度超太阳10万亿倍",       "chinese_brief": "来自美国加州理工学院的天文学家观测到迄今为止最强烈且最遥远的黑洞耀斑，这次事件源自一颗 30 倍太阳质量的大恒星，被超大质量黑洞撕裂吞噬，释放的光芒比太阳亮约10万亿倍。这一“宇宙烟花秀”不仅为研究黑洞与恒星相互作用提供了珍贵数据，还展示了极端天体物理现象的震撼能量。由于光速限制，观测到的是多年前发生的宇宙事件。",       "english_brief": "Astronomers from Caltech have observed the most intense and distant black hole flare ever recorded, caused by a massive star 30 times the Sun’s mass torn apart by a supermassive black hole. The flare’s brigh...)
+2025-11-09 08:10:46,485 | INFO | Completed batch 1/4 (briefings=4).
+2025-11-09 08:11:13,738 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "三星发布顶级10.7Gbps LPDDR6内存，开启移动设备新纪元",
+      "chinese_brief": "三星最新研发的LPDDR6内存采用先进的12纳米工艺，数据传输速率高达10.7Gbps，主要面向移动设备市场。通过增加I/O通道和引入动态功耗调节技术，这款内存不仅提升了性能，还有效降低了能耗。此产品还集成了数据安全特性，保障应用完整性。值得关注的是，三星的LPDDR5X也已达到相同速率，显示出新旧内存技术间的渐进过渡趋势，对高性能手机和平板电脑的发展具有重要推动作用。",
+      "english_brief": "Samsung’s latest LPDDR6 memory, manufactured with advanced 12nm technology, achieves data transfer speeds of up to 10.7Gbps, targeting the mobile device market. By increasing I/O channels and incorporating dynamic power adjustment, this memory improves performance while reducing power consumption. Integrated security features ensure data integrity across applications. Notably, Samsung’s optimized LPDDR5X has also reached this speed, illustrating a gradual transition between memory generations. This advancement is poised to significantly enhance performance in high-end smartphones and tablets.",
+      "term_clarifications": [
+        {
+          "term": "LPDDR6",
+          "explanation": "Low Power Double Data Rate 6，是一种用于移动设备的最新一代低功耗内存技术，提供更高的速度和更低的功耗。 Low Power Double Data Rate 6 (LPDDR6) is the latest generation of low-power memory technology for mobile devices, offering higher speeds and reduced power consumption."
+        },
+        {
+          "term": "12纳米工艺",
+          "explanation": "指芯片制造的工艺节点，12纳米代表芯片内部晶体管和电路的尺寸，尺寸越小，芯片性能和功耗效率通常越高。 The 12nm process node refers to the manufacturing technology feature size within chips; smaller nanometer sizes generally lead to better performance and power efficiency."
+        },
+        {
+          "term": "输入/输出通道（I/O通道）",
+          "explanation": "芯片用于数据传输和通信的通道数量，增加I/O通道可以提升数据吞吐量。 Input/Output channels are pathways for data transfer and communication in a chip; increasing I/O channels enhances data throughput."
+        },
+        {
+          "term": "LPDDR5X",
+          "explanation": "LPDDR5X是LPDDR5内存的升级版，相较于LPDDR5拥有更高的数据速率和更优的能效表现。 LPDDR5X is an enhanced version of LPDDR5 memory, offering faster data rates and better energy efficiency."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "“高雅人士”企鹅表情包走红，误被当成《马达加斯加》企鹅",
+      "chinese_brief": "最近一组被称为“高雅人士”的企鹅表情包在网络上广泛传播，许多用户误以为其源自知名动画片《马达加斯加》。事实上，这些企鹅形象来自图片素材网站Shutterstock，由艺术家3Dalia于2014年上传。这一误解源于企鹅形象相似，但《马达加斯加》的故事背景设定在企鹅并不原生的马达加斯加岛，显示出网络表情文化中混淆与传播的趣味现象。",
+      "english_brief": "A set of penguin emojis known as the “Elegant Gentleman” recently went viral online, with many mistakenly believing they originated from the well-known animated film Madagascar. In reality, these penguin images come from the Shutterstock image site, uploaded by artist 3Dalia in 2014. The confusion arises from their similar appearance; however, Madagascar is set on an island where penguins are not native. This reflects an interesting phenomenon of misattribution and spread within internet meme culture.",
+      "term_clarifications": [
+        {
+          "term": "高雅人士企鹅表情包",
+          "explanation": "一组以企鹅形象制成的网络表情包，因其表情和姿态看起来“高雅”而得名。 A set of internet emojis featuring penguins whose expressions and poses convey an air of elegance, hence the nickname."
+        },
+        {
+          "term": "Shutterstock",
+          "explanation": "一家提供高质量版权图片和素材的国外商业图片素材平台。 Shutterstock is a commercial online platform offering high-quality licensed images and media."
+        },
+        {
+          "term": "《马达加斯加的企鹅》",
+          "explanation": "一部广受欢迎的动画电影及衍生系列，讲述一群企鹅的冒险故事，但故事地点马达加斯加岛本身并无企鹅生存。 Madagascar Penguins is a popular animated film and spin-off series featuring adventures of penguins, though penguins don’t naturally inhabit Madagascar island."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "马斯克对万亿美元特斯拉薪酬计划做出超现实承诺",
+      "chinese_brief": "特斯拉首席执行官埃隆·马斯克回应了股东批准的万亿美元薪酬方案，提出了极具想象力的未来愿景。他预言特斯拉的人形机器人‘擎天柱’将从执行简单任务开始，最终实现超越人类的外科手术精度。此外，他预计到2026年底汽车产量将提升50%，并强调机器人和车辆将在月球和火星基地建设中扮演关键角色。这些大胆预测表明马斯克对特斯拉未来科技发展的雄心与信心。",
+      "english_brief": "Tesla CEO Elon Musk responded to shareholder approval of his trillion-dollar compensation plan with highly imaginative future predictions. He foresees Tesla’s humanoid robot ‘Optimus’ starting from simple tasks and eventually achieving surgical precision surpassing humans. Musk also anticipates a 50% increase in car production by the end of 2026 and emphasized that the robots and Tesla vehicles will play vital roles in building bases on the Moon and Mars. These bold forecasts highlight Musk’s ambition and confidence in Tesla’s technological future.",
+      "term_clarifications": [
+        {
+          "term": "埃隆·马斯克",
+          "explanation": "Elon Musk，特斯拉和SpaceX的创始人及首席执行官，以推动电动汽车和太空探索闻名。 Elon Musk is the founder and CEO of Tesla and SpaceX, known for advancing electric vehicles and space exploration."
+        },
+        {
+          "term": "特斯拉擎天柱（Optimus）",
+          "explanation": "特斯拉正在开发的人形机器人项目，旨在执行各种劳动和服务任务。 Tesla’s humanoid robot project ‘Optimus,’ designed to perform various labor and service tasks."
+        },
+        {
+          "term": "万亿美元薪酬方案",
+          "explanation": "指特斯拉为马斯克设计的长期薪酬激励计划，价值达到万亿美元级别。 The trillion-dollar compensation plan designed by Tesla as a long-term incentive package for Musk."
+        },
+        {
+          "term": "月球和火星基地建设",
+          "explanation": "指人类在月球和火星上建立长期居住或科研设施的计划。 Plans for establishing long-term habitats or research stations on the Moon and Mars."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "AI驱动全球DRAM价格飙升172%，供应链紧张加剧",
+      "chinese_brief": "随着人工智能技术的蓬勃发展，全球DRAM内存价格在2025年第三季度同比上涨了171.8%，创历史新高。AI服务器对高性能内存的需求激增导致DDR5芯片供应严重紧张，韩国部分制造商甚至暂停接收新订单。企业级SSD和服务器内存价格也大幅上涨。此趋势短期内难以缓解，显示出AI产业对存储市场的深远影响，同时也反映供应链面临的巨大压力。",
+      "english_brief": "Driven by rapid AI technology growth, global DRAM prices surged 171.8% year-over-year in Q3 2025, hitting record highs. The soaring demand for high-performance memory in AI servers has led to severe DDR5 chip supply shortages, with some South Korean manufacturers pausing new orders. Prices for enterprise SSDs and server RAM have also risen sharply. This trend is unlikely to ease soon, highlighting the profound impact of the AI sector on the storage market and the immense pressure on supply chains.",
+      "term_clarifications": [
+        {
+          "term": "DRAM",
+          "explanation": "动态随机存取存储器，是计算机系统中广泛使用的高速内存类型。 Dynamic Random Access Memory (DRAM) is a widely
+2025-11-09 08:11:13,739 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "三星发布顶级10.7Gbps LPDDR6内存，开启移动设备新纪元",       "chinese_brief": "三星最新研发的LPDDR6内存采用先进的12纳米工艺，数据传输速率高达10.7Gbps，主要面向移动设备市场。通过增加I/O通道和引入动态功耗调节技术，这款内存不仅提升了性能，还有效降低了能耗。此产品还集成了数据安全特性，保障应用完整性。值得关注的是，三星的LPDDR5X也已达到相同速率，显示出新旧内存技术间的渐进过渡趋势，对高性能手机和平板电脑的发展具有重要推动作用。",       "english_brief": "Samsung’s latest LPDDR6 memory, manufactured with advanced 12nm technology, achieves data transfer speeds of up to 10.7Gbps, targeting the mobile device market. By incr...)
+2025-11-09 08:11:39,546 | INFO | Completed batch 2/4 (briefings=8).
+2025-11-09 08:12:02,996 | INFO | Completed batch 3/4 (briefings=12).
+2025-11-09 08:12:22,247 | INFO | Completed batch 4/4 (briefings=15).
+2025-11-09 08:12:22,247 | INFO | OpenAI summarization completed across 4 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=21017)
+2025-11-09 08:12:22,251 | INFO | Saved digest to digests/科学-or-技术-briefing-2025-11-09_0809.md
+2025-11-09 08:12:24,025 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-09 08:12:24,085 | INFO | Summarizing 20 articles across 5 batches.
+2025-11-09 08:12:44,573 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-09 08:13:00,815 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-09 08:13:26,083 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-09 08:13:46,776 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-09 08:14:10,588 | INFO | Completed batch 5/5 (briefings=20).
+2025-11-09 08:14:10,588 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=12686)
+2025-11-09 08:14:10,589 | INFO | Saved digest to digests/science-or-technology-briefing-2025-11-09_0809.md
+2025-11-09 08:14:12,141 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-09 08:14:12,199 | INFO | Summarizing 2 articles across 1 batches.
+2025-11-09 08:14:28,916 | INFO | Completed batch 1/1 (briefings=2).
+2025-11-09 08:14:28,917 | INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=1833)
+2025-11-09 08:14:28,919 | INFO | Saved digest to digests/中国经济-or-中国政治-briefing-2025-11-09_0809.md
+2025-11-09 08:14:30,900 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-09 08:14:30,902 | INFO | No new articles for topic query 3: {'endpoint': 'everything', 'q': '("China Economy") OR ("China Politics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt'}
+2025-11-09 08:14:30,960 | INFO | Summarizing 19 articles across 5 batches.
+2025-11-09 08:14:53,494 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-09 08:15:29,331 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "AMD警告Intel與NVIDIA合作將加劇市場競爭與定價壓力",
+      "chinese_brief": "Intel與NVIDIA宣布合作共同開發針對資料中心和終端市場的定制x86晶片，利用Intel的x86技術與NVIDIA的AI和GPU優勢。AMD表示此聯盟將加劇半導體市場競爭，帶來更大定價壓力。AMD計劃以新一代Zen 6架構CPU及RDNA GPU技術應對挑戰，保持競爭力。此合作可能改變資料中心及AI運算硬體市場格局，加速技術融合與創新。",
+      "english_brief": "Intel and NVIDIA have announced a collaboration to jointly develop custom x86 chips for data centers and end-user markets, combining Intel’s x86 technology with NVIDIA’s AI and GPU strengths. AMD warns this alliance will intensify competition in the semiconductor market, putting more pressure on pricing. AMD plans to counter the challenge with its next-generation Zen 6 CPU architecture and RDNA GPU technology to maintain competitiveness. This partnership could reshape the data center and AI computing hardware landscape, accelerating technology integration and innovation.",
+      "term_clarifications": [
+        {
+          "term": "x86",
+          "explanation": "A widely-used CPU instruction set architecture developed by Intel, foundational for many personal computers and servers. Intel 和 NVIDIA 合作開發的晶片基於這種架構。"
+        },
+        {
+          "term": "Zen 6",
+          "explanation": "AMD最新一代中央處理器（CPU）架構，預計在性能和能效上有顯著提升。AMD用其對抗Intel和NVIDIA的新挑戰。"
+        },
+        {
+          "term": "RDNA GPU",
+          "explanation": "AMD設計的圖形處理器架構，用於繪圖和運算任務，特別在遊戲和人工智能領域發揮作用。"
+        },
+        {
+          "term": "資料中心",
+          "explanation": "用於存儲和處理大量數據的專業設施設備，是人工智能和雲計算的基礎。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "國台辦副主任展望兩岸『十五五』融合發展與青年創業機遇",
+      "chinese_brief": "國台辦副主任吳璽表示，「十五五」期間將持續完善兩岸融合發展政策，推動人工智能＋新興科技賦能各行業，為兩岸青年創業創新提供機遇。陸方希望以兩岸一家親理念，創造更優發展環境，促進互聯網產業深化合作，強化兩岸經濟文化交流與融合。此舉有助於穩定兩岸關係，並為台灣青年及企業到大陸發展鋪路。",
+      "english_brief": "Wu Xi, deputy director of the Taiwan Affairs Office, stated that during the 15th Five-Year Plan period, policies promoting cross-strait integration will be continuously improved. The advancement of AI and emerging technologies will empower various industries, creating significant opportunities for entrepreneurship and innovation among youth on both sides. The mainland aims to foster closer internet industry cooperation under the ‘one family across the strait’ concept, enhancing economic and cultural exchanges and integration. This approach supports cross-strait stability and facilitates development opportunities for Taiwanese youth and businesses in mainland China.",
+      "term_clarifications": [
+        {
+          "term": "國台辦",
+          "explanation": "中國大陸負責對台政策和事務的政府機構，全稱為『國務院台灣事務辦公室』。"
+        },
+        {
+          "term": "十五五",
+          "explanation": "中國大陸第十五個五年規劃（2026-2030年），是國家重要的經濟社會發展計劃。"
+        },
+        {
+          "term": "人工智能＋",
+          "explanation": "指人工智能技術與傳統產業的深度融合，推動產業升級與創新。"
+        },
+        {
+          "term": "兩岸融合發展",
+          "explanation": "指中國大陸與台灣之間在經濟、文化、科技等領域的交流與合作加深。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "成大機械系舉辦論壇，聚焦半導體與機器人跨域創新發展",
+      "chinese_brief": "國立成功大學機械工程學系與基金會共同舉辦「成機論壇」，主題著眼於機械工程在半導體和機器人產業的跨領域應用。逾百名產學界人士參與，五位成大機械系校友暨業界領袖分享先進晶圓製造、AI封裝和人形機器人的最新技術趨勢，並探討人才培育與產學合作新模式。校方強調機械工程在台灣科技競爭力中的核心地位，期待加強研究與產業平台連結。",
+      "english_brief": "National Cheng Kung University’s Department of Mechanical Engineering, together with its foundation, hosted the Cheng-Ki Forum focusing on interdisciplinary applications of mechanical engineering in the semiconductor and robotics industries. Over one hundred professionals from academia and industry participated. Five alumni who are industry leaders shared insights on advanced wafer manufacturing, AI packaging, and humanoid robotics trends while discussing new talent cultivation and industry-academia collaboration models. The university highlighted mechanical engineering as a core pillar of Taiwan’s tech competitiveness and aims to strengthen ties between research and industrial platforms.",
+      "term_clarifications": [
+        {
+          "term": "成大",
+          "explanation": "國立成功大學，位於台灣台南市，是台灣頂尖綜合大學之一。"
+        },
+        {
+          "term": "半導體",
+          "explanation": "製造晶片的重要產業，是現代電子及資訊科技的基礎。"
+        },
+        {
+          "term": "AI封裝",
+          "explanation": "指針對人工智能應用設計的半導體晶片封裝技術，提升晶片性能與效率。"
+        },
+        {
+          "term": "產學合作",
+          "explanation": "大學與產業界之間的合作，促進技術轉移和人才培養。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "中國信託系統大故障，網銀、ATM及Line Pay服務全面中斷",
+      "chinese_brief": "中國信託商業銀行於11月7日晚間起至8日凌晨發生大規模系統異常，導致全台灣線上銀行、ATM以及Line Pay等金融服務全面當機。用戶無法正常取款或轉帳，多數民眾感到焦慮與不安，網路上有用戶反映資金疑似異常，銀行已緊急修復並向客戶道歉。此事件凸顯大型金融機構系統韌性與應急措施的重要性，也提醒用戶注意瞬間服務中斷風險。",
+      "english_brief": "China Trust Commercial Bank experienced a major system failure from the evening of November 7 into the early hours of November 8, causing widespread outages of online banking, ATMs, and Line Pay services across Taiwan. Customers were unable to withdraw or transfer money, leading to public anxiety and reports of suspected anomalies with funds. The bank has since worked to restore services and issued apologies. This incident highlights the critical importance of system resilience and emergency response capabilities in large financial institutions, as well as reminding users to be aware of risks related to sudden service disruptions.",
+      "term_clarifications": [
+        {
+          "term": "中國信託商業銀行",
+          "explanation": "臺灣大型金融機構，提供銀行、投資及相關金融服務。"
+        },
+        {
+          "term": "Line Pay",
+          "explanation": "一種整合於通訊軟體Line內的電子支付服務，廣受台灣用戶歡迎。"
+        },
+        {
+          "term": "系統異常",
+          "explanation": "指銀行資訊系統發生故障或錯誤，導致電子服務無法正常運作。"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期新聞涵蓋科技巨頭合作動態、兩岸政策發展、新興科技與產學合作，以及重要金融服務中斷事件，反映科技與經濟領域的最新趨勢與挑戰。
+2025-11-09 08:15:29,332 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "AMD警告Intel與NVIDIA合作將加劇市場競爭與定價壓力",       "chinese_brief": "Intel與NVIDIA宣布合作共同開發針對資料中心和終端市場的定制x86晶片，利用Intel的x86技術與NVIDIA的AI和GPU優勢。AMD表示此聯盟將加劇半導體市場競爭，帶來更大定價壓力。AMD計劃以新一代Zen 6架構CPU及RDNA GPU技術應對挑戰，保持競爭力。此合作可能改變資料中心及AI運算硬體市場格局，加速技術融合與創新。",       "english_brief": "Intel and NVIDIA have announced a collaboration to jointly develop custom x86 chips for data centers and end-user markets, combining Intel’s x86 technology with NVIDIA’s AI and GPU str...)
+2025-11-09 08:15:51,292 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "AMD警告：Intel與NVIDIA合作將加劇晶片市場競爭與定價壓力",
+      "chinese_brief": "英特爾與輝達（NVIDIA）宣布合作共同開發針對資料中心及用戶端的客製化x86晶片，這將加劇半導體市場的競爭，尤其對AMD構成更大定價壓力。AMD計劃透過Zen 6架構與新一代RDNA GPU來應對挑戰，此合作標誌NVIDIA首次能使用Intel的x86知識產權開發自家中央處理器，未來將深刻影響AI及資料中心領域的競爭態勢。",
+      "english_brief": "Intel and NVIDIA have announced a collaboration to jointly develop customized x86 chips targeting data center and client markets, intensifying competition in the semiconductor industry and exerting increased pricing pressure on AMD. In response, AMD plans to leverage its Zen 6 architecture and next-gen RDNA GPUs. This partnership marks the first time NVIDIA can use Intel's x86 intellectual property to develop its own CPUs, a move that will significantly impact competition in AI and data center sectors.",
+      "term_clarifications": [
+        {
+          "term": "x86",
+          "explanation": "A widely used CPU instruction set architecture originally developed by Intel, fundamental to most personal computers and servers. | 一種由英特爾開發的中央處理器指令集架構，廣泛應用於個人電腦和伺服器。"
+        },
+        {
+          "term": "Zen 6",
+          "explanation": "AMD's upcoming CPU microarchitecture aiming to improve performance and efficiency over previous generations. | AMD即將推出的CPU微架構，預計提升效能與效能比，超越前代產品。"
+        },
+        {
+          "term": "RDNA",
+          "explanation": "AMD's graphics architecture used in its GPUs, with RDNA as a modern design for gaming and computing graphics processing. | AMD的圖形架構名稱，用於其GPU，是用於遊戲和運算的現代化設計。"
+        },
+        {
+          "term": "NVIDIA",
+          "explanation": "An American technology company specializing in GPUs, AI computing, and data center solutions. | 美國科技公司，專注於GPU、人工智能計算及資料中心解決方案。"
+        },
+        {
+          "term": "Intel",
+          "explanation": "A leading American semiconductor company known for producing CPUs, chipsets, and other computing hardware. | 美國半導體領導企業，知名於製造CPU、晶片組及其他計算硬體。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "國台辦副主任強調推進兩岸融合發展及互聯網合作",
+      "chinese_brief": "國台辦副主任吳璽表示，在「十五五」期間，人工智能和新興科技將極大促進兩岸年輕人的創業創新。陸方將持續完善兩岸融合發展政策，為台灣青年和台商赴大陸發展提供更多便利，也呼籲兩岸互聯網產業把握機遇深化合作，推動兩岸經濟文化交流更深入融合。",
+      "english_brief": "Wu Xi, Deputy Director of the Taiwan Affairs Office, stated that during the 15th Five-Year Plan period, artificial intelligence and emerging technologies will greatly empower youth entrepreneurship and innovation across the Taiwan Strait. Mainland China will continue to improve policies promoting cross-strait integration to facilitate Taiwanese youth and businesses developing in the mainland and calls for the internet industries on both sides to seize opportunities for deeper cooperation, advancing economic and cultural exchange.",
+      "term_clarifications": [
+        {
+          "term": "國台辦",
+          "explanation": "The Taiwan Affairs Office of the State Council of China, responsible for mainland China’s policies and interactions regarding Taiwan. | 中國國務院的台灣事務辦公室，負責大陸對台政策與交流事務。"
+        },
+        {
+          "term": "十五五",
+          "explanation": "The 15th Five-Year Plan of China, a national socio-economic development blueprint covering 2026-2030. | 中國第十五個五年計劃，涵蓋2026年至2030年的國家社會經濟發展藍圖。"
+        },
+        {
+          "term": "人工智能＋",
+          "explanation": "A strategy combining artificial intelligence with various industries to promote innovation and efficiency. | 將人工智能技術與多個產業融合，以推動創新和提升效率的策略。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "成大機械系論壇聚焦半導體與機器人跨領域創新",
+      "chinese_brief": "為慶祝成大94週年校慶，國立成功大學機械系與成功機械文教基金會共同舉辦首屆「成機論壇」，討論機械工程在半導體與機器人產業的跨域應用。多位校友及產業領袖分享從先進晶圓製造到人形機器人的最新發展，強調產學合作與人才培育對提升台灣科技競爭力的重要性。",
+      "english_brief": "To celebrate National Cheng Kung University’s 94th anniversary, the Mechanical Engineering Department and the Cheng Kung Mechanical Education Foundation jointly held the inaugural 'Cheng-Ki Forum' focusing on the interdisciplinary applications of mechanical engineering in semiconductor and robotics industries. Alumni and industry leaders shared insights from advanced wafer manufacturing to humanoid robots, emphasizing the importance of academia-industry collaboration and talent development in strengthening Taiwan's technological competitiveness.",
+      "term_clarifications": [
+        {
+          "term": "成大",
+          "explanation": "National Cheng Kung University, a prestigious university located in Tainan, Taiwan. | 台灣臺南市的國立成功大學。"
+        },
+        {
+          "term": "半導體",
+          "explanation": "Semiconductors, materials essential for electronics used in chips and circuits. | 半導體，是用於製造電子晶片和電路的材料。"
+        },
+        {
+          "term": "機器人",
+          "explanation": "Robots, automated machines capable of performing tasks. | 能執行任務的自動化機械裝置。"
+        },
+        {
+          "term": "產學合作",
+          "explanation": "Collaboration between industry and academic institutions to advance research and development. | 產業與學術機構合作推進研發。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "中國信託銀行系統大當機 造成網銀、ATM及Line Pay服務癱瘓",
+      "chinese_brief": "中國信託商業銀行於11月7日晚間至8日凌晨發生大規模系統異常，導致全台網路銀行、ATM及Line Pay等多項金融服務無法使用，引起廣泛用戶不滿及恐慌，部分民眾擔心資金安全並表示錢款似乎“被吃了”。銀行已緊急啟動修復程序，並強調將盡快恢復正常服務，保障用戶權益。",
+      "english_brief": "On the night of November 7th through early morning on the 8th, China Trust Commercial Bank experienced a widespread system outage, causing disruptions to multiple financial services across Taiwan including online banking, ATMs, and Line Pay. This has led to public frustration and concern over fund security, with some users reporting apparent missing funds. The bank has initiated emergency repair efforts and promised to restore normal service promptly while safeguarding customer interests.",
+      "term_clarifications": [
+        {
+          "term": "中國信託商業銀行",
+          "explanation": "A major commercial bank in Taiwan providing financial services including banking and payments. | 台灣主要商業銀行，提供銀行及支付服務。"
+        },
+        {
+          "term": "網銀",
+          "explanation": "Online banking, a service for conducting banking transactions via the internet. | 網上進行銀行交易的服務。"
+        },
+        {
+          "term": "ATM",
+          "explanation": "Automated Teller Machine, a machine that allows customers to perform banking transactions. | 自動櫃員機，讓客戶進行銀行交易的機器。"
+        },
+        {
+          "term": "Line Pay",
+          "explanation": "A mobile payment service integrated within the LINE messaging app widely used in Taiwan. | 台灣廣泛使用的LINE即時通訊軟體內建的行動支付服務。"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本次摘要涵蓋半導
+2025-11-09 08:15:51,294 | WARNING | Batch 2 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "AMD警告：Intel與NVIDIA合作將加劇晶片市場競爭與定價壓力",       "chinese_brief": "英特爾與輝達（NVIDIA）宣布合作共同開發針對資料中心及用戶端的客製化x86晶片，這將加劇半導體市場的競爭，尤其對AMD構成更大定價壓力。AMD計劃透過Zen 6架構與新一代RDNA GPU來應對挑戰，此合作標誌NVIDIA首次能使用Intel的x86知識產權開發自家中央處理器，未來將深刻影響AI及資料中心領域的競爭態勢。",       "english_brief": "Intel and NVIDIA have announced a collaboration to jointly develop customized x86 chips targeting data center and client markets, intensifying competition in the semiconductor industry and e...)
+2025-11-09 08:16:11,009 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-09 08:16:35,079 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-09 08:17:00,558 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "台塑三大子公司第三季實現由虧轉盈，吳嘉昭看好電子材料推動明年業績",
+      "chinese_brief": "受中國石化產能過剩、美中貿易衝突及台幣升值等多重挑戰，台塑集團四大公司上半年全面虧損。但透過推動差異化產品與成本結構優化，南亞、台化、台塑化三家公司第三季成功轉虧為盈。集團高層吳嘉昭指出，電子材料需求受AI產業帶動，能有效支撐淡季，展望明年貢獻可期，反映集團多角化及創新策略見成效。",
+      "english_brief": "Faced with challenges such as China's petrochemical overcapacity, US-China trade conflicts, and Taiwan dollar appreciation, Formosa Plastics Group's four major companies all posted losses in the first half of the year. However, by promoting differentiated products and optimizing cost structures, three subsidiaries—Nan Ya, Taiwan Chemical, and Formosa Petrochemical—successfully turned profitable in Q3. Executive Wu Jia-Zhao noted that demand for electronic materials, driven by the AI industry, supports the traditionally slow season and bodes well for contributions next year, reflecting the group’s effective diversification and innovation strategies.",
+      "term_clarifications": [
+        {
+          "term": "台塑集團 (Formosa Plastics Group)",
+          "explanation": "台灣大型石化與塑膠產業集團，旗下擁有多家子公司。// A major Taiwanese petrochemical and plastics conglomerate with numerous subsidiaries."
+        },
+        {
+          "term": "南亞 (Nan Ya Plastics Corporation)",
+          "explanation": "台塑集團旗下化工與塑膠製造子公司。// A chemical and plastics manufacturing subsidiary under Formosa Plastics Group."
+        },
+        {
+          "term": "台化 (Taiwan Chemical Fiber Corporation)",
+          "explanation": "專注於纖維與化學產品的台塑子公司。// A Formosa subsidiary specializing in fiber and chemical products."
+        },
+        {
+          "term": "台塑化 (Formosa Petrochemical Corporation)",
+          "explanation": "台塑集團的石化製造企業，生產各類石化產品。// The petrochemical manufacturing company of Formosa Plastics Group producing various petrochemical products."
+        },
+        {
+          "term": "AI (人工智慧, Artificial Intelligence)",
+          "explanation": "使機器具備類似人類智能的技術，促進電子材料需求成長。// Technology enabling machines to exhibit human-like intelligence, boosting demand for electronic materials."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "「人民咖啡館」風靡多地，官媒指名稱濫用社會與政治情感",
+      "chinese_brief": "近期全國多地出現名為「人民咖啡館」的商業店家，迅速成為社交平台新興打卡熱點。鑒於「人民」一詞具有強烈的公共屬性與政治象徵意涵，官方媒體批評將此詞用於商業品牌標識不妥，認為這種行為可能淡化詞語的嚴肅社會內涵，引發公共認同與價值觀的爭議。",
+      "english_brief": "Recently, numerous commercial outlets named \"People's Café\" have emerged across the country, quickly becoming trending check-in spots on social media platforms. Given that the term \"people\" carries strong public significance and political symbolism, official media have criticized the use of this term as a commercial brand label, suggesting it may dilute the serious social connotations and spark debates about public identity and values.",
+      "term_clarifications": [
+        {
+          "term": "人民",
+          "explanation": "指公眾或社會成員，常用於政治與公共語境中，代表群體利益。// Refers to the public or members of society, often used in political and public contexts to represent collective interests."
+        },
+        {
+          "term": "官媒",
+          "explanation": "官方控制或監督的媒體機構，代表政府觀點。// Media outlets controlled or overseen by the government, representing official viewpoints."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "波克夏澄清AI深偽影片造假巴菲特，警告投資者謹防假資訊",
+      "chinese_brief": "長期被稱為「股神」的投資大師巴菲特，近日因人工智慧與深偽技術出現大量偽造其形象與言論的影片。其所屬公司波克夏海瑟威緊急發布澄清，強調真正的「奧馬哈先知」只有一位，並警告市場上聲稱教授投資秘訣的影片多為假冒，呼籲投資者提高警覺以防受騙，彰顯AI技術帶來的資訊安全新挑戰。",
+      "english_brief": "Warren Buffett, long known as the \"Oracle of Omaha,\" has recently been the target of numerous AI and deepfake videos falsely portraying his image and statements. His company, Berkshire Hathaway, swiftly issued a clarification emphasizing that the real \"Oracle of Omaha\" is only one and warning that many videos claiming to teach investment tips are fake. Investors are urged to be cautious to avoid deception, highlighting new challenges in information security posed by AI technology.",
+      "term_clarifications": [
+        {
+          "term": "巴菲特 (Warren Buffett)",
+          "explanation": "美國著名投資家，被譽為「股神」，以價值投資著稱。// Famous American investor known as the \"Oracle of Omaha,\" renowned for value investing."
+        },
+        {
+          "term": "波克夏海瑟威 (Berkshire Hathaway)",
+          "explanation": "巴菲特所領導的美國多元化控股公司。// American diversified holding company led by Warren Buffett."
+        },
+        {
+          "term": "深偽 (Deepfake)",
+          "explanation": "利用人工智慧技術製作的合成視頻或音頻，常用於偽造真實人物言行。// Synthetic videos or audios created using AI technology, often used to fabricate statements or actions of real people."
+        },
+        {
+          "term": "奧馬哈先知 (Oracle of Omaha)",
+          "explanation": "巴菲特的綽號，象徵他的投資智慧和預見能力。// A nickname for Warren Buffett symbolizing his investment wisdom and foresight."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "國泰航空亮相ITF旅展，巨型A350模型吸睛，推旅展專屬折扣",
+      "chinese_brief": "2025年台北國際旅展（ITF）於南港展覽館盛大開幕，國泰航空以「Ready to Fly」為主題，展示巨型1:10比例A350-1000機型模型，打造沉浸式飛行體驗空間。品牌結合實體優惠、AI體驗及會員回饋，彰顯疫情後市場復甦策略。旅展期間，客票最低享受8折優惠，還有機會抽取折抵金，吸引旅客提前規劃出行。",
+      "english_brief": "The 2025 Taipei International Travel Fair (ITF) opened grandly at the Nangang Exhibition Center, where Cathay Pacific Airlines showcased a giant 1:10 scale model of the A350-1000 under the theme \"Ready to Fly,\" creating an immersive flight experience. The brand integrates physical discounts, AI experiences, and member benefits, demonstrating its post-pandemic market revival strategy. During the fair, air tickets are offered at a minimum 20% discount with chances to win voucher credits, attracting travelers to plan trips early.",
+      "term_clarifications": [
+        {
+          "term": "國泰航空 (Cathay Pacific Airlines)",
+          "explanation": "香港的主要國際航空公司，提供全球航班服務。// A major international airline based in Hong Kong, providing global flight services."
+        },
+        {
+          "term": "ITF旅展 (Taipei International Travel Fair)",
+          "explanation": "台灣規模最大的年度旅遊展覽會，展示各國旅遊和航空優惠。// Taiwan's largest annual travel exhibition showcasing various international travel and airline offers."
+        },
+        {
+          "term": "A350-1000",
+          "explanation": "空中巴士最新一代遠程寬體噴射客機，具備高燃油效率與乘坐舒適度。// Airbus’s latest generation long-range wide
+2025-11-09 08:17:00,560 | WARNING | Batch 4 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "台塑三大子公司第三季實現由虧轉盈，吳嘉昭看好電子材料推動明年業績",       "chinese_brief": "受中國石化產能過剩、美中貿易衝突及台幣升值等多重挑戰，台塑集團四大公司上半年全面虧損。但透過推動差異化產品與成本結構優化，南亞、台化、台塑化三家公司第三季成功轉虧為盈。集團高層吳嘉昭指出，電子材料需求受AI產業帶動，能有效支撐淡季，展望明年貢獻可期，反映集團多角化及創新策略見成效。",       "english_brief": "Faced with challenges such as China's petrochemical overcapacity, US-China trade conflicts, and Taiwan dollar appreciation, Formosa Plastics Group's four major companies all posted losses in the first half of the ...)
+2025-11-09 08:17:19,721 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-09 08:17:37,232 | INFO | Completed batch 5/5 (briefings=19).
+2025-11-09 08:17:37,233 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=29373)
+2025-11-09 08:17:37,235 | INFO | Saved digest to digests/人工智能-or-ai-or-大模型-briefing-2025-11-09_0809.md
+2025-11-09 08:17:39,115 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-09 08:17:39,154 | INFO | Summarizing 19 articles across 5 batches.
+2025-11-09 08:18:00,374 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-09 08:18:27,136 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-09 08:18:47,246 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-09 08:18:57,688 | INFO | Completed batch 4/5 (briefings=14).
+2025-11-09 08:19:15,706 | INFO | Completed batch 5/5 (briefings=17).
+2025-11-09 08:19:15,706 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=11956)
+2025-11-09 08:19:15,708 | INFO | Saved digest to digests/artificial-intelligence-or-ai-or-large-language-model-or-llm-briefing-2025-11-09_0809.md
+2025-11-09 08:19:17,264 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-09 08:19:17,317 | INFO | Summarizing 16 articles across 4 batches.
+2025-11-09 08:19:40,797 | INFO | Completed batch 1/4 (briefings=4).
+2025-11-09 08:20:03,026 | INFO | Completed batch 2/4 (briefings=8).
+2025-11-09 08:20:31,111 | INFO | Completed batch 3/4 (briefings=12).
+2025-11-09 08:20:53,841 | INFO | Completed batch 4/4 (briefings=16).
+2025-11-09 08:20:53,841 | INFO | OpenAI summarization completed across 4 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=15205)
+2025-11-09 08:20:53,843 | INFO | Saved digest to digests/黄金-or-贵金属-or-美元-or-美元汇率-briefing-2025-11-09_0809.md
+2025-11-09 08:20:55,721 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-09 08:20:55,780 | INFO | Summarizing 20 articles across 5 batches.
+2025-11-09 08:21:18,526 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-09 08:21:46,384 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "棉花期货周五大幅下跌，原油价格小幅走低",
+      "chinese_brief": "截至周五，棉花期货多数合约下跌60至92点，12月合约本周累计下跌192点，显示市场对棉花供应或需求的预期可能趋于悲观。同时，原油期货价格微跌39美分，至每桶59.82美元，美元指数也有所回落至99.420。这些市场波动反映了全球能源和农产品市场的不确定性，可能影响相关产业链的价格和投资决策。",
+      "english_brief": "On Friday, cotton futures fell significantly, with most contracts losing 60 to 92 points and December contracts down 192 points for the week, indicating a possibly bearish outlook on cotton supply or demand. Meanwhile, crude oil futures dipped 39 cents to $59.82 per barrel and the US dollar index declined to 99.420. These fluctuations reflect uncertainties in global energy and agricultural markets, potentially affecting prices and investment decisions in related sectors.",
+      "term_clarifications": [
+        {
+          "term": "cotton futures",
+          "explanation": "A financial contract to buy or sell cotton at a predetermined price on a specified future date, used by traders and producers to hedge against price risks.",
+          "explanation_zh": "棉花期货是指在未来某一指定日期按预定价格买卖棉花的金融合约，供交易员和生产商用来对冲价格风险。"
+        },
+        {
+          "term": "crude oil futures",
+          "explanation": "Contracts that represent the price of crude oil to be delivered at a future date, widely used in commodities trading to manage risk or speculate on price changes.",
+          "explanation_zh": "原油期货是指代表未来交付原油价格的合约，广泛用于大宗商品交易中以管理风险或投机价格变化。"
+        },
+        {
+          "term": "US dollar index",
+          "explanation": "An index that measures the value of the US dollar relative to a basket of foreign currencies, reflecting the dollar’s international strength.",
+          "explanation_zh": "美元指数衡量美元相对于一揽子外币的价值，反映美元在国际市场的强弱。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "苏富比纽约布鲁塔利斯特新总部开业，增设奢侈品销售",
+      "chinese_brief": "著名拍卖行苏富比在纽约标志性布鲁塔利斯特建筑内启用了其新总部，配备私人展厅和珠宝销售区，进一步强化其在高端艺术和奢侈品市场的地位。新总部还展示了艺术家Maurizio Cattelan的纯金厕所作品，彰显其结合艺术与奢华的独特风格。这一举措将吸引更多高净值客户，推动奢侈品及艺术品交易的发展。",
+      "english_brief": "Sotheby’s, the renowned auction house, has opened its new headquarters in a landmark Brutalist building in New York, featuring private showrooms and a jewelry sales area, reinforcing its position in the high-end art and luxury market. The headquarters also showcases artist Maurizio Cattelan’s solid gold toilet, highlighting a unique blend of art and luxury. This move aims to attract more high-net-worth clients and boost the luxury and art trading business.",
+      "term_clarifications": [
+        {
+          "term": "Sotheby’s",
+          "explanation": "One of the world’s largest and most prestigious auction houses specializing in fine art, luxury goods, and collectibles.",
+          "explanation_zh": "苏富比是全球最大且最著名的拍卖行之一，专注于艺术品、奢侈品和收藏品的拍卖。"
+        },
+        {
+          "term": "Brutalist building",
+          "explanation": "An architectural style characterized by raw concrete and block-like structures, popular from the 1950s to 1970s.",
+          "explanation_zh": "布鲁塔利斯特建筑风格以原始混凝土和块状结构为特点，流行于20世纪50至70年代。"
+        },
+        {
+          "term": "Maurizio Cattelan’s solid gold toilet",
+          "explanation": "An iconic contemporary artwork made of solid gold by Italian artist Maurizio Cattelan, symbolizing provocative art and luxury.",
+          "explanation_zh": "意大利艺术家Maurizio Cattelan创作的纯金厕所，是一件具有挑衅性的当代艺术品，象征奢华与艺术的结合。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "2026年佛罗里达州立大学与圣母大学比赛取消",
+      "chinese_brief": "随着美国大学体育协会大西洋岸联盟（ACC）调整为九场联盟比赛赛程，佛罗里达州立大学（FSU）2026年的赛程也进行更新，其与圣母大学（Notre Dame）的主场比赛已从官方网站未来赛程中移除，表明该场比赛已被取消。这一变动将影响两校足球赛季的竞争格局及球迷期待，也反映出联盟调整对传统非联盟对抗的影响。",
+      "english_brief": "With the Atlantic Coast Conference (ACC) moving to a nine-game conference schedule, Florida State University’s (FSU) 2026 football schedule has been updated, removing its home game against Notre Dame from the official future schedule, indicating cancellation. This change affects the competitive dynamics and fan expectations for both schools and reflects the wider impact of conference scheduling adjustments on traditional non-conference matchups.",
+      "term_clarifications": [
+        {
+          "term": "ACC",
+          "explanation": "Atlantic Coast Conference, a collegiate athletic conference in the United States consisting of universities competing in NCAA sports.",
+          "explanation_zh": "大西洋岸联盟，是美国的大学体育协会联盟，旗下成员校参加NCAA体育赛事。"
+        },
+        {
+          "term": "Florida State University (FSU)",
+          "explanation": "A public research university in Tallahassee, Florida, known for its competitive college football program.",
+          "explanation_zh": "佛罗里达州立大学，位于佛罗里达州塔拉哈西，以其竞争激烈的大学橄榄球队闻名。"
+        },
+        {
+          "term": "Notre Dame Fighting Irish",
+          "explanation": "The athletic teams representing the University of Notre Dame, a private Catholic university in Indiana, noted for a strong football tradition.",
+          "explanation_zh": "圣母大学运动队，代表印第安纳州的私立天主教大学，以强大的橄榄球传统著称。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "2026年格莱美奖提名公布，众多音乐巨星入围",
+      "chinese_brief": "2026年格莱美奖提名正式揭晓，多位备受喜爱的音乐人获得提名。此次提名涵盖了从Bruce Springsteen的《Lost Tracks II》到Sabrina Carpenter等多样音乐风格和艺人，展现了当代音乐界的丰富面貌。这份名单不仅反映了音乐产业的现状，也为即将举行的颁奖典礼增添了期待和关注。",
+      "english_brief": "The 2026 Grammy Award nominations have been officially announced, featuring many beloved musicians. The nominations cover a wide range of styles and artists, including Bruce Springsteen’s 'Lost Tracks II' and Sabrina Carpenter, showcasing the diversity of today’s music scene. This list not only reflects the current state of the music industry but also builds anticipation and attention for the upcoming awards ceremony.",
+      "term_clarifications": [
+        {
+          "term": "Grammy Awards",
+          "explanation": "Annual awards presented by The Recording Academy recognizing outstanding achievements in the music industry.",
+          "explanation_zh": "格莱美奖是由美国唱片艺术与科学学院每年颁发的，表彰在音乐产业中卓越成就的奖项。"
+        },
+        {
+          "term": "Bruce Springsteen",
+          "explanation": "An American rock singer-songwriter known for his influential and enduring career.",
+          "explanation_zh": "布鲁斯·斯普林斯汀，美国摇滚歌手兼词曲作者，以其有影响力和持久的音乐生涯著称。"
+        },
+        {
+          "term": "Sabrina Carpenter",
+          "explanation": "An American singer and actress popular among younger audiences.",
+          "explanation_zh": "萨布丽娜·卡彭特，美国歌手兼演员，深受年轻观众喜爱。"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期
+2025-11-09 08:21:46,385 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "棉花期货周五大幅下跌，原油价格小幅走低",       "chinese_brief": "截至周五，棉花期货多数合约下跌60至92点，12月合约本周累计下跌192点，显示市场对棉花供应或需求的预期可能趋于悲观。同时，原油期货价格微跌39美分，至每桶59.82美元，美元指数也有所回落至99.420。这些市场波动反映了全球能源和农产品市场的不确定性，可能影响相关产业链的价格和投资决策。",       "english_brief": "On Friday, cotton futures fell significantly, with most contracts losing 60 to 92 points and December contracts down 192 points for the week, indicating a possibly bearish outlook on cotton supply or demand. Meanwhile, cr...)
+2025-11-09 08:22:10,437 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-09 08:22:34,941 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-09 08:22:50,885 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-09 08:23:12,505 | INFO | Completed batch 5/5 (briefings=20).
+2025-11-09 08:23:12,505 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=17259)
+2025-11-09 08:23:12,507 | INFO | Saved digest to digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-09_0809.md
+2025-11-09 08:23:14,150 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
+2025-11-09 08:23:14,154 | INFO | Topic run summary: {"started_at": "2025-11-09T00:09:52.190121+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-07T12:48:10.407242+00:00", "requests": [{"endpoint": "everything", "request_params": {"q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 15, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 246, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 2, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 2, "query_params": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 90, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 653, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 37, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 6, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 140, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 7, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 50709, "output_tokens": 58620, "total_tokens": 109329}}, "outputs": [{"query_index": 0, "query": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/科学-or-技术-briefing-2025-11-09_0809.md", "articles_summarized": 15, "summary_notes": "本次报道涵盖天文学重大突破、中国军事科技进展、苹果原创内容的文化影响，以及涉及网络安全和法律调查的热点事件，体现科技创新与监管交织的全球动态。\n\n这些报道反映了2025年科技硬件领域的快速发展及人工智能带动的市场变革，涵盖了存储技术突破、流行文化现象与企业未来规划等多个方面。\n\n本期新闻涵盖了人工智能核心技术解析、知名品牌科技创新展览、电池技术突破及软件开发生态挑战，为读者提供了技术前沿及应用趋势的多维视角。\n\n本期简报涵盖了从网络安全密码趋势、气象AI预测技术到移动通信设备标准的最新进展，反映出科技领域在安全、智能和基础设施建设方面的持续创新与挑战。"}, {"query_index": 1, "query": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/science-or-technology-briefing-2025-11-09_0809.md", "articles_summarized": 20, "summary_notes": "本次简报涵盖了科技和国防领域的重大动态，其中苹果公司低价MacBook的推出标志着其市场策略调整，而美国国防部关于软件验证标准的变动引发监管与安全方面的重要讨论，同时一款怀旧风独立游戏展现了数字文化的多样性。\n\n本期新闻涵盖了消费促销、企业社会责任投资、科学巨匠逝世以及零售安全新措施四个方面，内容丰富，涉及生活、科技及社会多个层面。\n\n本期简报涵盖了体育赛事直播安排、前沿量子计算发展、美国堕胎药政策动态及增强现实智能眼镜的技术创新，反映了科技与社会议题的多样化趋势。\n\n本期摘要涵盖了航天机构的预算和运营挑战、潜在的星际冲击威胁、生物学上的新发现以及科学数据管理工具的最新进展，体现了科技领域多方面的动态。"}, {"query_index": 2, "query": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/中国经济-or-中国政治-briefing-2025-11-09_0809.md", "articles_summarized": 2, "summary_notes": "本期简报聚焦中国2025年最新经济刺激措施及其政治背景分析。文章揭示财政部推动贷款消费的政策意图及经济学家的批评，同时梳理了中国近期高调政治清洗对政权合法性和社会稳定的潜在影响，帮助读者理解复杂的中国产业与政治动态变化。"}, {"query_index": 4, "query": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/人工智能-or-ai-or-大模型-briefing-2025-11-09_0809.md", "articles_summarized": 19, "summary_notes": "本期摘要涵盖全球经济、教育交流、防诈骗警示及人工智能领域的技术突破，旨在提供多维度新闻视角，帮助读者全面理解国际与科技动态。\n\n本次摘要涵蓋半導體產業大廠合作帶來的市場競爭變化、兩岸科技政策發展、學界與產業跨域合作，以及台灣金融服務系統事件，反映出科技與經濟領域近期的重要動態。\n\n本期新闻涵盖了特斯拉及其CEO马斯克的最新企业战略和薪酬方案，突出人工智能领域的投资动向；以及英伟达超级计算机在跨领域应用上的尝试。此外，聚焦宏观经济方面，剖析AI技术对经济成长及国际贸易可能带来的双重影响。\n\n本次摘要涵蓋亞洲重要產業消息、文化事件及科技趨勢，尤其聚焦台塑集團業績回穩、中國公共詞彙的政治敏感性、美國金融名人形象被AI偽造的問題，以及國際航空業的市場復甦動向。讀者可獲得多維度的全球視野與背景知識。\n\n本期新聞聚焦人工智慧技術在多個領域的應用，包括電子零組件市場需求、金融服務的數位轉型及治安監控的創新，顯示AI正深刻影響全球產業結構與社會治理。"}, {"query_index": 5, "query": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/artificial-intelligence-or-ai-or-large-language-model-or-llm-briefing-2025-11-09_0809.md", "articles_summarized": 17, "summary_notes": "本次简报涵盖了人工智能司法模拟、新一代机器人融资进展及人工智能相关软件工具更新，反映了AI技术在法律、制造业和软件开发领域的多维度影响。\n\n本期新闻聚焦人工智能领域的最新技术进展，包括硬件加速、教育创新、开发工具包扩展以及文档处理，这些发展显示AI技术正朝着更高效、更易用和更广泛应用的方向演进。\n\n本期新闻聚焦AI技术在软件工具和媒体行业的最新动态，涵盖新型AI辅助开发包、新闻编辑室的AI应用挑战及宗教学习的自动化工具，反映了人工智能在多个领域的广泛影响。\n\n本期新闻摘要重点关注了美国情报体系中的政治事件和人工智能在音乐领域的应用，体现了技术与政治及文化艺术交织发展的趋势。\n\n本期简报涵盖了Meta在美国大规模投资AI基础设施的重要动态，涉及社会福利政策的司法进展，以及前沿营销技术的发展趋势，为读者提供技术、政策及市场三个维度的国际视角。"}, {"query_index": 6, "query": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/黄金-or-贵金属-or-美元-or-美元汇率-briefing-2025-11-09_0809.md", "articles_summarized": 16, "summary_notes": "本次新聞摘要涵蓋了美國教育安全事件、國際油價變動及本地應對、跨國生活趨勢，以及全球首富的財富與生活方式，反映出社會安全、經濟市場、個人選擇和財富管理的多重面向。\n\n本期新聞涵蓋了文化收藏、全球貿易航運指標、食品輸入安全規定，以及國際金融市場動向，展現從日常生活偶遇珍稀物品，到宏觀經濟政策與全球避險策略的多元面向。\n\n本組新聞涵蓋金融科技法律案例、投資策略建議、俄羅斯能源經濟受制裁衝擊，以及國際體育動態，呈現當前全球經濟與體育市場的多元面向。\n\n本期新闻涵盖科技、贸易及金融三个领域，体现出全球经济与技术竞争的复杂动态。AMD对英特尔的市场挑战，台湾与中国大陆的出口差异，以及人民币国际化趋势，均反映当前国际关系和经济格局的转变。同时，社交媒体巨头Meta在广告内容监管方面的挑战，也提醒关注数字经济中的合规风险和治理问题。"}, {"query_index": 7, "query": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-09_0809.md", "articles_summarized": 20, "summary_notes": "本期新闻涵盖了印度文化遗产发现、电子游戏周边新产品、澳大利亚心理健康服务质量评估以及美国职业橄榄球赛事动态，内容跨越历史、娱乐、医疗与体育多个领域，适合多样化国际读者。\n\n本期新闻涵盖全球商品市场波动、奢侈品零售新动态、大学橄榄球赛程调整及音乐界重要奖项提名，呈现经济、文化及体育领域的多元发展趋势。\n\n本期简报涵盖房地产市场重大资产调整、大学体育赛事回归、数字货币监管挑战及软件行业财务动态，反映了全球经济和社会多个领域的关键发展。\n\n本次简报覆盖了金融科技、企业高管薪酬及股市投资三个领域的最新动态，反映出数字货币政策调整、科技巨头薪酬创新以及贵金属资产持续升值的重要趋势。\n\n本期新闻主要聚焦全球政治经济动态：第一则报道匈牙利总理奥尔班与特朗普新闻秘书之间的互动，反映国际政治阵营间的亲近关系；第二、四则报道围绕全球央行对黄金资产的囤积及金库建设，揭示货币体系潜在的变革趋势；第三则关注比特币市场早期大户的抛售行为，对加密市场未来走向提出警示。了解这些动态有助于掌握全球金融政治的复杂变化。"}]}
