@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>项目笔记模板</title>
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --surface: rgba(255, 255, 255, 0.82);
+      --border: rgba(0, 0, 0, 0.08);
+      --text: #1c1c1e;
+      --muted: #6d6d72;
+      --accent: #0071e3;
+      --shadow: 0 30px 60px rgba(15, 23, 42, 0.18);
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --surface: rgba(30, 41, 59, 0.82);
+        --border: rgba(255, 255, 255, 0.08);
+        --text: #f8fafc;
+        --muted: #cbd5f5;
+        --shadow: 0 20px 40px rgba(8, 47, 73, 0.38);
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
+      background: radial-gradient(circle at top, rgba(0, 113, 227, 0.2), transparent 55%), radial-gradient(circle at bottom, rgba(236, 72, 153, 0.16), transparent 45%), var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    @media (prefers-color-scheme: dark) {
+      header {
+        background: rgba(15, 23, 42, 0.8);
+      }
+    }
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.2s ease;
+    }
+    .nav a:hover {
+      color: var(--accent);
+    }
+    .logo {
+      font-weight: 600;
+      color: var(--text);
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+      display: grid;
+      gap: 64px;
+    }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 48px;
+      box-shadow: var(--shadow);
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    h1 {
+      font-size: clamp(34px, 5vw, 52px);
+    }
+    h2 {
+      font-size: clamp(26px, 3.4vw, 34px);
+      margin-bottom: 24px;
+    }
+    h3 {
+      font-size: clamp(20px, 2.6vw, 24px);
+      margin-top: 32px;
+    }
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+    ul, ol {
+      margin: 0 0 18px;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      background: rgba(0, 113, 227, 0.12);
+      color: var(--accent);
+      font-size: 12px;
+      margin-right: 8px;
+    }
+    .hero {
+      display: grid;
+      gap: 24px;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .callout {
+      border-left: 4px solid var(--accent);
+      padding: 16px 24px;
+      background: rgba(0, 113, 227, 0.08);
+      border-radius: 12px;
+      color: var(--muted);
+    }
+    figure {
+      margin: 32px 0;
+      padding: 0;
+    }
+    figure img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    figcaption {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 8px;
+      text-align: center;
+    }
+    pre {
+      background: rgba(15, 23, 42, 0.92);
+      color: #f8fafc;
+      border-radius: 16px;
+      padding: 24px;
+      overflow-x: auto;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 24px 0;
+    }
+    code {
+      font-family: "JetBrains Mono", "Fira Code", "Menlo", "SFMono-Regular", Consolas, monospace;
+    }
+    .grid {
+      display: grid;
+      gap: 24px;
+    }
+    .grid.two {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    @media (prefers-color-scheme: dark) {
+      .card {
+        background: rgba(30, 41, 59, 0.7);
+      }
+      .callout {
+        background: rgba(0, 113, 227, 0.22);
+      }
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 680px) {
+      header {
+        position: static;
+      }
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+      section {
+        padding: 32px;
+      }
+      pre {
+        padding: 16px;
+        border-radius: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <span class="logo">DailyNews 📰</span>
+      <a href="https://github.com/ymphys/dailynews">GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="intro">
+      <div class="hero-meta">
+        <span class="tag">Python</span>
+        <span class="tag">新闻采集</span>
+        <span class="tag">数据分析</span>
+        <span class="tag">自动化</span>
+        <span>最后更新：<time datetime="2025-11-09">2025-11-09</time></span>
+      </div>
+      <h1>DailyNews · 智能新闻助手</h1>
+      <p>一个轻量级的新闻助手，可以从多个地区和语言收集最新头条，规范化处理结果，并每天生成分析师友好的新闻摘要。专为研究人员和通讯作者设计，提供可重复的、基于查询的新闻摘要，无需被锁定在 SaaS 平台中。</p>
+      <div class="callout">
+        <strong>项目目标：</strong>为研究人员和通讯作者提供一个灵活、可靠的新闻采集工具，实现多语言新闻源的自动化采集、规范化处理和分析友好的摘要生成，帮助用户更高效地追踪和分析新闻动态。
+      </div>
+    </section>
+
+    <section id="overview">
+      <h2>项目概览</h2>
+      <p>DailyNews 是一个专注于新闻采集和分析的自动化工具，它能够根据用户定义的主题和关键词，从多个新闻源收集信息，并生成结构化的分析报告。</p>
+      <div class="grid two">
+        <div class="card">
+          <h3>Why - 解决的问题</h3>
+          <ul>
+            <li>手动收集新闻费时费力</li>
+            <li>多语言新闻源整合困难</li>
+            <li>新闻数据格式不统一</li>
+            <li>SaaS 平台成本高且不灵活</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>What - 核心功能</h3>
+          <ul>
+            <li>🌍 多语言新闻源支持</li>
+            <li>🔍 自定义主题和关键词</li>
+            <li>📊 多格式报告导出</li>
+            <li>⚡ 自动化采集和处理</li>
+            <li>🔐 安全的凭证管理</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <h2>系统架构</h2>
+      <ol>
+        <li><strong>配置管理：</strong>处理环境变量和查询配置，支持灵活的主题定义。</li>
+        <li><strong>数据采集：</strong>通过 NewsAPI 等接口获取新闻数据，支持多提供商适配。</li>
+        <li><strong>数据处理：</strong>对原始数据进行清洗、规范化和结构化处理。</li>
+        <li><strong>报告生成：</strong>将处理后的数据转换为多种格式的分析报告。</li>
+        <li><strong>自动化流程：</strong>支持通过 cron 或 GitHub Actions 实现自动化运行。</li>
+      </ol>
+      <div class="callout">
+        <strong>设计理念：</strong>采用模块化设计，确保系统的可扩展性和可维护性。每个模块都有明确的职责，通过标准接口进行交互，方便未来扩展新的数据源和输出格式。
+      </div>
+    </section>
+
+    <section id="tech">
+      <h2>技术栈与工具</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>核心技术</h3>
+          <ul>
+            <li>🐍 Python 3.12+</li>
+            <li>🌐 Requests (HTTP 客户端)</li>
+            <li>📦 python-dotenv (环境管理)</li>
+            <li>🔍 NewsAPI (新闻数据源)</li>
+            <li>📊 Pandas (数据处理)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>可选组件</h3>
+          <ul>
+            <li>✨ Pydantic (数据验证)</li>
+            <li>🎨 Rich (终端美化)</li>
+            <li>⌨️ Typer (CLI 工具)</li>
+            <li>🔄 GitHub Actions (CI/CD)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="code">
+      <h2>配置示例</h2>
+      <p>以下是一个典型的主题配置文件示例，展示如何定义新闻采集的查询条件和参数：</p>
+      <pre><code class="language-json">{
+  "topics": [
+    {
+      "name": "人工智能新闻",
+      "keywords": ["AI", "人工智能", "机器学习"],
+      "languages": ["zh", "en"],
+      "sources": ["newsapi"],
+      "max_results": 50,
+      "sort_by": "relevancy"
+    },
+    {
+      "name": "科技动态",
+      "keywords": ["科技", "技术创新"],
+      "languages": ["zh"],
+      "sources": ["newsapi"],
+      "max_results": 30,
+      "sort_by": "date"
+    }
+  ]
+}</code></pre>
+      <p>配置文件支持灵活的查询定义，包括多语言支持、多关键词组合、结果排序等选项。您可以根据需要添加或修改主题配置。</p>
+    </section>
+
+    <section id="demo">
+      <h2>使用示例</h2>
+      <p>以下是项目的基本使用流程和输出示例：</p>
+      <div class="grid two">
+        <div class="card">
+          <h3>基本使用</h3>
+          <pre><code class="language-bash"># 安装依赖
+  uv sync
+
+# 设置环境变量
+export NEWSAPI_KEY=your_api_key_here
+
+# 运行收集器
+  uv run main.py \
+  --topics config/run_state_topics.json \
+  --output data/$(date +%Y%m%d)</code></pre>
+        </div>
+        <div class="card">
+          <h3>输出示例</h3>
+          <pre><code class="language-markdown"># 每日新闻摘要 - 2025-11-09
+
+## 人工智能新闻
+1. [标题1] - 来源 - 时间
+   摘要内容...
+2. [标题2] - 来源 - 时间
+   摘要内容...</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <h2>开发计划</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>当前进展</h3>
+          <ul>
+            <li>✅ 核心采集功能</li>
+            <li>✅ 配置驱动的主题系统</li>
+            <li>✅ 多格式导出支持</li>
+            <li>✅ 环境变量管理</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>未来计划</h3>
+          <ul>
+            <li>⏳ 多提供商适配器 (Guardian API, GDELT, RSS)</li>
+            <li>📝 重复内容检测</li>
+            <li>📝 命名实体识别自动标记</li>
+            <li>📝 Web 仪表板开发</li>
+            <li>📝 自动化部署流程</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>相关资源</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>文档</h3>
+          <ul>
+            <li><a href="https://github.com/ymphys/dailynews" target="_blank" rel="noopener">项目主页</a></li>
+            <li><a href="https://newsapi.org/docs" target="_blank" rel="noopener">NewsAPI 文档</a></li>
+            <li><a href="https://docs.python.org/3.12/" target="_blank" rel="noopener">Python 文档</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>贡献</h3>
+          <ul>
+            <li>🐛 <a href="https://github.com/ymphys/dailynews/issues" target="_blank" rel="noopener">报告问题</a></li>
+            <li>💡 <a href="https://github.com/ymphys/dailynews/pulls" target="_blank" rel="noopener">提交改进</a></li>
+            <li>📧 <a href="https://github.com/ymphys" target="_blank" rel="noopener">联系作者</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      项目持续更新中，欢迎 <a href="https://github.com/ymphys/dailynews" target="_blank" rel="noopener">Star ⭐️</a> 
+      和贡献！
+    </p>
+  </footer>
+</body>
+</html>
