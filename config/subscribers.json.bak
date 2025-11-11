@@ -16,6 +16,8 @@
       "email": "1047962614@qq.com",
       "frequency": "daily",
       "digests": [
+        "global_headlines",
+        "science_tech",
         "ai"
       ]
     },
@@ -23,7 +25,9 @@
       "id": "nodels",
       "email": "jiabaozhang098@gmail.com",
       "digests": [
-        "china_economy"
+        "global_headlines",
+        "china_economy",
+        "gold_fx"
       ]
     }
   ]

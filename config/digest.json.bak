@@ -62,6 +62,47 @@
       }
     },
     {
+      "id": "science_tech",
+      "mode": "topic",
+      "display_name": "Science and Technology",
+      "description": "Science and technology coverage in Chinese and English.",
+      "news_queries": [
+        {
+          "endpoint": "everything",
+          "q": "(\"科学\" OR \"技术\")",
+          "searchIn": "title,description",
+          "language": "zh",
+          "pageSize": 20,
+          "sortBy": "publishedAt"
+        },
+        {
+          "endpoint": "everything",
+          "q": "(\"Science\" OR \"Technology\")",
+          "searchIn": "title,description",
+          "language": "en",
+          "pageSize": 20,
+          "sortBy": "publishedAt"
+        }
+      ],
+      "newsapi": {
+        "max_age_days": 2
+      },
+      "email": {
+        "subject_template": "Science and Technology Briefing - {local_dt:%Y-%m-%d %H:%M}",
+        "tags": [
+          "science",
+          "technology"
+        ]
+      },
+      "output": {
+        "filename_prefix": "science-tech-briefing"
+      },
+      "schedule": {
+        "default_time": "08:00",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
       "id": "china_economy",
       "mode": "topic",
       "display_name": "China Economy and Politics",
@@ -137,6 +178,47 @@
       },
       "output": {
         "filename_prefix": "ai-briefing"
+      },
+      "schedule": {
+        "default_time": "08:00",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
+      "id": "gold_fx",
+      "mode": "topic",
+      "display_name": "Gold and FX",
+      "description": "Precious metals and USD foreign exchange coverage.",
+      "news_queries": [
+        {
+          "endpoint": "everything",
+          "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")",
+          "searchIn": "title,description",
+          "language": "zh",
+          "pageSize": 20,
+          "sortBy": "publishedAt"
+        },
+        {
+          "endpoint": "everything",
+          "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")",
+          "searchIn": "title,description",
+          "language": "en",
+          "pageSize": 20,
+          "sortBy": "publishedAt"
+        }
+      ],
+      "newsapi": {
+        "max_age_days": 2
+      },
+      "email": {
+        "subject_template": "Gold and FX Briefing - {local_dt:%Y-%m-%d %H:%M}",
+        "tags": [
+          "gold",
+          "fx"
+        ]
+      },
+      "output": {
+        "filename_prefix": "gold-fx-briefing"
       },
       "schedule": {
         "default_time": "08:00",

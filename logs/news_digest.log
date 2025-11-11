@@ -13462,3 +13462,873 @@ smtplib.SMTPResponseException: (-1, b'\x00\x00\x00')
 2025-11-11 13:29:23,527 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
 2025-11-11 13:29:23,527 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
 2025-11-11 13:29:23,527 | INFO | No articles retrieved for headline digest; nothing to summarize.
+2025-11-11 17:47:22,131 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-11 17:47:23,111 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-11 17:47:23,111 | INFO | Retained 7 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:47:23,111 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-11 17:47:23,473 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:47:23,473 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:47:23,475 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-11 17:47:23,896 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:47:23,896 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:47:23,896 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-11 17:47:24,245 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:47:24,245 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:47:26,725 | INFO | Summarizing 7 articles across 2 batches.
+2025-11-11 17:47:54,714 | INFO | Completed batch 1/2 (briefings=4).
+2025-11-11 17:48:14,008 | INFO | Completed batch 2/2 (briefings=7).
+2025-11-11 17:48:14,009 | INFO | OpenAI summarization completed across 2 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=4981)
+2025-11-11 17:48:14,009 | INFO | Saved digest to digests\headline-briefing-2025-11-11_1748.md
+2025-11-11 17:48:14,193 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com, jiabaozhang098@gmail.com.
+2025-11-11 17:48:14,199 | INFO | Headline run summary: {"started_at": "2025-11-11T09:47:22.081442+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-10T05:03:07.982010+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "pageSize": 30}, "status": "ok", "total_results": 34, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}]}, "openai": {"key": "sk-p...dkwA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 1789, "output_tokens": 3192, "total_tokens": 4981}}, "outputs": {"digest_path": "digests\\headline-briefing-2025-11-11_1748.md", "articles_summarized": 7, "summary_notes": "本期简报涵盖美国政府停摆对亚太金融市场的影响、NFL明星四分卫阿隆·罗杰斯的赛后反思、关键福利政策的司法进展以及联邦航空相关私人大型机场禁飞令，涉及政治、体育、社会福利与航空多领域信息，丰富读者对近期热点事件的理解。\n\n本期摘要覆盖了2025年11月10日的星座运势提醒、NFL第10周赛后关键看点及美国政治领域的重大特赦事件，涉及娱乐、体育及政治多个方面，为读者提供多维度的全球动态视角。", "recipients": ["1047962614@qq.com", "jiabaozhang098@gmail.com"]}}
+2025-11-11 17:57:18,803 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-11 17:57:19,731 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-11 17:57:19,735 | INFO | Retained 1 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:57:19,735 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-11 17:57:20,100 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:57:20,102 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:57:20,102 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-11 17:57:20,520 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:57:20,522 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:57:20,522 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-11 17:57:21,055 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:57:21,057 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:57:23,475 | INFO | Summarizing 1 articles across 1 batches.
+2025-11-11 17:57:35,450 | INFO | Completed batch 1/1 (briefings=1).
+2025-11-11 17:57:35,450 | INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=1028)
+2025-11-11 17:57:35,452 | INFO | Saved digest to digests\headline-briefing-2025-11-11_1757.md
+2025-11-11 17:57:35,638 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com, jiabaozhang098@gmail.com.
+2025-11-11 17:57:35,645 | INFO | Headline run summary: {"started_at": "2025-11-11T09:57:18.769698+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-10T09:47:22.081442+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "pageSize": 30}, "status": "ok", "total_results": 34, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}]}, "openai": {"key": "sk-p...dkwA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 460, "output_tokens": 568, "total_tokens": 1028}}, "outputs": {"digest_path": "digests\\headline-briefing-2025-11-11_1757.md", "articles_summarized": 1, "summary_notes": "This briefing highlights the interplay between US political events and global financial markets, emphasizing how uncertainties about government funding can influence investor behavior across regions, particularly in Asia.", "recipients": ["1047962614@qq.com", "jiabaozhang098@gmail.com"]}}
+2025-11-11 17:59:27,861 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-11 17:59:30,296 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-11 17:59:30,298 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:59:30,298 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-11 17:59:30,616 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:59:30,621 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:59:30,621 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-11 17:59:30,974 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:59:30,976 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:59:30,976 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-11 17:59:31,616 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 17:59:31,616 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 17:59:31,616 | INFO | No articles retrieved for headline digest; nothing to summarize.
+2025-11-11 18:00:08,928 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-11 18:00:09,884 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-11 18:00:09,884 | INFO | Retained 26 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 18:00:09,884 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-11 18:00:10,287 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:00:10,287 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 18:00:10,287 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-11 18:00:10,836 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:00:10,839 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 18:00:10,839 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-11 18:00:11,244 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:00:11,244 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 18:00:13,237 | INFO | Summarizing 26 articles across 7 batches.
+2025-11-11 18:00:55,580 | INFO | Completed batch 1/7 (briefings=4).
+2025-11-11 18:01:18,527 | INFO | Completed batch 2/7 (briefings=8).
+2025-11-11 18:01:47,842 | INFO | Completed batch 3/7 (briefings=12).
+2025-11-11 18:02:08,270 | INFO | Completed batch 4/7 (briefings=16).
+2025-11-11 18:02:30,403 | INFO | Completed batch 5/7 (briefings=20).
+2025-11-11 18:02:58,228 | INFO | Completed batch 6/7 (briefings=24).
+2025-11-11 18:03:12,301 | INFO | Completed batch 7/7 (briefings=26).
+2025-11-11 18:03:12,304 | INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=17158)
+2025-11-11 18:03:12,308 | INFO | Saved digest to digests\headline-briefing-2025-11-11_1803.md
+2025-11-11 18:03:16,254 | INFO | Sent digest email to 1047962614@qq.com, jiabaozhang098@gmail.com.
+2025-11-11 18:03:16,259 | INFO | Headline run summary: {"started_at": "2025-11-11T10:00:08.910546+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-09T09:57:18.769698+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "pageSize": 30}, "status": "ok", "total_results": 34, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}]}, "openai": {"key": "sk-p...dkwA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 6645, "output_tokens": 10513, "total_tokens": 17158}}, "outputs": {"digest_path": "digests\\headline-briefing-2025-11-11_1803.md", "articles_summarized": 26, "summary_notes": "本期新闻涵盖美国政治影响金融市场、体育赛事明星表现、社会福利法律争议及航空监管动态，体现全球关注的多领域热点事件。\n\n本期简报涵盖从占星提醒、体育赛事解读到重要政治事件及欧洲地缘政治发展的多样新闻，帮助读者掌握全球动态及其背后深层影响。\n\n本期国际新闻简报涵盖了医疗科研、娱乐、体育及媒体政治争议四大领域，反映了全球多样化的时事动态。\n\n本期简报涵盖娱乐圈动态、全球半导体贸易政策变化、亚太地区金融市场走势及重要物流挑战，反映当前全球多领域的焦点和趋势。\n\n本期简报涵盖航天发射推迟、极端天气预警、监狱暴乱及经济政策争议，反映全球多个领域的复杂挑战与应对策略。\n\n本期新闻涵盖天文学最新发现、电影票房动态、科技新品规划及娱乐圈明星动态，便于读者快速了解多领域国际热点事件。\n\n本期简报涵盖了心血管健康与传染病两大领域的重要最新研究和预警，提醒公众关注日常生活习惯及及时采取预防措施。", "recipients": ["1047962614@qq.com", "jiabaozhang098@gmail.com"]}}
+2025-11-11 18:16:23,022 | INFO | Requesting everything with params={'q': '("科学" OR "技术")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T05:06:46.605937+00:00'}
+2025-11-11 18:16:23,748 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:16:23,748 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 18:16:23,750 | INFO | Requesting everything with params={'q': '("Science" OR "Technology")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T05:06:46.605937+00:00'}
+2025-11-11 18:16:24,089 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:16:24,091 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-11 18:16:24,091 | INFO | No articles retrieved for digest 'science_tech'; skipping.
+2025-11-11 18:16:24,092 | INFO | Requesting everything with params={'q': '("中国经济") OR ("中国政治")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T05:06:46.605937+00:00'}
+2025-11-11 18:16:24,690 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:16:24,690 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 18:16:24,690 | INFO | Requesting everything with params={'q': '("China Economy") OR ("China Politics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T05:06:46.605937+00:00'}
+2025-11-11 18:16:25,061 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:16:25,061 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-11 18:16:25,061 | INFO | No articles retrieved for digest 'china_economy'; skipping.
+2025-11-11 18:16:25,063 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T05:06:46.605937+00:00'}
+2025-11-11 18:16:25,488 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:16:25,489 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 18:16:25,489 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T05:06:46.605937+00:00'}
+2025-11-11 18:16:25,987 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:16:25,990 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-11 18:16:25,990 | INFO | No articles retrieved for digest 'ai'; skipping.
+2025-11-11 18:16:25,990 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属" OR "美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T05:06:46.605937+00:00'}
+2025-11-11 18:16:26,708 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:16:26,710 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 18:16:26,710 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal" OR "USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T05:06:46.605937+00:00'}
+2025-11-11 18:16:27,136 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:16:27,138 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-11 18:16:27,138 | INFO | No articles retrieved for digest 'gold_fx'; skipping.
+2025-11-11 18:16:27,142 | INFO | Topic run summary: {"started_at": "2025-11-11T10:16:23.005885+00:00", "digest_ids": [], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-11T10:00:08.910546+00:00", "science_tech": "2025-11-11T05:06:46.605937+00:00", "china_economy": "2025-11-11T05:06:46.605937+00:00", "ai": "2025-11-11T05:06:46.605937+00:00", "gold_fx": "2025-11-11T05:06:46.605937+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p...dkwA", "model": null, "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": []}
+2025-11-11 18:16:56,256 | INFO | Requesting everything with params={'q': '("科学" OR "技术")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T05:06:46.605937+00:00'}
+2025-11-11 18:16:57,281 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 18:16:57,281 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 18:16:57,281 | INFO | Requesting everything with params={'q': '("Science" OR "Technology")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T05:06:46.605937+00:00'}
+2025-11-11 18:16:57,968 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 18:16:57,968 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-11 18:16:59,670 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-11 18:17:20,518 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-11 18:17:49,667 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "硅谷大规模裁员背后：AI并非主因，资本与老板决策才是关键",
+      "chinese_brief": "近日，硅谷科技公司大规模裁员引发广泛关注。分析指出，虽表面因AI技术兴起导致员工减少，但实质是公司高层利用AI提高效率以减少成本，背后反映资本对算力和数据中心的猛烈押注。这种赌局导致部分岗位消失，出版业、互联网和云服务等行业均面临挑战。美国经济正处在由算法驱动的转型关口，胜者将掌握未来经济命脉，失败者则面临失业风险。",
+      "english_brief": "Recently, large-scale layoffs in Silicon Valley have attracted significant attention. Analysis suggests that while AI's rise is seen as the cause, the real driver is leadership using AI to boost efficiency and cut costs amid heavy investment in computing power and data centers. This gamble has resulted in job losses across industries like publishing, internet, and cloud services. The US economy is at a transformative stage driven by algorithms, where winners will control future economic dynamics, and losers face unemployment risks.",
+      "term_clarifications": [
+        {
+          "term": "AI",
+          "explanation": "Artificial Intelligence, a branch of computer science focused on building smart machines capable of performing tasks that typically require human intelligence. 人工智能，计算机科学的一个分支，致力于开发能够执行通常需要人类智能的任务的智能机器。"
+        },
+        {
+          "term": "硅谷 (Silicon Valley)",
+          "explanation": "Located in California, Silicon Valley is the global center for high-tech innovation and development, home to many major technology companies. 加利福尼亚州的硅谷是全球高科技创新与发展的中心，聚集了众多科技巨头公司。"
+        },
+        {
+          "term": "算力",
+          "explanation": "Computing power, referring to the processing capability of computer systems, crucial for AI applications. 指计算机系统的处理能力，是AI应用的关键资源。"
+        },
+        {
+          "term": "数据中心",
+          "explanation": "Facilities housing computer systems and storage systems that provide essential infrastructure for cloud computing and AI. 存放计算机系统和存储系统的设施，为云计算和人工智能提供基础设施。"
+        },
+        {
+          "term": "奇点革命",
+          "explanation": "Refers to the technological singularity, a hypothetical future point when AI surpasses human intelligence, potentially transforming society. 指技术奇点，指人工智能超越人类智能的未来假设点，可能引发社会重大变革。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "研究显示企业AI投资回报低，裁员员工正被重新召回",
+      "chinese_brief": "麻省理工学院近期研究指出，95%的企业尚未从AI投资中获利。基于此，调查发现许多企业开始重新召回曾因AI部署而裁减的员工。人力分析公司Visier的数据显示，2025年职业重聘率达到近五年来最高，反映出企业对AI实际产出和人力需求之间的调整与矛盾。此现象表明，AI推广进程中存在预期与现实的差距，企业需更谨慎平衡自动化与人力资源布局。",
+      "english_brief": "A recent MIT study found that 95% of companies have yet to see positive returns from AI investments. Accordingly, many firms are recalling employees previously laid off due to AI implementation. Data from workforce analytics firm Visier shows rehiring rates in 2025 hitting their highest in five years, highlighting tensions between AI's expected benefits and actual human resource needs. This reveals gaps between expectations and reality in AI adoption, urging companies to carefully balance automation with workforce management.",
+      "term_clarifications": [
+        {
+          "term": "MIT",
+          "explanation": "Massachusetts Institute of Technology, a prestigious research university known for technological and scientific research. 麻省理工学院，著名的科技研究型大学，以技术和科学研究著称。"
+        },
+        {
+          "term": "Visier",
+          "explanation": "A workforce analytics company that provides insights on employment and recruitment trends. 一家提供就业和招聘趋势洞察的人力分析公司。"
+        },
+        {
+          "term": "AI投资回报",
+          "explanation": "Returns or benefits gained from investing in artificial intelligence technologies. 投资人工智能技术所获得的收益或回报。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "DDR5内存刷新世界超频速度纪录，超13211MT/s",
+      "chinese_brief": "DDR5内存性能再创新高，超频玩家AiMax刷新世界纪录，达成13211MT/s速度，此成绩已被CPU-Z认证并录入HWBot平台。此次突破依赖于技嘉Z890 AORUS Tachyon ICE主板及Patriot Viper Xtreme 5内存模块的强大硬件组合，展示了当前内存技术在极限超频中的巨大潜力和快速演进。该进展对提升高性能计算和游戏体验意义重大。",
+      "english_brief": "DDR5 memory performance hits a new world overclocking record as enthusiast AiMax achieves a speed of 13211 MT/s, validated by CPU-Z and recorded on the HWBot platform. This feat was enabled by the powerful hardware combo of the Gigabyte Z890 AORUS Tachyon ICE motherboard and Patriot Viper Xtreme 5 modules, showcasing the significant potential and rapid evolution of current memory technology in extreme overclocking. This advancement is crucial for high-performance computing and gaming experiences.",
+      "term_clarifications": [
+        {
+          "term": "DDR5",
+          "explanation": "The fifth generation of Double Data Rate (DDR) synchronous dynamic random-access memory (SDRAM), offering higher speeds and efficiency. 第五代双倍数据速率同步动态随机存取内存（SDRAM），具备更高的速度和效率。"
+        },
+        {
+          "term": "MT/s",
+          "explanation": "Mega Transfers per second, a unit measuring data transfer rate of memory. 表示内存数据传输速度的单位，每秒百万次传输。"
+        },
+        {
+          "term": "超频",
+          "explanation": "Overclocking, the practice of increasing the clock rate of a computer component beyond the manufacturer's specifications for better performance. 指将计算机部件的时钟频率调高超出厂家规格以获得更好性能的做法。"
+        },
+        {
+          "term": "CPU-Z",
+          "explanation": "A freeware software that provides detailed information about a computer’s hardware components. 一款免费软件，可详细显示计算机硬件信息。"
+        },
+        {
+          "term": "HWBot",
+          "explanation": "An online platform for benchmarking and submitting overclocking records. 一个用于基准测试和提交超频成绩的在线平台。"
+        },
+        {
+          "term": "技嘉Z890 AORUS Tachyon ICE",
+          "explanation": "A high-end Gigabyte motherboard designed specifically for extreme overclocking. 技嘉推出的专为极限超频设计的高端主板。"
+        },
+        {
+          "term": "Patriot Viper Xtreme 5",
+          "explanation": "A high-performance DDR5 memory module brand popular among gaming and enthusiast communities. 一款受游戏和发烧友欢迎的高性能DDR5内存品牌。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "中国推动物流行业数字化转型 降低全社会物流成本",
+      "chinese_brief": "中国国家发展改革委联合多部门发布实施方案，深化物流行业数字化和智能化改造，推动物流基础业务线上化、可视化及数据化。方案强调扩大物联网、云计算、大数据、AI及区块链等技术在物流领域的应用，促进物流数据实时采集和跨行业互联，提高物流效率并降低成本。此举旨在通过技术赋能，推动物流行业高质量发展和产业协同升级。",
+      "english_brief": "China’s National Development and Reform Commission along with other agencies issued an implementation plan to deepen the digital and intelligent transformation of the logistics sector, promoting online, visualized, and data-driven basic logistics operations. The plan emphasizes expanding the use of IoT, cloud computing, big data, AI, and blockchain technologies in logistics to enable real-time data collection and cross-industry connectivity, enhancing efficiency and reducing costs. This initiative aims to empower the logistics industry with technology for high-quality development and industrial synergy upgrades.",
+      "term_clarifications": [
+        {
+          "term": "国家发展改革委",
+          "explanation": "National Development and Reform Commission (NDRC), a macroeconomic management agency under China’s State Council responsible for economic and social development planning. 中国国务院下属的宏
+2025-11-11 18:17:49,671 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "硅谷大规模裁员背后：AI并非主因，资本与老板决策才是关键",       "chinese_brief": "近日，硅谷科技公司大规模裁员引发广泛关注。分析指出，虽表面因AI技术兴起导致员工减少，但实质是公司高层利用AI提高效率以减少成本，背后反映资本对算力和数据中心的猛烈押注。这种赌局导致部分岗位消失，出版业、互联网和云服务等行业均面临挑战。美国经济正处在由算法驱动的转型关口，胜者将掌握未来经济命脉，失败者则面临失业风险。",       "english_brief": "Recently, large-scale layoffs in Silicon Valley have attracted significant attention. Analysis suggests that while AI's rise is seen as the cause, the real driver is leadership using AI to boost effic...)
+2025-11-11 18:18:17,354 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-11 18:20:33,322 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-11 18:21:00,346 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-11 18:21:29,786 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-11 18:21:59,127 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-11 18:22:24,393 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-11 18:22:53,821 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-11 18:23:18,824 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-11 18:23:41,616 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-11 18:23:41,618 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=34153)
+2025-11-11 18:23:41,645 | INFO | Saved digest to digests\science-tech-briefing-2025-11-11_1823.md
+2025-11-11 18:23:41,771 | INFO | No configured subscribers for digest 'science_tech'; using environment recipients.
+2025-11-11 18:23:41,823 | WARNING | Email configuration incomplete; skipping email send (from=1047962614@qq.com, recipients=[]).
+2025-11-11 18:23:41,825 | INFO | Requesting everything with params={'q': '("中国经济") OR ("中国政治")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T05:06:46.605937+00:00'}
+2025-11-11 18:23:42,738 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:23:42,739 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 18:23:42,739 | INFO | Requesting everything with params={'q': '("China Economy") OR ("China Politics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T05:06:46.605937+00:00'}
+2025-11-11 18:23:43,124 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 18:23:43,125 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-11 18:23:43,125 | INFO | No articles retrieved for digest 'china_economy'; skipping.
+2025-11-11 18:23:43,126 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T05:06:46.605937+00:00'}
+2025-11-11 18:23:43,560 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 18:23:43,565 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 18:23:43,565 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T05:06:46.605937+00:00'}
+2025-11-11 18:23:44,083 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 18:23:44,085 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-11 18:23:45,608 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-11 18:24:06,932 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-11 18:24:38,866 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "緯穎受惠AWS ASIC專案，2025年Q3獲利大幅超預期",
+      "chinese_brief": "緯穎（股票代號6669）作為AI伺服器代工龍頭，因亞馬遜AWS ASIC專案出貨量強勁以及一次性工程收入（NRE）貢獻，使得2025年第三季營收和淨利顯著成長。營收達新台幣2,668億元，季增21%、年增173%，淨利達154億元，季增27%、年增144%，每股盈餘82.9元，超出市場預期33%。此發展不僅提升公司股價評價，也顯示其在AI硬體領域的競爭優勢進一步鞏固。",
+      "english_brief": "WiWynn (stock code 6669), a leading AI server contract manufacturer, benefited from strong shipments from Amazon AWS's ASIC project and one-time engineering income (NRE) contributions, resulting in significant revenue and profit growth in Q3 2025. Revenue reached TWD 266.8 billion, up 21% quarter-on-quarter and 173% year-on-year, with net profit of TWD 15.4 billion, up 27% QoQ and 144% YoY. Earnings per share (EPS) was 82.9, exceeding market expectations by 33%. This performance not only boosts the company's stock valuation but also reinforces its competitive edge in the AI hardware sector.",
+      "term_clarifications": [
+        {
+          "term": "緯穎 (WiWynn)",
+          "explanation": "一間專注於人工智慧伺服器及數據中心硬體代工的台灣科技公司，是全球數據中心硬體供應的重要廠商。",
+          "explanation_en": "A Taiwanese technology company specializing in AI server and data center hardware manufacturing, playing a significant role in the global data center hardware supply chain."
+        },
+        {
+          "term": "ASIC",
+          "explanation": "應用專用積體電路（Application-Specific Integrated Circuit），為針對特定用途設計的晶片，具高效能和低功耗特點。",
+          "explanation_en": "Application-Specific Integrated Circuit, a chip designed for a particular use, offering high efficiency and low power consumption."
+        },
+        {
+          "term": "AWS",
+          "explanation": "Amazon Web Services，亞馬遜公司旗下的雲端運算服務平台，全球領先的雲服務供應商。",
+          "explanation_en": "Amazon Web Services, Amazon's cloud computing platform, a leading global cloud service provider."
+        },
+        {
+          "term": "NRE",
+          "explanation": "一次性工程收入（Non-Recurring Engineering），指在產品開發階段一次性收取的工程服務費用。",
+          "explanation_en": "Non-Recurring Engineering, a one-time engineering service fee charged during the product development phase."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "小米首款NAS智能存储曝光，兼容多平台和SATA硬盘",
+      "chinese_brief": "博主爆料小米即將推出首款NAS（網絡附加存儲）家庭存儲產品，支持2.5英寸及3.5英寸SATA硬盤，兼容Android、iOS、Windows、MacOS及Linux TV系統。該設備外形尺寸約200.5mm x 85mm x 16mm，計劃發布時程與小米17 Ultra類似。這款產品主打家庭易用性，預計進一步豐富小米智慧家庭生態系。",
+      "english_brief": "A blogger revealed that Xiaomi is preparing to launch its first NAS (Network Attached Storage) home storage product, supporting 2.5-inch and 3.5-inch SATA hard drives and compatible with Android, iOS, Windows, MacOS, and Linux TV systems. The device measures approximately 200.5mm x 85mm x 16mm, with a release schedule similar to that of the Xiaomi 17 Ultra. This product aims to enhance ease of use for families and is expected to enrich Xiaomi’s smart home ecosystem.",
+      "term_clarifications": [
+        {
+          "term": "NAS",
+          "explanation": "網絡附加存儲(Network Attached Storage)，一種通過網絡提供數據存取和分享的文件存儲系統，常用於家庭和企業資料備份。",
+          "explanation_en": "Network Attached Storage, a file storage system connected to a network that allows data access and sharing, commonly used for home and business backups."
+        },
+        {
+          "term": "SATA",
+          "explanation": "串行先進技術附加（Serial ATA），用於連接硬盤和主機板的存儲介面標準。",
+          "explanation_en": "Serial ATA, a storage interface standard used to connect hard drives to the motherboard."
+        },
+        {
+          "term": "小米17 Ultra",
+          "explanation": "小米即將推出的高階智能手機型號，代表其旗艦產品線。",
+          "explanation_en": "Xiaomi’s upcoming flagship smartphone model, representing the company's high-end product line."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "澳洲央行副總裁：貨幣寬鬆空間有限，經濟復甦面臨挑戰",
+      "chinese_brief": "澳洲央行副總裁豪瑟表示，由於經濟生產力仍受限且需求高於潛在產出，短期內貨幣政策持續寬鬆的空間不大。自去年以來澳洲經濟逐步復甦，但央行必須在支持經濟成長與控制通膨壓力間取得平衡，這為貨幣政策制定帶來異常挑戰，未來政策走向將持續受到關注。",
+      "english_brief": "Australia’s Deputy Reserve Bank Governor Hauser stated that due to constrained economic productivity and demand surpassing potential output, there is limited room for continued monetary easing in the short term. Since last year, Australia’s economy has gradually recovered, but the central bank faces the challenging task of balancing economic growth support and inflation control. The future direction of monetary policy will remain closely watched.",
+      "term_clarifications": [
+        {
+          "term": "貨幣寬鬆 (Monetary easing)",
+          "explanation": "指中央銀行透過降低利率或購買資產等手段增加市場資金供應，促進經濟成長。",
+          "explanation_en": "Refers to central banks increasing money supply through interest rate cuts or asset purchases to stimulate economic growth."
+        },
+        {
+          "term": "潛在產出 (Potential output)",
+          "explanation": "經濟在沒有引發通膨壓力下，能持續達到的最大產出水平。",
+          "explanation_en": "The maximum sustainable output level of an economy without causing inflationary pressures."
+        },
+        {
+          "term": "澳洲央行",
+          "explanation": "澳大利亞的中央銀行，負責制定貨幣政策及維護金融穩定。",
+          "explanation_en": "Australia’s central bank responsible for monetary policy and financial stability."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "旭然10月營收創同期新高，月增43%展現成長動能",
+      "chinese_brief": "旭然國際（股票代號4556）2025年10月合併營收達7,709萬元，較上月成長43%，較去年同期增長26%，創歷年同期新高。累計今年前十個月營收為5.55億元，較去年同期略減5%。此成績顯示公司在逐步恢復成長軌道，未來營運表現仍值得關注。",
+      "english_brief": "The consolidated revenue of Ausun International (stock code 4556) in October 2025 reached TWD 77.09 million, up 43% month-on-month and 26% year-on-year, marking a record high for the period. The cumulative revenue for the first ten months totaled TWD 555 million, a slight 5% decrease compared to the same period last year. This result indicates the company is gradually returning to a growth path, and its future performance remains noteworthy.",
+      "term_clarifications": [
+        {
+          "term": "旭然國際 (Ausun International)",
+          "explanation": "一家在台灣證券交易所上市的公司，涉及多元產業。",
+          "explanation_en": "A Taiwanese listed
+2025-11-11 18:24:38,867 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "緯穎受惠AWS ASIC專案，2025年Q3獲利大幅超預期",       "chinese_brief": "緯穎（股票代號6669）作為AI伺服器代工龍頭，因亞馬遜AWS ASIC專案出貨量強勁以及一次性工程收入（NRE）貢獻，使得2025年第三季營收和淨利顯著成長。營收達新台幣2,668億元，季增21%、年增173%，淨利達154億元，季增27%、年增144%，每股盈餘82.9元，超出市場預期33%。此發展不僅提升公司股價評價，也顯示其在AI硬體領域的競爭優勢進一步鞏固。",       "english_brief": "WiWynn (stock code 6669), a leading AI server contract manufacturer, benefited from strong shipments from Amazon AWS's ASIC project and one-time engineering income (NRE) con...)
+2025-11-11 18:24:57,861 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-11 18:25:32,278 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "百度小度 AI 眼镜 Pro 上市，支持 AI 翻译与4K拍照，售价2199元起",
+      "chinese_brief": "百度旗下的小度 AI 眼镜 Pro 于2025年11月10日正式开售，售价2299元，叠加双十一优惠价为2199元。该产品主打轻薄时尚设计，配备索尼1200万像素摄像头，支持4K照片拍摄与1440p高清视频录制。重量仅39克，搭载钛合金转轴及可调节鼻托，拥有IP54级防尘防水性能。AI翻译、AR增强现实等智能功能提升用户体验，预计将推动智能穿戴设备市场的竞争升级。",
+      "english_brief": "Baidu's Xiaodu AI Glasses Pro officially launched on November 10, 2025, priced at 2299 yuan with a Double Eleven discount reducing it to 2199 yuan. The product features a lightweight and stylish design, equipped with a Sony 12-megapixel camera supporting 4K photo capture and 1440p video recording. Weighing only 39 grams, it uses titanium alloy hinges and adjustable nose pads with IP54 dust and water resistance. With AI translation and augmented reality (AR) functions, it aims to enhance user experience and intensify competition in the smart wearable market.",
+      "term_clarifications": [
+        {
+          "term": "小度 AI 眼镜 Pro",
+          "explanation": "百度旗下推出的智能眼镜产品，集成人工智能技术，支持拍照、视频录制、实时翻译等功能。"
+        },
+        {
+          "term": "IP54",
+          "explanation": "防护等级标准，表示该设备防尘防溅水，能抵抗有限的灰尘侵入及各方向的水溅。"
+        },
+        {
+          "term": "4K",
+          "explanation": "分辨率标准，表示图像宽度约为4000像素，通常用于高质量视频和照片。"
+        },
+        {
+          "term": "AR（增强现实）",
+          "explanation": "将虚拟信息叠加在现实世界中的技术，可提供交互式体验。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "人工智能推动半导体产业增长，相关ETF含息报酬突破20%",
+      "chinese_brief": "自2023年以来，AI技术重塑半导体产业成长轨迹，促使科技巨头加大资本支出和算力需求，重组供应链。此趋势推动全球半导体市场扩张，带动台湾股市半导体类股票表现优异。统计数据显示，新光台湾半导体30 ETF截至2025年11月4日的累计含息报酬率达24.58%，而中信关键半导体ETF配息也具竞争力，展现市场对半导体行业未来增长的乐观预期。",
+      "english_brief": "Since 2023, artificial intelligence has reshaped the growth curve of the semiconductor industry, prompting tech giants to increase capital expenditures and computing power demand while reorganizing supply chains. This trend has driven global semiconductor market expansion and strong performance in Taiwan’s semiconductor stocks. Statistics show that the Shin Kong Taiwan Semiconductor 30 ETF achieved a cumulative total return (including dividends) of 24.58% as of November 4, 2025, while the CTBC Key Semiconductor ETF also offers competitive dividends, reflecting optimistic market expectations for future semiconductor growth.",
+      "term_clarifications": [
+        {
+          "term": "半导体",
+          "explanation": "半导体是一种导电性能介于导体和绝缘体之间的材料，广泛应用于电子设备制造，如芯片和电路。"
+        },
+        {
+          "term": "ETF",
+          "explanation": "交易型开放式指数基金（Exchange Traded Fund），是一种可在证券交易所买卖的投资基金。"
+        },
+        {
+          "term": "算力",
+          "explanation": "计算能力，指计算机系统或芯片处理数据和执行计算任务的能力。"
+        },
+        {
+          "term": "新光台湾半导体30 ETF (00904)",
+          "explanation": "一只追踪台湾半导体行业内30只龙头股票的交易型基金，具有分散投资与配息特点。"
+        },
+        {
+          "term": "中信关键半导体ETF (00891)",
+          "explanation": "投资于关键半导体企业的ETF，着重行业内具竞争力的股票组合。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "东科-KY扩展AI音讯产品线，2026年预计实现双位数增长",
+      "chinese_brief": "东科-KY于2025年第三季法人说明会上宣布，公司计划于明年推出多款新型音讯产品，包括可携式派对音响（Partybox）、Wi-Fi喇叭与电竞耳机，并逐步导入AI智能模块以提升产品竞争力。虽然第三季营收较去年同期微减4.9%，但毛利率维持稳定，显示公司具备良好盈利能力。随着新产品及AI功能推展，2026年预期业绩将实现两位数成长。",
+      "english_brief": "At its Q3 2025 investor conference, East Tech-KY announced plans to launch various new audio products next year, including portable Partybox speakers, Wi-Fi speakers, and gaming headphones, with gradual integration of AI smart modules to enhance competitiveness. Although Q3 revenue declined 4.9% year-over-year, the gross margin remained stable, reflecting solid profitability. With the rollout of new products and AI features, the company expects double-digit growth in 2026.",
+      "term_clarifications": [
+        {
+          "term": "东科-KY",
+          "explanation": "一家专注于音讯系统制造的台湾企业，股票代码为“KY”，意指"控股公司"在台湾证券市场常见的标号。"
+        },
+        {
+          "term": "Partybox",
+          "explanation": "一种便携式的大功率音响设备，通常用于派对或户外活动，支持无线连接。"
+        },
+        {
+          "term": "Wi-Fi喇叭",
+          "explanation": "通过无线网络连接的扬声器，无需有线传输音频信号。"
+        },
+        {
+          "term": "AI智能模块",
+          "explanation": "集成人工智能技术的硬件或软件组件，能提升设备的智能化功能。"
+        },
+        {
+          "term": "毛利率",
+          "explanation": "销售收入扣除成本后的盈利比例，反映企业的盈利能力。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "集雅社受益于独家商品，10月营收增长近10%，前十月业绩攀峰",
+      "chinese_brief": "集雅社（2937）2025年10月营收达5.15亿元，同比增长9.74%，前十个月累计营收39.78亿元，年增12.49%，连续刷新历史高点。公司业绩增长得益于多款独家商品及促销活动带动买气，显示高端家电市场需求依然稳健。该趋势有助推动集雅社未来业绩持续攀升及市场竞争力提升。",
+      "english_brief": "Jiya Corporation (stock code 2937) reported October 2025 revenue of 515 million NTD, a 9.74% year-over-year increase. The cumulative revenue for the first ten months reached 3.978 billion NTD, up 12.49% annually, marking a record high. The company's growth is driven by multiple exclusive products and promotional campaigns stimulating consumer demand, indicating steady demand in the high-end home appliance market. This trend supports continued performance growth and stronger market competitiveness for Jiya.",
+      "term_clarifications": [
+        {
+          "term": "集雅社（2937）",
+          "explanation": "台湾一家专注于高端家电及生活类商品销售的零售企业，公司股票代码为2937。"
+        },
+        {
+          "term": "营收",
+          "explanation": "营业收入，指企业在一定时期内通过销售产品或服务取得的总收入。"
+        },
+        {
+          "term": "高端家电",
+          "explanation": "性能优良、价格较高，面向中高端市场的家用电器产品。"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期简报涵盖人工智能驱动的科技产品发布、半导体行业发展及台湾相关企业经营表现等多方面内容，突显AI技术对产业升级和市场竞争
+2025-11-11 18:25:32,278 | WARNING | Batch 3 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "百度小度 AI 眼镜 Pro 上市，支持 AI 翻译与4K拍照，售价2199元起",       "chinese_brief": "百度旗下的小度 AI 眼镜 Pro 于2025年11月10日正式开售，售价2299元，叠加双十一优惠价为2199元。该产品主打轻薄时尚设计，配备索尼1200万像素摄像头，支持4K照片拍摄与1440p高清视频录制。重量仅39克，搭载钛合金转轴及可调节鼻托，拥有IP54级防尘防水性能。AI翻译、AR增强现实等智能功能提升用户体验，预计将推动智能穿戴设备市场的竞争升级。",       "english_brief": "Baidu's Xiaodu AI Glasses Pro officially launched on November 10, 2025, priced at 2299 yuan with a Double Eleven discount reducing it to 2199 yuan. The product feat...)
+2025-11-11 18:26:05,348 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-11 18:26:30,556 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-11 18:26:54,794 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-11 18:27:26,840 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-11 18:27:55,833 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-11 18:28:14,458 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-11 18:28:34,105 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-11 18:28:58,227 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-11 18:28:58,228 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=38936)
+2025-11-11 18:28:58,232 | INFO | Saved digest to digests\ai-briefing-2025-11-11_1828.md
+2025-11-11 18:29:01,216 | INFO | Sent digest email to 1047962614@qq.com.
+2025-11-11 18:29:01,223 | INFO | Requesting everything with params={'q': '("黄金" OR "贵金属" OR "美元" OR "美元汇率")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T05:06:46.605937+00:00'}
+2025-11-11 18:29:01,958 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 18:29:01,960 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 18:29:01,960 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal" OR "USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T05:06:46.605937+00:00'}
+2025-11-11 18:29:02,399 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 18:29:02,408 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-11 18:29:03,883 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-11 18:29:32,517 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "蚂蚁集团领投核聚变公司星能玄光，推动场反位形技术商业化",
+      "chinese_brief": "核聚变技术公司星能玄光近日完成数亿元Pre-A轮融资，由蚂蚁集团领投，资金将用于提升装置性能和技术研发。公司核心技术源自中国科学技术大学孙玄教授提出的先进场反磁镜聚变路径，致力于推进“场反位形”（FRC）聚变能源技术的商业应用，有望加速可控核聚变能源的发展进程。",
+      "english_brief": "Fusion energy company Stellar Fusion recently secured several hundred million yuan in Pre-A funding, led by Ant Group. The capital will be used to enhance device performance and advance technology development. The company's core technology stems from a fusion path proposed by Professor Sun Xuan of the University of Science and Technology of China. Their focus on Field-Reversed Configuration (FRC) fusion technology aims to accelerate the commercialization of controllable fusion energy.",
+      "term_clarifications": [
+        {
+          "term": "蚂蚁集团 (Ant Group)",
+          "explanation": "中国领先的数字支付和金融科技公司，支付宝的母公司，积极投资高科技创新项目。"
+        },
+        {
+          "term": "核聚变 (Nuclear Fusion)",
+          "explanation": "一种将轻核聚合成较重核的核反应，释放巨大的能量，被视为未来新能源的潜力技术。"
+        },
+        {
+          "term": "Pre-A轮融资 (Pre-A Round Funding)",
+          "explanation": "初创企业在正式A轮融资前进行的早期投资阶段，用于技术研发和市场准备。"
+        },
+        {
+          "term": "场反位形 (Field-Reversed Configuration, FRC)",
+          "explanation": "一种核聚变装置技术，通过磁场反转形成等离子体闭合结构，实现高效可控的聚变反应。"
+        },
+        {
+          "term": "中国科学技术大学 (University of Science and Technology of China)",
+          "explanation": "中国顶尖科研院校，核聚变领域具有重要研究成果和技术转化能力。"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "美联邦政府临时拨款法案取得突破 道指涨超300点",
+      "chinese_brief": "美国参议院关于联邦政府临时拨款法案出现突破，市场预期政府停摆将结束，推动美股显著反弹，道琼斯指数最高涨超343点。科技巨头如辉达和Alphabet股价上扬，市场对美联储12月减息预期重新升温，贵金属市场也因此表现活跃。此次进展缓解了投资者对经济不确定性的担忧，增强了市场信心。",
+      "english_brief": "A breakthrough in the US Senate's federal government temporary funding bill sparked hopes to end the government shutdown, driving a significant rally in US stocks with the Dow Jones rising over 343 points. Tech giants including Nvidia and Alphabet saw gains, and renewed expectations for a Fed rate cut in December boosted investor sentiment. The move eased economic uncertainty concerns and strengthened market confidence.",
+      "term_clarifications": [
+        {
+          "term": "联邦政府临时拨款法案 (Federal Government Temporary Funding Bill)",
+          "explanation": "美国国会为避免政府停摆而制定的临时预算措施，用于确保政府短期资金供应。"
+        },
+        {
+          "term": "政府停摆 (Government Shutdown)",
+          "explanation": "因预算协议未达成，政府部分部门暂停运作的状态，可能影响经济和市场信心。"
+        },
+        {
+          "term": "道琼斯指数 (Dow Jones Industrial Average)",
+          "explanation": "美股主要股票市场指数，反映30家大型工业公司的股价表现。"
+        },
+        {
+          "term": "美联储 (Federal Reserve, Fed)",
+          "explanation": "美国中央银行，负责制定货币政策和调节利率。"
+        },
+        {
+          "term": "减息 (Interest Rate Cut)",
+          "explanation": "中央银行降低基准利率，通常用于刺激经济增长。"
+        },
+        {
+          "term": "辉达 (Nvidia)",
+          "explanation": "领先的图形处理器制造商，涉足人工智能与数据中心领域的重要科技公司。"
+        },
+        {
+          "term": "Alphabet",
+          "explanation": "谷歌的母公司，全球科技巨头，业务涵盖搜索、广告、云计算等领域。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "香港金管局计划发行四种币种数字绿色债券 推动恒常化",
+      "chinese_brief": "香港金融管理局准备发行第三批代币化数字绿色债券，涵盖美元、港元、欧元和人民币四种币种，旨在推动债券发行的恒常化。标普和惠誉均给予此次债券较高评级，彰显对香港信用的认可。数字绿色债券作为金融创新工具，将有助于支持环保项目融资，并带来潜在的运营和网络安全风险，需要通过完善的风险管理加以应对。",
+      "english_brief": "The Hong Kong Monetary Authority is preparing to issue its third batch of tokenized digital green bonds in four currencies: USD, HKD, EUR, and CNY, aiming to institutionalize bond issuance. Both S&P and Fitch have assigned high ratings to these bonds, reflecting confidence in Hong Kong’s creditworthiness. As an innovative financial instrument, digital green bonds support financing for environmental projects but carry operational and cybersecurity risks that require robust risk management.",
+      "term_clarifications": [
+        {
+          "term": "香港金融管理局 (Hong Kong Monetary Authority, HKMA)",
+          "explanation": "香港的中央银行和金融监管机构，负责维护货币和金融稳定。"
+        },
+        {
+          "term": "数字绿色债券 (Digital Green Bonds)",
+          "explanation": "通过数字化形式发行的专门用于环保项目融资的债券，通常利用区块链技术确保透明度和效率。"
+        },
+        {
+          "term": "代币化债券 (Tokenized Bonds)",
+          "explanation": "传统债券的数字化资产版本，借助区块链技术实现快速交易和结算。"
+        },
+        {
+          "term": "标普评级 (S&P Ratings)",
+          "explanation": "标准普尔对债券和发行主体信用风险的评估，用于衡量信用等级。"
+        },
+        {
+          "term": "惠誉评级 (Fitch Ratings)",
+          "explanation": "另一国际著名信用评级机构，提供债券评级以反映风险水平。"
+        },
+        {
+          "term": "币种 (Currencies)",
+          "explanation": "债券发行所用的货币单位，如美元(USD)、港元(HKD)、欧元(EUR)和人民币(CNY)。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "私募基金CPE源峰入股汉堡王中国控股83%，计划五年门店翻倍",
+      "chinese_brief": "汉堡王母公司RBI与中国私募股权公司CPE源峰签订20年开发协议，成立合资公司汉堡王中国。CPE源峰将注资3.5亿美元，持股83%，计划在5年内将门店数量从约1250家增至2500家，并到2035年扩张至4000家以上。此举表明汉堡王看好中国市场长期增长潜力，私募资本加速汉堡王在中国市场扩张布局。",
+      "english_brief": "Burger King parent company RBI signed a 20-year development agreement with Chinese private equity firm CPE Source Peak to form Burger King China. CPE will invest $350 million for an 83% stake, aiming to double store count from approximately 1,250 to 2,500 within five years and expand to over 4,000 by 2035. This move underscores Burger King’s optimism about long-term growth in China and reflects private equity's role in accelerating its market expansion.",
+      "term_clarifications": [
+        {
+          "term": "RBI (Restaurant Brands International)",
+          "explanation": "汉堡王的母公司，同时拥有多家全球知名餐饮品牌。"
+        },
+        {
+          "term": "私募股权公司 (Private Equity Firm)",
+          "explanation": "通过非公开渠道投资企业，管理私募资金以获取长期资本收益的机构。"
+        },
+        {
+          "term": "CPE源峰",
+          "explanation": "一家专注于中国市场的私募股权投资公司，积极投资消费和服务行业。"
+        },
+        {
+          "term": "合
+2025-11-11 18:29:32,520 | WARNING | Batch 1 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "蚂蚁集团领投核聚变公司星能玄光，推动场反位形技术商业化",       "chinese_brief": "核聚变技术公司星能玄光近日完成数亿元Pre-A轮融资，由蚂蚁集团领投，资金将用于提升装置性能和技术研发。公司核心技术源自中国科学技术大学孙玄教授提出的先进场反磁镜聚变路径，致力于推进“场反位形”（FRC）聚变能源技术的商业应用，有望加速可控核聚变能源的发展进程。",       "english_brief": "Fusion energy company Stellar Fusion recently secured several hundred million yuan in Pre-A funding, led by Ant Group. The capital will be used to enhance device performance and advance technology development. The company's core ...)
+2025-11-11 18:29:59,770 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "蚂蚁集团领投核聚变新创公司星能玄光，推动清洁能源商业化",
+      "chinese_brief": "可控核聚变技术公司“星能玄光”近日完成数亿元Pre-A轮融资，蚂蚁集团领投，联合多家资本参与。公司依托中国科学技术大学孙玄教授提出的“先进场反磁镜聚变”技术，致力于提升聚变装置性能和加速商业化进程，力图推动清洁能源领域的重大突破。这标志着金融巨头积极布局未来能源科技，推动低碳发展。",
+      "english_brief": "Fusion energy technology company Xingneng Xuanguang recently completed a multi-hundred million yuan Pre-A funding round led by Ant Group with participation from several investors. The company, founded under the Chinese University of Science and Technology and based on Professor Sun Xuan’s advanced field-reversed configuration (FRC) fusion concept, aims to enhance reactor performance and accelerate commercialization. This investment signifies a financial giant’s strategic move into future energy technologies to promote low-carbon development.",
+      "term_clarifications": [
+        {
+          "term": "可控核聚变 (Controlled Nuclear Fusion)",
+          "explanation": "一种产生能量的核反应方式，通过控制轻核融合以释放大量能量，未来有望成为清洁能源的重要来源。 Controlled nuclear fusion is a nuclear reaction process where light atomic nuclei combine under controlled conditions to release massive energy, potentially becoming a key clean energy source."
+        },
+        {
+          "term": "场反位形 (Field-Reversed Configuration, FRC)",
+          "explanation": "核聚变装置中一种特殊的磁场结构，有利于等离子体的稳定和能量的高效释放。 A specialized magnetic field structure in fusion reactors that facilitates plasma stability and efficient energy release."
+        },
+        {
+          "term": "蚂蚁集团 (Ant Group)",
+          "explanation": "中国大型科技金融公司，阿里巴巴集团旗下，主营数字支付和金融科技服务。 A major Chinese fintech company affiliated with Alibaba Group, primarily engaged in digital payments and financial technology services."
+        },
+        {
+          "term": "中国科学技术大学 (University of Science and Technology of China)",
+          "explanation": "中国顶尖理工科大学，拥有先进的科研能力和技术创新实力。 A leading Chinese university specializing in science and technology, known for advanced research and innovation."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "美国政府拨款法案取得突破 道琼斯指数大涨超300点",
+      "chinese_brief": "美国参议院在临时政府拨款法案上取得重要进展，市场预期持续时间最长的政府停摆即将结束，提振美股市场。道琼斯工业指数一度上涨超过300点，标普500和纳斯达克指数均表现强劲。科技巨头如英伟达、谷歌母公司Alphabet、特斯拉及亚马逊股价均显著上涨。同时，投资者对美联储12月减息的预期升温，金价和金矿股也随之上涨，反映市场风险偏好回升。",
+      "english_brief": "The U.S. Senate made significant progress on a temporary government funding bill, raising expectations that the longest government shutdown in history may soon end, boosting U.S. stock markets. The Dow Jones Industrial Average rose over 300 points, while the S&P 500 and Nasdaq also showed strong gains. Major tech companies like Nvidia, Alphabet, Tesla, and Amazon saw notable price rises. Investors grew more optimistic about a possible Federal Reserve rate cut in December, pushing gold prices and mining stocks higher, signaling increased risk appetite.",
+      "term_clarifications": [
+        {
+          "term": "道琼斯工业指数 (Dow Jones Industrial Average)",
+          "explanation": "美国股市的重要股指，涵盖30家大型上市工业企业。 A major U.S. stock market index representing 30 large publicly traded industrial companies."
+        },
+        {
+          "term": "标普500 (S&P 500)",
+          "explanation": "反映美国市场整体表现的股票指数，包含500家大型企业。 A stock market index representing 500 large-cap U.S. companies, reflecting overall market performance."
+        },
+        {
+          "term": "纳斯达克 (Nasdaq)",
+          "explanation": "以科技股为主的美国股市指数，包含大量技术创新企业。 A U.S. stock market index heavily weighted towards technology companies."
+        },
+        {
+          "term": "美联储 (Federal Reserve)",
+          "explanation": "美国中央银行，负责制定货币政策。 The central bank of the United States, responsible for monetary policy."
+        },
+        {
+          "term": "政府停摆 (Government Shutdown)",
+          "explanation": "因预算案未获批准，政府部门部分关闭、公共服务暂停的状态。 A situation where government operations partially cease due to failure to pass budget legislation."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "香港金管局发行四币种数字绿色债券 推进代币化债券常态化",
+      "chinese_brief": "香港金融管理局推出第三批代币化绿色债券，涵盖美元、港元、欧元和人民币四种货币，推动数字债券发行常态化。此次数字绿债获得标普“AA+”和惠誉“AA-”评级，表明投资评级稳定。该举措利用区块链等新技术提升债券发行效率与透明度，同时伴随运营和法律方面的风险管理。此举显示香港作为国际金融中心在绿色金融和数字资产领域的创新发展趋势。",
+      "english_brief": "The Hong Kong Monetary Authority is launching its third batch of tokenized green bonds denominated in four currencies: USD, HKD, EUR, and RMB, to promote the normalization of digital bond issuance. The digital green bonds received 'AA+' ratings from S&P and 'AA-' from Fitch, indicating stable creditworthiness. This initiative leverages blockchain and other emerging technologies to improve bond issuance efficiency and transparency, while addressing operational and legal risks. It highlights Hong Kong's innovative role in green finance and digital assets as a global financial center.",
+      "term_clarifications": [
+        {
+          "term": "代币化债券 (Tokenized Bonds)",
+          "explanation": "利用区块链技术将债券数字化并发行为数字资产的新兴形式。 A new form of bonds digitized and issued as digital assets using blockchain technology."
+        },
+        {
+          "term": "绿色债券 (Green Bonds)",
+          "explanation": "募集资金专用于环保和可持续项目的债券。 Bonds issued to raise funds specifically for environmental and sustainable projects."
+        },
+        {
+          "term": "标普评级 (S&P Ratings)",
+          "explanation": "标准普尔全球评级机构给予的信用评级，评估债券偿付能力。 Credit ratings assigned by Standard & Poor's Global Ratings to assess bond creditworthiness."
+        },
+        {
+          "term": "惠誉评级 (Fitch Ratings)",
+          "explanation": "国际知名信用评级机构，为债券发行人授信级别。 An internationally recognized credit rating agency assigning credit ratings to issuers."
+        },
+        {
+          "term": "金管局 (Hong Kong Monetary Authority)",
+          "explanation": "香港的中央银行及金融监管机构。 Hong Kong’s central banking institution and financial regulator."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "私募基金CPE源峰斥27亿港元控股汉堡王中国，加速扩张布局",
+      "chinese_brief": "汉堡王母公司RBI与中国私募股权公司CPE源峰签订20年开发协议，成立“汉堡王中国”合资企业。CPE源峰将注资3.5亿美元，持股约83%，RBI保留17%股权。CPE承诺5年内将门店从约1250家翻倍至2500家，2035年目标至少扩大至4000家。此举显示对中国快餐市场增长潜力的看好，也加速汉堡王在华业务的本土化和市场渗透。",
+      "english_brief": "Burger King's parent company RBI has signed a 20-year development agreement with Chinese private equity firm CPE Yuanfeng to establish the joint venture 'Burger King China.' CPE will inject $350 million USD for approximately 83% ownership, while RBI retains 17%. CPE commits to doubling outlets from about 1,250 to 2,500 within five years and reaching at least 4,000 stores by 2035. This move reflects optimism about China’s fast-food market growth potential and accelerates Burger King’s localization and market penetration in China.",
+      "term_clarifications": [
+        {
+          "term": "私募股权公司 (Private Equity Firm)",
+          "explanation": "专门投资非公开交易公司的投资
+2025-11-11 18:29:59,774 | WARNING | Batch 1 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "蚂蚁集团领投核聚变新创公司星能玄光，推动清洁能源商业化",       "chinese_brief": "可控核聚变技术公司“星能玄光”近日完成数亿元Pre-A轮融资，蚂蚁集团领投，联合多家资本参与。公司依托中国科学技术大学孙玄教授提出的“先进场反磁镜聚变”技术，致力于提升聚变装置性能和加速商业化进程，力图推动清洁能源领域的重大突破。这标志着金融巨头积极布局未来能源科技，推动低碳发展。",       "english_brief": "Fusion energy technology company Xingneng Xuanguang recently completed a multi-hundred million yuan Pre-A funding round led by Ant Group with participation from several investors. The company, founded under the Chinese ...)
+2025-11-11 18:30:24,070 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-11 18:30:56,021 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-11 18:31:20,603 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-11 18:31:51,125 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "Mattel推出《Kpop獵魔女團》主題娃娃套組 搶攻動畫電影粉絲市場",
+      "chinese_brief": "美國玩具公司美泰兒（Mattel）透過旗下Mattel Creations平台發布全新商品——《Kpop獵魔女團》動畫電影主題的HUNTR/X魯米、米拉、佐依〈What It Sounds Like〉娃娃套組，定價約150美元，預計於2025年11月12日在美國線上發售。此舉反映美泰兒積極與粉絲創作者合作，拓展受眾並結合動畫IP推廣產品，意味著動畫周邊市場持續升溫，對粉絲文化與玩具產業影響深遠。",
+      "english_brief": "American toy company Mattel has launched a new product set based on the popular animated movie \"Kpop Hunter Witch Group\" under its Mattel Creations platform. The HUNTR/X doll set featuring characters Lumi, Mira, and Zoe called \"What It Sounds Like\" is priced around $150 and is scheduled for online release in the US on November 12, 2025. This move highlights Mattel's strategy to collaborate with fan creators and leverage animation IPs to expand its audience, signaling growth in the animation merchandise market with significant impacts on fan culture and the toy industry.",
+      "term_clarifications": [
+        {
+          "term": "Mattel Creations",
+          "explanation": "Mattel Creations是美泰兒公司旗下與粉絲創作者合作推出限量商品的網路平台，旨在結合創意與粉絲文化，擴展產品多樣性與獨特性。"
+        },
+        {
+          "term": "《Kpop獵魔女團》",
+          "explanation": "《Kpop獵魔女團》是一部受歡迎的動畫電影，講述以Kpop文化為背景的獵魔題材故事，擁有廣大粉絲群。"
+        },
+        {
+          "term": "HUNTR/X 魯米／米拉／佐依〈What It Sounds Like〉娃娃套組",
+          "explanation": "該產品是一組以動畫角色魯米、米拉和佐依為主題的人偶組合，\"What It Sounds Like\"為該組中一款特定的設計或主題名稱。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "台灣10月出口額創歷史新高 超過618億美元",
+      "chinese_brief": "台灣財政部公布2025年10月出入口統計，出口額高達618億美元，創單月歷史新高紀錄。財信傳媒董事長謝金河稱此數據「不可思議」，並指出即使美國前總統川普在任內實施高關稅政策，台灣對美貿易順差依然強勁，出口動能未見放緩。這反映出台灣在全球供應鏈中的重要地位以及出口市場的韌性，對台灣經濟成長有明顯支撐作用。",
+      "english_brief": "Taiwan's Ministry of Finance announced that its exports in October 2025 reached a historic monthly high of $61.8 billion. Hsieh Chin-ho, chairman of Wealth Media, described the data as \"incredible\" and noted that despite the high tariffs imposed during former US President Trump's administration, Taiwan's trade surplus with the US remains strong and exports show no sign of slowdown. This underscores Taiwan’s critical role in global supply chains and the resilience of its export market, providing significant support to the country's economic growth.",
+      "term_clarifications": [
+        {
+          "term": "出口額",
+          "explanation": "指國家在一定時間內商品和服務銷售到國外所獲得的總收入。"
+        },
+        {
+          "term": "關稅",
+          "explanation": "政府對進口商品徵收的稅費，通常用以保護國內產業或調控貿易。"
+        },
+        {
+          "term": "貿易順差",
+          "explanation": "當一國的出口總額超過進口總額時，產生的正差額稱為貿易順差。"
+        },
+        {
+          "term": "謝金河",
+          "explanation": "財信傳媒董事長，著名財經評論家，在台灣具有較高影響力。"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "巴黎协定签署十年 全球气温升高速度加剧",
+      "chinese_brief": "自《巴黎协定》签署以来十年，全球平均气温明显超过预期升高，温室气体排放仍持续增长，使得将全球升温限制在1.5摄氏度以内的目标面临重大挑战。欧洲哥白尼气候机构数据显示，自2015年起全球年均气温提升约0.46摄氏度，目前2025年预计将成为史上第二或第三高温年。联合国秘书长古特雷斯强调，当前迫切需要从谈判转向实际行动，以遏制气候变暖速度，否则地球气候风险将进一步升级。",
+      "english_brief": "Ten years after the signing of the Paris Agreement, global average temperatures have risen faster than anticipated, with greenhouse gas emissions continuing to increase. This threatens the critical goal of limiting global warming to 1.5°C. Data from the European Copernicus Climate Change Service show a global temperature rise of approximately 0.46°C since 2015, with 2025 expected to rank among the top two or three warmest years on record. UN Secretary-General António Guterres emphasized the urgent need to shift from negotiations to concrete actions to curb climate change, warning of escalating planetary risks if inaction continues.",
+      "term_clarifications": [
+        {
+          "term": "巴黎协定",
+          "explanation": "2015年締結的國際氣候變化協議，旨在全球範圍內控制溫室氣體排放，將全球平均氣溫升幅限制在1.5攝氏度以內。"
+        },
+        {
+          "term": "哥白尼气候机构",
+          "explanation": "歐洲聯盟的氣候與環境監測計畫，提供權威的氣候數據與分析。"
+        },
+        {
+          "term": "联合国秘书长古特雷斯",
+          "explanation": "安東尼奧·古特雷斯，現任聯合國秘書長，致力於促進國際合作與解決全球性問題。"
+        },
+        {
+          "term": "COP30峰会",
+          "explanation": "第30屆聯合國氣候變化框架公約締約方大會，全球最高級別氣候談判會議。"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "Sony A7V機身正面照曝光 傳12月初發表搶攻全畫幅中階市場",
+      "chinese_brief": "近日疑似Sony A7 V全畫幅相機的正面照片流出，多方消息指出該機可能於2025年12月初正式發表。該產品定位為全幅中階機型，預期將與Canon最新發表的EOS R6 Mark III展開競爭。新機在畫質和性能上有望有顯著提升，且價格可能約為新台幣46000元左右。這標誌著全畫幅中階相機市場競爭日趨激烈，對攝影愛好者和市場動態將帶來重大影響。",
+      "english_brief": "Recently, a front image of the rumored Sony A7 V full-frame camera has leaked, with multiple sources suggesting an official launch in early December 2025. Positioned as a mid-range full-frame model, it is expected to compete directly with Canon's newly released EOS R6 Mark III. The new camera promises notable improvements in image quality and performance, with a possible price around NT$46,000. This development signals intensifying competition in the full-frame mid-tier camera market, impacting photography enthusiasts and market trends significantly.",
+      "term_clarifications": [
+        {
+          "term": "Sony A7V",
+          "explanation": "索尼即將推出的全畫幅無反相機，屬於A7系列，主打中階專業攝影市場。"
+        },
+        {
+          "term": "Canon EOS R6 Mark III",
+          "explanation": "佳能近期推出的全畫幅無反相機，定位中階機型，與Sony A7V
+2025-11-11 18:31:51,127 | WARNING | Batch 4 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "Mattel推出《Kpop獵魔女團》主題娃娃套組 搶攻動畫電影粉絲市場",       "chinese_brief": "美國玩具公司美泰兒（Mattel）透過旗下Mattel Creations平台發布全新商品——《Kpop獵魔女團》動畫電影主題的HUNTR/X魯米、米拉、佐依〈What It Sounds Like〉娃娃套組，定價約150美元，預計於2025年11月12日在美國線上發售。此舉反映美泰兒積極與粉絲創作者合作，拓展受眾並結合動畫IP推廣產品，意味著動畫周邊市場持續升溫，對粉絲文化與玩具產業影響深遠。",       "english_brief": "American toy company Mattel has launched a new product set based on the popular animated movie \"Kpop Hunter Witch Group\" under its Mattel Creations pl...)
+2025-11-11 18:32:21,130 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "美泰兒推出《Kpop獵魔女團》主題娃娃套組，11月12日開售",
+      "chinese_brief": "美國知名玩具公司美泰兒（Mattel）旗下的Mattel Creations平台正式發布以超人氣動畫電影《Kpop獵魔女團》為主題的娃娃套組，包含角色魯米、米拉和佐依，參考售價為150美元。該套組將於2025年11月12日上午9點（美國太平洋時間）開始在官網販售，標誌著玩具製造商與粉絲創作者合作的創新嘗試，預計將吸引動畫粉絲及收藏者的關注。",
+      "english_brief": "Mattel, the renowned American toy company, has officially launched a doll set themed after the popular animated film \"Kpop Hunter Witch Group\" via its Mattel Creations platform. The set features characters Rumi, Mira, and Zoe and is priced at $150. Sales will begin at 9 AM Pacific Time on November 12, 2025, on Mattel's official website. This release highlights an innovative collaboration between toy manufacturers and fan creators, expected to attract fans and collectors of the animation.",
+      "term_clarifications": [
+        {
+          "term": "Mattel Creations",
+          "explanation": "Mattel Creations是美泰兒旗下的網路平台，專門與粉絲創作者合作，販售限量和特色玩具產品。 / Mattel Creations is an online platform under Mattel that collaborates with fan creators to sell limited-edition and unique toy products."
+        },
+        {
+          "term": "Kpop獵魔女團",
+          "explanation": "《Kpop獵魔女團》是一部受歡迎的動畫電影，融合韓國流行音樂元素與冒險故事。 / \"Kpop Hunter Witch Group\" is a popular animated film that combines Korean pop music elements with an adventure storyline."
+        },
+        {
+          "term": "魯米／米拉／佐依",
+          "explanation": "《Kpop獵魔女團》中的主要角色名字，製作成娃娃角色推出市場。 / Rumi, Mira, and Zoe are main characters from \"Kpop Hunter Witch Group,\" produced as dolls for this product release."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "台灣10月出口創618億美元歷史新高，謝金河驚呼難以置信",
+      "chinese_brief": "台灣財政部公布2025年10月出口數據達618億美元，創下歷年單月新高紀錄，顯示台灣出口表現強勁且持續成長。財信傳媒董事長謝金河在社交媒體評論此數字「不可思議」，特別指出即使在川普時期加徵關稅的背景下，台灣對美貿易順差依然未受明顯影響。此現象反映出台灣產業競爭力與全球供應鏈的重要地位，亦影響國際經濟格局。",
+      "english_brief": "Taiwan's Ministry of Finance announced that its exports in October 2025 reached a historic monthly high of $61.8 billion, demonstrating robust and sustained growth. Financial commentator Hsieh Chin-ho expressed amazement on social media, highlighting that despite tariffs imposed during the Trump administration, Taiwan's trade surplus with the U.S. remains largely unaffected. This underscores Taiwan's industrial competitiveness and critical role in the global supply chain, with significant implications for the international economic landscape.",
+      "term_clarifications": [
+        {
+          "term": "謝金河",
+          "explanation": "謝金河是台灣知名財經評論員暨財信傳媒董事長。 / Hsieh Chin-ho is a prominent Taiwanese financial commentator and chairman of Wisdom Media."
+        },
+        {
+          "term": "關稅大刀",
+          "explanation": "指美國前總統川普政府對中國及相關國家商品加徵高額關稅的政策。 / Refers to the high tariffs imposed by former U.S. President Trump’s administration on goods from China and related countries."
+        },
+        {
+          "term": "貿易順差",
+          "explanation": "指出口額大於進口額，台灣對美國有正的貿易差額。 / Trade surplus means the export value exceeds import value; Taiwan has a positive trade balance with the U.S."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "巴黎协定十周年 全球变暖速度超预期引发警示",
+      "chinese_brief": "《巴黎协定》签署十年后，全球气温升幅已远超预期，温室气体排放持续上升，导致限制升温至1.5摄氏度的目标面临严重挑战。欧洲哥白尼气候数据表明，自2015年以来，年均升温达到约0.46摄氏度，是史上最热的十年之一。联合国秘书长古特雷斯在COP30会议上强调紧迫性，呼吁各国立刻行动，以执行既定减排承诺，防止不可逆的气候变化风险。",
+      "english_brief": "Ten years after the signing of the Paris Agreement, global temperature increases have significantly exceeded expectations, with greenhouse gas emissions continuing to rise. This threatens the critical goal of limiting warming to 1.5 degrees Celsius. Europe’s Copernicus climate data indicates an average annual temperature rise of about 0.46 degrees Celsius since 2015, marking one of the hottest decades on record. At the COP30 summit, UN Secretary-General António Guterres emphasized urgency, urging all nations to take immediate action to fulfill emission reduction commitments and prevent irreversible climate change risks.",
+      "term_clarifications": [
+        {
+          "term": "巴黎协定",
+          "explanation": "2015年全球气候协议，旨在限制全球气温升幅在工业化前水平以上1.5摄氏度以内。 / The 2015 global climate agreement aimed at limiting global temperature rise to within 1.5 degrees Celsius above pre-industrial levels."
+        },
+        {
+          "term": "哥白尼气候机构",
+          "explanation": "欧盟的气候变化监测机构，提供气象和环境数据。 / The Copernicus Climate Change Service is an EU organization providing meteorological and environmental data."
+        },
+        {
+          "term": "COP30峰会",
+          "explanation": "联合国气候变化大会的第30届会议，讨论全球应对气候变化的政策。 / The 30th session of the Conference of Parties (COP30) to the UN Framework Convention on Climate Change, focusing on global climate policy."
+        },
+        {
+          "term": "联合国秘书长古特雷斯",
+          "explanation": "安东尼奥·古特雷斯，现任联合国秘书长，积极推动全球气候行动。 / António Guterres, current UN Secretary-General, actively promoting global climate action."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "Sony A7V疑似正面照曝光，预计12月初发布引发期待",
+      "chinese_brief": "近期网络流出疑似Sony A7V的正面照片，预计这款全画幅中阶相机将于2025年12月初正式发布。新机可能延续Sony的高性能传统，定位介于A7 IV与A9 III之间，预计在影像及自动对焦技术上有显著提升。此举被视为Sony对Canon刚发布的EOS R6 Mark III的回应，标志着全画幅中阶相机市场的激烈竞争正式拉开帷幕。",
+      "english_brief": "Recently, a photo allegedly showing the front of Sony's A7V camera was leaked online, with the official launch expected in early December 2025. This full-frame mid-tier camera is anticipated to continue Sony’s tradition of high performance, positioned between the A7 IV and A9 III models, featuring significant improvements in imaging and autofocus technology. This is seen as Sony’s response to Canon’s newly released EOS R6 Mark III, marking the start of intense competition in the full-frame mid-level camera market.",
+      "term_clarifications": [
+        {
+          "term": "Sony A7V",
+          "explanation": "索尼即将发布的全画幅无反相机新型号，属中高端市场。 / Sony’s upcoming full-frame mirrorless camera model, positioned in the mid-to-high-end market."
+        },
+        {
+          "term": "Canon EOS R6 Mark III",
+          "explanation": "佳能近期推出的全画幅无反相机，主打高速与高性能。 / Canon’s recently released full-frame mirrorless
+2025-11-11 18:32:21,132 | WARNING | Batch 4 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "美泰兒推出《Kpop獵魔女團》主題娃娃套組，11月12日開售",       "chinese_brief": "美國知名玩具公司美泰兒（Mattel）旗下的Mattel Creations平台正式發布以超人氣動畫電影《Kpop獵魔女團》為主題的娃娃套組，包含角色魯米、米拉和佐依，參考售價為150美元。該套組將於2025年11月12日上午9點（美國太平洋時間）開始在官網販售，標誌著玩具製造商與粉絲創作者合作的創新嘗試，預計將吸引動畫粉絲及收藏者的關注。",       "english_brief": "Mattel, the renowned American toy company, has officially launched a doll set themed after the popular animated film \"Kpop Hunter Witch Group\" via its Mattel Creations platform. The s...)
+2025-11-11 18:32:55,177 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-11 18:33:26,435 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-11 18:33:54,899 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-11 18:34:21,727 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-11 18:34:50,193 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-11 18:35:15,061 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-11 18:35:41,597 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-11 18:35:41,597 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=48583)
+2025-11-11 18:35:41,602 | INFO | Saved digest to digests\gold-fx-briefing-2025-11-11_1835.md
+2025-11-11 18:35:41,604 | INFO | No configured subscribers for digest 'gold_fx'; using environment recipients.
+2025-11-11 18:35:41,604 | WARNING | Email configuration incomplete; skipping email send (from=1047962614@qq.com, recipients=[]).
+2025-11-11 18:35:41,604 | INFO | Topic run summary: {"started_at": "2025-11-11T10:16:56.240235+00:00", "digest_ids": ["science_tech", "ai", "gold_fx"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-11T10:00:08.910546+00:00", "science_tech": "2025-11-11T10:16:56.240235+00:00", "china_economy": "2025-11-10T05:06:46.605937+00:00", "ai": "2025-11-11T10:16:56.240235+00:00", "gold_fx": "2025-11-11T10:16:56.240235+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T05:06:46.605937+00:00"}, "status": "ok", "total_results": 34, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"科学\" OR \"技术\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T05:06:46.605937+00:00"}, "status": "ok", "total_results": 86, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T05:06:46.605937+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T05:06:46.605937+00:00"}, "status": "ok", "total_results": 108, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T05:06:46.605937+00:00"}, "status": "ok", "total_results": 288, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T05:06:46.605937+00:00"}, "status": "ok", "total_results": 38, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"黄金\" OR \"贵金属\" OR \"美元\" OR \"美元汇率\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T05:06:46.605937+00:00"}, "status": "ok", "total_results": 51, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p...dkwA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 56721, "output_tokens": 64951, "total_tokens": 121672}}, "outputs": [{"digest_id": "science_tech", "digest_display": "Science and Technology", "digest_path": "digests\\science-tech-briefing-2025-11-11_1823.md", "articles_summarized": 40, "summary_notes": "本期世界新闻聚焦人工智能与高科技领域的最新动态，涵盖从游戏技术转向专业飞行训练、智能硬件新品发布，到AI人才需求暴增及新能源电动车高管变动，反映出科技创新对产业和市场的深远影响。\n\n本期简报涵盖了AI技术对美国硅谷劳动力市场的影响、全球企业在AI投资中的回报挑战、中国物流行业的数字化升级，以及计算机硬件领域DDR5内存技术的最新突破，展示了人工智能与数字化技术在经济和产业中的深远影响。\n\n本文汇总了近期有关核能机器人技术、企业并购、全球化技术架构和高性能内存芯片的最新进展，涵盖了能源、科技和互联网领域的关键动态。\n\n本期简报涵盖人工智能技术在社交媒体内容检测的最新研究，硬件厂商推出新型远程KVM设备，欧洲对中国产电动公交车远程控制权限的安全关切，以及兰博基尼坚持纯燃油动力的高性能赛车发布，反映科技、交通和汽车领域的发展动态。\n\n本期新闻涵盖汽车、电池摄像头技术、手机系统隐私改进及游戏机兼容性，体现了科技产业从硬件创新到用户隐私保护的多维度进步。\n\n本次新闻摘要涵盖了电池制造投资、量子计算技术突破、金融诈骗新风险以及公共安全数字化转型四个重要国际动态，反映了科技创新与社会安全的交织影响。\n\n本期世界新闻摘要涵盖了前沿量子技术进展、网络安全风险以及教育培训趋势，反映了科技与产业融合发展的动态，为读者提供了跨领域的最新信息。\n\n本期新闻涵盖科技创新、学术研究、人事任命及文化产业四个领域。苹果通过屏下摄像头技术展示未来手机设计方向；伦敦政经学院复制研究加强同性民族主义现象理解；Hodge Bank任命新CTO以推动数字化转型；爱奇艺首次开放虚拟制作展示AI对影视制作的深远影响。\n\n本期新闻涵盖科技领域新品开发、技术融合、专利纠纷及企业金融创新，反映了2025年全球科技产业的多元化发展趋势和竞争格局。", "recipients": []}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests\\ai-briefing-2025-11-11_1828.md", "articles_summarized": 40, "summary_notes": "本期报道涵盖资本市场展望、监管动向、国际投资论坛及科技巨头进军医疗领域，反映了全球经济与技术发展的多重趋势。\n\n本期新聞涵蓋台灣科技產業的營收動向、澳洲央行貨幣政策觀點及小米智能存儲新品動態，反映了全球科技與經濟復甦交織的趨勢。\n\n本次简报涵盖了百度在智能穿戴设备领域的新产品发布、人工智能推动半导体产业成长、音讯系统厂商导入AI技术的产品布局，以及高端家电市场的稳定需求与公司营收增长，为读者呈现科技和消费品行业的最新动态与趋势。\n\n本期简报涵盖人工智能行业新职业兴起、硅谷科技大裁员背后的经济动因，以及台湾科技公司最新财报表现，体现出AI技术在全球产业及经济中的深远影响。\n\n本期新闻涵盖人工智能投资现状与伦理争议、物流行业数字化发展及软件安全威胁，反映了科技创新与管理挑战的多重维度。\n\n本次简报涵盖了人工智能在应用开发、设计辅助及教育领域的最新动态，展示了年轻创业者及开发者通过 AI 技术推动行业创新的趋势。\n\n本次简报涵盖了AI语言模型交互语气对准确性的最新研究，数据中心机器人市场的快速增长趋势，以及面向AI应用监控和边缘推理的最新开发工具发布，反映了人工智能技术应用的多维度进展。\n\n本期新闻涵盖了人工智能技术及其商业应用的最新动态，包括欧盟对AI发展预期的理性呼吁、新加坡星展银行在企业服务中大规模采用AI聊天机器人，以及量子计算领域的投资热点。读者可通过本摘要了解全球技术趋势和金融市场的最新进展。\n\n本期简报涵盖了AI与Python集成工具的新发布，数据中心外包市场的巨大发展前景，以及IT服务公司利用AI促进业绩增长的案例。同时还介绍了支持AI代理长期记忆的新技术包，展示了AI技术在各行业的多维应用趋势。\n\n本次简报涵盖了从金融安全技术、人工智能模型训练，到光通信市场和医疗人工智能领域的最新动态，体现出AI技术在多领域的深度融合和影响。", "recipients": ["1047962614@qq.com"]}, {"digest_id": "gold_fx", "digest_display": "Gold and FX", "digest_path": "digests\\gold-fx-briefing-2025-11-11_1835.md", "articles_summarized": 40, "summary_notes": "本期新闻涵盖前沿科技投资、美国政治经济影响、美港绿色金融创新及中国快餐市场资本运作，反映全球资本对新兴领域与市场增长的重视。\n\n本期重點涵蓋全球股市、中國國際貿易展會、特斯拉產品動態及潮玩品牌資本市場動向，反映宏觀經濟、科技創新和新興消費趨勢的多維交織。\n\n本次新闻总结涵盖了国际政治争议、科技新品发布、人工智能对经济影响及网络安全威胁四大主题，反映了当前全球社会的复杂与多元挑战。\n\n本期聚焦人工智能技術與相關市場動態，涵蓋從醫療AI創業投資、先進AI圖像生成技術到科技股投資風向，以及新型掌機硬體創新，展現AI技術與硬體應用的多元發展趨勢。\n\n本次新闻简报涵盖了非洲文化安全挑战、全球金属市场动态、黄金技术面分析以及体育明星跨界时尚等多领域内容，旨在为读者提供全球时事的多元视角和深入理解。\n\nThis briefing covers recent developments in cryptocurrency investment, mining industry recovery, optical communication market growth, and digital finance innovation in Southeast Asia, providing insights into technological and economic trends shaping global and regional markets.\n\n本期简报涵盖了金融市场、采矿业、医疗数据分析及数字支付领域的最新动态，反映了全球经济、技术和服务领域的持续创新与发展趋势。\n\n本期新闻简报涵盖视频游戏行业更新、高端食品市场、考古发现及加密货币市场动态，旨在为全球读者提供多元化的热点信息。\n\n本期简报涵盖了金融科技领域的转型、美国政府关闭的最新进展及其对市场的影响，特别强调了黄金价格作为避险资产的表现。", "recipients": []}]}
+2025-11-11 19:10:38,607 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-09T05:06:46.605937+00:00).
+2025-11-11 19:10:38,607 | INFO | Requesting everything with params={'q': '("中国经济") OR ("中国政治")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T11:10:38.607273+00:00'}
+2025-11-11 19:10:39,894 | INFO | NewsAPI returned 2 articles (status=ok, remaining=None)
+2025-11-11 19:10:39,894 | INFO | Retained 2 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 19:10:39,894 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-09T05:06:46.605937+00:00).
+2025-11-11 19:10:39,894 | INFO | Requesting everything with params={'q': '("China Economy") OR ("China Politics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T11:10:39.894135+00:00'}
+2025-11-11 19:10:40,306 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 19:10:40,307 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-11 19:10:42,267 | INFO | Summarizing 2 articles across 1 batches.
+2025-11-11 19:11:06,749 | INFO | Completed batch 1/1 (briefings=2).
+2025-11-11 19:11:06,749 | INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=2414)
+2025-11-11 19:11:06,749 | INFO | Saved digest to digests\china-economy-briefing-2025-11-11_1911.md
+2025-11-11 19:11:10,602 | INFO | Sent digest email to jiabaozhang098@gmail.com.
+2025-11-11 19:11:10,608 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T10:16:56.240235+00:00'}
+2025-11-11 19:11:11,737 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 19:11:11,737 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 19:11:11,737 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T10:16:56.240235+00:00'}
+2025-11-11 19:11:12,176 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 19:11:12,177 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-11 19:11:13,006 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-11 19:11:43,544 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-11 19:12:14,609 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-11 19:12:35,669 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-11 19:12:57,103 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-11 19:13:17,365 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-11 19:13:43,961 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-11 19:14:02,745 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-11 19:14:21,389 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-11 19:14:43,819 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-11 19:14:58,228 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-11 19:14:58,230 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=30486)
+2025-11-11 19:14:58,232 | INFO | Saved digest to digests\ai-briefing-2025-11-11_1914.md
+2025-11-11 19:15:01,705 | INFO | Sent digest email to 1047962614@qq.com.
+2025-11-11 19:15:01,711 | INFO | Topic run summary: {"started_at": "2025-11-11T11:10:38.570528+00:00", "digest_ids": ["china_economy", "ai"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-11T10:00:08.910546+00:00", "science_tech": "2025-11-11T10:16:56.240235+00:00", "china_economy": "2025-11-11T11:10:38.570528+00:00", "ai": "2025-11-11T11:10:38.570528+00:00", "gold_fx": "2025-11-11T10:16:56.240235+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T11:10:38.607273+00:00"}, "status": "ok", "total_results": 2, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T11:10:39.894135+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T10:16:56.240235+00:00"}, "status": "ok", "total_results": 20, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T10:16:56.240235+00:00"}, "status": "ok", "total_results": 52, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p...dkwA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 15063, "output_tokens": 17837, "total_tokens": 32900}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests\\china-economy-briefing-2025-11-11_1911.md", "articles_summarized": 2, "summary_notes": "此次摘要涵盖中国汽车产业人事变动、黄金市场产销波动、安全事故调查以及全球科技巨头面临的挑战，反映宏观经济与产业动态交织，值得关注。", "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests\\ai-briefing-2025-11-11_1914.md", "articles_summarized": 40, "summary_notes": "本次快訊涵蓋台灣科技產業營收變化、日本自動駕駛安全事故，以及深度學習技術分享，反映科技市場動態與應用挑戰。\n\n本期摘要涵蓋供應鏈業績回溫、AI產業資本流向變化、餐飲業旺季表現及成長股估值分析，提供投資者及市場觀察者多面向的宏觀經濟與行業動態。\n\n本期新闻涵盖了人工智能应用模型的发布与挑战、科技公司营收表现、传统美妆巨头的财务困境及电竞掌机硬件升级，反映全球科技与商业生态多样发展趋势。\n\n本次世界新闻摘要涵盖科技创新、资本市场及清洁能源领域最新发展，呈现中国科技企业在人工智能及核聚变领域的突破，以及金融机构对港股市场的未来展望。\n\n本期新闻涵盖了AI技术在审计、医疗健康及企业服务领域的最新应用动态，以及全球重要财经峰会进展，反映出人工智能技术对多行业的深远影响。\n\n本次简报涵盖了人工智能技术及其生态系统的最新进展，包括AI代理开发工具、跨行业AI应用扩展，以及开源Linux环境与AI助手的融合等，反映出AI技术正在深刻影响技术开发和各行各业的变革。\n\n本期世界快讯涵盖科技与金融领域的重要动态，从印度两大IT巨头的市场竞争，到Fintech SaaS新秀Lentra的上市计划，再到全球半导体行业龙头台积电的营收趋势，以及美国医疗保险行业巨头Humana的转型举措，反映出科技创新、资本运作与企业文化变革的多重融合趋势。\n\n本期简报涵盖了科技股的波动、数字银行的增长、人工智能模型评估方法及全球独角兽企业估值的重要变化，反映出AI技术对资本市场及创新生态的深远影响。\n\n本期简报涵盖了中美在AI领域的新“冷战”态势，欧洲影视业AI融合趋势，苹果与谷歌合作深化AI应用，以及云计算领域因客户投入变化带来的盈利挑战，反映出人工智能技术推动全球产业和地缘政治格局深刻变革。\n\n本次简报涵盖了技术领域的最新进展，包括基于大型语言模型的安卓设备控制框架、新一代AI代理监控工具、首款支持高级虚拟化的Arm迷你工作站以及软件开发者职业角色的转变，体现了AI与硬件创新共驱软件工程变革的趋势。", "recipients": ["1047962614@qq.com"]}]}
