@@ -1,136 +1,119 @@
-# DailyNews 📰
+# DailyNews
 
-[![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
-[![Python](https://img.shields.io/badge/python-3.12+-3776AB.svg?logo=python&logoColor=white)](#)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](#)
-[![Coverage](https://img.shields.io/badge/coverage-90%25-blue.svg)](#)
+DailyNews generates Markdown news digests by querying NewsAPI, summarising the results with OpenAI, and delivering the output by email.  
+The project now supports configurable digests and per-subscriber routing so each recipient can receive the topics they care about.
 
-一个轻量级的新闻助手，可以从多个地区和语言收集最新头条以及针对自定义话题的最新新闻，规范化处理结果，并生成新闻摘要。提供可重复的、基于查询的新闻摘要。
+## Features
+- Global headline and topic-specific digests driven by `config/digest.json`
+- Bilingual (ZH/EN) query definitions seeded for AI, China Economy, Science & Tech, and Gold/FX
+- Markdown output with HTML conversion for email delivery
+- SMTP delivery through QQ (or any host configured via environment variables)
+- Dry-run mode for safe testing without sending mail
 
-## ✨ 特性
+## Quick Start
 
-- 🌍 支持多语言和多地区新闻源
-- 🔍 可配置的查询驱动收集系统
-- 📊 自动生成 Markdown 格式的摘要
-- ⚡ 内置指数退避的可靠 HTTP 调用
-- 🔐 安全的环境变量管理
-
-## 🚀 快速开始
-
-### 前置要求
-
-### 安装
-1. **克隆仓库**
 ```bash
 git clone https://github.com/ymphys/dailynews.git
 cd dailynews
-```
-
-2. **创建并激活虚拟环境**
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-```
-
-3. **安装依赖**
-```bash
-uv pip install -e .
-```
-
-### 配置
-
-1. 设置环境变量：
-   - 在项目根目录创建 `.env` 文件
-   - 添加 `NEWSAPI_KEY=your_api_key_here`
-
-2. 配置查询主题：
-   - 编辑 `config/run_state_topics.json`
-   - 定义您感兴趣的语言和关键词
-### 前置要求
-
-- Python 3.12 或更高版本
-- NewsAPI.org API 密钥
-- uv 包管理器
-
-### 安装
-
-1. **克隆仓库**
-```bash
-git clone https://github.com/ymphys/dailynews.git
-cd dailynews
-```
-
-2. **安装依赖并创建虚拟环境**
-```bash
 uv sync
 ```
 
-### 配置
+Create a `.env` file (or export variables) with the required keys:
 
-1. 设置环境变量：
 ```bash
-export NEWSAPI_KEY=your_api_key_here  # macOS/Linux
-# 或
-setx NEWSAPI_KEY your_api_key_here    # Windows
+NEWSAPI_ORG_KEY=your_newsapi_token
+OPENAI_API_KEY=your_openai_token
+DAILYNEWS_EMAIL_FROM=sender@example.com
+DAILYNEWS_EMAIL_APP_PW=app_password_or_token
+DAILYNEWS_EMAIL_TO=fallback@example.com   # used when a digest has no subscribers
 ```
 
-2. 配置查询主题：
-   - 编辑 `config/run_state_topics.json`
-   - 定义您感兴趣的语言和关键词
+Optional for testing (skip SMTP send but still generate output/logs):
 
-## 💡 使用方法
-
-### 基本使用
-
-运行收集器：
 ```bash
-uv run main.py --topics config/run_state_topics.json --output data/$(date +%Y%m%d)
+DAILYNEWS_EMAIL_DRY_RUN=1
 ```
 
-### 命令行选项
+## Configuration Overview
 
-| 选项 | 描述 |
-|------|------|
-| `--topics PATH` | 主题配置文件路径 |
-| `--output DIR` | 输出目录（将生成 JSON、CSV、Markdown） |
-| `--max-pages N` | 覆盖默认分页深度 |
-| `--since YYYY-MM-DD` | 仅获取指定日期后的文章 |
-| `--dry-run` | 预览将执行的查询而不调用 API |
+### `config/digest.json`
+Each entry describes a digest that can be executed by the CLI.
 
-### 自动化工作流
+| Field | Purpose |
+| ----- | ------- |
+| `id` | Unique identifier used by subscribers and logs (`global_headlines`, `ai`, …) |
+| `mode` | Either `headlines` or `topic`; determines which runner executes the digest |
+| `news_queries` | Array of NewsAPI payloads; edit to change coverage or add new topics |
+| `email.subject_template` | Python-style format string (e.g. `"AI Briefing - {local_dt:%Y-%m-%d %H:%M}"`) |
+| `output.filename_prefix` | Prefix used when writing the Markdown digest file |
+| `newsapi.max_age_days` | (Optional) Caps article age for `everything` queries |
 
-1. 更新配置文件中的关键词
-2. 确保环境变量已设置
-3. 运行脚本
-4. 在 `data/<YYYYMMDD>/` 查看生成的摘要
+### `config/subscribers.json`
 
-> 💡 提示：可以通过 cron 作业或 GitHub Actions 实现自动更新
+```json
+{
+  "defaults": {
+    "name": "zjb",
+    "frequency": "daily",
+    "send_time": "08:00",
+    "timezone": "Asia/Shanghai",
+    "languages": ["zh-Hans", "en"]
+  },
+  "subscribers": [
+    {
+      "id": "zjb",
+      "email": "1047962614@qq.com",
+      "digests": ["global_headlines", "science_tech", "ai"]
+    },
+    {
+      "id": "nodels",
+      "email": "jiabaozhang098@gmail.com",
+      "digests": ["global_headlines", "china_economy", "gold_fx"]
+    }
+  ]
+}
+```
 
-## 🛠 技术栈
+- `defaults` supplies optional fallbacks (used when a subscriber omits a value).
+- `subscribers` is an array; each subscriber needs an `id`, `email`, and at least one digest id in `digests`.
+- Add or remove subscribers by editing this file—no code changes required.
+- When a digest resolves to zero subscribers, the mailer falls back to `DAILYNEWS_EMAIL_TO`.
 
-- **核心**
-  - Python 3.12+
-  - Requests (带指数退避)
-  - python-dotenv
+- `config/run_state.json` is generated automatically and stores `last_run` timestamps per digest. Legacy files
+  `config/run_state_headlines.json` and `config/run_state_topics.json` are migrated on first run and no longer used.
 
-- **可选组件**
-  - Pydantic / dataclasses (数据验证)
-  - Rich / Typer (CLI 增强)
+## Running Digests
 
-> 📦 完整依赖列表见 `pyproject.toml`
+```bash
+uv run main.py            # generate all digests (headlines + topics)
+uv run main.py headlines  # only global headlines
+uv run main.py topics     # all topic digests
+```
 
-## 🗺 路线图
+Output Markdown files are stored under `digests/` with the prefix specified in `config/digest.json`.  
+After each digest is written, the application calls `mailer.send_digest_via_email` to deliver the content to the resolved subscribers.
 
-- [ ] 多提供商适配器 (Guardian API, GDELT, RSS)
-- [ ] 重复内容检测
-- [ ] 命名实体识别自动标记
-- [ ] Web 仪表板 (Streamlit/Next.js)
-- [ ] GitHub Actions 自动构建 + 通知
+## Adding a New Digest
+1. Duplicate an entry in `config/digest.json` and adjust:
+   - `id` (lowercase slug, e.g. `entertainment`)
+   - `display_name`, `subject_template`, `filename_prefix`
+   - `news_queries` payloads (language, keywords, etc.)
+2. Assign subscribers to the new digest by updating their `digests` array in `config/subscribers.json`.
+3. Run `uv run main.py topics` (or `headlines` depending on `mode`) to verify a Markdown file is generated.
+4. Remove `DAILYNEWS_EMAIL_DRY_RUN` to send real emails once satisfied.
 
-## 🤝 贡献
+## Mail Delivery Notes
+- `mailer.send_digest_via_email` now accepts structured recipients (list of `{email, name}`) and sets friendly headers automatically.
+- QQ SMTP is configured as the default (`smtp.qq.com:587`), but you can change `SMTP_HOST`/`SMTP_PORT_TLS` in `mailer.py` if needed.
+- Logs include recipient counts and the digest id for auditing.
 
-欢迎贡献和建议！请先开 issue 讨论您想要改变的内容。
+## Repository Scripts
+- `headline.py` executes the `global_headlines` digest.
+- `topic.py` iterates every digest with `"mode": "topic"`.
+- `config_loader.py` validates and caches configuration files for both digests and subscribers.
 
-## 📄 许可证
+## Contributing
+Pull requests are welcome! Please open an issue to discuss any large changes, especially if they touch the config schema or delivery flow.
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
+## License
+This project is released under the MIT License. See [LICENSE](LICENSE) for details.

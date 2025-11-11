@@ -12496,3 +12496,969 @@ smtplib.SMTPResponseException: (-1, b'\x00\x00\x00')
 2025-11-09 08:23:12,507 | INFO | Saved digest to digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-09_0809.md
 2025-11-09 08:23:14,150 | INFO | Sent digest email via QQ SMTP to 1047962614@qq.com, jiabaozhang098@gmail.com, qinnanwu@163.com.
 2025-11-09 08:23:14,154 | INFO | Topic run summary: {"started_at": "2025-11-09T00:09:52.190121+00:00", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-07T12:48:10.407242+00:00", "requests": [{"endpoint": "everything", "request_params": {"q": "(\"ç§‘å­¦\" OR \"æŠ€æœ¯\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 15, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"ç§‘å­¦\" OR \"æŠ€æœ¯\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 246, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"ä¸­å›½ç»æµ\") OR (\"ä¸­å›½æ”¿æ²»\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 2, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 2, "query_params": {"endpoint": "everything", "q": "(\"ä¸­å›½ç»æµ\") OR (\"ä¸­å›½æ”¿æ²»\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 3, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"äººå·¥æ™ºèƒ½\" OR \"AI\" OR \"å¤§æ¨¡å‹\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 90, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 4, "query_params": {"endpoint": "everything", "q": "(\"äººå·¥æ™ºèƒ½\" OR \"AI\" OR \"å¤§æ¨¡å‹\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 653, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 5, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"é»„é‡‘\" OR \"è´µé‡‘å±\" OR \"ç¾å…ƒ\" OR \"ç¾å…ƒæ±‡ç‡\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 37, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 6, "query_params": {"endpoint": "everything", "q": "(\"é»„é‡‘\" OR \"è´µé‡‘å±\" OR \"ç¾å…ƒ\" OR \"ç¾å…ƒæ±‡ç‡\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-07T12:48:10.407242+00:00"}, "status": "ok", "total_results": 140, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 7, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 50709, "output_tokens": 58620, "total_tokens": 109329}}, "outputs": [{"query_index": 0, "query": {"endpoint": "everything", "q": "(\"ç§‘å­¦\" OR \"æŠ€æœ¯\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/ç§‘å­¦-or-æŠ€æœ¯-briefing-2025-11-09_0809.md", "articles_summarized": 15, "summary_notes": "æœ¬æ¬¡æŠ¥é“æ¶µç›–å¤©æ–‡å­¦é‡å¤§çªç ´ã€ä¸­å›½å†›äº‹ç§‘æŠ€è¿›å±•ã€è‹¹æœåŸåˆ›å†…å®¹çš„æ–‡åŒ–å½±å“ï¼Œä»¥åŠæ¶‰åŠç½‘ç»œå®‰å…¨å’Œæ³•å¾‹è°ƒæŸ¥çš„çƒ­ç‚¹äº‹ä»¶ï¼Œä½“ç°ç§‘æŠ€åˆ›æ–°ä¸ç›‘ç®¡äº¤ç»‡çš„å…¨çƒåŠ¨æ€ã€‚\n\nè¿™äº›æŠ¥é“åæ˜ äº†2025å¹´ç§‘æŠ€ç¡¬ä»¶é¢†åŸŸçš„å¿«é€Ÿå‘å±•åŠäººå·¥æ™ºèƒ½å¸¦åŠ¨çš„å¸‚åœºå˜é©ï¼Œæ¶µç›–äº†å­˜å‚¨æŠ€æœ¯çªç ´ã€æµè¡Œæ–‡åŒ–ç°è±¡ä¸ä¼ä¸šæœªæ¥è§„åˆ’ç­‰å¤šä¸ªæ–¹é¢ã€‚\n\næœ¬æœŸæ–°é—»æ¶µç›–äº†äººå·¥æ™ºèƒ½æ ¸å¿ƒæŠ€æœ¯è§£æã€çŸ¥åå“ç‰Œç§‘æŠ€åˆ›æ–°å±•è§ˆã€ç”µæ± æŠ€æœ¯çªç ´åŠè½¯ä»¶å¼€å‘ç”Ÿæ€æŒ‘æˆ˜ï¼Œä¸ºè¯»è€…æä¾›äº†æŠ€æœ¯å‰æ²¿åŠåº”ç”¨è¶‹åŠ¿çš„å¤šç»´è§†è§’ã€‚\n\næœ¬æœŸç®€æŠ¥æ¶µç›–äº†ä»ç½‘ç»œå®‰å…¨å¯†ç è¶‹åŠ¿ã€æ°”è±¡AIé¢„æµ‹æŠ€æœ¯åˆ°ç§»åŠ¨é€šä¿¡è®¾å¤‡æ ‡å‡†çš„æœ€æ–°è¿›å±•ï¼Œåæ˜ å‡ºç§‘æŠ€é¢†åŸŸåœ¨å®‰å…¨ã€æ™ºèƒ½å’ŒåŸºç¡€è®¾æ–½å»ºè®¾æ–¹é¢çš„æŒç»­åˆ›æ–°ä¸æŒ‘æˆ˜ã€‚"}, {"query_index": 1, "query": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/science-or-technology-briefing-2025-11-09_0809.md", "articles_summarized": 20, "summary_notes": "æœ¬æ¬¡ç®€æŠ¥æ¶µç›–äº†ç§‘æŠ€å’Œå›½é˜²é¢†åŸŸçš„é‡å¤§åŠ¨æ€ï¼Œå…¶ä¸­è‹¹æœå…¬å¸ä½ä»·MacBookçš„æ¨å‡ºæ ‡å¿—ç€å…¶å¸‚åœºç­–ç•¥è°ƒæ•´ï¼Œè€Œç¾å›½å›½é˜²éƒ¨å…³äºè½¯ä»¶éªŒè¯æ ‡å‡†çš„å˜åŠ¨å¼•å‘ç›‘ç®¡ä¸å®‰å…¨æ–¹é¢çš„é‡è¦è®¨è®ºï¼ŒåŒæ—¶ä¸€æ¬¾æ€€æ—§é£ç‹¬ç«‹æ¸¸æˆå±•ç°äº†æ•°å­—æ–‡åŒ–çš„å¤šæ ·æ€§ã€‚\n\næœ¬æœŸæ–°é—»æ¶µç›–äº†æ¶ˆè´¹ä¿ƒé”€ã€ä¼ä¸šç¤¾ä¼šè´£ä»»æŠ•èµ„ã€ç§‘å­¦å·¨åŒ é€ä¸–ä»¥åŠé›¶å”®å®‰å…¨æ–°æªæ–½å››ä¸ªæ–¹é¢ï¼Œå†…å®¹ä¸°å¯Œï¼Œæ¶‰åŠç”Ÿæ´»ã€ç§‘æŠ€åŠç¤¾ä¼šå¤šä¸ªå±‚é¢ã€‚\n\næœ¬æœŸç®€æŠ¥æ¶µç›–äº†ä½“è‚²èµ›äº‹ç›´æ’­å®‰æ’ã€å‰æ²¿é‡å­è®¡ç®—å‘å±•ã€ç¾å›½å •èƒè¯æ”¿ç­–åŠ¨æ€åŠå¢å¼ºç°å®æ™ºèƒ½çœ¼é•œçš„æŠ€æœ¯åˆ›æ–°ï¼Œåæ˜ äº†ç§‘æŠ€ä¸ç¤¾ä¼šè®®é¢˜çš„å¤šæ ·åŒ–è¶‹åŠ¿ã€‚\n\næœ¬æœŸæ‘˜è¦æ¶µç›–äº†èˆªå¤©æœºæ„çš„é¢„ç®—å’Œè¿è¥æŒ‘æˆ˜ã€æ½œåœ¨çš„æ˜Ÿé™…å†²å‡»å¨èƒã€ç”Ÿç‰©å­¦ä¸Šçš„æ–°å‘ç°ä»¥åŠç§‘å­¦æ•°æ®ç®¡ç†å·¥å…·çš„æœ€æ–°è¿›å±•ï¼Œä½“ç°äº†ç§‘æŠ€é¢†åŸŸå¤šæ–¹é¢çš„åŠ¨æ€ã€‚"}, {"query_index": 2, "query": {"endpoint": "everything", "q": "(\"ä¸­å›½ç»æµ\") OR (\"ä¸­å›½æ”¿æ²»\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/ä¸­å›½ç»æµ-or-ä¸­å›½æ”¿æ²»-briefing-2025-11-09_0809.md", "articles_summarized": 2, "summary_notes": "æœ¬æœŸç®€æŠ¥èšç„¦ä¸­å›½2025å¹´æœ€æ–°ç»æµåˆºæ¿€æªæ–½åŠå…¶æ”¿æ²»èƒŒæ™¯åˆ†æã€‚æ–‡ç« æ­ç¤ºè´¢æ”¿éƒ¨æ¨åŠ¨è´·æ¬¾æ¶ˆè´¹çš„æ”¿ç­–æ„å›¾åŠç»æµå­¦å®¶çš„æ‰¹è¯„ï¼ŒåŒæ—¶æ¢³ç†äº†ä¸­å›½è¿‘æœŸé«˜è°ƒæ”¿æ²»æ¸…æ´—å¯¹æ”¿æƒåˆæ³•æ€§å’Œç¤¾ä¼šç¨³å®šçš„æ½œåœ¨å½±å“ï¼Œå¸®åŠ©è¯»è€…ç†è§£å¤æ‚çš„ä¸­å›½äº§ä¸šä¸æ”¿æ²»åŠ¨æ€å˜åŒ–ã€‚"}, {"query_index": 4, "query": {"endpoint": "everything", "q": "(\"äººå·¥æ™ºèƒ½\" OR \"AI\" OR \"å¤§æ¨¡å‹\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/äººå·¥æ™ºèƒ½-or-ai-or-å¤§æ¨¡å‹-briefing-2025-11-09_0809.md", "articles_summarized": 19, "summary_notes": "æœ¬æœŸæ‘˜è¦æ¶µç›–å…¨çƒç»æµã€æ•™è‚²äº¤æµã€é˜²è¯ˆéª—è­¦ç¤ºåŠäººå·¥æ™ºèƒ½é¢†åŸŸçš„æŠ€æœ¯çªç ´ï¼Œæ—¨åœ¨æä¾›å¤šç»´åº¦æ–°é—»è§†è§’ï¼Œå¸®åŠ©è¯»è€…å…¨é¢ç†è§£å›½é™…ä¸ç§‘æŠ€åŠ¨æ€ã€‚\n\næœ¬æ¬¡æ‘˜è¦æ¶µè“‹åŠå°é«”ç”¢æ¥­å¤§å» åˆä½œå¸¶ä¾†çš„å¸‚å ´ç«¶çˆ­è®ŠåŒ–ã€å…©å²¸ç§‘æŠ€æ”¿ç­–ç™¼å±•ã€å­¸ç•Œèˆ‡ç”¢æ¥­è·¨åŸŸåˆä½œï¼Œä»¥åŠå°ç£é‡‘èæœå‹™ç³»çµ±äº‹ä»¶ï¼Œåæ˜ å‡ºç§‘æŠ€èˆ‡ç¶“æ¿Ÿé ˜åŸŸè¿‘æœŸçš„é‡è¦å‹•æ…‹ã€‚\n\næœ¬æœŸæ–°é—»æ¶µç›–äº†ç‰¹æ–¯æ‹‰åŠå…¶CEOé©¬æ–¯å…‹çš„æœ€æ–°ä¼ä¸šæˆ˜ç•¥å’Œè–ªé…¬æ–¹æ¡ˆï¼Œçªå‡ºäººå·¥æ™ºèƒ½é¢†åŸŸçš„æŠ•èµ„åŠ¨å‘ï¼›ä»¥åŠè‹±ä¼Ÿè¾¾è¶…çº§è®¡ç®—æœºåœ¨è·¨é¢†åŸŸåº”ç”¨ä¸Šçš„å°è¯•ã€‚æ­¤å¤–ï¼Œèšç„¦å®è§‚ç»æµæ–¹é¢ï¼Œå‰–æAIæŠ€æœ¯å¯¹ç»æµæˆé•¿åŠå›½é™…è´¸æ˜“å¯èƒ½å¸¦æ¥çš„åŒé‡å½±å“ã€‚\n\næœ¬æ¬¡æ‘˜è¦æ¶µè“‹äºæ´²é‡è¦ç”¢æ¥­æ¶ˆæ¯ã€æ–‡åŒ–äº‹ä»¶åŠç§‘æŠ€è¶¨å‹¢ï¼Œå°¤å…¶èšç„¦å°å¡‘é›†åœ˜æ¥­ç¸¾å›ç©©ã€ä¸­åœ‹å…¬å…±è©å½™çš„æ”¿æ²»æ•æ„Ÿæ€§ã€ç¾åœ‹é‡‘èåäººå½¢è±¡è¢«AIå½é€ çš„å•é¡Œï¼Œä»¥åŠåœ‹éš›èˆªç©ºæ¥­çš„å¸‚å ´å¾©ç”¦å‹•å‘ã€‚è®€è€…å¯ç²å¾—å¤šç¶­åº¦çš„å…¨çƒè¦–é‡èˆ‡èƒŒæ™¯çŸ¥è­˜ã€‚\n\næœ¬æœŸæ–°èèšç„¦äººå·¥æ™ºæ…§æŠ€è¡“åœ¨å¤šå€‹é ˜åŸŸçš„æ‡‰ç”¨ï¼ŒåŒ…æ‹¬é›»å­é›¶çµ„ä»¶å¸‚å ´éœ€æ±‚ã€é‡‘èæœå‹™çš„æ•¸ä½è½‰å‹åŠæ²»å®‰ç›£æ§çš„å‰µæ–°ï¼Œé¡¯ç¤ºAIæ­£æ·±åˆ»å½±éŸ¿å…¨çƒç”¢æ¥­çµæ§‹èˆ‡ç¤¾æœƒæ²»ç†ã€‚"}, {"query_index": 5, "query": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/artificial-intelligence-or-ai-or-large-language-model-or-llm-briefing-2025-11-09_0809.md", "articles_summarized": 17, "summary_notes": "æœ¬æ¬¡ç®€æŠ¥æ¶µç›–äº†äººå·¥æ™ºèƒ½å¸æ³•æ¨¡æ‹Ÿã€æ–°ä¸€ä»£æœºå™¨äººèèµ„è¿›å±•åŠäººå·¥æ™ºèƒ½ç›¸å…³è½¯ä»¶å·¥å…·æ›´æ–°ï¼Œåæ˜ äº†AIæŠ€æœ¯åœ¨æ³•å¾‹ã€åˆ¶é€ ä¸šå’Œè½¯ä»¶å¼€å‘é¢†åŸŸçš„å¤šç»´åº¦å½±å“ã€‚\n\næœ¬æœŸæ–°é—»èšç„¦äººå·¥æ™ºèƒ½é¢†åŸŸçš„æœ€æ–°æŠ€æœ¯è¿›å±•ï¼ŒåŒ…æ‹¬ç¡¬ä»¶åŠ é€Ÿã€æ•™è‚²åˆ›æ–°ã€å¼€å‘å·¥å…·åŒ…æ‰©å±•ä»¥åŠæ–‡æ¡£å¤„ç†ï¼Œè¿™äº›å‘å±•æ˜¾ç¤ºAIæŠ€æœ¯æ­£æœç€æ›´é«˜æ•ˆã€æ›´æ˜“ç”¨å’Œæ›´å¹¿æ³›åº”ç”¨çš„æ–¹å‘æ¼”è¿›ã€‚\n\næœ¬æœŸæ–°é—»èšç„¦AIæŠ€æœ¯åœ¨è½¯ä»¶å·¥å…·å’Œåª’ä½“è¡Œä¸šçš„æœ€æ–°åŠ¨æ€ï¼Œæ¶µç›–æ–°å‹AIè¾…åŠ©å¼€å‘åŒ…ã€æ–°é—»ç¼–è¾‘å®¤çš„AIåº”ç”¨æŒ‘æˆ˜åŠå®—æ•™å­¦ä¹ çš„è‡ªåŠ¨åŒ–å·¥å…·ï¼Œåæ˜ äº†äººå·¥æ™ºèƒ½åœ¨å¤šä¸ªé¢†åŸŸçš„å¹¿æ³›å½±å“ã€‚\n\næœ¬æœŸæ–°é—»æ‘˜è¦é‡ç‚¹å…³æ³¨äº†ç¾å›½æƒ…æŠ¥ä½“ç³»ä¸­çš„æ”¿æ²»äº‹ä»¶å’Œäººå·¥æ™ºèƒ½åœ¨éŸ³ä¹é¢†åŸŸçš„åº”ç”¨ï¼Œä½“ç°äº†æŠ€æœ¯ä¸æ”¿æ²»åŠæ–‡åŒ–è‰ºæœ¯äº¤ç»‡å‘å±•çš„è¶‹åŠ¿ã€‚\n\næœ¬æœŸç®€æŠ¥æ¶µç›–äº†Metaåœ¨ç¾å›½å¤§è§„æ¨¡æŠ•èµ„AIåŸºç¡€è®¾æ–½çš„é‡è¦åŠ¨æ€ï¼Œæ¶‰åŠç¤¾ä¼šç¦åˆ©æ”¿ç­–çš„å¸æ³•è¿›å±•ï¼Œä»¥åŠå‰æ²¿è¥é”€æŠ€æœ¯çš„å‘å±•è¶‹åŠ¿ï¼Œä¸ºè¯»è€…æä¾›æŠ€æœ¯ã€æ”¿ç­–åŠå¸‚åœºä¸‰ä¸ªç»´åº¦çš„å›½é™…è§†è§’ã€‚"}, {"query_index": 6, "query": {"endpoint": "everything", "q": "(\"é»„é‡‘\" OR \"è´µé‡‘å±\" OR \"ç¾å…ƒ\" OR \"ç¾å…ƒæ±‡ç‡\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/é»„é‡‘-or-è´µé‡‘å±-or-ç¾å…ƒ-or-ç¾å…ƒæ±‡ç‡-briefing-2025-11-09_0809.md", "articles_summarized": 16, "summary_notes": "æœ¬æ¬¡æ–°èæ‘˜è¦æ¶µè“‹äº†ç¾åœ‹æ•™è‚²å®‰å…¨äº‹ä»¶ã€åœ‹éš›æ²¹åƒ¹è®Šå‹•åŠæœ¬åœ°æ‡‰å°ã€è·¨åœ‹ç”Ÿæ´»è¶¨å‹¢ï¼Œä»¥åŠå…¨çƒé¦–å¯Œçš„è²¡å¯Œèˆ‡ç”Ÿæ´»æ–¹å¼ï¼Œåæ˜ å‡ºç¤¾æœƒå®‰å…¨ã€ç¶“æ¿Ÿå¸‚å ´ã€å€‹äººé¸æ“‡å’Œè²¡å¯Œç®¡ç†çš„å¤šé‡é¢å‘ã€‚\n\næœ¬æœŸæ–°èæ¶µè“‹äº†æ–‡åŒ–æ”¶è—ã€å…¨çƒè²¿æ˜“èˆªé‹æŒ‡æ¨™ã€é£Ÿå“è¼¸å…¥å®‰å…¨è¦å®šï¼Œä»¥åŠåœ‹éš›é‡‘èå¸‚å ´å‹•å‘ï¼Œå±•ç¾å¾æ—¥å¸¸ç”Ÿæ´»å¶é‡çç¨€ç‰©å“ï¼Œåˆ°å®è§€ç¶“æ¿Ÿæ”¿ç­–èˆ‡å…¨çƒé¿éšªç­–ç•¥çš„å¤šå…ƒé¢å‘ã€‚\n\næœ¬çµ„æ–°èæ¶µè“‹é‡‘èç§‘æŠ€æ³•å¾‹æ¡ˆä¾‹ã€æŠ•è³‡ç­–ç•¥å»ºè­°ã€ä¿„ç¾…æ–¯èƒ½æºç¶“æ¿Ÿå—åˆ¶è£è¡æ“Šï¼Œä»¥åŠåœ‹éš›é«”è‚²å‹•æ…‹ï¼Œå‘ˆç¾ç•¶å‰å…¨çƒç¶“æ¿Ÿèˆ‡é«”è‚²å¸‚å ´çš„å¤šå…ƒé¢å‘ã€‚\n\næœ¬æœŸæ–°é—»æ¶µç›–ç§‘æŠ€ã€è´¸æ˜“åŠé‡‘èä¸‰ä¸ªé¢†åŸŸï¼Œä½“ç°å‡ºå…¨çƒç»æµä¸æŠ€æœ¯ç«äº‰çš„å¤æ‚åŠ¨æ€ã€‚AMDå¯¹è‹±ç‰¹å°”çš„å¸‚åœºæŒ‘æˆ˜ï¼Œå°æ¹¾ä¸ä¸­å›½å¤§é™†çš„å‡ºå£å·®å¼‚ï¼Œä»¥åŠäººæ°‘å¸å›½é™…åŒ–è¶‹åŠ¿ï¼Œå‡åæ˜ å½“å‰å›½é™…å…³ç³»å’Œç»æµæ ¼å±€çš„è½¬å˜ã€‚åŒæ—¶ï¼Œç¤¾äº¤åª’ä½“å·¨å¤´Metaåœ¨å¹¿å‘Šå†…å®¹ç›‘ç®¡æ–¹é¢çš„æŒ‘æˆ˜ï¼Œä¹Ÿæé†’å…³æ³¨æ•°å­—ç»æµä¸­çš„åˆè§„é£é™©å’Œæ²»ç†é—®é¢˜ã€‚"}, {"query_index": 7, "query": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}, "digest_path": "digests/gold-or-precious-metal-or-usd-or-dollar-briefing-2025-11-09_0809.md", "articles_summarized": 20, "summary_notes": "æœ¬æœŸæ–°é—»æ¶µç›–äº†å°åº¦æ–‡åŒ–é—äº§å‘ç°ã€ç”µå­æ¸¸æˆå‘¨è¾¹æ–°äº§å“ã€æ¾³å¤§åˆ©äºšå¿ƒç†å¥åº·æœåŠ¡è´¨é‡è¯„ä¼°ä»¥åŠç¾å›½èŒä¸šæ©„æ¦„çƒèµ›äº‹åŠ¨æ€ï¼Œå†…å®¹è·¨è¶Šå†å²ã€å¨±ä¹ã€åŒ»ç–—ä¸ä½“è‚²å¤šä¸ªé¢†åŸŸï¼Œé€‚åˆå¤šæ ·åŒ–å›½é™…è¯»è€…ã€‚\n\næœ¬æœŸæ–°é—»æ¶µç›–å…¨çƒå•†å“å¸‚åœºæ³¢åŠ¨ã€å¥¢ä¾ˆå“é›¶å”®æ–°åŠ¨æ€ã€å¤§å­¦æ©„æ¦„çƒèµ›ç¨‹è°ƒæ•´åŠéŸ³ä¹ç•Œé‡è¦å¥–é¡¹æåï¼Œå‘ˆç°ç»æµã€æ–‡åŒ–åŠä½“è‚²é¢†åŸŸçš„å¤šå…ƒå‘å±•è¶‹åŠ¿ã€‚\n\næœ¬æœŸç®€æŠ¥æ¶µç›–æˆ¿åœ°äº§å¸‚åœºé‡å¤§èµ„äº§è°ƒæ•´ã€å¤§å­¦ä½“è‚²èµ›äº‹å›å½’ã€æ•°å­—è´§å¸ç›‘ç®¡æŒ‘æˆ˜åŠè½¯ä»¶è¡Œä¸šè´¢åŠ¡åŠ¨æ€ï¼Œåæ˜ äº†å…¨çƒç»æµå’Œç¤¾ä¼šå¤šä¸ªé¢†åŸŸçš„å…³é”®å‘å±•ã€‚\n\næœ¬æ¬¡ç®€æŠ¥è¦†ç›–äº†é‡‘èç§‘æŠ€ã€ä¼ä¸šé«˜ç®¡è–ªé…¬åŠè‚¡å¸‚æŠ•èµ„ä¸‰ä¸ªé¢†åŸŸçš„æœ€æ–°åŠ¨æ€ï¼Œåæ˜ å‡ºæ•°å­—è´§å¸æ”¿ç­–è°ƒæ•´ã€ç§‘æŠ€å·¨å¤´è–ªé…¬åˆ›æ–°ä»¥åŠè´µé‡‘å±èµ„äº§æŒç»­å‡å€¼çš„é‡è¦è¶‹åŠ¿ã€‚\n\næœ¬æœŸæ–°é—»ä¸»è¦èšç„¦å…¨çƒæ”¿æ²»ç»æµåŠ¨æ€ï¼šç¬¬ä¸€åˆ™æŠ¥é“åŒˆç‰™åˆ©æ€»ç†å¥¥å°”ç­ä¸ç‰¹æœ—æ™®æ–°é—»ç§˜ä¹¦ä¹‹é—´çš„äº’åŠ¨ï¼Œåæ˜ å›½é™…æ”¿æ²»é˜µè¥é—´çš„äº²è¿‘å…³ç³»ï¼›ç¬¬äºŒã€å››åˆ™æŠ¥é“å›´ç»•å…¨çƒå¤®è¡Œå¯¹é»„é‡‘èµ„äº§çš„å›¤ç§¯åŠé‡‘åº“å»ºè®¾ï¼Œæ­ç¤ºè´§å¸ä½“ç³»æ½œåœ¨çš„å˜é©è¶‹åŠ¿ï¼›ç¬¬ä¸‰åˆ™å…³æ³¨æ¯”ç‰¹å¸å¸‚åœºæ—©æœŸå¤§æˆ·çš„æŠ›å”®è¡Œä¸ºï¼Œå¯¹åŠ å¯†å¸‚åœºæœªæ¥èµ°å‘æå‡ºè­¦ç¤ºã€‚äº†è§£è¿™äº›åŠ¨æ€æœ‰åŠ©äºæŒæ¡å…¨çƒé‡‘èæ”¿æ²»çš„å¤æ‚å˜åŒ–ã€‚"}]}
+2025-11-11 13:03:07,982 | INFO | Migrated last_run from legacy headline state file to unified run_state.json.
+2025-11-11 13:03:07,982 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-11 13:03:08,500 | INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+2025-11-11 13:03:08,501 | INFO | Retained 28 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 13:03:08,501 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-11 13:03:08,785 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 13:03:08,786 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 13:03:08,786 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-11 13:03:09,055 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 13:03:09,057 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 13:03:09,057 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-11 13:03:09,346 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 13:03:09,347 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 13:03:24,567 | INFO | Summarizing 28 articles across 7 batches.
+2025-11-11 13:04:00,785 | INFO | Completed batch 1/7 (briefings=4).
+2025-11-11 13:04:28,808 | INFO | Completed batch 2/7 (briefings=8).
+2025-11-11 13:05:01,474 | INFO | Completed batch 3/7 (briefings=12).
+2025-11-11 13:05:30,761 | INFO | Completed batch 4/7 (briefings=16).
+2025-11-11 13:05:50,627 | INFO | Completed batch 5/7 (briefings=20).
+2025-11-11 13:06:19,506 | INFO | Completed batch 6/7 (briefings=24).
+2025-11-11 13:06:46,333 | INFO | Completed batch 7/7 (briefings=28).
+2025-11-11 13:06:46,333 | INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=18533)
+2025-11-11 13:06:46,337 | INFO | Saved digest to digests\headline-briefing-2025-11-11_1306.md
+2025-11-11 13:06:46,571 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com, jiabaozhang098@gmail.com.
+2025-11-11 13:06:46,571 | INFO | Headline run summary: {"started_at": "2025-11-11T05:03:07.982010+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-09T00:06:38.314629+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "pageSize": 30}, "status": "ok", "total_results": 37, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}]}, "openai": {"key": "sk-p...dkwA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 7450, "output_tokens": 11083, "total_tokens": 18533}}, "outputs": {"digest_path": "digests\\headline-briefing-2025-11-11_1306.md", "articles_summarized": 28, "summary_notes": "±¾ÆÚĞÂÎÅÖ÷Òªº­¸ÇÌåÓıÁìÓòµÄ³óÎÅºÍÕ½Êõµ÷Õû£¬ÒÔ¼°ÃÀ¹úÒòÕş¸®Í£°Ú¶Ôº½¿Õ½»Í¨ºÍÉç»á¸£Àû²úÉúµÄÓ°Ïì£¬·´Ó³³öÕşÖÎºÍÉç»áÊÂ¼ş¶ÔÈÕ³£Éú»îºÍÖ°ÒµÌåÓıµÄ¶à·½ÃæÓ°Ïì¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÁËÃ½Ìå³ÏĞÅ¡¢½ğÈÚÊĞ³¡²¨¶¯¡¢ÌåÓıÈüÊÂÁÁµã¼°ÃÀ¹úÕşÖÎÀúÊ·±£»¤µÈ¶à·½ÃæÖØÒªÄÚÈİ£¬Ö¼ÔÚÎª¶ÁÕßÌá¹©È«ÇòÊÓÒ°ÏÂµÄ×ÛºÏĞÅÏ¢¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÁËÓ¤¶ù½¡¿µ°²È«¡¢È«Çò¹©Ó¦Á´¼°º½¿ÕÔËÊäÌôÕ½£¬ÒÔ¼°º½ÌìÁìÓòµÄÖØÒª×îĞÂ¶¯Ì¬£¬·´Ó³³ö¹ú¼Ê¹«¹²°²È«¡¢¼¼ÊõÒÔ¼°ÉÌÒµ»·¾³µÄ¶àÖØÓ°Ïì¡£\n\n±¾´Î¼ò±¨º­¸ÇÌåÓıÈüÊÂ¡¢ÓéÀÖĞ¹Â©¡¢ÆøÏóÔ¤¾¯ºÍÉç»á°²È«ËÄ¸öÁìÓò£¬Í»ÏÔÈ«Çò²»Í¬ÈÈµãÊÂ¼ş¶ÔÃñÖÚÉú»îµÄÓ°Ïì¡£\n\nThis digest summarizes key recent developments including US economic policy proposals by former President Trump affecting tariffs and healthcare, a significant humanitarian development in the Israel-Gaza conflict, and cultural recognition of an iconic music figure. Clarifications are provided to assist readers unfamiliar with specialized terms and context.\n\n±¾´Î¼ò±¨º­¸ÇÁËÌìÎÄÑ§ĞÂ·¢ÏÖ¡¢ÓéÀÖ²úÒµ¶¯Ì¬¡¢¿Æ¼¼´´ĞÂÒÔ¼°Å·ÖŞ°²È«·À»¤µÈ¶àÁìÓòÈÈµã£¬·´Ó³ÁËµ±Ç°È«Çò¿Æ¼¼·¢Õ¹ÓëµØÔµÕşÖÎ¸ñ¾ÖµÄ½»Ö¯Ó°Ïì¡£\n\n±¾ÆÚ¼ò±¨º­¸ÇÓéÀÖ½çµÄÉç½»Ê¢ÊÂ¡¢Ò½Ñ§ÁìÓòµÄÖØ´óÍ»ÆÆ¡¢ĞÂµÄĞÄÔà²¡ÑĞ¾¿³É¹û£¬ÒÔ¼°ÖªÃû¿Æ»ÃÓÎÏ·µÄ×îĞÂ¶¯Ì¬£¬Ö¼ÔÚÎª¶ÁÕßÌá¹©¶àÁìÓòµÄÈ«Çò×ÊÑ¶¡£", "recipients": ["1047962614@qq.com", "jiabaozhang098@gmail.com"]}}
+2025-11-11 13:06:46,626 | INFO | Migrated last_run from legacy topic state file for digest 'science_tech'.
+2025-11-11 13:06:46,630 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-09T00:09:52.190121+00:00).
+2025-11-11 13:06:46,632 | INFO | Requesting everything with params={'q': '("¿ÆÑ§" OR "¼¼Êõ")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T05:06:46.630667+00:00'}
+2025-11-11 13:06:47,099 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 13:06:47,101 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 13:06:47,101 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-09T00:09:52.190121+00:00).
+2025-11-11 13:06:47,101 | INFO | Requesting everything with params={'q': '("Science" OR "Technology")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T05:06:47.101495+00:00'}
+2025-11-11 13:06:47,422 | INFO | NewsAPI returned 19 articles (status=ok, remaining=None)
+2025-11-11 13:06:47,422 | INFO | Retained 19 articles for endpoint=everything, language=en after filtering.
+2025-11-11 13:06:48,374 | INFO | Summarizing 39 articles across 10 batches.
+2025-11-11 13:07:13,147 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-11 13:07:39,071 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-11 13:07:59,859 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-11 13:08:34,878 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "È«Çò×îĞ¡GPU TinyGPU v2.0·¢²¼£¬Ö§³ÖÊµÊ±3DäÖÈ¾¹¦ÄÜ",
+      "chinese_brief": "±»ÓşÎª¡°È«Çò×îĞ¡GPU¡±µÄTinyGPU v2.0ÕıÊ½Á¿²ú£¬ÓµÓĞÔ¼20Íò¸ö¾§Ìå¹Ü£¬ºËĞÄÍ»ÆÆÔÚÓÚÖ§³ÖÊµÊ±µÄ¹âÕ¤»¯´¦ÀíºÍ±ä»»Óë¹âÕÕ£¨T&L£©¹¦ÄÜ¡£Õâ¿îGPUÓÉÒµÓàFPGAÉè¼ÆÊ¦¼æ¸´¹ÅPC°®ºÃÕßPongsagon Vichit´òÔì£¬ĞÔÄÜÈÃÈËÁªÏëµ½1999ÄêÒµ½çÊ×¿î¼¯³ÉT&LµÄÏÔ¿¨Nvidia GeForce 256£¬±êÖ¾×ÅÎ¢ĞÍGPUÔÚ¶ÀÁ¢3DÍ¼ĞÎ´¦ÀíÁìÓòÂõ³öÖØÒªÒ»²½£¬Î´À´ÓĞÇ±Á¦Ó¦ÓÃÓÚµÍ¹¦ºÄÉè±¸ºÍÇ¶ÈëÊ½ÏµÍ³¡£",
+      "english_brief": "The TinyGPU v2.0, touted as the world¡¯s smallest GPU, has entered mass production. With approximately 200,000 transistors, its main feature is real-time rasterization processing and transform & lighting (T&L) capabilities. Developed by amateur FPGA designer and retro PC enthusiast Pongsagon Vichit, its performance recalls the 1999 Nvidia GeForce 256, the first GPU with integrated T&L. This milestone highlights progress in micro-GPU independent 3D graphics processing, with potential applications in low-power devices and embedded systems.",
+      "term_clarifications": [
+        {
+          "term": "GPU",
+          "explanation": "Graphics Processing Unit£¬Í¼ĞÎ´¦Àíµ¥Ôª£¬×¨ÃÅÓÃÓÚ´¦ÀíÍ¼ĞÎºÍÊÓÆµÊı¾İµÄĞ¾Æ¬¡£"
+        },
+        {
+          "term": "¾§Ìå¹Ü",
+          "explanation": "µç×ÓÔª¼şµÄ»ù±¾µ¥Ôª£¬ÓÃÓÚ·Å´óºÍ¿ª¹Øµç×ÓĞÅºÅ£¬¾§Ìå¹ÜÊıÁ¿Í¨³£·´Ó³Ğ¾Æ¬µÄ¸´ÔÓ¶ÈºÍĞÔÄÜ¡£"
+        },
+        {
+          "term": "¹âÕ¤»¯£¨Rasterization£©",
+          "explanation": "½«3DÍ¼ĞÎ×ª»»Îª2DÏñËØÒÔ±ãÏÔÊ¾µÄ¹ı³Ì£¬ÊÇ3DäÖÈ¾ÖĞµÄ¹Ø¼ü²½Öè¡£"
+        },
+        {
+          "term": "±ä»»Óë¹âÕÕ£¨T&L£¬Transform and Lighting£©",
+          "explanation": "3DÍ¼ĞÎ´¦ÀíÖĞ¸ºÔğ¼¸ºÎ±ä»»ºÍ¹âÕÕ¼ÆËãµÄ½×¶Î£¬ÄÜ¹»ÌáÉıÍ¼ĞÎäÖÈ¾µÄĞ§ÂÊºÍÕæÊµ¸Ğ¡£"
+        },
+        {
+          "term": "FPGA",
+          "explanation": "Field-Programmable Gate Array£¬ÏÖ³¡¿É±à³ÌÃÅÕóÁĞ£¬Ò»ÖÖ¿ÉÒÔÍ¨¹ı±à³Ì¶¨ÖÆ¹¦ÄÜµÄĞ¾Æ¬¡£"
+        },
+        {
+          "term": "Nvidia GeForce 256",
+          "explanation": "1999ÄêÍÆ³öµÄÊÀ½çÊ×¿î¼¯³É±ä»»Óë¹âÕÕ¹¦ÄÜµÄGPU£¬¿ª´´ÏÖ´úGPUÊ±´ú¡£"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "Next.js 16·¢²¼£¬ºËĞÄ¹¦ÄÜ¾Û½¹»º´æÓÅ»¯ºÍ¹¹½¨ĞÔÄÜÌáÉı",
+      "chinese_brief": "ĞÂÒ»´úReact¿ò¼ÜNext.js 16ÕıÊ½ÉÏÏß£¬´øÀ´ÁË»º´æ×é¼ş£¨Cache Components£©¡¢TurbopackÎÈ¶¨°æÒÔ¼°¾«Ï¸»¯»º´æ¹ÜÀíµÈÖØÒª¹¦ÄÜ¡£´Ë´Î°æ±¾Î´½øĞĞ´ó¹æÄ£¼Ü¹¹ÖØ¹¹£¬¶ø×¨×¢ÓÚÌáÉı»ù´¡ÄÜÁ¦£¬°üÀ¨¸ü¿ìµÄ¹¹½¨ËÙ¶ÈºÍ¸üÖÇÄÜµÄ»º´æ»úÖÆ¡£Õâ½«Ê¹¿ª·¢ÕßÌåÑé¸üÁ÷³©£¬Í¬Ê±ÍÆ¶¯Ç°¶Ë¿ò¼ÜÔÚĞÔÄÜºÍ¿ª·¢Ğ§ÂÊÉÏµÄ³ÖĞø¸Ä½ø¡£",
+      "english_brief": "Next.js 16, the latest version of the React framework, has been officially released featuring Cache Components, a stable version of Turbopack, and fine-grained caching management. Rather than a major architectural overhaul, this release focuses on improving core capabilities such as faster build times and smarter caching. These enhancements aim to deliver a smoother developer experience and further improve frontend framework performance and efficiency.",
+      "term_clarifications": [
+        {
+          "term": "Next.js",
+          "explanation": "»ùÓÚReactµÄ¿ªÔ´Web¿ª·¢¿ò¼Ü£¬Ö§³Ö·şÎñÆ÷¶ËäÖÈ¾ºÍ¾²Ì¬Õ¾µãÉú³É¡£"
+        },
+        {
+          "term": "React",
+          "explanation": "ÓÉFacebook¿ª·¢µÄÁ÷ĞĞJavaScript¿â£¬ÓÃÓÚ¹¹½¨ÓÃ»§½çÃæ¡£"
+        },
+        {
+          "term": "»º´æ×é¼ş£¨Cache Components£©",
+          "explanation": "Ò»ÖÖ»º´æ»úÖÆ£¬ÓÃÓÚ±£´æ×é¼şµÄäÖÈ¾½á¹û£¬Ìá¸ßÓ¦ÓÃÏìÓ¦ËÙ¶ÈºÍĞÔÄÜ¡£"
+        },
+        {
+          "term": "Turbopack",
+          "explanation": "Next.jsÍÅ¶Ó¿ª·¢µÄĞÂÒ»´ú¹¹½¨¹¤¾ß£¬Ìæ´úwebpack£¬Ìá¸ß¹¹½¨ËÙ¶ÈºÍĞ§ÂÊ¡£"
+        },
+        {
+          "term": "¹¹½¨ËÙ¶È",
+          "explanation": "Ö¸´úÂë±àÒë¡¢´ò°üÎª¿ÉÔËĞĞÎÄ¼şËùĞèµÄÊ±¼ä£¬Ó°Ïì¿ª·¢ÖÜÆÚ¡£"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "Ó¾³Ø»úÆ÷ÈËÆóÒµÀËÓ¿Î´À´»ñÒÚÔªÈÚ×Ê£¬°ëÄê³ö»õ³¬2ÍòÌ¨",
+      "chinese_brief": "³ÉÁ¢ÓÚ2024ÄêµÄÖÇÄÜË®ÓòÉè±¸ÆóÒµÀËÓ¿Î´À´Íê³ÉÒÚÔª¼¶Pre-AÂÖÈÚ×Ê£¬×¨×¢ÓÚÍ¥ÔºÓ¾³Ø»úÆ÷ÈËÑĞ·¢£¬Ä¿±êÍØÕ¹ÖÁ¼ÒÍ¥¼°¹«¹²Ë®ÓòÑø»¤¡£2025ÄêÉÏ°ëÄê³ö»õÁ¿³¬2ÍòÌ¨£¬º£ÍâÓªÊÕÕ¼±È³¬¹ı90%¡£¹«Ë¾×ÔÖ÷ÑĞ·¢ºËĞÄÁã²¿¼ş£¬ÒÑÓëÀÍÊÏ¡¢°üºÀË¹¡¢Best Buy¡¢Home DepotµÈÅ·ÃÀÖ÷Á÷ÇşµÀºÏ×÷£¬ÏÔÊ¾ÆäÔÚÈ«ÇòË®ÓòÖÇÄÜÇå½àÊĞ³¡µÄ¾ºÕùÁ¦ºÍ³É³¤Ç±Á¦¡£",
+      "english_brief": "Founded in 2024, intelligent aquatic device company Splash Future completed over 100 million RMB in Pre-A funding, focusing on pool-cleaning robots with plans to expand into home and public water maintenance. In the first half of 2025, it shipped over 20,000 units with overseas markets accounting for more than 90% of revenue. The company designs over 80% of its core components in-house and has established partnerships with mainstream retail channels like Lowe¡¯s, Bauhaus, Best Buy, and Home Depot, highlighting its competitiveness and growth potential in the global smart water cleaning market.",
+      "term_clarifications": [
+        {
+          "term": "ÀËÓ¿Î´À´",
+          "explanation": "×¨×¢ÓÚÖÇÄÜÓ¾³Ø¼°Ë®ÓòÇå½à»úÆ÷ÈËµÄÖĞ¹ú¿Æ¼¼ÆóÒµ¡£"
+        },
+        {
+          "term": "Pre-AÂÖÈÚ×Ê",
+          "explanation": "ÆóÒµÈÚ×Ê½×¶ÎÖ®Ò»£¬Î»ÓÚÌìÊ¹ÂÖºÍAÂÖÖ®¼ä£¬Í¨³£ÓÃÒÔÖ§³Ö²úÆ·¿ª·¢ºÍÊĞ³¡ÍØÕ¹¡£"
+        },
+        {
+          "term": "ÀÍÊÏ£¨Lowe¡¯s£©",
+          "explanation": "ÃÀ¹ú´óĞÍ¼Ò¾Ó×°ĞŞÁãÊÛÁ¬ËøÆóÒµ¡£"
+        },
+        {
+          "term": "°üºÀË¹£¨Bauhaus£©",
+          "explanation": "Å·ÖŞÖªÃûµÄ¼Ò¾Ó½¨²ÄÁ¬Ëøµê£¬Ö÷ÒªÔÚµÂ¹ú¼°ÖÜ±ßµØÇøÔËÓª¡£"
+        },
+        {
+          "term": "Best Buy",
+          "explanation": "ÃÀ¹úÖøÃûµÄÏû·Ñµç×Ó²úÆ·ÁãÊÛÉÌ¡£"
+        },
+        {
+          "term": "Home Depot",
+          "explanation": "ÃÀ¹ú×î´óµÄ¼Ò¾Ó½¨²ÄÁãÊÛÉÌÖ®Ò»¡£"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "KDE Plasma 6.6½«Ö§³ÖÖ÷ÏÔÊ¾Æ÷¶ÀÁ¢ĞéÄâ×ÀÃæ¹¦ÄÜ£¬ĞŞ¸´19ÄêÀÏÎÊÌâ",
+      "chinese_brief": "KDEÍÅ¶Ó¼Æ»®ÔÚ¼´½«·¢²¼µÄ×ÀÃæ»·¾³Plasma 6.6ÖĞÒıÈëÓÃ»§ÆÚ´ıÒÑ¾ÃµÄ¹¦ÄÜ£ºÔÊĞíĞéÄâ×ÀÃæÏŞÖÆÔÚÖ÷ÏÔÊ¾Æ÷ÉÏ¡£¸Ã¹¦ÄÜÓÉ¿ª·¢ÕßKristen McWilliamÍê³É£¬½â¾öÁË×Ô2005ÄêÒÔÀ´¶àÏÔÊ¾Æ÷ÓÃ»§µÄ³¤ÆÚĞèÇó¡£ÕâÒâÎ¶×ÅÓÃ»§¿ÉÒÔÔÚÖ÷ÏÔÊ¾Æ÷ÇĞ»»¹¤×÷ÇøÊ±£¬¸±ÏÔÊ¾Æ÷ÄÚÈİ±£³Ö²»±ä£¬¼«´óÌáÉı¶àÆÁ°ì¹«ºÍÊ¹ÓÃÌåÑé£¬ÊÇ×ÀÃæ»·¾³¶àÈÎÎñ´¦ÀíµÄÖØÒª¸Ä½ø¡£",
+      "english_brief": "The KDE team plans to introduce a long-awaited feature in the upcoming Plasma 6.6 desktop environment: restricting virtual desktops to the primary monitor. Developed by Kristen McWilliam, this feature addresses a user demand dating back to 2005. It allows users to switch workspaces on the main display while keeping windows and content on secondary monitors unchanged, greatly enhancing the multi-monitor workflow and multi-tasking efficiency¡ªan important improvement for desktop environments.",
+      "term_clarifications": [
+        {
+          "term": "KDE",
+          "explanation": "Ò»¸öÁ÷ĞĞµÄ¿ªÔ´×ÀÃæ»·¾³ÏîÄ¿£¬Ö÷ÒªÔËĞĞÓÚLinux²Ù×÷ÏµÍ³¡£"
+        },
+        {
+          "term": "Plasma",
+          "explanation": "KDE¿ª·¢µÄ×ÀÃæ»·¾³×é¼ş£¬Ìá¹©Í¼ĞÎÓÃ»§½çÃæºÍ¹¤×÷Çø¹ÜÀí¹¦ÄÜ¡£"
+        },
+        {
+          "term": "ĞéÄâ×ÀÃæ",
+          "explanation": "Ò»ÖÖÔÊĞíÓÃ»§ÔÚÍ¬Ò»ÎïÀíÆÁÄ»ÉÏÇĞ»»²»Í¬×ÀÃæ»·¾³ÒÔ·Ö¸ôÈÎÎñµÄ¹¦ÄÜ¡£"
+        },
+        {
+          "term": "Ö÷ÏÔÊ¾Æ÷",
+          "explanation": "¶àÏÔÊ¾Æ÷ÉèÖÃÖĞ£¬¸ºÔğÏÔÊ¾ÈÎÎñÀ¸ºÍÖ÷ÄÚÈİÊä³öµÄÖ÷ÒªÆÁÄ»¡£"
+        },
+        {
+          "term": "Krist
+2025-11-11 13:08:34,878 | WARNING | Batch 4 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "È«Çò×îĞ¡GPU TinyGPU v2.0·¢²¼£¬Ö§³ÖÊµÊ±3DäÖÈ¾¹¦ÄÜ",       "chinese_brief": "±»ÓşÎª¡°È«Çò×îĞ¡GPU¡±µÄTinyGPU v2.0ÕıÊ½Á¿²ú£¬ÓµÓĞÔ¼20Íò¸ö¾§Ìå¹Ü£¬ºËĞÄÍ»ÆÆÔÚÓÚÖ§³ÖÊµÊ±µÄ¹âÕ¤»¯´¦ÀíºÍ±ä»»Óë¹âÕÕ£¨T&L£©¹¦ÄÜ¡£Õâ¿îGPUÓÉÒµÓàFPGAÉè¼ÆÊ¦¼æ¸´¹ÅPC°®ºÃÕßPongsagon Vichit´òÔì£¬ĞÔÄÜÈÃÈËÁªÏëµ½1999ÄêÒµ½çÊ×¿î¼¯³ÉT&LµÄÏÔ¿¨Nvidia GeForce 256£¬±êÖ¾×ÅÎ¢ĞÍGPUÔÚ¶ÀÁ¢3DÍ¼ĞÎ´¦ÀíÁìÓòÂõ³öÖØÒªÒ»²½£¬Î´À´ÓĞÇ±Á¦Ó¦ÓÃÓÚµÍ¹¦ºÄÉè±¸ºÍÇ¶ÈëÊ½ÏµÍ³¡£",       "english_brief": "The TinyGPU v2.0, touted as the world¡¯s smallest GPU, has entered mass production. With approximately 200,000 transistors, its main feature is real-tim...)
+2025-11-11 13:09:02,548 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "È«Çò×îĞ¡GPU TinyGPU v2.0·¢²¼£¬Ö§³ÖÊµÊ±3DäÖÈ¾",
+      "chinese_brief": "ÓÉÒµÓàFPGAÉè¼ÆÊ¦Pongsagon Vichit´òÔìµÄTinyGPU v2.0£¬ÓµÓĞÔ¼20Íò¸ö¾§Ìå¹Ü£¬¼¯³É¹âÕ¤»¯¡¢±ä»»Óë¹âÕÕ£¨T&L£©µÈ3DÍ¼ĞÎ´¦Àí¹Ø¼ü¹¦ÄÜ¡£Õâ¿î±»³ÆÎª¡°È«Çò×îĞ¡GPU¡±µÄĞ¾Æ¬Ö§³ÖÊµÊ±3DäÖÈ¾£¬ĞÔÄÜÀàËÆ1999ÄêÊ×¸ö¾ß±¸T&L¹¦ÄÜµÄNvidia GeForce 256£¬±êÖ¾×Å¸öÈËºÍÇ¶ÈëÊ½Í¼ĞÎ´¦Àí¼¼ÊõµÄ´´ĞÂ½øÕ¹¡£",
+      "english_brief": "The TinyGPU v2.0, created by amateur FPGA designer Pongsagon Vichit, features around 200,000 transistors and integrates key 3D graphics processing functions such as rasterization and transform & lighting (T&L). Known as the world's smallest GPU, it supports real-time 3D rendering with performance comparable to the 1999 Nvidia GeForce 256, marking an innovative advancement in personal and embedded graphics technology.",
+      "term_clarifications": [
+        {
+          "term": "GPU",
+          "explanation": "Graphics Processing Unit, a specialized processor for rendering images and video.",
+          "explanation_zh": "Í¼ĞÎ´¦ÀíÆ÷£¬ÓÃÓÚ¼ÓËÙÍ¼ÏñºÍÊÓÆµäÖÈ¾µÄ×¨ÓÃ´¦ÀíÆ÷¡£"
+        },
+        {
+          "term": "FPGA",
+          "explanation": "Field-Programmable Gate Array, a reprogrammable integrated circuit used for custom hardware designs.",
+          "explanation_zh": "ÏÖ³¡¿É±à³ÌÃÅÕóÁĞ£¬Ò»ÖÖ¿ÉÖØĞÂ±à³ÌµÄ¼¯³ÉµçÂ·£¬ÓÃÓÚ¶¨ÖÆÓ²¼şÉè¼Æ¡£"
+        },
+        {
+          "term": "¹âÕ¤»¯",
+          "explanation": "Rasterization, the process of converting vector graphics into raster images (pixels) for display.",
+          "explanation_zh": "¹âÕ¤»¯£¬½«Ê¸Á¿Í¼ĞÎ×ª»»ÎªÏñËØµãÍ¼ÏñµÄ¹ı³Ì¡£"
+        },
+        {
+          "term": "±ä»»Óë¹âÕÕ£¨T&L£©",
+          "explanation": "Transform and Lighting, a graphics pipeline stage for 3D coordinate transformations and lighting effects.",
+          "explanation_zh": "±ä»»Óë¹âÕÕ£¬Í¼ĞÎ¹ÜÏßÖĞÓÃÓÚ3D×ø±ê±ä»»¼°¹âÕÕĞ§¹ûµÄ´¦Àí½×¶Î¡£"
+        },
+        {
+          "term": "Nvidia GeForce 256",
+          "explanation": "The first GPU released in 1999 by Nvidia, notable for introducing integrated T&L functionality.",
+          "explanation_zh": "NvidiaÓÚ1999Äê·¢²¼µÄÊ×¿îGPU£¬Òò¼¯³É±ä»»Óë¹âÕÕ¹¦ÄÜ¶øÖøÃû¡£"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "Next.js 16·¢²¼£¬´øÀ´»º´æ×é¼şÓëTurbopackÎÈ¶¨°æµÈºËĞÄÓÅ»¯",
+      "chinese_brief": "Next.js 16ÕıÊ½ÉÏÏß£¬ÖØµãÓÅ»¯»ù´¡ÄÜÁ¦£¬ÍÆ³ö»º´æ×é¼ş£¨Cache Components£©¡¢TurbopackÎÈ¶¨°æ±¾Óë¾«Ï¸»¯»º´æ»úÖÆ¡£´Ë´Î¸üĞÂÎ´½øĞĞ´ó¹æÄ£ÖØ¹¹£¬¶øÊÇ×ÅÑÛÓÚÌáÉı¹¹½¨ËÙ¶È¡¢»º´æÔ¤²âĞÔºÍÖÇÄÜ»¯Ë®Æ½£¬ÓĞÖúÓÚ¿ª·¢Õß´òÔìĞÔÄÜ¸üÓÅ¡¢ÏìÓ¦¸ü¿ìµÄReactÓ¦ÓÃ¡£",
+      "english_brief": "Next.js 16 has been officially released, focusing on foundational improvements such as Cache Components, a stable version of Turbopack, and fine-grained caching mechanisms. Rather than a major overhaul, this update aims to enhance build speed, cache predictability, and intelligence, helping developers create more performant and responsive React applications.",
+      "term_clarifications": [
+        {
+          "term": "Next.js",
+          "explanation": "A popular React framework for server-rendered or statically exported web applications.",
+          "explanation_zh": "ReactµÄÁ÷ĞĞ¿ò¼Ü£¬Ö§³Ö·şÎñÆ÷¶ËäÖÈ¾ºÍ¾²Ì¬µ¼³öµÄÍøÕ¾Ó¦ÓÃ¡£"
+        },
+        {
+          "term": "Cache Components",
+          "explanation": "A Next.js feature that enables caching at the component level to improve performance.",
+          "explanation_zh": "Next.js¹¦ÄÜ£¬¿ÉÔÚ×é¼ş²ãÃæ»º´æÒÔÌáÉıĞÔÄÜ¡£"
+        },
+        {
+          "term": "Turbopack",
+          "explanation": "A fast bundler and build tool aimed at speeding up development and production builds.",
+          "explanation_zh": "Ò»ÖÖ¿ìËÙµÄ´ò°üºÍ¹¹½¨¹¤¾ß£¬Ö¼ÔÚ¼ÓËÙ¿ª·¢ºÍÉú²ú¹¹½¨¹ı³Ì¡£"
+        },
+        {
+          "term": "React",
+          "explanation": "A JavaScript library for building user interfaces, primarily for single-page applications.",
+          "explanation_zh": "ÓÃÓÚ¹¹½¨ÓÃ»§½çÃæµÄJavaScript¿â£¬Ö÷ÒªÓÃÓÚµ¥Ò³Ó¦ÓÃ¡£"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "Ó¾³Ø»úÆ÷ÈËÆóÒµÀËÓ¿Î´À´»ñÒÚÔª¼¶ÈÚ×Ê£¬°ëÄêÄÚ³ö»õ³¬2ÍòÌ¨",
+      "chinese_brief": "³ÉÁ¢ÓÚ2024ÄêµÄÓ¾³Ø»úÆ÷ÈË³§ÉÌÀËÓ¿Î´À´Íê³ÉÒÚÔª¼¶Pre-AÂÖÈÚ×Ê£¬ÉÏ°ëÄê²úÆ·³ö»õÁ¿Í»ÆÆ2ÍòÌ¨£¬º£ÍâÊĞ³¡ÊÕÈëÕ¼±È³¬¹ı90%¡£¸Ã¹«Ë¾¾Û½¹Í¥ÔºÇå½à³¡¾°£¬ºËĞÄÁã²¿¼ş×ÔÖ÷ÑĞ·¢£¬²¢ÒÑÓëÀÍÊÏ¡¢°üºÀË¹¡¢Best BuyºÍHome DepotµÈÅ·ÃÀÖ÷Á÷ÇşµÀºÏ×÷£¬ÏÔÊ¾ÆäÔÚÈ«ÇòË®ÓòÖÇÄÜÇå½àÊĞ³¡µÄ¿ìËÙÀ©Õ¹Ç±Á¦¡£",
+      "english_brief": "Founded in 2024, the pool robot company Surf Future secured a pre-A funding round worth hundreds of millions yuan and shipped over 20,000 units in the first half of the year, with overseas revenue accounting for more than 90%. Focusing on yard cleaning scenarios, the company independently develops over 80% of its core components and has partnered with major Western retailers such as Lowe's, Bauhaus, Best Buy, and Home Depot, demonstrating strong growth potential in the global water smart cleaning market.",
+      "term_clarifications": [
+        {
+          "term": "Pre-AÂÖÈÚ×Ê",
+          "explanation": "A funding stage between seed and Series A rounds, indicating investor confidence before large-scale expansion.",
+          "explanation_zh": "ÖÖ×ÓÂÖºÍAÂÖÖ®¼äµÄÈÚ×Ê½×¶Î£¬±íÊ¾Í¶×ÊÕß¶Ô¹«Ë¾³É³¤Ç±Á¦µÄĞÅĞÄ¡£"
+        },
+        {
+          "term": "ÀÍÊÏ (Lowe's)",
+          "explanation": "A major American home improvement and appliance store chain.",
+          "explanation_zh": "ÃÀ¹ú´óĞÍ¼Ò¾Ó×°ĞŞºÍµçÆ÷Á¬Ëøµê¡£"
+        },
+        {
+          "term": "°üºÀË¹ (Bauhaus)",
+          "explanation": "A prominent European DIY and home improvement retailer.",
+          "explanation_zh": "Å·ÖŞÖªÃûµÄ×ÔÖú×°ĞŞºÍ¼Ò¾ÓÓÃÆ·ÁãÊÛÉÌ¡£"
+        },
+        {
+          "term": "Best Buy",
+          "explanation": "A leading American consumer electronics retailer.",
+          "explanation_zh": "ÃÀ¹úÁìÏÈµÄÏû·Ñµç×Ó²úÆ·ÁãÊÛÉÌ¡£"
+        },
+        {
+          "term": "Home Depot",
+          "explanation": "The largest American home improvement supplies retailing company.",
+          "explanation_zh": "ÃÀ¹ú×î´óµÄ¼Ò¾Ó×°ĞŞÓÃÆ·ÁãÊÛ¹«Ë¾¡£"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "KDE Plasma 6.6½«Ö§³ÖÖ÷ÏÔÊ¾Æ÷¶ÀÁ¢ĞéÄâ×ÀÃæ£¬ĞŞ¸´19ÄêÀÏÎÊÌâ",
+      "chinese_brief": "KDEÍÅ¶Ó¼Æ»®ÔÚ¼´½«·¢²¼µÄPlasma 6.6°æ±¾ÖĞÒıÈëÓÃ»§ÆÚ´ıÒÑ¾ÃµÄ¹¦ÄÜ¡ª¡ªÔÊĞí½«ĞéÄâ×ÀÃæÏŞÖÆÔÚÖ÷ÏÔÊ¾Æ÷ÉÏ£¬ÊµÏÖ¸±ÆÁÄÚÈİ±£³Ö²»±ä¡£´Ë¹¦ÄÜ×Ô2005ÄêÊ×´Î±»Ìá³ö£¬ÏÖÓÉ¿ª·¢ÕßKristen McWilliamÊµÏÖ£¬¸ÄÉÆ¶àÆÁÓÃ»§µÄ¹¤×÷ÇøÇĞ»»ÌåÑé£¬±êÖ¾×Å×ÀÃæ»·¾³¶àÈÎÎñ¹ÜÀíµÄÏÔÖø½ø²½¡£",
+      "english_brief": "The KDE team plans to introduce a long-awaited feature in the upcoming Plasma 6.6 version that allows virtual desktops to be confined to the primary monitor, keeping the content on secondary screens unchanged. First requested in 2005, this functionality was implemented by developer Kristen McWilliam, improving workspace switching for multi-monitor users and marking a significant advancement in desktop environment multitasking management.",
+      "term_clarifications": [
+        {
+          "term": "KDE Plasma",
+          "explanation": "A popular free and open-source desktop environment for Linux and Unix systems.",
+          "explanation_zh": "LinuxºÍUnixÏµÍ³ÉÏÁ÷ĞĞµÄÃâ·Ñ¿ªÔ´×ÀÃæ»·¾³¡£"
+        },
+        {
+          "term": "ĞéÄâ×ÀÃæ",
+          "explanation": "A feature that allows users to switch between multiple desktop workspaces on the same physical display.",
+          "explanation_zh": "ÔÊĞíÓÃ»§ÔÚÍ¬Ò»ÎïÀíÏÔÊ¾Æ÷ÉÏÇĞ»»¶à¸ö×ÀÃæ¹¤×÷ÇøµÄ¹¦ÄÜ¡£"
+        },
+        {
+          "term": "Ö÷ÏÔÊ¾Æ÷",
+          "explanation": "The primary monitor where the main desktop and taskbar appear in a multi-monitor setup.",
+          "explanation_zh": "¶àÏÔÊ¾Æ÷
+2025-11-11 13:09:02,551 | WARNING | Batch 4 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "È«Çò×îĞ¡GPU TinyGPU v2.0·¢²¼£¬Ö§³ÖÊµÊ±3DäÖÈ¾",       "chinese_brief": "ÓÉÒµÓàFPGAÉè¼ÆÊ¦Pongsagon Vichit´òÔìµÄTinyGPU v2.0£¬ÓµÓĞÔ¼20Íò¸ö¾§Ìå¹Ü£¬¼¯³É¹âÕ¤»¯¡¢±ä»»Óë¹âÕÕ£¨T&L£©µÈ3DÍ¼ĞÎ´¦Àí¹Ø¼ü¹¦ÄÜ¡£Õâ¿î±»³ÆÎª¡°È«Çò×îĞ¡GPU¡±µÄĞ¾Æ¬Ö§³ÖÊµÊ±3DäÖÈ¾£¬ĞÔÄÜÀàËÆ1999ÄêÊ×¸ö¾ß±¸T&L¹¦ÄÜµÄNvidia GeForce 256£¬±êÖ¾×Å¸öÈËºÍÇ¶ÈëÊ½Í¼ĞÎ´¦Àí¼¼ÊõµÄ´´ĞÂ½øÕ¹¡£",       "english_brief": "The TinyGPU v2.0, created by amateur FPGA designer Pongsagon Vichit, features around 200,000 transistors and integrates key 3D graphics processing functions such as rasterization and transf...)
+2025-11-11 13:10:11,854 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-11 13:10:29,876 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-11 13:10:54,863 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-11 13:11:07,356 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-11 13:11:17,596 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-11 13:11:36,540 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-11 13:11:49,048 | INFO | Completed batch 10/10 (briefings=37).
+2025-11-11 13:11:49,051 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=34360)
+2025-11-11 13:11:49,053 | INFO | Saved digest to digests\science-tech-briefing-2025-11-11_1311.md
+2025-11-11 13:11:49,219 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com.
+2025-11-11 13:11:49,229 | INFO | Migrated last_run from legacy topic state file for digest 'china_economy'.
+2025-11-11 13:11:49,230 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-09T00:09:52.190121+00:00).
+2025-11-11 13:11:49,230 | INFO | Requesting everything with params={'q': '("ÖĞ¹ú¾­¼Ã") OR ("ÖĞ¹úÕşÖÎ")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T05:11:49.230711+00:00'}
+2025-11-11 13:11:49,750 | INFO | NewsAPI returned 2 articles (status=ok, remaining=None)
+2025-11-11 13:11:49,752 | INFO | Retained 2 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 13:11:49,752 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-09T00:09:52.190121+00:00).
+2025-11-11 13:11:49,754 | INFO | Requesting everything with params={'q': '("China Economy") OR ("China Politics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T05:11:49.752387+00:00'}
+2025-11-11 13:11:50,056 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 13:11:50,058 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-11-11 13:11:50,981 | INFO | Summarizing 2 articles across 1 batches.
+2025-11-11 13:12:08,491 | INFO | Completed batch 1/1 (briefings=2).
+2025-11-11 13:12:08,491 | INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=1986)
+2025-11-11 13:12:08,498 | INFO | Saved digest to digests\china-economy-briefing-2025-11-11_1312.md
+2025-11-11 13:12:08,645 | INFO | Dry run enabled; skipping SMTP send to jiabaozhang098@gmail.com.
+2025-11-11 13:12:08,645 | INFO | Migrated last_run from legacy topic state file for digest 'ai'.
+2025-11-11 13:12:08,645 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-09T00:09:52.190121+00:00).
+2025-11-11 13:12:08,645 | INFO | Requesting everything with params={'q': '("ÈË¹¤ÖÇÄÜ" OR "AI" OR "´óÄ£ĞÍ")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T05:12:08.645554+00:00'}
+2025-11-11 13:12:09,207 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 13:12:09,207 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 13:12:09,207 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-09T00:09:52.190121+00:00).
+2025-11-11 13:12:09,207 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T05:12:09.207656+00:00'}
+2025-11-11 13:12:09,623 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 13:12:09,625 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-11 13:12:10,658 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-11 13:12:40,850 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-11 13:12:58,997 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-11 13:13:27,193 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "SanDisk½«NANDÉÁ´æ¼Û¸ñÉÏÕÇ50%£¬¶à¼ÒÄ£×é³§ÔİÍ£³ö»õÒı·¢¹©Ó¦Á´Õğµ´",
+      "chinese_brief": "´æ´¢Ğ¾Æ¬´ó³§SanDisk£¨ÉÁµÏ£©Ğû²¼11ÔÂNAND FlashÉÁ´æºÏÔ¼¼Û¸ñ´óÕÇ50%£¬´Ë¾Ù¼Ó¾çÁËµ±Ç°°ëµ¼Ìå¹©Ó¦Á´½ôÕÅ¾ÖÊÆ¡£´ËÇ°£¬ÈıĞÇµç×Ó¡¢SKº£Á¦Ê¿ºÍÃÀ¹âµÈDRAM³§ÉÌÒòÔİÍ£±¨¼Ûµ¼ÖÂ´æ»õ½ôÈ±ºÍ¼Û¸ñì­Éı¡£´Ë´Î¼Û¸ñÉÏÕÇÆÈÊ¹ÏÂÓÎÄ£×é³§Èç´´¼û¡¢ÒË¶¦ºÍÓîÕ°¿Æ¼¼Ğû²¼ÔİÍ£³ö»õ£¬¶ÌÆÚÄÚ¿ÉÄÜÒı·¢´æ´¢Ïà¹Ø²úÆ·¹©Ó¦²»×ã£¬Ó°ÏìÕûÌõµç×ÓÖÆÔì²úÒµÁ´¡£",
+      "english_brief": "Storage chip giant SanDisk announced a 50% contract price hike for NAND Flash memory in November, intensifying the current semiconductor supply chain tightness. Previously, DRAM manufacturers including Samsung, SK Hynix, and Micron halted pricing quotes, causing shortages and price surges. This recent price increase has forced module suppliers such as Transcend, Innodisk, and Apacer Technology to halt shipments, potentially leading to short-term shortages in storage-related products and disruptions across the electronics manufacturing sector.",
+      "term_clarifications": [
+        {
+          "term": "NAND Flash",
+          "explanation": "Ò»ÖÖ·ÇÒ×Ê§ĞÔ´æ´¢Æ÷£¬ÓÃÓÚ´æ´¢Êı¾İ£¬¹ã·ºÓ¦ÓÃÓÚ¹ÌÌ¬Ó²ÅÌºÍ´æ´¢¿¨¡£",
+          "explanation_en": "A type of non-volatile memory used for data storage, widely employed in solid-state drives and memory cards."
+        },
+        {
+          "term": "SanDisk£¨ÉÁµÏ£©",
+          "explanation": "ÖªÃû´æ´¢Æ÷Éú²úÉÌ£¬Á¥ÊôÓÚÎ÷²¿Êı¾İ£¨Western Digital£©ÆìÏÂÆ·ÅÆ¡£",
+          "explanation_en": "A well-known storage manufacturer brand under Western Digital."
+        },
+        {
+          "term": "DRAM",
+          "explanation": "¶¯Ì¬Ëæ»ú´æÈ¡´æ´¢Æ÷£¬ÊÇ¼ÆËã»úÔËĞĞÊ±³£ÓÃµÄÄÚ´æÀàĞÍ¡£",
+          "explanation_en": "Dynamic Random-Access Memory, a common type of memory used during computer operation."
+        },
+        {
+          "term": "ÈıĞÇµç×Ó",
+          "explanation": "º«¹ú´óĞÍµç×ÓÖÆÔì¹«Ë¾£¬È«Çò°ëµ¼Ìå¼°ÊÖ»ú²úÒµÖØÒªÆóÒµ¡£",
+          "explanation_en": "Samsung Electronics, a major South Korean electronics manufacturer and key player in semiconductors and smartphones."
+        },
+        {
+          "term": "SKº£Á¦Ê¿",
+          "explanation": "º«¹úÁìÏÈµÄ°ëµ¼ÌåÖÆÔìÉÌ£¬Ö÷ÒªÉú²úDRAMºÍÉÁ´æĞ¾Æ¬¡£",
+          "explanation_en": "SK Hynix, a leading South Korean semiconductor manufacturer focusing on DRAM and flash memory."
+        },
+        {
+          "term": "´´¼û£¨Transcend£©¡¢ÒË¶¦£¨Innodisk£©¡¢ÓîÕ°¿Æ¼¼£¨Apacer Technology£©",
+          "explanation": "Ì¨ÍåÖ÷Òª´æ´¢Ä£×éÖÆÔìÉÌ£¬¹©Ó¦ÄÚ´æ¿¨¡¢SSDµÈ²úÆ·¡£",
+          "explanation_en": "Taiwan-based major storage module manufacturers supplying memory cards, SSDs, and related products."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "ÖĞ¹úµÚÈıËÒº½Ä¸¡°¸£½¨½¢¡±·şÒÛ£¬¿ªÆô¡°Èıº½Ä¸Ê±´ú¡±",
+      "chinese_brief": "ÖĞ¹ú×îĞÂº½Ä¸¡°¸£½¨½¢¡±ÓÚ11ÔÂ5ÈÕÕıÊ½ÈëÁĞ£¬±êÖ¾×ÅÖĞ¹ú½øÈë¡°Èıº½Ä¸Ê±´ú¡±¡£¸Ã½¢×î´óµÄ¼¼ÊõÁÁµãÊÇÅä±¸ÁËÏÈ½øµÄ¡°µç´Åµ¯ÉäÏµÍ³¡±£¬ÌáÉıÁË¸÷ÖÖ½¢ÔØ»úµÄÆğ½µĞ§ÂÊºÍ×÷Õ½ÄÜÁ¦¡£¾¡¹ÜÈÔ²ÉÓÃ³£¹æ¶¯Á¦ÏµÍ³£¬º½³ÌÓĞÏŞ£¬µ«Æä²¿ÊğÓÚÈıÑÇ¾ü¸ÛÏÔÊ¾³öÖĞ¹úÔÚÄÏº£ºÍÇøÓò¾üÊÂÁ¦Á¿µÄÀ©Õ¹¡£´Ë¾Ù²»½öÕÃÏÔÖĞ¹ú×ÔÖ÷¾ü¹¤ÊµÁ¦£¬Ò²Òı·¢ÇøÓò°²È«µÄ¹Ø×¢Óë½ôÕÅ¡£",
+      "english_brief": "China¡¯s newest aircraft carrier, the Fujian, was officially commissioned on November 5, signaling the start of China¡¯s 'three-carrier era.' Its most notable technological feature is the advanced electromagnetic catapult system, enhancing the launch and recovery efficiency of various carrier-based aircraft. While it still uses conventional propulsion with limited range, its stationing at Sanya Naval Base underscores China¡¯s expanding military presence in the South China Sea and the region. This development demonstrates China¡¯s indigenous defense capabilities and raises security concerns among regional actors.",
+      "term_clarifications": [
+        {
+          "term": "¸£½¨½¢",
+          "explanation": "ÖĞ¹úµÚÈıËÒº½¿ÕÄ¸½¢£¬Åä±¸µç´Åµ¯ÉäÏµÍ³£¬´ú±í×îĞÂ¹ú²úº½Ä¸¼¼Êõ¡£",
+          "explanation_en": "China¡¯s third aircraft carrier equipped with electromagnetic catapult technology, representing the latest domestic carrier tech."
+        },
+        {
+          "term": "µç´Åµ¯ÉäÏµÍ³",
+          "explanation": "ÀûÓÃµç´ÅÁ¦°ïÖú½¢ÔØ·É»úÆğ·ÉµÄÏÈ½ø¼¼Êõ£¬½Ï´«Í³ÕôÆûµ¯Éä¸ü¸ßĞ§¡£",
+          "explanation_en": "Advanced technology using electromagnetic force to launch carrier-based aircraft, more efficient than traditional steam catapults."
+        },
+        {
+          "term": "ÈıÑÇ¾ü¸Û",
+          "explanation": "Î»ÓÚÖĞ¹úº£ÄÏÊ¡µÄ¾üÊÂ¸Û¿Ú£¬ÊÇÄÏº£ÖØÒªµÄº£¾ü»ùµØ¡£",
+          "explanation_en": "A military port in Hainan Province, serving as a key naval base in the South China Sea."
+        },
+        {
+          "term": "³£¹æ¶¯Á¦",
+          "explanation": "Ö¸·ÇºË¶¯Á¦ÏµÍ³µÄ½¢´¬¶¯Á¦£¬ÈçÈ¼ÆøÎĞÂÖ»òÈ¼ÓÍ·¢¶¯»ú¡£",
+          "explanation_en": "Non-nuclear propulsion systems such as gas turbines or diesel engines used in ships."
+        },
+        {
+          "term": "Èıº½Ä¸Ê±´ú",
+          "explanation": "Ö¸ÖĞ¹úÓµÓĞÈıËÒº½¿ÕÄ¸½¢Í¬Ê±·şÒÛµÄ¾üÊÂ·¢Õ¹½×¶Î¡£",
+          "explanation_en": "The phase in which China operates three aircraft carriers simultaneously."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "Ì¨±±ÊĞ½ö12ÀïĞû²¼Í£°à¿Î£¬ÊĞ³¤ÊYÈf°²Á³ÊéÔâÍøÓÑÅÚºä",
+      "chinese_brief": "ÊÜµÚ26ºÅÌ¨·ç¡°·ï»Ë¡±ÍşĞ²£¬Ì¨±±ÊĞÕş¸®Ğû²¼ÑôÃ÷É½Çø12¸öÀïÍ£Ö¹ÉÏ°àÉÏ¿Î£¬ÆäËûµØÇøÕı³£¡£È»¶ø¸Ã¾ö¶¨Òı·¢²¿·ÖÊĞÃñ²»Âú£¬·×·×Ó¿ÈëÊĞ³¤ÊYÈf°²Á³ÊéÁôÑÔÖÊÒÉ£¬Òı·¢ÓßÂÛÕùÒé¡£´Ë´ÎÊÂ¼şÍ¹ÏÔÃñÖÚÔÚ·ÀÔÖ´ëÊ©ÉÏµÄÆÚ´ıÓëÊµ¼ÊÕş²ßÖ´ĞĞ¼äµÄÃ¬¶Ü£¬Ò²ÌåÏÖĞÅÏ¢¹µÍ¨ºÍ¹«ÖÚÇéĞ÷¹ÜÀíµÄÖØÒªĞÔ¡£",
+      "english_brief": "Amid Typhoon Fenghuang (No. 26) threat, Taipei City government announced suspension of work and classes in 12 urban villages in Yangmingshan area while other districts proceed normally. This decision sparked dissatisfaction among some residents who flooded Mayor Chiang Wan-An¡¯s Facebook page with critical comments, causing public controversy. The incident highlights tensions between public expectations for disaster response and actual policy execution, underscoring the importance of effective communication and managing public sentiment.",
+      "term_clarifications": [
+        {
+          "term": "Í£°à¿Î",
+          "explanation": "Ö¸ÒòÌØÊâÔ­ÒòÍ£Ö¹¹¤×÷ºÍÑ§Ğ£ÉÏ¿ÎµÄ´ëÊ©¡£",
+          "explanation_en": "Temporary suspension of work and school classes due to special circumstances."
+        },
+        {
+          "term": "ÑôÃ÷É½Çø12¸öÀï",
+          "explanation": "Ì¨±±ÊĞÑôÃ÷É½ÇøÓòµÄ12¸öĞĞÕşÀï£¬ÊôÓÚ½Ï¸ß·çÏÕ»òÌØÊâ¹Ü¿ØÇøÓò¡£",
+          "explanation_en": "12 administrative neighborhoods (li) in Taipei¡¯s Yangmingshan area, considered higher-risk or special control zones."
+        },
+        {
+          "term": "ÊYÈf°²",
+          "explanation": "Ì¨±±ÊĞÏÖÈÎÊĞ³¤£¬Õş²ß¾ö¶¨Ö±½ÓÓ°ÏìÊĞÃñÉú»î¡£",
+          "explanation_en": "Current mayor of Taipei City, whose policies directly affect residents¡¯ lives."
+        },
+        {
+          "term": "¹¾àà¹¾àà",
+          "explanation": "ÍøÓÑÔÚÉç½»Ã½ÌåÉÏ±í´ï²»Âú»ò¿¹ÒéÊ±Ê¹ÓÃµÄÄâÉù´Ê¡£",
+          "explanation_en": "An onomatopoeic term used by netizens on social media to express dissatisfaction or protest."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "»ùÂ¡Ğ»¹ú˜Å½¨Òé¶Ô´©Ïß²»¼õËÙÕßÊ©¼Ó·£¿î",
+      "chinese_brief": "»ùÂ¡µØÇøÕë¶ÔĞĞÈË°²È«ÎÊÌâ£¬Ğ»¹ú˜ÅÌá³ö½¨Òé£¬Õë¶Ô¡°¾­ĞĞ´©ÏßÎ´¼õËÙ¡±ĞĞÎªÊ©¼Ó·£¿î¡£ËäÈ»¡°ĞĞÈË½»Í¨°²È«ÉèÊ©ÌõÀı¡±ÒÑÊµÊ©£¬µ«ÉĞÎŞÃ÷È·¹æ¶¨´ËÀàÎ¥·¨ĞĞÎªµÄ·£½ğ¡£´Ë¾ÙÖ¼ÔÚÌáÉıĞĞÈË½»Í¨°²È«£¬¼õÉÙ½»Í¨ÊÂ¹Ê·¢Éú£¬ÌåÏÖµØ·½Õş¸®¶ÔµÀÂ·°²È«¹ÜÀíµÄÇ¿»¯ºÍÉç»áÔğÈÎ¸Ğ¡£",
+      "english_brief": "In Keelung, legislator Hsieh Kuo-liang proposed fines for pedestrians who do not slow down when crossing pedestrian lanes. Although the 'Pedestrian Traffic Safety Facilities Act' is in effect, it currently lacks clear penalty guidelines for this behavior. The proposal
+2025-11-11 13:13:27,195 | WARNING | Batch 3 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "SanDisk½«NANDÉÁ´æ¼Û¸ñÉÏÕÇ50%£¬¶à¼ÒÄ£×é³§ÔİÍ£³ö»õÒı·¢¹©Ó¦Á´Õğµ´",       "chinese_brief": "´æ´¢Ğ¾Æ¬´ó³§SanDisk£¨ÉÁµÏ£©Ğû²¼11ÔÂNAND FlashÉÁ´æºÏÔ¼¼Û¸ñ´óÕÇ50%£¬´Ë¾Ù¼Ó¾çÁËµ±Ç°°ëµ¼Ìå¹©Ó¦Á´½ôÕÅ¾ÖÊÆ¡£´ËÇ°£¬ÈıĞÇµç×Ó¡¢SKº£Á¦Ê¿ºÍÃÀ¹âµÈDRAM³§ÉÌÒòÔİÍ£±¨¼Ûµ¼ÖÂ´æ»õ½ôÈ±ºÍ¼Û¸ñì­Éı¡£´Ë´Î¼Û¸ñÉÏÕÇÆÈÊ¹ÏÂÓÎÄ£×é³§Èç´´¼û¡¢ÒË¶¦ºÍÓîÕ°¿Æ¼¼Ğû²¼ÔİÍ£³ö»õ£¬¶ÌÆÚÄÚ¿ÉÄÜÒı·¢´æ´¢Ïà¹Ø²úÆ·¹©Ó¦²»×ã£¬Ó°ÏìÕûÌõµç×ÓÖÆÔì²úÒµÁ´¡£",       "english_brief": "Storage chip giant SanDisk announced a 50% contract price hike for NAND Flash memory in November, intensifying the current semiconductor supply chain tightness. Previously, DRAM manufact...)
+2025-11-11 13:14:02,360 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "´æ´¢¾ŞÍ·ÉÁµÏ´ó·ùÉÏµ÷NAND¼Û¸ñ£¬Ä£×é³§ÔİÍ£³ö»õÒı·¢¹©Ó¦Á´Õğµ´",
+      "chinese_brief": "´æ´¢Ğ¾Æ¬¾ŞÍ·ÉÁµÏ£¨SanDisk£©ÓÚ11ÔÂ½«NAND FlashºÏÍ¬¼Û¸ñÉÏµ÷50%£¬Òı·¢ĞĞÒµÕğµ´¡£´Ë¾Ùµş¼Ó´ËÇ°ÈıĞÇ¡¢SKº£Á¦Ê¿¡¢ÃÀ¹âÔİÍ£DDR5¼Û¸ñ±¨¼Û£¬µ¼ÖÂDRAM¹©Ó¦Á´¶Ï»õÏÖÏóÑÏÖØ£¬¿Í»§×ªÏòÏÖ»õÊĞ³¡£¬ÍÆ¶¯¼Û¸ñ¶ÌÆÚì­Éı¡£Ä£×é³§Èç´´¼û¡¢ÒË¶¦ºÍÓîÕ°µÈĞû²¼ÔİÍ£³ö»õ£¬·´Ó³´æ´¢¹©Ó¦Á´ÃæÁÙÑ¹Á¦£¬»òÓ°ÏìÏÂÓÎµç×Ó²úÆ·Éú²úºÍÊĞ³¡¼Û¸ñ²¨¶¯¡£",
+      "english_brief": "Storage chip giant SanDisk raised NAND Flash contract prices by 50% in November, causing industry-wide disturbances. This follows previous suspensions of DDR5 pricing quotes by Samsung, SK Hynix, and Micron, which resulted in severe supply disruptions in the DRAM supply chain. Customers are turning to the spot market, driving short-term price surges. Module manufacturers including Transcend, Innodisk, and Apacer have announced shipment suspensions, highlighting supply chain pressures that may impact downstream electronics production and market pricing.",
+      "term_clarifications": [
+        {
+          "term": "NAND Flash",
+          "explanation": "Ò»ÖÖ·ÇÒ×Ê§ĞÔ´æ´¢Ğ¾Æ¬£¬¹ã·ºÓ¦ÓÃÓÚ´æ´¢¿¨¡¢¹ÌÌ¬Ó²ÅÌµÈµç×ÓÉè±¸ÖĞ¡£",
+          "explanation_en": "A type of non-volatile storage chip widely used in memory cards, SSDs, and other electronic devices."
+        },
+        {
+          "term": "DRAM",
+          "explanation": "¶¯Ì¬Ëæ»ú´æÈ¡´æ´¢Æ÷£¬ÊÇ¼ÆËã»úºÍµç×ÓÉè±¸ÖĞ³£ÓÃµÄÖ÷Òª´æ´¢Æ÷ÀàĞÍ¡£",
+          "explanation_en": "Dynamic Random-Access Memory, a common main memory type used in computers and electronic devices."
+        },
+        {
+          "term": "DDR5",
+          "explanation": "µÚÎå´úË«±¶Êı¾İÂÊÍ¬²½¶¯Ì¬Ëæ»ú´æ´¢Æ÷£¬×îĞÂÒ»´ú¸ßËÙÄÚ´æ±ê×¼¡£",
+          "explanation_en": "The fifth generation of Double Data Rate synchronous DRAM, a latest high-speed memory standard."
+        },
+        {
+          "term": "SanDisk£¨ÉÁµÏ£©",
+          "explanation": "È«ÇòÖªÃûµÄ´æ´¢Ğ¾Æ¬ÖÆÔìÉÌ£¬ÓÈÆäÒÔNAND Flash²úÆ·ÎÅÃû¡£",
+          "explanation_en": "A globally recognized storage chip manufacturer, especially known for NAND Flash products."
+        },
+        {
+          "term": "´´¼û£¨Transcend£©¡¢ÒË¶¦£¨Innodisk£©¡¢ÓîÕ°¿Æ¼¼£¨Apacer Technology£©",
+          "explanation": "Ö÷ÒªÉú²ú´æ´¢Ä£×éµÄ³§ÉÌ£¬ÒÀÀµÉÏÓÎĞ¾Æ¬¹©Ó¦¡£",
+          "explanation_en": "Key manufacturers of storage modules dependent on upstream chip supply."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "ÖĞ¹úµÚÈıËÒº½Ä¸¡°¸£½¨½¢¡±·şÒÛ£¬¿ªÆô¡°Èıº½Ä¸Ê±´ú¡±",
+      "chinese_brief": "ÖĞ¹úµÚÈıËÒº½¿ÕÄ¸½¢¡°¸£½¨½¢¡±ÓÚ11ÔÂ5ÈÕÕıÊ½ÈëÁĞ£¬±êÖ¾×ÅÖĞ¹ú½øÈë¡°Èıº½Ä¸Ê±´ú¡±¡£¸Ãº½½¢²ÉÓÃ¹ú²úÉè¼Æ£¬¾ß±¸ÏÈ½øµÄµç´Åµ¯ÉäÏµÍ³£¬ÌáÉı½¢ÔØ»úÖÖÀàºÍÆğ½µĞ§ÂÊ£¬Õ¹Ê¾ÖĞ¹úº£¾üÏÖ´ú»¯ÊµÁ¦¡£ËäÈ»¶¯Á¦Îª³£¹æ¶¯Á¦£¬Ğøº½ÓĞÏŞ£¬¸£½¨½¢³¤ÆÚ×¤ÔúÓÚÈıÑÇ¾ü¸Û¡£´Ë¾ÙÏÔÊ¾ÖĞ¹úÔöÇ¿º£ÉÏÁ¦Á¿µÄ¾öĞÄ£¬Ò²¿ÉÄÜ¼Ó¾çÇøÓò°²È«½ôÕÅ¡£",
+      "english_brief": "China's third aircraft carrier, the 'Fujian,' was officially commissioned on November 5, marking the start of the 'three-carrier era' for China. The carrier is domestically designed with an advanced electromagnetic catapult system, enhancing the variety and efficiency of carrier-based aircraft operations, showcasing China's naval modernization. Despite its conventional propulsion and limited range, the Fujian is based long-term at the Sanya naval port. This development signifies China's commitment to strengthening maritime power and may heighten regional security tensions.",
+      "term_clarifications": [
+        {
+          "term": "º½¿ÕÄ¸½¢",
+          "explanation": "ÄÜ¹»´îÔØ¡¢Æğ½µºÍÎ¬»¤Õ½¶·»ú¼°ÆäËû¾üÓÃ·É»úµÄ´óĞÍ¾ü½¢¡£",
+          "explanation_en": "A large warship capable of carrying, launching, and recovering fighter jets and other military aircraft."
+        },
+        {
+          "term": "µç´Åµ¯ÉäÏµÍ³",
+          "explanation": "ÀûÓÃµç´ÅÁ¦µ¯Éä½¢ÔØ·É»úÆğ·ÉµÄĞÂ¼¼Êõ£¬Ìæ´ú´«Í³ÕôÆûµ¯Éä£¬Ğ§ÂÊ¸ü¸ß¡£",
+          "explanation_en": "A new technology that uses electromagnetic force to catapult carrier-based aircraft, replacing traditional steam catapults with higher efficiency."
+        },
+        {
+          "term": "ÈıÑÇ¾ü¸Û",
+          "explanation": "Î»ÓÚÖĞ¹úº£ÄÏÊ¡µÄ¾üÊÂ¸Û¿Ú£¬×÷ÎªÄÏº£Õ½ÂÔÒªµØµÄº£¾ü»ùµØ¡£",
+          "explanation_en": "A military port in Hainan Province, China, serving as a naval base in the strategically important South China Sea."
+        },
+        {
+          "term": "Èıº½Ä¸Ê±´ú",
+          "explanation": "Ö¸ÖĞ¹úº£¾üÓµÓĞÈıËÒº½¿ÕÄ¸½¢µÄ½×¶Î£¬ÌáÉıÕûÌåº£¾üÕ½Á¦¡£",
+          "explanation_en": "The phase in which China¡¯s navy operates three aircraft carriers, enhancing its overall naval combat capability."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "Ì¨±±ÊĞ½ö12ÀïÍ£°à¿ÎÒıÍøÃñÅê»÷£¬ÊĞ³¤ÊYÈf°²Éç½»Ã½Ìå±»¹à±¬",
+      "chinese_brief": "ïUïL¡°øP»Ë¡±À´Ï®£¬Ì¨±±ÊĞ³¤ÊYÈf°²Ğû²¼½öÑôÃ÷É½Çø12¸öÀïÍ£°àÍ£¿Î£¬ÆäËûµØÇøÕÕ³£ÉÏ°àÉÏ¿Î£¬Òı·¢´óÁ¿ÊĞÃñ²»Âú¡£ÍøÓÑÔÚÆäÁ³ÊéÆÀÂÛÇø´óÁ¿Ë¢¡°¹¾‡£¹¾‡£¡±£¬±í´ï¶ÔÕş¸®·ÀÔÖ´ëÊ©µÄÖÊÒÉºÍ²»ÂúÇéĞ÷£¬ÈÏÎªÕş²ß²»¹«Æ½£¬Ôö¼Ó¾ÓÃñ°²È«Òş»¼¡£´Ë´ÎÊÂ¼ş·´Ó³¹«ÖÚ¶ÔÕş¸®Ó¦¶Ô×ÔÈ»ÔÖº¦Ö®·ÖÆçÌ¬¶È¼°¹µÍ¨ÌôÕ½¡£",
+      "english_brief": "As Typhoon 'Fenghuang' approaches, Taipei Mayor Chiang Wan-an announced work and school suspensions only for 12 neighborhoods in the Yangmingshan area, while other districts maintain normal schedules. This sparked widespread dissatisfaction among citizens, who flooded his Facebook with the phrase ¡°googoo,¡± expressing doubts and frustrations over the government's disaster response and fairness of the policy. The incident highlights public divisions and communication challenges in government natural disaster management.",
+      "term_clarifications": [
+        {
+          "term": "Í£°àÍ£¿Î",
+          "explanation": "Òò×ÔÈ»ÔÖº¦»òÌØÊâÇé¿ö¶øÔİÍ£¹¤×÷ºÍÑ§Ğ£¿Î³ÌµÄ´ëÊ©¡£",
+          "explanation_en": "Measures to suspend work and school classes due to natural disasters or special circumstances."
+        },
+        {
+          "term": "ÑôÃ÷É½ÇøÓò",
+          "explanation": "Ì¨±±ÊĞ±±²¿É½Çø£¬µØĞÎ¸´ÔÓ£¬ïUïLÊ±ÆÚ½ÏÒ×ÊÜµ½Ó°Ïì¡£",
+          "explanation_en": "A mountainous northern district of Taipei City, with complex terrain more vulnerable during typhoon events."
+        },
+        {
+          "term": "¹¾‡£¹¾‡£",
+          "explanation": "Ì¨ÓïÙµÓï£¬±í´ïÎŞÄÎ¡¢´ìÕÛ»ò¶ÔÏÖ×´²»ÂúµÄÇéĞ÷¡£",
+          "explanation_en": "A Taiwanese slang term expressing frustration, helplessness, or dissatisfaction."
+        },
+        {
+          "term": "ÊYÈf°²",
+          "explanation": "Ì¨±±ÊĞÊĞ³¤£¬¸ºÔğÊĞÕş¾ö²ßÓëÔÖº¦Ó¦¶Ô¡£",
+          "explanation_en": "Mayor of Taipei, responsible for city governance and disaster response."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "Ğ»¹ú˜Å³«Òé¼ÓÇ¿´¦·£¾­ĞĞ´©ÏßÎ´¼õËÙĞĞÎª",
+      "chinese_brief": "»ùÂ¡ĞÂÎÅ±¨µÀ£¬Á¢·¨Î¯Ô±Ğ»¹ú˜Å½¨Òé¶Ô¾­ĞĞ´©ÏßÎ´¼õËÙ³µÁ¾¼ÓÖØ·£¿î¡£ËäÈ»¡¶ĞĞÈË½»Í¨°²È«ÉèÊ©ÌõÀı¡·ÒÑÍ¨¹ı£¬Ç¿µ÷ÒÔÈËÎª±¾£¬µ«ÉĞÎ´Ï¸»¯´ËÀàÎ¥·¨ĞĞÎªµÄ¾ßÌå´¦·£Ï¸Ôò¡£´Ë½¨ÒéÓĞÍûÌáÉı¼İÊ»ÈË×ñÊØ½»Í¨¹æÔòÒâÊ¶£¬ÔöÇ¿ĞĞÈË°²È«£¬¼õÉÙ½»Í¨ÊÂ¹Ê·¢Éú¡£",
+      "english_brief": "Keelung news reports legislator Hsieh Kuo-liang¡¯s proposal to impose heavier fines on vehicles failing to slow down when crossing pedestrian lines. Although the Pedestrian Traffic Safety Facilities Act emphasizes people-centered policies, it currently lacks detailed penalties for this specific violation. The proposed measure aims to improve driver compliance with traffic regulations, enhance pedestrian safety, and reduce traffic accidents.",
+      "term_clarifications": [
+        {
+          "term": "¾­ĞĞ´©Ïß",
+          "explanation": "Ö¸³µÁ¾¾­¹ı°ßÂíÏß»òĞĞÈË´©Ô½ÏßµÄĞĞÎª¡£",
+          "explanation_en": "Refers to vehicles crossing pedestrian crosswalks or zebra crossings."
+        },
+        {
+          "term": "Ğ»¹ú˜Å",
+          "ex
+2025-11-11 13:14:02,365 | WARNING | Batch 3 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "´æ´¢¾ŞÍ·ÉÁµÏ´ó·ùÉÏµ÷NAND¼Û¸ñ£¬Ä£×é³§ÔİÍ£³ö»õÒı·¢¹©Ó¦Á´Õğµ´",       "chinese_brief": "´æ´¢Ğ¾Æ¬¾ŞÍ·ÉÁµÏ£¨SanDisk£©ÓÚ11ÔÂ½«NAND FlashºÏÍ¬¼Û¸ñÉÏµ÷50%£¬Òı·¢ĞĞÒµÕğµ´¡£´Ë¾Ùµş¼Ó´ËÇ°ÈıĞÇ¡¢SKº£Á¦Ê¿¡¢ÃÀ¹âÔİÍ£DDR5¼Û¸ñ±¨¼Û£¬µ¼ÖÂDRAM¹©Ó¦Á´¶Ï»õÏÖÏóÑÏÖØ£¬¿Í»§×ªÏòÏÖ»õÊĞ³¡£¬ÍÆ¶¯¼Û¸ñ¶ÌÆÚì­Éı¡£Ä£×é³§Èç´´¼û¡¢ÒË¶¦ºÍÓîÕ°µÈĞû²¼ÔİÍ£³ö»õ£¬·´Ó³´æ´¢¹©Ó¦Á´ÃæÁÙÑ¹Á¦£¬»òÓ°ÏìÏÂÓÎµç×Ó²úÆ·Éú²úºÍÊĞ³¡¼Û¸ñ²¨¶¯¡£",       "english_brief": "Storage chip giant SanDisk raised NAND Flash contract prices by 50% in November, causing industry-wide disturbances. This follows previous suspensions of DDR5 pricing quotes by Samsung, SK Hynix...)
+2025-11-11 13:14:24,992 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-11 13:16:19,683 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "ÍúÎùµÚÈı¼¾«@Àû„“ĞÂ¸ß£¬Ç°Èı¼¾Ã¿¹ÉÓ¯ğNß_23.65Ôª",
+      "chinese_brief": "ÍúÎù£¬Œ£×¢ì¶°ëŒ§ówÌ½á˜¿¨ºÍœyÔ‡ÔO‚ä£¬°l²¼µÄ2025ÄêµÚÈı¼¾¶ÈØ”ˆóï@Ê¾Æä«@Àûß_8.76ƒ|ÔªĞÂÌ¨Å£¬İ^ÉÏÒ»¼¾´ó·ùÔöéL39.5%£¬„“ÏÂ†Î¼¾švÊ·ĞÂ¸ß¡£ÀÛÓ‹½ñÄêÇ°Èı¼¾«@Àû22.29ƒ|Ôª£¬ÄêÔöÂÊß_40.5%£¬Ã¿¹ÉÓ¯ğN£¨EPS£©Ò²ß_µ½23.65Ôª£¬ï@Ê¾ÍúÎùÔÚ°ëŒ§ówœyÔ‡ÔO‚äîIÓò³ÖÀm”U´ó¸‚ ƒ„İÅcÊĞˆö±í¬Fƒ®¡£",
+      "english_brief": "Wangxi, a company specializing in semiconductor probe cards and testing equipment, announced its Q3 2025 earnings reaching NT$876 million, a substantial 39.5% increase over the previous quarter, marking a record high for a single quarter. Its cumulative profit for the first three quarters hit NT$2.229 billion, a 40.5% year-on-year increase with earnings per share (EPS) of 23.65 NT dollars, demonstrating Wangxi's expanding competitive advantage and strong market performance in the semiconductor testing equipment sector.",
+      "term_clarifications": [
+        {
+          "term": "°ëŒ§ówÌ½á˜¿¨",
+          "explanation": "ÓÃì¶œyÔ‡°ëŒ§ów¾§Æ¬ëŠĞÔÄÜµÄÌØÊâëŠÂ·°å£¬´_±£¾§Æ¬Æ·Ù|¡£",
+          "explanation_en": "Special circuit boards used to test the electrical performance of semiconductor chips to ensure chip quality."
+        },
+        {
+          "term": "Ã¿¹ÉÓ¯ğN (EPS)",
+          "explanation": "¹«Ë¾œQÀû³ıÒÔÁ÷Í¨ÔÚÍâÆÕÍ¨¹É”µ£¬·´Ó³¹«Ë¾«@ÀûÄÜÁ¦¡£",
+          "explanation_en": "Earnings per share; the company¡¯s net profit divided by the number of outstanding common shares, reflecting profitability."
+        },
+        {
+          "term": "ĞÂÌ¨Å (NT$)",
+          "explanation": "Ì¨³µÄ·¨¶¨Ø›Å†ÎÎ»¡£",
+          "explanation_en": "The official currency of Taiwan."
+        },
+        {
+          "term": "ÍúÎù",
+          "explanation": "Ò»¼ÒŒ£éTÑuÔì°ëŒ§ówœyÔ‡ÔO‚äµÄÌ¨³¿Æ¼¼¹«Ë¾¡£",
+          "explanation_en": "A Taiwanese tech company specializing in semiconductor testing equipment."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "‡øµÀ3Ì–¸ßÆÁÏª˜òÒÔÄÏÂ·¶ÎïUïL¾¯½ä£¬ŠïLß_10¼‰•rŒ¢·âé]",
+      "chinese_brief": "ÊÜµ½ÖĞ¶ÈïUïLøP»ËµÄÓ°í‘£¬½»Í¨²¿¸ßËÙ¹«Â·¾ÖĞû²¼ÔÚ‡øµÀ3Ì–¸ßÆÁÏª˜òÒÔÄÏÂ·¶Î£¬®”Æ½¾ùïLÁ¦×îĞ¡Öµß_µ½10¼‰•r£¬Œ¢•ş·âé]Ô“Â·¶ÎÒÔ±£ÕÏÓÃÂ·ÈË°²È«¡£´ËÍâ£¬Ô“…^Â·¶ÎµÄ×î¸ßËÙÏŞÒ²•şÒÀïLÁ¦×ƒ»¯Õ{½µ£¬ºô»nÃñ±ŠĞĞÜ‡•rÌá¸ß¾¯ÓX£¬ÌáÇ°Ò„Ìæ´úÂ·¾€ÒÔÃâÊÜïUïLÓ°í‘Ôì³É²»±ã¡£",
+      "english_brief": "Due to the approaching moderate Typhoon Fenghuang, the Ministry of Transportation¡¯s Highway Bureau announced that the section south of the Gaoping River Bridge on National Freeway No. 3 will be closed if the average minimum wind speed reaches level 10, to ensure driver safety. The maximum speed limit on this segment will also be reduced depending on wind strength. Motorists are advised to stay alert and plan alternative routes in advance to avoid disruptions caused by the typhoon.",
+      "term_clarifications": [
+        {
+          "term": "‡øµÀ3Ì–",
+          "explanation": "Ì¨³ÄÏ±±ÏòµÄÖØÒª¸ßËÙ¹«Â·£¬ßB½Y±±²¿ÅcÄÏ²¿µØ…^¡£",
+          "explanation_en": "National Freeway No. 3, a major north-south highway in Taiwan linking northern and southern regions."
+        },
+        {
+          "term": "¸ßÆÁÏª˜ò",
+          "explanation": "Î»ì¶‡øµÀ3Ì–ÉÏµÄÒ»×ù˜ò˜Å£¬¿çÔ½¸ßÆÁÏª¡£",
+          "explanation_en": "A bridge on National Freeway No. 3 crossing the Gaoping River."
+        },
+        {
+          "term": "ïLÁ¦10¼‰",
+          "explanation": "¸ù“şÆÑ¸£ïL¼‰±í£¬ŠïL¼‰„eß_µ½Ã¿Ãë24.5ÖÁ28.4Ã×µÄïLËÙ£¬ŒÙì¶·Ç³£ŠÁÒïLËÙ¡£",
+          "explanation_en": "On the Beaufort scale, wind speed of 24.5 to 28.4 meters per second, classified as very strong winds."
+        },
+        {
+          "term": "½»Í¨²¿¸ßËÙ¹«Â·¾Ö",
+          "explanation": "Ö÷¹ÜÌ¨³¸ßËÙ¹«Â·Ïµ½y¹ÜÀíÅc¾S×oµÄÕş¸®™C˜‹¡£",
+          "explanation_en": "A government agency responsible for managing and maintaining Taiwan¡¯s freeway system."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "ïUïLøP»Ëº£ÉÏ¾¯ˆóÉúĞ§£¬¸»°î±£ëU†¢„Ó¿ìËÙÀíÙr¼°·ÀÄ´ëÊ©",
+      "chinese_brief": "ëSÖøïUïLøP»ËÒuÌ¨£¬º£ÉÏ¾¯ˆóÉúĞ§£¬¸»°îÈË‰ÛÅc¸»°î®aëU¼´¿Ì†¢„Ó¾o¼±‘ª×ƒ™CÖÆ¡£¸»°îÈË‰ÛŒ¦ÊÜÄ±£‘ôÌá¹©°üÀ¨¿ìËÙÀíÙr¡¢¾ÀUÀmÆÚ±£ÙM¡¢±£†Î½è¿îÀûÏ¢Œ’ÑÓµÈÁù´ó´ëÊ©£»¸»°î®aëU„tÍÆ³ö¿ìËÙÀíÙr¼°·ÀÄÀíÙrÖ¸ÄÏ£¬ŠÕ{¡¸Äƒ¡¢ÄËÙ¡¢ÄŒ’¡¹Ô­„t£¬…fÖú¿Í‘ôœpİpÄº¦“pÊ§£¬ÌáÉıÀíÙrĞ§ÂÊ¡£",
+      "english_brief": "As Typhoon Fenghuang approaches Taiwan with a maritime warning in effect, Fubon Life Insurance and Fubon Property & Casualty Insurance have activated emergency response protocols. Fubon Life offers six key measures for disaster-affected policyholders including fast claims processing, deferred premium payments, and relaxed loan interest on policies. Concurrently, Fubon P&C Insurance emphasizes quick claims and disaster prevention guidelines following principles of generosity, speed, and leniency to help clients minimize damage and expedite compensation.",
+      "term_clarifications": [
+        {
+          "term": "º£ÉÏ¾¯ˆó",
+          "explanation": "Õş¸®°l²¼µÄá˜Œ¦º£ÓòïL±©Î£ëUµÄ¾¯Ê¾ĞÅÌ–¡£",
+          "explanation_en": "A government warning signal issued for storm hazards over maritime areas."
+        },
+        {
+          "term": "¸»°îÈË‰Û",
+          "explanation": "Ì¨³Ò»¼ÒÖ÷ÒªµÄÈË‰Û±£ëU¹«Ë¾¡£",
+          "explanation_en": "A major life insurance company in Taiwan."
+        },
+        {
+          "term": "¸»°î®aëU",
+          "explanation": "¸»°î¼¯ˆFÆìÏÂµÄØ”®aÅcÒâÍâ±£ëU¹«Ë¾¡£",
+          "explanation_en": "Fubon Group¡¯s property and casualty insurance subsidiary."
+        },
+        {
+          "term": "ÀíÙr",
+          "explanation": "±£ëU¹«Ë¾Ïò±£‘ôÖ§¸¶±£ëU½ğÒÔÑaƒ”“pÊ§µÄß^³Ì¡£",
+          "explanation_en": "The process by which insurers pay policyholders compensation for covered losses."
+        },
+        {
+          "term": "ÀmÆÚ±£ÙM¾ÀU",
+          "explanation": "ÔÊÔS±£‘ôÑÓááÖ§¸¶ÏÂÒ»±£†ÎÆÚµÄ±£ÙM¡£",
+          "explanation_en": "Allowing policyholders to defer payment of the next policy term's premium."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "½ğ¡¤¿¨´÷ÉºÌ¹³ĞÒÀÙ‡ ChatGPT Œ§ÖÂÂÉŸ¿¼Ô‡Ê§Àû",
+      "chinese_brief": "ÃÀ‡øÃûæÂÅcÉÌÈË½ğ¡¤¿¨´÷Éº½üÈÕì¶¡¶¸¡ÈAÊÀ½ç¡·Œ£ÔLÖĞÍ¸Â¶£¬ËıÔÚ·¨ÂÉ¿¼Ô‡ÖĞ¶à´ÎÃ¤Ä¿ĞÅÙ‡ÈË¹¤ÖÇ»ÛÁÄÌì™CÆ÷ÈËChatGPTµÄ½¨×h£¬×î½KÎ´ÄÜÍ¨ß^·¨ŒWÔº¿¼Ô‡¼°¼ÓÖİÂÉŸÙY¸ñ¿¼Ô‡¡£ËıĞÎÈİß@¶ÎêP‚SÊÇ¡¸ÓĞ¶¾µÄÓÑÕx¡¹£¬ÌáĞÑ´ó±ŠŒ¦ AI ½¨×hĞè±£³ÖÅúÅĞ‘B¶È£¬±ÜÃâß^¶ÈÒÀÙ‡×Ô„Ó»¯¹¤¾ßÒÔÃâÓ°í‘ÖØÒª›Q²ß¡£",
+      "english_brief": "American celebrity and entrepreneur Kim Kardashian recently revealed in an interview with Vanity Fair that her repeated blind reliance on AI chatbot ChatGPT¡¯s advice contributed to her failing law school exams and the California bar exam. She described this relationship as a 'toxic friendship,' cautioning the public to maintain a critical perspective on AI recommendations and avoid excessive dependence on automation tools to prevent adverse impacts on critical decisions.",
+      "term_clarifications": [
+        {
+          "term": "ChatGPT",
+          "explanation": "ÓÉOpenAIé_°lµÄÈË¹¤ÖÇ»ÛÁÄÌì™CÆ÷ÈË£¬¿ÉÒÔÉú³É×ÔÈ»
+2025-11-11 13:16:19,687 | WARNING | Batch 4 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "ÍúÎùµÚÈı¼¾«@Àû„“ĞÂ¸ß£¬Ç°Èı¼¾Ã¿¹ÉÓ¯ğNß_23.65Ôª",       "chinese_brief": "ÍúÎù£¬Œ£×¢ì¶°ëŒ§ówÌ½á˜¿¨ºÍœyÔ‡ÔO‚ä£¬°l²¼µÄ2025ÄêµÚÈı¼¾¶ÈØ”ˆóï@Ê¾Æä«@Àûß_8.76ƒ|ÔªĞÂÌ¨Å£¬İ^ÉÏÒ»¼¾´ó·ùÔöéL39.5%£¬„“ÏÂ†Î¼¾švÊ·ĞÂ¸ß¡£ÀÛÓ‹½ñÄêÇ°Èı¼¾«@Àû22.29ƒ|Ôª£¬ÄêÔöÂÊß_40.5%£¬Ã¿¹ÉÓ¯ğN£¨EPS£©Ò²ß_µ½23.65Ôª£¬ï@Ê¾ÍúÎùÔÚ°ëŒ§ówœyÔ‡ÔO‚äîIÓò³ÖÀm”U´ó¸‚ ƒ„İÅcÊĞˆö±í¬Fƒ®¡£",       "english_brief": "Wangxi, a company specializing in semiconductor probe cards and testing equipment, announced its Q3 2025 earnings reaching NT$876 million, a substantial 39.5% increase over the previous quarter, marking a record hi...)
+2025-11-11 13:16:51,939 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "ÍúÎùµÚÈı¼¾«@Àû„“švÊ·ĞÂ¸ß£¬Ç°Èı¼¾Ã¿¹ÉÙ23.65Ôª",
+      "chinese_brief": "°ëŒ§ówÌ½á˜¿¨¼°œyÔ‡ÔO‚äÑuÔìÉÌÍúÎù¹«²¼2025ÄêµÚÈı¼¾Ø”ˆó£¬†Î¼¾šwŒÙÄ¸¹«Ë¾œQÀûß_ĞÂÌ¨Å8.76ƒ|Ôª£¬¼¾Ôö39.5%£¬„“ÏÂšvÊ·†Î¼¾×î¸ß¡£Ç°Èı¼¾ÀÛÓ‹«@Àû22.29ƒ|Ôª£¬ÄêÔö40.5%£¬Ã¿¹É¼ƒÒæ23.65Ôª£¬ï@Ê¾ÍúÎùÔÚ°ëŒ§ów™zœyîIÓò³ÖÀm”U´óÊĞˆö·İî~¼°«@ÀûÄÜÁ¦£¬Œ¦Î´í Iß\Õ¹ÍûÕıÃæ¡£",
+      "english_brief": "Wang Xi, a semiconductor probe card and testing equipment manufacturer, announced its Q3 2025 financial results with net profit attributable to the parent company reaching NT$876 million, a 39.5% increase quarter-over-quarter and a historical quarterly high. The cumulative profit for the first three quarters rose 40.5% year-over-year to NT$2.229 billion, with earnings per share at NT$23.65. This signifies Wang Xi's growing market share and profitability in the semiconductor testing sector, indicating a positive outlook for its future operations.",
+      "term_clarifications": [
+        {
+          "term": "ÍúÎù",
+          "explanation": "ÍúÎùÊÇÒ»¼ÒÌ¨³°ëŒ§ówÌ½á˜¿¨ºÍœyÔ‡ÔO‚äÑuÔìÉÌ£¬Œ£×¢ì¶¾§Æ¬œyÔ‡¹¤¾ß£¬·ş„Õ°ëŒ§ów®a˜I¡£"
+        },
+        {
+          "term": "°ëŒ§ówÌ½á˜¿¨",
+          "explanation": "ÓÃì¶¾§Æ¬œyÔ‡µÄÔO‚ä£¬¿É´_±£¾§Æ¬¹¦ÄÜÕı³££¬ÊÇ°ëŒ§ówÑuÔìÁ÷³ÌÖĞÖØÒªµÄœyÔ‡¹¤¾ß¡£"
+        },
+        {
+          "term": "Ã¿¹É¼ƒÒæ (EPS)",
+          "explanation": "Ã¿¹ÉÓ¯ğN£¬ºâÁ¿¹«Ë¾«@ÀûÄÜÁ¦µÄÖ¸˜Ë£¬Ó‹Ëã·½Ê½éœQÀû³ıÒÔ¿‚Á÷Í¨¹É”µ¡£"
+        },
+        {
+          "term": "ĞÂÌ¨Å (NT$)",
+          "explanation": "ĞÂÌ¨ÅÊÇÌ¨³µÄØ›Å†ÎÎ»¡£"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "‡øµÀ3Ì–¸ßÆÁÏª˜òÄÏ¶ÎïLÁ¦ß_10¼‰Œ¢·âé]£¬ÕˆÃñ±Š×¢Òâ",
+      "chinese_brief": "Òò‘ªÖĞ¶ÈïUïLøP»ËµÄ±Æ½ü£¬½»Í¨²¿¸ßËÙ¹«Â·¾ÖĞû²¼£¬‡øµÀ3Ì–¸ßÆÁÏª˜òÒÔÄÏµÄ¸ß¼ÜÂ·¶ÎŒ¢Ò•Æ½¾ùïLÁ¦×îĞ¡ÖµßMĞĞ×î¸ßËÙÏŞÕ{½µ¡£®”Æ½¾ùïLÁ¦×îĞ¡Öµß_µ½10¼‰£¨ŠïL˜ËœÊ£©£¬Ô“Â·¶ÎŒ¢ÓèÒÔ·âé]ÒÔ´_±£ĞĞÜ‡°²È«¡£ÌáĞÑñ{ñ‚ÈË³öĞĞÇ°‘ª×¢ÒâšâÏó¼°Â·›rÙYÓ£¬±ÜÃâïLëU¡£",
+      "english_brief": "Due to the approach of Typhoon Phoenix, Taiwan¡¯s Ministry of Transportation and the Highway Bureau announced that the elevated section south of the Gaoping River Bridge on National Highway No. 3 will have speed limits lowered depending on minimum average wind speeds. When the minimum average wind speed reaches level 10 (strong wind criteria), this section will be closed to ensure driver safety. Motorists are advised to monitor weather and traffic updates before traveling to avoid risks.",
+      "term_clarifications": [
+        {
+          "term": "‡øµÀ3Ì–",
+          "explanation": "Ì¨³µÄÒ»—lÄÏ±±Ïò¸ßËÙ¹«Â·£¬È«·Qé‡øµÀÈıÌ–¡£"
+        },
+        {
+          "term": "¸ßÆÁÏª˜ò",
+          "explanation": "Î»ì¶Ì¨³£¬ßB½Ó¸ßĞÛÅcÆÁ–|µÄ¸ßËÙ¹«Â·˜ò˜Å£¬é‡øµÀ3Ì–ÖØÒªÂ·¶Î¡£"
+        },
+        {
+          "term": "Æ½¾ùïLÁ¦×îĞ¡Öµß_10¼‰",
+          "explanation": "Ö¸¸ù“şïLÁ¦µÈ¼‰±í£¬ïLÁ¦ß_µ½10¼‰¼´·Ç³£ŠïL£¬¿ÉÄÜ•şÓ°í‘½»Í¨°²È«¡£"
+        },
+        {
+          "term": "½»Í¨²¿¸ßËÙ¹«Â·¾Ö",
+          "explanation": "Ì¨³Õş¸®²¿éT£¬Ø“ØŸ¸ßËÙ¹«Â·µÄ¹ÜÀíÅc¾S×o¡£"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "øP»ËïUïLº£ÉÏ¾¯ˆóÉúĞ§£¬¸»°î±£ëU†¢„Ó·ÀÄ¼°ÀíÙrÑ¸ËÙ™CÖÆ",
+      "chinese_brief": "ëSÖøøP»ËïUïLµÄíÒu¼°º£ÉÏ¾¯ˆóÉúĞ§£¬¸»°îÈË‰ÛÅc¸»°î®aëU¼´¿Ì†¢„Ó¾o¼±‘ª×ƒ´ëÊ©£¬Ìá¹©ÊÜÄ±£‘ô¿ìËÙÀíÙr¡¢×¡ÔºÙMÏÈĞĞ½YËã¡¢±£ÙM¾ÀUºÍ·¿ÙJ…fÌµÈÁù´óÖ§Ô®·ş„Õ¡£ŠÕ{ÀíÙrÁ÷³Ì¡¸Äƒ¡¢ÄËÙ¡¢ÄŒ’¡¹£¬ÒÔ…fÖúÊÜÄÃñ±Š½µµÍÄ“pÓ°í‘¡¢¼Ó¿ìÍÔ­²½Õ{¡£",
+      "english_brief": "As Typhoon Phoenix approaches and the marine warning comes into effect, Fubon Life and Fubon Insurance have activated emergency response measures immediately. They offer six major support services to affected policyholders, including fast claims processing, advance payment of hospitalization expenses, premium payment deferment, interest relief on policy loans, mortgage assistance, and free policy reissuance. Emphasizing a claims process that is generous, rapid, and lenient, these initiatives aim to reduce disaster damage impact and accelerate recovery for victims.",
+      "term_clarifications": [
+        {
+          "term": "øP»ËïUïL",
+          "explanation": "Ò»‚€ÕıÔÚÓ°í‘Ì¨³º£ÓòµÄÖĞ¶ÈïUïL¡£"
+        },
+        {
+          "term": "º£ÉÏ¾¯ˆó",
+          "explanation": "Ö¸šâÏó™CêPá˜Œ¦º£ÉÏ°l²¼µÄïL±©»òïUïL¾¯¸æ£¬ÌáĞÑ´¬ëbÅcÑØº£¾ÓÃñ×¢ÒâïLÀËÎ£ëU¡£"
+        },
+        {
+          "term": "¸»°îÈË‰Û",
+          "explanation": "Ì¨³Ö÷Òª‰ÛëU¹«Ë¾Ö®Ò»£¬Ìá¹©‰ÛëU¼°ÏàêP½ğÈÚ·ş„Õ¡£"
+        },
+        {
+          "term": "¸»°î®aëU",
+          "explanation": "¸»°î¼¯ˆFÆìÏÂØ”®a±£ëU¹«Ë¾£¬Ìá¹©®aëUÀíÙr·ş„Õ¡£"
+        },
+        {
+          "term": "ÀíÙrSOP",
+          "explanation": "˜ËœÊ×÷˜IÁ÷³Ì(Standard Operating Procedure)£»ß@ÑeÖ¸±£ëUÀíÙrµÄ²½óEÖ¸Òı¡£"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "½ğ¡¤¿¨´÷Éº×ÔÆØÅc ChatGPT µÄ¡¸ÓĞ¶¾ÓÑÕx¡¹£¬ß^¶ÈÒÀÙ‡Œ§ÖÂÂÉŸ¿¼Ô‡Ê§Àû",
+      "chinese_brief": "ÔÚ¡¶¸¡ÈAÊÀ½ç¡·×îĞÂŒ£ÔLÖĞ£¬ÃûÈË½ğ¡¤¿¨´÷ÉºÌ¹³ĞËıÅc AI ÁÄÌì™CÆ÷ÈË ChatGPT Ö®ég´æÔÚ¡¸ÓĞ¶¾µÄÓÑÕx¡¹£¬Òòß^¶ÈÃ¤Ä¿ĞÅÈÎ ChatGPT Ìá¹©µÄ·¨ÂÉ½¨×h£¬Œ§ÖÂËıÔÚ·¨ŒWÔº¼°¼ÓÖİÂÉŸÙY¸ñ¿¼Ô‡ÖĞ±í¬F²»¼Ñ¡£´ËÊÂ¼şÍ¹ï@ÁËÈË¹¤ÖÇ»ÛİoÖúŒWÁ••rÈÔĞèÖ”É÷ò×CĞÅÏ¢µÄÖØÒªĞÔ¡£",
+      "english_brief": "In a recent Vanity Fair interview, celebrity Kim Kardashian revealed her 'toxic friendship' with AI chatbot ChatGPT. She admitted that blindly relying on ChatGPT¡¯s legal advice caused her to perform poorly in law school exams and the California bar exam. This incident highlights the importance of carefully verifying information when using artificial intelligence for learning or decision-making.",
+      "term_clarifications": [
+        {
+          "term": "½ğ¡¤¿¨´÷Éº",
+          "explanation": "Kim Kardashian£¬ÃÀ‡øÖªÃûÃûÈË¡¢Æó˜I¼Ò¼°Ã½ówÈËÎï¡£"
+        },
+        {
+          "term": "ChatGPT",
+          "explanation": "OpenAI é_°lµÄÈË¹¤ÖÇ»ÛÕZÑÔÄ£ĞÍ£¬ÄÜ‰òßMĞĞ×ÔÈ»ÕZÑÔŒ¦Ô’ºÍÌá¹©¸÷îÙYÓ¡£"
+        },
+        {
+          "term": "ÂÉŸ¿¼Ô‡",
+          "explanation": "ÂÉŸÙY¸ñ¿¼Ô‡£¬ÓÃì¶È¡µÃˆÌ˜IÂÉŸÙY¸ñµÄ¹Ù·½¿¼Ô‡£¬Èç¼ÓÖİÂÉŸÙY¸ñ¿¼Ô‡¡£"
+        },
+        {
+          "term": "¡¶¸¡ÈAÊÀ½ç¡·",
+          "explanation": "Vanity Fair£¬ÃÀ‡øÖªÃûµÄŠÊ˜·ºÍ•rÉĞî„eësÕI¡£"
+        }
+      ]
+    }
+  ],
+  "summary_notes": "±¾ÆÚĞÂÂ„º­ÉwÌ¨³°ëŒ§ów®a˜IØ”ˆóÁÁÑÛ±í¬F¡¢ïUïLøP»Ë±Æ½üÔì³ÉµÀÂ··âé]¼°±£ëUÀíÙr¿ìËÙ†¢„Ó£¬ÒÔ¼°‡øëHÃûÈËÒòß^¶ÈÒÀÙ‡AI¶øÃæÅRŒW˜IÌô‘ğµÄ°¸Àı£¬·´Ó³¿Æ¼¼Åc×ÔÈ»Äº¦Œ¦Éç•ş¶à·½ÃæµÄ
+2025-11-11 13:16:51,944 | WARNING | Batch 4 attempt 2 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "ÍúÎùµÚÈı¼¾«@Àû„“švÊ·ĞÂ¸ß£¬Ç°Èı¼¾Ã¿¹ÉÙ23.65Ôª",       "chinese_brief": "°ëŒ§ówÌ½á˜¿¨¼°œyÔ‡ÔO‚äÑuÔìÉÌÍúÎù¹«²¼2025ÄêµÚÈı¼¾Ø”ˆó£¬†Î¼¾šwŒÙÄ¸¹«Ë¾œQÀûß_ĞÂÌ¨Å8.76ƒ|Ôª£¬¼¾Ôö39.5%£¬„“ÏÂšvÊ·†Î¼¾×î¸ß¡£Ç°Èı¼¾ÀÛÓ‹«@Àû22.29ƒ|Ôª£¬ÄêÔö40.5%£¬Ã¿¹É¼ƒÒæ23.65Ôª£¬ï@Ê¾ÍúÎùÔÚ°ëŒ§ów™zœyîIÓò³ÖÀm”U´óÊĞˆö·İî~¼°«@ÀûÄÜÁ¦£¬Œ¦Î´í Iß\Õ¹ÍûÕıÃæ¡£",       "english_brief": "Wang Xi, a semiconductor probe card and testing equipment manufacturer, announced its Q3 2025 financial results with net profit attributable to the parent company reaching NT$876 million, a 39.5% increase quarter-over-quarter...)
+2025-11-11 13:17:21,082 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "ÍúÎùµÚÈı¼¾«@Àû„“švÊ·ĞÂ¸ß£¬Ç°Èı¼¾Ã¿¹ÉÓ¯ğNß_23.65Ôª",
+      "chinese_brief": "°ëŒ§ówÌ½á˜¿¨¼°œyÔ‡ÔO‚äSÍúÎù¹«²¼2025ÄêµÚÈı¼¾Ø”ˆó£¬†Î¼¾šwŒÙÄ¸¹«Ë¾œQÀûß_8.76ƒ|ÔªĞÂÌ¨Å£¬¼¾Ôö39.5%£¬„“†Î¼¾švÊ·ĞÂ¸ß£¬Ã¿¹É»ù±¾Ó¯ğN9.3Ôª¡£ÀÛÓ‹Ç°Èı¼¾œQÀû22.29ƒ|Ôª£¬İ^È¥ÄêÍ¬ÆÚ´óÔö40.5%£¬Ã¿¹ÉÓ¯ğNß_23.65Ôª£¬ï@Ê¾ÍúÎùÔÚ°ëŒ§ówÔO‚äÊĞˆöĞèÇóŠ„Å£¬¾ß‚äÁ¼ºÃ³ÉéL„ÓÄÜÅc«@ÀûÄÜÁ¦¡£",
+      "english_brief": "Wang Xi, a semiconductor probe card and test equipment manufacturer, reported its 2025 third quarter earnings with net profit attributable to the parent company reaching NT$876 million, a 39.5% quarter-on-quarter increase marking a quarterly record high with EPS of NT$9.3. The cumulative net profit for the first three quarters was NT$2.229 billion, a 40.5% increase year-on-year, with earnings per share (EPS) at NT$23.65. This reflects strong demand in the semiconductor equipment market and solid growth and profitability for Wang Xi.",
+      "term_clarifications": [
+        {
+          "term": "Ì½á˜¿¨",
+          "explanation": "Semiconductor probe cards are devices used in testing and measuring semiconductor wafers during manufacturing, ensuring chip quality.",
+          "explanation_zh": "Ì½á˜¿¨ÊÇ°ëŒ§ówÑuÔìß^³ÌÖĞÓÃì¶œyÔ‡ºÍœyÁ¿¾§ˆAµÄÑbÖÃ£¬´_±£¾§Æ¬Æ·Ù|¡£"
+        },
+        {
+          "term": "Ã¿¹É»ù±¾¼ƒÒæ (EPS)",
+          "explanation": "Earnings per Share (EPS) is a company's net profit divided by the number of outstanding shares, indicating profitability per share.",
+          "explanation_zh": "Ã¿¹É»ù±¾¼ƒÒæÊÇ¹«Ë¾œQÀû³ıÒÔÁ÷Í¨ÔÚÍâµÄ¹É·İ”µÁ¿£¬±íÊ¾Ã¿¹ÉµÄ«@ÀûÄÜÁ¦¡£"
+        },
+        {
+          "term": "NT$",
+          "explanation": "New Taiwan Dollar, the official currency of Taiwan.",
+          "explanation_zh": "ĞÂÌ¨Å£¬Ì¨³µÄ¹Ù·½Ø›Å¡£"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "‡øµÀ3Ì–¸ßÆÁÏª˜òÒÔÄÏÂ·¶ÎÒòŠïLŒ¢·âé]",
+      "chinese_brief": "Òò‘ªÖĞ¶ÈïUïLøP»ËíÒu£¬½»Í¨²¿¸ßËÙ¹«Â·¾ÖĞû²¼£¬‡øµÀ3Ì–¸ßÆÁÏª˜òÒÔÄÏÂ·¶ÎŒ¢ÒÀ®”µØÆ½¾ùïLÁ¦ î›rÕ{½µËÙÏŞ£¬ÈôÆ½¾ùïLÁ¦×îĞ¡Öµß_10¼‰£¬Ô“Â·¶ÎŒ¢È«Ãæ·âé]¡£´Ë´ëÊ©Ö¼ÔÚ±£ÕÏñ{ñ‚°²È«£¬±ÜÃâŠïL´µÒuÔì³É½»Í¨ÒâÍâ¡£",
+      "english_brief": "In response to the approach of Typhoon Fenghuang, the Ministry of Transportation's Highway Bureau announced that the southern section of National Highway No. 3 near Gaoping River Bridge will reduce speed limits based on average wind speed. If the minimum average wind speed reaches level 10, this section will be fully closed. This measure is to ensure driver safety and prevent accidents caused by strong winds.",
+      "term_clarifications": [
+        {
+          "term": "‡øµÀ3Ì–",
+          "explanation": "National Highway No. 3, also called Formosa Freeway, is a major north-south expressway in Taiwan.",
+          "explanation_zh": "‡øµÀ3Ì–£¨ÓÖ·Q¸£ –Ä¦É³¸ßËÙ¹«Â·£©ÊÇÌ¨³Ö÷ÒªµÄÄÏ±±Ïò¸ßËÙ¹«Â·¡£"
+        },
+        {
+          "term": "¸ßÆÁÏª˜ò",
+          "explanation": "Gaoping River Bridge is a major bridge on National Highway No. 3 crossing the Gaoping River in southern Taiwan.",
+          "explanation_zh": "¸ßÆÁÏª˜òÊÇ‡øµÀ3Ì–ÉÏ¿çÔ½Ì¨³ÄÏ²¿¸ßÆÁÏªµÄÒ»×ùÖØÒª˜ò˜Å¡£"
+        },
+        {
+          "term": "Æ½¾ùïLÁ¦10¼‰",
+          "explanation": "Refers to the Beaufort scale level 10, indicating a strong wind with speeds around 24.5-28.4 meters per second (55-63 mph).",
+          "explanation_zh": "Ö¸ÆÑ¸£ïL¼‰10¼‰£¬ïLËÙ¼sÃ¿Ãë24.5ÖÁ28.4¹«³ß£¨55-63Ó¢Àï/Ğ¡•r£©£¬ŒÙŠïLµÈ¼‰¡£"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "øP»ËïUïLº£ÉÏ¾¯ˆóÉúĞ§£¬¸»°îÈË‰Û®aëU†¢„Ó¿ìËÙÀíÙr™CÖÆ",
+      "chinese_brief": "ëSÖøøP»ËïUïLíÒuK°l²¼º£ÉÏ¾¯ˆó£¬¸»°îÈË‰ÛÅc¸»°î®aëU¼´¿Ì†¢„Ó¾o¼±‘ª×ƒ´ëÊ©¡£¸»°îÈË‰ÛŒ¦ÊÜÄ±£‘ôÌá¹©Áù´óÖ§³Ö£¬°üÀ¨¿ìËÙÀíÙr¡¢×¡ÔºÙMÓÃÏÈĞĞÀíÙr¡¢±£ÙM¾ÀUµÈ£¬¶ø¸»°î®aëU„tŠÕ{¡¸Äƒ¡¢ÄËÙ¡¢ÄŒ’¡¹Ô­„t£¬KÌá¹©·ÀÄ¼°ÀíÙrÖ¸Òı£¬…fÖúœpÉÙÄº¦“pÊ§K¿ìËÙ»Ø‘ª±£‘ôĞèÇó¡£",
+      "english_brief": "As Typhoon Fenghuang approaches and a maritime warning is issued, Fubon Life Insurance and Fubon Insurance have initiated emergency response measures. Fubon Life offers six major support services to affected policyholders, including quick claims processing, advance settlement of hospitalization costs, and premium deferrals, among others. Fubon Insurance emphasizes principles of prioritizing customer benefit, speed, and leniency, issuing disaster prevention and claims guidelines to help minimize damage and swiftly meet policyholders' needs.",
+      "term_clarifications": [
+        {
+          "term": "º£ÉÏ¾¯ˆó",
+          "explanation": "A maritime warning issued to alert ships and coastal areas about approaching severe weather such as typhoons.",
+          "explanation_zh": "á˜Œ¦´¬ëb¼°ÑØº£µØ…^°l²¼µÄ¾¯¸æ£¬ÌáÊ¾¼´Œ¢íÅRµÄ‡ÀÖØÌìšâÈçïUïL¡£"
+        },
+        {
+          "term": "ÀíÙrSOP",
+          "explanation": "Claims Standard Operating Procedure, the outlined process that insurance companies follow for handling and settling claims.",
+          "explanation_zh": "±£ëU¹«Ë¾ÌÀíÀíÙrµÄ˜ËœÊ×÷˜IÁ÷³Ì¡£"
+        },
+        {
+          "term": "¸»°îÈË‰Û¡¢¸»°î®aëU",
+          "explanation": "Fubon Life and Fubon Insurance are major Taiwanese insurance companies providing life and property insurance respectively.",
+          "explanation_zh": "¸»°îÈË‰ÛÅc¸»°î®aëUÊÇÌ¨³Ö÷ÒªµÄ‰ÛëUÅc®aëU¹«Ë¾¡£"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "½ğ¡¤¿¨´÷ÉºÌ¹ÑÔÃ¤Ä¿ÒÀÙ‡ChatGPTŒ§ÖÂÂÉŸ¿¼Ô‡Ê§Àû",
+      "chinese_brief": "ÖªÃûŠÊ˜·ÈËÊ¿½ğ¡¤¿¨´÷ÉºÔÚ¡¶¸¡ÈAÊÀ½ç¡·Œ£ÔLÖĞ·ÖÏíËıÅcÈË¹¤ÖÇ»ÛÁÄÌì™CÆ÷ÈËChatGPTµÄ¡¸ÓĞ¶¾ÓÑÕx¡¹¡£Ëı±íÊ¾ß^¶ÈÒÀÙ‡ChatGPTÌá¹©µÄ·¨ÂÉ½¨×h£¬Ã¤Ä¿½ÓÊÜÆä»Ø´ğ£¬Œ§ÖÂ×Ô¼ºÔÚ·¨ŒWÔº¼°¼ÓÖİÂÉŸÙY¸ñ¿¼Ô‡ÖĞÔâÓö´ì”¡£¬Í¹ï@ÁËÈË¹¤ÖÇ»ÛÔÚŒ£˜IîIÓòÊ¹ÓÃ•rµÄïLëUºÍÏŞÖÆ¡£",
+      "english_brief": "Celebrity Kim Kardashian revealed in a Vanity Fair interview her 'toxic friendship' with the AI chatbot ChatGPT. She admitted that her excessive reliance on ChatGPT's legal advice and blind trust in its responses contributed to failures in her law school exams and the California bar exam. This highlights the risks and limitations of using artificial intelligence in professional fields.",
+      "term_clarifications": [
+        {
+          "term": "ChatGPT",
+          "explanation": "An AI language model developed by OpenAI, capable of generating human-like text based on prompts.",
+          "explanation_zh": "ÓÉOpenAIé_°lµÄÈË¹¤ÖÇ»ÛÕZÑÔÄ£ĞÍ£¬ÄÜ¸ù“şÌáÊ¾®aÉúîËÆÈËîµÄÎÄ×Ö¡£"
+        },
+        {
+          "term": "ÂÉŸÙY¸ñ¿¼Ô‡",
+          "explanation": "The bar exam is a professional test that law graduates must pass to become licensed lawyers in a jurisdiction.",
+          "explanation_zh": "·¨ŒW®…˜IÉúíšÍ¨ß^µÄŒ£˜I¿¼Ô‡£¬È¡µÃÂÉŸˆÌ˜IÙY¸ñ¡£"
+        },
+        {
+          "term": "¡¶¸¡ÈAÊÀ½ç¡·",
+          "explanation": "Vanity Fair, a well-known American magazine focusing on pop culture, fashion, and current affairs.",
+          "explanation_zh": "¡¶¸¡ÈAÊÀ½ç¡·ÊÇÃÀ‡øÖøÃû
+2025-11-11 13:17:21,086 | WARNING | Batch 4 attempt 3 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "ÍúÎùµÚÈı¼¾«@Àû„“švÊ·ĞÂ¸ß£¬Ç°Èı¼¾Ã¿¹ÉÓ¯ğNß_23.65Ôª",       "chinese_brief": "°ëŒ§ówÌ½á˜¿¨¼°œyÔ‡ÔO‚äSÍúÎù¹«²¼2025ÄêµÚÈı¼¾Ø”ˆó£¬†Î¼¾šwŒÙÄ¸¹«Ë¾œQÀûß_8.76ƒ|ÔªĞÂÌ¨Å£¬¼¾Ôö39.5%£¬„“†Î¼¾švÊ·ĞÂ¸ß£¬Ã¿¹É»ù±¾Ó¯ğN9.3Ôª¡£ÀÛÓ‹Ç°Èı¼¾œQÀû22.29ƒ|Ôª£¬İ^È¥ÄêÍ¬ÆÚ´óÔö40.5%£¬Ã¿¹ÉÓ¯ğNß_23.65Ôª£¬ï@Ê¾ÍúÎùÔÚ°ëŒ§ówÔO‚äÊĞˆöĞèÇóŠ„Å£¬¾ß‚äÁ¼ºÃ³ÉéL„ÓÄÜÅc«@ÀûÄÜÁ¦¡£",       "english_brief": "Wang Xi, a semiconductor probe card and test equipment manufacturer, reported its 2025 third quarter earnings with net profit attributable to the parent company reaching NT$876 million, a 39.5% quarter-on-quarter i...)
+2025-11-11 13:17:21,086 | WARNING | Splitting batch 4 (size=4) after repeated JSON failures.
+2025-11-11 13:18:00,752 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-11 13:18:31,712 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 16,
+      "headline": "üS‡ø²ıÅcÚwÉÙ¿µ¹²ßMÎç²Í£¬ÕşÖÎ°å‰K„ÓÏòÒıêP×¢",
+      "chinese_brief": "½üÈÕÃñ±ŠühÖ÷Ï¯üS‡ø²ıÅc‡øÃñühÙYÉîÈËÎïÚwÉÙ¿µ¹²ßMÎç²ÍµÄÕÕÆ¬ÆØ¹â£¬Òı°lÍâ½çŒ¦üS‡ø²ıÎ´íÕşÖÎÂ·¾€µÄ²Âœy¡£ÕşÖÎÔuÕ“†TÕJéüS‡ø²ı¿´µ­‡øÃñühÖ÷Ï¯àûÎÄµÄîIŒ§£¬¿ÉÄÜÕıÔ‡ˆD¿¿”nÇ°Ì¨±±ÊĞéLºÂıˆ±óËù´ú±íµÄ‚÷½yË{ I„İÁ¦¡£´ËÅe·´Ó³³ö‡øƒÈÕş‰¯µÄÑ}ës¾Ö„İ¼°ühÅÉégÎ¢ÃîµÄ™àÁ¦À­ä¡£",
+      "english_brief": "Recently, a photo of Taiwan People's Party chairman Huang Kuo-chang dining with Kuomintang veteran Chao Shao-kang surfaced, sparking speculation about Huang¡¯s future political alignment. Political commentators suggest that Huang is pessimistic about Kuomintang chairwoman Cheng Li-wen's leadership and may be courting the traditional Blue camp represented by former Taipei Mayor Hau Lung-bin. This move highlights the complex political landscape and subtle power struggles within Taiwan¡¯s parties.",
+      "term_clarifications": [
+        {
+          "term": "üS‡ø²ı (Huang Kuo-chang)",
+          "explanation": "Ì¨³Ãñ±ŠühÖ÷Ï¯£¬Ç°Á¢·¨Î¯†T£¬ÒÔÁ¢ˆöªšÁ¢¼°¸Ä¸ïÅÉÂ„Ãû¡£Taiwan People's Party chairman and former legislator known for his independent stance and reformist views."
+        },
+        {
+          "term": "ÚwÉÙ¿µ (Chao Shao-kang)",
+          "explanation": "‡øÃñühÙYÉîÕşÖÎÈËÎï£¬ÔøÈÎÁ¢·¨Î¯†T¼°Ã½ówÈË¡£Veteran Kuomintang politician, former legislator and media figure."
+        },
+        {
+          "term": "àûÎÄ (Cheng Li-wen)",
+          "explanation": "‡øÃñühÖ÷Ï¯£¬×î½ü…¢¼Ó½yÅÉ¼¯•şÒı°l ×h¡£Kuomintang chairwoman recently involved in controversy after attending a pro-unification event."
+        },
+        {
+          "term": "ºÂıˆ±ó (Hau Lung-bin)",
+          "explanation": "Ç°Ì¨±±ÊĞéL£¬‡øÃñühƒÈÖØÒªË{ I´ú±íÈËÎï¡£Former Taipei Mayor and a significant figure in the Kuomintang's traditional Blue camp."
+        },
+        {
+          "term": "‡øÃñüh (Kuomintang, KMT)",
+          "explanation": "Ì¨³Ö÷ÒªÕşÖÎühÖ®Ò»£¬ƒAÏò±£ÊØË{ IÂ·¾€¡£One of Taiwan¡¯s major political parties, associated with a conservative Blue camp ideology."
+        },
+        {
+          "term": "½yÅÉ",
+          "explanation": "Ö§³ÖÌ¨³ÅcÖĞ‡ø´óê‘½yÒ»µÄÕşÖÎÅÉ„e¡£Political faction that supports unification between Taiwan and mainland China."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "headline": "ÖĞÈAà]ÕşÍÆ¿ìËÙÀíÙr¼°·¿ÙJêP‘Ñ´ëÊ©‘ªŒ¦ïUïLÄº¦",
+      "chinese_brief": "ÃæŒ¦¼´Œ¢íÒuµÄøP»ËïUïL£¬ÖĞÈAà]ÕşĞû²¼Ò»ÏµÁĞ¾o¼±‘ªŒ¦´ëÊ©£¬°üÀ¨¼ÓËÙÀíÙr³ÌĞò£¬×ŒÊÜº¦ÕßÄÜ¸ü¿ì«@µÃ±£ëUÙrƒ”£¬ÔÊÔSÑÓéL±£ëUÙMÀU¼{ÆÚÏŞ¼°ĞÂÔö±£†Î½è¿îÃâÏ¢µÈ¡£ß@·´Ó³¹«¹²·ş„Õ™C˜‹ÔÚ×ÔÈ»Äº¦ÆÚégŒ¦Ãñ±ŠµÄêP‘ÑÅcÖ§³Ö£¬œpİpÄÃñØ““ú£¬±£ÕÏ»ù±¾Éú»îÅcØ”„Õ°²È«¡£",
+      "english_brief": "In anticipation of Typhoon Fenghuang¡¯s arrival, Chunghwa Post announced a series of emergency measures including expedited insurance claims to help victims receive compensation faster, extended deadlines for premium payments, and interest-free loans on new insurance policies. This demonstrates the commitment of public service institutions to support citizens during natural disasters, alleviating their burden and ensuring financial and basic living security.",
+      "term_clarifications": [
+        {
+          "term": "ÖĞÈAà]Õş (Chunghwa Post)",
+          "explanation": "Ì¨³µÄ‡ø¼Òà]Õş¼°ÎïÁ÷·ş„Õ™C˜‹£¬ÒàÌá¹©±£ëU®aÆ·¡£Taiwan¡¯s national postal and logistics service organization which also offers insurance services."
+        },
+        {
+          "term": "øP»ËïUïL (Typhoon Fenghuang)",
+          "explanation": "Î»ì¶Î÷±±Ì«Æ½ÑóµÄïUïLÃû·Q£¬±¾´ÎÔì³ÉÌ¨³µØ…^³ö¬FÄº¦ïLëU¡£A named typhoon in the northwest Pacific causing disaster risks for Taiwan."
+        },
+        {
+          "term": "ÀíÙr (Insurance claims)",
+          "explanation": "±£ëU¹«Ë¾¸ù“şºÏ¼sŒ¦±£‘ô“pÊ§ßMĞĞ½ğåXÑaƒ”µÄß^³Ì¡£Process by which insurance companies compensate policyholders for losses per contract."
+        },
+        {
+          "term": "±£ëUÙMÀU¼{ÑÓÆÚ",
+          "explanation": "ÔÊÔS±£‘ôÔÚÄº¦Ó°í‘ÆÚégÑÓááÖ§¸¶±£ëUÙM£¬±ÜÃâÒòÄº¦Ôì³É½›ú‰ºÁ¦¡£Policyholders are allowed to delay insurance premium payments during disaster periods to avoid financial stress."
+        },
+        {
+          "term": "·¿ÙJ‘ôêP‘Ñ´ëÊ©",
+          "explanation": "á˜Œ¦ÓĞ·¿ÙJµÄ±£‘ôÔOÓ‹µÄÌØÊâÖ§Ô®´ëÊ©£¬°üÀ¨ÑÓßtß€¿î»òÀûÏ¢ƒ»İ¡£Special support measures for mortgage holders, such as deferred repayments or interest concessions."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "headline": "¸ß¹ÉÏ¢ETFÊÜÀä´ı Í¶ÙYÕßÙ|ÒÉÊÇ·ñ‘ªÙu³ö0050",
+      "chinese_brief": "Ì¨³¹ÉÊĞ·âé]¸ß¹ÉÏ¢ETFq·ùÓĞÏŞ£¬Òı°lÍ¶ÙYÕß‘ÑÒÉÊÇ·ñ‘ªÔ“³·³öÖøÃûµÄ0050 ETF¡£Œ£¼ÒÖx¸»Ğñ½¨×hÍ¶ÙYÈË×¢ÒâÊĞˆö¾¯Ó£¬K·ÖÏí¶à™nÈÔ¾ßÉî¶ÈƒrÖµµÄµÍƒr¹É£¬ŠÕ{ÔÚÕğ±UĞĞÇéÖĞßx¹É²ßÂÔµÄÖØÒªĞÔ¡£´Ë×hî}·´Ó³³öÍ¶ÙYÈËŒ¦ETFÊÕÒæ¼°Î´í×ß„İµÄêPÇĞ£¬ÒÔ¼°Œ¤Çó¸ü¼ÑÙY®aÅäÖÃ·½°¸µÄĞèÇó¡£",
+      "english_brief": "Taiwan¡¯s high-dividend ETFs have experienced limited gains, prompting investors to question whether to exit the popular 0050 ETF. Expert Hsieh Fu-hsu warns investors about market signals and shares several undervalued stocks offering deep value, emphasizing the importance of stock selection strategies amid market volatility. This debate reflects investors¡¯ concerns about ETF returns and future prospects, as well as the demand for better asset allocation approaches.",
+      "term_clarifications": [
+        {
+          "term": "ETF (Exchange-Traded Fund)",
+          "explanation": "ÔÚ×CÈ¯½»Ò×ËùÉÏÊĞ½»Ò×¡¢×·Û™ÌØ¶¨Ö¸”µµÄÍ¶ÙY»ù½ğ¡£An investment fund traded on stock exchanges that tracks a specific index."
+        },
+        {
+          "term": "0050 ETF",
+          "explanation": "×·Û™Ì¨³¼Ó™à¹ÉƒrÖ¸”µÖĞµÄÇ°50´óÉÏÊĞ¹«Ë¾¹ÉÆ±µÄETF£¬VÊÜÍ¶ÙYÈËšgÓ­¡£An ETF tracking the top 50 listed companies in the Taiwan Weighted Index, popular among investors."
+        },
+        {
+          "term": "¸ß¹ÉÏ¢ETF",
+          "explanation": "Œ£×¢Í¶ÙYì¶¸ß¹ÉÏ¢¹ÉÆ±µÄETF£¬×·Çó·€¶¨µÄ¬F½ğ»Øˆó¡£ETFs focusing on high dividend-yielding stocks, aiming for stable cash returns."
+        },
+        {
+          "term": "µÍ™nÉî¶ÈƒrÖµ¹É",
+          "explanation": "ƒr¸ñ±»µÍ¹ÀÇÒ¾ßÓĞÁ¼ºÃ»ù±¾ÃæµÄ¹ÉÆ±£¬¾ßéLÆÚÍ¶ÙY“Á¦¡£Stocks considered undervalued with strong fundamentals, offering long-term investment potential."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "headline": "ÕØÊÂÌÓÒİñ{ñ‚ÒÉÒòµÍÑªÌÇ ±»Â·ÈËßB×·350Ã×ááÔÙ´Î×²Ü‡",
+      "chinese_brief": "°lÉúÒ»Æğ½»Í¨ÊÂ¹Êáá£¬ÕØÊÂñ{ñ‚Ô‡ˆDÌÓÒİKŞq·QÒòµÍÑªÌÇÊ§¿Ø¡£Ä¿“ôÂ·ÈËÕ¹¬F¹«ÃñÓÂšâ£¬×·ÖğÔ“Ü‡¼s350Ã×£¬ëSááÓÖÄ¿¶ÃÔ“ñ{ñ‚ßBÀm×²“ôÁíÍâËÄİvÜ‡¡£´Ë°¸Í¹ï@½»Í¨°²È«Åc¾o¼±át¯Ÿ î›r¹ÜÀíµÄÑ}ësĞÔ£¬ÒÔ¼°Éç•şŒ¦ß`ÒĞĞéµÄ±O¶½Á¦¶È¡£",
+      "english_brief": "After a traffic accident, the driver fled the scene claiming hypoglycemia caused loss of control. A vigilant bystander courageously chased the vehicle for approximately 350 meters and witnessed the driver subsequently collide with four more cars. The incident underscores the complexities of traffic safety, emergency medical conditions management, and social vigilance against traffic violations.",
+      "term_clarifications": [
+        {
+          "term": "ÕØÊÂÌÓÒİ",
+          "explanation": "°lÉú½»Í¨ÊÂ¹Êáá£¬ÕØÊÂ
+2025-11-11 13:18:31,714 | WARNING | Batch 5 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 16,       "headline": "üS‡ø²ıÅcÚwÉÙ¿µ¹²ßMÎç²Í£¬ÕşÖÎ°å‰K„ÓÏòÒıêP×¢",       "chinese_brief": "½üÈÕÃñ±ŠühÖ÷Ï¯üS‡ø²ıÅc‡øÃñühÙYÉîÈËÎïÚwÉÙ¿µ¹²ßMÎç²ÍµÄÕÕÆ¬ÆØ¹â£¬Òı°lÍâ½çŒ¦üS‡ø²ıÎ´íÕşÖÎÂ·¾€µÄ²Âœy¡£ÕşÖÎÔuÕ“†TÕJéüS‡ø²ı¿´µ­‡øÃñühÖ÷Ï¯àûÎÄµÄîIŒ§£¬¿ÉÄÜÕıÔ‡ˆD¿¿”nÇ°Ì¨±±ÊĞéLºÂıˆ±óËù´ú±íµÄ‚÷½yË{ I„İÁ¦¡£´ËÅe·´Ó³³ö‡øƒÈÕş‰¯µÄÑ}ës¾Ö„İ¼°ühÅÉégÎ¢ÃîµÄ™àÁ¦À­ä¡£",       "english_brief": "Recently, a photo of Taiwan People's Party chairman Huang Kuo-chang dining with Kuomintang veteran Chao Shao-kang surfaced, sparking speculation about Huang¡¯s future political alignment. Political commentators suggest that Huang is pessimis...)
+2025-11-11 13:18:46,327 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-11 13:19:10,387 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-11 13:19:31,789 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-11 13:19:50,785 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-11 13:20:13,978 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-11 13:20:36,824 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-11 13:20:36,824 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=55938)
+2025-11-11 13:20:36,828 | INFO | Saved digest to digests\ai-briefing-2025-11-11_1320.md
+2025-11-11 13:20:37,144 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com.
+2025-11-11 13:20:37,149 | INFO | Migrated last_run from legacy topic state file for digest 'gold_fx'.
+2025-11-11 13:20:37,150 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-09T00:09:52.190121+00:00).
+2025-11-11 13:20:37,150 | INFO | Requesting everything with params={'q': '("»Æ½ğ" OR "¹ó½ğÊô" OR "ÃÀÔª" OR "ÃÀÔª»ãÂÊ")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T05:20:37.150549+00:00'}
+2025-11-11 13:20:37,633 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 13:20:37,635 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-11 13:20:37,635 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-09T00:09:52.190121+00:00).
+2025-11-11 13:20:37,636 | INFO | Requesting everything with params={'q': '("gold" OR "precious metal" OR "USD" OR "dollar")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-09T05:20:37.635070+00:00'}
+2025-11-11 13:20:37,958 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-11 13:20:37,960 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-11 13:20:39,486 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-11 13:21:06,150 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-11 13:21:38,091 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-11 13:22:06,955 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-11 13:22:33,655 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-11 13:22:58,542 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-11 13:23:38,367 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-11 13:24:07,126 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-11 13:24:40,121 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-11 13:25:02,341 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-11 13:25:28,351 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-11 13:25:28,351 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=30878)
+2025-11-11 13:25:28,355 | INFO | Saved digest to digests\gold-fx-briefing-2025-11-11_1325.md
+2025-11-11 13:25:28,531 | INFO | Dry run enabled; skipping SMTP send to jiabaozhang098@gmail.com.
+2025-11-11 13:25:28,533 | INFO | Topic run summary: {"started_at": "2025-11-11T05:06:46.605937+00:00", "digest_ids": ["science_tech", "china_economy", "ai", "gold_fx"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-11T05:03:07.982010+00:00", "science_tech": "2025-11-11T05:06:46.605937+00:00", "china_economy": "2025-11-11T05:06:46.605937+00:00", "ai": "2025-11-11T05:06:46.605937+00:00", "gold_fx": "2025-11-11T05:06:46.605937+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"¿ÆÑ§\" OR \"¼¼Êõ\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T05:06:46.630667+00:00"}, "status": "ok", "total_results": 70, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"¿ÆÑ§\" OR \"¼¼Êõ\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T05:06:47.101495+00:00"}, "status": "ok", "total_results": 191, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"Science\" OR \"Technology\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"ÖĞ¹ú¾­¼Ã\") OR (\"ÖĞ¹úÕşÖÎ\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T05:11:49.230711+00:00"}, "status": "ok", "total_results": 2, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"ÖĞ¹ú¾­¼Ã\") OR (\"ÖĞ¹úÕşÖÎ\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T05:11:49.752387+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"ÈË¹¤ÖÇÄÜ\" OR \"AI\" OR \"´óÄ£ĞÍ\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T05:12:08.645554+00:00"}, "status": "ok", "total_results": 449, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"ÈË¹¤ÖÇÄÜ\" OR \"AI\" OR \"´óÄ£ĞÍ\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T05:12:09.207656+00:00"}, "status": "ok", "total_results": 547, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"»Æ½ğ\" OR \"¹ó½ğÊô\" OR \"ÃÀÔª\" OR \"ÃÀÔª»ãÂÊ\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T05:20:37.150549+00:00"}, "status": "ok", "total_results": 158, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"»Æ½ğ\" OR \"¹ó½ğÊô\" OR \"ÃÀÔª\" OR \"ÃÀÔª»ãÂÊ\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T05:20:37.635070+00:00"}, "status": "ok", "total_results": 113, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"gold\" OR \"precious metal\" OR \"USD\" OR \"dollar\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p...dkwA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 58102, "output_tokens": 65060, "total_tokens": 123162}}, "outputs": [{"digest_id": "science_tech", "digest_display": "Science and Technology", "digest_path": "digests\\science-tech-briefing-2025-11-11_1311.md", "articles_summarized": 37, "summary_notes": "±¾ÆÚÕªÒªº­¸ÇÁËÉúÎïÒ½Ò©¡¢¿Æ¼¼ÉÌÒµ´ó»á¡¢ÈË¹¤ÖÇÄÜ¾ŞÍ·Í¶×ÊÀ©ÕÅ¼°AI±à³Ì¹¤¾ßËÄ´óÖ÷Ìâ£¬·´Ó³ÁËµ±Ç°È«Çò¿Æ¼¼Óë´´ĞÂÁìÓòµÄ¶àÔª·¢Õ¹Ç÷ÊÆ¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÁËÇ°ÑØ¼¼ÊõÁìÓòµÄÖØ´ó½øÕ¹£¬°üÀ¨Î¢Èí¼°AMD¡¢Ó¢Î°´ïÔÚAIĞ¾Æ¬Èí¼şÉúÌ¬µÄ¾ºÕù£¬Í¸Ã÷ÏÔÊ¾Æ÷´´ĞÂ£¬ÒÔ¼°AI¼¼ÊõÔÚÎÄÌåÒÕÊõ·½ÃæµÄÍ»ÆÆ£¬Õ¹Ê¾ÁË¿Æ¼¼¸³ÄÜÉú»îÓë²úÒµµÄ¶àÔªÇ÷ÊÆ¡£\n\n±¾ÆÚ¼ò±¨º­¸ÇÆóÒµ×¢Ïú¡¢ÖÇÄÜÆû³µ²úÒµ¶¯Ì¬¡¢ÖĞº«ºÏ×ÊÆóÒµ¹ÜÀí²ã±ä¸ü¼°IT¼¼ÊõÅäÖÃ¹ÜÀí½øÕ¹µÈ¶à¸öÁìÓò£¬·´Ó³³öÈ«Çò¿Æ¼¼¼°ÖÆÔìÒµ·¢Õ¹Ç÷ÊÆ¡£\n\n±¾´Î¼ò±¨º­¸ÇÁË¿Æ¼¼Ó²¼ş¡¢Èí¼ş¿ò¼ÜºÍÖÇÄÜÉè±¸ÁìÓòµÄ×îĞÂÍ»ÆÆ£¬Õ¹ÏÖÁËÒµÓàÉè¼ÆÕß¶ÔÓ²¼ş´´ĞÂµÄ¹±Ï×£»Ç°¶Ë¿ò¼ÜNext.jsµÄ¹¦ÄÜÌáÉı£»ÖÇÄÜË®Óò»úÆ÷ÈË²úÒµµÄÅî²ª·¢Õ¹£»ÒÔ¼°Linux×ÀÃæ»·¾³ÓÃ»§ÌåÑéµÄÏÔÖø¸ÄÉÆ¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÁË¿Æ¼¼´´ĞÂ¡¢½ÌÓı¹«Òæ¡¢ÆóÒµ¶¯Ì¬ºÍ¸ß¹ÜĞ½³êµÈ¶à¸öÁìÓò£¬·´Ó³ÁËÎ´À´·¢Õ¹Ç÷ÊÆºÍÉç»á¹Ø×¢ÖØµã¡£\n\n±¾ÆÚ¼ò±¨º­¸ÇÈ«ÇòÕşÖÎ°²È«ĞÎÊÆÓë¿Æ¼¼·¢Õ¹¶¯Ì¬£¬¼È¹Ø×¢¶íÃÀºËÎäÍşĞ²µÄµØÔµÕşÖÎÓ°Ïì£¬Ò²±¨µÀÁËÊı¾İ¿ÆÑ§¹¤¾ßµÄ´´ĞÂ·¢²¼¡£Í¬Ê±ÉîÈëÌ½ÌÖ¿ÆÑ§ÕùÒé±»ÕşÖÎ»¯µÄÎÊÌâ£¬ÌáĞÑ¶ÁÕßÀíĞÔ¿´´ı¿ÆÑ§ÓëÕş²ßµÄ¹ØÏµ¡£\n\n±¾´Î¼ò±¨º­¸ÇÁËÊı¾İ¿ÆÑ§¿ªÔ´¹¤¾ß¡¢ĞÂĞËPythonÈí¼ş°ü£¬ÒÔ¼°È«ÇòÄÜÔ´ÆóÒµÔÚÖĞ¶«ÊĞ³¡µÄÕ½ÂÔ¶¯Ì¬£¬Í¬Ê±¾Û½¹ÈÕ±¾¹ÉÊĞ½üÆÚµÄ½á¹¹ĞÔÕÇÊÆ£¬°ïÖú¶ÁÕßÈ«ÃæÁË½â¿Æ¼¼Óë½ğÈÚÁìÓòµÄ×îĞÂ½øÕ¹¡£\n\n±¾ÆÚ¼ò±¨º­¸ÇÁËÈË¹¤ÖÇÄÜÓïÑÔÑ§Ï°¹¤¾ßµÄÍ»ÆÆ¡¢Ó¡¶Èµç¶¯³µĞĞÒµµÄ¼¼ÊõÕùÒé¡¢ĞÂÊı¾İ¿ÆÑ§¹¤¾ß·¢²¼¼°Ó¡¶È¶à¼ÒÆóÒµ¶ş¼¾¶È²Æ±¨·¢²¼£¬ÌåÏÖÁË¿Æ¼¼´´ĞÂÓë¾­¼Ã¶¯Ì¬µÄ¶àÎ¬·¢Õ¹¡£\n\n±¾´Î±¨µÀ¾Û½¹ÖĞºÉÁ½¹úÔÚ¸ß¿Æ¼¼Ğ¾Æ¬ÁìÓòµÄÍâ½»¶¯Ïò£¬¶ÔÈ«ÇòÆû³µ¹©Ó¦Á´ÎÈ¶¨ĞÔ¾ßÓĞÖØÒªÓ°Ïì£¬ÓÈÆäÊÇÔÚµ±Ç°È«Çò¹©Ó¦Á´ÆÕ±é½ôÕÅµÄ±³¾°ÏÂ¡£The report focuses on diplomatic developments between China and the Netherlands in the high-tech chip sector, with significant implications for the stability of the global automotive supply chain amidst prevailing global supply challenges.", "recipients": ["1047962614@qq.com"]}, {"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests\\china-economy-briefing-2025-11-11_1312.md", "articles_summarized": 2, "summary_notes": "±¾ÆÚ¼ò±¨¹Ø×¢ÖĞ¹úÆû³µºÏ×ÊÆóÒµ¹ÜÀí²ã±ä»¯£¬·´Ó³³ö¿ç¹ú¹«Ë¾±¾µØ»¯Ç÷ÊÆ£»Í¬Ê±º­¸ÇÖĞ¹ú»Æ½ğÊĞ³¡ÏÖ×´¡¢°²È«ÊÂ¹Êµ÷²é½øÕ¹£¬ÒÔ¼°È«Çò¿Æ¼¼ÆóÒµ¹ã¸æÊÕÈë±³ºóµÄºÏ¹æ·çÏÕ£¬ÌåÏÖ³öÈ«Çò¾­¼ÃÓë¿Æ¼¼ÁìÓòµÄ¸´ÔÓÌôÕ½¡£", "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests\\ai-briefing-2025-11-11_1320.md", "articles_summarized": 40, "summary_notes": "±¾ÆÚÕªÒªº­ÉwÌ¨³¼´Œ¢ÊÜµ½ŠÁÒøP»ËïUïLÓ°í‘£¬ÏàêP·ÀÄ‘ª×ƒ¼°ÎÄ»¯»î„ÓÕ{Õû£»È«ÇòÍ¶ÙY´óŸ°Í·ÆÌØ°l²¼Æä×îáá¹É–|ĞÅK¹«²¼„“ĞÂ¸ß¬F½ğË®Î»£»ÒÔ¼°AI¿Æ¼¼§„ÓÌ¨³ICÔOÓ‹®a˜I¹ÉƒrïjÉıÅcÖØ´óÓ††ÎÇé›r¡£×xÕß¿ÉÄÖĞ°ÑÎÕ†Ì«µØ…^šâºòÅc½›úÍ¶ÙY„Ó‘B¡£\n\n±¾ÆÚĞÂÎÅº­¸Ç¿Æ¼¼²úÒµÀÍ¶¯Á¦¶¯Ì¬¡¢ÈË¹¤ÖÇÄÜÓ¦ÓÃÇ±ÔÚ·çÏÕ¡¢¸ß¶ËĞÂÄÜÔ´Æû³µÊĞ³¡¾ºÕù¼°Ì¨ÍåÇàÉÙÄêÌåÓı³É¾Í£¬Ìá¹©¶àÔªÊÓ½ÇµÄ¹ú¼Ê¼°ÇøÓò·¢Õ¹¶´²ì¡£\n\n±¾ÆÚĞÂÎÅº­¸Ç°ëµ¼Ìå¼Û¸ñ²¨¶¯¶ÔÈ«Çò¹©Ó¦Á´Ó°Ïì¡¢ÖĞ¹úº£¾üº½¿ÕÄ¸½¢ĞÂ·¢Õ¹¡¢Ì¨±±ÊĞ±©·çÓê·ÀÔÖÕş²ßÕùÒéÒÔ¼°Ì¨ÍåµÀÂ·½»Í¨°²È«Á¢·¨½¨Òé£¬·´Ó³¿Æ¼¼¡¢¾üÊÂÓëÉç»áÃñÉúµÄ×îĞÂ¶¯Ì¬¡£\n\n±¾ÆÚÖ÷Òªº­ÉwÍúÎù¹«Ë¾Ø”„Õ³É¹û„“ĞÂ¸ß£¬ÒÔ¼°Òò‘ªÖĞïUøP»ËµÄ‡ÀÖØÌìšâ£¬‡øµÀ3Ì–¸ßÆÁÏª˜òÒÔÄÏ¸ßËÙÂ·¶ÎµÄ½»Í¨¹ÜÖÆ´ëÊ©¡£×xÕß¿ÉÍ¸ß^´ËÙYÓÁË½âÌ¨³°ëŒ§ów®a˜I°lÕ¹Ú…„İÅcïUïLÆÚég½»Í¨°²È«ÌáÊ¾¡£\n\n±¾ÆÚĞÂÂ„º­Éw×ÔÈ»Äº¦Œ¦±£ëU˜IµÄÓ°í‘ÅcÃ÷ĞÇÀûÓÃÈË¹¤ÖÇ»Û¹¤¾ßµÄ½›ò£¬ÌáĞÑ×xÕßêP×¢¿Æ¼¼ÅcÄº¦¹ÜÀí§íµÄÌô‘ğÅc†¢Ê¾¡£\n\n±¾ÆÚÊÀ½çĞÂÂ„º­ÉwÌ¨³ÕşÖÎ„Ó‘B¡¢ïUïLÄº¦‘ªŒ¦¡¢½ğÈÚÍ¶ÙY²ßÂÔÅc½»Í¨°²È«ÊÂ¼ş£¬·´Ó³³ö‡øƒÈÍâ¶àÔª×hî}µÄêP×¢½¹ücÅcŒëHÓ°í‘¡£\n\n±¾ÆÚĞÂÎÅÕªÒªº­¸ÇÁËÓ¡¶ÈÊĞ³¡µÄÈÍĞÔÓëÕş²ßÍÆ¶¯¡¢AI¼¼ÊõÔÚ¹ã¸æĞĞÒµµÄĞÂĞËÖ°Î»ĞèÇó¡¢¹È¸èAI¹¦ÄÜ¶ÔĞÂÎÅÃ½ÌåÁ÷Á¿µÄ³å»÷£¬ÒÔ¼°Æ·ÅÆÓëÍøºìºÏ×÷ÖĞÖªÊ¶²úÈ¨Ìõ¿îµÄÈ±Ê§£¬Í¹ÏÔÈ«Çò¾­¼Ã¡¢¿Æ¼¼Óë·¨ÂÉÁìÓòµÄ½»²æÓ°Ïì¡£\n\n±¾ÆÚÕªÒªº­¸ÇÁËÈË¹¤ÖÇÄÜÁìÓòµÄÊĞ³¡ÏÖÏó¡¢¼¼Êõ¸üĞÂÓëĞĞÒµÓ¦ÓÃ¡£ÖØµã½éÉÜÁËAIÅİÄ­µÄ·çÏÕ¾¯Ê¾¡¢»ùÓÚ´óĞÍÓïÑÔÄ£ĞÍµÄÍøÒ³×Ô¶¯»¯¹¤¾ß·¢²¼¡¢¹ã¸æ¿Ø¹É¹«Ë¾ÒòÓ¦ĞĞÒµ±ä¸ïµÄ¶¯Ì¬£¬ÒÔ¼°AI¶à²ã´úÀí¿ò¼ÜµÄ·¢Õ¹£¬ÓĞÖúÓÚ¶ÁÕß°ÑÎÕ¿Æ¼¼Ç÷ÊÆ¼°Æä¶Ô²úÒµµÄÇ±ÔÚÓ°Ïì¡£\n\nThis digest highlights the convergence of artificial intelligence with media, marketing, legal frameworks, and regulatory policies worldwide, illustrating both the opportunities and challenges AI presents across sectors.\n\n±¾ÆÚĞÂÎÅÕªÒª¾Û½¹ÈË¹¤ÖÇÄÜÔÚÈí¼ş¿ª·¢ÓëÆóÒµ²ÉÄÉÖĞµÄ×îĞÂ¶¯Ì¬£¬º­¸Ç°²È«±¨¸æ¡¢»ú¹¹ÑĞ¾¿¼°¾ßÌåAI¹¤¾ßµÄ·¢²¼£¬ÌåÏÖAI¼¼ÊõÕıÉî¿Ì±ä¸ïÈí¼şĞĞÒµ¸÷»·½Ú¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÁË¿Æ¼¼¾ŞÍ·Google¼Ó´ó¶ÔAI³õ´´ÆóÒµAnthropicµÄÍ¶×Ê¡¢Å·ÃËÄâÍ¨¹ıµ÷ÕûÒşË½·¨¹æÒÔ´Ù½øAI·¢Õ¹£¬ÒÔ¼°ÁªÏëÍÆ³öÃÔÄã³¬¼¶¼ÆËã»úµÄ¸ïĞÂ²úÆ·¡£ÕûÌå·´Ó³³öÈ«ÇòÔÚÈË¹¤ÖÇÄÜÁìÓòµÄ¿ìËÙ´´ĞÂÓëÕş²ß±ä¸ïÇ÷ÊÆ£¬ÖµµÃ¹Ø×¢¡£", "recipients": ["1047962614@qq.com"]}, {"digest_id": "gold_fx", "digest_display": "Gold and FX", "digest_path": "digests\\gold-fx-briefing-2025-11-11_1325.md", "articles_summarized": 40, "summary_notes": "±¾ÆÚ¼ò±¨Éæ¼°È«Çò¿Æ¼¼ÓëÍ¶×ÊÁìÓòµÄ×îĞÂ¶¯Ì¬£¬ÖØµãÕ¹ÏÖÁËÃÀ¹ú¶Ô·ÇÖŞµÄÕ½ÂÔÍ¶×Ê»Ø¹é£¬È«ÇòAI²úÒµÈÈ³±ÍÆ¶¯×Ê±¾Á÷¶¯£¬ÒÔ¼°AWSÓëOpenAIµÄÉî¶ÈºÏ×÷¼°OpenAIÎ´À´µÄÅÓ´óÍ¶×Ê¹æ»®£¬·´Ó³AI¼°ÔÆ¼ÆËãÔÚÈ«Çò¾­¼ÃÖĞµÄÖØÒªµØÎ»ºÍ¾ºÕùÌ¬ÊÆ¡£\n\n±¾ÆÚĞÂÂ„º­ÉwÈË¹¤ÖÇ»ÛÕĞÄ¼½ğÈÚŒ£²Å¡¢ÂãÑÛ3DÕÆ™CĞÂ¼¼Ğg¡¢·ÇÇÖÈëÊ½ÄX™C½éÃæ„“ĞÂ£¬ÒÔ¼°¼ÓÃÜØ›ÅÊĞˆö„Ó‘B£¬·´Ó³¿Æ¼¼Åc½ğÈÚîIÓòµÄ¶àÔª°lÕ¹Åc„“ĞÂÚ…„İ¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÁË¸ß¿Æ¼¼´æ´¢ÊĞ³¡µÄÏ¡ÓĞ»úÓö¡¢ÖĞ¹ú³ö¿Ú½á¹¹ĞÔµ÷Õû¡¢¿óÒµ¹«Ë¾×Ê±¾À©ÕÅÒÔ¼°ÏÔ¿¨¼¼ÊõµÄĞÂĞËÓ¦ÓÃ£¬·´Ó³ÁËÈ«Çò¿Æ¼¼ºÍ¾­¼Ã¸ñ¾ÖµÄ¶àÖØ±ä»¯¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÖĞ¹úÍâ×ÊÍ¶×Ê×ßÊÆ¡¢ÃûÈË¼ÓÃÜ»õ±ÒÍ¶×Ê·çÏÕ¡¢ÃÀ¹ú½¡ÉíÆóÒµ²Æ±¨±íÏÖ¼°´´ĞÂÒÕÊõÆ·ÅÄÂô£¬·´Ó³È«Çò¾­¼Ã¡¢ÎÄ»¯ÓëÒÕÊõÁìÓòµÄÖØÒª¶¯Ì¬¡£\n\n½üÆÚÃÀ‡øÕş¸®êPéT†–î}³ö¬F½â›QÊï¹â£¬§„ÓÈ«Çò½ğÈÚÊĞˆö»ØÅ¯£¬ÌØ„eów¬FÔÚ†ÖŞĞÂÅdÊĞˆöÌ¨¹ÉÅcĞÂÌ¨Å…RÂÊÉÏ¡£ÙY±¾Á÷„ÓŸá½j£¬ÑëĞĞ’ñÈ¡´ëÊ©·€¶¨…RÂÊ¡£¿Æ¼¼ıˆî^Â“°l¿Æ IÊÕï@Ê¾®a˜I·€½¡³ÉéL£¬ÓÈÒÔÜ‡ÓÃºÍ¸ßëAÖÇ»ÛÊÖ™C¾§Æ¬˜I„ÕéÁÁüc£¬ÕÃï@®a˜IŞDĞÍÅcÊĞˆöĞèÇó×ƒ»¯¡£Í¶ÙYÕß‘ªÃÜÇĞêP×¢ÃÀ‡øÕşÖÎ¾Ö„İÅcÍâÙY„ÓÏò£¬ÒòÆäŒ¢³ÖÀmÖ÷Œ§ÊĞˆö×ß„İ¡£\n\n±¾ÆÚÕªÒªº­¸Ç¹ó½ğÊôÊĞ³¡¶Ô»õ±ÒÕş²ß±ä»¯µÄ·´Ó¦¡¢¼ÓÃÜ»õ±ÒÍ¶×Ê¶¯Ì¬¡¢Æû³µÃÀÈİ²úÆ·´ÙÏúĞÅÏ¢ÒÔ¼°Ñ§Êõ³ö°æÍ¬ĞĞÆÀÉó³êÀÍµÄÌÖÂÛ£¬Ìá¹©¶àÁìÓòµÄÈ«ÇòĞÂÎÅÊÓ½Ç¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÓ¡¶È»ãÂÊ¶¯Ì¬¡¢ÃÀ¹úĞ¡ÕòÉç»áÊÂ¼ş¡¢È«Çò¿Æ¼¼¾ŞÍ·×îĞÂ·¢Õ¹¼°Ó¡¶È¶ÔÂí¶û´ú·ò»ù´¡ÉèÊ©Ô®Öú£¬³ÊÏÖ¶àÁìÓòµÄ¾­¼Ã¡¢Éç»áÓë¹ú¼ÊºÏ×÷¶¯Ì¬¡£ This edition covers topics including India's currency fluctuations, a local social dispute in the US, major developments in global tech giants, and Indian infrastructure aid to Maldives, reflecting a diverse range of economic, social, and international cooperation updates.\n\n±¾ÆÚÊÀ½çĞÂÎÅÕªÒªº­¸Ç¿Æ¼¼ÖÆÔìÒµ¡¢¼ÓÃÜ»õ±Ò½ğÈÚÖ¸±ê£¬Ó¡¶ÈÆóÒµ²ÆÎñ¶¯Ì¬¼°¹ó½ğÊôÊĞ³¡×ßÊÆ£¬³ÊÏÖ¶à¸öÖØÒª¾­¼ÃÁìÓòµÄ×îĞÂÇ÷ÊÆºÍÍ¶×ÊÕß¹Ø×¢µã¡£\n\n±¾ÆÚĞÂÎÅº­¸ÇÇø¿éÁ´Êı×Ö»õ±ÒÒÔÌ«·»½üÆÚ×ßÊÆ¡¢ÎÈ¶¨±Ò¶ÔÀûÂÊµÄÇ±ÔÚÓ°Ïì¡¢¼ÆËã»úÀúÊ·ÉÏÖØÒªµÄUNIX V4°æ±¾·¢ÏÖ£¬ÒÔ¼°°ëµ¼Ìå³§ÉÌPixArt ImagingµÄ¼¾¶ÈÒµ¼¨Ô¤ÆÚ¡£ÄÚÈİÉæ¼°½ğÈÚ¿Æ¼¼¡¢¼ÆËã»úÀúÊ·ºÍ°ëµ¼ÌåĞĞÒµ£¬ÊÊºÏ¹Ø×¢¿Æ¼¼Óë½ğÈÚ½»²æÁìÓòµÄ¶ÁÕß¡£\n\n±¾ÆÚÊÀ½çĞÂÎÅº­¸ÇÃÀ¹úÕşÖÎÕùÒé¡¢½ğÈÚÊĞ³¡¶¯Ì¬¼°¼ÓÃÜ»õ±Ò×ßÊÆ£¬Õ¹ÏÖÈ«Çò½ğÈÚÓëÕşÖÎ»·¾³µÄ¶àÎ¬¸´ÔÓĞÔ¡£¶ÁÕß¿ÉÍ¨¹ıÊõÓï½âÊÍÁË½â×¨ÒµÏ¸½Ú¡£", "recipients": ["jiabaozhang098@gmail.com"]}]}
+2025-11-11 13:29:22,240 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-11 13:29:22,683 | INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+2025-11-11 13:29:22,686 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 13:29:22,686 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-11 13:29:22,973 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 13:29:22,973 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 13:29:22,974 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-11 13:29:23,260 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 13:29:23,261 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 13:29:23,261 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-11 13:29:23,527 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-11 13:29:23,527 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-11 13:29:23,527 | INFO | No articles retrieved for headline digest; nothing to summarize.

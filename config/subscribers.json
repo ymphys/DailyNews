@@ -1,0 +1,34 @@
+{
+  "defaults": {
+    "name": "zjb",
+    "email": "1047962614@qq.com",
+    "frequency": "daily",
+    "send_time": "08:00",
+    "timezone": "Asia/Shanghai",
+    "languages": [
+      "zh-Hans",
+      "en"
+    ]
+  },
+  "subscribers": [
+    {
+      "id": "zjb",
+      "email": "1047962614@qq.com",
+      "frequency": "daily",
+      "digests": [
+        "global_headlines",
+        "science_tech",
+        "ai"
+      ]
+    },
+    {
+      "id": "nodels",
+      "email": "jiabaozhang098@gmail.com",
+      "digests": [
+        "global_headlines",
+        "china_economy",
+        "gold_fx"
+      ]
+    }
+  ]
+}

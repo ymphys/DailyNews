@@ -8,18 +8,18 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
-from collections import defaultdict
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+
 from mailer import send_digest_via_email
 
+from config_loader import DigestConfigError, digests_by_mode, subscribers_for_digest
 from digest_utils import (
     DIGEST_DIR,
     LOGGER,
     build_story_entries,
     collect_articles,
     load_state,
-    make_query_slug,
     mask_token,
     parse_newsapi_datetime,
     save_state,
@@ -27,137 +27,159 @@ from digest_utils import (
     write_digest,
 )
 
-STATE_PATH = Path("config/run_state_topics.json")
+STATE_PATH = Path("config/run_state.json")
+LEGACY_STATE_PATH = Path("config/run_state_topics.json")
+TOPIC_MODE = "topic"
+TOPIC_DEFAULT_MAX_AGE_DAYS = 2
 
-DEFAULT_STATE: Dict[str, Any] = {
-    "news_queries": [
-        {
-            "endpoint": "everything",
-            "q": '("中国" OR "中国经济") AND (经济 OR 贸易 OR 增长)',
-            "searchIn": "title,description",
-            "language": "zh",
-            "pageSize": 40,
-            "sortBy": "publishedAt",
-        },
-        {
-            "endpoint": "everything",
-            "q": '("China" OR "Chinese") AND (economy OR trade OR growth)',
-            "searchIn": "title,description",
-            "language": "en",
-            "pageSize": 40,
-            "sortBy": "publishedAt",
-        },
-        {
-            "endpoint": "everything",
-            "q": '("中国" OR "中国科技") AND ("人工智能" OR "AI" OR "生成式")',
-            "searchIn": "title,description,content",
-            "language": "zh",
-            "pageSize": 40,
-            "sortBy": "publishedAt",
-        },
-        {
-            "endpoint": "everything",
-            "q": '("China" OR "Chinese") AND ("artificial intelligence" OR "AI")',
-            "searchIn": "title,description",
-            "language": "en",
-            "pageSize": 40,
-            "sortBy": "publishedAt",
-        },
-        {
-            "endpoint": "everything",
-            "q": '("黄金" OR "贵金属") AND ("美元" OR "美元汇率")',
-            "searchIn": "title,description",
-            "language": "zh",
-            "pageSize": 40,
-            "sortBy": "publishedAt",
-        },
-        {
-            "endpoint": "everything",
-            "q": '("gold" OR "precious metal") AND ("USD" OR "dollar")',
-            "searchIn": "title,description",
-            "language": "en",
-            "pageSize": 40,
-            "sortBy": "publishedAt",
-        },
-    ],
-    "last_run": None,
-}
+def _format_subject(digest_cfg: Dict[str, Any], now_local: dt.datetime) -> str:
+    email_cfg = digest_cfg.get("email") or {}
+    template = email_cfg.get("subject_template")
+    if template:
+        try:
+            return template.format(local_dt=now_local)
+        except Exception as exc:  # pragma: no cover
+            LOGGER.warning(
+                "Failed to format subject template '%s' for digest '%s': %s",
+                template,
+                digest_cfg.get("id"),
+                exc,
+            )
+    display_name = digest_cfg.get("display_name") or digest_cfg.get("id") or "Topic Briefing"
+    return f"{display_name} - {now_local:%Y-%m-%d %H:%M}"
 
-TOPIC_MAX_AGE_DAYS = 2
+
+def _resolve_filename_prefix(digest_cfg: Dict[str, Any]) -> str:
+    output_cfg = digest_cfg.get("output") or {}
+    return output_cfg.get("filename_prefix") or digest_cfg.get("id") or "topic-briefing"
+
+
+def _resolve_max_age_days(digest_cfg: Dict[str, Any]) -> Optional[int]:
+    newsapi_cfg = digest_cfg.get("newsapi") or {}
+    value = newsapi_cfg.get("max_age_days")
+    if value is None:
+        return TOPIC_DEFAULT_MAX_AGE_DAYS
+    try:
+        return int(value)
+    except (TypeError, ValueError):  # pragma: no cover
+        LOGGER.warning(
+            "Invalid max_age_days value '%s' for digest '%s'; using default %s.",
+            value,
+            digest_cfg.get("id"),
+            TOPIC_DEFAULT_MAX_AGE_DAYS,
+        )
+        return TOPIC_DEFAULT_MAX_AGE_DAYS
+
 
 def main() -> None:
     run_started = dt.datetime.now(dt.timezone.utc)
-    state = load_state(STATE_PATH, DEFAULT_STATE)
-    news_queries: List[Dict[str, Any]] = state.get("news_queries") or DEFAULT_STATE["news_queries"]
+    try:
+        topic_digests = digests_by_mode(TOPIC_MODE)
+    except DigestConfigError as exc:
+        LOGGER.error("Cannot load topic digests: %s", exc)
+        print("Topic digest configuration error; aborting.")
+        return
 
-    last_run_iso = state.get("last_run")
-    last_run_dt = parse_newsapi_datetime(last_run_iso) if last_run_iso else None
+    if not topic_digests:
+        LOGGER.warning("No topic digests configured; nothing to do.")
+        print("No topic digests configured.")
+        return
 
-    articles, news_meta = collect_articles(
-        news_queries,
-        last_run_dt,
-        everything_max_age_days=TOPIC_MAX_AGE_DAYS,
-    )
-
-    grouped_articles: Dict[int, List[Dict[str, Any]]] = defaultdict(list)
-    for article in articles:
-        grouped_articles[article.get("query_index", -1)].append(article)
-
-    now_local = dt.datetime.now()
-    ts = now_local.strftime("%Y-%m-%d_%H%M")
+    state = load_state(STATE_PATH, {"digests": {}})
+    digests_state: Dict[str, Any] = state.setdefault("digests", {})
 
     output_paths: List[str] = []
+    outputs_summary: List[Dict[str, Any]] = []
+    aggregated_news_meta: List[Any] = []
     openai_totals = {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}
     openai_model: Optional[str] = None
-    outputs_summary: List[Dict[str, Any]] = []
 
-    for idx, query in enumerate(news_queries):
-        query_articles = grouped_articles.get(idx, [])
-        if not query_articles:
-            LOGGER.info("No new articles for topic query %s: %s", idx, query)
+    for digest_cfg in topic_digests:
+        digest_id = digest_cfg.get("id") or "<unknown>"
+        news_queries = digest_cfg.get("news_queries") or []
+        if not news_queries:
+            LOGGER.warning("Digest '%s' has no news queries defined; skipping.", digest_id)
             continue
 
-        briefings, summary_notes, usage = summarize_articles(query_articles)
-        if not briefings:
-            LOGGER.info("Summarizer returned no briefings for topic query %s.", idx)
-            continue
+        digest_state: Dict[str, Any] = digests_state.get(digest_id, {})
+        if not digest_state and LEGACY_STATE_PATH.exists():
+            legacy = load_state(LEGACY_STATE_PATH, {"news_queries": [], "last_run": None})
+            if legacy.get("last_run"):
+                digest_state["last_run"] = legacy.get("last_run")
+                LOGGER.info(
+                    "Migrated last_run from legacy topic state file for digest '%s'.",
+                    digest_id,
+                )
+        digests_state[digest_id] = digest_state
 
-        slug = make_query_slug(query.get("q"), f"topic-{idx}")
-        title_topic = query.get("q") or query.get("sources") or f"Topic {idx + 1}"
-        title = f"{title_topic} Briefing — {now_local:%Y-%m-%d %H:%M}"
-        filename = f"{slug}-briefing-{ts}.md"
+        digest_last_run_iso = digest_state.get("last_run")
+        digest_last_run_dt = parse_newsapi_datetime(digest_last_run_iso) if digest_last_run_iso else None
+        max_age_days = _resolve_max_age_days(digest_cfg)
 
-        story_entries = build_story_entries(query_articles, briefings)
-        digest_path = write_digest(title, story_entries, DIGEST_DIR, filename)
-        subject = title
-        send_digest_via_email(Path(digest_path), subject)
-        output_paths.append(digest_path)
-
-        outputs_summary.append(
-            {
-                "query_index": idx,
-                "query": query,
-                "digest_path": digest_path,
-                "articles_summarized": len(briefings),
-                "summary_notes": summary_notes,
-            }
+        articles, news_meta = collect_articles(
+            news_queries,
+            digest_last_run_dt,
+            everything_max_age_days=max_age_days,
         )
+        aggregated_news_meta.extend(news_meta or [])
+
+        if not articles:
+            LOGGER.info("No articles retrieved for digest '%s'; skipping.", digest_id)
+            continue
+
+        briefings, summary_notes, usage = summarize_articles(articles)
+        if not briefings:
+            LOGGER.info("Summarizer returned no briefings for digest '%s'; skipping.", digest_id)
+            continue
 
         if usage:
             if usage.get("model"):
                 openai_model = usage.get("model")
-            for key in ("input_tokens", "output_tokens", "total_tokens"):
-                openai_totals[key] += usage.get(key) or 0
+            for token_key in ("input_tokens", "output_tokens", "total_tokens"):
+                openai_totals[token_key] += usage.get(token_key) or 0
 
-    state["last_run"] = run_started.isoformat()
+        now_local = dt.datetime.now()
+        ts = now_local.strftime("%Y-%m-%d_%H%M")
+        subject = _format_subject(digest_cfg, now_local)
+        filename_prefix = _resolve_filename_prefix(digest_cfg)
+        filename = f"{filename_prefix}-{ts}.md"
+        title = subject
+
+        story_entries = build_story_entries(articles, briefings)
+        digest_path = write_digest(title, story_entries, DIGEST_DIR, filename)
+
+        subscribers = subscribers_for_digest(digest_id)
+        if subscribers:
+            send_digest_via_email(Path(digest_path), subject, recipients=subscribers)
+        else:
+            LOGGER.info("No configured subscribers for digest '%s'; using environment recipients.", digest_id)
+            send_digest_via_email(Path(digest_path), subject)
+        output_paths.append(digest_path)
+
+        outputs_summary.append(
+            {
+                "digest_id": digest_id,
+                "digest_display": digest_cfg.get("display_name"),
+                "digest_path": digest_path,
+                "articles_summarized": len(briefings),
+                "summary_notes": summary_notes,
+                "recipients": [subscriber.get("email") for subscriber in subscribers],
+            }
+        )
+
+        digest_state["last_run"] = run_started.isoformat()
+        digests_state[digest_id] = digest_state
+
+    state["digests"] = digests_state
     save_state(STATE_PATH, state)
 
     run_info = {
         "started_at": run_started.isoformat(),
+        "digest_ids": [entry.get("digest_id") for entry in outputs_summary],
         "newsapi": {
             "key": mask_token(os.environ.get("NEWSAPI_ORG_KEY", "")),
-            "last_run_filter": last_run_iso,
-            "requests": news_meta,
+            "last_run_filter": {k: v.get("last_run") for k, v in digests_state.items()},
+            "requests": aggregated_news_meta,
         },
         "openai": {
             "key": mask_token(os.environ.get("OPENAI_API_KEY", "")),
