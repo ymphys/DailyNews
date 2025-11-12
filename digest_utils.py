@@ -52,6 +52,7 @@ DIGEST_DIR.mkdir(exist_ok=True)
 
 NEWS_API_KEY = os.environ["NEWSAPI_ORG_KEY"]
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
+DEEPSEEK_API_KEY = os.environ["OPENAI_API_KEY"]
 SESSION = httpx.Client(timeout=30.0)
 
 LANGUAGE_LABELS = {

@@ -16,7 +16,9 @@
       "email": "1047962614@qq.com",
       "frequency": "daily",
       "digests": [
-        "ai"
+        "headline",
+        "ai",
+        "entertainment"
       ]
     },
     {
@@ -24,6 +26,37 @@
       "email": "jiabaozhang098@gmail.com",
       "digests": [
         "china_economy"
+      ]
+    },
+    {
+      "id": "longqi",
+      "email": "longqishao0908@gmail.com",
+      "digests": [
+        "headline",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "wei",
+      "email": "weizhengyi@imnu.edu.cn",
+      "digests": [
+        "headline",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "nan",
+      "email": "qinnanwu@163.com",
+      "digests": [
+        "headline",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "zwb",
+      "email": "814022400@qq.com",
+      "digests": [
+        "headline"
       ]
     }
   ]

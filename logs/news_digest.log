@@ -14332,3 +14332,624 @@ smtplib.SMTPResponseException: (-1, b'\x00\x00\x00')
 2025-11-11 19:14:58,232 | INFO | Saved digest to digests\ai-briefing-2025-11-11_1914.md
 2025-11-11 19:15:01,705 | INFO | Sent digest email to 1047962614@qq.com.
 2025-11-11 19:15:01,711 | INFO | Topic run summary: {"started_at": "2025-11-11T11:10:38.570528+00:00", "digest_ids": ["china_economy", "ai"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-11T10:00:08.910546+00:00", "science_tech": "2025-11-11T10:16:56.240235+00:00", "china_economy": "2025-11-11T11:10:38.570528+00:00", "ai": "2025-11-11T11:10:38.570528+00:00", "gold_fx": "2025-11-11T10:16:56.240235+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T11:10:38.607273+00:00"}, "status": "ok", "total_results": 2, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"中国经济\") OR (\"中国政治\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-09T11:10:39.894135+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China Economy\") OR (\"China Politics\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T10:16:56.240235+00:00"}, "status": "ok", "total_results": 20, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T10:16:56.240235+00:00"}, "status": "ok", "total_results": 52, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p...dkwA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 15063, "output_tokens": 17837, "total_tokens": 32900}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests\\china-economy-briefing-2025-11-11_1911.md", "articles_summarized": 2, "summary_notes": "此次摘要涵盖中国汽车产业人事变动、黄金市场产销波动、安全事故调查以及全球科技巨头面临的挑战，反映宏观经济与产业动态交织，值得关注。", "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests\\ai-briefing-2025-11-11_1914.md", "articles_summarized": 40, "summary_notes": "本次快訊涵蓋台灣科技產業營收變化、日本自動駕駛安全事故，以及深度學習技術分享，反映科技市場動態與應用挑戰。\n\n本期摘要涵蓋供應鏈業績回溫、AI產業資本流向變化、餐飲業旺季表現及成長股估值分析，提供投資者及市場觀察者多面向的宏觀經濟與行業動態。\n\n本期新闻涵盖了人工智能应用模型的发布与挑战、科技公司营收表现、传统美妆巨头的财务困境及电竞掌机硬件升级，反映全球科技与商业生态多样发展趋势。\n\n本次世界新闻摘要涵盖科技创新、资本市场及清洁能源领域最新发展，呈现中国科技企业在人工智能及核聚变领域的突破，以及金融机构对港股市场的未来展望。\n\n本期新闻涵盖了AI技术在审计、医疗健康及企业服务领域的最新应用动态，以及全球重要财经峰会进展，反映出人工智能技术对多行业的深远影响。\n\n本次简报涵盖了人工智能技术及其生态系统的最新进展，包括AI代理开发工具、跨行业AI应用扩展，以及开源Linux环境与AI助手的融合等，反映出AI技术正在深刻影响技术开发和各行各业的变革。\n\n本期世界快讯涵盖科技与金融领域的重要动态，从印度两大IT巨头的市场竞争，到Fintech SaaS新秀Lentra的上市计划，再到全球半导体行业龙头台积电的营收趋势，以及美国医疗保险行业巨头Humana的转型举措，反映出科技创新、资本运作与企业文化变革的多重融合趋势。\n\n本期简报涵盖了科技股的波动、数字银行的增长、人工智能模型评估方法及全球独角兽企业估值的重要变化，反映出AI技术对资本市场及创新生态的深远影响。\n\n本期简报涵盖了中美在AI领域的新“冷战”态势，欧洲影视业AI融合趋势，苹果与谷歌合作深化AI应用，以及云计算领域因客户投入变化带来的盈利挑战，反映出人工智能技术推动全球产业和地缘政治格局深刻变革。\n\n本次简报涵盖了技术领域的最新进展，包括基于大型语言模型的安卓设备控制框架、新一代AI代理监控工具、首款支持高级虚拟化的Arm迷你工作站以及软件开发者职业角色的转变，体现了AI与硬件创新共驱软件工程变革的趋势。", "recipients": ["1047962614@qq.com"]}]}
+2025-11-12 08:04:36,522 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-12 08:04:37,048 | INFO | NewsAPI returned 29 articles (status=ok, remaining=None)
+2025-11-12 08:04:37,048 | INFO | Retained 29 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:04:37,048 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-12 08:04:37,328 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:04:37,328 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:04:37,328 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-12 08:04:37,620 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:04:37,620 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:04:37,620 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-12 08:04:37,898 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:04:37,898 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:04:37,898 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-12 08:04:38,188 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:04:38,188 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:04:38,188 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-12 08:04:38,479 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:04:38,479 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:04:38,479 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-12 08:04:38,762 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:04:38,763 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:04:38,763 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-12 08:04:39,040 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:04:39,040 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:04:41,126 | INFO | Summarizing 29 articles across 8 batches.
+2025-11-12 08:06:22,243 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-12 08:06:22,694 | INFO | NewsAPI returned 29 articles (status=ok, remaining=None)
+2025-11-12 08:06:22,694 | INFO | Retained 29 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:06:22,694 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-12 08:06:22,971 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:06:22,971 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:06:22,971 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-12 08:06:23,244 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:06:23,244 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:06:23,244 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-12 08:06:23,538 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:06:23,538 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:06:23,538 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-12 08:06:23,825 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:06:23,825 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:06:23,825 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-12 08:06:24,106 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:06:24,106 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:06:24,106 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-12 08:06:24,387 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:06:24,387 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:06:24,387 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-12 08:06:24,661 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:06:24,661 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:06:25,944 | INFO | Summarizing 29 articles across 8 batches.
+2025-11-12 08:07:01,785 | INFO | Requesting top-headlines with params={'country': 'us', 'pageSize': 30}
+2025-11-12 08:07:02,651 | INFO | NewsAPI returned 29 articles (status=ok, remaining=None)
+2025-11-12 08:07:02,651 | INFO | Retained 29 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:07:02,653 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-12 08:07:02,928 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:07:02,928 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:07:02,928 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-12 08:07:03,203 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:07:03,203 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:07:03,203 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-12 08:07:03,483 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:07:03,483 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:07:03,483 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-12 08:07:03,757 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:07:03,757 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:07:03,757 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-12 08:07:04,032 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:07:04,032 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:07:04,032 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-12 08:07:04,306 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:07:04,307 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:07:04,307 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-12 08:07:04,582 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-12 08:07:04,582 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-12 08:07:06,042 | INFO | Summarizing 29 articles across 8 batches.
+2025-11-12 08:07:31,094 | INFO | Completed batch 1/8 (briefings=4).
+2025-11-12 08:07:57,628 | INFO | Completed batch 2/8 (briefings=8).
+2025-11-12 08:08:22,868 | INFO | Completed batch 3/8 (briefings=12).
+2025-11-12 08:08:53,649 | INFO | Completed batch 4/8 (briefings=16).
+2025-11-12 08:09:22,025 | INFO | Completed batch 5/8 (briefings=20).
+2025-11-12 08:09:46,648 | INFO | Completed batch 6/8 (briefings=24).
+2025-11-12 08:10:11,818 | INFO | Completed batch 7/8 (briefings=28).
+2025-11-12 08:10:21,823 | INFO | Completed batch 8/8 (briefings=29).
+2025-11-12 08:10:21,823 | INFO | OpenAI summarization completed across 8 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=18730)
+2025-11-12 08:10:21,829 | INFO | Saved digest to digests\头条简报-2025-11-12_0810.md
+2025-11-12 08:10:21,829 | INFO | No configured subscribers for digest 'global_headlines'; using environment recipients.
+2025-11-12 08:10:21,829 | WARNING | Email configuration incomplete; skipping email send (from=1047962614@qq.com, recipients=[]).
+2025-11-12 08:10:21,835 | INFO | Headline run summary: {"started_at": "2025-11-12T00:07:01.785754+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-10T00:00:08.910546+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "pageSize": 30}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p...dkwA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 7501, "output_tokens": 11229, "total_tokens": 18730}}, "outputs": {"digest_path": "digests\\头条简报-2025-11-12_0810.md", "articles_summarized": 29, "summary_notes": "本期简报聚焦于美国政府关门危机的最新进展，包括参议院即将进行的关键投票、交通受影响及政治争议。同时关注食品药品监管局最新医疗安全决定，反映出政策变化对公众健康的深远影响。\n\n本期新闻涵盖体育教练团队变动、投资巨头巴菲特的慈善动态、科技公司财报及美国政治与股市最新进展，为读者提供多元化的全球资讯。\n\n本期报道涵盖了美国司法、体育健康、印度安全事件以及影视行业动态，体现了全球社会多元关注点及其潜在影响。\n\nThis digest covers significant political and social developments including pardons relating to the 2020 U.S. election, internal dynamics in the U.S. Democratic Party, a celebrity-related police call, and high-profile anti-corruption efforts in Ukraine.\n\n本期内容涵盖政治法律、科技创新、媒体趋势及公共卫生等多领域新闻，反映了全球在不同层面面临的挑战与变革。特别值得关注的是国际政治案件的快速发展、科技产品设计的新动态、流媒体广告策略的演变，以及公共卫生事件对国家地位的影响。\n\n本期新闻涵盖了从美国政治影响航空控制的劳务问题，到天文学首次捕获星际彗星信号的突破，再到基因编辑技术股市表现，以及美国橄榄球联盟重要赛事预告，跨领域展示全球最新动态。\n\nThis scientific milestone enhances our predictive capabilities for solar storms, crucial for protecting modern technological infrastructure.", "recipients": []}}
+2025-11-12 08:10:21,840 | INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T00:10:38.570528+00:00'}
+2025-11-12 08:10:22,649 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-12 08:10:22,649 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-12 08:10:22,649 | INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-10T00:10:38.570528+00:00'}
+2025-11-12 08:10:22,974 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-12 08:10:22,974 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-12 08:10:23,704 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-12 08:11:02,553 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "川普金援下阿根廷总统米莱获中期选举大胜，或重塑全球金融格局",
+      "chinese_brief": "阿根廷总统米莱在2025年中期选举中大获全胜，其推行的激进经济改革“电锯疗法”获得民意支持。这一胜利部分归功于美国前总统特朗普的大规模金融支持，显露出美中两国在拉美地区的激烈地缘政治竞争。此举可能使美国与阿根廷形成金融套利共同体，进而影响全球经济与政治格局，增加地区不确定性。",
+      "english_brief": "Argentine President Milei won a decisive victory in the 2025 midterm elections, with strong public backing for his radical economic reforms dubbed the 'chainsaw therapy.' This success is partly attributed to substantial financial support from former U.S. President Trump, highlighting heightened geopolitical competition between the U.S. and China in Latin America. This cooperation could establish a financial arbitrage partnership between the U.S. and Argentina, potentially reshaping global economic and political dynamics and increasing regional uncertainties.",
+      "term_clarifications": [
+        {
+          "term": "米莱 (Milei)",
+          "explanation": "阿根廷的自由主义经济学家和总统，推行激进的经济改革改革，被称为“电锯疗法”。 An Argentine libertarian economist and president known for implementing radical economic reforms called 'chainsaw therapy.'"
+        },
+        {
+          "term": "电锯疗法 (Chainsaw therapy)",
+          "explanation": "米莱提出的经济政策，强调大幅削减政府支出和干预，类似用电锯迅速切割财政赤字和官僚体系。 An economic policy proposed by Milei, emphasizing sharp cuts in government spending and intervention, akin to quickly 'cutting through' fiscal deficits and bureaucracy with a chainsaw."
+        },
+        {
+          "term": "金融套利共同体 (Financial arbitrage partnership)",
+          "explanation": "指不同国家通过协调金融资源与政策，实现资本和利益最大化的策略联盟。 Refers to a strategic alliance where countries coordinate financial resources and policies to maximize capital gains and benefits."
+        },
+        {
+          "term": "美中地缘政治角力 (US-China geopolitical rivalry)",
+          "explanation": "美国与中国在全球各地区争夺影响力和资源的竞争。 The competition between the United States and China to gain influence and resources across global regions."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "中国银行App关停潮引发网络热议，李斌回应网暴展现CEO娱乐精神",
+      "chinese_brief": "2025年以来，中国多家银行宣布关停部分App，尤其针对信用卡与直销银行业务，引发用户广泛关注和讨论。此举反映银行业“断舍离”策略，旨在精简产品线提升效率。同时，电动车厂商蔚来CEO李斌在面对网络暴力时表现淡定，称CEO有娱乐大家的责任，突显其幽默坚韧的公众形象。",
+      "english_brief": "Since 2025, many Chinese banks have announced the shutdown of some of their apps, particularly those related to credit cards and direct banking services, sparking widespread attention and discussion among users. This reflects a 'decluttering' strategy in the banking sector aimed at streamlining product lines and improving efficiency. Meanwhile, NIO CEO Li Bin calmly responded to online harassment, stating that CEOs have a responsibility to entertain everyone, highlighting his humorous and resilient public image.",
+      "term_clarifications": [
+        {
+          "term": "银行App关停潮",
+          "explanation": "多家银行关闭部分手机应用程序的趋势，通常为整合资源提升运营效率。 A trend of multiple banks shutting down certain mobile applications, usually to consolidate resources and improve operational efficiency."
+        },
+        {
+          "term": "信用卡与直销银行",
+          "explanation": "信用卡指银行发行的支付卡，直销银行是直接面向消费者提供在线金融服务的银行模式。 Credit cards are payment cards issued by banks, while direct banks provide online financial services directly to consumers."
+        },
+        {
+          "term": "李斌",
+          "explanation": "蔚来汽车的创始人兼CEO，知名中国电动车制造商领导者。 Founder and CEO of NIO, a leading Chinese electric vehicle manufacturer."
+        },
+        {
+          "term": "网暴 (Online harassment)",
+          "explanation": "网络暴力，指在互联网上对个人进行攻击或骚扰。 Online violence or harassment aimed at individuals on the internet."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "瑞银预测2026年中国股市与人民币表现看涨",
+      "chinese_brief": "瑞银全球研究报告指出，2026年新兴市场中最看好中国的股市和人民币走势。主要原因包括投资者信心增强、实际利率下降和信贷增长回升，为央行进一步宽松政策提供空间。预计全球经济将加速增长，主要经济体将推出新的财政刺激计划，提振企业和消费者信心。",
+      "english_brief": "UBS Global Research forecasts optimistic performance for China's stock market and the Renminbi in 2026 among emerging markets. Key drivers include enhanced investor confidence, falling real interest rates, and renewed credit growth, creating room for central banks to ease monetary policy further. Global economic growth is expected to accelerate, with major economies introducing new fiscal stimulus measures to boost corporate and consumer confidence.",
+      "term_clarifications": [
+        {
+          "term": "瑞银 (UBS)",
+          "explanation": "瑞士联合银行集团，全球领先的金融服务公司之一。 Swiss multinational investment bank and financial services company."
+        },
+        {
+          "term": "人民币 (Renminbi, RMB)",
+          "explanation": "中国的法定货币，也称为“元”。 The official currency of China, also known as the Yuan."
+        },
+        {
+          "term": "实际利率 (Real interest rate)",
+          "explanation": "扣除通货膨胀后的利率，更准确反映借贷成本的变化。 Interest rate adjusted for inflation, reflecting the true cost of borrowing."
+        },
+        {
+          "term": "财政刺激 (Fiscal stimulus)",
+          "explanation": "政府通过增加支出或减税来刺激经济增长的政策措施。 Government actions, such as increased spending or tax cuts, to stimulate economic growth."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "美国政府关门创历史最长纪录，经济影响持续显现",
+      "chinese_brief": "美国联邦政府自2025年10月1日开始关门，至今已超过40天，创历史最长纪录。政府关门主要因预算谈判僵局，导致部分政府机构停摆。经济层面，此次停摆对市场造成类似多次加息的压力，加剧了经济不确定性，对相关产业及全球供应链，尤其是台厂供应链布局带来挑战，可能影响2026年股市开局。",
+      "english_brief": "The U.S. federal government has been shut down since October 1, 2025, for over 40 days, marking the longest shutdown in history. The closure, caused by budget negotiation deadlocks, has halted some government agencies. Economically, this shutdown has exerted pressure on markets similar to multiple interest rate hikes, increasing economic uncertainty. It poses challenges for affected industries and global supply chains, particularly for Taiwanese manufacturers, potentially influencing the 2026 stock market start.",
+      "term_clarifications": [
+        {
+          "term": "政府关门 (Government shutdown)",
+          "explanation": "当政府预算未获国会批准时，部分联邦政府机构停止运作的情形。 Occurs when federal agencies cease operations due to failure to approve the budget."
+        },
+        {
+          "term": "预算谈判僵局 (Budget negotiation deadlock)",
+          "explanation": "政府各方无法就财政预算达成一致意见，导致资金无法正常拨付。 Failure of stakeholders to agree on the fiscal budget, causing funding disruptions."
+        },
+        {
+          "term": "供应链 (Supply chain)",
+          "explanation": "产品从原材料到最终消费者的全流程网络。 The full network through which products move from raw materials to end consumers."
+        },
+        {
+          "term": "台厂 (Taiwanese manufacturers)",
+          "explanation": "指位于台湾或由台湾企业运营的制造商，特别是在高科技领域。 Manufacturers based in Taiwan or operated by Taiwanese companies, especially in high-tech sectors."
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期快讯涵盖了国际政治经济动态、科技与企业新闻，集中反映中美地缘政治角力与全球经济格局变化。读者可关注美阿金融合作的潜在影响、中国银行业发展趋势、
+2025-11-12 08:11:02,553 | WARNING | Batch 1 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "川普金援下阿根廷总统米莱获中期选举大胜，或重塑全球金融格局",       "chinese_brief": "阿根廷总统米莱在2025年中期选举中大获全胜，其推行的激进经济改革“电锯疗法”获得民意支持。这一胜利部分归功于美国前总统特朗普的大规模金融支持，显露出美中两国在拉美地区的激烈地缘政治竞争。此举可能使美国与阿根廷形成金融套利共同体，进而影响全球经济与政治格局，增加地区不确定性。",       "english_brief": "Argentine President Milei won a decisive victory in the 2025 midterm elections, with strong public backing for his radical economic reforms dubbed the 'chainsaw therapy.' This success is partly attributed to substantial ...)
+2025-11-12 08:11:30,661 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-12 08:12:05,811 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-12 08:12:48,485 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "鄭麗文出席馬場町秋季慰靈活動，彰顯政治堅持與歷史意義",
+      "chinese_brief": "國民黨主席鄭麗文近日出席由台灣政治受難人互助會主辦的馬場町秋季慰靈活動。這場活動不僅是對過去政治受難者的紀念，也是鄭麗文及國民黨表達對歷史真相的尊重和政治價值堅持的象徵，反映出台灣政治環境中對歷史記憶的重視與暗示未來政治方向的意涵。",
+      "english_brief": "Kuomintang Chairperson Cheng Li-wen recently attended the autumn memorial ceremony at Machangting organized by the Taiwan Political Victims Mutual Aid Association. This event not only commemorates past political victims but also symbolizes Cheng and the Kuomintang's respect for historical truth and commitment to political values. It highlights the importance of historical memory in Taiwan's political landscape and hints at potential future political directions.",
+      "term_clarifications": [
+        {
+          "term": "鄭麗文",
+          "explanation": "國民黨現任主席，是台灣主要政黨之一國民黨的領導人。",
+          "explanation_en": "Cheng Li-wen is the current chairperson of the Kuomintang (KMT), one of Taiwan's major political parties."
+        },
+        {
+          "term": "馬場町",
+          "explanation": "位於台北的歷史地點，曾是政治受難者遭受迫害的場所，現為紀念地。",
+          "explanation_en": "Machangting is a historical site in Taipei where political victims were once persecuted; now it serves as a memorial location."
+        },
+        {
+          "term": "台灣地區政治受難人互助會",
+          "explanation": "台灣一個關注政治受難者權益及相關歷史記憶的組織。",
+          "explanation_en": "An organization in Taiwan dedicated to advocating for political victims' rights and preserving related historical memory."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "法國前總統薩柯吉因涉嫌政治獻金案獲法院暫時釋放",
+      "chinese_brief": "法國前總統薩柯吉因其親信涉嫌非法收取政治獻金，被法院以刑事共謀罪判處五年有期徒刑，並於10月21日入獄服刑。近日，法院裁定在上訴審理期間暫時獲釋，此舉可能對法國政治圈和司法程序造成不小影響，外界關注該案件後續發展及薩柯吉的政治未來。",
+      "english_brief": "Former French President Nicolas Sarkozy was sentenced to five years imprisonment for criminal conspiracy related to his associates illegally receiving political donations. He began serving his sentence on October 21. Recently, the court ruled to grant him temporary release during the appeal process. This decision may have significant implications for French politics and judicial proceedings, with public attention focused on the case's outcome and Sarkozy's political future.",
+      "term_clarifications": [
+        {
+          "term": "薩柯吉 (Nicolas Sarkozy)",
+          "explanation": "法國前總統（2007-2012年），因涉及政治獻金醜聞受到司法調查。",
+          "explanation_en": "Former President of France (2007-2012), Nicolas Sarkozy, is under judicial scrutiny due to a political donation scandal."
+        },
+        {
+          "term": "政治獻金",
+          "explanation": "指為了支持政黨或政治人物而提供的資金，法律上有嚴格規範。",
+          "explanation_en": "Funds donated to support political parties or candidates, which are regulated by law."
+        },
+        {
+          "term": "刑事共謀罪",
+          "explanation": "指多人共同謀劃並實施犯罪行為的法律罪名。",
+          "explanation_en": "A criminal offense involving multiple parties conspiring together to commit a crime."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "投信看好台股擴張趨勢，00901基金聚焦AI產業紅利",
+      "chinese_brief": "根據最新報告，台股今年表現強勁，累計漲幅超過21%，屬亞洲股市中上水平。投信法人指出，雖受到全球利率政策及地緣政治影響，短線波動加劇，但AI供應鏈持續帶動動能，將成為台股長期增長的核心動力。00901基金專注於AI相關產業，助力投資人捕捉該領域成長紅利。",
+      "english_brief": "According to the latest report, Taiwan's stock market has performed strongly this year, with cumulative gains exceeding 21%, ranking among the top in Asia. Investment trusts note that despite short-term volatility caused by global interest rate policies and geopolitical tensions, the AI supply chain continues to drive momentum, forming a key pillar for Taiwan's long-term growth. The 00901 fund focuses on AI-related industries, enabling investors to capitalize on growth opportunities in this sector.",
+      "term_clarifications": [
+        {
+          "term": "投信",
+          "explanation": "投資信託公司，管理投資基金，為投資人集合資金進行專業理財。",
+          "explanation_en": "Investment trust companies that manage investment funds by pooling capital from investors for professional asset management."
+        },
+        {
+          "term": "00901基金",
+          "explanation": "專注於人工智慧及相關技術產業的投資基金代碼。",
+          "explanation_en": "An investment fund specializing in artificial intelligence and related technology sectors, identified by the code 00901."
+        },
+        {
+          "term": "AI供應鏈",
+          "explanation": "指涉及人工智慧技術開發、生產與服務的上下游企業組成的產業鏈。",
+          "explanation_en": "The industry chain composed of upstream and downstream companies involved in AI technology development, manufacturing, and services."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "全球央行黃金儲備首度超越美債，挑戰美元霸權地位",
+      "chinese_brief": "根據世界黃金協會2025年第二季數據，全球央行持有的黃金儲備總值首次超過其持有的美國國債，這是自1996年以來的第一次。中國官媒指出，這反映出美元在央行儲備中的比重下降，而黃金成為更受信賴的避險資產。金價今年大幅上漲推動各國央行增加黃金購買，顯示國際貨幣體系正面臨深刻變革，美元霸權地位受到挑戰。",
+      "english_brief": "According to data from the World Gold Council for Q2 2025, global central banks' gold reserves have for the first time surpassed their holdings of U.S. Treasury securities, a milestone not seen since 1996. Chinese state media notes this indicates a decline in the share of the U.S. dollar in reserves, with gold being viewed as a more reliable safe haven asset. The sharp gold price increase this year has driven central banks to boost gold purchases, signifying profound shifts in the international monetary system and challenges to the dollar's hegemony.",
+      "term_clarifications": [
+        {
+          "term": "央行",
+          "explanation": "中央銀行，負責制定和執行國家貨幣政策的金融機構。",
+          "explanation_en": "Central bank, a financial institution responsible for implementing a country's monetary policy."
+        },
+        {
+          "term": "黃金儲備",
+          "explanation": "央行持有的黃金資產，作為貨幣穩定和避險手段。",
+          "explanation_en": "Gold assets held by central banks used to stabilize currency and serve as a hedge."
+        },
+        {
+          "term": "美國國債",
+          "explanation": "美國政府發行的債券，是全球流通最廣的主權債務工具。",
+          "explanation_en": "Debt securities issued by the U.S. government, widely regarded as the most liquid sovereign debt instruments."
+        },
+        {
+          "term": "美元霸權",
+          "explanation": "指美元在全球金融和貿易體系中的主導地位。",
+          "explanation_en": "The dominant role of the U.S.
+2025-11-12 08:12:48,487 | WARNING | Batch 3 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "鄭麗文出席馬場町秋季慰靈活動，彰顯政治堅持與歷史意義",       "chinese_brief": "國民黨主席鄭麗文近日出席由台灣政治受難人互助會主辦的馬場町秋季慰靈活動。這場活動不僅是對過去政治受難者的紀念，也是鄭麗文及國民黨表達對歷史真相的尊重和政治價值堅持的象徵，反映出台灣政治環境中對歷史記憶的重視與暗示未來政治方向的意涵。",       "english_brief": "Kuomintang Chairperson Cheng Li-wen recently attended the autumn memorial ceremony at Machangting organized by the Taiwan Political Victims Mutual Aid Association. This event not only commemorates past political victims but also symbolizes Cheng...)
+2025-11-12 08:13:17,471 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-12 08:13:45,814 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 12,
+      "headline": "鄭麗文本周可能與美國在台協會處長谷立言會談，創上任後首場美台交流",
+      "chinese_brief": "台媒報導指出，美國在台協會（AIT）處長谷立言本周將與國民黨主席鄭麗文會談，這是鄭任職後首次與美方重要官員交流。會談焦點可能圍繞國民黨對防衛特別預算的態度。AIT強調，與台灣不同政治光譜的領袖定期對話，意在深化美台夥伴關係，顯示美國持續關注台灣安全及政治動態。",
+      "english_brief": "Taiwanese media reports that the American Institute in Taiwan (AIT) Director James F. Moriarty is expected to meet with Kuomintang Chairman Cheng Li-wen this week, marking her first official interaction with a key U.S. official since taking office. The discussion is expected to focus on the Kuomintang's stance toward a special defense budget. AIT highlighted its regular engagement with leaders across Taiwan's political spectrum to strengthen the U.S.-Taiwan partnership, underscoring sustained U.S. interest in Taiwan's security and political developments.",
+      "term_clarifications": [
+        {
+          "term": "美國在台協會（AIT）",
+          "explanation": "American Institute in Taiwan, the de facto U.S. embassy in Taiwan managing diplomatic and security relations given the absence of official diplomatic ties.",
+          "explanation_zh": "美國在台協會，代表美國在台灣的實質外交機構，負責雙邊外交與安全合作，因美國與台灣沒有正式外交關係。"
+        },
+        {
+          "term": "國民黨",
+          "explanation": "Kuomintang (KMT), one of Taiwan's major political parties, traditionally favoring closer ties with China and cautious defense policies.",
+          "explanation_zh": "中國國民黨，台灣主要政黨之一，通常主張與中國大陸較為和緩的關係及謹慎的防衛政策。"
+        },
+        {
+          "term": "防衛特別預算",
+          "explanation": "A special budget allocated by Taiwan's government for military upgrades and defense capabilities, often central in cross-strait security discussions.",
+          "explanation_zh": "台灣政府專門用於軍事升級和增强防衛能力的特別預算，常是兩岸安全議題的焦點。"
+        },
+        {
+          "term": "谷立言",
+          "explanation": "James F. Moriarty (谷立言), current director of the American Institute in Taiwan, responsible for U.S.-Taiwan relations.",
+          "explanation_zh": "美國在台協會現任處長，負責管理美國與台灣之間的關係。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headline": "川普堅持上訴性侵誹謗案，請求美國最高法院重審",
+      "chinese_brief": "美國前總統川普針對前《ELLE》專欄作家伊·簡·卡羅爾提出的性侵及誹謗案件遞交上訴書，要求最高法院重新審理。該案源於卡羅爾指控川普在1995或1996年於紐約一百貨公司內對她性侵，並控訴川普2022年公開否認造成誹謗。此舉顯示川普在法律戰線持續抗辯，案件仍具有高度政治與社會關注度。",
+      "english_brief": "Former U.S. President Donald Trump has submitted an appeal requesting the Supreme Court to review the sexual assault and defamation case brought by former ELLE columnist E. Jean Carroll. Carroll alleges that Trump sexually assaulted her in a New York department store in 1995 or 1996, and that his public denial in 2022 constituted defamation. Trump's continued legal challenge demonstrates ongoing contentious political and social implications surrounding the case.",
+      "term_clarifications": [
+        {
+          "term": "伊·簡·卡羅爾（E. Jean Carroll）",
+          "explanation": "Former ELLE magazine columnist who accused Donald Trump of sexual assault.",
+          "explanation_zh": "前《ELLE》雜誌專欄作家，指控川普性侵。"
+        },
+        {
+          "term": "誹謗案",
+          "explanation": "A legal case involving defamation, where one party claims that false statements damaged their reputation.",
+          "explanation_zh": "涉及損害名譽的法律案件，一方聲稱對方發表不實言論。"
+        },
+        {
+          "term": "美國最高法院",
+          "explanation": "The highest judicial body in the United States, responsible for final rulings on legal disputes.",
+          "explanation_zh": "美國最高司法機構，負責最終法律裁決。"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headline": "行政院長卓榮泰與吳宗憲立法院激烈爭辯，互指政治目的",
+      "chinese_brief": "行政院長卓榮泰11日在立法院接受國民黨立委吳宗憲質詢時，雙方展開激烈的言辭交鋒，吳宗憲強調不是為吵架來，卓則直言對方就是為吵架，雙方互指對方行為是為政治目的，各自堅持立場，最終不歡而散。此場辯論反映出台灣目前政治場域的高度對立和黨派緊張。",
+      "english_brief": "Premier Chuo Rong-tai engaged in a heated verbal exchange with Kuomintang legislator Wu Zong-xian during a legislative questioning session on the 11th. Wu emphasized he was not there to quarrel, while Chuo retorted that Wu was indeed there to argue; both accused each other of pursuing political agendas and stood firm on their positions, ending the session without resolution. The debate highlights the deep political polarization and party tensions in Taiwan today.",
+      "term_clarifications": [
+        {
+          "term": "行政院長",
+          "explanation": "Premier, the head of the Executive Yuan, Taiwan's executive branch of government.",
+          "explanation_zh": "行政院長，即行政院的首長，負責台灣政府行政事務。"
+        },
+        {
+          "term": "立法院",
+          "explanation": "Legislative Yuan, Taiwan's unicameral legislative body responsible for passing laws and overseeing the government.",
+          "explanation_zh": "台灣的立法機關，負責制定法律及監督政府。"
+        },
+        {
+          "term": "針鋒相對",
+          "explanation": "An idiom meaning to be sharply opposed or engaged in direct verbal confrontation.",
+          "explanation_zh": "成語，形容雙方態度或言語尖銳對立。"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headline": "西班牙國王費利佩六世18年後首次國事訪華，將簽署多項合作協議",
+      "chinese_brief": "西班牙國王費利佩六世於11月10日至13日對中國進行國事訪問，這是他自2014年登基以來首次訪華，也是西班牙國王18年來首次踏上中國土地。此行恰逢中西全面戰略夥伴關係20周年，預計雙方將在政治及經濟合作上簽署多項協議，進一步深化雙邊關係與合作。",
+      "english_brief": "King Felipe VI of Spain will make a state visit to China from November 10 to 13, marking his first visit to China since his ascension in 2014 and the first by a Spanish monarch in 18 years. Coinciding with the 20th anniversary of the comprehensive strategic partnership between China and Spain, the visit is expected to culminate in multiple cooperation agreements in political and economic spheres, enhancing bilateral relations.",
+      "term_clarifications": [
+        {
+          "term": "費利佩六世",
+          "explanation": "King Felipe VI, the current monarch of Spain who ascended the throne in 2014.",
+          "explanation_zh": "費利佩六世，西班牙現任國王，自2014年登基。"
+        },
+        {
+          "term": "國事訪問",
+          "explanation": "A formal visit by a head of state to another
+2025-11-12 08:13:45,814 | WARNING | Batch 4 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 12,       "headline": "鄭麗文本周可能與美國在台協會處長谷立言會談，創上任後首場美台交流",       "chinese_brief": "台媒報導指出，美國在台協會（AIT）處長谷立言本周將與國民黨主席鄭麗文會談，這是鄭任職後首次與美方重要官員交流。會談焦點可能圍繞國民黨對防衛特別預算的態度。AIT強調，與台灣不同政治光譜的領袖定期對話，意在深化美台夥伴關係，顯示美國持續關注台灣安全及政治動態。",       "english_brief": "Taiwanese media reports that the American Institute in Taiwan (AIT) Director James F. Moriarty is expected to meet with Kuomintang Chairman Cheng Li-wen this week, marking her first official interaction with a key U.S. offic...)
+2025-11-12 08:14:07,342 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-12 08:14:43,800 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 16,
+      "headline": "美國民主信仰動搖 左翼經濟民粹主義者贏得紐約市長選舉",
+      "chinese_brief": "2025年紐約市長選舉中，自稱經濟民粹主義者的左翼社會主義傾向州眾議員曼達尼（Zohran Mamdani）以超過半數選票勝出，反映出美國這個長期被視為民主燈塔的國家，正在經歷對民主制度和資本主義束縛下社會正義實現的深刻反思與挑戰。",
+      "english_brief": "In the 2025 New York mayoral election, Zohran Mamdani, a left-leaning state legislator who calls himself an economic populist, won with over half the votes. This outcome highlights the United States, long seen as a beacon of democracy, undergoing deep scrutiny and challenges regarding its democratic system and the realization of social justice constrained by capitalism.",
+      "term_clarifications": [
+        {
+          "term": "經濟民粹主義者 (economic populist)",
+          "explanation": "主張代表普通人民利益、反對經濟精英階層的政治立場，強調經濟公平與社會福利。Economics populists advocate for the interests of ordinary people over economic elites, emphasizing economic fairness and social welfare."
+        },
+        {
+          "term": "民主燈塔 (beacon of democracy)",
+          "explanation": "形容某國在民主制度上的模範地位。Refers to a country regarded as a model or symbol of democratic governance."
+        },
+        {
+          "term": "Zohran Mamdani",
+          "explanation": "曼達尼，美國紐約州眾議員，以左翼社會主義觀點參與政治。Zohran Mamdani, a New York state legislator known for his left-wing socialist positions."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "headline": "經濟部推3策略結合信用保證 助中小微企業迎挑戰",
+      "chinese_brief": "在第37屆中小企業信用保證基金（ACSIC）年會上，台灣經濟部次長何晉滄指出，信用補充機制是促進中小微企業發展和經濟成長的重要工具。面對地緣政治變化帶來的不確定性，政府提出三大策略並配合信保機制，提升中小企業的國際競爭力和承受風險能力。",
+      "english_brief": "At the 37th annual conference of the Small and Medium Enterprise Credit Guarantee Fund (ACSIC), Taiwan's Deputy Minister of Economic Affairs Ho Chin-tsang emphasized that credit supplementation mechanisms are vital tools to promote the growth of SMEs and the economy. In response to uncertainties from geopolitical changes, the government introduced three major strategies combined with credit guarantees to enhance SMEs' international competitiveness and risk resilience.",
+      "term_clarifications": [
+        {
+          "term": "ACSIC",
+          "explanation": "中小企業信用保證基金年度會議，是推動企業信用支援的平台。Annual conference of the Small and Medium Enterprise Credit Guarantee Fund, a platform supporting corporate credit assistance."
+        },
+        {
+          "term": "信用補充機制 (credit supplementation mechanism)",
+          "explanation": "用於補充企業融資資金不足的金融工具。Financial instruments aimed at supplementing inadequate financing for businesses."
+        },
+        {
+          "term": "中小微企業 (SMEs)",
+          "explanation": "中小型及微型企業，是經濟中重要的就業與創新力量。Small and medium-sized enterprises (SMEs) and micro enterprises, key contributors to employment and innovation."
+        },
+        {
+          "term": "何晉滄 (Ho Chin-tsang)",
+          "explanation": "台灣經濟部次長，負責推動產業政策與發展。Deputy Minister of Economic Affairs in Taiwan, responsible for industrial policy and development."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "headline": "金價屢創新高 退將栗正傑指美政經局勢動盪為主因",
+      "chinese_brief": "2025年全球金價異常飆升，在短短數月內突破每盎司4000美元歷史高位。退役將領栗正傑指出，這一現象反映出市場對美國政治與經濟局勢的深度不安，尤其因美國前總統川普時代的不穩定因素，導致投資者將資金轉向避險資產黃金。",
+      "english_brief": "In 2025, global gold prices surged unusually, reaching a historic high above $4,000 per ounce within months. Retired general Li Zhengjie attributed this to deep market anxiety over the political and economic situation in the U.S., especially instability linked to former President Trump’s tenure, which prompted investors to seek gold as a safe haven asset.",
+      "term_clarifications": [
+        {
+          "term": "金價 (gold price)",
+          "explanation": "黃金的市場買賣價格，通常用每盎司計價。The market price of gold, usually measured per ounce."
+        },
+        {
+          "term": "栗正傑 (Li Zhengjie)",
+          "explanation": "退役將領，知名評論人士，對政治經濟議題有深入見解。A retired general and noted commentator with insights on political and economic issues."
+        },
+        {
+          "term": "避險資產 (safe haven asset)",
+          "explanation": "在市場波動中用以保值的資產，如黃金、政府債券等。Assets used to preserve value during market volatility, such as gold and government bonds."
+        },
+        {
+          "term": "川普 (Trump)",
+          "explanation": "美國前總統，任期及政治行為常引發爭議及不確定性。Former U.S. President whose term and political actions have sparked controversy and uncertainty."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "headline": "美國宣布2025年“反對共產主義周” 川普強化抗共立場",
+      "chinese_brief": "在冷戰結束34周年之際，美國總統川普於2025年11月7日簽署總統公告，正式宣布11月2日至8日為“反對共產主義周”。此舉顯示川普政府將全球共產主義，尤其是中國共產黨的擴張視為最大威脅，並強調捍衛自由與人權的決心，標誌美國在其第二任期內對抗共產主義的強硬態度。",
+      "english_brief": "On the 34th anniversary of the end of the Cold War, U.S. President Trump signed a presidential proclamation on November 7, 2025, officially designating November 2–8 as Anti-Communism Week. This move signals the Trump administration’s view of global communism, especially the Chinese Communist Party’s expansion, as a major threat and underscores its commitment to defending freedom and human rights. It marks a tough stance against communism in Trump’s second term.",
+      "term_clarifications": [
+        {
+          "term": "反對共產主義周 (Anti-Communism Week)",
+          "explanation": "美國制定的一週特別時段，用以批判共產主義意識形態及其威脅。A designated week in the U.S. to criticize communist ideology and its perceived threats."
+        },
+        {
+          "term": "川普 (Trump)",
+          "explanation": "美國前總統，於2025年再次執政，推動對共產主義強硬政策。Former U.S. President, serving another term in 2025, advocating strong anti-communist policies."
+        },
+        {
+          "term": "中國共產黨 (Chinese Communist Party, CCP)",
+          "explanation": "中國的執政黨，被視為全球共產主義影響的重要代表。The ruling party of China, regarded as a key representative of global communist influence."
+        },
+        {
+          "term": "冷戰 (Cold War)",
+          "explanation": "20世紀美蘇兩大陣營之間的長期政治及軍事對峙。The long-term political and military confrontation between the U.S. and USSR during the 20th century."
+        }
+      ]
+    }
+  ],
+  "summary_notes": "本期世界新聞聚焦美國內部民主與政治經濟挑戰、台灣中小企業發展政策
+2025-11-12 08:14:43,803 | WARNING | Batch 5 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 16,       "headline": "美國民主信仰動搖 左翼經濟民粹主義者贏得紐約市長選舉",       "chinese_brief": "2025年紐約市長選舉中，自稱經濟民粹主義者的左翼社會主義傾向州眾議員曼達尼（Zohran Mamdani）以超過半數選票勝出，反映出美國這個長期被視為民主燈塔的國家，正在經歷對民主制度和資本主義束縛下社會正義實現的深刻反思與挑戰。",       "english_brief": "In the 2025 New York mayoral election, Zohran Mamdani, a left-leaning state legislator who calls himself an economic populist, won with over half the votes. This outcome highlights the United States, long seen as a beacon of democracy, undergoi...)
+2025-11-12 08:15:11,603 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-12 08:15:32,161 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-12 08:15:44,566 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-12 08:16:10,157 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-12 08:16:28,204 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-12 08:16:51,591 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-12 08:16:51,591 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=46100)
+2025-11-12 08:16:51,593 | INFO | Saved digest to digests\中国政经简报-2025-11-12_0816.md
+2025-11-12 08:16:53,736 | ERROR | Failed to send digest email: (550, b'The mail may contain inappropriate words or content.')
+Traceback (most recent call last):
+  File "D:\LLM_DEV\DailyNews\mailer.py", line 100, in send_digest_via_email
+    smtp.send_message(msg, to_addrs=send_to)
+  File "C:\Users\10479\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 975, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10479\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 897, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (550, b'The mail may contain inappropriate words or content.')
+2025-11-12 08:16:53,774 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T00:10:38.570528+00:00'}
+2025-11-12 08:16:54,526 | INFO | NewsAPI returned 5 articles (status=ok, remaining=None)
+2025-11-12 08:16:54,526 | INFO | Retained 5 articles for endpoint=everything, language=zh after filtering.
+2025-11-12 08:16:54,526 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-11T00:10:38.570528+00:00'}
+2025-11-12 08:16:54,851 | INFO | NewsAPI returned 17 articles (status=ok, remaining=None)
+2025-11-12 08:16:54,851 | INFO | Retained 17 articles for endpoint=everything, language=en after filtering.
+2025-11-12 08:16:55,516 | INFO | Summarizing 22 articles across 6 batches.
+2025-11-12 08:17:26,902 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "華碩Q3每股盈餘14.2元，Q4零組件及伺服器需求季減5-10％",
+      "chinese_brief": "華碩公布2025年第三季財報，營收達1899.07億元，較上季增9%，淨利季增8%但年減16%，每股盈餘14.2元。毛利率12.9%，優於前季但低於去年同期。展望第四季，零組件與伺服器需求預計季減5-10%，反映市場仍面臨不確定因素與需求放緩挑戰。",
+      "english_brief": "Asus reported its Q3 2025 results with revenues of NT$189.907 billion, a 9% quarterly increase, and net profit up 8% from last quarter though down 16% year-on-year, with earnings per share at NT$14.2. Gross margin improved to 12.9%, better than last quarter but lower than the previous year. Looking ahead, the company expects component and server demand to decline 5-10% in Q4, indicating ongoing market uncertainties and cooling demand.",
+      "term_clarifications": [
+        {
+          "term": "華碩 (Asus)",
+          "explanation": "亞洲知名的電腦與電子品牌，主要產品包括筆記型電腦、主機板及伺服器設備。A major Taiwanese multinational computer hardware and electronics company known for laptops, motherboards, and servers."
+        },
+        {
+          "term": "每股盈餘 (EPS)",
+          "explanation": "每股盈餘是指公司淨利除以流通在外的普通股股數，用以衡量公司盈利能力。Earnings per share (EPS) represents the portion of a company's profit allocated to each outstanding share of common stock, a key measure of profitability."
+        },
+        {
+          "term": "毛利率",
+          "explanation": "毛利率為毛利與營收的比率，用來評估公司核心營運的獲利效率。Gross margin is the ratio of gross profit to revenue, indicating how efficiently a company produces and sells its products."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "台灣期交所將推週選擇權，首波涵蓋台積電及鴻海等5檔股",
+      "chinese_brief": "台灣期貨交易所於12月8日推出首批個股週選擇權，可在每週三掛牌並於兩週後到期，結合月契約形成完整短期交易架構。首波標的涵蓋台積電、聯發科、鴻海等五檔熱門個股，提供投資人更靈活的交易及避險工具，特別有利於鎖定財報、法說會及除權息等關鍵時點操作。",
+      "english_brief": "The Taiwan Futures Exchange will launch its first batch of weekly stock options on December 8, allowing contracts listed every Wednesday with two-week expirations, complementing existing monthly options for a comprehensive short-term trading framework. The initial batch includes five popular stocks such as TSMC, MediaTek, and Foxconn. This gives investors greater flexibility for trading and hedging, especially around key events like earnings reports, conferences, and ex-dividend days.",
+      "term_clarifications": [
+        {
+          "term": "期交所 (Taiwan Futures Exchange, TAIFEX)",
+          "explanation": "台灣期貨交易所，簡稱期交所，是台灣期貨和選擇權買賣的主要交易平台。Taiwan Futures Exchange (TAIFEX) is the main platform for futures and options trading in Taiwan."
+        },
+        {
+          "term": "個股週選擇權 (Weekly Stock Options)",
+          "explanation": "個股週選擇權是在每週到期的選擇權合約，提供更短期的交易和避險選擇。Weekly stock options are options contracts that expire weekly, allowing traders short-term flexibility for hedging or speculative strategies."
+        },
+        {
+          "term": "台積電 (TSMC)",
+          "explanation": "台灣積體電路製造股份有限公司，是全球領先的晶圓代工企業。Taiwan Semiconductor Manufacturing Company (TSMC) is the world’s leading semiconductor foundry."
+        },
+        {
+          "term": "聯發科 (MediaTek)",
+          "explanation": "台灣大型IC設計公司，專注於無線通訊和多媒體晶片設計。MediaTek is a major Taiwanese fabless semiconductor company specializing in wireless communications and multimedia chips."
+        },
+        {
+          "term": "鴻海 (Foxconn)",
+          "explanation": "全球最大的電子代工製造商，總部位於台灣。Foxconn is the world’s largest electronic contract manufacturer headquartered in Taiwan."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "OpenAI CEO奥尔特曼：AI虽能创作满分诗篇，难替代人类情感内核",
+      "chinese_brief": "OpenAI執行長薩姆·奧爾特曼在進步大會上表示，人工智能未來將可創作水準相當於人類的「10分滿分」詩歌，但這些作品可能無法真正引起人們共鳴。關鍵在於藝術價值來自於人類的情感核心，AI缺乏這種源於人類經歷和情感的內在本質，因此難以完全取代人類藝術創作。",
+      "english_brief": "OpenAI CEO Sam Altman stated at the Progress Conference that AI will likely be able to compose poetry on par with a 'perfect score' by human standards in the future. However, such works may not genuinely resonate with people because the value of art stems from a human emotional core rooted in lived experience, which AI lacks. Thus, AI is unlikely to fully replace human artistic creation.",
+      "term_clarifications": [
+        {
+          "term": "OpenAI",
+          "explanation": "成立於2015年的人工智能研究公司，致力於推動安全且有益的AI技術發展。OpenAI is an AI research organization founded in 2015 focused on developing safe and beneficial artificial intelligence."
+        },
+        {
+          "term": "薩姆·奧爾特曼 (Sam Altman)",
+          "explanation": "OpenAI現任執行長，知名科技創業家及投資人。Sam Altman is the current CEO of OpenAI and a prominent technology entrepreneur and investor."
+        },
+        {
+          "term": "進步大會 (Progress Conference)",
+          "explanation": "一場聚焦科技與社會進步的研討會，邀請業界領袖分享前沿見解。Progress Conference is a forum focusing on technology and societal advancement, featuring industry leaders' insights."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "台新銀行攜手燦坤推AI智慧眼鏡聯名卡，消費享最高6%回饋",
+      "chinese_brief": "台新銀行與燦坤、蔡司及小林眼鏡合作推出「EyeCare護眼生態圈」，結合AI智慧眼鏡銷售及專業配鏡服務，提供一站式護眼體驗。活動期間使用台新燦坤聯名卡消費，可享高達6%現金回饋，鼓勵消費者體驗智慧護眼新生活並促進相關產業發展。",
+      "english_brief": "Taishin Bank has partnered with Tsann Kuen, Zeiss, and Kobayashi Optical to launch the 'EyeCare Ecosystem,' integrating AI smart glasses sales with professional eyewear services for a one-stop eye care experience. Cardholders using the co-branded Taishin-Tsann Kuen card during the promotion can enjoy up to 6% cashback, encouraging consumers to embrace smart eye care technology and fostering industry growth.",
+      "term_clarifications": [
+        {
+          "term": "台新銀行 (Taishin Bank)",
+          "explanation": "台灣知名的商業銀行，提供多元金融服務。Taishin Bank is a well-known commercial bank in Taiwan offering diverse financial services."
+        },
+        {
+          "term": "燦坤 (Tsann Kuen)",
+          "explanation": "台灣大型電子產品零售商，擁有廣泛銷售網絡。Tsann Kuen is a major electronics retailer in Taiwan with an extensive sales network."
+        },
+        {
+          "term": "蔡司 (Zeiss)",
+          "explanation": "德國知名光學與光電
+2025-11-12 08:17:26,905 | WARNING | Batch 1 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "華碩Q3每股盈餘14.2元，Q4零組件及伺服器需求季減5-10％",       "chinese_brief": "華碩公布2025年第三季財報，營收達1899.07億元，較上季增9%，淨利季增8%但年減16%，每股盈餘14.2元。毛利率12.9%，優於前季但低於去年同期。展望第四季，零組件與伺服器需求預計季減5-10%，反映市場仍面臨不確定因素與需求放緩挑戰。",       "english_brief": "Asus reported its Q3 2025 results with revenues of NT$189.907 billion, a 9% quarterly increase, and net profit up 8% from last quarter though down 16% year-on-year, with earnings per share at NT$14.2. Gross margin improved to 12.9%...)
+2025-11-12 08:18:00,631 | INFO | Completed batch 1/6 (briefings=4).
+2025-11-12 08:18:21,534 | INFO | Completed batch 2/6 (briefings=8).
+2025-11-12 08:18:51,422 | INFO | Completed batch 3/6 (briefings=12).
+2025-11-12 08:19:19,563 | INFO | Completed batch 4/6 (briefings=16).
+2025-11-12 08:19:44,620 | INFO | Completed batch 5/6 (briefings=20).
+2025-11-12 08:19:58,641 | INFO | Completed batch 6/6 (briefings=22).
+2025-11-12 08:19:58,641 | INFO | OpenAI summarization completed across 6 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=19818)
+2025-11-12 08:19:58,641 | INFO | Saved digest to digests\ai-briefing-2025-11-12_0819.md
+2025-11-12 08:20:00,375 | INFO | Sent digest email to 1047962614@qq.com.
+2025-11-12 08:20:00,376 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-10T00:16:56.240235+00:00).
+2025-11-12 08:20:00,377 | INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-10T00:20:00.376598+00:00'}
+2025-11-12 08:20:01,557 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-12 08:20:01,557 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-12 08:20:02,288 | INFO | Summarizing 20 articles across 5 batches.
+2025-11-12 08:20:29,940 | INFO | Completed batch 1/5 (briefings=4).
+2025-11-12 08:20:55,929 | INFO | Completed batch 2/5 (briefings=8).
+2025-11-12 08:21:17,993 | INFO | Completed batch 3/5 (briefings=12).
+2025-11-12 08:21:56,095 | INFO | Completed batch 4/5 (briefings=16).
+2025-11-12 08:22:12,835 | INFO | Completed batch 5/5 (briefings=20).
+2025-11-12 08:22:12,835 | INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=13677)
+2025-11-12 08:22:12,839 | INFO | Saved digest to digests\最热影音资讯简报-2025-11-12_0822.md
+2025-11-12 08:22:14,568 | INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com.
+2025-11-12 08:22:14,584 | INFO | Topic run summary: {"started_at": "2025-11-12T00:10:21.837550+00:00", "digest_ids": ["china_economy", "ai", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-12T00:07:01.785754+00:00", "china_economy": "2025-11-12T00:10:21.837550+00:00", "ai": "2025-11-12T00:10:21.837550+00:00", "entertainment": "2025-11-12T00:10:21.837550+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T00:10:38.570528+00:00"}, "status": "ok", "total_results": 98, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T00:10:38.570528+00:00"}, "status": "ok", "total_results": 308, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T00:10:38.570528+00:00"}, "status": "ok", "total_results": 5, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T00:10:38.570528+00:00"}, "status": "ok", "total_results": 17, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-10T00:20:00.376598+00:00"}, "status": "ok", "total_results": 248, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p...dkwA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 36085, "output_tokens": 43510, "total_tokens": 79595}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests\\中国政经简报-2025-11-12_0816.md", "articles_summarized": 40, "summary_notes": "本期新闻涵盖拉美地缘政治变局、亚洲金融服务调整、新兴市场投资展望及美国政府停摆对全球经济的影响，体现全球政治经济的复杂互动和多点风险。\n\n本次新闻摘要涵盖了文化历史回顾、人权教育推广、矿产资源投资及中东政治动态，均对未来社会发展和国际关系具有重要参考价值。\n\n本次簡報涵蓋台灣政治與歷史記憶、法國政治司法動態、台灣股市及AI產業發展，以及國際金融貨幣體系的重大變動，幫助讀者全面掌握當前全球與區域重要事件。\n\n本摘要涵蓋政治、法律與國際關係等方面的重要新聞，旨在為雙語讀者提供簡明且具解釋性的全球時事報導，方便不同語言背景的讀者理解跨域議題。\n\n本期國際要聞涵蓋美國民主制度挑戰、台灣推動中小企業發展策略、國際金價異動，以及川普政府強化反共立場，多層面反映當前全球政治經濟緊繃局勢。\n\n本期新闻涵盖台风预警、国际科技合作、艾滋病防治研究及美国药价改革四大主题，涉及自然灾害、国际关系、公共卫生和医药经济多重领域，反映全球多样化发展趋势。\n\n本期新闻涵盖了医疗、经济、法律与科技多个领域，反映全球在传统疗法应用、经济动态变化、国际贸易政策及高科技产业监管方面的持续关注和复杂挑战。\n\n本期简报涵盖了半导体行业应对AI算力与能耗挑战的技术策略、全球航天密集发射的新趋势、中国加强管控芬太尼原料出口以及中国咖啡市场的快速崛起，体现了科技与社会多领域的最新国际动态。\n\n本期简报涵盖东南亚地缘政治、中美贸易影响的亚洲股市、游戏产业文化审查，以及中国建筑公司海外扩展的行业挑战，反映了全球经济与政治多层面的互动与变化。\n\n本期简报涵盖全球经济排名、国际贸易动态、技术安全问题及中国豪车遗弃事件，反映了经济、政策与安全多重领域的重要趋势和挑战。", "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests\\ai-briefing-2025-11-12_0819.md", "articles_summarized": 22, "summary_notes": "本次簡報涵蓋科技、金融、人工智慧及消費領域，突顯台灣企業的營運績效、金融市場新產品的推動，以及AI技術與人文藝術的辯論，反映當前全球科技與市場動態。\n\n本期简报涵盖了人工智能技术在基准测试、媒体娱乐内容生成、音乐播放以及销售创业领域的最新动态，反映出AI应用的多样化发展趋势及其带来的机遇与挑战。\n\n本期新闻涵盖人工智能领域的最新技术进展和行业动态，包括谷歌地图的AI辅助开发工具、维基百科对AI内容抓取的规制呼吁、Meta推出多语言语音识别模型，以及面向边缘计算的AI模型优化工具发布，反映了AI技术在地理信息、知识管理、语言处理和边缘计算等多个关键领域的持续创新。\n\n本期简报涵盖人工智能技术在视频平台、半导体行业动态及银行业就业结构的影响，反映了AI技术驱动下全球科技和金融领域的重大变革。\n\n本期简报涵盖了AI技术安全风险、用户心理健康影响、行业人才动态以及市场投资理性分析，展示了人工智能领域的多维度发展和挑战。\n\nThis digest covers significant recent developments: the rapid growth of AI-enabled coding platforms like Lovable infiltrating major corporate sectors, and the psychological risks emerging from interactions with conversational AI technologies such as ChatGPT. Readers should consider both the innovative potential and the mental health implications of aligning with AI advancements.", "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests\\最热影音资讯简报-2025-11-12_0822.md", "articles_summarized": 20, "summary_notes": "本期简报涵盖了数字娱乐巨擘扩张、文化议题电影票房反映的社会裂痕、游戏行业版权纷争及卫星互联网技术突破，反映出科技与文化领域交织影响全球发展的多维趋势。\n\n本期简报涵盖文化艺术数字化、游戏新作发布、电影收藏优惠及经典游戏历史，反映了数字时代文化传播与娱乐产业的多样化发展趋势。\n\n本期影视快讯涵盖了年度优秀影视音乐推荐、传奇动作明星阿诺德·施瓦辛格作品回顾、热门恐怖剧集前传的剧情争议，以及《铁血战士》系列新作票房表现分析，帮助读者全面了解当前影视文化热点。\n\n本次报道涵盖电影界多个话题，涉及经典电影的幕后故事、文学改编挑战以及影院技术的发展趋势，为全球影视行业提供了多维度的洞察。\n\n本期新闻涵盖了电影行业对独立电影的支持、PC行业面对复杂全球局势的应对、演员为角色进行的极端身体变化，以及游戏领域的最新动态，为关注文化娱乐和科技发展的读者提供全面视角。", "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
