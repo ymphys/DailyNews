@@ -9,6 +9,7 @@
         {
           "endpoint": "top-headlines",
           "country": "us",
+          "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com",
           "pageSize": 30
         },
         {

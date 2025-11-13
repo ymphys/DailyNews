@@ -496,8 +496,8 @@ def summarize_articles(
         "You are producing a world news digest. For each article, craft:\n"
         "- A headline suitable for a briefing.\n"
         "- A compact narrative paragraph in Chinese capturing context and implications.\n"
-        "- A natural English translation of that paragraph.\n"
-        "- Explanations for any specialized terms, acronyms, or named entities that may be unclear, in both English and simplified Chinese.\n"
+        "- A natural English translation (if the original language is not English) of that paragraph.\n"
+        "- Explanations for any specialized terms, acronyms, or named entities that may be unclear, in simplified Chinese. If the original language is English, add English version of the terms.\n"
         "Include any details necessary for readers who do not speak the article's original language.\n"
         "Return a JSON object with this shape:\n"
         "{\n"
@@ -512,7 +512,6 @@ def summarize_articles(
         "      ],\n"
         "    }, ...\n"
         "  ],\n"
-        '  "summary_notes": "<string, optional>"\n'
         "}\n"
         "Respond with valid JSON only (no markdown code fences)."
     )
@@ -540,7 +539,7 @@ def summarize_articles(
         messages = [
             {
                 "role": "system",
-                "content": "You write bilingual world news briefs with contextual explanations.",
+                "content": "You write world news briefs in Simplified Chinese with contextual explanations.",
             },
             {
                 "role": "user",
@@ -599,19 +598,15 @@ def summarize_articles(
                 continue
 
             briefings = structured.get("briefings", [])
-            summary_note = structured.get("summary_notes", "")
-            note_list = [summary_note.strip()] if summary_note else []
-            return briefings, note_list
+            return briefings
 
         raise RuntimeError("Failed to obtain structured summary after retries.")
 
     for idx, batch in enumerate(batches, start=1):
-        batch_briefings, batch_notes = process_batch(batch, str(idx))
+        batch_briefings = process_batch(batch, str(idx))
         all_briefings.extend(batch_briefings)
-        notes.extend(batch_notes)
         LOGGER.info("Completed batch %s/%s (briefings=%s).", idx, len(batches), len(all_briefings))
 
-    summary_notes = "\n\n".join(filter(None, notes))
     usage_data = {
         "model": model_used,
         "input_tokens": total_input_tokens or None,
@@ -626,7 +621,7 @@ def summarize_articles(
         usage_data["total_tokens"],
     )
 
-    return all_briefings, summary_notes, usage_data
+    return all_briefings, usage_data
 
 
 __all__ = [

@@ -96,7 +96,7 @@ def main() -> None:
         print("No new headline articles found.")
         return
 
-    briefings, summary_notes, openai_usage = summarize_articles(articles)
+    briefings, openai_usage = summarize_articles(articles)
     if not briefings:
         LOGGER.info("Summarizer returned no briefings for headline digest.")
         state["last_run"] = run_started.isoformat()
@@ -141,7 +141,6 @@ def main() -> None:
         "outputs": {
             "digest_path": digest_path,
             "articles_summarized": len(briefings),
-            "summary_notes": summary_notes,
             "recipients": [subscriber.get("email") for subscriber in subscribers],
         },
     }

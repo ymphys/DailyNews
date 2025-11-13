@@ -16,7 +16,7 @@
       "email": "1047962614@qq.com",
       "frequency": "daily",
       "digests": [
-        "headline",
+        "global_headlines",
         "ai",
         "entertainment"
       ]
@@ -32,7 +32,7 @@
       "id": "longqi",
       "email": "longqishao0908@gmail.com",
       "digests": [
-        "headline",
+        "global_headlines",
         "entertainment"
       ]
     },
@@ -40,7 +40,7 @@
       "id": "wei",
       "email": "weizhengyi@imnu.edu.cn",
       "digests": [
-        "headline",
+        "global_headlines",
         "entertainment"
       ]
     },
@@ -48,15 +48,22 @@
       "id": "nan",
       "email": "qinnanwu@163.com",
       "digests": [
-        "headline",
+        "global_headlines",
         "entertainment"
       ]
     },
     {
-      "id": "zwb",
+      "id": "lhj",
       "email": "814022400@qq.com",
       "digests": [
-        "headline"
+        "global_headlines"
+      ]
+    },
+    {
+      "id": "zwb",
+      "email": "1055859108@qq.com",
+      "digests": [
+        "global_headlines"
       ]
     }
   ]

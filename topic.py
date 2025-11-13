@@ -127,7 +127,7 @@ def main() -> None:
             LOGGER.info("No articles retrieved for digest '%s'; skipping.", digest_id)
             continue
 
-        briefings, summary_notes, usage = summarize_articles(articles)
+        briefings, usage = summarize_articles(articles)
         if not briefings:
             LOGGER.info("Summarizer returned no briefings for digest '%s'; skipping.", digest_id)
             continue
@@ -162,7 +162,6 @@ def main() -> None:
                 "digest_display": digest_cfg.get("display_name"),
                 "digest_path": digest_path,
                 "articles_summarized": len(briefings),
-                "summary_notes": summary_notes,
                 "recipients": [subscriber.get("email") for subscriber in subscribers],
             }
         )

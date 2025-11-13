@@ -14953,3 +14953,401 @@ smtplib.SMTPDataError: (550, b'The mail may contain inappropriate words or conte
 2025-11-12 08:22:12,839 | INFO | Saved digest to digests\最热影音资讯简报-2025-11-12_0822.md
 2025-11-12 08:22:14,568 | INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com.
 2025-11-12 08:22:14,584 | INFO | Topic run summary: {"started_at": "2025-11-12T00:10:21.837550+00:00", "digest_ids": ["china_economy", "ai", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-12T00:07:01.785754+00:00", "china_economy": "2025-11-12T00:10:21.837550+00:00", "ai": "2025-11-12T00:10:21.837550+00:00", "entertainment": "2025-11-12T00:10:21.837550+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T00:10:38.570528+00:00"}, "status": "ok", "total_results": 98, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-10T00:10:38.570528+00:00"}, "status": "ok", "total_results": 308, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T00:10:38.570528+00:00"}, "status": "ok", "total_results": 5, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-11T00:10:38.570528+00:00"}, "status": "ok", "total_results": 17, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-10T00:20:00.376598+00:00"}, "status": "ok", "total_results": 248, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p...dkwA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 36085, "output_tokens": 43510, "total_tokens": 79595}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests\\中国政经简报-2025-11-12_0816.md", "articles_summarized": 40, "summary_notes": "本期新闻涵盖拉美地缘政治变局、亚洲金融服务调整、新兴市场投资展望及美国政府停摆对全球经济的影响，体现全球政治经济的复杂互动和多点风险。\n\n本次新闻摘要涵盖了文化历史回顾、人权教育推广、矿产资源投资及中东政治动态，均对未来社会发展和国际关系具有重要参考价值。\n\n本次簡報涵蓋台灣政治與歷史記憶、法國政治司法動態、台灣股市及AI產業發展，以及國際金融貨幣體系的重大變動，幫助讀者全面掌握當前全球與區域重要事件。\n\n本摘要涵蓋政治、法律與國際關係等方面的重要新聞，旨在為雙語讀者提供簡明且具解釋性的全球時事報導，方便不同語言背景的讀者理解跨域議題。\n\n本期國際要聞涵蓋美國民主制度挑戰、台灣推動中小企業發展策略、國際金價異動，以及川普政府強化反共立場，多層面反映當前全球政治經濟緊繃局勢。\n\n本期新闻涵盖台风预警、国际科技合作、艾滋病防治研究及美国药价改革四大主题，涉及自然灾害、国际关系、公共卫生和医药经济多重领域，反映全球多样化发展趋势。\n\n本期新闻涵盖了医疗、经济、法律与科技多个领域，反映全球在传统疗法应用、经济动态变化、国际贸易政策及高科技产业监管方面的持续关注和复杂挑战。\n\n本期简报涵盖了半导体行业应对AI算力与能耗挑战的技术策略、全球航天密集发射的新趋势、中国加强管控芬太尼原料出口以及中国咖啡市场的快速崛起，体现了科技与社会多领域的最新国际动态。\n\n本期简报涵盖东南亚地缘政治、中美贸易影响的亚洲股市、游戏产业文化审查，以及中国建筑公司海外扩展的行业挑战，反映了全球经济与政治多层面的互动与变化。\n\n本期简报涵盖全球经济排名、国际贸易动态、技术安全问题及中国豪车遗弃事件，反映了经济、政策与安全多重领域的重要趋势和挑战。", "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests\\ai-briefing-2025-11-12_0819.md", "articles_summarized": 22, "summary_notes": "本次簡報涵蓋科技、金融、人工智慧及消費領域，突顯台灣企業的營運績效、金融市場新產品的推動，以及AI技術與人文藝術的辯論，反映當前全球科技與市場動態。\n\n本期简报涵盖了人工智能技术在基准测试、媒体娱乐内容生成、音乐播放以及销售创业领域的最新动态，反映出AI应用的多样化发展趋势及其带来的机遇与挑战。\n\n本期新闻涵盖人工智能领域的最新技术进展和行业动态，包括谷歌地图的AI辅助开发工具、维基百科对AI内容抓取的规制呼吁、Meta推出多语言语音识别模型，以及面向边缘计算的AI模型优化工具发布，反映了AI技术在地理信息、知识管理、语言处理和边缘计算等多个关键领域的持续创新。\n\n本期简报涵盖人工智能技术在视频平台、半导体行业动态及银行业就业结构的影响，反映了AI技术驱动下全球科技和金融领域的重大变革。\n\n本期简报涵盖了AI技术安全风险、用户心理健康影响、行业人才动态以及市场投资理性分析，展示了人工智能领域的多维度发展和挑战。\n\nThis digest covers significant recent developments: the rapid growth of AI-enabled coding platforms like Lovable infiltrating major corporate sectors, and the psychological risks emerging from interactions with conversational AI technologies such as ChatGPT. Readers should consider both the innovative potential and the mental health implications of aligning with AI advancements.", "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests\\最热影音资讯简报-2025-11-12_0822.md", "articles_summarized": 20, "summary_notes": "本期简报涵盖了数字娱乐巨擘扩张、文化议题电影票房反映的社会裂痕、游戏行业版权纷争及卫星互联网技术突破，反映出科技与文化领域交织影响全球发展的多维趋势。\n\n本期简报涵盖文化艺术数字化、游戏新作发布、电影收藏优惠及经典游戏历史，反映了数字时代文化传播与娱乐产业的多样化发展趋势。\n\n本期影视快讯涵盖了年度优秀影视音乐推荐、传奇动作明星阿诺德·施瓦辛格作品回顾、热门恐怖剧集前传的剧情争议，以及《铁血战士》系列新作票房表现分析，帮助读者全面了解当前影视文化热点。\n\n本次报道涵盖电影界多个话题，涉及经典电影的幕后故事、文学改编挑战以及影院技术的发展趋势，为全球影视行业提供了多维度的洞察。\n\n本期新闻涵盖了电影行业对独立电影的支持、PC行业面对复杂全球局势的应对、演员为角色进行的极端身体变化，以及游戏领域的最新动态，为关注文化娱乐和科技发展的读者提供全面视角。", "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+2025-11-13 10:45:04,082 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'epsn.com,chicago.suntimes.com,nfl.com', 'pageSize': 30}
+2025-11-13 10:45:04,748 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-13 10:45:04,748 | INFO | Retained 2 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:45:04,748 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-13 10:45:05,106 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:45:05,106 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:45:05,106 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-13 10:45:05,780 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:45:05,780 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:45:05,780 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-13 10:45:06,093 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:45:06,097 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:45:06,097 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-13 10:45:06,414 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:45:06,414 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:45:06,414 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-13 10:45:07,008 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:45:07,008 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:45:07,008 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-13 10:45:07,359 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:45:07,359 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:45:07,360 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-13 10:45:07,673 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:45:07,673 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:45:09,888 | INFO | Summarizing 2 articles across 1 batches.
+2025-11-13 10:45:27,279 | INFO | Completed batch 1/1 (briefings=2).
+2025-11-13 10:45:27,279 | INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=1587)
+2025-11-13 10:47:34,005 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'epsn.com,chicago.suntimes.com,nfl.com', 'pageSize': 30}
+2025-11-13 10:47:34,749 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-13 10:47:34,749 | INFO | Retained 2 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:47:34,749 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-13 10:47:35,041 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:47:35,043 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:47:35,043 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-13 10:47:35,317 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:47:35,317 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:47:35,317 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-13 10:47:35,618 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:47:35,618 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:47:35,618 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-13 10:47:36,101 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:47:36,101 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:47:36,101 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-13 10:47:36,384 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:47:36,384 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:47:36,384 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-13 10:47:36,662 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:47:36,662 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:47:36,662 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-13 10:47:37,088 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 10:47:37,088 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 10:47:38,327 | INFO | Summarizing 2 articles across 1 batches.
+2025-11-13 10:47:55,693 | INFO | Completed batch 1/1 (briefings=2).
+2025-11-13 10:47:55,695 | INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=1604)
+2025-11-13 10:47:55,695 | INFO | Saved digest to digests\头条简报-2025-11-13_1047.md
+2025-11-13 10:47:55,713 | INFO | No configured subscribers for digest 'global_headlines'; using environment recipients.
+2025-11-13 10:47:55,718 | WARNING | Email configuration incomplete; skipping email send (from=1047962614@qq.com, recipients=[]).
+2025-11-13 10:47:55,719 | INFO | Headline run summary: {"started_at": "2025-11-13T02:47:34.005372+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-12T00:07:01.785754+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "epsn.com,chicago.suntimes.com,nfl.com", "pageSize": 30}, "status": "ok", "total_results": 38, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "epsn.com,chicago.suntimes.com,nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p...dkwA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 661, "output_tokens": 943, "total_tokens": 1604}}, "outputs": {"digest_path": "digests\\头条简报-2025-11-13_1047.md", "articles_summarized": 2, "recipients": []}}
+2025-11-13 10:47:55,738 | INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-12T00:10:21.837550+00:00'}
+2025-11-13 10:47:57,371 | INFO | NewsAPI returned 10 articles (status=ok, remaining=None)
+2025-11-13 10:47:57,371 | INFO | Retained 10 articles for endpoint=everything, language=zh after filtering.
+2025-11-13 10:47:57,371 | INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-12T00:10:21.837550+00:00'}
+2025-11-13 10:47:57,864 | INFO | NewsAPI returned 14 articles (status=ok, remaining=None)
+2025-11-13 10:47:57,865 | INFO | Retained 14 articles for endpoint=everything, language=en after filtering.
+2025-11-13 10:47:58,559 | INFO | Summarizing 24 articles across 6 batches.
+2025-11-13 10:48:18,785 | INFO | Completed batch 1/6 (briefings=4).
+2025-11-13 10:48:44,332 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "民进党锁定2026台北市长战役，八强候选争夺党内领导地位",
+      "chinese_brief": "2026年台湾县市长选举临近，民进党将台北市长选战视为关键战役，胜负关系到政权延续。党内已有八位潜在候选人，包括沈伯洋、郑丽君、徐国勇等，涵盖不同世代与派系，反映党内“稳健治理”与“新世代翻转”的战略拉锯。这场选战不仅影响台北，更牵动全台湾政治格局和士气，是民进党未来领导权重头戏。",
+      "english_brief": "As Taiwan's 2026 county and city mayoral elections approach, the Democratic Progressive Party (DPP) views the Taipei mayoral race as a critical battle that could determine the continuation of its rule. Eight potential candidates within the party, including Shen Po-yang, Cheng Li-jun, and Hsu Kuo-yung, span different generations and factions, reflecting an internal struggle between "stable governance" and "new generation reform." This election will influence not only Taipei but also Taiwan's broader political landscape and morale, making it a key contest for the DPP's future leadership.",
+      "term_clarifications": [
+        {
+          "term": "民进党",
+          "explanation": "台湾的主要政党之一，倾向于推动台湾本土意识和政治独立倾向。"
+        },
+        {
+          "term": "台北市长",
+          "explanation": "台北市的最高行政长官，地方政权和政治影响力重要。"
+        },
+        {
+          "term": "沈伯洋、郑丽君、徐国勇",
+          "explanation": "民进党内不同派系的资深政治人物，各具行政和立法经验。"
+        },
+        {
+          "term": "稳健治理",
+          "explanation": "指注重政策连续性和稳定发展的政治策略。"
+        },
+        {
+          "term": "新世代翻转",
+          "explanation": "党内年轻一代推动变革和创新的政治力量。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "中信证券2026年社会服务业投资策略：把握景气边际变化，聚焦行业龙头",
+      "chinese_brief": "中信证券发布2026年社会服务业投资策略报告，分析2025年服务业消费呈分化复苏态势，强调宏观经济、财富效应、业态竞争及政策引导为核心因素。展望2026年，需求端K型复苏持续，泛中端消费龙头受益低基数效应，出海需求步入规模化复制阶段。供给端创新保障情绪价值提升，政策与AI赋能助推效率。推荐重点板块包括需求弹性高的博彩公司、现制饮品品牌、休闲出行及顺周期龙头企业，凸显长期成长潜力。",
+      "english_brief": "CITIC Securities released its 2026 social services investment strategy report, highlighting a differentiated recovery in 2025 service consumption. Core factors include macroeconomics, wealth effects, business model competition, and policy guidance. Looking ahead to 2026, the demand side is expected to maintain a K-shaped recovery, with mid-tier consumption leaders benefiting from low base effects and scaled overseas expansion. On the supply side, innovation enhances emotional value, aided by policy and AI-driven efficiency improvements. Key recommended sectors are gambling companies, freshly prepared beverage leaders, leisure travel, and countercyclical blue-chip companies, reflecting strong growth potential.",
+      "term_clarifications": [
+        {
+          "term": "K型复苏",
+          "explanation": "经济部分行业和人群快速恢复，而其他部分则停滞或恶化的复苏形态。"
+        },
+        {
+          "term": "泛中端消费",
+          "explanation": "指消费市场中等收入及偏中高端的消费群体和相关产品服务。"
+        },
+        {
+          "term": "AI赋能",
+          "explanation": "人工智能技术应用于提升效率和优化成本的过程。"
+        },
+        {
+          "term": "顺周期板块",
+          "explanation": "经济周期上升期业绩表现较好的行业板块，如工业、消费等。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "鴻海董事长刘扬伟看好AI与ICT技术，展望2026乐观",
+      "chinese_brief": "鴻海集团董事长刘扬伟于2025年第四季度法说会上表示，第三季度业绩创同期新高，第四季度预计实现季增和年增双增长。刘扬伟特别看好2026年人工智能（AI）产业发展与信息通信技术（ICT）应用，尤其是AI在边缘运用和手机导入。地缘政治与汇率仍是影响因素，但对明年整体营运持乐观态度，预期AI与智能消费产品将驱动未来增长。",
+      "english_brief": "Foxconn chairman Liu Yangwei announced at the Q4 2025 earnings call that the company achieved record revenues and profits for the period, expecting both quarter-over-quarter and year-over-year growth in Q4. Liu expressed optimism for 2026, highlighting AI industry developments and ICT applications, particularly AI's edge computing integration and mobile phone adoption. Though geopolitics and exchange rates remain factors, he maintains a positive outlook, anticipating AI and intelligent consumer products as key growth drivers.",
+      "term_clarifications": [
+        {
+          "term": "鴻海 (Foxconn)",
+          "explanation": "全球最大的电子制造服务公司，总部位于台湾。"
+        },
+        {
+          "term": "AI",
+          "explanation": "人工智能，指通过计算机模拟人类智能的技术。"
+        },
+        {
+          "term": "ICT",
+          "explanation": "信息与通信技术，涵盖计算机、通信设备及其应用。"
+        },
+        {
+          "term": "边缘运用",
+          "explanation": "指AI计算在终端设备或离数据源更近的地方进行，减少延迟。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "全球央行货币政策分化，新兴市场资产吸引全球资本流入",
+      "chinese_brief": "当前全球央行货币政策出现明显分化：美国联储谨慎降息，欧洲央行暂缓行动，而日本央行释放加息信号。与此同时，多数新兴市场国家加快降息步伐。此政策差异加剧全球利差变化，推动资本流向更具降息空间与经济韧性的新兴市场。得益于通胀压力缓解和美元预期走弱，新兴市场本币债券和股票展现估值优势和较高回报潜力，成为全球投资者重点关注的资产配置目标。",
+      "english_brief": "Global central banks are showing divergent monetary policies: the Federal Reserve is cautiously cutting interest rates, the European Central Bank is on hold, and the Bank of Japan signals rate hikes. Meanwhile, most emerging markets are accelerating rate cuts. This divergence widens global interest rate differentials, driving capital inflows to emerging markets with greater rate-cutting room and resilient economies. With eased inflation pressures and expectations of a weaker dollar, emerging market local-currency bonds and stocks offer valuation advantages and higher return potential, attracting global investors.",
+      "term_clarifications": [
+        {
+          "term": "央行",
+          "explanation": "中央银行，国家层面负责货币政策和金融稳定的机构。"
+        },
+        {
+          "term": "美联储（Federal Reserve）",
+          "explanation": "美国的中央银行，负责制定货币政策。"
+        },
+        {
+          "term": "欧洲央行（European Central Bank）",
+          "explanation": "欧元区的中央银行，管理欧元区货币政策。"
+        },
+        {
+          "term": "日本央行",
+          "explanation": "日本的中央银行，负责日本的货币政策。"
+        },
+        {
+          "term": "利差",
+          "explanation": "不同国家或资产间的利率差异，影响资本流动。"
+        },
+        {
+          "term": "新兴市场",
+          "explanation": "经济快速发展但市场机制尚未完全成熟的发展中国家或地区。"
+        }
+      ]
+    }
+  ]
+}
+2025-11-13 10:48:44,335 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "民进党锁定2026台北市长战役，八强候选争夺党内领导地位",       "chinese_brief": "2026年台湾县市长选举临近，民进党将台北市长选战视为关键战役，胜负关系到政权延续。党内已有八位潜在候选人，包括沈伯洋、郑丽君、徐国勇等，涵盖不同世代与派系，反映党内“稳健治理”与“新世代翻转”的战略拉锯。这场选战不仅影响台北，更牵动全台湾政治格局和士气，是民进党未来领导权重头戏。",       "english_brief": "As Taiwan's 2026 county and city mayoral elections approach, the Democratic Progressive Party (DPP) views the Taipei mayoral race as a critical battle that could determine the continuation of its rule. Eight potential ...)
+2025-11-13 10:49:13,455 | INFO | Completed batch 2/6 (briefings=8).
+2025-11-13 10:49:31,699 | INFO | Completed batch 3/6 (briefings=12).
+2025-11-13 10:49:56,611 | INFO | Completed batch 4/6 (briefings=16).
+2025-11-13 10:50:15,501 | INFO | Completed batch 5/6 (briefings=20).
+2025-11-13 10:50:43,426 | INFO | Completed batch 6/6 (briefings=24).
+2025-11-13 10:50:43,426 | INFO | OpenAI summarization completed across 6 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=21670)
+2025-11-13 10:50:43,430 | INFO | Saved digest to digests\中国政经简报-2025-11-13_1050.md
+2025-11-13 10:50:45,972 | INFO | Sent digest email to jiabaozhang098@gmail.com.
+2025-11-13 10:50:45,972 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-12T00:10:21.837550+00:00'}
+2025-11-13 10:50:46,532 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-13 10:50:46,532 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-11-13 10:50:46,532 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-12T00:10:21.837550+00:00'}
+2025-11-13 10:50:46,864 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-11-13 10:50:46,864 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-11-13 10:50:48,375 | INFO | Summarizing 40 articles across 10 batches.
+2025-11-13 10:51:13,421 | INFO | Completed batch 1/10 (briefings=4).
+2025-11-13 10:51:42,906 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "達運與友達合作打造沉浸式復健系統 助力台灣高齡化醫療",
+      "chinese_brief": "面對台灣進入超高齡社會，達運精密與友達攜手童綜合醫院，結合Micro LED透明顯示與3D AI影像感測技術，開發出創新的沉浸式復健體驗系統。此系統以先進顯示和人工智能技術應用於高齡者的復健過程，提高復健效果，為智慧醫療領域帶來新典範，並有助應對未來人口老化帶來的醫療挑戰。",
+      "english_brief": "Facing Taiwan's transition into a super-aged society, Darfon Precision and AU Optronics teamed up with Tung's Taichung MetroHarbor Hospital to develop an immersive rehabilitation experience system that integrates Micro LED transparent displays and 3D AI imaging sensors. This innovative system leverages advanced display and artificial intelligence technologies to enhance rehabilitation outcomes for the elderly, setting a new paradigm in smart healthcare and addressing the medical challenges posed by population aging.",
+      "term_clarifications": [
+        {
+          "term": "達運精密",
+          "explanation": "Darfon Precision，是台灣一家專注於電子與精密技術產品的公司。"
+        },
+        {
+          "term": "友達",
+          "explanation": "AU Optronics，台灣主要面板製造商，專注於顯示技術。"
+        },
+        {
+          "term": "Micro LED",
+          "explanation": "微型發光二極體技術，具高亮度、高解析度與低功耗特性，適用於透明及沉浸式顯示。"
+        },
+        {
+          "term": "3D AI影像感測",
+          "explanation": "利用人工智能技術分析三維影像，提升對使用者動作與環境的感測精度。"
+        },
+        {
+          "term": "沉浸式復健體驗系統",
+          "explanation": "結合視覺與互動技術，提供使用者身臨其境的復健環境，提升治療效果。"
+        },
+        {
+          "term": "童綜合醫院",
+          "explanation": "臺灣知名醫療機構，參與醫療科技合作開發。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "AMD公布2027年Medusa處理器 AI性能提升10倍",
+      "chinese_brief": "AMD在2025財務分析師日宣布，計劃於2027年推出代號「Medusa」的銳龍AI處理器，其AI計算性能將比2024年芯片提升10倍；同時確認2026年將推出「Gorgon」系列AI處理器。AMD預計其2025年客戶端與遊戲業務的營收將超過140億美元，較上一年成長逾50%，並且致力在中期將客戶端PC市場佔有率提升至40%以上，顯示其積極擴展AI與高性能計算市場的決心。",
+      "english_brief": "During its 2025 financial analyst day, AMD announced plans to release the 'Medusa' Ryzen AI processor in 2027, projected to offer a 10-fold increase in AI computing performance compared to 2024 chips. The company also confirmed the upcoming 'Gorgon' AI processor series for 2026. AMD expects over $14 billion in revenue from its client and gaming segments in 2025, with more than 50% growth year-on-year, aiming to increase its client PC market share above 40% in the mid-term, demonstrating its strong commitment to expanding in AI and high-performance computing markets.",
+      "term_clarifications": [
+        {
+          "term": "AMD",
+          "explanation": "Advanced Micro Devices，美國知名的半導體和處理器製造公司。"
+        },
+        {
+          "term": "Medusa",
+          "explanation": "AMD計劃於2027年推出的新一代銳龍AI處理器代號，專注提升人工智能運算性能。"
+        },
+        {
+          "term": "Gorgon",
+          "explanation": "AMD將於2026年推出的AI處理器系列，作為Medusa之前的中間產品。"
+        },
+        {
+          "term": "銳龍",
+          "explanation": "Ryzen，AMD推出的高性能CPU處理器品牌。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "傳Google與高通合作 推出搭載Snapdragon X Elite的Android筆電",
+      "chinese_brief": "消息指出，Google可能與高通合作開發首款搭載Android系統的筆記型電腦，外界從Android 16版本內部代碼中發現支援Snapdragon X Elite晶片的相關資料。該晶片是高通針對筆電等裝置優化的系統單晶片（SoC），此舉顯示Android系統有望拓展至更多PC裝置，推動多平台整合並競爭市場。",
+      "english_brief": "Reports indicate that Google is potentially partnering with Qualcomm to develop the first Android-based laptops. Internal code from Android 16 reveals support for the Snapdragon X Elite chip, Qualcomm's system-on-chip designed for laptops and similar devices. This development suggests that the Android operating system may expand to more PC devices, promoting multi-platform integration and increasing competition in the market.",
+      "term_clarifications": [
+        {
+          "term": "Google",
+          "explanation": "Google，美國科技巨頭，主要提供網路服務及軟硬體產品。"
+        },
+        {
+          "term": "高通",
+          "explanation": "Qualcomm，美國無線通信及半導體公司，著名的手機晶片製造商。"
+        },
+        {
+          "term": "Snapdragon X Elite",
+          "explanation": "高通推出的高性能系統單晶片（SoC），針對筆記型電腦與行動裝置優化。"
+        },
+        {
+          "term": "Android PC",
+          "explanation": "指運行Android作業系統的個人電腦，非傳統Windows或Mac系統筆電。"
+        },
+        {
+          "term": "SoC",
+          "explanation": "System on Chip，系統單晶片，將多種元件整合於單一晶片上。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "PCB產業反彈 富喬股價創新高連漲六日",
+      "chinese_brief": "台股指數持續上揚，受惠於人工智能伺服器、資料中心和邊緣運算需求增長，PCB產業迎來反彈行情。富喬電子股價創歷史新高，並連續六個交易日上漲，儘管市場中亦有個股出現高波動性，造成日內上下洗盤超過18%。投資者持續看好PCB產業未來的市場需求，尤其是在AI及相關科技推動下，相關企業業績與股價表現均顯著提升。",
+      "english_brief": "The Taiwan stock index continues to surge, driven by increasing demand in AI servers, data centers, and edge computing, leading to a rebound in the PCB industry. Fu Chiao Electronics' stock price reached a historic high and gained for six consecutive trading days, although some stocks experienced volatility with intra-day swings exceeding 18%. Investors remain optimistic about the PCB industry's future prospects, particularly as AI and related technologies boost corporate performance and stock valuations.",
+      "term_clarifications": [
+        {
+          "term": "PCB",
+          "explanation": "Printed Circuit Board，印刷電路板，是電子組件的基礎組件。"
+        },
+        {
+          "term": "富喬",
+          "explanation": "富喬電子，台灣知名印刷電路板製造公司。"
+        },
+        {
+          "term": "AI伺服器",
+          "explanation": "專為人工智能運算設計的伺服器，具高效能處理能力。"
+        },
+        {
+          "term": "資料中心",
+          "explanation": "集中管理調度大量資訊系統和資料庫的設施。"
+        },
+        {
+          "term": "邊緣運算",
+          "explanation": "在資料產生源頭附近進行運算以減少延遲和帶寬需求的技
+2025-11-13 10:51:42,908 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "達運與友達合作打造沉浸式復健系統 助力台灣高齡化醫療",       "chinese_brief": "面對台灣進入超高齡社會，達運精密與友達攜手童綜合醫院，結合Micro LED透明顯示與3D AI影像感測技術，開發出創新的沉浸式復健體驗系統。此系統以先進顯示和人工智能技術應用於高齡者的復健過程，提高復健效果，為智慧醫療領域帶來新典範，並有助應對未來人口老化帶來的醫療挑戰。",       "english_brief": "Facing Taiwan's transition into a super-aged society, Darfon Precision and AU Optronics teamed up with Tung's Taichung MetroHarbor Hospital to develop an immersive rehabilitation experience system that integrates Micro LED t...)
+2025-11-13 10:52:01,091 | INFO | Completed batch 2/10 (briefings=8).
+2025-11-13 10:52:16,288 | INFO | Completed batch 3/10 (briefings=12).
+2025-11-13 10:52:46,910 | INFO | Completed batch 4/10 (briefings=16).
+2025-11-13 10:53:11,819 | INFO | Completed batch 5/10 (briefings=20).
+2025-11-13 10:53:33,578 | INFO | Completed batch 6/10 (briefings=24).
+2025-11-13 10:53:51,830 | INFO | Completed batch 7/10 (briefings=28).
+2025-11-13 10:54:12,480 | INFO | Completed batch 8/10 (briefings=32).
+2025-11-13 10:54:40,138 | INFO | Completed batch 9/10 (briefings=36).
+2025-11-13 10:55:08,238 | INFO | Completed batch 10/10 (briefings=40).
+2025-11-13 10:55:08,243 | INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=32277)
+2025-11-13 10:55:08,259 | INFO | Saved digest to digests\ai-briefing-2025-11-13_1055.md
+2025-11-13 10:55:11,581 | INFO | Sent digest email to 1047962614@qq.com.
+2025-11-13 10:55:11,587 | INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-12T00:10:21.837550+00:00'}
+2025-11-13 10:55:12,516 | INFO | NewsAPI returned 14 articles (status=ok, remaining=None)
+2025-11-13 10:55:12,520 | INFO | Retained 14 articles for endpoint=everything, language=en after filtering.
+2025-11-13 10:55:17,089 | INFO | Summarizing 14 articles across 4 batches.
+2025-11-13 10:55:44,461 | INFO | Completed batch 1/4 (briefings=4).
+2025-11-13 10:56:04,899 | INFO | Completed batch 2/4 (briefings=8).
+2025-11-13 10:56:29,770 | INFO | Completed batch 3/4 (briefings=12).
+2025-11-13 10:56:43,416 | INFO | Completed batch 4/4 (briefings=14).
+2025-11-13 10:56:43,416 | INFO | OpenAI summarization completed across 4 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=9658)
+2025-11-13 10:56:43,420 | INFO | Saved digest to digests\最热影音资讯简报-2025-11-13_1056.md
+2025-11-13 10:56:45,975 | INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com.
+2025-11-13 10:56:45,983 | INFO | Topic run summary: {"started_at": "2025-11-13T02:47:55.719453+00:00", "digest_ids": ["china_economy", "ai", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-13T02:47:34.005372+00:00", "china_economy": "2025-11-13T02:47:55.719453+00:00", "ai": "2025-11-13T02:47:55.719453+00:00", "entertainment": "2025-11-13T02:47:55.719453+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-12T00:10:21.837550+00:00"}, "status": "ok", "total_results": 10, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-12T00:10:21.837550+00:00"}, "status": "ok", "total_results": 14, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-12T00:10:21.837550+00:00"}, "status": "ok", "total_results": 81, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-12T00:10:21.837550+00:00"}, "status": "ok", "total_results": 100, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-12T00:10:21.837550+00:00"}, "status": "ok", "total_results": 14, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p...dkwA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 30142, "output_tokens": 33463, "total_tokens": 63605}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests\\中国政经简报-2025-11-13_1050.md", "articles_summarized": 24, "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests\\ai-briefing-2025-11-13_1055.md", "articles_summarized": 40, "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests\\最热影音资讯简报-2025-11-13_1056.md", "articles_summarized": 14, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+2025-11-13 11:07:22,156 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'epsn.com,chicago.suntimes.com,nfl.com', 'pageSize': 30}
+2025-11-13 11:07:23,023 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-13 11:07:23,023 | INFO | Retained 5 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:07:23,024 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-13 11:07:23,326 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:07:23,328 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:07:23,328 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-13 11:07:23,657 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:07:23,658 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:07:23,660 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-13 11:07:24,009 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:07:24,009 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:07:24,009 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-13 11:07:24,680 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:07:24,684 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:07:24,684 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-13 11:07:25,271 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:07:25,272 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:07:25,272 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-13 11:07:25,557 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:07:25,557 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:07:25,557 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-13 11:07:25,934 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:07:25,935 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:07:27,380 | INFO | Summarizing 5 articles across 2 batches.
+2025-11-13 11:08:00,871 | INFO | Completed batch 1/2 (briefings=4).
+2025-11-13 11:08:09,099 | INFO | Completed batch 2/2 (briefings=5).
+2025-11-13 11:08:09,102 | INFO | OpenAI summarization completed across 2 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=3429)
+2025-11-13 11:08:09,111 | INFO | Saved digest to digests\头条简报-2025-11-13_1108.md
+2025-11-13 11:08:11,741 | INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com, 814022400@qq.com, 1055859108@qq.com.
+2025-11-13 11:08:11,745 | INFO | Headline run summary: {"started_at": "2025-11-13T03:07:22.139871+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-11T22:47:34.005372+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "epsn.com,chicago.suntimes.com,nfl.com", "pageSize": 30}, "status": "ok", "total_results": 38, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "epsn.com,chicago.suntimes.com,nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p...dkwA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 1405, "output_tokens": 2024, "total_tokens": 3429}}, "outputs": {"digest_path": "digests\\头条简报-2025-11-13_1108.md", "articles_summarized": 5, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+2025-11-13 11:12:11,259 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,chicago.suntimes.com,nfl.com', 'pageSize': 30}
+2025-11-13 11:12:11,986 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-13 11:12:11,986 | INFO | Retained 27 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:12:11,986 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-13 11:12:12,303 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:12:12,304 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:12:12,306 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-13 11:12:12,654 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:12:12,654 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:12:12,656 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-13 11:12:13,378 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:12:13,379 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:12:13,379 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-13 11:12:13,646 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:12:13,649 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:12:13,649 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-13 11:12:13,939 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:12:13,940 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:12:13,941 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-13 11:12:14,204 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:12:14,205 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:12:14,205 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-13 11:12:14,509 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-13 11:12:14,510 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-13 11:12:15,697 | INFO | Summarizing 27 articles across 7 batches.
+2025-11-13 11:12:39,991 | INFO | Completed batch 1/7 (briefings=4).
+2025-11-13 11:12:59,672 | INFO | Completed batch 2/7 (briefings=8).
+2025-11-13 11:13:18,759 | INFO | Completed batch 3/7 (briefings=12).
+2025-11-13 11:13:37,766 | INFO | Completed batch 4/7 (briefings=16).
+2025-11-13 11:13:59,191 | INFO | Completed batch 5/7 (briefings=20).
+2025-11-13 11:14:20,701 | INFO | Completed batch 6/7 (briefings=24).
+2025-11-13 11:14:39,193 | INFO | Completed batch 7/7 (briefings=27).
+2025-11-13 11:14:39,193 | INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=16138)
+2025-11-13 11:14:39,196 | INFO | Saved digest to digests\头条简报-2025-11-13_1114.md
+2025-11-13 11:14:41,190 | INFO | Sent digest email to 1047962614@qq.com.
+2025-11-13 11:14:41,196 | INFO | Headline run summary: {"started_at": "2025-11-13T03:12:11.249541+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-11T03:07:22.139871+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,chicago.suntimes.com,nfl.com", "pageSize": 30}, "status": "ok", "total_results": 34, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,chicago.suntimes.com,nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p...dkwA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 7159, "output_tokens": 8979, "total_tokens": 16138}}, "outputs": {"digest_path": "digests\\头条简报-2025-11-13_1114.md", "articles_summarized": 27, "recipients": ["1047962614@qq.com"]}}
