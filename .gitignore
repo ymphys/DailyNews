@@ -8,5 +8,19 @@ wheels/
 
 # Virtual environments
 .venv
+
+# local digests files
 digests/*.md
-.env
+
+# env
+.dailynews_env
+
+# test config files
+config/*.test
+logs/*.logs
+
+# script
+scripts/run_daily_news.sh
+
+# html
+DailyNews.html
