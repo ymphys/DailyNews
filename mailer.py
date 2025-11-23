@@ -56,15 +56,11 @@ def send_digest_via_email(
     normalized = _normalize_recipients(recipients)
 
     if normalized:
-        send_to = [item["email"] for item in normalized if item.get("email")]
-        header_recipients = [
-            formataddr((item["name"], item["email"])) if item.get("name") else item["email"]
-            for item in normalized
-            if item.get("email")
-        ]
+        recipient_entries = normalized
     else:
-        send_to = env_recipients
-        header_recipients = env_recipients
+        recipient_entries = [{"email": addr, "name": None} for addr in env_recipients]
+
+    send_to = [entry["email"] for entry in recipient_entries if entry.get("email")]
 
     app_pw = os.environ.get("DAILYNEWS_EMAIL_APP_PW")
 
@@ -81,7 +77,7 @@ def send_digest_via_email(
     soup = BeautifulSoup(html_body, "html.parser")
     # 查找所有h3标题（每条新闻的标题）
     h3_list = soup.find_all("h3")
-    for h3 in h3_list:
+    for idx, h3 in enumerate(h3_list):
         # 新建<details>和<summary>
         details = soup.new_tag("details")
         summary = soup.new_tag("summary")
@@ -98,52 +94,63 @@ def send_digest_via_email(
             details.append(node.extract())
         # 用details替换h3
         h3.replace_with(details)
+        # 在每条新闻间插入空白段落以增加间距
+        spacer = soup.new_tag("p")
+        spacer.string = "\u00a0"
+        details.insert_after(spacer)
     html_body = str(soup)
 
-    msg = EmailMessage()
-    msg["Subject"] = subject
-    msg["From"] = from_addr
-    msg["To"] = ", ".join(header_recipients)
-    if reply_to:
-        msg["Reply-To"] = reply_to
-    msg.set_content(markdown_text)
-    msg.add_alternative(html_body, subtype="html")
+    dry_run = os.environ.get("DAILYNEWS_EMAIL_DRY_RUN")
 
     context = ssl.create_default_context()
 
-    dry_run = os.environ.get("DAILYNEWS_EMAIL_DRY_RUN")
-    if dry_run:
-        LOGGER.info("Dry run enabled; skipping SMTP send to %s.", ", ".join(send_to))
-        return
+    for entry in recipient_entries:
+        email = entry.get("email")
+        if not email:
+            continue
 
-    smtp: Optional[smtplib.SMTP] = None
-    try:
-        smtp = smtplib.SMTP(SMTP_HOST, SMTP_PORT_TLS)
-        smtp.ehlo()
-        smtp.starttls(context=context)
-        smtp.ehlo()
-        smtp.login(from_addr, app_pw)
-        smtp.send_message(msg, to_addrs=send_to)
+        msg = EmailMessage()
+        msg["Subject"] = subject
+        msg["From"] = from_addr
+        recipient_header = formataddr((entry["name"], email)) if entry.get("name") else email
+        msg["To"] = recipient_header
+        if reply_to:
+            msg["Reply-To"] = reply_to
+        msg.set_content(markdown_text)
+        msg.add_alternative(html_body, subtype="html")
+
+        if dry_run:
+            LOGGER.info("Dry run enabled; skipping SMTP send to %s.", email)
+            continue
+
+        smtp: Optional[smtplib.SMTP] = None
         try:
-            smtp.quit()
-        except smtplib.SMTPResponseException as quit_exc:
-            if quit_exc.smtp_code != -1:
-                raise
-            LOGGER.debug("SMTP quit() returned (-1, b'\\x00\\x00\\x00'); ignoring.")
-        LOGGER.info("Sent digest email to %s.", ", ".join(send_to))
-    except smtplib.SMTPResponseException as exc:
-        if exc.smtp_code == -1:
-            LOGGER.warning("SMTP connection closed unexpectedly after send; message likely delivered.")
-        else:
-            LOGGER.exception("Failed to send digest email: %s", exc)
-    except Exception as exc:
-        LOGGER.exception("Failed to send digest email: %s", exc)
-    finally:
-        if smtp is not None:
+            smtp = smtplib.SMTP(SMTP_HOST, SMTP_PORT_TLS)
+            smtp.ehlo()
+            smtp.starttls(context=context)
+            smtp.ehlo()
+            smtp.login(from_addr, app_pw)
+            smtp.send_message(msg, to_addrs=[email])
             try:
-                smtp.close()
-            except Exception:
-                pass
+                smtp.quit()
+            except smtplib.SMTPResponseException as quit_exc:
+                if quit_exc.smtp_code != -1:
+                    raise
+                LOGGER.debug("SMTP quit() returned (-1, b'\\x00\\x00\\x00'); ignoring.")
+            LOGGER.info("Sent digest email to %s.", email)
+        except smtplib.SMTPResponseException as exc:
+            if exc.smtp_code == -1:
+                LOGGER.warning("SMTP connection closed unexpectedly after send to %s; message likely delivered.", email)
+            else:
+                LOGGER.exception("Failed to send digest email to %s: %s", email, exc)
+        except Exception as exc:
+            LOGGER.exception("Failed to send digest email to %s: %s", email, exc)
+        finally:
+            if smtp is not None:
+                try:
+                    smtp.close()
+                except Exception:
+                    pass
 
 
 if __name__ == "__main__":
