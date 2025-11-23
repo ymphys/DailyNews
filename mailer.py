@@ -8,6 +8,7 @@ from typing import Iterable, List, Optional, Union, Dict, Any
 
 from digest_utils import LOGGER
 import markdown
+from bs4 import BeautifulSoup
 
 SMTP_HOST = "smtp.qq.com"
 SMTP_PORT_TLS = 587
@@ -72,7 +73,32 @@ def send_digest_via_email(
         return
 
     markdown_text = markdown_path.read_text(encoding="utf-8")
+
+    # 将markdown转为HTML
     html_body = markdown.markdown(markdown_text)
+
+    # 用BeautifulSoup处理HTML，添加<details>/<summary>折叠功能
+    soup = BeautifulSoup(html_body, "html.parser")
+    # 查找所有h3标题（每条新闻的标题）
+    h3_list = soup.find_all("h3")
+    for h3 in h3_list:
+        # 新建<details>和<summary>
+        details = soup.new_tag("details")
+        summary = soup.new_tag("summary")
+        summary.string = h3.get_text()
+        details.append(summary)
+        # 收集h3后的所有兄弟节点，直到下一个h3或文档结尾
+        sib = h3.next_sibling
+        content_nodes = []
+        while sib and not (sib.name == "h3"):
+            next_sib = sib.next_sibling
+            content_nodes.append(sib)
+            sib = next_sib
+        for node in content_nodes:
+            details.append(node.extract())
+        # 用details替换h3
+        h3.replace_with(details)
+    html_body = str(soup)
 
     msg = EmailMessage()
     msg["Subject"] = subject

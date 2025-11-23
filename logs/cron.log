@@ -172,3 +172,1131 @@ Traceback (most recent call last):
   File "/Users/zhangjiabao/LLM_Dev/DailyNews/config_loader.py", line 39, in _read_json
     raise error_cls(f"{label} not found at {path}") from exc
 config_loader.SubscriberConfigError: Subscriber config not found at config/subscribers.json
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | No articles retrieved for headline digest; nothing to summarize.
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-13T00:00:00.719453+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-13T00:00:00.719453+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'china_economy'; skipping.
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-13T00:00:00.180396+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-13T00:00:00.180396+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'ai'; skipping.
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-13T00:00:00.719453+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'entertainment'; skipping.
+INFO | Topic run summary: {"started_at": "2025-11-14T00:00:03.385947+00:00", "digest_ids": [], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-13T00:00:00.060889+00:00", "china_economy": "2025-11-13T00:00:00.719453+00:00", "ai": "2025-11-13T00:00:00.180396+00:00", "entertainment": "2025-11-13T00:00:00.719453+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-13T00:00:00.719453+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-13T00:00:00.719453+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-13T00:00:00.180396+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-13T00:00:00.180396+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-13T00:00:00.719453+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": null, "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": []}
+No new headline articles found.
+No topic digests generated.
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+INFO | Retained 27 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Summarizing 27 articles across 7 batches.
+INFO | Completed batch 1/7 (briefings=4).
+INFO | Completed batch 2/7 (briefings=8).
+INFO | Completed batch 3/7 (briefings=12).
+INFO | Completed batch 4/7 (briefings=16).
+INFO | Completed batch 5/7 (briefings=20).
+INFO | Completed batch 6/7 (briefings=24).
+INFO | Completed batch 7/7 (briefings=27).
+INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=17251)
+INFO | Saved digest to digests/头条简报-2025-11-15_0803.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com, 814022400@qq.com, 1055859108@qq.com.
+INFO | Headline run summary: {"started_at": "2025-11-15T00:00:00.923562+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-13T00:00:00.060889+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 33, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 7237, "output_tokens": 10014, "total_tokens": 17251}}, "outputs": {"digest_path": "digests/头条简报-2025-11-15_0803.md", "articles_summarized": 27, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-13T00:00:00.719453+00:00).
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-13T00:03:14.083219+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-13T00:00:00.719453+00:00).
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-13T00:03:14.798505+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 40 articles across 10 batches.
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=40).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=29406)
+INFO | Saved digest to digests/中国政经简报-2025-11-15_0807.md
+INFO | Sent digest email to jiabaozhang098@gmail.com.
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-13T00:00:00.180396+00:00).
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-13T00:07:34.981888+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-13T00:00:00.180396+00:00).
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-13T00:07:35.715237+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 40 articles across 10 batches.
+ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 0,
+      "headline": "数据模型成为新产品开发核心，强调算法与数据结构的重要性",
+      "chinese_brief": "科技爱好者周刊第373期指出，著名计算机科学家兼Pascal语言之父沃尔夫拉姆强调“算法+数据结构=程序”的核心理念，数据模型在新产品设计中扮演关键角色。文章结合甘肃酒泉发掘的大量汉代简牍，展现古代信息记录与现代数据结构的联系，提示技术进步应兼顾数据逻辑的重要性，为软件及AI产品设计提供深刻启示。",
+      "english_brief": "The 373rd issue of Tech Enthusiasts Weekly highlights the core concept from famous computer scientist and father of Pascal language, Wolfram, stating “Algorithm + Data Structure = Program.” Data models play a crucial role in new product design. The article connects the discovery of numerous Han Dynasty bamboo slips in Jiuquan, Gansu province to ancient information recording and modern data structuring, emphasizing the importance of data logic alongside technological advancement and providing insights for software and AI product design.",
+      "term_clarifications": [
+        {
+          "term": "Pascal语言",
+          "explanation": "一种由计算机科学家沃尔夫拉姆设计的编程语言，强调结构化程序设计。"
+        },
+        {
+          "term": "沃尔夫拉姆",
+          "explanation": "指计算机科学家Niklaus Wirth，他是Pascal语言的发明者。"
+        },
+        {
+          "term": "汉代简牍",
+          "explanation": "中国汉朝时期用竹简或木牍载体书写的文字材料，是研究古代历史和文化的重要实物证据。"
+        },
+        {
+          "term": "数据结构",
+          "explanation": "计算机科学中的概念，是组织和存储数据的方式，便于高效访问和修改。"
+        },
+        {
+          "term": "数据模型",
+          "explanation": "用于描述数据组织和关系的抽象概念，便于软件系统进行数据管理和操作。"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "headline": "本土半导体设备商天虹12月推出面板级封装PVD设备，客户群有望扩大",
+      "chinese_brief": "本土半导体设备制造商天虹计划于今年12月出货首台面板级封装用PVD设备，明年开始入账。随着晶圆代工巨头台积电确定面板级封装首条产线规格，行业迈入快速成长阶段，更多企业有意加入该领域。天虹有望新增两家大厂级客户，借助产业链本土化趋势实现业绩增长，彰显国产设备商在半导体封装制造领域的竞争力提升。",
+      "english_brief": "Domestic semiconductor equipment maker Tianhong plans to ship its first plasma vapor deposition (PVD) equipment for panel-level packaging this December and recognize revenue next year. With TSMC defining the specifications for the first panel-level packaging production line, the sector is entering a rapid growth phase, attracting more companies. Tianhong expects to add two major factory-level clients, leveraging the industry's localization trend to boost growth, highlighting the rising competitiveness of domestic equipment manufacturers in semiconductor packaging.",
+      "term_clarifications": [
+        {
+          "term": "天虹",
+          "explanation": "一家台湾本土的半导体设备制造商，股票代码6937。"
+        },
+        {
+          "term": "面板级封装（Panel-Level Packaging, PLP）",
+          "explanation": "一种半导体封装技术，在面板尺寸的载体上批量封装芯片，提高封装效率和性能。"
+        },
+        {
+          "term": "PVD设备",
+          "explanation": "物理气相沉积设备，用于在芯片或工件表面沉积薄膜，是半导体制造重要工具。"
+        },
+        {
+          "term": "台积电（TSMC）",
+          "explanation": "全球最大的半导体晶圆代工厂，台湾半导体产业的代表企业。"
+        },
+        {
+          "term": "310x310规格",
+          "explanation": "指面板级封装生产线尺寸规格为310毫米乘310毫米，代表生产工艺标准。"
+        },
+        {
+          "term": "国产设备商",
+          "explanation": "指台湾或中国本土制造半导体设备的企业，逐渐替代进口产品。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "甲骨文为加速AI布局负债激增，市值短月蒸发2500亿美元",
+      "chinese_brief": "甲骨文（Oracle）积极扩展人工智能与云基础设施业务，导致负债大幅攀升。近期科技股调整中，甲骨文股价急挫约30%，市值缩水超过2500亿美元，多数涨幅被抹去；长期债务攀升至960亿美元。市场忧虑其激进的杠杆策略风险，债券价格远逊同行。此情况反映大型传统IT企业在加速AI转型时面临的财务压力与投资挑战。",
+      "english_brief": "Oracle has aggressively expanded its AI and cloud infrastructure business, causing a significant increase in its debt. During the recent tech stock sell-off, Oracle’s stock plunged about 30%, erasing over $250 billion in market value, wiping out most gains after announcing collaboration with OpenAI. Its long-term debt rose to $96 billion. Market concerns focus on its aggressive leverage strategy, with bond prices underperforming competitors. This situation highlights the financial pressures and investment challenges legacy IT firms face while accelerating AI transformation.",
+      "term_clarifications": [
+        {
+          "term": "甲骨文（Oracle）",
+          "explanation": "美国大型软件和云计算公司，股票代码ORCL，深度参与企业级IT服务。"
+        },
+        {
+          "term": "人工智能（AI）",
+          "explanation": "指计算机模拟人类智能，包括学习、推理和自我修正等功能。"
+        },
+        {
+          "term": "云基础设施",
+          "explanation": "为云计算提供的硬件和软件资源，包括服务器、存储和网络。"
+        },
+        {
+          "term": "杠杆策略",
+          "explanation": "通过借债等融资方式扩大投资规模的策略，增加潜在收益和风险。"
+        },
+        {
+          "term": "OpenAI",
+          "explanation": "一家致力于人工智能研究和推广的美国研究机构，与甲骨文有合作关系。"
+        },
+        {
+          "term": "债券价格",
+          "explanation": "反映债务工具市场价值，价格下跌通常表示投资者对偿付风险的忧虑。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "8点1氪快讯：中国黄金回应未成年试戴赔偿争议，百度芯片研发，白宫批BBC等多项热点",
+      "chinese_brief": "今日焦点包括中国黄金门店发生未成年人试戴金镯被索赔1000元事件，引发公众热议，官方已回应此赔偿争议；宇树发布首款轮式人形机器人，推动机器人技术革新；百度披露两款自研芯片上市节奏，展现中国科技创新实力；银行上调积存金起投门槛影响储户；新规拟要求电池报警5分钟内不得爆炸，提升安全标准；明年起购置税将减半，刺激消费；白宫称特朗普外部团队对BBC提起诉讼，涉及法律纠纷，凸显国际舆论热点。本资讯涵盖科技、金融、安全及国际政治多重领域。",
+      "english_brief": "Today's highlights include a controversy where a minor was asked to pay 1,000 yuan for trying on a gold bracelet at China Gold stores, with an official response addressing the issue; Yusuke launched its first wheeled humanoid robot, advancing robotics innovation; Baidu revealed timelines for two self-developed chips, showcasing China's tech progress; banks raised minimum investment thresholds for accumulated gold savings, affecting customers; new regulations propose battery alarms must not explode within 5 minutes, enhancing safety standards; vehicle purchase tax will be halved next year to boost consumption; and the White House reported that Trump's external team sued the BBC over legal disputes, highlighting international media tensions. This news covers technology, finance, safety, and international politics.",
+      "term_clarifications": [
+        {
+          "term": "中国黄金",
+          "explanation": "中国大型黄金珠宝零售企业，涉及贵金属销售。"
+        },
+        {
+          "term": "宇树机器人",
+          "explanation": "一家中国创新机器人公司，最新推出的轮式
+WARNING | Batch 1 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 0,       "headline": "数据模型成为新产品开发核心，强调算法与数据结构的重要性",       "chinese_brief": "科技爱好者周刊第373期指出，著名计算机科学家兼Pascal语言之父沃尔夫拉姆强调“算法+数据结构=程序”的核心理念，数据模型在新产品设计中扮演关键角色。文章结合甘肃酒泉发掘的大量汉代简牍，展现古代信息记录与现代数据结构的联系，提示技术进步应兼顾数据逻辑的重要性，为软件及AI产品设计提供深刻启示。",       "english_brief": "The 373rd issue of Tech Enthusiasts Weekly highlights the core concept from famous computer scientist and father of Pascal language, Wolfram, stating “Algorithm + Data Structure = Program.” Data models play a cr...)
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "罗浮宫31亿珠宝遭盗 用“Louvre”密码暴露资安管理漏洞",
+      "chinese_brief": "近日，法国罗浮宫发生价值31亿元珠宝失窃案，事后发现保全系统竟使用“Louvre”作为保全密码，此严重疏漏凸显了国际博物馆在信息安全管理上的缺陷。此事件提醒各大机构需加强密码安全和系统防护，防止类似高价值资产被盗事件再次发生，同时反映出现代数字时代传统实体安保管理需结合信息安全技术升级。",
+      "english_brief": "Recently, a 3.1 billion yuan jewelry theft occurred at France's Louvre Museum, and it was revealed that the security system used "Louvre" as the security password. This serious oversight highlights the shortcomings in information security management of international museums. This incident serves as a reminder for institutions to strengthen password security and system protections to prevent such high-value asset thefts and reflects the need for traditional physical security measures to be upgraded with information security technologies in the digital age.",
+      "term_clarifications": [
+        {
+          "term": "罗浮宫",
+          "explanation": "法国著名的艺术博物馆，全球最大且最知名的博物馆之一，收藏丰富的艺术品。"
+        },
+        {
+          "term": "保全密码",
+          "explanation": "指用于保障安全系统，诸如报警器或出入口控制的密码。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "辉达支持澳洲AI新创Firmus两月内再获50亿澳元融资",
+      "chinese_brief": "澳洲人工智能新创Firmus宣布启动新一轮50亿澳元融资，用于加速旗下AI基础设施项目“Project Southgate”，计划在澳洲建设大型AI工厂与数据中心。美国芯片巨头辉达（Nvidia）和澳洲资产管理机构Ellerston Capital持续加持，显示业界对Firmus在AI基础建设领域的长期看好。Firmus或将成为未来潜在的首次公开募股（IPO）候选企业，推动澳洲AI产业发展。",
+      "english_brief": "Australian AI startup Firmus announced a new 5 billion AUD funding round to accelerate its AI infrastructure project 'Project Southgate,' aiming to build large-scale AI factories and data centers across Australia. Supported by US chip giant Nvidia and Australian asset manager Ellerston Capital, the ongoing backing highlights industry confidence in Firmus’ role in AI infrastructure. Firmus is viewed as a potential candidate for a future initial public offering (IPO), driving growth in Australia's AI sector.",
+      "term_clarifications": [
+        {
+          "term": "辉达 (Nvidia)",
+          "explanation": "美国知名图形处理芯片和人工智能计算平台制造商。"
+        },
+        {
+          "term": "Firmus",
+          "explanation": "澳洲一家专注人工智能基础设施的创新初创企业。"
+        },
+        {
+          "term": "Project Southgate",
+          "explanation": "Firmus旗下的AI基础设施项目，计划建设大型AI工厂和数据中心。"
+        },
+        {
+          "term": "首次公开募股（IPO）",
+          "explanation": "公司首次向公众投资者发行股票上市融资的过程。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "前联准会副主席Brainard支持12月降息 警告AI发展带来经济裂痕",
+      "chinese_brief": "美国前联邦储备副主席莱尔·布雷纳德（Lael Brainard）表示支持美联储在12月会议上启动降息措施，但同时警告美国经济面临“AI繁荣下的裂痕”，指的是人工智能带来的财富分配不均和社会经济深层问题。她的观点强调，尽管AI推动经济快速发展，但其潜在的负面影响需被重视以保障经济长期健康与社会公平。",
+      "english_brief": "Former Federal Reserve Vice Chair Lael Brainard supports the Fed's decision to cut interest rates at the December meeting but warns of 'cracks beneath the AI boom' in the US economy, referring to wealth inequality and deeper socio-economic issues arising from AI advancements. She emphasizes that while AI drives rapid economic growth, its potential negative impacts must be addressed to ensure long-term economic health and social equity.",
+      "term_clarifications": [
+        {
+          "term": "联邦储备（Federal Reserve）",
+          "explanation": "美国的中央银行，负责制定货币政策及调控经济。"
+        },
+        {
+          "term": "降息",
+          "explanation": "中央银行降低利率以刺激经济增长的措施。"
+        },
+        {
+          "term": "人工智能（AI）",
+          "explanation": "指计算机系统模拟人类智能完成任务的技术领域。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "韩国市场老闆热议普发1万人民币红包事件",
+      "chinese_brief": "近期一则普发1万元红包的消息在韩国市场引发热烈讨论，一些市场老板对此表示支持和赞赏，但当具体金额被一位女士听到后，反应显得有些尴尬。此事件反映了跨国文化下对现金赠与金额的不同认知与反应，也引发了对普惠政策和消费刺激效果的关注。",
+      "english_brief": "A recent news about the universal distribution of 10,000 RMB red envelopes sparked heated discussions among Korean market vendors, with some expressing support and praise. However, a woman’s somewhat awkward reaction upon hearing the specific amount highlighted cultural differences in perceptions of cash gifting across countries. The event brought attention to inclusive policies and their impact on consumer spending.",
+      "term_clarifications": [
+        {
+          "term": "红包",
+          "explanation": "华人传统中装有现金的红色信封，常用于节日或特殊场合赠送现金礼物。"
+        },
+        {
+          "term": "普发",
+          "explanation": "指普遍发放，一般是政府或机构对所有符合条件人群发放补助或奖励。"
+        }
+      ]
+    }
+  ]
+}
+WARNING | Batch 3 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "罗浮宫31亿珠宝遭盗 用“Louvre”密码暴露资安管理漏洞",       "chinese_brief": "近日，法国罗浮宫发生价值31亿元珠宝失窃案，事后发现保全系统竟使用“Louvre”作为保全密码，此严重疏漏凸显了国际博物馆在信息安全管理上的缺陷。此事件提醒各大机构需加强密码安全和系统防护，防止类似高价值资产被盗事件再次发生，同时反映出现代数字时代传统实体安保管理需结合信息安全技术升级。",       "english_brief": "Recently, a 3.1 billion yuan jewelry theft occurred at France's Louvre Museum, and it was revealed that the security system used "Louvre" as the security password. This serious oversight highlights the shortcoming...)
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=40).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=37537)
+INFO | Saved digest to digests/ai-briefing-2025-11-15_0811.md
+INFO | Sent digest email to 1047962614@qq.com.
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-13T00:00:00.719453+00:00).
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-13T00:11:46.085033+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 20 articles across 5 batches.
+INFO | Completed batch 1/5 (briefings=4).
+ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "六部斯蒂芬·金电影期待翻拍",
+      "chinese_brief": "斯蒂芬·金作品改编电影层出不穷，随着埃德加·赖特的《奔跑者》上映，业内人士和粉丝们开始讨论哪些其他金氏作品可以再次翻拍。重制经典有助于引入现代技术与视角，激发新一代观众的兴趣，推动恐怖和惊悚电影市场的发展。",
+      "english_brief": "Stephen King adaptations are very common, and with Edgar Wright's "Running Man" now in theaters, industry insiders and fans are discussing which other King stories could be remade. Remaking classics allows integrating modern technology and perspectives, attracting new audiences, and boosting the horror and thriller film market.",
+      "term_clarifications": [
+        {
+          "term": "斯蒂芬·金 (Stephen King)",
+          "explanation": "美国著名恐怖和惊悚小说作家，他的作品多次被改编成电影和电视剧。"
+        },
+        {
+          "term": "埃德加·赖特 (Edgar Wright)",
+          "explanation": "英国导演，以其独特的风格著称，最近执导了《奔跑者》电影。"
+        },
+        {
+          "term": "《奔跑者》 (Running Man)",
+          "explanation": "埃德加·赖特执导并改编的基于斯蒂芬·金作品的电影。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "《龙与地下城：盗贼荣耀》钢盒版蓝光即将发售",
+      "chinese_brief": "电影《龙与地下城：盗贼荣耀》作为桌游经典改编作品备受欢迎，即将于2026年1月20日推出钢盒版4K蓝光影碟，供影迷收藏。该版本不仅画质提升，还为桌游及奇幻题材影迷带来更丰富的观影体验，强化了电影文化与游戏文化的融合。",
+      "english_brief": "The movie Dungeons & Dragons: Honor Among Thieves, a popular adaptation of the classic tabletop role-playing game, is set to release its Steelbook 4K Blu-ray edition on January 20, 2026. This version offers enhanced picture quality and provides fans of both film and fantasy gaming a richer viewing experience, strengthening the fusion of film and gaming cultures.",
+      "term_clarifications": [
+        {
+          "term": "龙与地下城 (Dungeons & Dragons)",
+          "explanation": "全球知名的桌面角色扮演游戏系列，拥有庞大粉丝基础和丰富故事背景。"
+        },
+        {
+          "term": "钢盒版 (Steelbook Edition)",
+          "explanation": "一种采用金属盒包装的限量版影碟，具有收藏价值。"
+        },
+        {
+          "term": "4K蓝光 (4K Blu-ray)",
+          "explanation": "支持超高清分辨率（约3840x2160像素）的蓝光光盘格式，画质更清晰。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "《寂静岭f》更新加入新手难度及游戏跳过功能",
+      "chinese_brief": "科乐美与NeoBards Entertainment为恐怖游戏《寂静岭f》推出最新补丁，新增“休闲”难度，降低动作挑战，同时对新游戏+模式加入跳过功能，提升耐力恢复速度。这些改进让不同水平玩家均可更流畅体验游戏剧情与恐怖氛围，显示开发商对玩家多样需求的重视。",
+      "english_brief": "Konami and NeoBards Entertainment released a new patch for the horror game Silent Hill f, adding a Casual difficulty to reduce action challenges, a skip feature for New Game+ mode, and faster stamina recovery. These improvements enable players of all skill levels to enjoy the story and horror atmosphere more smoothly, showing the developers’ attentiveness to diverse player needs.",
+      "term_clarifications": [
+        {
+          "term": "寂静岭f (Silent Hill f)",
+          "explanation": "出自《寂静岭》系列的最新恐怖生存游戏。"
+        },
+        {
+          "term": "科乐美 (Konami)",
+          "explanation": "日本知名游戏开发和发行公司，拥有《寂静岭》等知名品牌。"
+        },
+        {
+          "term": "NeoBards Entertainment",
+          "explanation": "参与《寂静岭f》开发的游戏制作团队。"
+        },
+        {
+          "term": "新游戏+ (New Game+)",
+          "explanation": "游戏中的一个模式，允许玩家完成游戏后以保留某些数据重新开始游戏。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headline": "五条基于知名书籍与电影的经典公路旅行路线",
+      "chinese_brief": "公路旅行作为文学和电影中常见的叙事元素，被赋予深刻的象征意义。本文精选五条灵感源自著名书籍与影视作品的路线，邀请读者亲历故事设定的真实场景，感受冒险与发现的魅力，促进文化旅行与故事体验的结合。",
+      "english_brief": "Road trips are a common narrative element in literature and film, carrying deep symbolic meaning. This article highlights five routes inspired by famous books and movies, inviting readers to experience the real locations behind the stories, and to enjoy the charm of adventure and discovery, promoting cultural travel and storytelling immersion.",
+      "term_clarifications": [
+        {
+          "term": "公路旅行 (Road Trip)",
+          "explanation": "通过汽车或其他陆路交通工具进行的长距离旅行，通常强调旅途过程。"
+        },
+        {
+          "term": "叙事元素 (Narrative Element)",
+          "explanation": "构成故事的基本组成部分，如情节、角色和主题。"
+        },
+        {
+          "term": "文化旅行 (Cultural Travel)",
+          "explanation": "旅行的一种形式，重点体验和探索不同文化和历史背景。"
+        }
+      ]
+    }
+  ]
+}
+WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "六部斯蒂芬·金电影期待翻拍",       "chinese_brief": "斯蒂芬·金作品改编电影层出不穷，随着埃德加·赖特的《奔跑者》上映，业内人士和粉丝们开始讨论哪些其他金氏作品可以再次翻拍。重制经典有助于引入现代技术与视角，激发新一代观众的兴趣，推动恐怖和惊悚电影市场的发展。",       "english_brief": "Stephen King adaptations are very common, and with Edgar Wright's "Running Man" now in theaters, industry insiders and fans are discussing which other King stories could be remade. Remaking classics allows integrating modern technology and perspectives, attracting new au...)
+INFO | Completed batch 2/5 (briefings=8).
+INFO | Completed batch 3/5 (briefings=12).
+INFO | Completed batch 4/5 (briefings=16).
+INFO | Completed batch 5/5 (briefings=20).
+INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=14990)
+INFO | Saved digest to digests/最热影音资讯简报-2025-11-15_0813.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com.
+INFO | Topic run summary: {"started_at": "2025-11-15T00:03:14.082663+00:00", "digest_ids": ["china_economy", "ai", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-15T00:00:00.923562+00:00", "china_economy": "2025-11-15T00:03:14.082663+00:00", "ai": "2025-11-15T00:03:14.082663+00:00", "entertainment": "2025-11-15T00:03:14.082663+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-13T00:03:14.083219+00:00"}, "status": "ok", "total_results": 122, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-13T00:03:14.798505+00:00"}, "status": "ok", "total_results": 259, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-13T00:07:34.981888+00:00"}, "status": "ok", "total_results": 532, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-13T00:07:35.715237+00:00"}, "status": "ok", "total_results": 1587, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-13T00:11:46.085033+00:00"}, "status": "ok", "total_results": 266, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 40325, "output_tokens": 41608, "total_tokens": 81933}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests/中国政经简报-2025-11-15_0807.md", "articles_summarized": 40, "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-11-15_0811.md", "articles_summarized": 40, "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests/最热影音资讯简报-2025-11-15_0813.md", "articles_summarized": 20, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+Wrote headline digest to digests/头条简报-2025-11-15_0803.md
+Wrote 3 topic digests:
+ - digests/中国政经简报-2025-11-15_0807.md
+ - digests/ai-briefing-2025-11-15_0811.md
+ - digests/最热影音资讯简报-2025-11-15_0813.md
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+WARNING | HTTP error fetching top-headlines (attempt 1/3): [Errno 8] nodename nor servname provided, or not known. Retrying in 8 seconds.
+WARNING | HTTP error fetching top-headlines (attempt 2/3): [Errno 8] nodename nor servname provided, or not known. Retrying in 16 seconds.
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/.local/share/uv/python/cpython-3.12.10-macos-aarch64-none/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/main.py", line 36, in <module>
+    main()
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/main.py", line 30, in main
+    run_headlines()
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/headline.py", line 91, in main
+    articles, news_meta = collect_articles(news_queries, last_run_dt)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/digest_utils.py", line 429, in collect_articles
+    articles, meta = fetch_news(params, endpoint=endpoint)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/digest_utils.py", line 362, in fetch_news
+    raise last_error
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/digest_utils.py", line 310, in fetch_news
+    resp = SESSION.get(url, headers={"X-Api-Key": NEWS_API_KEY}, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/.local/share/uv/python/cpython-3.12.10-macos-aarch64-none/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 8] nodename nor servname provided, or not known
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+INFO | Retained 28 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Summarizing 28 articles across 7 batches.
+INFO | Completed batch 1/7 (briefings=4).
+INFO | Completed batch 2/7 (briefings=8).
+INFO | Completed batch 3/7 (briefings=12).
+INFO | Completed batch 4/7 (briefings=16).
+INFO | Completed batch 5/7 (briefings=20).
+INFO | Completed batch 6/7 (briefings=24).
+INFO | Completed batch 7/7 (briefings=28).
+INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=17001)
+INFO | Saved digest to digests/头条简报-2025-11-17_0802.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com, 814022400@qq.com, 1055859108@qq.com.
+INFO | Headline run summary: {"started_at": "2025-11-17T00:00:01.418553+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-15T00:00:00.923562+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 7290, "output_tokens": 9711, "total_tokens": 17001}}, "outputs": {"digest_path": "digests/头条简报-2025-11-17_0802.md", "articles_summarized": 28, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-15T00:03:14.082663+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-15T00:03:14.082663+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 40 articles across 10 batches.
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=40).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=30449)
+INFO | Saved digest to digests/中国政经简报-2025-11-17_0806.md
+INFO | Sent digest email to jiabaozhang098@gmail.com.
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-15T00:03:14.082663+00:00).
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-15T00:06:16.727924+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-15T00:03:14.082663+00:00).
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-15T00:06:17.304065+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 40 articles across 10 batches.
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=40).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=28592)
+INFO | Saved digest to digests/ai-briefing-2025-11-17_0809.md
+INFO | Sent digest email to 1047962614@qq.com.
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-15T00:03:14.082663+00:00).
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-15T00:10:01.088925+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 20 articles across 5 batches.
+INFO | Completed batch 1/5 (briefings=4).
+INFO | Completed batch 2/5 (briefings=8).
+INFO | Completed batch 3/5 (briefings=12).
+INFO | Completed batch 4/5 (briefings=16).
+INFO | Completed batch 5/5 (briefings=20).
+INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=12891)
+INFO | Saved digest to digests/最热影音资讯简报-2025-11-17_0812.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com.
+INFO | Topic run summary: {"started_at": "2025-11-17T00:02:38.717499+00:00", "digest_ids": ["china_economy", "ai", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-17T00:00:01.418553+00:00", "china_economy": "2025-11-17T00:02:38.717499+00:00", "ai": "2025-11-17T00:02:38.717499+00:00", "entertainment": "2025-11-17T00:02:38.717499+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-15T00:03:14.082663+00:00"}, "status": "ok", "total_results": 61, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-15T00:03:14.082663+00:00"}, "status": "ok", "total_results": 129, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-15T00:06:16.727924+00:00"}, "status": "ok", "total_results": 193, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-15T00:06:17.304065+00:00"}, "status": "ok", "total_results": 603, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-15T00:10:01.088925+00:00"}, "status": "ok", "total_results": 128, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 35117, "output_tokens": 36815, "total_tokens": 71932}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests/中国政经简报-2025-11-17_0806.md", "articles_summarized": 40, "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-11-17_0809.md", "articles_summarized": 40, "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests/最热影音资讯简报-2025-11-17_0812.md", "articles_summarized": 20, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+Wrote headline digest to digests/头条简报-2025-11-17_0802.md
+Wrote 3 topic digests:
+ - digests/中国政经简报-2025-11-17_0806.md
+ - digests/ai-briefing-2025-11-17_0809.md
+ - digests/最热影音资讯简报-2025-11-17_0812.md
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+WARNING | HTTP error fetching top-headlines (attempt 1/3): timed out. Retrying in 8 seconds.
+WARNING | HTTP error fetching top-headlines (attempt 2/3): timed out. Retrying in 16 seconds.
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/.local/share/uv/python/cpython-3.12.10-macos-aarch64-none/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/main.py", line 36, in <module>
+    main()
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/main.py", line 30, in main
+    run_headlines()
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/headline.py", line 91, in main
+    articles, news_meta = collect_articles(news_queries, last_run_dt)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/digest_utils.py", line 429, in collect_articles
+    articles, meta = fetch_news(params, endpoint=endpoint)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/digest_utils.py", line 362, in fetch_news
+    raise last_error
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/digest_utils.py", line 310, in fetch_news
+    resp = SESSION.get(url, headers={"X-Api-Key": NEWS_API_KEY}, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/.local/share/uv/python/cpython-3.12.10-macos-aarch64-none/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: timed out
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 25 articles (status=ok, remaining=None)
+INFO | Retained 25 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Summarizing 25 articles across 7 batches.
+INFO | Completed batch 1/7 (briefings=4).
+INFO | Completed batch 2/7 (briefings=8).
+INFO | Completed batch 3/7 (briefings=12).
+INFO | Completed batch 4/7 (briefings=16).
+INFO | Completed batch 5/7 (briefings=20).
+INFO | Completed batch 6/7 (briefings=24).
+INFO | Completed batch 7/7 (briefings=25).
+INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=15532)
+INFO | Saved digest to digests/头条简报-2025-11-19_0802.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com, 814022400@qq.com, 1055859108@qq.com.
+INFO | Headline run summary: {"started_at": "2025-11-19T00:00:01.283269+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-17T00:00:01.418553+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 6563, "output_tokens": 8969, "total_tokens": 15532}}, "outputs": {"digest_path": "digests/头条简报-2025-11-19_0802.md", "articles_summarized": 25, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-17T00:02:38.717499+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-17T00:02:38.717499+00:00'}
+INFO | NewsAPI returned 19 articles (status=ok, remaining=None)
+INFO | Retained 19 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 39 articles across 10 batches.
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=39).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=30312)
+INFO | Saved digest to digests/中国政经简报-2025-11-19_0806.md
+INFO | Sent digest email to jiabaozhang098@gmail.com.
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-17T00:02:38.717499+00:00).
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-17T00:06:07.136081+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-17T00:02:38.717499+00:00).
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-17T00:06:07.725704+00:00'}
+INFO | NewsAPI returned 19 articles (status=ok, remaining=None)
+INFO | Retained 19 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 39 articles across 10 batches.
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=39).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=28717)
+INFO | Saved digest to digests/ai-briefing-2025-11-19_0809.md
+INFO | Sent digest email to 1047962614@qq.com.
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-17T00:02:38.717499+00:00).
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-17T00:09:35.517952+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 20 articles across 5 batches.
+INFO | Completed batch 1/5 (briefings=4).
+ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 4,
+      "headline": "音乐传记电影为何难以完全成功",
+      "chinese_brief": "随着《波希米亚狂想曲》2018年大获成功，音乐传记电影需求激增。然而，这类电影虽然票房和奖项潜力较高，但难以做到真正创新和打动观众。最新的关于布鲁斯·斯普林斯汀的传记片尝试了不同叙事方式，但仍显现出该类型的固有限制，反映出音乐与电影艺术结合的复杂挑战。",
+      "english_brief": "Following the massive success of Bohemian Rhapsody in 2018, demand for music biopics has surged. Although these films often have strong box office and award potential, they struggle to innovate and truly resonate with audiences. The recent Bruce Springsteen biopic tried a different narrative approach but still exposed the inherent limits of the genre, highlighting the complex challenge of effectively blending music and cinematic art.",
+      "term_clarifications": [
+        {
+          "term": "Bohemian Rhapsody",
+          "explanation": "2018年上映的英国传记电影，讲述摇滚乐队皇后乐队及其主唱弗雷迪·墨丘利的生平故事，获得巨大商业成功和多项大奖。"
+        },
+        {
+          "term": "Springsteen: Deliver Me from Nowhere",
+          "explanation": "关于美国摇滚歌手布鲁斯·斯普林斯汀的最新音乐传记电影，尝试以不同手法呈现其生涯故事。"
+        },
+        {
+          "term": "音乐传记电影 (music biopic)",
+          "explanation": "以音乐家或乐队的真实生活为题材拍摄的电影，结合传记和音乐表演元素。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headline": "《勇者斗恶龙》迎来重要突破契机",
+      "chinese_brief": "《勇者斗恶龙》作为东亚地区最受欢迎的游戏系列之一，却未能在西方市场获得同等认可。该系列由史克威尔艾尼克斯旗下发行，常被更为知名的《最终幻想》系列掩盖。随着全球游戏市场多样化，业内认为《勇者斗恶龙》迎来了进入西方主流视野和扩大影响力的关键时刻。",
+      "english_brief": "Dragon Quest is one of the most popular game series in East Asia but has not gained similar recognition in the West. Released under Square Enix, it is often overshadowed by the more famous Final Fantasy series. With the global gaming market diversifying, industry observers believe Dragon Quest is now poised for a major breakthrough in Western mainstream attention and influence.",
+      "term_clarifications": [
+        {
+          "term": "Dragon Quest",
+          "explanation": "日本由史克威尔艾尼克斯推出的经典角色扮演游戏系列，深受东亚玩家喜爱。"
+        },
+        {
+          "term": "Square Enix",
+          "explanation": "日本著名电子游戏公司，发行了《勇者斗恶龙》和《最终幻想》等多款热门游戏。"
+        },
+        {
+          "term": "Final Fantasy",
+          "explanation": "由史克威尔艾尼克斯推出的另一广受欢迎角色扮演游戏系列，全球知名度较《勇者斗恶龙》更高。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headline": "经典节日电影台词测验上线，感受节日氛围",
+      "chinese_brief": "许多经典节日电影中的经典台词陪伴着观众多年，成为节日文化的一部分。最新的测验挑战玩家完成这些著名台词，既传递节日的温情，也考验大家对电影细节的记忆与喜爱，助力营造浓厚的节日气氛。",
+      "english_brief": "Classic holiday movie quotes have become part of holiday culture, cherished by audiences over the years. A new quiz challenges players to finish these famous lines, conveying holiday warmth while testing memory and affection for movie details, helping to create a festive atmosphere.",
+      "term_clarifications": []
+    },
+    {
+      "id": 7,
+      "headline": "揭秘当今最受欢迎35毫米胶卷的色彩科学",
+      "chinese_brief": "胶片摄影因其独特的色彩和颗粒质感而备受推崇。摄影师Pablo Maraver花费一年半时间专注研究14种不同35毫米胶卷的色彩表现，深入揭示了每款胶卷背后的科学原理和视觉“氛围”。此研究为胶片摄影爱好者提供了详细参考，助其选择适合的胶卷以实现理想艺术效果。",
+      "english_brief": "Film photography is highly valued for its unique color and grain texture. Photographer Pablo Maraver dedicated a year and a half to studying the color performance of 14 different 35mm film stocks, revealing the scientific principles and visual "vibe" behind each. This research offers detailed insights to film photography enthusiasts to help select the right film for achieving desired artistic effects.",
+      "term_clarifications": [
+        {
+          "term": "35mm film",
+          "explanation": "传统胶片摄影中使用的一种标准胶卷规格，广泛应用于相机拍摄，因其影像质量和表现力备受欢迎。"
+        },
+        {
+          "term": "Pablo Maraver",
+          "explanation": "知名摄影师，专注于胶片摄影和色彩研究。"
+        },
+        {
+          "term": "vibe",
+          "explanation": "指视觉或感官上的氛围与感觉，尤用于描述摄影作品的独特风格和气质。"
+        }
+      ]
+    }
+  ]
+}
+WARNING | Batch 2 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 4,       "headline": "音乐传记电影为何难以完全成功",       "chinese_brief": "随着《波希米亚狂想曲》2018年大获成功，音乐传记电影需求激增。然而，这类电影虽然票房和奖项潜力较高，但难以做到真正创新和打动观众。最新的关于布鲁斯·斯普林斯汀的传记片尝试了不同叙事方式，但仍显现出该类型的固有限制，反映出音乐与电影艺术结合的复杂挑战。",       "english_brief": "Following the massive success of Bohemian Rhapsody in 2018, demand for music biopics has surged. Although these films often have strong box office and award potential, they struggle to innovate and truly resonate with audiences. The recent Bruce S...)
+INFO | Completed batch 2/5 (briefings=8).
+INFO | Completed batch 3/5 (briefings=12).
+INFO | Completed batch 4/5 (briefings=16).
+INFO | Completed batch 5/5 (briefings=20).
+INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=14870)
+INFO | Saved digest to digests/最热影音资讯简报-2025-11-19_0811.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com.
+INFO | Topic run summary: {"started_at": "2025-11-19T00:02:27.768415+00:00", "digest_ids": ["china_economy", "ai", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-19T00:00:01.283269+00:00", "china_economy": "2025-11-19T00:02:27.768415+00:00", "ai": "2025-11-19T00:02:27.768415+00:00", "entertainment": "2025-11-19T00:02:27.768415+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-17T00:02:38.717499+00:00"}, "status": "ok", "total_results": 94, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-17T00:02:38.717499+00:00"}, "status": "ok", "total_results": 280, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-17T00:06:07.136081+00:00"}, "status": "ok", "total_results": 435, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-17T00:06:07.725704+00:00"}, "status": "ok", "total_results": 1448, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-17T00:09:35.517952+00:00"}, "status": "ok", "total_results": 215, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 36327, "output_tokens": 37572, "total_tokens": 73899}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests/中国政经简报-2025-11-19_0806.md", "articles_summarized": 39, "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-11-19_0809.md", "articles_summarized": 39, "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests/最热影音资讯简报-2025-11-19_0811.md", "articles_summarized": 20, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+Wrote headline digest to digests/头条简报-2025-11-19_0802.md
+Wrote 3 topic digests:
+ - digests/中国政经简报-2025-11-19_0806.md
+ - digests/ai-briefing-2025-11-19_0809.md
+ - digests/最热影音资讯简报-2025-11-19_0811.md
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+INFO | Retained 1 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Summarizing 1 articles across 1 batches.
+INFO | Completed batch 1/1 (briefings=1).
+INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=943)
+INFO | Saved digest to digests/头条简报-2025-11-20_0800.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com, 814022400@qq.com, 1055859108@qq.com.
+INFO | Headline run summary: {"started_at": "2025-11-20T00:00:00.500127+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-19T00:00:01.283269+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 465, "output_tokens": 478, "total_tokens": 943}}, "outputs": {"digest_path": "digests/头条简报-2025-11-20_0800.md", "articles_summarized": 1, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-19T00:02:27.768415+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-19T00:02:27.768415+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'china_economy'; skipping.
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-19T00:02:27.768415+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-19T00:02:27.768415+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'ai'; skipping.
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-19T00:02:27.768415+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'entertainment'; skipping.
+INFO | Topic run summary: {"started_at": "2025-11-20T00:00:19.964365+00:00", "digest_ids": [], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-20T00:00:00.500127+00:00", "china_economy": "2025-11-19T00:02:27.768415+00:00", "ai": "2025-11-19T00:02:27.768415+00:00", "entertainment": "2025-11-19T00:02:27.768415+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-19T00:02:27.768415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-19T00:02:27.768415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-19T00:02:27.768415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-19T00:02:27.768415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-19T00:02:27.768415+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": null, "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": []}
+Wrote headline digest to digests/头条简报-2025-11-20_0800.md
+No topic digests generated.
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | No articles retrieved for headline digest; nothing to summarize.
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-19T00:02:27.768415+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-19T00:02:27.768415+00:00'}
+INFO | NewsAPI returned 19 articles (status=ok, remaining=None)
+INFO | Retained 19 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 39 articles across 10 batches.
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=39).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=29038)
+INFO | Saved digest to digests/中国政经简报-2025-11-21_0804.md
+ERROR | Failed to send digest email: (550, b'The mail may contain inappropriate words or content.')
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/mailer.py", line 100, in send_digest_via_email
+    smtp.send_message(msg, to_addrs=send_to)
+  File "/Users/zhangjiabao/.local/share/uv/python/cpython-3.12.10-macos-aarch64-none/lib/python3.12/smtplib.py", line 975, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/.local/share/uv/python/cpython-3.12.10-macos-aarch64-none/lib/python3.12/smtplib.py", line 897, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (550, b'The mail may contain inappropriate words or content.')
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-19T00:02:27.768415+00:00).
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-19T00:04:26.686669+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-19T00:02:27.768415+00:00).
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-19T00:04:27.312667+00:00'}
+INFO | NewsAPI returned 18 articles (status=ok, remaining=None)
+INFO | Retained 18 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 38 articles across 10 batches.
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=38).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=28155)
+INFO | Saved digest to digests/ai-briefing-2025-11-21_0808.md
+INFO | Sent digest email to 1047962614@qq.com.
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-19T00:02:27.768415+00:00).
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-19T00:08:22.326572+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 20 articles across 5 batches.
+INFO | Completed batch 1/5 (briefings=4).
+INFO | Completed batch 2/5 (briefings=8).
+INFO | Completed batch 3/5 (briefings=12).
+INFO | Completed batch 4/5 (briefings=16).
+INFO | Completed batch 5/5 (briefings=20).
+INFO | OpenAI summarization completed across 5 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=11960)
+INFO | Saved digest to digests/最热影音资讯简报-2025-11-21_0809.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com.
+INFO | Topic run summary: {"started_at": "2025-11-21T00:00:03.650269+00:00", "digest_ids": ["china_economy", "ai", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-20T00:00:00.500127+00:00", "china_economy": "2025-11-21T00:00:03.650269+00:00", "ai": "2025-11-21T00:00:03.650269+00:00", "entertainment": "2025-11-21T00:00:03.650269+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-19T00:02:27.768415+00:00"}, "status": "ok", "total_results": 95, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-19T00:02:27.768415+00:00"}, "status": "ok", "total_results": 331, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-19T00:04:26.686669+00:00"}, "status": "ok", "total_results": 620, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-19T00:04:27.312667+00:00"}, "status": "ok", "total_results": 1841, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-19T00:08:22.326572+00:00"}, "status": "ok", "total_results": 243, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 33391, "output_tokens": 35762, "total_tokens": 69153}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests/中国政经简报-2025-11-21_0804.md", "articles_summarized": 39, "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-11-21_0808.md", "articles_summarized": 38, "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests/最热影音资讯简报-2025-11-21_0809.md", "articles_summarized": 20, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+No new headline articles found.
+Wrote 3 topic digests:
+ - digests/中国政经简报-2025-11-21_0804.md
+ - digests/ai-briefing-2025-11-21_0808.md
+ - digests/最热影音资讯简报-2025-11-21_0809.md
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+INFO | Retained 26 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Summarizing 26 articles across 7 batches.
+INFO | Completed batch 1/7 (briefings=4).
+INFO | Completed batch 2/7 (briefings=8).
+INFO | Completed batch 3/7 (briefings=12).
+INFO | Completed batch 4/7 (briefings=16).
+INFO | Completed batch 5/7 (briefings=20).
+INFO | Completed batch 6/7 (briefings=24).
+INFO | Completed batch 7/7 (briefings=26).
+INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=15280)
+INFO | Saved digest to digests/头条简报-2025-11-22_0802.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com, 814022400@qq.com, 1055859108@qq.com.
+INFO | Headline run summary: {"started_at": "2025-11-22T00:00:01.047618+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-20T00:00:00.500127+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 33, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 6887, "output_tokens": 8393, "total_tokens": 15280}}, "outputs": {"digest_path": "digests/头条简报-2025-11-22_0802.md", "articles_summarized": 26, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-21T00:00:03.650269+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-21T00:00:03.650269+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'china_economy'; skipping.
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-21T00:00:03.650269+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-21T00:00:03.650269+00:00'}
+INFO | NewsAPI returned 3 articles (status=ok, remaining=None)
+INFO | Retained 3 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 3 articles across 1 batches.
+INFO | Completed batch 1/1 (briefings=3).
+INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=1748)
+INFO | Saved digest to digests/ai-briefing-2025-11-22_0803.md
+INFO | Sent digest email to 1047962614@qq.com.
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-21T00:00:03.650269+00:00'}
+INFO | NewsAPI returned 1 articles (status=ok, remaining=None)
+INFO | Retained 1 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 1 articles across 1 batches.
+INFO | Completed batch 1/1 (briefings=1).
+INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=861)
+INFO | Saved digest to digests/最热影音资讯简报-2025-11-22_0803.md
+INFO | Sent digest email to 1047962614@qq.com, longqishao0908@gmail.com, weizhengyi@imnu.edu.cn, qinnanwu@163.com.
+INFO | Topic run summary: {"started_at": "2025-11-22T00:02:46.017803+00:00", "digest_ids": ["ai", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-22T00:00:01.047618+00:00", "china_economy": "2025-11-21T00:00:03.650269+00:00", "ai": "2025-11-22T00:02:46.017803+00:00", "entertainment": "2025-11-22T00:02:46.017803+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-21T00:00:03.650269+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-21T00:00:03.650269+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-21T00:00:03.650269+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-21T00:00:03.650269+00:00"}, "status": "ok", "total_results": 3, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-21T00:00:03.650269+00:00"}, "status": "ok", "total_results": 2, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 1283, "output_tokens": 1326, "total_tokens": 2609}}, "outputs": [{"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-11-22_0803.md", "articles_summarized": 3, "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests/最热影音资讯简报-2025-11-22_0803.md", "articles_summarized": 1, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+Wrote headline digest to digests/头条简报-2025-11-22_0802.md
+Wrote 2 topic digests:
+ - digests/ai-briefing-2025-11-22_0803.md
+ - digests/最热影音资讯简报-2025-11-22_0803.md
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | No articles retrieved for headline digest; nothing to summarize.
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-11-21T00:00:03.650269+00:00).
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-21T00:00:04.061816+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Clamping 'from' for query 1 to 2-day window (was 2025-11-21T00:00:03.650269+00:00).
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-21T00:00:04.475484+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 40 articles across 10 batches.
+INFO | Completed batch 1/10 (briefings=4).
+INFO | Completed batch 2/10 (briefings=8).
+INFO | Completed batch 3/10 (briefings=12).
+INFO | Completed batch 4/10 (briefings=16).
+INFO | Completed batch 5/10 (briefings=20).
+INFO | Completed batch 6/10 (briefings=24).
+INFO | Completed batch 7/10 (briefings=28).
+INFO | Completed batch 8/10 (briefings=32).
+INFO | Completed batch 9/10 (briefings=36).
+INFO | Completed batch 10/10 (briefings=40).
+INFO | OpenAI summarization completed across 10 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=30215)
+INFO | Saved digest to digests/中国政经简报-2025-11-23_0803.md
+ERROR | Failed to send digest email: (550, b'The mail may contain inappropriate words or content.')
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/LLM_Dev/DailyNews/mailer.py", line 100, in send_digest_via_email
+    smtp.send_message(msg, to_addrs=send_to)
+  File "/Users/zhangjiabao/.local/share/uv/python/cpython-3.12.10-macos-aarch64-none/lib/python3.12/smtplib.py", line 975, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/.local/share/uv/python/cpython-3.12.10-macos-aarch64-none/lib/python3.12/smtplib.py", line 897, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (550, b'The mail may contain inappropriate words or content.')
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-22T00:02:46.017803+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-11-22T00:02:46.017803+00:00'}
+INFO | NewsAPI returned 2 articles (status=ok, remaining=None)
+INFO | Retained 2 articles for endpoint=everything, language=en after filtering.
+INFO | Summarizing 2 articles across 1 batches.
+INFO | Completed batch 1/1 (briefings=2).
+INFO | OpenAI summarization completed across 1 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=1273)
+INFO | Saved digest to digests/ai-briefing-2025-11-23_0804.md
+INFO | Sent digest email to 1047962614@qq.com.
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-11-22T00:02:46.017803+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'entertainment'; skipping.
+INFO | Topic run summary: {"started_at": "2025-11-23T00:00:04.061443+00:00", "digest_ids": ["china_economy", "ai"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-22T00:00:01.047618+00:00", "china_economy": "2025-11-23T00:00:04.061443+00:00", "ai": "2025-11-23T00:00:04.061443+00:00", "entertainment": "2025-11-22T00:02:46.017803+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-21T00:00:04.061816+00:00"}, "status": "ok", "total_results": 66, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-21T00:00:04.475484+00:00"}, "status": "ok", "total_results": 254, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-22T00:02:46.017803+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-22T00:02:46.017803+00:00"}, "status": "ok", "total_results": 2, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-11-22T00:02:46.017803+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 15810, "output_tokens": 15678, "total_tokens": 31488}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests/中国政经简报-2025-11-23_0803.md", "articles_summarized": 40, "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-11-23_0804.md", "articles_summarized": 2, "recipients": ["1047962614@qq.com"]}]}
+No new headline articles found.
+Wrote 2 topic digests:
+ - digests/中国政经简报-2025-11-23_0803.md
+ - digests/ai-briefing-2025-11-23_0804.md
