@@ -16551,3 +16551,280 @@ smtplib.SMTPDataError: (550, b'The mail may contain inappropriate words or conte
 2025-11-23 14:50:58,894 | INFO | Sent digest email to 1047962614@qq.com.
 2025-11-23 14:51:00,160 | INFO | Sent digest email to zhangjiabao21@mails.ucas.ac.cn.
 2025-11-23 14:51:00,161 | INFO | Topic run summary: {"started_at": "2025-11-23T06:49:41.479575+00:00", "digest_ids": ["ai"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-11-23T06:01:44.996235+00:00", "china_economy": "2025-11-23T00:00:04.061443+00:00", "ai": "2025-11-23T06:49:41.479575+00:00", "entertainment": "2025-11-22T00:02:46.017803+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-22T06:31:38.750950+00:00"}, "status": "ok", "total_results": 3, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-11-22T06:31:38.750950+00:00"}, "status": "ok", "total_results": 8, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 3504, "output_tokens": 4367, "total_tokens": 7871}}, "outputs": [{"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-11-23_1450.md", "articles_summarized": 11, "recipients": ["1047962614@qq.com", "zhangjiabao21@mails.ucas.ac.cn"]}]}
+2025-11-24 08:00:01,463 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-11-24 08:00:02,417 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-24 08:00:02,418 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-24 08:00:02,418 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-24 08:00:02,706 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-24 08:00:02,706 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-24 08:00:02,706 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-24 08:00:02,962 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-24 08:00:02,962 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-24 08:00:02,962 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-24 08:00:03,320 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-24 08:00:03,320 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-24 08:00:03,320 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-24 08:00:03,628 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-24 08:00:03,628 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-24 08:00:03,628 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-24 08:00:03,884 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-24 08:00:03,885 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-24 08:00:03,885 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-24 08:00:04,141 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-24 08:00:04,141 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-24 08:00:04,141 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-24 08:00:04,399 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-24 08:00:04,399 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-24 08:00:04,399 | INFO | No articles retrieved for headline digest; nothing to summarize.
+2025-11-25 08:00:01,579 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-11-25 08:00:02,605 | INFO | NewsAPI returned 25 articles (status=ok, remaining=None)
+2025-11-25 08:00:02,606 | INFO | Retained 25 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-25 08:00:02,606 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-25 08:00:02,873 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-25 08:00:02,873 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-25 08:00:02,873 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-25 08:00:03,140 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-25 08:00:03,140 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-25 08:00:03,140 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-25 08:00:03,524 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-25 08:00:03,524 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-25 08:00:03,524 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-25 08:00:03,789 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-25 08:00:03,790 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-25 08:00:03,790 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-25 08:00:04,140 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-25 08:00:04,140 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-25 08:00:04,140 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-25 08:00:04,447 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-25 08:00:04,447 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-25 08:00:04,447 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-25 08:00:04,717 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-25 08:00:04,717 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-25 08:00:05,176 | INFO | Summarizing 25 articles across 7 batches.
+2025-11-25 08:00:41,257 | INFO | Completed batch 1/7 (briefings=4).
+2025-11-25 08:01:00,678 | INFO | Completed batch 2/7 (briefings=8).
+2025-11-25 08:01:25,566 | INFO | Completed batch 3/7 (briefings=12).
+2025-11-25 08:01:49,990 | INFO | Completed batch 4/7 (briefings=16).
+2025-11-25 08:02:16,649 | INFO | Completed batch 5/7 (briefings=20).
+2025-11-25 08:02:40,924 | INFO | Completed batch 6/7 (briefings=24).
+2025-11-25 08:02:49,921 | INFO | Completed batch 7/7 (briefings=25).
+2025-11-25 08:02:49,921 | INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=15674)
+2025-11-25 08:02:49,925 | INFO | Saved digest to digests/头条简报-2025-11-25_0802.md
+2025-11-25 08:02:51,599 | INFO | Sent digest email to 1047962614@qq.com.
+2025-11-25 08:02:53,041 | INFO | Sent digest email to longqishao0908@gmail.com.
+2025-11-25 08:02:54,575 | INFO | Sent digest email to weizhengyi@imnu.edu.cn.
+2025-11-25 08:02:55,730 | INFO | Sent digest email to qinnanwu@163.com.
+2025-11-25 08:02:56,829 | INFO | Sent digest email to 814022400@qq.com.
+2025-11-25 08:02:58,058 | INFO | Sent digest email to 1055859108@qq.com.
+2025-11-25 08:02:58,061 | INFO | Headline run summary: {"started_at": "2025-11-25T00:00:01.578696+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-23T00:00:00.996235+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 6721, "output_tokens": 8953, "total_tokens": 15674}}, "outputs": {"digest_path": "digests/头条简报-2025-11-25_0802.md", "articles_summarized": 25, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+2025-11-26 08:00:01,111 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-11-26 08:00:02,108 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-11-26 08:00:02,108 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-26 08:00:02,108 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-26 08:00:02,514 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-26 08:00:02,514 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-26 08:00:02,514 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-26 08:00:02,768 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-26 08:00:02,768 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-26 08:00:02,768 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-26 08:00:03,024 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-26 08:00:03,025 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-26 08:00:03,025 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-26 08:00:03,307 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-26 08:00:03,308 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-26 08:00:03,308 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-26 08:00:03,564 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-26 08:00:03,564 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-26 08:00:03,564 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-26 08:00:03,847 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-26 08:00:03,848 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-26 08:00:03,848 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-26 08:00:04,153 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-26 08:00:04,153 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-26 08:00:04,153 | INFO | No articles retrieved for headline digest; nothing to summarize.
+2025-11-27 08:00:01,326 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-11-27 08:00:02,215 | INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+2025-11-27 08:00:02,215 | INFO | Retained 28 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-27 08:00:02,215 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-27 08:00:02,479 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-27 08:00:02,479 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-27 08:00:02,479 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-27 08:00:02,974 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-27 08:00:02,974 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-27 08:00:02,974 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-27 08:00:03,233 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-27 08:00:03,234 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-27 08:00:03,234 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-27 08:00:03,496 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-27 08:00:03,497 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-27 08:00:03,497 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-27 08:00:03,760 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-27 08:00:03,760 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-27 08:00:03,760 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-27 08:00:04,021 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-27 08:00:04,022 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-27 08:00:04,022 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-27 08:00:04,285 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-27 08:00:04,286 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-27 08:00:04,734 | INFO | Summarizing 28 articles across 7 batches.
+2025-11-27 08:00:36,596 | INFO | Completed batch 1/7 (briefings=4).
+2025-11-27 08:01:25,011 | INFO | Completed batch 2/7 (briefings=8).
+2025-11-27 08:02:01,092 | ERROR | Failed to parse model output as JSON: {
+  "briefings": [
+    {
+      "id": 8,
+      "headline": "谢杜尔·桑德斯成布朗队自1999年以来第42位首发四分卫",
+      "chinese_brief": "谢杜尔·桑德斯是自克利夫兰布朗队1999年复出以来，第42位担任首发四分卫的球员。尽管他身穿12号球衣，但成为这一名次显示出球队在该位置上的频繁更替。评论员特里·普卢托希望桑德斯能够成为球队首席四分卫，带领布朗队实现突破。",
+      "english_brief": "Shedeur Sanders became the 42nd starting quarterback for the Cleveland Browns since the franchise's return in 1999. Despite wearing the number 12 jersey, his being counted as the 42nd starter highlights the team's frequent changes in that position. Commentator Terry Pluto hopes Sanders can become the leading quarterback and help the Browns achieve success.",
+      "term_clarifications": [
+        {
+          "term": "Shedeur Sanders",
+          "explanation": "谢杜尔·桑德斯，NFL克利夫兰布朗队的四分卫，球队核心球员之一。"
+        },
+        {
+          "term": "Cleveland Browns",
+          "explanation": "克利夫兰布朗队，美国职业橄榄球大联盟（NFL）的球队，1999年复出。"
+        },
+        {
+          "term": "Quarterback (QB)",
+          "explanation": "四分卫，橄榄球中负责传球和指挥进攻的关键位置。"
+        },
+        {
+          "term": "Terry Pluto",
+          "explanation": "特里·普卢托，美国体育记者和评论员。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headline": "杰克森·史密斯-恩吉巴可能是NFL最杰出的球员",
+      "chinese_brief": "随着NFL常规赛接近三分之二，季后赛形势愈发明朗，西雅图海鹰队的接球手杰克森·史密斯-恩吉巴展现出极强竞争力。虽然接球手从未赢得过最有价值球员(MVP)奖，但他的表现无可否认地优于其他选手。同时，绿湾包装工队的防守表现稳健，而密歇根大学四分卫J.J.麦卡锡则面临压力。",
+      "english_brief": "As the NFL regular season nears two-thirds completion and playoff picture becomes clearer, Seattle Seahawks receiver Jaxon Smith-Njigba has demonstrated strong competitiveness. Although no receiver has won the Most Valuable Player (MVP) award, his performance is undeniably superior. Meanwhile, the Green Bay Packers show strong defense, and Michigan quarterback J.J. McCarthy is struggling.",
+      "term_clarifications": [
+        {
+          "term": "Jaxon Smith-Njigba",
+          "explanation": "杰克森·史密斯-恩吉巴，NFL西雅图海鹰队的接球手，表现突出。"
+        },
+        {
+          "term": "Seattle Seahawks",
+          "explanation": "西雅图海鹰队，美国职业橄榄球大联盟（NFL）球队。"
+        },
+        {
+          "term": "Most Valuable Player (MVP)",
+          "explanation": "最有价值球员奖，授予表现最出色的运动员。"
+        },
+        {
+          "term": "Green Bay Packers",
+          "explanation": "绿湾包装工队，NFL历史悠久的球队，以坚固防守著称。"
+        },
+        {
+          "term": "J.J. McCarthy",
+          "explanation": "J.J.麦卡锡，密歇根大学四分卫，被视为球队重要球员。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headline": "特朗普推崇火鸡价格下降 同时赦免“Gobble”和“Waddle”",
+      "chinese_brief": "尽管零售火鸡价格有所下降，但食品总体价格仍较高，成为选民关注的主要经济问题。特朗普借此强调生活成本问题，并在感恩节赦免两只象征火鸡“Gobble”和“Waddle”，这一传统动作旨在缓解公众压力并吸引选民支持。在通胀背景下，这反映出美国政治中围绕经济负担的持续纠葛。",
+      "english_brief": "Although retail turkey prices have dropped, overall food prices remain elevated, which is a major concern for voters. Trump highlighted the cost of living issues and pardoned two symbolic turkeys, "Gobble" and "Waddle," as part of a Thanksgiving tradition aimed at easing public pressure and appealing to voters. Against the backdrop of inflation, this reflects ongoing political struggles in the U.S. over economic burdens.",
+      "term_clarifications": [
+        {
+          "term": "Gobble & Waddle",
+          "explanation": "“Gobble”和“Waddle”是美国感恩节被赦免的象征性火鸡，代表总统每年感恩节传统中的赦免仪式。"
+        },
+        {
+          "term": "turkey prices",
+          "explanation": "火鸡价格，反映感恩节期间食品价格波动。"
+        },
+        {
+          "term": "cost of living",
+          "explanation": "生活成本，指日常生活所需支出的总费用。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headline": "皮特·赫格塞思针对马克·凯利的调侃引发激烈社交媒体反响",
+      "chinese_brief": "美国国防部长皮特·赫格塞思在五角大楼宣布调查亚利桑那州民主党参议员马克·凯利后，对其公开调侃，引发社交媒体上激烈争论。部分前军人群体称赫格塞思为“吹牛者”、“彻头彻尾的混蛋”和“彻底的蓝色叛徒”，反映出军政界对该事件的强烈分歧和批评。",
+      "english_brief": "U.S. Defense Secretary Pete Hegseth openly mocked Arizona Democratic Senator Mark Kelly after the Pentagon announced an investigation into Kelly, sparking intense debate on social media. Some former military members called Hegseth a “blowhard,” “complete jackass,” and “total blue falcon,” highlighting strong divisions and criticism within military and political circles regarding the incident.",
+      "term_clarifications": [
+        {
+          "term": "Pete Hegseth",
+          "explanation": "皮特·赫格塞思，美国国防部长，前军人和政治人物。"
+        },
+        {
+          "term": "Mark Kelly",
+          "explanation": "马克·凯利，美国亚利桑那州民主党参议员，前宇航员。"
+        },
+        {
+          "term": "Pentagon",
+          "explanation": "五角大楼，美国国防部所在地，代表美国军事最高机构。"
+        },
+        {
+          "term": "blue falcon",
+          "explanation": "军事俚语，指背叛同袍的人，类似“间谍”或“告密者”的负面称呼。"
+        }
+      ]
+    }
+  ]
+}
+2025-11-27 08:02:01,093 | WARNING | Batch 3 attempt 1 produced invalid JSON (snippet={   "briefings": [     {       "id": 8,       "headline": "谢杜尔·桑德斯成布朗队自1999年以来第42位首发四分卫",       "chinese_brief": "谢杜尔·桑德斯是自克利夫兰布朗队1999年复出以来，第42位担任首发四分卫的球员。尽管他身穿12号球衣，但成为这一名次显示出球队在该位置上的频繁更替。评论员特里·普卢托希望桑德斯能够成为球队首席四分卫，带领布朗队实现突破。",       "english_brief": "Shedeur Sanders became the 42nd starting quarterback for the Cleveland Browns since the franchise's return in 1999. Despite wearing the number 12 jersey, his being counted as the 42nd starter highlights the team's frequent changes in that position....)
+2025-11-27 08:02:23,620 | INFO | Completed batch 3/7 (briefings=12).
+2025-11-27 08:02:54,150 | INFO | Completed batch 4/7 (briefings=16).
+2025-11-27 08:03:27,395 | INFO | Completed batch 5/7 (briefings=20).
+2025-11-27 08:03:52,107 | INFO | Completed batch 6/7 (briefings=24).
+2025-11-27 08:04:22,040 | INFO | Completed batch 7/7 (briefings=28).
+2025-11-27 08:04:22,040 | INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=19809)
+2025-11-27 08:04:22,044 | INFO | Saved digest to digests/头条简报-2025-11-27_0804.md
+2025-11-27 08:04:23,642 | INFO | Sent digest email to 1047962614@qq.com.
+2025-11-27 08:04:25,171 | INFO | Sent digest email to longqishao0908@gmail.com.
+2025-11-27 08:04:26,882 | INFO | Sent digest email to weizhengyi@imnu.edu.cn.
+2025-11-27 08:04:29,296 | INFO | Sent digest email to qinnanwu@163.com.
+2025-11-27 08:04:31,004 | INFO | Sent digest email to 814022400@qq.com.
+2025-11-27 08:04:32,626 | INFO | Sent digest email to 1055859108@qq.com.
+2025-11-27 08:04:32,630 | INFO | Headline run summary: {"started_at": "2025-11-27T00:00:01.325528+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-25T00:00:01.578696+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 8554, "output_tokens": 11255, "total_tokens": 19809}}, "outputs": {"digest_path": "digests/头条简报-2025-11-27_0804.md", "articles_summarized": 28, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+2025-11-28 08:00:01,489 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-11-28 08:00:10,566 | WARNING | HTTP error fetching top-headlines (attempt 1/3): [Errno 54] Connection reset by peer. Retrying in 8 seconds.
+2025-11-28 08:00:19,987 | WARNING | HTTP error fetching top-headlines (attempt 2/3): [Errno 54] Connection reset by peer. Retrying in 16 seconds.
+2025-11-29 08:00:01,133 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-11-29 08:00:01,757 | INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+2025-11-29 08:00:01,757 | INFO | Retained 26 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-29 08:00:01,757 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-11-29 08:00:01,996 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-29 08:00:01,997 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-29 08:00:01,997 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-11-29 08:00:02,241 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-29 08:00:02,241 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-29 08:00:02,241 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-11-29 08:00:02,520 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-29 08:00:02,520 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-29 08:00:02,520 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-11-29 08:00:02,749 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-29 08:00:02,750 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-29 08:00:02,750 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-11-29 08:00:03,044 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-29 08:00:03,045 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-29 08:00:03,045 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-11-29 08:00:03,273 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-29 08:00:03,273 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-29 08:00:03,273 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-11-29 08:00:03,571 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-11-29 08:00:03,571 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-11-29 08:00:04,100 | INFO | Summarizing 26 articles across 7 batches.
+2025-11-29 08:00:25,814 | INFO | Completed batch 1/7 (briefings=4).
+2025-11-29 08:00:44,759 | INFO | Completed batch 2/7 (briefings=8).
+2025-11-29 08:01:09,640 | INFO | Completed batch 3/7 (briefings=12).
+2025-11-29 08:01:30,969 | INFO | Completed batch 4/7 (briefings=16).
+2025-11-29 08:01:56,291 | INFO | Completed batch 5/7 (briefings=20).
+2025-11-29 08:02:13,978 | INFO | Completed batch 6/7 (briefings=24).
+2025-11-29 08:02:27,799 | INFO | Completed batch 7/7 (briefings=26).
+2025-11-29 08:02:27,800 | INFO | OpenAI summarization completed across 7 batches (model=gpt-4.1-mini-2025-04-14, total_tokens=15499)
+2025-11-29 08:02:27,803 | INFO | Saved digest to digests/头条简报-2025-11-29_0802.md
+2025-11-29 08:02:29,590 | INFO | Sent digest email to 1047962614@qq.com.
+2025-11-29 08:02:31,088 | INFO | Sent digest email to longqishao0908@gmail.com.
+2025-11-29 08:02:32,569 | INFO | Sent digest email to weizhengyi@imnu.edu.cn.
+2025-11-29 08:02:34,091 | INFO | Sent digest email to qinnanwu@163.com.
+2025-11-29 08:02:35,420 | INFO | Sent digest email to 814022400@qq.com.
+2025-11-29 08:02:36,950 | INFO | Sent digest email to 1055859108@qq.com.
+2025-11-29 08:02:36,954 | INFO | Headline run summary: {"started_at": "2025-11-29T00:00:01.131352+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-11-27T00:00:01.325528+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "gpt-4.1-mini-2025-04-14", "input_tokens": 6681, "output_tokens": 8818, "total_tokens": 15499}}, "outputs": {"digest_path": "digests/头条简报-2025-11-29_0802.md", "articles_summarized": 26, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
