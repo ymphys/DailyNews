@@ -274,3 +274,813 @@
 2025-12-05 14:08:45,802 | INFO | Saved digest to digests/ai-briefing-2025-12-05_1408.md
 2025-12-05 14:08:47,105 | INFO | Sent digest email to jiabaozhang098@gmail.com.
 2025-12-05 14:08:47,109 | INFO | Topic run summary: {"started_at": "2025-12-05T06:05:01.019180+00:00", "digest_ids": ["ai"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-12-03T00:13:39.556279+00:00", "china_economy": "2025-12-05T00:28:27.247866+00:00", "ai": "2025-12-05T06:05:01.019180+00:00", "entertainment": "2025-12-05T00:28:27.247866+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-03T06:05:01.020619+00:00"}, "status": "ok", "total_results": 870, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-03T06:05:01.728114+00:00"}, "status": "ok", "total_results": 1554, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 13883, "output_tokens": 14558, "total_tokens": 28441}}, "outputs": [{"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-12-05_1408.md", "articles_summarized": 39, "recipients": ["jiabaozhang098@gmail.com"]}]}
+2025-12-05 22:02:48,208 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-05 22:02:48,902 | INFO | NewsAPI returned 29 articles (status=ok, remaining=None)
+2025-12-05 22:02:48,903 | INFO | Retained 29 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-05 22:02:48,903 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-05 22:02:49,152 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-05 22:02:49,152 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-05 22:02:49,152 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-05 22:02:49,402 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-05 22:02:49,402 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-05 22:02:49,402 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-05 22:02:49,652 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-05 22:02:49,652 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-05 22:02:49,652 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-05 22:02:49,906 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-05 22:02:49,906 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-05 22:02:49,906 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-05 22:02:50,158 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-05 22:02:50,158 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-05 22:02:50,158 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-05 22:02:50,409 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-05 22:02:50,409 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-05 22:02:50,409 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-05 22:02:50,658 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-05 22:02:50,659 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-05 22:02:50,864 | INFO | Summarizing 29 articles across 8 batches.
+2025-12-05 22:03:49,889 | INFO | Completed batch 1/8 (briefings=4).
+2025-12-05 22:04:55,063 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 4,
+            "headline": "FBI Makes First Arrest in 2021 D.C. Pipe Bomb Case",
+            "key_takeaways": [
+                "The FBI has arrested a suspect linked to pipe bombs placed outside both major U.S. political party headquarters on January 5, 2021.",
+                "The devices were discovered the night before the January 6th Capitol riot, raising questions about potential coordination.",
+                "This marks the first arrest in a case that has been under investigation for nearly five years."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "FBI",
+                    "explanation": "Federal Bureau of Investigation; the primary federal law enforcement and domestic intelligence agency of the United States."
+                },
+                {
+                    "term": "RNC",
+                    "explanation": "Republican National Committee; the formal organization for the Republican Party in the United States."
+                },
+                {
+                    "term": "DNC",
+                    "explanation": "Democratic National Committee; the formal governing body for the United States Democratic Party."
+                },
+                {
+                    "term": "Jan. 6, 2021, Capitol riot",
+                    "explanation": "A violent attack on the U.S. Capitol building in Washington, D.C., by a mob seeking to overturn the 2020 presidential election results."
+                }
+            ],
+            "english_brief": "Federal authorities have made a significant breakthrough in a long-running investigation, arresting a man suspected of placing two pipe bombs outside the Democratic and Republican National Committee headquarters in Washington, D.C., on January 5, 2021. The devices, which did not detonate, were discovered the night before the violent assault on the U.S. Capitol, creating a parallel thread of potential premeditated violence surrounding that day's events. This arrest, coming nearly five years later, could provide critical insights into whether the bomb placements were connected to the broader January 6th activities and represents a major step in resolving one of the most prominent unanswered questions from that period.",
+            "chinese_brief": "美国联邦调查局（FBI）在一项长期调查中取得重大突破，逮捕了一名涉嫌于2021年1月5日在华盛顿特区民主党与共和党全国委员会总部外放置两个管道炸弹的男子。这些未引爆的装置是在1月6日美国国会大厦遭暴力冲击的前夜被发现的，为当日事件增添了另一条潜在的、有预谋的暴力线索。此次逮捕发生在近五年后，可能为厘清炸弹放置是否与更广泛的1月6日活动存在关联提供关键信息，标志着解决该时期最突出的悬案之一迈出了重要一步。"
+        },
+        {
+            "id": 5,
+            "headline": "Apollo Economist Outlines Top Five Market Risks for 2026",
+            "key_takeaways": [
+                "Apollo Global Management's chief economist warns of five potential downside scenarios for the global economy and markets in 2026.",
+                "Key risks include U.S. economic re-acceleration reigniting inflation and potential policy missteps by the Federal Reserve.",
+                "The analysis serves as a cautionary outlook for investors amid current economic uncertainty."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Apollo Global Management",
+                    "explanation": "A leading global alternative investment management firm, known for its credit, private equity, and real estate investments."
+                },
+                {
+                    "term": "Macro",
+                    "explanation": "Short for 'macroeconomics'; refers to the study of large-scale economic factors like national productivity, inflation, and unemployment."
+                },
+                {
+                    "term": "SPY:NYSEARCA",
+                    "explanation": "The ticker symbol for the SPDR S&P 500 ETF Trust, an exchange-traded fund that tracks the S&P 500 index, traded on the NYSE Arca exchange."
+                },
+                {
+                    "term": "Federal Reserve",
+                    "explanation": "The central banking system of the United States, responsible for monetary policy, regulating banks, and maintaining financial stability."
+                }
+            ],
+            "english_brief": "Torsten Slok, chief economist at investment giant Apollo Global Management, has identified five primary macroeconomic and market risks that could materialize in 2026, presenting a cautious counter-narrative to prevailing optimism. The scenarios include the U.S. economy re-accelerating and reigniting inflationary pressures, which could force the Federal Reserve into a policy bind, as well as other potential shocks to financial stability. This outlook, coming from a major market participant, highlights the fragile balance central banks and governments must maintain and underscores the persistent uncertainty facing global markets as they look beyond the immediate horizon.",
+            "chinese_brief": "投资巨头阿波罗全球管理公司首席经济学家托斯滕·斯洛克指出了2026年可能出现的五大主要宏观经济与市场风险，为当前普遍的乐观情绪提供了一个谨慎的反向叙事。这些情景包括美国经济重新加速并再次点燃通胀压力，这可能使美联储陷入政策困境，以及其他可能冲击金融稳定的潜在因素。这一来自主要市场参与者的展望，凸显了各国央行和政府必须维持的脆弱平衡，并强调了全球市场在展望未来时所面临的持续不确定性。"
+        },
+        {
+            "id": 6,
+            "headline": "U.S. Debt Servicing Costs Exceed $10 Billion Weekly in New Fiscal Year",
+            "key_takeaways": [
+                "The U.S. government is already spending over $10 billion per week on interest payments for the national debt, just months into fiscal year 2026.",
+                "Annual interest payments are on track to surpass $1 trillion, a historic and burdensome level for the federal budget.",
+                "Projected annual tariff revenues of $300-$400 billion would cover only a fraction of these massive interest costs."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Fiscal Year",
+                    "explanation": "A government's accounting period for budgeting and spending. The U.S. federal fiscal year runs from October 1 to September 30."
+                },
+                {
+                    "term": "National Debt",
+                    "explanation": "The total amount of money that the federal government has borrowed and not yet repaid."
+                },
+                {
+                    "term": "Debt Servicing",
+                    "explanation": "The cash required to cover the interest payments and principal repayments on outstanding debt."
+                },
+                {
+                    "term": "Tariffs",
+                    "explanation": "Taxes imposed by a government on imported goods, used to generate revenue and/or protect domestic industries."
+                }
+            ],
+            "english_brief": "The U.S. Treasury's burden of servicing the national debt has reached a staggering pace early in the 2026 fiscal year, with weekly interest payments exceeding $10 billion. This puts the country on course for another year of interest costs surpassing $1 trillion, a level that consumes a growing and substantial portion of federal revenues. The article notes that even significant projected annual revenues from tariffs—estimated between $300 and $400 billion—would offset only a minority share of this expense, highlighting the structural budget pressure created by high debt levels and interest rates. This escalating cost risks crowding out spending on other national priorities.",
+            "chinese_brief": "美国国债的利息偿付负担在2026财年初就已达到惊人速度，每周利息支付超过100亿美元。这使得美国利息成本连续第二年超过万亿美元，消耗了联邦收入中越来越大且可观的份额。文章指出，即使预计每年能获得3000至4000亿美元的关税收入，也仅能抵消这笔开支的一小部分，凸显了高债务水平和高利率造成的结构性预算压力。这种不断上升的成本可能会挤占其他国家重点项目的支出。"
+        },
+        {
+            "id": 7,
+            "headline": "Trump's Pardon List Includes Dozens of Lawmakers, Extending Beyond Cuellar",
+            "key_takeaways": [
+                "Former President Donald Trump has granted pardons to approximately a dozen current and former members of Congress.",
+                "The recipients span both political parties, though the vast majority are former lawmakers.",
+                "This practice of pardoning political figures contrasts with Trump's frequent accusations of criminality against his political opponents."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Pardon",
+                    "explanation": "An executive action that forgives a person for a federal crime and removes any penalties or disabilities arising from conviction."
+                },
+                {
+                    "term": "Henry Cuellar",
+                    "explanation": "A Democratic U.S. Representative from Texas who was recently convicted on federal corruption charges and subsequently pardoned by Trump."
+                },
+                {
+                    "term": "Lawmaker",
+                    "explanation": "A person who makes laws; a legislator, such as a member of the U.S. Congress (Senator or Representative)."
+                }
+            ],
+            "english_brief": "Former President Donald Trump's use of presidential pardon power has extended to a significant number of political figures, with reports indicating about a dozen current and former members of Congress have received clemency. While the list is bipartisan, it is predominantly composed of former lawmakers. This pattern of absolving political allies and figures from legal consequences stands in stark contrast to Trump's consistent rhetoric accusing his prominent political foes of criminal activity. The pardons, particularly for individuals like recently convicted Democrat Henry Cuellar, raise questions about the application of justice and the precedent it sets for accountability among elected officials.",
+            "chinese_brief": "美国前总统唐
+2025-12-05 22:04:55,064 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 4,             "headline": "FBI Makes First Arrest in 2021 D.C. Pipe Bomb Case",             "key_takeaways": [                 "The FBI has arrested a suspect linked to pipe bombs placed outside both major U.S. political party headquarters on January 5, 2021.",                 "The devices were discovered the night before the January 6th Capitol riot, raising questions about potential coordination.",                 "This marks the first ...)
+2025-12-05 22:06:00,230 | INFO | Completed batch 2/8 (briefings=8).
+2025-12-05 22:07:03,158 | INFO | Completed batch 3/8 (briefings=12).
+2025-12-05 22:08:03,550 | INFO | Completed batch 4/8 (briefings=16).
+2025-12-05 22:09:03,015 | INFO | Completed batch 5/8 (briefings=20).
+2025-12-05 22:09:57,363 | INFO | Completed batch 6/8 (briefings=24).
+2025-12-05 22:11:00,119 | INFO | Completed batch 7/8 (briefings=28).
+2025-12-05 22:11:18,553 | INFO | Completed batch 8/8 (briefings=29).
+2025-12-05 22:11:18,553 | INFO | LLM summarization completed across 8 batches (model=deepseek-chat, total_tokens=None)
+2025-12-05 22:11:18,555 | INFO | Saved digest to digests/头条简报-2025-12-05_2211.md
+2025-12-05 22:11:19,869 | INFO | Sent digest email to 1047962614@qq.com.
+2025-12-05 22:11:19,871 | INFO | Headline run summary: {"started_at": "2025-12-05T14:02:48.207943+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-12-03T00:13:39.556279+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 35, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "deepseek-chat", "input_tokens": null, "output_tokens": null, "total_tokens": null}}, "outputs": {"digest_path": "digests/头条简报-2025-12-05_2211.md", "articles_summarized": 29, "recipients": ["1047962614@qq.com"]}}
+2025-12-05 22:29:18,826 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-04T06:05:01.019180+00:00'}
+2025-12-05 22:29:19,541 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-05 22:29:19,541 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-12-05 22:29:19,541 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-04T06:05:01.019180+00:00'}
+2025-12-05 22:29:19,848 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-05 22:29:19,848 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-12-05 22:29:20,028 | INFO | Summarizing 40 articles across 10 batches.
+2025-12-05 22:30:26,945 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 0,
+            "headline": "Meta 考虑大幅削减元宇宙项目预算，或导致裁员",
+            "key_takeaways": [
+                "Meta is reportedly considering cutting its metaverse division's budget by up to 30% next year.",
+                "The cuts could lead to layoffs starting as early as January.",
+                "This represents a significant strategic shift for a project that was central to the company's rebranding from Facebook.",
+                "The company is shifting more resources towards artificial intelligence (AI) initiatives."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Meta",
+                    "explanation": "Formerly known as Facebook, Inc., Meta Platforms, Inc. is a technology conglomerate focusing on social media, virtual reality, and related technologies."
+                },
+                {
+                    "term": "Metaverse",
+                    "explanation": "A collective virtual shared space, created by the convergence of virtually enhanced physical and digital reality, often accessed via VR/AR headsets."
+                },
+                {
+                    "term": "Meta Horizon Worlds",
+                    "explanation": "Meta's flagship social VR platform where users can interact, play games, and create content in a virtual environment."
+                },
+                {
+                    "term": "Quest",
+                    "explanation": "Meta's brand of virtual reality headsets, such as the Quest series, which are the primary hardware for accessing its metaverse platforms."
+                },
+                {
+                    "term": "Reality Labs",
+                    "explanation": "The division within Meta responsible for developing metaverse-related technologies, including VR/AR hardware and software."
+                }
+            ],
+            "english_brief": "Meta is preparing for a major strategic pivot, with reports indicating plans to cut the budget for its Reality Labs (metaverse) division by up to 30% next year. This potential reduction, discussed in recent leadership meetings, could trigger layoffs starting in January. The move signals a retreat from the ambitious \"metaverse-first\" vision that prompted the company's 2021 rebranding, as Meta faces investor pressure over the division's significant financial losses. Resources are increasingly being redirected towards the company's growing artificial intelligence (AI) efforts, marking a notable shift in corporate priorities.",
+            "chinese_brief": "据报道，Meta正计划对其元宇宙部门（Reality Labs）进行重大战略调整，考虑在明年削减高达30%的预算。这一潜在削减源于近期的领导层预算会议，并可能导致从明年1月开始裁员。此举标志着该公司正从其2021年更名时所推崇的雄心勃勃的“元宇宙优先”愿景后撤。面对该部门持续巨额亏损带来的投资者压力，Meta正将更多资源转向其日益增长的人工智能（AI）项目，这标志着公司战略重点的显著转变。"
+        },
+        {
+            "id": 1,
+            "headline": "美国两党议员提出法案，旨在阻止放宽对华AI芯片出口限制",
+            "key_takeaways": [
+                "A bipartisan group of U.S. senators introduced the \"SAFE CHIPS Act\" on December 4th.",
+                "The bill aims to block potential efforts by the Trump administration to ease restrictions on AI chip exports to China over the next 2.5 years.",
+                "Notable China hawk Senator Tom Cotton has expressed support for the legislation.",
+                "The move reflects ongoing bipartisan concerns in Congress about China's access to advanced semiconductor technology."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "SAFE CHIPS Act",
+                    "explanation": "An acronym for a proposed U.S. bill, likely standing for a title like 'Safeguarding American Fabricated Electronics and Critical Hardware Intellectual Property Security Act' or similar, aimed at maintaining strict controls on semiconductor exports."
+                },
+                {
+                    "term": "AI Chip",
+                    "explanation": "A specialized semiconductor designed to efficiently process artificial intelligence workloads, such as training and running large language models. They are considered critical for both economic and national security."
+                },
+                {
+                    "term": "Tom Cotton",
+                    "explanation": "A Republican U.S. Senator from Arkansas known for his hardline stance on U.S.-China relations and national security issues."
+                },
+                {
+                    "term": "Bipartisan",
+                    "explanation": "Involving cooperation, agreement, or compromise between two major political parties, in this context, the U.S. Democratic and Republican parties."
+                }
+            ],
+            "english_brief": "In a move highlighting sustained congressional wariness, a bipartisan group of U.S. senators introduced the \"SAFE CHIPS Act\" on December 4th. The legislation seeks to prevent any potential relaxation of current U.S. export controls on advanced artificial intelligence (AI) semiconductors destined for China during the next presidential term. Supported by prominent China hawk Senator Tom Cotton, the bill represents a proactive effort by lawmakers to lock in stringent technology transfer policies, irrespective of potential shifts in executive branch approach. This action underscores the deep-seated and cross-party concerns in Washington regarding China's access to cutting-edge chips deemed vital for economic and military competitiveness.",
+            "chinese_brief": "12月4日，美国一群两党参议员提出了“SAFE CHIPS法案”。该法案旨在阻止特朗普政府在未来两年半内（即下一个总统任期内）可能放宽对中国出口先进人工智能（AI）芯片的限制。著名的对华强硬派参议员汤姆·科顿对此表示支持。此举反映了国会两党议员持续存在的担忧，他们希望锁定严格的技术出口政策，以防行政部门的方针可能发生变化。这凸显了华盛顿方面对于中国获取关乎经济与军事竞争力的尖端芯片，存在着根深蒂固且跨越党派的忧虑。"
+        },
+        {
+            "id": 2,
+            "headline": "台湾以涉诈为由封禁小红书，引发网络访问争议",
+            "key_takeaways": [
+                "Taiwan's Ministry of the Interior announced the blocking of the Chinese social media and e-commerce platform Xiaohongshu.",
+                "The official reason cited is the platform's alleged involvement in over 1,700 fraud cases in Taiwan since last year.",
+                "The move has sparked online discussion, with some users expressing concern about increasing internet restrictions.",
+                "The platform is reported to have over 3 million users in Taiwan."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Xiaohongshu (小红书)",
+                    "explanation": "A popular Chinese social media and e-commerce platform, often described as a hybrid of Instagram and Pinterest, where users share lifestyle tips, product reviews, and shopping experiences."
+                },
+                {
+                    "term": "Ministry of the Interior (Taiwan)",
+                    "explanation": "The executive branch of the Taiwanese government responsible for homeland security, civil affairs, and social administration."
+                },
+                {
+                    "term": "\"Fān qiáng\" (翻墙)",
+                    "explanation": "A Chinese internet slang term literally meaning 'to scale the wall,' referring to the use of VPNs or other tools to bypass government internet censorship and access blocked websites, commonly associated with mainland China's Great Firewall."
+                }
+            ],
+            "english_brief": "Taiwan's authorities have moved to block access to the mainland Chinese social media platform Xiaohongshu, citing its connection to more than 1,700 fraud cases reported on the island since last year. The announcement, made by the Ministry of the Interior, affects a platform with a reported user base exceeding 3 million in Taiwan. This administrative action has ignited debate online, with some netizens drawing parallels to mainland China's strict internet controls and expressing apprehension that Taiwan might be heading toward a future where circumventing blocks—colloquially known as 'scaling the wall'—becomes necessary. The decision highlights the ongoing tensions and regulatory challenges surrounding cross-strait digital platforms.",
+            "chinese_brief": "台湾内政部以涉及欺诈为由，宣布封禁中国大陆的社交媒体及电商平台“小红书”。官方理由是该平台自去年以来与台湾超过1700起诈骗案件有关。此举影响了在台据称拥有超过300万用户的平台。这一行政措施引发了网络热议，部分网友将其与中国大陆严格的互联网管控相提并论，并担忧台湾是否也正走向需要“翻墙”访问网络的一天。该决定凸显了围绕两岸数字平台持续存在的紧张关系和监管挑战。"
+        },
+        {
+            "id": 3,
+            "headline": "台湾封禁小红书，在野党质疑动机涉意识形态",
+            "key_takeaways": [
+                "The blocking of Xiaohongshu by Taiwan's authorities has drawn criticism from opposition lawmakers.",
+                "Opposition legislators question whether the decision is ideologically driven rather than purely based on fraud prevention.",
+                "They challenge the government to explain why other social platforms with fraud cases are not similarly targeted.",
+                "The debate centers on the balance between cybersecurity and freedom of access to information."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Opposition Party (在野党)",
+                    "explanation": "In a political system, the party or parties that are not part of the government or ruling coalition. In this context, it refers to political parties in Taiwan's Legislative Yuan that are not aligned with the current ruling administration."
+                },
+                {
+                    "term": "Ideology (意识形态)",
+                    "explanation": "A system of ideas and ideals, especially one which forms the basis of economic or political theory and policy. Here, it implies that political beliefs about
+2025-12-05 22:30:26,946 | WARNING | Batch 1 attempt 1 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 0,             "headline": "Meta 考虑大幅削减元宇宙项目预算，或导致裁员",             "key_takeaways": [                 "Meta is reportedly considering cutting its metaverse division's budget by up to 30% next year.",                 "The cuts could lead to layoffs starting as early as January.",                 "This represents a significant strategic shift for a project that was central to the company's rebranding from Facebook.",                 "The com...)
+2025-12-05 22:31:33,949 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 0,
+            "headline": "Meta 考虑大幅削减元宇宙预算，或裁员并战略转向",
+            "key_takeaways": [
+                "Meta is reportedly considering budget cuts of up to 30% for its metaverse division, including Horizon Worlds and Quest VR.",
+                "The cuts could lead to layoffs as early as January next year as the company re-evaluates its strategic priorities.",
+                "This marks a significant pullback from CEO Mark Zuckerberg's previous heavy investment and rebranding of the company around the metaverse concept.",
+                "The company is shifting more resources towards artificial intelligence (AI) and other products like its Ray-Ban smart glasses."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Meta",
+                    "explanation": "Formerly known as Facebook, Inc., Meta Platforms, Inc. is the parent company of Facebook, Instagram, WhatsApp, and Reality Labs, focused on social media and virtual/augmented reality."
+                },
+                {
+                    "term": "Metaverse",
+                    "explanation": "A term for a collective virtual shared space, created by the convergence of virtually enhanced physical and digital reality. Meta has invested heavily in building this ecosystem."
+                },
+                {
+                    "term": "Reality Labs",
+                    "explanation": "The division within Meta responsible for virtual and augmented reality products and research, including the Quest VR headsets and the Horizon Worlds platform."
+                },
+                {
+                    "term": "Horizon Worlds",
+                    "explanation": "Meta's social virtual reality platform where users can interact, play games, and create content in a VR environment."
+                }
+            ],
+            "english_brief": "Meta is preparing for a major strategic shift, with plans to cut its metaverse division's budget by up to 30%, potentially triggering layoffs from January. This move signals a retreat from CEO Mark Zuckerberg's once-core vision of building the metaverse, following significant financial losses in the Reality Labs unit. The company is now pivoting resources towards more immediate growth areas like artificial intelligence and hardware such as smart glasses, reflecting investor pressure and a reassessment of long-term bets.",
+            "chinese_brief": "据报道，Meta正计划对其元宇宙部门进行重大预算削减，幅度可能高达30%，涉及Horizon Worlds虚拟世界平台及Quest虚拟现实部门，相关裁员可能最早于明年1月开始。此举标志着公司从扎克伯格曾视为核心的元宇宙战略大幅收缩。由于Reality Labs部门持续巨额亏损及投资者压力，Meta正将资源转向人工智能和智能眼镜等更具近期增长潜力的领域，反映了公司对长期战略的重新评估。"
+        },
+        {
+            "id": 1,
+            "headline": "美国两党议员提出法案，旨在阻止放宽对华AI芯片出口限制",
+            "key_takeaways": [
+                "A bipartisan group of U.S. senators introduced the 'SAFE CHIPS Act' to block potential easing of AI chip export controls to China.",
+                "The bill aims to prevent the Trump administration from relaxing restrictions on Beijing's access to advanced AI semiconductors over the next two and a half years.",
+                "Notable China hawk Senator Tom Cotton has expressed support for the legislation, highlighting continued bipartisan concern over China's technological advancement."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "SAFE CHIPS Act",
+                    "explanation": "An acronym for a proposed U.S. bill. The full name is not explicitly provided in the source, but the context suggests it relates to securing semiconductor supply chains and maintaining export controls on advanced chips to China."
+                },
+                {
+                    "term": "AI Chip",
+                    "explanation": "A specialized semiconductor designed to efficiently process artificial intelligence workloads, crucial for applications like machine learning and large language models. Controlling their export is a key aspect of U.S.-China tech competition."
+                },
+                {
+                    "term": "Tom Cotton",
+                    "explanation": "A Republican U.S. Senator from Arkansas known for his hardline stance on U.S. policy towards China."
+                }
+            ],
+            "english_brief": "U.S. lawmakers are moving to lock in strict controls on advanced semiconductor exports to China. A bipartisan group of senators introduced the 'SAFE CHIPS Act,' which seeks to prohibit the executive branch from loosening current restrictions on China's access to AI chips for the next 30 months. The legislation reflects enduring bipartisan consensus in Congress on maintaining technological pressure on Beijing, aiming to prevent any near-term policy reversal that could aid China's military-civil fusion development in artificial intelligence.",
+            "chinese_brief": "美国国会两党议员提出一项名为“SAFE CHIPS Act”的法案，旨在阻止特朗普政府在未来两年半内放宽对中国出口人工智能芯片的限制。该法案得到了对华强硬派议员汤姆·科顿等人的支持，表明国会两党在维持对华技术压制上存在持续共识，意图防止任何政策逆转在短期内助力中国人工智能的军民融合发展。"
+        },
+        {
+            "id": 2,
+            "headline": "台湾当局以涉诈为由封禁小红书，引发网络访问争议",
+            "key_takeaways": [
+                "Taiwan's Ministry of the Interior announced a block on the mainland Chinese social media and e-commerce platform Xiaohongshu, citing its involvement in over 1,700 fraud cases.",
+                "The platform, which has over 3 million users in Taiwan, is now inaccessible on the island, requiring tools like VPNs ('翻墙') to access.",
+                "The move has sparked online discussion, with some users expressing concern that Taiwan is moving towards internet censorship reminiscent of mainland China's 'Great Firewall'."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Xiaohongshu (小红书)",
+                    "explanation": "A popular Chinese social media and lifestyle sharing platform, often described as a hybrid of Instagram and Pinterest, with strong e-commerce features. It is widely used for product reviews, travelogues, and lifestyle tips."
+                },
+                {
+                    "term": "翻墙",
+                    "explanation": "A Chinese internet slang term meaning 'to scale the wall,' referring to the use of VPNs or other tools to bypass internet censorship and access blocked websites, most notably in the context of China's 'Great Firewall'."
+                },
+                {
+                    "term": "Great Firewall",
+                    "explanation": "The colloquial name for the combination of legislative actions and technologies enforced by China to regulate the internet domestically, blocking access to many foreign websites and platforms."
+                }
+            ],
+            "english_brief": "Taiwan's authorities have blocked access to the popular Chinese social media app Xiaohongshu, officially citing its connection to numerous fraud cases. The decision, which affects millions of Taiwanese users, has ignited a debate about internet freedom and censorship. Many online commentators drew parallels to mainland China's restrictive internet policies, humorously or critically noting that Taiwan might be heading towards a scenario where its citizens also need to 'scale the wall' (use VPNs) to access certain online content, highlighting the political and social tensions surrounding cross-strait digital platforms.",
+            "chinese_brief": "台湾内政部门以涉及超过1700起诈骗案件为由，宣布封禁大陆社交及电商平台“小红书”。该平台在台拥有超300万用户，此封禁意味着当地用户无法直接访问。此举引发台湾网友热议，部分人评论称台湾是否也走向了需要“翻墙”才能上网的一天，影射大陆的互联网防火墙，反映了围绕两岸数字平台的政治与社会紧张关系。"
+        },
+        {
+            "id": 3,
+            "headline": "在野党批评台湾封禁小红书是意识形态作祟",
+            "key_takeaways": [
+                "Following the government's announcement to block Xiaohongshu, opposition lawmakers in Taiwan criticized the move as being driven by political ideology rather than genuine security concerns.",
+                "They questioned why other social platforms with similar fraud issues were not targeted, suggesting selective enforcement.",
+                "The criticism highlights the domestic political divide over how to handle platforms originating from mainland China, framing it as a debate between national security and freedom of information."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "在野党",
+                    "explanation": "A Chinese term meaning 'opposition party' or 'parties not in power.' In the context of Taiwan's politics, it refers to political parties that are not part of the current ruling administration."
+                }
+            ],
+            "english_brief": "The Taiwanese government's decision to block Xiaohongshu has drawn immediate fire from opposition legislators, who accuse the ruling party of letting ideological motivations override practical security measures. Critics argue that the ban is selectively applied to a mainland Chinese platform while ignoring similar issues on other global social media sites, framing it as an act of political censorship rather than effective fraud prevention. This political backlash underscores the contentious nature of cross-strait digital policy, where actions against Chinese apps are often viewed through the lens of broader sovereignty and security disputes.",
+            "chinese_brief": "在台湾当局宣布封禁小红书后，在野党立委立即提出批评，指责此举是意识形态作祟而非真正的安全考量。他们质疑为何其他存在类似诈骗问题的社交平台未被封禁，认为这是选择性执法。这场批评凸显了在如何处理源自大陆的平台上，台湾内部存在的政治分歧，将其置于国家安全与信息自由之间的争论框架中。"
+        }
+    ],
+    "summary_notes":
+2025-12-05 22:31:33,951 | WARNING | Batch 1 attempt 2 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 0,             "headline": "Meta 考虑大幅削减元宇宙预算，或裁员并战略转向",             "key_takeaways": [                 "Meta is reportedly considering budget cuts of up to 30% for its metaverse division, including Horizon Worlds and Quest VR.",                 "The cuts could lead to layoffs as early as January next year as the company re-evaluates its strategic priorities.",                 "This marks a significant pullback from CEO Mark Zuckerberg's pr...)
+2025-12-05 22:32:40,191 | INFO | Completed batch 1/10 (briefings=4).
+2025-12-05 22:33:47,728 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 4,
+            "headline": "Taiwan Authorities Block Xiaohongshu Citing Security Concerns",
+            "key_takeaways": [
+                "Taiwan's government has initiated a one-year block on the social media platform Xiaohongshu, citing its involvement in fraud cases and failure to comply with local regulations.",
+                "The block is implemented through an 'Internet Stop Resolution and Access Restriction' order, impacting cross-strait relations.",
+                "The move has sparked domestic debate, with critics comparing the measure to the martial law era, highlighting tensions between security and digital freedoms."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Xiaohongshu",
+                    "explanation": "A popular Chinese social media and e-commerce platform, often described as a hybrid of Instagram and Pinterest, where users share lifestyle content, product reviews, and shopping experiences."
+                },
+                {
+                    "term": "Internet Stop Resolution and Access Restriction",
+                    "explanation": "A technical and legal measure to block access to a website or online service, typically involving preventing domain name resolution (DNS blocking) and restricting network access at the internet service provider level."
+                },
+                {
+                    "term": "Martial Law Era",
+                    "explanation": "A reference to the period in Taiwan's history (1949-1987) when the Kuomintang government imposed strict authoritarian control, including severe restrictions on civil liberties and freedom of speech."
+                }
+            ],
+            "english_brief": "Taiwan's authorities have ordered a one-year block on the Chinese social media app Xiaohongshu, citing fraud risks and non-compliance with local laws. The action, carried out via an internet access restriction order, has intensified scrutiny of Chinese-linked apps and sparked a domestic debate. Critics argue the measure echoes past authoritarian controls, while officials frame it as a necessary step for cybersecurity and legal jurisdiction. This development adds a new layer of complexity to the sensitive cross-strait relationship, balancing national security concerns against digital economy ties and freedom of expression.",
+            "chinese_brief": "台湾当局以涉及诈骗案件及未配合本地法律纳管为由，宣布对社交平台“小红书”启动为期一年的“网际网络停止解析与限制接取”命令。此举引发岛内舆论争议，有批评声音将其与戒严时期的管控措施相提并论。官方则强调此举是基于资安风险与法律合规的必要行动。这一封禁措施不仅冲击两岸间的数字交流，也再度凸显了在网络安全、法律管辖权与言论自由之间的政策权衡。"
+        },
+        {
+            "id": 5,
+            "headline": "Taiwan Police Cite Lack of Cooperation as Reason for Xiaohongshu Block",
+            "key_takeaways": [
+                "Taiwan's Criminal Investigation Bureau stated that Xiaohongshu's operator failed to respond to requests and did not provide required information, leading to the block.",
+                "The action follows a warning from the Ministry of Digital Affairs naming Xiaohongshu among five apps with cybersecurity risks.",
+                "The block was formally implemented due to the platform's alleged involvement in fraud and cybersecurity issues, compounded by non-cooperation with Taiwanese law."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Criminal Investigation Bureau (CIB)",
+                    "explanation": "The primary investigative agency under Taiwan's National Police Agency, responsible for major criminal cases, including cybercrime and fraud."
+                },
+                {
+                    "term": "Ministry of Digital Affairs (moda)",
+                    "explanation": "A Taiwanese government ministry established to oversee digital policy, telecommunications, cybersecurity, and the development of the digital economy."
+                }
+            ],
+            "english_brief": "Taiwan's Criminal Investigation Bureau has clarified that the decision to block Xiaohongshu stemmed from the platform's lack of response and failure to provide data requested by authorities. This enforcement action followed an official cybersecurity risk warning issued by the Ministry of Digital Affairs against Xiaohongshu and four other apps. Officials state that the combination of alleged fraud activities, security vulnerabilities, and non-compliance with local legal processes necessitated the access restriction. The case highlights the growing challenges governments face in regulating global social media platforms that may be reluctant to adhere to specific regional legal frameworks.",
+            "chinese_brief": "台湾刑事局指出，对“小红书”实施封锁的直接原因是其运营方未回应台方要求，且拒绝提供相关资料予以配合。此项措施是在数字发展部此前将“小红书”等五款应用列为具有资安风险之后采取的执法行动。当局称，该平台涉嫌诈骗、存在资安问题，加之不配合台湾法律管辖，导致了最终的封禁决定。此事凸显了跨境网络平台在应对不同司法管辖区法律要求时所面临的合规挑战。"
+        },
+        {
+            "id": 6,
+            "headline": "Taiwan's Mainland Affairs Council Warns of Xiaohongshu Security Risks",
+            "key_takeaways": [
+                "Taiwan's Mainland Affairs Council (MAC) publicly supported the block, reiterating warnings about Xiaohongshu's cybersecurity risks.",
+                "MAC Vice Chairman Liang Wen-jie emphasized the need to protect citizens from potential data breaches and malicious influence.",
+                "The council's statement aligns the block with broader concerns about digital security threats allegedly originating from mainland Chinese platforms."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Mainland Affairs Council (MAC)",
+                    "explanation": "The executive agency of Taiwan's government responsible for planning, developing, and executing policies regarding Mainland China (the People's Republic of China)."
+                }
+            ],
+            "english_brief": "Taiwan's Mainland Affairs Council has publicly endorsed the decision to block Xiaohongshu, framing it as a protective measure against cybersecurity threats. MAC Vice Chairman Liang Wen-jie highlighted concerns that user data on such platforms could be compromised or used for malicious purposes. This official stance integrates the specific app block into Taiwan's broader narrative of vigilance against perceived digital risks from Chinese entities. The council's warning reinforces the political and security dimensions of the issue, extending beyond mere law enforcement into the realm of cross-strait distrust and information security policy.",
+            "chinese_brief": "台湾陆委会就“小红书”被封一事发出警示，支持相关封锁措施，并强调该平台存在的资安风险。陆委会副主委梁文杰指出，有必要保护民众个人信息安全，防范潜在的数据泄露与恶意影响。陆委会的此番表态，将此次应用封禁事件置于更广泛的两岸数字安全关切框架之下，凸显了台当局对源自中国大陆的数字平台所持的警惕立场。"
+        },
+        {
+            "id": 7,
+            "headline": "Astrology Forecast Predicts Wealth Luck for Select Zodiac Signs",
+            "key_takeaways": [
+                "An astrological forecast marks the 'Major Snow' solar term on December 7th as a period of particular financial fortune.",
+                "The prediction singles out five zodiac signs and five Chinese zodiac animals as being especially poised for wealth accumulation during this half-month period.",
+                "The content is presented as lifestyle or entertainment advice, encouraging readers to 'seize the timing' for prosperity."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Major Snow (大雪)",
+                    "explanation": "One of the 24 solar terms in the traditional East Asian lunisolar calendar. It usually begins around December 7th and signifies the time when snowfall becomes heavier in northern China. In cultural practices, it is sometimes associated with specific activities or, in this context, metaphysical interpretations."
+                },
+                {
+                    "term": "Zodiac Signs",
+                    "explanation": "Refers to the 12 signs of Western astrology (e.g., Aries, Taurus)."
+                },
+                {
+                    "term": "Chinese Zodiac Animals",
+                    "explanation": "Refers to the 12-year cycle of animal signs in the Chinese zodiac (e.g., Rat, Ox, Tiger). Each year is associated with a specific animal and its attributed characteristics."
+                }
+            ],
+            "english_brief": "A lighthearted astrology and fortune-telling article highlights the upcoming 'Major Snow' solar term on December 7th as an auspicious time for financial gains. According to a tarot reader, five specific Western zodiac signs and five Chinese zodiac animals are forecasted to experience particularly strong wealth luck in the following two weeks. The piece advises individuals belonging to these groups to capitalize on opportunities during this period. This type of content, common in lifestyle and entertainment sections, blends traditional cultural concepts with popular metaphysics for consumer engagement, reflecting ongoing public interest in horoscopes and fortune predictions.",
+            "chinese_brief": "一则轻松的星座命理文章指出，即将在12月7日到来的“大雪”节气是招财的良机。据塔罗师预测，特定的五个星座和五个生肖在这半个月里财运特别旺盛。文章建议属于这些星座和生肖的人把握时机，以促进财富积累。此类内容常见于生活娱乐版块，将传统文化节气与流行命理说法相结合，反映了公众对运势预测持续的兴趣。"
+        }
+    ],
+    "summary_notes": "Articles 4, 5, and 6 cover the same core news event from slightly different angles—editorial criticism, law enforcement rationale, and official political endorsement. They are treated as separate briefings due to distinct headlines and primary sources (the article itself). Article 7 is a completely unrelated lifestyle
+2025-12-05 22:33:47,730 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 4,             "headline": "Taiwan Authorities Block Xiaohongshu Citing Security Concerns",             "key_takeaways": [                 "Taiwan's government has initiated a one-year block on the social media platform Xiaohongshu, citing its involvement in fraud cases and failure to comply with local regulations.",                 "The block is implemented through an 'Internet Stop Resolution and Access Restriction' order, impacting cros...)
+2025-12-05 22:34:47,323 | INFO | Completed batch 2/10 (briefings=8).
+2025-12-05 22:35:38,863 | INFO | Completed batch 3/10 (briefings=11).
+2025-12-05 22:36:38,082 | INFO | Completed batch 4/10 (briefings=15).
+2025-12-05 22:37:36,590 | INFO | Completed batch 5/10 (briefings=19).
+2025-12-05 22:38:34,863 | INFO | Completed batch 6/10 (briefings=23).
+2025-12-05 22:39:32,218 | INFO | Completed batch 7/10 (briefings=26).
+2025-12-05 22:40:34,191 | INFO | Completed batch 8/10 (briefings=30).
+2025-12-05 22:41:33,196 | INFO | Completed batch 9/10 (briefings=34).
+2025-12-05 22:42:39,196 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 36,
+            "headline": "New Python Framework for Real-Time Physiological Sensing Released",
+            "key_takeaways": [
+                "PySio-Hermes 0.1.7 is a new open-source Python framework designed for real-time physiological data processing.",
+                "It focuses on edge AI, meaning AI computations are performed locally on devices rather than in the cloud.",
+                "The framework is intended for applications in health monitoring, human-computer interaction, and research."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "PySio-Hermes",
+                    "explanation": "The name of the Python software package. 'Py' indicates Python, 'Sio' likely refers to physiological signals, and 'Hermes' is the Greek messenger god, suggesting data transmission."
+                },
+                {
+                    "term": "Edge AI",
+                    "explanation": "A paradigm where artificial intelligence algorithms are processed locally on a hardware device (the 'edge' of the network) instead of in a centralized cloud server. This reduces latency and enhances privacy."
+                },
+                {
+                    "term": "Physiological sensing",
+                    "explanation": "The measurement of bodily functions and signals, such as heart rate, brain waves (EEG), muscle activity (EMG), or skin conductance."
+                }
+            ],
+            "english_brief": "A new version (0.1.7) of the PySio-Hermes framework has been released on the Python Package Index (PyPI). This open-source tool is designed for developers and researchers working with real-time physiological data, such as from wearables or medical devices. Its core innovation is integrating edge AI capabilities, allowing for immediate, on-device analysis of this sensitive data. This local processing can enable faster response times in applications like health alerts or adaptive systems while potentially improving data privacy by minimizing cloud transmission. The release signifies ongoing growth in tools that bridge the gap between raw sensor data and actionable AI-driven insights at the source.",
+            "chinese_brief": "Python软件包索引（PyPI）发布了PySio-Hermes框架的新版本（0.1.7）。该开源框架专为处理实时生理信号数据（如来自可穿戴设备或医疗设备的数据）而设计。其核心特点是集成了边缘人工智能（Edge AI）能力，允许在设备本地直接对敏感的生理数据进行即时分析，无需依赖云端。这种处理方式能为健康监测预警或自适应系统等应用带来更快的响应速度，同时通过减少数据向云端的传输，有助于提升用户隐私保护。该工具的发布体现了连接原始传感器数据与本地化AI智能决策的工具生态正在持续发展。"
+        },
+        {
+            "id": 37,
+            "headline": "High-Profile Investors Katzenberg and Montana Back AI Ventures",
+            "key_takeaways": [
+                "Prominent figures Jeffrey Katzenberg and Joe Montana participated in venture capital investments focused on AI in November.",
+                "The investments were tracked in a report by TheWrap and PitchBook, highlighting continued interest in AI from diverse investors.",
+                "The report also noted a Belgian company's investment in U.S. movie theaters, showing varied deal flow beyond tech."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Jeffrey Katzenberg",
+                    "explanation": "A renowned American film producer and media executive, co-founder of DreamWorks Animation and former chairman of Walt Disney Studios."
+                },
+                {
+                    "term": "Joe Montana",
+                    "explanation": "Nicknamed 'Joe Cool,' a legendary American football quarterback, Pro Football Hall of Famer, and now a venture capitalist."
+                },
+                {
+                    "term": "Venture Investing",
+                    "explanation": "The act of providing capital to startup companies and small businesses with perceived long-term growth potential, typically in exchange for equity."
+                },
+                {
+                    "term": "PitchBook",
+                    "explanation": "A leading financial data and software company that provides detailed information on private capital markets, including venture capital, private equity, and M&A deals."
+                }
+            ],
+            "english_brief": "A November venture capital report from TheWrap and PitchBook reveals that high-profile investors from entertainment and sports are actively betting on artificial intelligence. Former Disney and DreamWorks executive Jeffrey Katzenberg and football Hall of Famer Joe Montana were among the notable participants in AI-focused funding rounds last month. This trend underscores how AI continues to attract capital from a broad spectrum of investors beyond traditional tech financiers, signaling strong confidence in the sector's growth potential. The same report also highlighted cross-border investments, such as a Belgian firm seeing value in U.S. cinema chains, indicating a diverse range of investment themes alongside the dominant AI narrative.",
+            "chinese_brief": "根据TheWrap与金融数据平台PitchBook联合发布的11月风险投资报告，来自娱乐和体育界的知名人士正积极投资人工智能领域。前迪士尼和梦工厂高管杰弗里·卡森伯格以及橄榄球名人堂成员乔·蒙塔纳参与了上个月以AI为重点的融资活动。这一动向表明，人工智能领域持续吸引着传统科技投资者之外更广泛人群的资金，反映出市场对该行业增长潜力的强劲信心。同一份报告还提到了跨境投资案例，例如一家比利时公司看好美国影院资产，显示在AI主导的投资叙事之外，市场交易主题呈现多元化。"
+        },
+        {
+            "id": 38,
+            "headline": "Jet.AI and Partners Eye Major Canadian Data Center Project",
+            "key_takeaways": [
+                "Jet.AI Inc., an AI infrastructure company, and its joint venture partner have expressed strategic interest in acquiring a data center campus in Midwestern Canada.",
+                "The move is aimed at expanding high-performance GPU infrastructure to support growing demand for AI cloud services.",
+                "The potential acquisition highlights the intense competition and capital required for physical AI infrastructure like data centers."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Jet.AI Inc. (JTAI)",
+                    "explanation": "A publicly traded company on the Nasdaq stock exchange that provides high-performance computing infrastructure, specifically Graphics Processing Units (GPUs), and AI cloud services."
+                },
+                {
+                    "term": "GPU (Graphics Processing Unit)",
+                    "explanation": "A specialized electronic circuit originally designed for graphics rendering. Due to their parallel processing architecture, they are now essential for training and running large AI models."
+                },
+                {
+                    "term": "Data Center Campus",
+                    "explanation": "A large group of data center buildings in a single location, offering significant scale, power capacity, and connectivity for housing servers and computing hardware."
+                },
+                {
+                    "term": "Consensus Core / Convergence Compute LLC",
+                    "explanation": "Consensus Core appears to be a partner in a joint venture with Jet.AI, named Convergence Compute LLC, which is involved in this strategic interest. Likely a compute infrastructure firm."
+                }
+            ],
+            "english_brief": "AI infrastructure provider Jet.AI Inc., along with its joint venture Convergence Compute, has announced a strategic interest in acquiring a large data center campus located in Midwestern Canada. This move is part of a broader industry rush to secure the physical assets—land, power, and buildings—necessary to house the high-performance GPU clusters that power modern AI applications. For Jet.AI, expanding its data center footprint is crucial to scaling its AI cloud services and meeting soaring client demand. The interest in a Canadian site may reflect strategic considerations such as cooler climates for natural cooling, available energy, or geographic diversification. This development underscores how the AI boom is fueling a parallel boom in underlying infrastructure investment.",
+            "chinese_brief": "人工智能基础设施提供商Jet.AI公司及其合资企业Convergence Compute宣布，对收购加拿大中西部的一个大型数据中心园区表示出战略兴趣。此举是行业争夺物理资产（土地、电力和建筑）以部署高性能GPU集群热潮的一部分，这些集群是驱动现代AI应用的核心。对Jet.AI而言，扩大数据中心规模对其扩展AI云服务、满足客户激增的需求至关重要。选址加拿大可能基于战略考虑，如凉爽气候利于自然冷却、能源供应或地理多元化。这一进展表明，AI热潮正在推动底层基础设施投资的并行繁荣。"
+        },
+        {
+            "id": 39,
+            "headline": "Mistral AI Unveils New Open-Source Model Series with Flexible Sizes",
+            "key_takeaways": [
+                "French AI company Mistral AI has launched the Mistral 3 series, comprising four new open-source large language models.",
+                "The series includes a large 'Mixture of Experts' (MoE) model and three smaller, more efficient models (14B, 8B, 3B parameters).",
+                "These models are designed to offer greater flexibility and accessibility, challenging proprietary AI models from larger tech firms."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Mistral AI",
+                    "explanation": "A French artificial intelligence company known for developing and releasing powerful open-source large language models, competing with firms like OpenAI and Google."
+                },
+                {
+                    "term": "Large Language Model (LLM)",
+                    "explanation": "A type of AI model trained on vast amounts of text data to understand, generate, and manipulate human language. Examples include GPT-4 and Claude."
+                },
+                {
+                    "term": "Mixture of Experts (MoE)",
+                    "explanation": "An advanced neural network architecture where different parts of the model
+2025-12-05 22:42:39,197 | WARNING | Batch 10 attempt 1 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 36,             "headline": "New Python Framework for Real-Time Physiological Sensing Released",             "key_takeaways": [                 "PySio-Hermes 0.1.7 is a new open-source Python framework designed for real-time physiological data processing.",                 "It focuses on edge AI, meaning AI computations are performed locally on devices rather than in the cloud.",                 "The framework is intended for applications ...)
+2025-12-05 22:43:47,202 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 36,
+            "headline": "New Python Framework for Real-Time Physiological AI Sensing Released",
+            "key_takeaways": [
+                "PySio-Hermes 0.1.7 is a new Python framework for real-time physiological sensing and edge AI processing.",
+                "The framework is designed for processing biological data at the edge, likely for health or research applications.",
+                "It was published on the official Python Package Index (PyPI), making it accessible to developers."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "PyPI",
+                    "explanation": "The Python Package Index, the official repository for Python software packages where developers publish and share their code libraries."
+                },
+                {
+                    "term": "Edge AI",
+                    "explanation": "A system where artificial intelligence algorithms are processed locally on a hardware device (at the 'edge' of the network) rather than in a centralized cloud, enabling faster, offline, and more private data processing."
+                },
+                {
+                    "term": "Physiological Sensing",
+                    "explanation": "The measurement of biological signals from the body, such as heart rate, brain waves (EEG), muscle activity (EMG), or skin conductance, often using wearable or medical sensors."
+                }
+            ],
+            "english_brief": "A new open-source software framework named PySio-Hermes has been released, targeting developers working at the intersection of healthcare technology and artificial intelligence. The framework is designed to handle real-time streams of physiological data—like heart rate or brain signals—and process them using AI models directly on local devices (edge computing), rather than sending sensitive data to the cloud. This approach enhances privacy, reduces latency, and allows for continuous monitoring in applications such as wearable health tech, medical research, or human-computer interaction. Its release on PyPI signifies its readiness for the broader Python developer community to build upon.",
+            "chinese_brief": "一款名为PySio-Hermes的新开源软件框架已发布，主要面向医疗科技与人工智能交叉领域的开发者。该框架旨在实时处理生理数据流（如心率、脑电信号），并利用AI模型在本地设备（边缘计算）上直接进行处理，而非将敏感数据发送至云端。这种方法增强了隐私性、降低了延迟，使得在可穿戴健康设备、医学研究或人机交互等应用中实现持续监测成为可能。该框架在官方Python软件仓库PyPI上发布，意味着更广泛的Python开发者社区可以开始使用并基于其进行开发。"
+        },
+        {
+            "id": 37,
+            "headline": "Hollywood and Sports Legends Invest in AI Startups",
+            "key_takeaways": [
+                "Former Disney executive Jeffrey Katzenberg and NFL Hall of Famer Joe Montana were notable investors in AI venture deals during November.",
+                "The report highlights a trend of high-profile individuals from outside traditional tech investing heavily in artificial intelligence.",
+                "The data comes from a partnership between media outlet TheWrap and financial data platform PitchBook."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Jeffrey Katzenberg",
+                    "explanation": "A prominent American film producer and media executive, co-founder of DreamWorks Animation and former chairman of Walt Disney Studios."
+                },
+                {
+                    "term": "Joe Montana",
+                    "explanation": "A legendary American football quarterback, a Pro Football Hall of Famer, widely considered one of the greatest players in NFL history."
+                },
+                {
+                    "term": "Venture Investing",
+                    "explanation": "The act of providing capital to early-stage, high-potential, growth companies (startups) in exchange for equity, typically involving higher risk for potentially higher returns."
+                },
+                {
+                    "term": "PitchBook",
+                    "explanation": "A leading financial data and software company that provides detailed information on private capital markets, including venture capital, private equity, and M&A transactions."
+                }
+            ],
+            "english_brief": "A recent venture capital report underscores the magnetic pull of artificial intelligence on investors from diverse backgrounds. In November, notable investments came from Jeffrey Katzenberg, a powerhouse in Hollywood, and Joe Montana, an icon from the sports world. Their participation signals that AI's transformative potential is attracting capital far beyond Silicon Valley's traditional venture circles. This trend amplifies the funding environment for AI startups and reflects a broader cultural and economic belief in the technology's future. The report, based on data from PitchBook, illustrates how AI continues to be the dominant theme in venture capital.",
+            "chinese_brief": "近期一份风险投资报告凸显了人工智能对来自不同背景投资者的强大吸引力。在十一月份，来自好莱坞巨头杰弗里·卡森伯格和体育界偶像乔·蒙塔纳的投资尤为引人注目。他们的参与表明，AI的变革潜力正在吸引硅谷传统风投圈之外的大量资本。这一趋势为AI初创公司营造了更充裕的融资环境，也反映了对该技术未来更广泛的文化和经济信念。这份基于PitchBook数据的报告，说明了AI如何持续成为风险投资领域的核心主题。"
+        },
+        {
+            "id": 38,
+            "headline": "AI Firms Jet.AI and Consensus Core Eye Major Canadian Data Center Project",
+            "key_takeaways": [
+                "Jet.AI Inc. and its partner Convergence Compute (a JV with Consensus Core) have expressed strategic interest in acquiring a data center campus in Midwestern Canada.",
+                "The move aims to secure high-performance GPU infrastructure to support their AI cloud services.",
+                "Jet.AI is a publicly traded company on Nasdaq, highlighting the growing capital market activity around AI infrastructure."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "GPU",
+                    "explanation": "Graphics Processing Unit. A specialized electronic circuit designed to rapidly manipulate memory. In AI, GPUs are crucial for training and running large machine learning models due to their parallel processing capabilities."
+                },
+                {
+                    "term": "AI Cloud Services",
+                    "explanation": "Cloud computing services that provide on-demand access to AI tools, frameworks, and computing power (like GPUs), allowing companies to build and deploy AI applications without managing the underlying hardware."
+                },
+                {
+                    "term": "Nasdaq: JTAI",
+                    "explanation": "The stock ticker symbol for Jet.AI Inc., indicating it is a company listed and traded on the Nasdaq stock exchange."
+                },
+                {
+                    "term": "Data Center Campus",
+                    "explanation": "A large-scale property containing multiple data center buildings, offering extensive space, power, and cooling infrastructure to house computer systems and associated components."
+                }
+            ],
+            "english_brief": "The race to build the physical infrastructure for the AI boom is intensifying, with companies seeking control over critical assets like data centers. AI service provider Jet.AI and its joint venture partner have announced strategic interest in a large data center campus located in Midwestern Canada. This potential acquisition is driven by the insatiable demand for high-performance computing, specifically GPU clusters, which are the engines for training and running advanced AI models. By potentially owning this infrastructure, the companies aim to secure capacity, reduce costs, and gain a competitive edge in providing AI cloud services. This reflects a broader industry trend where AI companies are vertically integrating into hardware and real estate to ensure scalability and control.",
+            "chinese_brief": "为AI繁荣构建物理基础设施的竞赛正在加剧，各公司争相控制数据中心等关键资产。AI服务提供商Jet.AI及其合资伙伴宣布，对位于加拿大中西部的一个大型数据中心园区产生战略兴趣。这一潜在的收购行为源于市场对高性能计算（特别是GPU集群）的贪婪需求，这些集群是训练和运行先进AI模型的引擎。通过可能拥有这些基础设施，相关公司旨在确保算力容量、降低成本，并在提供AI云服务中获得竞争优势。这反映了一个更广泛的行业趋势，即AI公司正通过垂直整合，涉足硬件和房地产领域，以确保可扩展性和控制力。"
+        },
+        {
+            "id": 39,
+            "headline": "Mistral AI Challenges Giants with New Open-Source Model Series",
+            "key_takeaways": [
+                "French AI company Mistral AI has launched the Mistral 3 series, comprising four new open-source language models.",
+                "The series includes a large 'Mixture of Experts' (MoE) model and three smaller, more efficient models (14B, 8B, 3B parameters).",
+                "These models are positioned as flexible and powerful alternatives to proprietary models from larger tech companies, promoting open-source AI development."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Mistral AI",
+                    "explanation": "A French artificial intelligence company known for developing efficient and powerful open-source large language models, challenging larger American tech firms."
+                },
+                {
+                    "term": "Mixture of Experts (MoE)",
+                    "explanation": "An advanced neural network architecture where different specialized sub-networks ('experts') handle different types of inputs or tasks. This allows for creating very large models that are more efficient during operation, as only parts of the network are activated for a given task."
+                },
+                {
+                    "term": "Parameters (14B, 8B, 3B)",
+                    "explanation": "The number of adjustable values within a neural network that are learned during training. Generally, more parameters can allow a model to capture more complex patterns, but also require more computational power.
+2025-12-05 22:43:47,203 | WARNING | Batch 10 attempt 2 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 36,             "headline": "New Python Framework for Real-Time Physiological AI Sensing Released",             "key_takeaways": [                 "PySio-Hermes 0.1.7 is a new Python framework for real-time physiological sensing and edge AI processing.",                 "The framework is designed for processing biological data at the edge, likely for health or research applications.",                 "It was published on the official Pytho...)
+2025-12-05 22:44:54,932 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 36,
+            "headline": "PySIO-Hermes 0.1.7 Released: Framework for Real-Time Physiological Sensing and Edge AI",
+            "key_takeaways": [
+                "PySIO-Hermes 0.1.7 is a Python framework for real-time physiological data collection and AI processing at the edge.",
+                "The tool is designed for applications in health monitoring, human-computer interaction, and research.",
+                "Its release on PyPI makes it accessible to developers working on sensor-based AI systems."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "PyPI",
+                    "explanation": "The Python Package Index, the official repository for Python software, where developers publish and share code libraries."
+                },
+                {
+                    "term": "Edge AI",
+                    "explanation": "A system where artificial intelligence algorithms are processed locally on a hardware device (the 'edge' of the network) rather than in a centralized cloud, enabling faster response and better privacy."
+                },
+                {
+                    "term": "Physiological Sensing",
+                    "explanation": "The measurement of bodily functions such as heart rate, brain waves (EEG), muscle activity (EMG), or skin conductance, often using wearable or connected sensors."
+                }
+            ],
+            "english_brief": "The release of PySIO-Hermes 0.1.7 on the Python Package Index (PyPI) provides developers with a new open-source framework for building systems that capture physiological data from sensors and process it with AI directly on local devices (edge computing). This technology is significant for advancing real-time health monitoring, biometric feedback systems, and interactive research applications without relying on constant cloud connectivity, potentially improving speed, privacy, and accessibility in digital health and human-computer interaction fields.",
+            "chinese_brief": "Python软件包索引（PyPI）发布了PySIO-Hermes 0.1.7，这是一个用于实时生理数据采集和边缘AI处理的开源框架。该工具旨在帮助开发者构建健康监测、人机交互和研究应用系统，通过在本地设备上进行数据处理，减少对云服务的依赖，从而提升响应速度并增强数据隐私。此次发布推动了可穿戴技术和边缘智能在医疗及交互领域的发展。"
+        },
+        {
+            "id": 37,
+            "headline": "Hollywood and Sports Figures Katzenberg and Montana Lead AI Venture Investments",
+            "key_takeaways": [
+                "Former Disney executive Jeffrey Katzenberg and NFL Hall of Famer Joe Montana were prominent investors in AI startups during November.",
+                "Their participation highlights the growing crossover of capital from entertainment and sports into the technology sector.",
+                "The report, based on PitchBook data, indicates sustained high-profile investor confidence in AI's commercial potential."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Jeffrey Katzenberg",
+                    "explanation": "A co-founder of DreamWorks Animation and former Walt Disney Studios chairman, now a prominent media executive and investor."
+                },
+                {
+                    "term": "Joe Montana",
+                    "explanation": "A legendary former quarterback for the San Francisco 49ers, inducted into the Pro Football Hall of Fame, now an investor and entrepreneur."
+                },
+                {
+                    "term": "PitchBook",
+                    "explanation": "A leading financial data and research platform that tracks venture capital, private equity, and mergers & acquisitions (M&A) markets."
+                },
+                {
+                    "term": "Venture Investing",
+                    "explanation": "The act of providing capital to early-stage, high-potential companies (startups) in exchange for equity, accepting high risk for potential high returns."
+                }
+            ],
+            "english_brief": "A November venture capital report from PitchBook, highlighted by TheWrap, shows that influential figures from outside the traditional tech sphere are making significant bets on artificial intelligence. Jeffrey Katzenberg, a major Hollywood figure, and Joe Montana, a football legend, were noted as key investors in AI funding rounds. This trend underscores the broad-based appeal and perceived profitability of AI technologies, attracting capital from successful individuals in entertainment and sports who are diversifying their portfolios and backing what they see as the next major technological wave.",
+            "chinese_brief": "根据PitchBook的11月风险投资报告，好莱坞前高管杰弗里·卡森伯格和 NFL 名人堂成员乔·蒙塔纳成为人工智能初创公司的重要投资者。这一动向凸显了娱乐和体育领域的资本正持续涌入科技行业，表明AI的商业潜力获得了跨领域知名投资者的高度信心。他们的参与反映了AI作为主流投资方向的吸引力正在不断扩大。"
+        },
+        {
+            "id": 38,
+            "headline": "Jet.AI and Partners Show Strategic Interest in Canadian Data Center Campus",
+            "key_takeaways": [
+                "AI infrastructure provider Jet.AI and its joint venture partner Convergence Compute are evaluating a data center campus in Midwestern Canada.",
+                "The site is targeted for high-performance GPU infrastructure to support AI cloud services and computing.",
+                "This move aligns with the growing demand for AI-optimized data center capacity in geographically strategic locations."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Jet.AI Inc. (JTAI)",
+                    "explanation": "A publicly traded company on the Nasdaq stock exchange that provides high-performance computing infrastructure, specifically GPUs, for artificial intelligence workloads."
+                },
+                {
+                    "term": "GPU",
+                    "explanation": "Graphics Processing Unit. Originally for rendering graphics, these processors are now essential for AI because they can perform the parallel calculations required for training and running large models much faster than standard CPUs."
+                },
+                {
+                    "term": "Data Center Campus",
+                    "explanation": "A large-scale property housing multiple data center buildings. They offer advantages in power, cooling, security, and scalability for cloud and computing services."
+                },
+                {
+                    "term": "Convergence Compute LLC",
+                    "explanation": "A joint venture between Jet.AI and Consensus Core, focused on developing and operating computing infrastructure."
+                }
+            ],
+            "english_brief": "Jet.AI, a provider of GPU-driven AI infrastructure, and its joint venture Convergence Compute have announced a strategic interest in acquiring or developing a data center campus in Midwestern Canada. This region is often attractive for data centers due to factors like cooler climate (reducing cooling costs), available land, and stable energy sources. The expansion aims to meet the surging global demand for computational power necessary to train and run large AI models, positioning the company to compete in the essential cloud services and infrastructure layer of the AI economy.",
+            "chinese_brief": "AI基础设施提供商Jet.AI及其合资公司Convergence Compute宣布，对加拿大中西部的一个数据中心园区产生战略兴趣。该地点旨在部署高性能GPU基础设施，以支持AI云服务。此举是为了应对训练和运行大型AI模型所需的巨大算力需求，在具有地理和能源优势的地区扩展关键基础设施产能。"
+        },
+        {
+            "id": 39,
+            "headline": "Mistral AI Unveils 'Mistral 3' Model Series, Emphasizing Open-Source and Flexibility",
+            "key_takeaways": [
+                "French AI company Mistral AI has launched the Mistral 3 series, including four new models of varying sizes.",
+                "The series features a large Mixture of Experts (MoE) model and smaller, more efficient models (14B, 8B, 3B parameters) designed for flexible tuning.",
+                "This release strengthens the open-source AI landscape, providing alternatives to proprietary models from larger tech firms."
+            ],
+            "term_clarifications": [
+                {
+                    "term": "Mistral AI",
+                    "explanation": "A French artificial intelligence company known for developing and openly releasing powerful large language models, positioning itself as a European challenger to U.S.-based AI giants."
+                },
+                {
+                    "term": "Mixture of Experts (MoE)",
+                    "explanation": "An advanced neural network architecture where different specialized sub-networks ('experts') handle different types of inputs. This allows for creating very large models that are more efficient during operation, as only parts of the network are activated for a given task."
+                },
+                {
+                    "term": "Parameters (e.g., 14B, 3B)",
+                    "explanation": "The internal variables (weights) that a model learns during training. Generally, more parameters can mean a more capable model, but also one that requires more computational power. 'B' stands for billions."
+                },
+                {
+                    "term": "Tuning / Flexible Tuning",
+                    "explanation": "The process of further training a pre-built general AI model on a specific dataset or for a specific task to improve its performance in that area. 'Flexible' tuning implies the models are designed to be easily adapted."
+                }
+            ],
+            "english_brief": "Mistral AI has launched its next-generation 'Mistral 3' series of large language models, headlined by a massive Mixture of Experts model and complemented by smaller, efficient models (14B, 8B, and 3B parameters). This suite is designed to offer developers and businesses a range of options, from cutting-edge capability to cost-effective, tunable models for specific applications. By releasing these models with open-source or permissive licenses, Mistral continues its strategy of challenging the closed, proprietary approach of major players like OpenAI and Google,
+2025-12-05 22:44:54,933 | WARNING | Batch 10 attempt 3 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 36,             "headline": "PySIO-Hermes 0.1.7 Released: Framework for Real-Time Physiological Sensing and Edge AI",             "key_takeaways": [                 "PySIO-Hermes 0.1.7 is a Python framework for real-time physiological data collection and AI processing at the edge.",                 "The tool is designed for applications in health monitoring, human-computer interaction, and research.",                 "Its release on PyPI m...)
+2025-12-05 22:44:54,933 | WARNING | Splitting batch 10 (size=4) after repeated JSON failures.
+2025-12-05 22:46:14,111 | INFO | Completed batch 10/10 (briefings=38).
+2025-12-05 22:46:14,112 | INFO | LLM summarization completed across 10 batches (model=deepseek-chat, total_tokens=None)
+2025-12-05 22:46:14,115 | INFO | Saved digest to digests/ai-briefing-2025-12-05_2246.md
+2025-12-05 22:46:15,303 | INFO | Sent digest email to jiabaozhang098@gmail.com.
+2025-12-05 22:46:15,305 | INFO | Topic run summary: {"started_at": "2025-12-05T14:29:18.825665+00:00", "digest_ids": ["ai"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-12-05T14:02:48.207943+00:00", "china_economy": "2025-12-05T00:28:27.247866+00:00", "ai": "2025-12-05T14:29:18.825665+00:00", "entertainment": "2025-12-05T00:28:27.247866+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-04T06:05:01.019180+00:00"}, "status": "ok", "total_results": 214, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-04T06:05:01.019180+00:00"}, "status": "ok", "total_results": 593, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "deepseek-chat", "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": [{"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-12-05_2246.md", "articles_summarized": 38, "recipients": ["jiabaozhang098@gmail.com"]}]}

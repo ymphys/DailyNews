@@ -51,8 +51,7 @@ DIGEST_DIR = Path("digests")
 DIGEST_DIR.mkdir(exist_ok=True)
 
 NEWS_API_KEY = os.environ["NEWSAPI_ORG_KEY"]
-OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
-DEEPSEEK_API_KEY = os.environ["OPENAI_API_KEY"]
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 SESSION = httpx.Client(timeout=30.0)
 
 LANGUAGE_LABELS = {
@@ -151,7 +150,7 @@ def parse_structured_output(raw_output: str) -> Dict[str, Any]:
         return json.loads(cleaned)
     except json.JSONDecodeError as exc:
         LOGGER.error("Failed to parse model output as JSON: %s", cleaned)
-        raise RuntimeError("OpenAI response was not valid JSON") from exc
+        raise RuntimeError("LLM response was not valid JSON") from exc
 
 
 def _compute_reset_delay(reset_header: str) -> int:
@@ -469,14 +468,55 @@ def summarize_articles(
     *,
     batch_size: int = SUMMARY_BATCH_SIZE,
     max_attempts: int = MAX_SUMMARY_ATTEMPTS,
-) -> Tuple[List[Dict[str, Any]], str, Dict[str, Any]]:
-    """Summarize articles with OpenAI, returning structured bilingual briefs."""
+) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+    """Summarize articles with DeepSeek or OpenAI, returning structured bilingual briefs."""
     if not articles:
-        return [], "", {}
+        return [], {}
 
     from openai import OpenAI
 
-    client = OpenAI(api_key=OPENAI_API_KEY)
+    def _build_llm_client() -> Tuple[Any, str]:
+        if DEEPSEEK_API_KEY:
+            return (
+                OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com"),
+                "deepseek",
+            )
+        if not OPENAI_API_KEY:
+            raise RuntimeError(
+                "Neither DEEPSEEK_API_KEY nor OPENAI_API_KEY is configured for summarization."
+            )
+        return OpenAI(api_key=OPENAI_API_KEY), "responses"
+
+    client, api_mode = _build_llm_client()
+
+    def _invoke_llm(messages: List[Dict[str, str]]) -> Tuple[Any, str]:
+        if api_mode == "deepseek":
+            response = client.chat.completions.create(
+                model="deepseek-chat",
+                messages=messages,
+                max_tokens=2000,
+                stream=False,
+            )
+            choices = getattr(response, "choices", None) or []
+            content = ""
+            if choices:
+                choice = choices[0]
+                message = getattr(choice, "message", None)
+                if not message and isinstance(choice, dict):
+                    message = choice.get("message")
+                if isinstance(message, dict):
+                    content = message.get("content", "") or ""
+                else:
+                    content = getattr(message, "content", "") or ""
+            return response, content
+
+        response = client.responses.create(
+            model="gpt-4.1-mini",
+            input=messages,
+            max_output_tokens=2000,
+        )
+        return response, getattr(response, "output_text", "") or ""
+
     prepared_articles = [
         {
             "id": idx,
@@ -493,31 +533,31 @@ def summarize_articles(
     ]
 
     instructions = (
-        "You are producing a world news digest. For each article, craft:\n"
-        "- A headline suitable for a briefing.\n"
-        "- A compact narrative paragraph in Chinese capturing context and implications.\n"
-        "- A natural English translation (if the original language is not English) of that paragraph.\n"
-        "- Explanations for any specialized terms, acronyms, or named entities that may be unclear, in simplified Chinese. If the original language is English, add English version of the terms.\n"
-        "Include any details necessary for readers who do not speak the article's original language.\n"
-        "Return a JSON object with this shape:\n"
+        "你正在撰写全球新闻摘要。请为每篇文章完成以下内容：\n"
+        "- 提炼一个适用于简报的标题。\n"
+        "- 用英语提供2到4条关键要点。\n"
+        "- 解释可能存在疑问的专业术语、缩写或命名实体。\n"
+        "- 以英语写一段简洁叙述，概述背景与影响。\n"
+        "- 提供一段自然的简体中文版本，涵盖相同要点。\n"
+        "请返回如下结构的JSON对象：\n"
         "{\n"
-        '  "briefings": [\n'
+        "  \"briefings\": [\n"
         "    {\n"
-        '      "id": <int article id>,\n'
-        '      "headline": "<string>",\n'
-        '      "chinese_brief": "<string>"\n'
-        '      "english_brief": "<string>",\n'
-        '      "term_clarifications": [\n'
-        "        {\"term\": \"<string>\", \"explanation\": \"<string>\"}, ...\n"
+        "      \"id\": <整型文章ID>,\n"
+        "      \"headline\": \"<字符串>\",\n"
+        "      \"key_takeaways\": [\"<字符串>\", ...],\n"
+        "      \"term_clarifications\": [\n"
+        "        {\"term\": \"<字符串>\", \"explanation\": \"<字符串>\"}, ...\n"
         "      ],\n"
+        "      \"english_brief\": \"<字符串>\",\n"
+        "      \"chinese_brief\": \"<字符串>\"\n"
         "    }, ...\n"
         "  ],\n"
+        "  \"summary_notes\": \"<字符串，可选>\"\n"
         "}\n"
-        "Respond with valid JSON only (no markdown code fences)."
+        "仅返回有效的JSON对象。"
     )
-
     all_briefings: List[Dict[str, Any]] = []
-    notes: List[str] = []
     total_input_tokens = 0
     total_output_tokens = 0
     model_used: Optional[str] = None
@@ -525,7 +565,7 @@ def summarize_articles(
     batches = chunked(prepared_articles, batch_size)
     LOGGER.info("Summarizing %s articles across %s batches.", len(prepared_articles), len(batches))
 
-    def process_batch(batch: List[Dict[str, Any]], label: str) -> Tuple[List[Dict[str, Any]], List[str]]:
+    def process_batch(batch: List[Dict[str, Any]], label: str) -> List[Dict[str, Any]]:
         nonlocal total_input_tokens, total_output_tokens, model_used
 
         payload = json.dumps(
@@ -539,7 +579,7 @@ def summarize_articles(
         messages = [
             {
                 "role": "system",
-                "content": "You write world news briefs in Simplified Chinese with contextual explanations.",
+                "content": "You write bilingual world news briefs with contextual explanations.",
             },
             {
                 "role": "user",
@@ -548,23 +588,22 @@ def summarize_articles(
         ]
 
         for attempt in range(1, max_attempts + 1):
-            completion = client.responses.create(
-                model="gpt-4.1-mini",
-                input=messages,
-                max_output_tokens=2000,
-            )
+            response, raw_output = _invoke_llm(messages)
 
-            usage = getattr(completion, "usage", None)
+            usage = getattr(response, "usage", None)
             if usage:
                 total_input_tokens += getattr(usage, "input_tokens", 0) or 0
                 total_output_tokens += getattr(usage, "output_tokens", 0) or 0
-                model_used = getattr(completion, "model", model_used)
+                candidate_model = getattr(response, "model", None)
+                if not candidate_model and api_mode == "deepseek":
+                    candidate_model = "deepseek-chat"
+                if candidate_model:
+                    model_used = candidate_model
 
-            raw_output = completion.output_text
             try:
-                structured = parse_structured_output(raw_output)
+                structured = parse_structured_output(raw_output or "")
             except RuntimeError:
-                snippet = raw_output[:500].replace("\n", " ")
+                snippet = (raw_output or "")[:500].replace("\n", " ")
                 LOGGER.warning(
                     "Batch %s attempt %s produced invalid JSON (snippet=%s...)",
                     label,
@@ -581,9 +620,9 @@ def summarize_articles(
                         split_index = max(1, len(batch) // 2)
                         left = batch[:split_index]
                         right = batch[split_index:]
-                        left_briefings, left_notes = process_batch(left, f"{label}.L")
-                        right_briefings, right_notes = process_batch(right, f"{label}.R")
-                        return left_briefings + right_briefings, left_notes + right_notes
+                        left_briefings = process_batch(left, f"{label}.L")
+                        right_briefings = process_batch(right, f"{label}.R")
+                        return left_briefings + right_briefings
                     raise
                 messages.append(
                     {
@@ -605,7 +644,12 @@ def summarize_articles(
     for idx, batch in enumerate(batches, start=1):
         batch_briefings = process_batch(batch, str(idx))
         all_briefings.extend(batch_briefings)
-        LOGGER.info("Completed batch %s/%s (briefings=%s).", idx, len(batches), len(all_briefings))
+        LOGGER.info(
+            "Completed batch %s/%s (briefings=%s).",
+            idx,
+            len(batches),
+            len(all_briefings),
+        )
 
     usage_data = {
         "model": model_used,
@@ -615,14 +659,13 @@ def summarize_articles(
     }
 
     LOGGER.info(
-        "OpenAI summarization completed across %s batches (model=%s, total_tokens=%s)",
+        "LLM summarization completed across %s batches (model=%s, total_tokens=%s)",
         len(batches),
         usage_data["model"],
         usage_data["total_tokens"],
     )
 
     return all_briefings, usage_data
-
 
 __all__ = [
     "LOGGER",
