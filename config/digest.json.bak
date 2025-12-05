@@ -63,6 +63,48 @@
       }
     },
     {
+      "id": "china_economy",
+      "mode": "topic",
+      "display_name": "China Economy and Politics",
+      "description": "Economic and political developments related to China.",
+      "news_queries": [
+        {
+          "endpoint": "everything",
+          "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")",
+          "searchIn": "title,description",
+          "language": "zh",
+          "pageSize": 20,
+          "sortBy": "publishedAt"
+        },
+        {
+          "endpoint": "everything",
+          "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")",
+          "searchIn": "title,description",
+          "language": "en",
+          "pageSize": 20,
+          "sortBy": "publishedAt"
+        }
+      ],
+      "newsapi": {
+        "max_age_days": 2
+      },
+      "email": {
+        "subject_template": "中国政经简报 - {local_dt:%Y-%m-%d %H:%M}",
+        "tags": [
+          "china",
+          "economy",
+          "politics"
+        ]
+      },
+      "output": {
+        "filename_prefix": "中国政经简报"
+      },
+      "schedule": {
+        "default_time": "08:00",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
       "id": "ai",
       "mode": "topic",
       "display_name": "Artificial Intelligence",
@@ -96,6 +138,38 @@
       },
       "output": {
         "filename_prefix": "ai-briefing"
+      },
+      "schedule": {
+        "default_time": "08:00",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
+      "id": "entertainment",
+      "mode": "topic",
+      "display_name": "Entertainment News",
+      "description": "Entertainment news related to Movies, TV shows popular in English world.",
+      "news_queries": [
+        {
+          "endpoint": "everything",
+          "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")",
+          "searchIn": "title,description",
+          "language": "en",
+          "pageSize": 20,
+          "sortBy": "popularity"
+        }
+      ],
+      "newsapi": {
+        "max_age_days": 2
+      },
+      "email": {
+        "subject_template": "最热影音资讯简报 - {local_dt:%Y-%m-%d %H:%M}",
+        "tags": [
+          "entertainment"
+        ]
+      },
+      "output": {
+        "filename_prefix": "最热影音资讯简报"
       },
       "schedule": {
         "default_time": "08:00",

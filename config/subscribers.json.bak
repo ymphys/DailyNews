@@ -1,0 +1,70 @@
+{
+  "defaults": {
+    "name": "zjb",
+    "email": "1047962614@qq.com",
+    "frequency": "daily",
+    "send_time": "08:00",
+    "timezone": "Asia/Shanghai",
+    "languages": [
+      "zh-Hans",
+      "en"
+    ]
+  },
+  "subscribers": [
+    {
+      "id": "zjb",
+      "email": "1047962614@qq.com",
+      "frequency": "daily",
+      "digests": [
+        "global_headlines",
+        "ai",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "nodels",
+      "email": "jiabaozhang098@gmail.com",
+      "digests": [
+        "china_economy"
+      ]
+    },
+    {
+      "id": "longqi",
+      "email": "longqishao0908@gmail.com",
+      "digests": [
+        "global_headlines",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "wei",
+      "email": "weizhengyi@imnu.edu.cn",
+      "digests": [
+        "global_headlines",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "nan",
+      "email": "qinnanwu@163.com",
+      "digests": [
+        "global_headlines",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "lhj",
+      "email": "814022400@qq.com",
+      "digests": [
+        "global_headlines"
+      ]
+    },
+    {
+      "id": "zwb",
+      "email": "1055859108@qq.com",
+      "digests": [
+        "global_headlines"
+      ]
+    }
+  ]
+}
