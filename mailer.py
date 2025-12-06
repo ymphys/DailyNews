@@ -6,9 +6,10 @@ from email.utils import formataddr
 from pathlib import Path
 from typing import Iterable, List, Optional, Union, Dict, Any
 
-from digest_utils import LOGGER
 import markdown
 from bs4 import BeautifulSoup
+
+from digest_utils import DIGEST_DIR, LOGGER
 
 SMTP_HOST = "smtp.qq.com"
 SMTP_PORT_TLS = 587
@@ -42,6 +43,116 @@ def _collect_env_recipients(to_addr: Optional[str]) -> List[str]:
     return [addr.strip() for addr in raw_to.split(",") if addr and addr.strip()]
 
 
+def _collect_story_sections(soup: BeautifulSoup) -> List[Dict[str, Any]]:
+    sections: List[Dict[str, Any]] = []
+    headings = soup.find_all("h3")
+    for idx, heading in enumerate(headings):
+        content_nodes = []
+        sibling = heading.next_sibling
+        while sibling and getattr(sibling, "name", None) != "h3":
+            next_sib = sibling.next_sibling
+            content_nodes.append(sibling)
+            sibling = next_sib
+        snippet_html = "".join(str(node) for node in [heading] + content_nodes)
+        sections.append(
+            {
+                "index": idx,
+                "h3": heading,
+                "content_nodes": content_nodes,
+                "html": snippet_html,
+            }
+        )
+    return sections
+
+
+def _story_images_output_dir(markdown_path: Path) -> Path:
+    slug = markdown_path.stem.replace(" ", "_") or "digest"
+    return DIGEST_DIR / slug
+
+
+def _render_story_card_html(section_html: str) -> str:
+    style = """
+    body {
+      margin: 0;
+      background: #f2f4f8;
+      font-family: 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+    }
+    .story-card {
+      max-width: 1040px;
+      margin: 32px auto;
+      padding: 34px 38px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
+    }
+    h3 {
+      font-size: 1.9rem;
+      margin-bottom: 0.75rem;
+      color: #111827;
+    }
+    p, li {
+      color: #1f2937;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+    ul {
+      margin: 0 0 0 1rem;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.35rem;
+    }
+    """
+    return (
+        "<!doctype html>"
+        "<html>"
+        "<head>"
+        "<meta charset=\"utf-8\"/>"
+        "<title>Story Snapshot</title>"
+        f"<style>{style}</style>"
+        "</head>"
+        "<body>"
+        "<div class=\"story-card\">"
+        f"{section_html}"
+        "</div>"
+        "</body>"
+        "</html>"
+    )
+
+def _capture_story_images(markdown_path: Path, sections: List[Dict[str, Any]]) -> List[Path]:
+    if not sections:
+        return []
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        LOGGER.warning(
+            "Playwright is not installed; skipping story image capture (pip install playwright)."
+        )
+        return []
+
+    output_dir = _story_images_output_dir(markdown_path)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    image_paths: List[Path] = []
+
+    try:
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch()
+            for section in sections:
+                page = browser.new_page(viewport={"width": 1200, "height": 900})
+                html = _render_story_card_html(section["html"])
+                page.set_content(html, wait_until="networkidle")
+                dest = output_dir / f"story-{section['index'] + 1:02d}.png"
+                page.screenshot(path=str(dest), full_page=True)
+                image_paths.append(dest)
+                page.close()
+            browser.close()
+    except Exception as exc:  # pragma: no cover
+        LOGGER.warning("Failed to capture story images: %s", exc)
+        return []
+
+    LOGGER.info("Captured %s story images in %s", len(image_paths), output_dir)
+    return image_paths
+
 def send_digest_via_email(
     markdown_path: Path,
     subject: str,
@@ -50,7 +161,7 @@ def send_digest_via_email(
     recipients: Optional[Iterable[RecipientArg]] = None,
     to_addr: Optional[str] = None,
     reply_to: Optional[str] = None,
-) -> None:
+) -> List[Path]:
     from_addr = from_addr or os.environ.get("DAILYNEWS_EMAIL_FROM")
     env_recipients = _collect_env_recipients(to_addr)
     normalized = _normalize_recipients(recipients)
@@ -65,8 +176,12 @@ def send_digest_via_email(
     app_pw = os.environ.get("DAILYNEWS_EMAIL_APP_PW")
 
     if not (from_addr and send_to and app_pw):
-        LOGGER.warning("Email configuration incomplete; skipping email send (from=%s, recipients=%s).", from_addr, send_to)
-        return
+        LOGGER.warning(
+            "Email configuration incomplete; skipping email send (from=%s, recipients=%s).",
+            from_addr,
+            send_to,
+        )
+        return []
 
     markdown_text = markdown_path.read_text(encoding="utf-8")
 
@@ -75,26 +190,17 @@ def send_digest_via_email(
 
     # 用BeautifulSoup处理HTML，添加<details>/<summary>折叠功能
     soup = BeautifulSoup(html_body, "html.parser")
-    # 查找所有h3标题（每条新闻的标题）
-    h3_list = soup.find_all("h3")
-    for idx, h3 in enumerate(h3_list):
-        # 新建<details>和<summary>
+    story_sections = _collect_story_sections(soup)
+    story_image_paths = _capture_story_images(markdown_path, story_sections)
+    for data in story_sections:
+        h3 = data["h3"]
         details = soup.new_tag("details")
         summary = soup.new_tag("summary")
         summary.string = h3.get_text()
         details.append(summary)
-        # 收集h3后的所有兄弟节点，直到下一个h3或文档结尾
-        sib = h3.next_sibling
-        content_nodes = []
-        while sib and not (sib.name == "h3"):
-            next_sib = sib.next_sibling
-            content_nodes.append(sib)
-            sib = next_sib
-        for node in content_nodes:
+        for node in data["content_nodes"]:
             details.append(node.extract())
-        # 用details替换h3
         h3.replace_with(details)
-        # 在每条新闻间插入空白段落以增加间距
         spacer = soup.new_tag("p")
         spacer.string = "\u00a0"
         details.insert_after(spacer)
@@ -140,7 +246,10 @@ def send_digest_via_email(
             LOGGER.info("Sent digest email to %s.", email)
         except smtplib.SMTPResponseException as exc:
             if exc.smtp_code == -1:
-                LOGGER.warning("SMTP connection closed unexpectedly after send to %s; message likely delivered.", email)
+                LOGGER.warning(
+                    "SMTP connection closed unexpectedly after send to %s; message likely delivered.",
+                    email,
+                )
             else:
                 LOGGER.exception("Failed to send digest email to %s: %s", email, exc)
         except Exception as exc:
@@ -151,6 +260,8 @@ def send_digest_via_email(
                     smtp.close()
                 except Exception:
                     pass
+
+    return story_image_paths
 
 
 if __name__ == "__main__":

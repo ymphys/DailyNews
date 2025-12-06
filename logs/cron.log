@@ -60,3 +60,29 @@ INFO | Sent digest email to jiabaozhang098@gmail.com.
 INFO | Topic run summary: {"started_at": "2025-12-05T06:05:01.019180+00:00", "digest_ids": ["ai"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-12-03T00:13:39.556279+00:00", "china_economy": "2025-12-05T00:28:27.247866+00:00", "ai": "2025-12-05T06:05:01.019180+00:00", "entertainment": "2025-12-05T00:28:27.247866+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-03T06:05:01.020619+00:00"}, "status": "ok", "total_results": 870, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-03T06:05:01.728114+00:00"}, "status": "ok", "total_results": 1554, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "gpt-4.1-mini-2025-04-14", "usage": {"input_tokens": 13883, "output_tokens": 14558, "total_tokens": 28441}}, "outputs": [{"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-12-05_1408.md", "articles_summarized": 39, "recipients": ["jiabaozhang098@gmail.com"]}]}
 Wrote 1 topic digests:
  - digests/ai-briefing-2025-12-05_1408.md
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | No articles retrieved for headline digest; nothing to summarize.
+No new headline articles found.
