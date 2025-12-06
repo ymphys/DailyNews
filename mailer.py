@@ -1,6 +1,7 @@
 import os
 import smtplib
 import ssl
+import mimetypes
 from email.message import EmailMessage
 from email.utils import formataddr
 from pathlib import Path
@@ -59,6 +60,8 @@ def _collect_story_sections(soup: BeautifulSoup) -> List[Dict[str, Any]]:
                 "index": idx,
                 "h3": heading,
                 "content_nodes": content_nodes,
+                "image_path": None,
+                "image_cid": f"story-{idx+1:02d}@newsdigest",
                 "html": snippet_html,
             }
         )
@@ -119,6 +122,28 @@ def _render_story_card_html(section_html: str) -> str:
         "</html>"
     )
 
+def _build_image_email_body(sections: List[Dict[str, Any]]) -> str:
+    if not sections:
+        return "<p>No story images available.</p>"
+    parts: List[str] = [
+        "<div style=\"background:#f9fafb;padding:12px;\">",
+        "<div style=\"max-width:840px;margin:0 auto;\">",
+    ]
+    for section in sections:
+        image_path = section.get("image_path")
+        if not image_path:
+            continue
+        label = section["h3"].get_text().strip()
+        parts.append(
+            "<div style=\"margin-bottom:24px;text-align:center;\">"
+            f"<img src=\"cid:{section['image_cid']}\" alt=\"{label}\" style=\"display:block;margin:0 auto;max-width:100%;border-radius:18px;box-shadow:0 20px 40px rgba(15,23,42,.15);\"/>"
+            "</div>"
+        )
+    parts.append("</div>")
+    parts.append("</div>")
+    return "\n".join(parts)
+
+
 def _capture_story_images(markdown_path: Path, sections: List[Dict[str, Any]]) -> List[Path]:
     if not sections:
         return []
@@ -133,17 +158,31 @@ def _capture_story_images(markdown_path: Path, sections: List[Dict[str, Any]]) -
     output_dir = _story_images_output_dir(markdown_path)
     output_dir.mkdir(parents=True, exist_ok=True)
     image_paths: List[Path] = []
+    missing_sections: List[Dict[str, Any]] = []
+    for section in sections:
+        dest = output_dir / f"story-{section['index'] + 1:02d}.png"
+        if dest.exists():
+            section["image_path"] = dest
+            image_paths.append(dest)
+        else:
+            section["image_path"] = None
+            missing_sections.append(section)
+
+    if not missing_sections:
+        LOGGER.info("All story images already available in %s", output_dir)
+        return image_paths
 
     try:
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch()
-            for section in sections:
+            for section in missing_sections:
                 page = browser.new_page(viewport={"width": 1200, "height": 900})
                 html = _render_story_card_html(section["html"])
                 page.set_content(html, wait_until="networkidle")
                 dest = output_dir / f"story-{section['index'] + 1:02d}.png"
                 page.screenshot(path=str(dest), full_page=True)
                 image_paths.append(dest)
+                section["image_path"] = dest
                 page.close()
             browser.close()
     except Exception as exc:  # pragma: no cover
@@ -188,23 +227,10 @@ def send_digest_via_email(
     # 将markdown转为HTML
     html_body = markdown.markdown(markdown_text)
 
-    # 用BeautifulSoup处理HTML，添加<details>/<summary>折叠功能
     soup = BeautifulSoup(html_body, "html.parser")
     story_sections = _collect_story_sections(soup)
-    story_image_paths = _capture_story_images(markdown_path, story_sections)
-    for data in story_sections:
-        h3 = data["h3"]
-        details = soup.new_tag("details")
-        summary = soup.new_tag("summary")
-        summary.string = h3.get_text()
-        details.append(summary)
-        for node in data["content_nodes"]:
-            details.append(node.extract())
-        h3.replace_with(details)
-        spacer = soup.new_tag("p")
-        spacer.string = "\u00a0"
-        details.insert_after(spacer)
-    html_body = str(soup)
+    _capture_story_images(markdown_path, story_sections)
+    html_body = _build_image_email_body(story_sections)
 
     dry_run = os.environ.get("DAILYNEWS_EMAIL_DRY_RUN")
 
@@ -222,8 +248,25 @@ def send_digest_via_email(
         msg["To"] = recipient_header
         if reply_to:
             msg["Reply-To"] = reply_to
-        msg.set_content(markdown_text)
+        msg.set_content("Image digest attached; please open the HTML part to view the visuals.")
         msg.add_alternative(html_body, subtype="html")
+        html_part = msg.get_body(preferencelist=("html",))
+        for section in story_sections:
+            image_path = section.get("image_path")
+            if not image_path or not image_path.exists():
+                continue
+            mime_type, _ = mimetypes.guess_type(image_path)
+            if mime_type and "/" in mime_type:
+                maintype, subtype = mime_type.split("/", 1)
+            else:
+                maintype, subtype = "image", "png"
+            with open(image_path, "rb") as img_fh:
+                html_part.add_related(
+                    img_fh.read(),
+                    maintype=maintype,
+                    subtype=subtype,
+                    cid=f"<{section['image_cid']}>",
+                )
 
         if dry_run:
             LOGGER.info("Dry run enabled; skipping SMTP send to %s.", email)
@@ -261,7 +304,7 @@ def send_digest_via_email(
                 except Exception:
                     pass
 
-    return story_image_paths
+    return [s["image_path"] for s in story_sections if s.get("image_path")]
 
 
 if __name__ == "__main__":

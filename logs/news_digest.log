@@ -3062,3 +3062,375 @@
 2025-12-06 17:01:20,484 | INFO | Dry run enabled; skipping SMTP send to longqishao0908@gmail.com.
 2025-12-06 17:45:14,641 | INFO | Captured 29 story images in digests/头条简报-2025-12-06_1503
 2025-12-06 17:45:14,660 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com.
+2025-12-06 22:10:12,758 | INFO | Captured 29 story images in digests/头条简报-2025-12-06_1503
+2025-12-06 22:10:12,799 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com.
+2025-12-06 22:10:12,817 | INFO | Dry run enabled; skipping SMTP send to jiabaozhang098@gmail.com.
+2025-12-06 22:10:12,835 | INFO | Dry run enabled; skipping SMTP send to qinnanwu@163.com.
+2025-12-06 22:10:12,853 | INFO | Dry run enabled; skipping SMTP send to weizhengyi@imnu.edu.cn.
+2025-12-06 22:10:12,869 | INFO | Dry run enabled; skipping SMTP send to 1055859108@qq.com.
+2025-12-06 22:10:12,887 | INFO | Dry run enabled; skipping SMTP send to longqishao0908@gmail.com.
+2025-12-06 22:10:49,303 | INFO | Captured 29 story images in digests/头条简报-2025-12-06_1503
+2025-12-06 22:10:49,342 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com.
+2025-12-06 22:10:49,366 | INFO | Dry run enabled; skipping SMTP send to jiabaozhang098@gmail.com.
+2025-12-06 22:10:49,383 | INFO | Dry run enabled; skipping SMTP send to qinnanwu@163.com.
+2025-12-06 22:10:49,400 | INFO | Dry run enabled; skipping SMTP send to weizhengyi@imnu.edu.cn.
+2025-12-06 22:10:49,418 | INFO | Dry run enabled; skipping SMTP send to 1055859108@qq.com.
+2025-12-06 22:10:49,435 | INFO | Dry run enabled; skipping SMTP send to longqishao0908@gmail.com.
+2025-12-06 22:14:58,609 | INFO | Captured 29 story images in digests/头条简报-2025-12-06_1503
+2025-12-06 22:15:01,914 | INFO | Sent digest email to 1047962614@qq.com.
+2025-12-06 22:28:42,444 | INFO | All story images already available in digests/头条简报-2025-12-06_1503
+2025-12-06 22:28:42,473 | INFO | Dry run enabled; skipping SMTP send to 1047962614@qq.com.
+2025-12-06 22:28:42,489 | INFO | Dry run enabled; skipping SMTP send to jiabaozhang098@gmail.com.
+2025-12-06 22:28:42,504 | INFO | Dry run enabled; skipping SMTP send to qinnanwu@163.com.
+2025-12-06 22:28:42,520 | INFO | Dry run enabled; skipping SMTP send to weizhengyi@imnu.edu.cn.
+2025-12-06 22:28:42,540 | INFO | Dry run enabled; skipping SMTP send to 1055859108@qq.com.
+2025-12-06 22:28:42,554 | INFO | Dry run enabled; skipping SMTP send to longqishao0908@gmail.com.
+2025-12-06 22:33:10,858 | INFO | All story images already available in digests/头条简报-2025-12-06_1503
+2025-12-06 22:33:13,890 | INFO | Sent digest email to 1047962614@qq.com.
+2025-12-06 22:34:20,382 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-06 22:34:22,951 | INFO | NewsAPI returned 30 articles (status=ok, remaining=None)
+2025-12-06 22:34:22,951 | INFO | Retained 9 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-06 22:34:22,951 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-06 22:34:23,380 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:34:23,380 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-06 22:34:23,380 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-06 22:34:23,623 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:34:23,623 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-06 22:34:23,623 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-06 22:34:23,866 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:34:23,866 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-06 22:34:23,866 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-06 22:34:24,112 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:34:24,112 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-06 22:34:24,112 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-06 22:34:24,357 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:34:24,357 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-06 22:34:24,357 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-06 22:34:24,602 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:34:24,602 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-06 22:34:24,602 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-06 22:34:24,843 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:34:24,843 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-06 22:34:25,067 | INFO | Summarizing 9 articles across 3 batches.
+2025-12-06 22:35:10,322 | INFO | Completed batch 1/3 (briefings=4).
+2025-12-06 22:35:51,232 | INFO | Completed batch 2/3 (briefings=8).
+2025-12-06 22:36:07,473 | INFO | Completed batch 3/3 (briefings=9).
+2025-12-06 22:36:07,473 | INFO | LLM summarization completed across 3 batches (model=deepseek-chat, total_tokens=None)
+2025-12-06 22:36:07,475 | INFO | Saved digest to digests/头条简报-2025-12-06_2236.md
+2025-12-06 22:36:13,538 | INFO | Captured 9 story images in digests/头条简报-2025-12-06_2236
+2025-12-06 22:36:15,086 | INFO | Sent digest email to 1047962614@qq.com.
+2025-12-06 22:36:15,088 | INFO | Headline run summary: {"started_at": "2025-12-06T14:34:20.381923+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-12-05T06:53:46.829149+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 36, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "deepseek-chat", "input_tokens": null, "output_tokens": null, "total_tokens": null}}, "outputs": {"digest_path": "digests/头条简报-2025-12-06_2236.md", "articles_summarized": 9, "recipients": ["1047962614@qq.com"]}}
+2025-12-06 22:37:40,968 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-06T07:03:30.487725+00:00'}
+2025-12-06 22:37:42,433 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:37:42,433 | INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+2025-12-06 22:37:42,433 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-06T07:03:30.487725+00:00'}
+2025-12-06 22:37:42,696 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-06 22:37:42,696 | INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+2025-12-06 22:37:42,696 | INFO | No articles retrieved for digest 'ai'; skipping.
+2025-12-06 22:37:42,698 | INFO | Topic run summary: {"started_at": "2025-12-06T14:37:40.968240+00:00", "digest_ids": [], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-12-06T14:34:20.381923+00:00", "ai": "2025-12-06T07:03:30.487725+00:00", "china_economy": "2025-12-05T00:28:27.247866+00:00", "entertainment": "2025-12-05T00:28:27.247866+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T07:03:30.487725+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T07:03:30.487725+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": null, "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": []}
+2025-12-06 22:37:53,188 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-05T07:03:30.487725+00:00'}
+2025-12-06 22:37:53,923 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-06 22:37:53,923 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-12-06 22:37:53,923 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-05T07:03:30.487725+00:00'}
+2025-12-06 22:37:54,233 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-06 22:37:54,234 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-12-06 22:37:54,436 | INFO | Summarizing 40 articles across 10 batches.
+2025-12-06 22:38:46,753 | INFO | Completed batch 1/10 (briefings=4).
+2025-12-06 22:39:53,676 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 4,
+            "headline": "腾讯发布混元2.0 AI大模型，参数达4060亿",
+            "chinese_brief": "腾讯于12月5日正式发布了自研AI大模型“混元2.0”（Tencent HY 2.0）。该模型采用混合专家（MoE）架构，总参数达4060亿，激活参数为320亿，支持256K上下文窗口。腾讯宣称其在复杂推理、文本创作等场景的综合表现位居国内第一梯队，相比前代模型在预训练数据和推理能力上有显著提升。此举标志着中国科技巨头在生成式AI领域的竞争进一步加剧。",
+            "english_brief": "Tencent officially launched its self-developed large AI model \"Hunyuan 2.0\" (Tencent HY 2.0) on December 5th. The model employs a Mixture of Experts (MoE) architecture, boasting 406 billion total parameters and 32 billion activated parameters, with support for a 256K context window. Tencent claims its comprehensive performance in complex reasoning and text generation scenarios places it among the top tier in China, showing significant improvements over its predecessor in pre-training data and inference capabilities. This move intensifies competition among Chinese tech giants in the generative AI field.",
+            "term_clarifications": [
+                {
+                    "term": "混元 2.0 (Tencent HY 2.0)",
+                    "explanation": "腾讯公司自主研发的大型人工智能模型名称。“混元”是腾讯为其AI大模型系列命名的品牌。"
+                },
+                {
+                    "term": "混合专家 (MoE)",
+                    "explanation": "一种神经网络架构。它将模型划分为多个“专家”子网络，针对不同的输入，模型动态选择并组合少数几个最相关的专家进行计算，从而在保持高模型容量的同时，提升计算效率。"
+                },
+                {
+                    "term": "参数 (Parameters)",
+                    "explanation": "指AI模型中可被调整的数值，用于从数据中学习模式。总参数（如406B，即4060亿）代表模型的总体规模和理论容量；激活参数（如32B）指在特定推理过程中实际参与计算的参数数量，与MoE架构相关。"
+                },
+                {
+                    "term": "上下文窗口 (Context Window)",
+                    "explanation": "指AI模型在生成回应时，能够一次性考虑和处理的输入文本（包括用户指令和对话历史）的最大长度。256K意味着模型可以处理约25.6万个字符或单词的上下文信息。"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "headline": "国民党立委提案助理费除罪化引争议",
+            "chinese_brief": "中国国民党籍立法委员陈玉珍近日提案，推动“立法委员公费助理费除罪化”。此提案引发外界质疑，认为可能为涉入贪污案的同党立委颜宽恒“量身打造”，因颜宽恒本人未参与连署而被指“避嫌”。国民党团总召傅崐萁辩称此为“进步的法案”，但遭民进党立委批评为“退回史前时代”的自肥行为。公民监督国会联盟等团体也发起抗议，反对修法，担忧公费助理权益受损。",
+            "english_brief": "Chen Yu-jen, a legislator from Taiwan's Kuomintang (KMT) party, recently proposed a bill to \"decriminalize\" the misuse of public funds allocated for legislative assistants' salaries. The proposal has sparked controversy, with critics suggesting it may be \"tailor-made\" for fellow KMT legislator Yen Kuan-heng, who is involved in a corruption case. Yen's absence from the list of co-signers has raised suspicions of him avoiding a conflict of interest. KMT caucus whip Fu Kun-chi defended it as a \"progressive bill,\" but Democratic Progressive Party legislators slammed it as a \"regression to prehistoric times\" for self-enrichment. Civic groups, including the Citizen Congress Watch, have protested against the amendment, fearing it would sacrifice the rights of publicly funded assistants.",
+            "term_clarifications": [
+                {
+                    "term": "立法委员 (Legislator)",
+                    "explanation": "台湾地区立法机构的民意代表，负责制定和修改法律。"
+                },
+                {
+                    "term": "公费助理费",
+                    "explanation": "指由公帑（政府预算）支付，用于聘请立法委员助理的专项经费。"
+                },
+                {
+                    "term": "除罪化 (Decriminalization)",
+                    "explanation": "在此语境下，特指通过修改法律，将某种原本可能构成犯罪（如贪污、侵占公款）的行为，转变为仅受行政处罚或完全合法化的过程。"
+                },
+                {
+                    "term": "公民监督国会联盟 (Citizen Congress Watch)",
+                    "explanation": "台湾的一个非政府组织，致力于监督立法机构的运作、促进立法透明化与问责制。"
+                },
+                {
+                    "term": "国民党 (KMT)、民进党 (DPP)",
+                    "explanation": "台湾地区的主要政党。中国国民党（Kuomintang）和民主进步党（Democratic Progressive Party）。"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "headline": "承包商疑跑路，台北环状线地下道工程停工",
+            "chinese_brief": "位于台北捷运环状线新埔民生站旁、自2020年开始兴建的民生地下道工程，因工期延误五年仍未完工。近日有消息指，负责施工的承包商疑似“落跑”（失联或放弃工程），导致工程全面停工。该站点周边人车流量大，地下道本意是改善交通与行人安全，长期停工引发民众对公共工程管理效率与承包商监管的担忧。",
+            "english_brief": "The construction of the Minsheng Underpass near the Xinpu Minsheng Station on Taipei's Circular MRT Line, which began in 2020, has ground to a halt. Reports indicate that the contracted construction company may have \"absconded\" (become unreachable or abandoned the project), leading to a complete work stoppage. The project, already delayed for five years, was intended to improve traffic flow and pedestrian safety in the high-traffic area around the station. The prolonged suspension raises public concerns about the efficiency of public works management and oversight of contractors.",
+            "term_clarifications": [
+                {
+                    "term": "环状线 (Circular Line)",
+                    "explanation": "台北捷运（ Taipei Metro）的一条线路，路线呈环状，连接台北市与新北市多个区域。"
+                },
+                {
+                    "term": "新埔民生站 (Xinpu Minsheng Station)",
+                    "explanation": "台北捷运环状线与板南线交会的车站，位于新北市板桥区，是重要的交通枢纽。"
+                },
+                {
+                    "term": "承包商/包商 (Contractor)",
+                    "explanation": "指与政府或业主签订合同，负责执行特定工程项目的公司。"
+                },
+                {
+                    "term": "落跑",
+                    "explanation": "口语，意指逃跑、失联、放弃职责或项目。在此指承包商未履行合同便消失。"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "headline": "双北市旧公寓加装电梯补助政策遇阻",
+            "chinese_brief": "台北市与新北市（合称“双北”）存在大量老旧公寓，许多长者因无电梯而面临“囚居老年”的困境。为此，双北市政府均推出了补助老旧公寓增设电梯的政策。然而，政策推动面临多重关卡：主要阻力常来自一楼住户的反对（因受益小且可能受影响），此外还有资金分摊、建筑结构评估、邻里协商困难以及复杂的申请程序等问题，导致补助申请与实际安装进展缓慢。",
+            "english_brief": "Taipei City and New Taipei City (collectively known as \"Double North\") are home to a vast number of old apartment buildings without elevators, leading to severe mobility issues for elderly residents, a phenomenon described as \"imprisoned in old age.\" In response, both city governments have introduced subsidy programs to fund elevator installations in such buildings. However, policy implementation faces significant obstacles. Primary resistance often comes from first-floor residents, who see little benefit and potential drawbacks. Additional challenges include cost-sharing disputes, structural assessments, difficulties in neighborhood consensus-building, and complex application procedures, all of which have slowed the uptake and completion of such projects.",
+            "term_clarifications": [
+                {
+                    "term": "双北 (Double North)",
+                    "explanation": "指台北市与新北市。两者是台湾北部紧密相邻、生活圈高度重叠的直辖市。"
+                },
+                {
+                    "term": "旧公寓/老旧建物",
+                    "explanation": "通常指屋龄超过30年、楼高4到5层且未配备电梯的集合住宅，在台湾都市中非常普遍。"
+                },
+                {
+                    "term": "囚居老年",
+                    "explanation": "形容老年人因居住在没有电梯的老旧公寓高层，上下楼极其不便，导致其活动范围受限，如同被囚禁在家中的社会现象。"
+                },
+                {
+2025-12-06 22:39:53,677 | WARNING | Batch 2 attempt 1 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 4,             "headline": "腾讯发布混元2.0 AI大模型，参数达4060亿",             "chinese_brief": "腾讯于12月5日正式发布了自研AI大模型“混元2.0”（Tencent HY 2.0）。该模型采用混合专家（MoE）架构，总参数达4060亿，激活参数为320亿，支持256K上下文窗口。腾讯宣称其在复杂推理、文本创作等场景的综合表现位居国内第一梯队，相比前代模型在预训练数据和推理能力上有显著提升。此举标志着中国科技巨头在生成式AI领域的竞争进一步加剧。",             "english_brief": "Tencent officially launched its self-developed large AI model \"Hunyuan 2.0\" (Tencent HY 2.0) on December 5th. The model employs a Mixture of Exper...)
+2025-12-06 22:41:00,883 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 4,
+            "headline": "腾讯发布混元2.0 AI大模型，称其推理能力居国内顶尖",
+            "chinese_brief": "腾讯于12月5日正式发布了自研AI大模型“混元2.0”（Tencent HY 2.0）。该模型采用混合专家（MoE）架构，总参数量达4060亿，激活参数量为320亿，并支持256K上下文窗口。腾讯宣称，该模型在复杂推理、文本创作及指令遵循等场景的综合表现“稳居国内第一梯队”，标志着其在人工智能基础模型领域的又一重要进展。",
+            "english_brief": "Tencent officially launched its self-developed large AI model \"Hunyuan 2.0\" (Tencent HY 2.0) on December 5th. The model employs a Mixture of Experts (MoE) architecture, boasting a total of 406 billion parameters with 32 billion activated, and supports a 256K context window. Tencent claims its comprehensive performance in complex reasoning, text generation, and instruction-following scenarios places it firmly \"within the top tier in China,\" marking another significant step in its foundational AI model development.",
+            "term_clarifications": [
+                {
+                    "term": "混元2.0 (Tencent HY 2.0)",
+                    "explanation": "腾讯公司自主研发的大型人工智能模型名称。“混元”是腾讯为其AI大模型系列设定的品牌名。"
+                },
+                {
+                    "term": "混合专家（MoE）架构",
+                    "explanation": "一种神经网络设计模式。模型由多个“专家”子网络组成，针对不同输入，路由机制会动态选择激活其中一部分专家进行计算，旨在以更少的计算成本（激活参数）实现大规模参数模型的能力。"
+                },
+                {
+                    "term": "参数 (Parameters)",
+                    "explanation": "指AI模型中可被调整的数值，决定了模型如何从输入数据生成输出。总参数量大通常意味着模型容量和潜在能力更强，而激活参数则指处理具体任务时实际参与计算的参数量。"
+                },
+                {
+                    "term": "上下文窗口 (Context Window)",
+                    "explanation": "指模型在一次处理中能够考虑和理解的输入文本（如单词或标记）的最大长度。256K表示能处理约25.6万个单词的文本，对于理解长文档和进行长对话至关重要。"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "headline": "台湾立法委员提案助理费除罪化引发争议",
+            "chinese_brief": "中国国民党籍立法委员陈玉珍近日提案，要求将立法机构的“公费助理费”使用除罪化。此举引发外界质疑，认为可能意在为涉入贪污案的同党籍立委颜宽恒解套。国民党团总召傅崐萁称此为“进步的法案”，但遭民进党立委批评是“退回史前时代”的自肥行为。公民监督国会联盟等民间团体也集结抗议，反对修法，担忧公费助理权益成为政治算计的牺牲品。值得注意的是，涉案的颜宽恒本人并未参与该提案的连署。",
+            "english_brief": "Chen Yu-jen, a legislator from Taiwan's Kuomintang (KMT) party, recently proposed a bill to decriminalize the use of \"public-funded assistant allowances\" in the legislative body. This move has sparked public suspicion that it may be tailored to benefit fellow KMT legislator Yen Kuan-heng, who is involved in a corruption case. KMT caucus whip Fu Kun-chi defended it as a \"progressive bill,\" but Democratic Progressive Party legislators criticized it as a \"regression to prehistoric times\" for self-enrichment. Civic groups, including the Citizen Congress Watch, have also protested against the amendment, fearing the rights of publicly-funded assistants could be sacrificed for political calculations. Notably, Yen Kuan-heng, the legislator at the center of the controversy, did not sign the proposal.",
+            "term_clarifications": [
+                {
+                    "term": "立法委员 (Legislator)",
+                    "explanation": "指台湾地区立法机构的民意代表，负责法律制定、预算审议等工作。"
+                },
+                {
+                    "term": "公费助理费 (Public-funded Assistant Allowances)",
+                    "explanation": "指由公帑支付、拨给民意代表用于聘用助理协助问政及相关服务的经费。其使用规范与核销涉及法律与伦理问题。"
+                },
+                {
+                    "term": "除罪化 (Decriminalization)",
+                    "explanation": "指通过修改法律，将原本属于犯罪的行为改为仅属行政违规或完全合法，从而免除刑事处罚。"
+                },
+                {
+                    "term": "公民监督国会联盟 (Citizen Congress Watch)",
+                    "explanation": "台湾的一个非政府组织，致力于监督立法机构的运作、促进立法透明化与问责制。"
+                },
+                {
+                    "term": "国民党 (Kuomintang, KMT) / 民进党 (Democratic Progressive Party, DPP)",
+                    "explanation": "台湾地区的两个主要政党。中国国民党（KMT）和民主进步党（DPP）在岛内政治中常处于竞争态势。"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "headline": "承包商疑落跑，台北环状线地下道工程停工",
+            "chinese_brief": "位于台北捷运环状线新埔民生站旁、自2020年开始兴建的民生地下道工程，因工期延误五年仍未完工。近日更传出承包商疑似“落跑”（指无故撤离、失联），导致工程全面停工。该站点周边人车流量大，地下道本旨在疏导交通、便利行人，长期停工不仅影响市民通行，也引发对公共工程管理与承包商监督机制的质疑。",
+            "english_brief": "The Minsheng Underpass construction project, located next to the Xinpu Minsheng Station on Taipei's Circular MRT Line and commenced in 2020, remains unfinished after five years of delays. Recently, it was reported that the contractor疑似 \"ran away\" (meaning abandoned the site without notice or contact), leading to a complete work stoppage. The area around the station has heavy pedestrian and vehicle traffic, and the underpass was intended to ease congestion and improve pedestrian access. The prolonged suspension not only inconveniences the public but also raises concerns about the management of public works and oversight of contractors.",
+            "term_clarifications": [
+                {
+                    "term": "环状线 (Circular Line)",
+                    "explanation": "指台北捷运（台北都会区大众捷运系统）中一条环形运营的线路，连接多个行政区与转运站。"
+                },
+                {
+                    "term": "新埔民生站 (Xinpu Minsheng Station)",
+                    "explanation": "台北捷运环状线与板南线交会的捷运车站，位于新北市板桥区，是重要的交通节点。"
+                },
+                {
+                    "term": "落跑",
+                    "explanation": "口语，常指承包商或负责人未履行合同，在未正式通知或解决后续问题的情况下突然撤离工程现场、失去联系，等同于“跑路”。"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "headline": "双北市旧公寓电梯补助政策推行遇阻",
+            "chinese_brief": "台北市与新北市（合称“双北”）存在大量老旧公寓，许多长者因无电梯而面临“囚居老年”的困境。为改善此状况，双北市政府均推出了为旧公寓增设电梯的补助政策。然而，政策在实际推动中频频“卡关”，主要障碍包括一楼住户因担心影响采光、空间或房价而反对，以及住户间资金分摊难以达成共识。这些因素使得旨在提升高龄者生活品质与无障碍环境的目标进展缓慢。",
+            "english_brief": "Taipei City and New Taipei City (collectively known as \"Double North\") have a vast number of old apartment buildings without elevators, leaving many elderly residents trapped in their homes, a phenomenon described as \"imprisoned in old age.\" To address this, both city governments have introduced subsidy programs for installing elevators in these old apartments. However, the implementation has repeatedly hit snags. Major obstacles include opposition from first-floor residents concerned about impacts on lighting, space, or property values, as well as difficulties in reaching consensus among residents on cost-sharing. These challenges have slowed progress toward the goal of improving the quality of life and accessibility for the aging population.",
+            "term_clarifications": [
+                {
+                    "term": "双北 (Double North)",
+                    "explanation": "指台湾的台北市与新北市。两城市相邻，共同构成台北都会区的核心，常被合称。"
+                },
+                {
+                    "term": "囚居老年",
+                    "explanation": "形容居住在无电梯老旧公寓高楼层的老年人，因上下楼极其不便而被迫长期待在家中，如同被囚禁，社会参与和活动范围严重受限。"
+                },
+                {
+                    "term": "卡关",
+                    "explanation": "源自游戏术语，比喻事情在推进过程中遇到阻碍、陷入停滞状态。"
+                }
+            ]
+2025-12-06 22:41:00,885 | WARNING | Batch 2 attempt 2 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 4,             "headline": "腾讯发布混元2.0 AI大模型，称其推理能力居国内顶尖",             "chinese_brief": "腾讯于12月5日正式发布了自研AI大模型“混元2.0”（Tencent HY 2.0）。该模型采用混合专家（MoE）架构，总参数量达4060亿，激活参数量为320亿，并支持256K上下文窗口。腾讯宣称，该模型在复杂推理、文本创作及指令遵循等场景的综合表现“稳居国内第一梯队”，标志着其在人工智能基础模型领域的又一重要进展。",             "english_brief": "Tencent officially launched its self-developed large AI model \"Hunyuan 2.0\" (Tencent HY 2.0) on December 5th. The model employs a Mixture of Experts (MoE) arch...)
+2025-12-06 22:42:08,390 | ERROR | Failed to parse model output as JSON: ```json
+{
+    "briefings": [
+        {
+            "id": 4,
+            "headline": "腾讯发布混元2.0 AI大模型，参数达4060亿",
+            "chinese_brief": "腾讯于12月5日正式发布自研AI大模型混元2.0（Tencent HY 2.0），包含Think和Instruct两个版本。该模型采用混合专家（MoE）架构，总参数达4060亿，激活参数为320亿，支持256K上下文窗口。腾讯宣称其在复杂推理场景的综合表现稳居国内第一梯队，尤其在文本创作与复杂指令遵循方面表现突出。此举标志着中国科技企业在生成式人工智能领域的持续追赶与竞争。",
+            "english_brief": "Tencent officially launched its self-developed large AI model, Hunyuan 2.0 (Tencent HY 2.0), on December 5th. The release includes two versions: Think and Instruct. The model employs a Mixture of Experts (MoE) architecture with a total of 406 billion parameters, of which 32 billion are activated, and supports a 256K context window. Tencent claims its comprehensive performance in complex reasoning scenarios places it firmly in the top tier domestically, with notable strengths in text generation and complex instruction following. This move underscores the ongoing competition among Chinese tech giants in the generative AI arena.",
+            "term_clarifications": [
+                {
+                    "term": "混元 2.0 (Hunyuan 2.0 / Tencent HY 2.0)",
+                    "explanation": "腾讯公司自主研发的大型人工智能模型名称。'混元'是腾讯为其AI大模型系列命名的品牌。"
+                },
+                {
+                    "term": "混合专家架构 (Mixture of Experts, MoE)",
+                    "explanation": "一种神经网络架构设计。它将模型划分为多个'专家'子网络，对于每个输入，仅激活一部分相关的专家进行计算。这种设计可以在大幅增加模型总参数量的同时，保持相对较低的推理计算成本和能耗。"
+                },
+                {
+                    "term": "参数 (Parameters)",
+                    "explanation": "指AI模型中可被调整的数值，用于从数据中学习模式。总参数（如406B，即4060亿）代表模型的总体规模和理论容量；激活参数（如32B）指在MoE等架构中，处理单个任务时实际参与计算的参数数量，与推理效率直接相关。"
+                },
+                {
+                    "term": "上下文窗口 (Context Window)",
+                    "explanation": "指AI模型在一次处理中能够考虑和理解的文本长度（以token计）。256K的上下文窗口意味着模型可以同时处理约25.6万个单词或等量中文字符的文本信息，对于长文档理解、长对话等任务至关重要。"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "headline": "台立法机构审议助理费除罪化提案引争议",
+            "chinese_brief": "中国国民党籍民意代表陈玉珍提出所谓'公费助理费除罪化'法案，并交付委员会审查。此提案被外界质疑是为涉及贪渎案的同党籍民意代表颜宽恒'量身打造'，颜宽恒本人疑似为避嫌未参与联署。国民党团总召集人傅崐萁称此为'进步法案'，但遭民进党籍民意代表批评为'退回史前时代'。公民监督团体及助理工会亦强烈反对，认为此修法可能让公费助理成为政治算计的牺牲品，并集结多个党派团体在立法机构外抗议。",
+            "english_brief": "A proposal to 'decriminalize' the misuse of public funds for legislative assistants' salaries, put forward by Kuomintang (KMT) legislator Chen Yu-chen, has been submitted for committee review in Taiwan's legislative body. The move has sparked controversy, with critics suggesting it is 'tailor-made' for fellow KMT legislator Yen Kuan-heng, who is implicated in a corruption case. Yen reportedly did not co-sponsor the bill to avoid the appearance of a conflict of interest. KMT caucus whip Fu Kun-chi defended it as a 'progressive bill,' but Democratic Progressive Party (DPP) legislators slammed it as a 'regression to prehistoric times.' Civic watchdog groups and assistants' unions have also voiced strong opposition, staging a cross-party protest outside the legislature, arguing the amendment could sacrifice public assistants to political calculations.",
+            "term_clarifications": [
+                {
+                    "term": "公费助理费除罪化",
+                    "explanation": "此提案旨在修改相关法律，使民意代表若将核定用于支付助理薪资的公务补助经费（公费助理费）挪作他用（如流入个人账户），其行为可能被免除刑事罪责。目前此类行为在台湾地区可能构成贪污、诈领补助等刑事犯罪。"
+                },
+                {
+                    "term": "付委审查",
+                    "explanation": "指立法提案经过一读程序后，交付给相关的常设委员会进行实质性的审查、讨论和修改，是立法过程中的关键环节。"
+                },
+                {
+                    "term": "国民党 (Kuomintang, KMT)",
+                    "explanation": "中国国民党，台湾地区的一个主要政党。"
+                },
+                {
+                    "term": "民进党 (Democratic Progressive Party, DPP)",
+                    "explanation": "民主进步党，台湾地区的另一个主要政党。"
+                },
+                {
+                    "term": "公督盟 (Citizen Congress Watch)",
+                    "explanation": "公民监督国会联盟，是台湾的一个非政府组织，主要监督立法机构及民意代表的问政表现与廉政情况。"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "headline": "承包商疑跑路，台北环状线地下道工程停工",
+            "chinese_brief": "位于台北捷运环状线新埔民生站旁、自2020年开始兴建的民生地下道工程，因工期延误五年仍未完工。近日更传出承包商疑似'落跑'（逃逸、失联），导致工程全面停工。该站周边人车流量大，地下道本意是改善行人通行安全与效率，长期延宕已引发当地民众不满，并对工程监管提出质疑。",
+            "english_brief": "The construction of an underground pedestrian walkway near the Xinpu Minsheng Station on Taipei's Circular MRT Line, which began in 2020, has ground to a halt. The project, already delayed for five years, is now reportedly at a complete standstill because the contractor is suspected of having absconded. The area around the station experiences heavy pedestrian and vehicle traffic, and the walkway was intended to improve safety and efficiency. The prolonged delays have caused public discontent and raised questions about oversight of the project.",
+            "term_clarifications": [
+                {
+                    "term": "环状线 (Circular Line)",
+                    "explanation": "指台北捷运（台北都会区大众捷运系统）的一条环形路线，连接台北市与新北市多个区域。"
+                },
+                {
+                    "term": "新埔民生站 (Xinpu Minsheng Station)",
+                    "explanation": "台北捷运环状线与板南线交会的车站，位于新北市板桥区，是重要的交通枢纽。"
+                },
+                {
+                    "term": "包商落跑",
+                    "explanation": "口语化表达，指工程承包商未完成合约即失去联系、停止施工，可能涉及财务问题或违约，导致工程无限期中止。"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "headline": "双北市旧公寓加装电梯补助政策遇阻",
+            "chinese_brief": "台北市与新北市（合称'双北'）存在大量无电梯的老旧公寓，导致许多长者出行困难，形成'囚居老年'的严峻社会问题。尽管双北市政府均已推出财政补助政策，鼓励旧公寓增建电梯，但在实际推动过程中面临多重阻碍。主要障碍包括低楼层住户因担心影响采光、隐私、房价或需分摊维护费用而反对，以及业主间资金筹措困难、共识难以达成等，使得政策成效受限。",
+            "english_brief": "Taipei and New Taipei City (collectively known as 'Double North') are home to a vast number of old apartment buildings without elevators, creating a severe social issue dubbed 'imprisoned old age' as many elderly residents become confined to their homes. Although both city governments have introduced subsidy programs to encourage the installation of elevators in these buildings, implementation has hit significant roadblocks. Major obstacles include opposition from residents on lower floors concerned about impacts on lighting, privacy, property values, and maintenance costs, as well as difficulties in raising funds and reaching consensus among all homeowners, which has limited the policy's effectiveness.",
+            "term_clarifications": [
+                {
+                    "term": "双北",
+                    "explanation": "指台湾地区的台北市与新北市。两城市相邻，共同构成大台北都会区的核心，常被合称。"
+                },
+                {
+                    "term": "囚居老年",
+                    "explanation": "形容老年人因居住在没有电梯的老旧公寓高层，上下楼极度不便，导致其活动范围被限制在住所内，如同被'囚禁'，严重影响生活质量与社会参与
+2025-12-06 22:42:08,391 | WARNING | Batch 2 attempt 3 produced invalid JSON (snippet=```json {     "briefings": [         {             "id": 4,             "headline": "腾讯发布混元2.0 AI大模型，参数达4060亿",             "chinese_brief": "腾讯于12月5日正式发布自研AI大模型混元2.0（Tencent HY 2.0），包含Think和Instruct两个版本。该模型采用混合专家（MoE）架构，总参数达4060亿，激活参数为320亿，支持256K上下文窗口。腾讯宣称其在复杂推理场景的综合表现稳居国内第一梯队，尤其在文本创作与复杂指令遵循方面表现突出。此举标志着中国科技企业在生成式人工智能领域的持续追赶与竞争。",             "english_brief": "Tencent officially launched its self-developed large AI model, Hunyuan 2.0 (Tencent HY 2.0), on December 5th. The release includes two ve...)
+2025-12-06 22:42:08,391 | WARNING | Splitting batch 2 (size=4) after repeated JSON failures.
+2025-12-06 22:43:04,211 | INFO | Completed batch 2/10 (briefings=8).
+2025-12-06 22:43:48,294 | INFO | Completed batch 3/10 (briefings=12).
+2025-12-06 22:44:29,647 | INFO | Completed batch 4/10 (briefings=16).
+2025-12-06 22:45:16,606 | INFO | Completed batch 5/10 (briefings=20).
+2025-12-06 22:45:42,619 | INFO | Completed batch 6/10 (briefings=22).
+2025-12-06 22:46:29,559 | INFO | Completed batch 7/10 (briefings=26).
+2025-12-06 22:47:11,891 | INFO | Completed batch 8/10 (briefings=30).
+2025-12-06 22:47:57,493 | INFO | Completed batch 9/10 (briefings=34).
+2025-12-06 22:48:37,397 | INFO | Completed batch 10/10 (briefings=38).
+2025-12-06 22:48:37,397 | INFO | LLM summarization completed across 10 batches (model=deepseek-chat, total_tokens=None)
+2025-12-06 22:48:37,399 | INFO | Saved digest to digests/ai-briefing-2025-12-06_2248.md
+2025-12-06 22:49:01,353 | INFO | Captured 38 story images in digests/ai-briefing-2025-12-06_2248
+2025-12-06 22:49:04,766 | INFO | Sent digest email to jiabaozhang098@gmail.com.
+2025-12-06 22:49:04,770 | INFO | Topic run summary: {"started_at": "2025-12-06T14:37:53.187923+00:00", "digest_ids": ["ai"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-12-06T14:34:20.381923+00:00", "ai": "2025-12-06T14:37:53.187923+00:00", "china_economy": "2025-12-05T00:28:27.247866+00:00", "entertainment": "2025-12-05T00:28:27.247866+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-05T07:03:30.487725+00:00"}, "status": "ok", "total_results": 158, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-05T07:03:30.487725+00:00"}, "status": "ok", "total_results": 592, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}]}, "openai": {"key": "sk-p..._AUA", "model": "deepseek-chat", "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": [{"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-12-06_2248.md", "articles_summarized": 38, "recipients": ["jiabaozhang098@gmail.com"]}]}
