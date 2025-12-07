@@ -145,6 +145,46 @@
       }
     },
     {
+      "id": "physics",
+      "mode": "topic",
+      "display_name": "Physics",
+      "description": "News in Physics updates",
+      "news_queries": [
+        {
+          "endpoint": "everything",
+          "q": "(\"物理学\" OR \"理论物理\" OR \"物理学家\")",
+          "searchIn": "title,description,content",
+          "language": "zh",
+          "pageSize": 30,
+          "sortBy": "publishedAt"
+        },
+        {
+          "endpoint": "everything",
+          "q": "(\"physics\" OR \"theoretical physics\" OR \"physicist\" OR \"high energy physics\")",
+          "searchIn": "title,description",
+          "language": "en",
+          "pageSize": 30,
+          "sortBy": "publishedAt"
+        }
+      ],
+      "newsapi": {
+        "max_age_days": 5
+      },
+      "email": {
+        "subject_template": "Physics Briefing - {local_dt:%Y-%m-%d %H:%M}",
+        "tags": [
+          "physics"
+        ]
+      },
+      "output": {
+        "filename_prefix": "physics-briefing"
+      },
+      "schedule": {
+        "default_time": "08:00",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
       "id": "entertainment",
       "mode": "topic",
       "display_name": "Entertainment News",

@@ -86,3 +86,49 @@ INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
 INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
 INFO | No articles retrieved for headline digest; nothing to summarize.
 No new headline articles found.
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-06T00:00:00.247866+00:00'}
+INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-06T00:00:00.247866+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'china_economy'; skipping.
+INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-06T00:00:00.187923+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=zh after filtering.
+INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-06T00:00:00.187923+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'ai'; skipping.
+INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-12-06T00:00:00.247866+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=everything, language=en after filtering.
+INFO | No articles retrieved for digest 'entertainment'; skipping.
+INFO | Topic run summary: {"started_at": "2025-12-07T00:00:01.511967+00:00", "digest_ids": [], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-12-06T00:00:00.381923+00:00", "ai": "2025-12-06T00:00:00.187923+00:00", "china_economy": "2025-12-06T00:00:00.247866+00:00", "entertainment": "2025-12-06T00:00:00.247866+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T00:00:00.247866+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T00:00:00.247866+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T00:00:00.187923+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T00:00:00.187923+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-12-06T00:00:00.247866+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": null, "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": []}
+No topic digests generated.
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | No articles retrieved for headline digest; nothing to summarize.
+No new headline articles found.
