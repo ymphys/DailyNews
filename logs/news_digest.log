@@ -3533,3 +3533,315 @@
 2025-12-07 08:16:13,040 | INFO | Sent digest email to weizhengyi@imnu.edu.cn.
 2025-12-07 08:16:14,123 | INFO | Sent digest email to qinnanwu@163.com.
 2025-12-07 08:16:14,123 | INFO | Topic run summary: {"started_at": "2025-12-07T00:06:54.525042+00:00", "digest_ids": ["ai", "physics", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-12-06T00:00:00.381923+00:00", "ai": "2025-12-07T00:06:54.525042+00:00", "physics": "2025-12-07T00:06:54.525042+00:00", "china_economy": "2025-12-06T00:00:00.247866+00:00", "entertainment": "2025-12-07T00:06:54.525042+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T00:00:00.247866+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T00:00:00.247866+00:00"}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T00:00:00.187923+00:00"}, "status": "ok", "total_results": 1, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-06T00:00:00.187923+00:00"}, "status": "ok", "total_results": 3, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"物理学\" OR \"理论物理\" OR \"物理学家\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 30, "sortBy": "publishedAt", "from": "2025-12-02T00:07:56.172031+00:00"}, "status": "ok", "total_results": 7, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"物理学\" OR \"理论物理\" OR \"物理学家\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 30, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"physics\" OR \"theoretical physics\" OR \"physicist\" OR \"high energy physics\")", "searchIn": "title,description", "language": "en", "pageSize": 30, "sortBy": "publishedAt", "from": "2025-12-02T00:07:56.839482+00:00"}, "status": "ok", "total_results": 89, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"physics\" OR \"theoretical physics\" OR \"physicist\" OR \"high energy physics\")", "searchIn": "title,description", "language": "en", "pageSize": 30, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-12-06T00:00:00.247866+00:00"}, "status": "ok", "total_results": 3, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": "deepseek-chat", "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": [{"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-12-07_0807.md", "articles_summarized": 4, "recipients": ["1047962614@qq.com"]}, {"digest_id": "physics", "digest_display": "Physics", "digest_path": "digests/physics-briefing-2025-12-07_0815.md", "articles_summarized": 37, "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests/最热影音资讯简报-2025-12-07_0816.md", "articles_summarized": 3, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+2025-12-08 08:00:00,961 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-08 08:00:05,967 | WARNING | HTTP error fetching top-headlines (attempt 1/3): [Errno 54] Connection reset by peer. Retrying in 8 seconds.
+2025-12-08 08:00:14,762 | INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+2025-12-08 08:00:14,762 | INFO | Retained 27 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-08 08:00:14,762 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-08 08:00:15,012 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-08 08:00:15,012 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-08 08:00:15,012 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-08 08:00:15,262 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-08 08:00:15,263 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-08 08:00:15,263 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-08 08:00:15,513 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-08 08:00:15,513 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-08 08:00:15,513 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-08 08:00:15,763 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-08 08:00:15,763 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-08 08:00:15,763 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-08 08:00:16,013 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-08 08:00:16,013 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-08 08:00:16,013 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-08 08:00:16,265 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-08 08:00:16,265 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-08 08:00:16,265 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-08 08:00:16,514 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-08 08:00:16,515 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-09 08:00:00,992 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-09 08:00:00,992 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+2025-12-09 08:00:00,992 | INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-07T00:00:00.992384+00:00'}
+2025-12-09 08:00:01,672 | INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+2025-12-09 08:00:01,672 | INFO | Retained 27 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-09 08:00:01,672 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-09 08:00:01,728 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-09 08:00:01,728 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-12-09 08:00:01,728 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+2025-12-09 08:00:01,728 | INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-07T00:00:01.728701+00:00'}
+2025-12-09 08:00:01,943 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-09 08:00:01,943 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-09 08:00:01,943 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-09 08:00:02,024 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-09 08:00:02,024 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-12-09 08:00:02,189 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-09 08:00:02,189 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-09 08:00:02,189 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-09 08:00:02,435 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-09 08:00:02,435 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-09 08:00:02,435 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-09 08:00:02,677 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-09 08:00:02,677 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-09 08:00:02,677 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-09 08:00:02,919 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-09 08:00:02,919 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-09 08:00:02,919 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-09 08:00:03,164 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-09 08:00:03,164 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-09 08:00:03,164 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-09 08:00:03,406 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-09 08:00:03,406 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-10 08:00:01,547 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-10 08:00:02,263 | INFO | NewsAPI returned 25 articles (status=ok, remaining=None)
+2025-12-10 08:00:02,263 | INFO | Retained 25 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-10 08:00:02,263 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-10 08:00:02,516 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-10 08:00:02,517 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-10 08:00:02,517 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-10 08:00:02,772 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-10 08:00:02,772 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-10 08:00:02,772 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-10 08:00:03,156 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-10 08:00:03,156 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-10 08:00:03,156 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-10 08:00:03,409 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-10 08:00:03,410 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-10 08:00:03,410 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-10 08:00:03,661 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-10 08:00:03,661 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-10 08:00:03,661 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-10 08:00:03,912 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-10 08:00:03,912 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-10 08:00:03,912 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-10 08:00:04,173 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-10 08:00:04,173 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 08:00:00,777 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-11 08:00:00,777 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+2025-12-11 08:00:00,777 | INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-09T00:00:00.777155+00:00'}
+2025-12-11 08:00:01,598 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-11 08:00:01,598 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-12-11 08:00:01,598 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+2025-12-11 08:00:01,598 | INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-09T00:00:01.598891+00:00'}
+2025-12-11 08:00:01,818 | INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+2025-12-11 08:00:01,819 | INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 08:00:01,819 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-11 08:00:01,908 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-11 08:00:01,908 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-12-11 08:00:02,072 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 08:00:02,072 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 08:00:02,072 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-11 08:00:02,316 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 08:00:02,316 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 08:00:02,316 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-11 08:00:02,568 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 08:00:02,568 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 08:00:02,568 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-11 08:00:02,812 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 08:00:02,813 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 08:00:02,813 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-11 08:00:03,057 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 08:00:03,057 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 08:00:03,057 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-11 08:00:03,312 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 08:00:03,312 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 08:00:03,312 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-11 08:00:03,560 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 08:00:03,560 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:36,318 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-11 13:52:37,047 | INFO | NewsAPI returned 24 articles (status=ok, remaining=None)
+2025-12-11 13:52:37,047 | INFO | Retained 24 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:37,047 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-11 13:52:37,302 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 13:52:37,302 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:37,302 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-11 13:52:37,559 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 13:52:37,560 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:37,560 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-11 13:52:37,817 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 13:52:37,817 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:37,818 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-11 13:52:38,073 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 13:52:38,074 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:38,074 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-11 13:52:38,331 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 13:52:38,331 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:38,331 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-11 13:52:38,587 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 13:52:38,588 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:38,588 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-11 13:52:38,844 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 13:52:38,844 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 13:52:39,120 | INFO | Summarizing 24 articles across 6 batches.
+2025-12-11 13:53:20,205 | INFO | Completed batch 1/6 (briefings=4).
+2025-12-11 13:53:58,440 | INFO | Completed batch 2/6 (briefings=8).
+2025-12-11 13:54:45,965 | INFO | Completed batch 3/6 (briefings=12).
+2025-12-11 13:55:31,760 | INFO | Completed batch 4/6 (briefings=16).
+2025-12-11 13:56:17,059 | INFO | Completed batch 5/6 (briefings=20).
+2025-12-11 13:56:59,679 | INFO | Completed batch 6/6 (briefings=24).
+2025-12-11 13:56:59,679 | INFO | LLM summarization completed across 6 batches (model=deepseek-chat, total_tokens=None)
+2025-12-11 13:56:59,681 | INFO | Saved digest to digests/头条简报-2025-12-11_1356.md
+2025-12-11 13:57:15,728 | INFO | Captured 24 story images in digests/头条简报-2025-12-11_1356
+2025-12-11 13:57:18,148 | INFO | Sent digest email to 1047962614@qq.com.
+2025-12-11 13:57:20,491 | INFO | Sent digest email to longqishao0908@gmail.com.
+2025-12-11 13:57:22,974 | INFO | Sent digest email to weizhengyi@imnu.edu.cn.
+2025-12-11 13:57:25,257 | INFO | Sent digest email to qinnanwu@163.com.
+2025-12-11 13:57:27,629 | INFO | Sent digest email to 814022400@qq.com.
+2025-12-11 13:57:30,132 | INFO | Sent digest email to 1055859108@qq.com.
+2025-12-11 13:57:30,137 | INFO | Headline run summary: {"started_at": "2025-12-11T05:52:36.317934+00:00", "digest_id": "global_headlines", "digest_display": "Global Headlines", "newsapi": {"key": "1942...4460", "last_run_filter": "2025-12-06T00:00:00.381923+00:00", "requests": [{"endpoint": "top-headlines", "request_params": {"country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}, "status": "ok", "total_results": 34, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "us", "query_index": 0, "query_params": {"endpoint": "top-headlines", "country": "us", "excludeDomains": "www.epsn.com,www.chicago.suntimes.com,www.nfl.com", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "cn", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "cn", "query_index": 1, "query_params": {"endpoint": "top-headlines", "country": "cn", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "tw", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "tw", "query_index": 2, "query_params": {"endpoint": "top-headlines", "country": "tw", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "fr", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "fr", "query_index": 3, "query_params": {"endpoint": "top-headlines", "country": "fr", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "de", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "de", "query_index": 4, "query_params": {"endpoint": "top-headlines", "country": "de", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "ru", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "ru", "query_index": 5, "query_params": {"endpoint": "top-headlines", "country": "ru", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "it", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "it", "query_index": 6, "query_params": {"endpoint": "top-headlines", "country": "it", "pageSize": 30}}, {"endpoint": "top-headlines", "request_params": {"country": "es", "pageSize": 30}, "status": "ok", "total_results": 0, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": null, "country": "es", "query_index": 7, "query_params": {"endpoint": "top-headlines", "country": "es", "pageSize": 30}}]}, "openai": {"key": "sk-p..._AUA", "usage": {"model": "deepseek-chat", "input_tokens": null, "output_tokens": null, "total_tokens": null}}, "outputs": {"digest_path": "digests/头条简报-2025-12-11_1356.md", "articles_summarized": 24, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com", "814022400@qq.com", "1055859108@qq.com"]}}
+2025-12-11 13:57:41,264 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+2025-12-11 13:57:41,264 | INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-09T05:57:41.264437+00:00'}
+2025-12-11 13:57:42,073 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-11 13:57:42,073 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-12-11 13:57:42,073 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+2025-12-11 13:57:42,073 | INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-09T05:57:42.073690+00:00'}
+2025-12-11 13:57:42,371 | INFO | NewsAPI returned 19 articles (status=ok, remaining=None)
+2025-12-11 13:57:42,371 | INFO | Retained 19 articles for endpoint=everything, language=en after filtering.
+2025-12-11 13:57:42,562 | INFO | Summarizing 39 articles across 10 batches.
+2025-12-11 13:58:34,328 | INFO | Completed batch 1/10 (briefings=4).
+2025-12-11 13:59:44,054 | INFO | Completed batch 2/10 (briefings=8).
+2025-12-11 14:00:32,821 | INFO | Completed batch 3/10 (briefings=12).
+2025-12-11 14:01:14,745 | INFO | Completed batch 4/10 (briefings=16).
+2025-12-11 14:02:16,418 | INFO | Completed batch 5/10 (briefings=20).
+2025-12-11 14:02:54,960 | INFO | Completed batch 6/10 (briefings=24).
+2025-12-11 14:03:31,251 | INFO | Completed batch 7/10 (briefings=28).
+2025-12-11 14:04:11,444 | INFO | Completed batch 8/10 (briefings=32).
+2025-12-11 14:04:47,609 | INFO | Completed batch 9/10 (briefings=36).
+2025-12-11 14:05:28,485 | INFO | Completed batch 10/10 (briefings=39).
+2025-12-11 14:05:28,485 | INFO | LLM summarization completed across 10 batches (model=deepseek-chat, total_tokens=None)
+2025-12-11 14:05:28,488 | INFO | Saved digest to digests/中国政经简报-2025-12-11_1405.md
+2025-12-11 14:05:52,897 | INFO | Captured 39 story images in digests/中国政经简报-2025-12-11_1405
+2025-12-11 14:05:55,949 | INFO | Sent digest email to jiabaozhang098@gmail.com.
+2025-12-11 14:05:55,952 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-12-07T00:06:54.525042+00:00).
+2025-12-11 14:05:55,953 | INFO | Requesting everything with params={'q': '("人工智能" OR "AI" OR "大模型")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-09T06:05:55.952763+00:00'}
+2025-12-11 14:05:56,694 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-11 14:05:56,694 | INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+2025-12-11 14:05:56,695 | INFO | Clamping 'from' for query 1 to 2-day window (was 2025-12-07T00:06:54.525042+00:00).
+2025-12-11 14:05:56,695 | INFO | Requesting everything with params={'q': '("artificial intelligence" OR "AI" OR "large language model" OR "LLM")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-09T06:05:56.695134+00:00'}
+2025-12-11 14:05:56,992 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-11 14:05:56,993 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-12-11 14:05:57,051 | INFO | Summarizing 40 articles across 10 batches.
+2025-12-11 14:06:51,018 | INFO | Completed batch 1/10 (briefings=4).
+2025-12-11 14:07:45,332 | INFO | Completed batch 2/10 (briefings=8).
+2025-12-11 14:08:44,170 | INFO | Completed batch 3/10 (briefings=12).
+2025-12-11 14:09:42,070 | INFO | Completed batch 4/10 (briefings=16).
+2025-12-11 14:10:25,447 | INFO | Completed batch 5/10 (briefings=20).
+2025-12-11 14:11:16,726 | INFO | Completed batch 6/10 (briefings=24).
+2025-12-11 14:12:15,849 | INFO | Completed batch 7/10 (briefings=28).
+2025-12-11 14:13:05,854 | INFO | Completed batch 8/10 (briefings=32).
+2025-12-11 14:13:56,255 | INFO | Completed batch 9/10 (briefings=36).
+2025-12-11 14:14:48,466 | INFO | Completed batch 10/10 (briefings=40).
+2025-12-11 14:14:48,467 | INFO | LLM summarization completed across 10 batches (model=deepseek-chat, total_tokens=None)
+2025-12-11 14:14:48,469 | INFO | Saved digest to digests/ai-briefing-2025-12-11_1414.md
+2025-12-11 14:15:13,344 | INFO | Captured 40 story images in digests/ai-briefing-2025-12-11_1414
+2025-12-11 14:15:17,915 | INFO | Sent digest email to 1047962614@qq.com.
+2025-12-11 14:15:17,916 | INFO | Requesting everything with params={'q': '("物理学" OR "理论物理" OR "物理学家")', 'searchIn': 'title,description,content', 'language': 'zh', 'pageSize': 30, 'sortBy': 'publishedAt', 'from': '2025-12-07T00:06:54.525042+00:00'}
+2025-12-11 14:15:20,130 | INFO | NewsAPI returned 2 articles (status=ok, remaining=None)
+2025-12-11 14:15:20,130 | INFO | Retained 2 articles for endpoint=everything, language=zh after filtering.
+2025-12-11 14:15:20,130 | INFO | Requesting everything with params={'q': '("physics" OR "theoretical physics" OR "physicist" OR "high energy physics")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 30, 'sortBy': 'publishedAt', 'from': '2025-12-07T00:06:54.525042+00:00'}
+2025-12-11 14:15:20,885 | INFO | NewsAPI returned 30 articles (status=ok, remaining=None)
+2025-12-11 14:15:20,885 | INFO | Retained 30 articles for endpoint=everything, language=en after filtering.
+2025-12-11 14:15:20,937 | INFO | Summarizing 32 articles across 8 batches.
+2025-12-11 14:16:16,495 | INFO | Completed batch 1/8 (briefings=4).
+2025-12-11 14:16:58,841 | INFO | Completed batch 2/8 (briefings=8).
+2025-12-11 14:17:55,417 | INFO | Completed batch 3/8 (briefings=12).
+2025-12-11 14:18:35,690 | INFO | Completed batch 4/8 (briefings=16).
+2025-12-11 14:19:44,343 | INFO | Completed batch 5/8 (briefings=20).
+2025-12-11 14:20:32,323 | INFO | Completed batch 6/8 (briefings=24).
+2025-12-11 14:21:31,613 | INFO | Completed batch 7/8 (briefings=28).
+2025-12-11 14:22:15,446 | INFO | Completed batch 8/8 (briefings=32).
+2025-12-11 14:22:15,447 | INFO | LLM summarization completed across 8 batches (model=deepseek-chat, total_tokens=None)
+2025-12-11 14:22:15,449 | INFO | Saved digest to digests/physics-briefing-2025-12-11_1422.md
+2025-12-11 14:22:35,581 | INFO | Captured 32 story images in digests/physics-briefing-2025-12-11_1422
+2025-12-11 14:22:38,634 | INFO | Sent digest email to 1047962614@qq.com.
+2025-12-11 14:22:38,634 | INFO | Clamping 'from' for query 0 to 2-day window (was 2025-12-07T00:06:54.525042+00:00).
+2025-12-11 14:22:38,634 | INFO | Requesting everything with params={'q': '("movies" OR "films" OR "TV shows" OR "entertainment")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'popularity', 'from': '2025-12-09T06:22:38.634539+00:00'}
+2025-12-11 14:22:39,947 | INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+2025-12-11 14:22:39,948 | INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+2025-12-11 14:22:40,005 | INFO | Summarizing 20 articles across 5 batches.
+2025-12-11 14:23:35,970 | INFO | Completed batch 1/5 (briefings=4).
+2025-12-11 14:24:19,937 | INFO | Completed batch 2/5 (briefings=8).
+2025-12-11 14:25:19,179 | INFO | Completed batch 3/5 (briefings=12).
+2025-12-11 14:26:11,724 | INFO | Completed batch 4/5 (briefings=16).
+2025-12-11 14:27:05,540 | INFO | Completed batch 5/5 (briefings=20).
+2025-12-11 14:27:05,540 | INFO | LLM summarization completed across 5 batches (model=deepseek-chat, total_tokens=None)
+2025-12-11 14:27:05,542 | INFO | Saved digest to digests/最热影音资讯简报-2025-12-11_1427.md
+2025-12-11 14:27:17,935 | INFO | Captured 20 story images in digests/最热影音资讯简报-2025-12-11_1427
+2025-12-11 14:27:20,357 | INFO | Sent digest email to 1047962614@qq.com.
+2025-12-11 14:27:22,607 | INFO | Sent digest email to longqishao0908@gmail.com.
+2025-12-11 14:27:24,814 | INFO | Sent digest email to weizhengyi@imnu.edu.cn.
+2025-12-11 14:27:27,184 | INFO | Sent digest email to qinnanwu@163.com.
+2025-12-11 14:27:27,187 | INFO | Topic run summary: {"started_at": "2025-12-11T05:57:41.263895+00:00", "digest_ids": ["china_economy", "ai", "physics", "entertainment"], "newsapi": {"key": "1942...4460", "last_run_filter": {"global_headlines": "2025-12-11T05:52:36.317934+00:00", "ai": "2025-12-11T05:57:41.263895+00:00", "physics": "2025-12-11T05:57:41.263895+00:00", "china_economy": "2025-12-11T05:57:41.263895+00:00", "entertainment": "2025-12-11T05:57:41.263895+00:00"}, "requests": [{"endpoint": "everything", "request_params": {"q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-09T05:57:41.264437+00:00"}, "status": "ok", "total_results": 85, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"经济\") OR (\"政治\") OR (\"习近平\")  OR (\"共产党\")", "searchIn": "title,description", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-09T05:57:42.073690+00:00"}, "status": "ok", "total_results": 366, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"China\") AND ((\"Economy\") OR (\"Politics\")) OR (\"Xi Jinping\") OR (\"Communist Party\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-09T06:05:55.952763+00:00"}, "status": "ok", "total_results": 452, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"人工智能\" OR \"AI\" OR \"大模型\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt", "from": "2025-12-09T06:05:56.695134+00:00"}, "status": "ok", "total_results": 1850, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"artificial intelligence\" OR \"AI\" OR \"large language model\" OR \"LLM\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"物理学\" OR \"理论物理\" OR \"物理学家\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 30, "sortBy": "publishedAt", "from": "2025-12-07T00:06:54.525042+00:00"}, "status": "ok", "total_results": 2, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "zh", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"物理学\" OR \"理论物理\" OR \"物理学家\")", "searchIn": "title,description,content", "language": "zh", "pageSize": 30, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"physics\" OR \"theoretical physics\" OR \"physicist\" OR \"high energy physics\")", "searchIn": "title,description", "language": "en", "pageSize": 30, "sortBy": "publishedAt", "from": "2025-12-07T00:06:54.525042+00:00"}, "status": "ok", "total_results": 84, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 1, "query_params": {"endpoint": "everything", "q": "(\"physics\" OR \"theoretical physics\" OR \"physicist\" OR \"high energy physics\")", "searchIn": "title,description", "language": "en", "pageSize": 30, "sortBy": "publishedAt"}}, {"endpoint": "everything", "request_params": {"q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity", "from": "2025-12-09T06:22:38.634539+00:00"}, "status": "ok", "total_results": 253, "rate_limit": {"limit": null, "remaining": null, "reset": null}, "language": "en", "query_index": 0, "query_params": {"endpoint": "everything", "q": "(\"movies\" OR \"films\" OR \"TV shows\" OR \"entertainment\")", "searchIn": "title,description", "language": "en", "pageSize": 20, "sortBy": "popularity"}}]}, "openai": {"key": "sk-p..._AUA", "model": "deepseek-chat", "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}}, "outputs": [{"digest_id": "china_economy", "digest_display": "China Economy and Politics", "digest_path": "digests/中国政经简报-2025-12-11_1405.md", "articles_summarized": 39, "recipients": ["jiabaozhang098@gmail.com"]}, {"digest_id": "ai", "digest_display": "Artificial Intelligence", "digest_path": "digests/ai-briefing-2025-12-11_1414.md", "articles_summarized": 40, "recipients": ["1047962614@qq.com"]}, {"digest_id": "physics", "digest_display": "Physics", "digest_path": "digests/physics-briefing-2025-12-11_1422.md", "articles_summarized": 32, "recipients": ["1047962614@qq.com"]}, {"digest_id": "entertainment", "digest_display": "Entertainment News", "digest_path": "digests/最热影音资讯简报-2025-12-11_1427.md", "articles_summarized": 20, "recipients": ["1047962614@qq.com", "longqishao0908@gmail.com", "weizhengyi@imnu.edu.cn", "qinnanwu@163.com"]}]}
+2025-12-11 20:28:48,367 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-11 20:28:49,079 | INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+2025-12-11 20:28:49,079 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:28:49,080 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-11 20:28:49,330 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:28:49,331 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:28:49,331 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-11 20:28:49,583 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:28:49,584 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:28:49,584 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-11 20:28:49,837 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:28:49,837 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:28:49,837 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-11 20:28:50,089 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:28:50,089 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:28:50,089 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-11 20:28:50,341 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:28:50,341 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:28:50,341 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-11 20:28:50,597 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:28:50,597 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:28:50,597 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-11 20:28:50,847 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:28:50,848 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:28:50,848 | INFO | No articles retrieved for headline digest; nothing to summarize.
+2025-12-11 20:33:45,966 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-11 20:33:46,623 | INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+2025-12-11 20:33:46,623 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:33:46,623 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-11 20:33:46,866 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:33:46,866 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:33:46,866 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-11 20:33:47,112 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:33:47,112 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:33:47,112 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-11 20:33:47,355 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:33:47,355 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:33:47,355 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-11 20:33:47,599 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:33:47,600 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:33:47,600 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-11 20:33:47,844 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:33:47,844 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:33:47,844 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-11 20:33:48,088 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:33:48,089 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:33:48,089 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-11 20:33:48,332 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:33:48,333 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:33:48,333 | INFO | No articles retrieved for headline digest; nothing to summarize.
+2025-12-11 20:36:00,856 | INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+2025-12-11 20:36:01,559 | INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+2025-12-11 20:36:01,560 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:36:01,560 | INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+2025-12-11 20:36:01,810 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:36:01,810 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:36:01,810 | INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+2025-12-11 20:36:02,060 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:36:02,060 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:36:02,060 | INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+2025-12-11 20:36:02,311 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:36:02,311 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:36:02,311 | INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+2025-12-11 20:36:02,562 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:36:02,563 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:36:02,563 | INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+2025-12-11 20:36:02,812 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:36:02,812 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:36:02,813 | INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+2025-12-11 20:36:03,063 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:36:03,063 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:36:03,063 | INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+2025-12-11 20:36:03,313 | INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+2025-12-11 20:36:03,314 | INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+2025-12-11 20:36:03,314 | INFO | No articles retrieved for headline digest; nothing to summarize.

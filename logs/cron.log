@@ -132,3 +132,308 @@ INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
 INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
 INFO | No articles retrieved for headline digest; nothing to summarize.
 No new headline articles found.
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+WARNING | HTTP error fetching top-headlines (attempt 1/3): [Errno 54] Connection reset by peer. Retrying in 8 seconds.
+INFO | NewsAPI returned 28 articles (status=ok, remaining=None)
+INFO | Retained 27 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 36, in <module>
+    main()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 30, in main
+    run_headlines()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/headline.py", line 99, in main
+    briefings, openai_usage = summarize_articles(articles)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 490, in summarize_articles
+    client, api_mode = _build_llm_client()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 484, in _build_llm_client
+    if not OPENAI_API_KEY:
+           ^^^^^^^^^^^^^^
+NameError: name 'OPENAI_API_KEY' is not defined
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-07T00:00:00.992384+00:00'}
+INFO | NewsAPI returned 27 articles (status=ok, remaining=None)
+INFO | Retained 27 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Clamping 'from' for query 1 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-07T00:00:01.728701+00:00'}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 36, in <module>
+    main()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 32, in main
+    run_topics()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/topic.py", line 130, in main
+    briefings, usage = summarize_articles(articles)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 490, in summarize_articles
+    client, api_mode = _build_llm_client()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 484, in _build_llm_client
+    if not OPENAI_API_KEY:
+           ^^^^^^^^^^^^^^
+NameError: name 'OPENAI_API_KEY' is not defined
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 36, in <module>
+    main()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 30, in main
+    run_headlines()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/headline.py", line 99, in main
+    briefings, openai_usage = summarize_articles(articles)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 490, in summarize_articles
+    client, api_mode = _build_llm_client()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 484, in _build_llm_client
+    if not OPENAI_API_KEY:
+           ^^^^^^^^^^^^^^
+NameError: name 'OPENAI_API_KEY' is not defined
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 25 articles (status=ok, remaining=None)
+INFO | Retained 25 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 36, in <module>
+    main()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 30, in main
+    run_headlines()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/headline.py", line 99, in main
+    briefings, openai_usage = summarize_articles(articles)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 490, in summarize_articles
+    client, api_mode = _build_llm_client()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 484, in _build_llm_client
+    if not OPENAI_API_KEY:
+           ^^^^^^^^^^^^^^
+NameError: name 'OPENAI_API_KEY' is not defined
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | Clamping 'from' for query 0 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+INFO | Requesting everything with params={'q': '("经济") OR ("政治") OR ("习近平")  OR ("共产党")', 'searchIn': 'title,description', 'language': 'zh', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-09T00:00:00.777155+00:00'}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=zh after filtering.
+INFO | Clamping 'from' for query 1 to 2-day window (was 2025-12-06T00:00:00.247866+00:00).
+INFO | Requesting everything with params={'q': '("China") AND (("Economy") OR ("Politics")) OR ("Xi Jinping") OR ("Communist Party")', 'searchIn': 'title,description', 'language': 'en', 'pageSize': 20, 'sortBy': 'publishedAt', 'from': '2025-12-09T00:00:01.598891+00:00'}
+INFO | NewsAPI returned 23 articles (status=ok, remaining=None)
+INFO | Retained 23 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 20 articles (status=ok, remaining=None)
+INFO | Retained 20 articles for endpoint=everything, language=en after filtering.
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 36, in <module>
+    main()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 32, in main
+    run_topics()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/topic.py", line 130, in main
+    briefings, usage = summarize_articles(articles)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 490, in summarize_articles
+    client, api_mode = _build_llm_client()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 484, in _build_llm_client
+    if not OPENAI_API_KEY:
+           ^^^^^^^^^^^^^^
+NameError: name 'OPENAI_API_KEY' is not defined
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 36, in <module>
+    main()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 30, in main
+    run_headlines()
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/headline.py", line 99, in main
+    briefings, openai_usage = summarize_articles(articles)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 490, in summarize_articles
+    client, api_mode = _build_llm_client()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 484, in _build_llm_client
+    if not OPENAI_API_KEY:
+           ^^^^^^^^^^^^^^
+NameError: name 'OPENAI_API_KEY' is not defined
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 11, in <module>
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/main.py", line 11, in <module>
+    from headline import main as run_headlines
+    from headline import main as run_headlines
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/headline.py", line 14, in <module>
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/headline.py", line 14, in <module>
+    from mailer import send_digest_via_email
+    from mailer import send_digest_via_email
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/mailer.py", line 13, in <module>
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/mailer.py", line 13, in <module>
+    from digest_utils import DIGEST_DIR, LOGGER
+    from digest_utils import DIGEST_DIR, LOGGER
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 53, in <module>
+  File "/Users/zhangjiabao/Project/LLM_Dev/DailyNews/digest_utils.py", line 53, in <module>
+    NEWS_API_KEY = os.environ["NEWSAPI_ORG_KEY"]
+    NEWS_API_KEY = os.environ["NEWSAPI_ORG_KEY"]
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 714, in __getitem__
+  File "<frozen os>", line 714, in __getitem__
+KeyError: 'NEWSAPI_ORG_KEY'
+KeyError: 'NEWSAPI_ORG_KEY'
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | No articles retrieved for headline digest; nothing to summarize.
+No new headline articles found.
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | No articles retrieved for headline digest; nothing to summarize.
+No new headline articles found.
+INFO | Requesting top-headlines with params={'country': 'us', 'excludeDomains': 'www.epsn.com,www.chicago.suntimes.com,www.nfl.com', 'pageSize': 30}
+INFO | NewsAPI returned 26 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'cn', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'tw', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'fr', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'de', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'ru', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'it', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | Requesting top-headlines with params={'country': 'es', 'pageSize': 30}
+INFO | NewsAPI returned 0 articles (status=ok, remaining=None)
+INFO | Retained 0 articles for endpoint=top-headlines, language=unknown after filtering.
+INFO | No articles retrieved for headline digest; nothing to summarize.
+No new headline articles found.

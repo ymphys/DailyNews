@@ -469,53 +469,36 @@ def summarize_articles(
     batch_size: int = SUMMARY_BATCH_SIZE,
     max_attempts: int = MAX_SUMMARY_ATTEMPTS,
 ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
-    """Summarize articles with DeepSeek or OpenAI, returning structured bilingual briefs."""
+    """Summarize articles with DeepSeek, returning structured bilingual briefs."""
     if not articles:
         return [], {}
 
+    if not DEEPSEEK_API_KEY:
+        raise RuntimeError("DEEPSEEK_API_KEY must be configured to summarize articles.")
+
     from openai import OpenAI
 
-    def _build_llm_client() -> Tuple[Any, str]:
-        if DEEPSEEK_API_KEY:
-            return (
-                OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com"),
-                "deepseek",
-            )
-        if not OPENAI_API_KEY:
-            raise RuntimeError(
-                "Neither DEEPSEEK_API_KEY nor OPENAI_API_KEY is configured for summarization."
-            )
-        return OpenAI(api_key=OPENAI_API_KEY), "responses"
-
-    client, api_mode = _build_llm_client()
+    client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
 
     def _invoke_llm(messages: List[Dict[str, str]]) -> Tuple[Any, str]:
-        if api_mode == "deepseek":
-            response = client.chat.completions.create(
-                model="deepseek-chat",
-                messages=messages,
-                max_tokens=2000,
-                stream=False,
-            )
-            choices = getattr(response, "choices", None) or []
-            content = ""
-            if choices:
-                choice = choices[0]
-                message = getattr(choice, "message", None)
-                if not message and isinstance(choice, dict):
-                    message = choice.get("message")
-                if isinstance(message, dict):
-                    content = message.get("content", "") or ""
-                else:
-                    content = getattr(message, "content", "") or ""
-            return response, content
-
-        response = client.responses.create(
-            model="gpt-4.1-mini",
-            input=messages,
-            max_output_tokens=2000,
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=messages,
+            max_tokens=2000,
+            stream=False,
         )
-        return response, getattr(response, "output_text", "") or ""
+        choices = getattr(response, "choices", None) or []
+        content = ""
+        if choices:
+            choice = choices[0]
+            message = getattr(choice, "message", None)
+            if not message and isinstance(choice, dict):
+                message = choice.get("message")
+            if isinstance(message, dict):
+                content = message.get("content", "") or ""
+            else:
+                content = getattr(message, "content", "") or ""
+        return response, content
 
     prepared_articles = [
         {
